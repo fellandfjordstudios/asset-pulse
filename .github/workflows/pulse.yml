@@ -1,0 +1,216 @@
+# THE PULSE'S DAILY RUN ON GITHUB, and the public catalog on GitHub Pages
+# (the owner, 2026-10-03: "If we don't have a license issue, sure, go public").
+#
+# One job: sync the library to its main, the scorecard and the history row,
+# every subject's sheet and close-up, the explorer's bake, the catalog; commit
+# history.csv and the pin; deploy the catalog to Pages. The private pulse page
+# is built too and never deployed here.
+#
+# The catalog is deployed as a Pages ARTIFACT, never committed: this repository
+# keeps no images and no generated geometry in git (CLAUDE.md). Every download
+# carries ATTRIBUTION.txt from provenance and the library's licence texts
+# (docs/press/licences/), and tools/catalog.py refuses to write a plate's bytes
+# or a file over the Pages limit; a larger zip waits for R2.
+#
+# Needs one secret: LIBRARY_TOKEN, a fine-grained token that can READ
+# codestiff/asset-generators and codestiff/asset-explorer (both private). The
+# workflow's own token cannot. Without it the run stops at its first step and
+# says so. Pages must be on with "GitHub Actions" as its source (Settings ->
+# Pages); the deploy job fails with that message otherwise.
+name: pulse
+
+on:
+  schedule:
+    - cron: "37 5 * * *"
+  workflow_dispatch:
+    inputs:
+      refresh_catalog:
+        description: "Rebuild the customer site from cached renders and bakes at the committed pins (no new bake)"
+        type: boolean
+        default: false
+      publish:
+        description: "Publish the generated catalog to GitHub Pages (disable for artifact review)"
+        type: boolean
+        default: true
+      backlog:
+        description: "run the derivation backlog (pushes to the library; needs LIBRARY_TOKEN with write)"
+        default: "0"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pulse
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    outputs:
+      date: ${{ steps.run.outputs.date }}
+      catalog: ${{ steps.run.outputs.catalog }}
+    steps:
+      - name: the library token
+        env:
+          LIBRARY_TOKEN: ${{ secrets.LIBRARY_TOKEN }}
+        run: |
+          if [ -z "$LIBRARY_TOKEN" ]; then
+            echo "::error::stopped: no LIBRARY_TOKEN secret -- the library and the explorer are private, and this workflow's own token cannot read them. Add a fine-grained token with read access to codestiff/asset-generators and codestiff/asset-explorer as the repository secret LIBRARY_TOKEN."
+            exit 1
+          fi
+          # Only the two private repositories this run reads: the checkout and
+          # the push of this repository keep the workflow's own token.
+          for r in asset-generators asset-explorer; do
+            git config --global url."https://x-access-token:${LIBRARY_TOKEN}@github.com/codestiff/$r".insteadOf "https://github.com/codestiff/$r"
+          done
+      - uses: actions/checkout@v4
+        id: checkout
+      - name: Godot, a virtual display, Pillow, the library
+        if: inputs.refresh_catalog != true
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q xvfb libgl1-mesa-dri >/dev/null
+          bash .claude/hooks/session-start.sh
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+      - name: Catalog refresh dependencies
+        if: inputs.refresh_catalog == true
+        run: python3 -m pip install Pillow==12.3.0
+      # THE PINS FIRST, so the caches below are keyed by them (row 215): an
+      # unchanged library pin re-renders nothing, and an unchanged library and
+      # explorer pin re-bakes nothing; a run cut short leaves its progress for
+      # the next (each run saves under its own key; the newest for a pin is
+      # restored).
+      - name: the pins
+        id: pins
+        env:
+          REFRESH_CATALOG: ${{ inputs.refresh_catalog }}
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          if [ "$REFRESH_CATALOG" = "true" ]; then
+            tools/sync-library.sh
+          else
+            tools/sync-library.sh --bump main
+          fi
+          echo "library=$(sed -n 's/^commit=//p' library.lock)" >> "$GITHUB_OUTPUT"
+          echo "explorer=$(sed -n 's/^commit=//p' explorer.lock)" >> "$GITHUB_OUTPUT"
+          echo "date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+      - name: renders done at this library pin
+        id: renders
+        uses: actions/cache/restore@v4
+        with:
+          path: out/render-cache
+          key: renders-${{ steps.pins.outputs.library }}-${{ github.run_id }}
+          restore-keys: renders-${{ steps.pins.outputs.library }}-
+      - name: the bake done at these pins
+        id: bake
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            out/bake-resume
+            library/build/artifacts
+          key: bake-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-${{ github.run_id }}
+          restore-keys: bake-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-
+      - name: the catalog guard's test
+        run: python3 tools/test_catalog_guard.py
+      - name: Require matching cached inputs for a catalog refresh
+        if: inputs.refresh_catalog == true
+        env:
+          RENDER_CACHE: ${{ steps.renders.outputs.cache-matched-key }}
+          BAKE_CACHE: ${{ steps.bake.outputs.cache-matched-key }}
+          LIBRARY_PIN: ${{ steps.pins.outputs.library }}
+        run: |
+          test -n "$RENDER_CACHE" && test -n "$BAKE_CACHE" || { echo "::error::No cached outputs at these pins. Run a normal pulse first."; exit 1; }
+          test "$(cat out/render-cache/render-pin)" = "$LIBRARY_PIN"
+          test -f library/build/artifacts/manifest.json
+      - name: the run
+        id: run
+        env:
+          PULSE_BACKLOG: ${{ github.event.inputs.backlog || '0' }}
+          PULSE_TRANSFER: "0"
+          # Public settings, not Worker secrets. Missing values disable sending
+          # with an explanation while the catalog continues to publish.
+          CATALOG_INTAKE_URL: ${{ vars.CATALOG_INTAKE_URL }}
+          EDGE_ZONE: ${{ vars.EDGE_ZONE }}
+          TURNSTILE_SITEKEY: ${{ vars.TURNSTILE_SITEKEY }}
+          ITCH_URL: ${{ vars.ITCH_URL }}
+          REFRESH_CATALOG: ${{ inputs.refresh_catalog }}
+          # Resume what the caches hold, and give the explorer's registry bake
+          # 45 minutes in all: it ships what finished, the rest named not_baked
+          # (row 215; asset-generators feedback names the hang, 49cf1557).
+          PULSE_RESUME: "1"
+          PULSE_BAKE_BUDGET_S: "2700"
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          DATE="${{ steps.pins.outputs.date }}"
+          if [ -f out/render-cache/render-pin ]; then mkdir -p "out/$DATE" && cp -a out/render-cache/. "out/$DATE/"; fi
+          if [ "$REFRESH_CATALOG" = "true" ]; then
+            python3 tools/catalog.py "out/$DATE"
+          else
+            ./run.sh
+          fi
+          code=$?
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          # OPTION A (the owner, 2026-10-10): the public catalog is replaced only by
+          # one listing at least as many subjects; a run whose bake was cut short
+          # leaves the live page as it was (tools/catalog_guard.py, its test above).
+          if [ -f "out/$DATE/catalog/index.html" ] && python3 tools/catalog_guard.py "out/$DATE/catalog" "https://codestiff.github.io/asset-pulse/"; then
+            echo "catalog=out/$DATE/catalog" >> "$GITHUB_OUTPUT"
+          fi
+          grep -h "^catalog: " "out/$DATE"/*.log 2>/dev/null | tail -3 || true
+          exit $code
+      # Even when the run was cut short: every subject finished so far, with
+      # its status, for the next run at the same pin.
+      - name: what this run rendered
+        if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
+        run: |
+          DATE="${{ steps.pins.outputs.date }}"
+          rm -rf out/render-cache && mkdir -p out/render-cache
+          cp "out/$DATE/render-pin" out/render-cache/ 2>/dev/null || true
+          for d in "out/$DATE"/*/; do [ -f "$d/status" ] && cp -a "$d" out/render-cache/; done
+          echo "$(ls out/render-cache | wc -l) entries kept"
+      - name: save the renders for this pin
+        if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
+        uses: actions/cache/save@v4
+        with:
+          path: out/render-cache
+          key: renders-${{ steps.pins.outputs.library }}-${{ github.run_id }}
+      - name: save the bake for these pins
+        if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            out/bake-resume
+            library/build/artifacts
+          key: bake-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-${{ github.run_id }}
+      - name: commit the day's row and the pin
+        if: always() && steps.checkout.outcome == 'success' && inputs.refresh_catalog != true
+        run: |
+          git config user.name "asset-pulse"
+          git config user.email "asset-pulse@users.noreply.github.com"
+          git add history.csv library.lock
+          git diff --cached --quiet && exit 0
+          git commit -q -m "pulse $(date -u +%Y-%m-%d) (GitHub Actions)"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
+      - name: the catalog, without the private page
+        if: steps.run.outputs.catalog != ''
+        run: |
+          mkdir -p _pages && cp -r "${{ steps.run.outputs.catalog }}/." _pages/
+          rm -f _pages/objects.json
+          du -sh _pages
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.run.outputs.catalog != ''
+        with:
+          path: _pages
+
+  deploy:
+    needs: run
+    if: needs.run.outputs.catalog != '' && (github.event_name != 'workflow_dispatch' || inputs.publish)
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

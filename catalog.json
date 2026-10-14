@@ -1,0 +1,16 @@
+{
+  "about": "The public catalog's settings: names only. Nothing here scores, renders or licenses: the download's licence is the library's runtime licence (ops/runtime/runtime.toml), each plate's is its `licence` in plates/manifest.json, the numbers are the scorecard's. Deploy values come from the environment: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, EDGE_ZONE, CATALOG_PUBLIC_BASE, and ITCH_URL once itch, the only store, exists (tools/publish.sh). sponsors_url is the coffee link (GitHub Sponsors), hidden while empty; the priority paragraph shows only while the library's tools/commission-cost.py prints 'falsifier holds' (the-library-as-a-commons step 5).",
+  "title": "the asset library",
+  "credit": "codestiff/asset-generators",
+  "model_viewer": "https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/dist/model-viewer.min.js",
+  "model_viewer_sha256": "774edda21e1be2a0934e460ca5943af1fe3f88da130a9f98bd6a9d611576cacf",
+  "model_viewer_license": "https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/LICENSE",
+  "model_viewer_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "pages": {
+    "pulse": "asset-pulse",
+    "catalog": "asset-explorer"
+  },
+  "bucket": "catalog",
+  "explorer_config": "explorer/wrangler.toml",
+  "sponsors_url": ""
+}

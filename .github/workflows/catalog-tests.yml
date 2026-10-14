@@ -1,0 +1,62 @@
+name: catalog tests
+
+on:
+  pull_request:
+    paths:
+      - 'catalog.json'
+      - 'tools/catalog*'
+      - 'tools/bake.sh'
+      - 'tools/catalog-assets/**'
+      - 'tools/test_catalog*'
+      - 'tools/site.py'
+      - 'tools/publish.sh'
+      - '.github/workflows/catalog-tests.yml'
+      - '.github/workflows/pulse.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'catalog.json'
+      - 'tools/catalog*'
+      - 'tools/bake.sh'
+      - 'tools/catalog-assets/**'
+      - 'tools/test_catalog*'
+      - 'tools/site.py'
+      - 'tools/publish.sh'
+      - '.github/workflows/catalog-tests.yml'
+      - '.github/workflows/pulse.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  catalog:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install local test dependencies
+        run: |
+          python -m pip install -r tools/catalog-test-requirements.txt
+          python -m playwright install --with-deps chromium webkit
+      - name: Packaging and deployment guards
+        run: |
+          python -m unittest discover -s tools -p 'test_catalog.py'
+          python tools/test_catalog_guard.py
+          python -m unittest discover -s tools -p 'test_catalog_impostors.py'
+      - name: Customer browser behavior (isolated fixtures only)
+        run: python tools/test_catalog_browser.py
+      - name: Real renderer and ZIP downloads (Chromium and WebKit)
+        run: |
+          python tools/test_catalog_viewer.py
+          CATALOG_BROWSER=webkit python tools/test_catalog_viewer.py
+      - name: Syntax checks
+        run: |
+          python -m py_compile tools/catalog.py tools/catalog_ui.py tools/catalog_guard.py
+          node --check tools/catalog-assets/catalog.js
+          bash -n tools/publish.sh

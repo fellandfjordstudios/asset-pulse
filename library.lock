@@ -1,0 +1,12 @@
+# THE LIBRARY THIS PULSE READS, pinned by commit.
+#
+# tools/sync-library.sh reads this and nothing else to decide what the library
+# IS. The pulse never edits the library: a gap found here is filed in the
+# library's feedback/ as transect files its own. Bump with:
+#   tools/sync-library.sh --bump main
+#
+# Unlike transect, the pulse needs the WHOLE library checkout (its tools, its
+# committed tables, every generator's cards), so the sync is a git checkout of
+# the pinned commit under library/ (gitignored), never a copy of runtime paths.
+repo=codestiff/asset-generators
+commit=9ef5a6d12b799a62e0c29f7a22c437d46ce89b1b
