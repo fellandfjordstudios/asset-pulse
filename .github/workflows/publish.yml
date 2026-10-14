@@ -1,0 +1,35 @@
+name: publish
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "the release holding catalog.tgz"
+        required: true
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: the catalog built on the owner's machine
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern catalog.tgz
+          mkdir _pages && tar -xzf catalog.tgz -C _pages
+          rm -f _pages/objects.json
+          du -sh _pages
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _pages
+      - id: deploy
+        uses: actions/deploy-pages@v4

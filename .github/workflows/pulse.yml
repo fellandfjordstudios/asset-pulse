@@ -53,6 +53,8 @@ jobs:
       date: ${{ steps.run.outputs.date }}
       catalog: ${{ steps.run.outputs.catalog }}
     steps:
+      - id: pages
+        uses: actions/configure-pages@v5
       - name: the library token
         env:
           LIBRARY_TOKEN: ${{ secrets.LIBRARY_TOKEN }}
@@ -155,7 +157,7 @@ jobs:
           # OPTION A (the owner, 2026-10-10): the public catalog is replaced only by
           # one listing at least as many subjects; a run whose bake was cut short
           # leaves the live page as it was (tools/catalog_guard.py, its test above).
-          if [ -f "out/$DATE/catalog/index.html" ] && python3 tools/catalog_guard.py "out/$DATE/catalog" "https://codestiff.github.io/asset-pulse/"; then
+          if [ -f "out/$DATE/catalog/index.html" ] && python3 tools/catalog_guard.py "out/$DATE/catalog" "${{ steps.pages.outputs.base_url }}/"; then
             echo "catalog=out/$DATE/catalog" >> "$GITHUB_OUTPUT"
           fi
           grep -h "^catalog: " "out/$DATE"/*.log 2>/dev/null | tail -3 || true
