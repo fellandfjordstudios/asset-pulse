@@ -12,6 +12,11 @@
 # (docs/press/licences/), and tools/catalog.py refuses to write a plate's bytes
 # or a file over the Pages limit; a larger zip waits for R2.
 #
+# THE DERIVATION BACKLOG is the second job, `derive`, on its own runner and its
+# own 350 minutes (tools/backlog.sh): it keeps what it finishes on this
+# repository's `derive-results` branch, and the library pulls from there (its
+# tools/derive-pull.sh; the owner, 2026-10-23). Nothing is pushed to the library.
+#
 # Needs one secret: LIBRARY_TOKEN, a fine-grained token that can READ
 # codestiff/asset-generators and codestiff/asset-explorer (both private). The
 # workflow's own token cannot. Without it the run stops at its first step and
@@ -33,8 +38,8 @@ on:
         type: boolean
         default: true
       backlog:
-        description: "run the derivation backlog (pushes to the library; needs LIBRARY_TOKEN with write)"
-        default: "0"
+        description: "run the derivation backlog job (keeps its results on derive-results; nothing is pushed to the library)"
+        default: "1"
 
 permissions:
   contents: write
@@ -129,7 +134,8 @@ jobs:
       - name: the run
         id: run
         env:
-          PULSE_BACKLOG: ${{ github.event.inputs.backlog || '0' }}
+          # The backlog is the derive job's, below, on its own runner.
+          PULSE_BACKLOG: "0"
           PULSE_TRANSFER: "0"
           # Public settings, not Worker secrets. Missing values disable sending
           # with an explanation while the catalog continues to publish.
@@ -205,6 +211,65 @@ jobs:
         if: steps.run.outputs.catalog != ''
         with:
           path: _pages
+
+  # THE DERIVATION BACKLOG, KEPT HERE (tools/backlog.sh). Its checkpoints -- the
+  # bench's rows and each record's parts, keyed inside by the deriver's and each
+  # generator's fingerprints -- are kept in actions/cache, so a backlog longer
+  # than one runner stops at its budget and the next run resumes; what each run
+  # finishes is kept on derive-results, and laid over library/ by the next.
+  derive:
+    if: inputs.refresh_catalog != true && (github.event_name == 'schedule' || inputs.backlog == '1')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    concurrency:
+      group: derive
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - name: the library token
+        env:
+          LIBRARY_TOKEN: ${{ secrets.LIBRARY_TOKEN }}
+        run: |
+          if [ -z "$LIBRARY_TOKEN" ]; then
+            echo "::error::stopped: no LIBRARY_TOKEN secret (read access to the library library.lock names)"
+            exit 1
+          fi
+          REPO="$(sed -n 's/^repo=//p' library.lock)"
+          git config --global url."https://x-access-token:${LIBRARY_TOKEN}@github.com/$REPO".insteadOf "https://github.com/$REPO"
+      - name: Godot, a virtual display, the library at its main
+        id: pins
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q xvfb libgl1-mesa-dri >/dev/null
+          bash .claude/hooks/session-start.sh
+          export PATH="$HOME/.local/bin:$PATH"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          tools/sync-library.sh --bump main
+          echo "library=$(sed -n 's/^commit=//p' library.lock)" >> "$GITHUB_OUTPUT"
+      - name: the checkpoints so far
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            library/.git/ag-logs/derive-checkpoints
+            library/.git/ag-logs/derive-parts
+          key: derive-${{ steps.pins.outputs.library }}-${{ github.run_id }}
+          restore-keys: |
+            derive-${{ steps.pins.outputs.library }}-
+            derive-
+      - name: the backlog
+        env:
+          PULSE_BACKLOG_BUDGET_S: "18600"
+        run: |
+          git config user.name "asset-pulse"
+          git config user.email "asset-pulse@users.noreply.github.com"
+          tools/backlog.sh
+      - name: save the checkpoints
+        if: always() && steps.pins.outcome == 'success'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            library/.git/ag-logs/derive-checkpoints
+            library/.git/ag-logs/derive-parts
+          key: derive-${{ steps.pins.outputs.library }}-${{ github.run_id }}
 
   deploy:
     needs: run

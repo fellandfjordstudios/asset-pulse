@@ -40,12 +40,13 @@ goal table and take seconds each. Each subject's renders are capped by the run
 
 ## Rules
 
-- The library is never edited from here, with one exception: the derivation
-  backlog (`tools/backlog.sh`). The pulse runs the library's own expensive
-  job once a day (the owner, 2026-10-02: pay for it once) and pushes exactly
-  the files that job writes -- the derivation tables and records -- through the
-  library's gate, or to `run/derive-backlog-<date>` when the gate refuses. A
-  gap goes to the library's `feedback/`.
+- The library is never edited from here. The derivation backlog
+  (`tools/backlog.sh`, the workflow's `derive` job) runs the library's own
+  expensive job once a day (the owner, 2026-10-02: pay for it once) and keeps
+  exactly the files that job writes -- the derivation tables and records --
+  on this repository's `derive-results` branch, with `manifest.json`. The
+  library pulls from there what is current for it (`tools/derive-pull.sh`; the
+  owner, 2026-10-23). A gap goes to the library's `feedback/`.
 - No images and no generated geometry in git, here or in the library. Images
   go to the object store (step 3).
 - The pulse reports; it is not a gate on anything.

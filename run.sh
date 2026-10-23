@@ -23,7 +23,7 @@
 #     library's sheet and close-up tools; this script decides nothing about
 #     scoring or rendering;
 #   - nothing generated is committed here but history.csv, one dated row per run;
-#     the derivation backlog's records go to the library (tools/backlog.sh);
+#     the derivation backlog's records are kept on derive-results (tools/backlog.sh);
 #   - a failed run writes a row that says so, never nothing.
 set -uo pipefail
 ROOT="$(cd "$(dirname "$0")" && pwd)"
@@ -45,7 +45,7 @@ fi
 tools/sync-library.sh || fail_row "sync"
 tools/sync-library.sh --verify || fail_row "verify"
 # THE DERIVATION BACKLOG, PAID ONCE, before the sheets read it (tools/backlog.sh):
-# the library's own job, its records pushed back to the library. PULSE_BACKLOG=0
+# the library's own job, its records kept on derive-results. PULSE_BACKLOG=0
 # skips it (a quick manual look).
 if [ "${PULSE_BACKLOG:-1}" = "1" ] && [ "${1:-}" != "--no-render" ] && [ "${2:-}" != "--no-render" ]; then
   tools/backlog.sh || echo "run: the backlog failed; the sheets read the tables as they are"
