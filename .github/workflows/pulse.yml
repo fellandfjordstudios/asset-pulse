@@ -236,7 +236,7 @@ jobs:
           fi
           REPO="$(sed -n 's/^repo=//p' library.lock)"
           git config --global url."https://x-access-token:${LIBRARY_TOKEN}@github.com/$REPO".insteadOf "https://github.com/$REPO"
-      - name: Godot, a virtual display, the library at its main
+      - name: the library at its main, on the library's own Godot
         id: pins
         run: |
           sudo apt-get update -q && sudo apt-get install -y -q xvfb libgl1-mesa-dri >/dev/null
@@ -244,17 +244,24 @@ jobs:
           export PATH="$HOME/.local/bin:$PATH"
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
           tools/sync-library.sh --bump main
+          # THE LIBRARY'S PIN, NOT TRANSECT'S: what is derived here is the
+          # library's, so it is made by the Godot and runtime the library's own
+          # setup provisions (run 13 derived under 4.5, and the library, on
+          # 4.7.2, took none of it). Its git settings go to a scratch file: the
+          # results are this repository's to push, as asset-pulse.
+          ( cd library && GIT_CONFIG_GLOBAL="$RUNNER_TEMP/library-setup.gitconfig" tools/setup.sh )
           echo "library=$(sed -n 's/^commit=//p' library.lock)" >> "$GITHUB_OUTPUT"
+          echo "godot=$(godot --headless --version | tail -1)" >> "$GITHUB_OUTPUT"
       - name: the checkpoints so far
         uses: actions/cache/restore@v4
         with:
           path: |
             library/.git/ag-logs/derive-checkpoints
             library/.git/ag-logs/derive-parts
-          key: derive-${{ steps.pins.outputs.library }}-${{ github.run_id }}
+          key: derive-${{ steps.pins.outputs.godot }}-${{ steps.pins.outputs.library }}-${{ github.run_id }}
           restore-keys: |
-            derive-${{ steps.pins.outputs.library }}-
-            derive-
+            derive-${{ steps.pins.outputs.godot }}-${{ steps.pins.outputs.library }}-
+            derive-${{ steps.pins.outputs.godot }}-
       - name: the backlog
         env:
           PULSE_BACKLOG_BUDGET_S: "18600"
@@ -269,7 +276,7 @@ jobs:
           path: |
             library/.git/ag-logs/derive-checkpoints
             library/.git/ag-logs/derive-parts
-          key: derive-${{ steps.pins.outputs.library }}-${{ github.run_id }}
+          key: derive-${{ steps.pins.outputs.godot }}-${{ steps.pins.outputs.library }}-${{ github.run_id }}
 
   deploy:
     needs: run

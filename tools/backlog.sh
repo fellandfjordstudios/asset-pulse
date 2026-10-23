@@ -36,6 +36,11 @@ if [ "${1:-}" = "--list" ]; then
   exit $?
 fi
 PIN="$(git -C "$LIB" rev-parse HEAD)"
+# THE LIBRARY'S GODOT OR NOTHING (10-23: run 13 derived under transect's 4.5 and
+# the library, pinned to 4.7.2, could take none of it): its own check, as its
+# gate runs it. The workflow provisions the pin with the library's tools/setup.sh.
+( cd "$LIB" && source tools/godot-pin.sh && ag_godot_pin ) || { echo "backlog: not the library's Godot -- run its tools/setup.sh in library/"; exit 1; }
+GODOT="$(godot --headless --version 2>/dev/null | tail -1)"
 # WHAT THE JOB WRITES THAT IS KEPT: the two tables and the records beside the
 # generators and fixtures (a pathspec `*` crosses directories). Anything else it
 # writes is not the pulse's to keep.
@@ -55,6 +60,13 @@ else
   git -C "$ROOT" worktree add -q -f --detach "$KEEP" HEAD || { echo "backlog: could not make a worktree"; exit 1; }
   ( cd "$KEEP" && git checkout -q --orphan "pulse-$BRANCH" && git rm -rqf . )
   echo "backlog: no $BRANCH yet -- it starts here"
+fi
+# RESULTS ANOTHER ENGINE MADE ARE NOT LAID OVER, AND NOT KEPT: the branch starts
+# afresh (its history stays), so the manifest's `godot` is true of every file.
+WAS="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1])).get("godot", ""))' "$KEEP/manifest.json" 2>/dev/null)"
+if [ -n "$(cd "$KEEP" && git ls-files)" ] && [ "$WAS" != "$GODOT" ]; then
+  echo "backlog: the kept results were made under Godot ${WAS:-unknown}, not $GODOT -- starting them afresh"
+  ( cd "$KEEP" && git rm -rqf . )
 fi
 # LAID OVER library/: what an earlier run finished is current, so not searched again.
 laid=0
@@ -102,12 +114,12 @@ while IFS= read -r rel; do
 done < <(kept_paths)
 LEFT="$( (cd "$LIB" && tools/derive-backlog.sh --list 2>/dev/null) | grep -E 'record\(s\) on the' | sed 's/^ *//' | paste -sd ';' -)"
 restore_library
-python3 - "$KEEP/manifest.json" "$PIN" "$how" "$LEFT" <<'EOF'
+python3 - "$KEEP/manifest.json" "$PIN" "$how" "$LEFT" "$GODOT" <<'EOF'
 import json, os, sys, datetime
-path, pin, how, left = sys.argv[1:5]
+path, pin, how, left, godot = sys.argv[1:6]
 run = os.environ.get("GITHUB_RUN_ID")
 m = {"library": pin, "written_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-     "job": how, "backlog_left": left}
+     "job": how, "backlog_left": left, "godot": godot}
 if run:
     m["run"] = "%s/%s/actions/runs/%s" % (os.environ.get("GITHUB_SERVER_URL", "https://github.com"),
                                           os.environ.get("GITHUB_REPOSITORY", ""), run)
@@ -115,7 +127,7 @@ open(path, "w").write(json.dumps(m, indent=1, sort_keys=True) + "\n")
 EOF
 cd "$KEEP"
 git add -A
-if git diff --cached --quiet -- generators test; then
+if git diff --cached --quiet -- generators test && [ "$WAS" = "$GODOT" ]; then
   echo "backlog: nothing new to keep ($n file(s) written, all as kept before; $bad cut mid-write)"
   exit 0
 fi
