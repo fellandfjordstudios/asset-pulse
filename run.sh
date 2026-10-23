@@ -57,10 +57,15 @@ PIN="$(sed -n 's/^commit=//p' library.lock)"
 SCORECARD="library/tools/scorecard.py"
 [ -f "$SCORECARD" ] || SCORECARD="library/fable-plans/notes/scorecard-prototype.py"
 ( cd library && python3 "../$SCORECARD" ) > "$OUT/scorecard.txt" || fail_row "scorecard"
-TOTALS="$( cd library && python3 "../$SCORECARD" --json )" || fail_row "scorecard-json"
+# The JSON goes to a file, not an argument: Linux refuses one argument over
+# 128 KiB (MAX_ARG_STRLEN), and the scorecard passed that on 2026-10-22.
+TOTALS="$OUT/scorecard.json"
+( cd library && python3 "../$SCORECARD" --json ) > "$TOTALS" || fail_row "scorecard-json"
 ROW="$(python3 - "$DATE" "$PIN" "$TOTALS" <<'PY'
 import json, sys
-d, pin, raw = sys.argv[1], sys.argv[2], json.loads(sys.argv[3])
+d, pin = sys.argv[1], sys.argv[2]
+with open(sys.argv[3]) as f:
+    raw = json.load(f)
 # tools/scorecard.py (the library's, since 2026-10-03) nests its totals beside
 # the per-subject rows; the prototype printed them flat. The names are its own.
 t = raw.get("totals", raw)
