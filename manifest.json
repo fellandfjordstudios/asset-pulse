@@ -1,0 +1,7 @@
+{
+ "backlog_left": "75 record(s) on the derivation backlog;125 drawn-ladder record(s) on the backlog (tools/drawn-ladder.sh --stale)",
+ "job": "stopped at the budget (18600 s) in the stale records; the next run resumes",
+ "library": "aa2d44b2141d21c65b7d9730302e908a86c1b7b6",
+ "run": "https://github.com/fellandfjordstudios/asset-pulse/actions/runs/39996186395",
+ "written_at": "2026-10-23T22:46:05Z"
+}

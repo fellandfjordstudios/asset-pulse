@@ -1,0 +1,136 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"leaf_length_m": 0.0800000000000000017
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"leaf_length_m": 0.280000000000000027
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"dihedral_deg": 4.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"dihedral_deg": 30.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"arch_deg": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"arch_deg": 35.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "plant/rowan-leaf",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 8,
+		"sampled": 8,
+		"sets": 8
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 2,
+				"trace": "plant__rowan-leaf#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "c6020bc83d8868f5503fdee482cd3eefd8308ca1ac6daff9dd9395a81f07d2d5"
+	},
+	"rungs": {
+		"1": {
+			"budget": 3493,
+			"checked_at": 8,
+			"drawn": {
+				"excess": 0.25,
+				"judge": "drawn",
+				"pixel_m": 0.012447999999999999
+			},
+			"error": 0.073224317721276827,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"reduce",
+					"thin",
+					"impostor",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 8,
+				"coverage_rel": 0.0149400000000000019,
+				"floor": 0.0056100000000000004,
+				"part_shift": {
+
+				},
+				"picture": 0.0754700000000000093
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"REDUCE from rung 0: nothing to try",
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "9b3d59ce7752ab40f219c3f795bff734f2550ad30f098b04360806978d43a59d"
+	}
+}

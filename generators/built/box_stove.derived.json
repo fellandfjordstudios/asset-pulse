@@ -1,0 +1,468 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pipe_length_m": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"door_open": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"draught_open": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"draught_open": 1.0
+			},
+			"seed": 314
+		}
+	],
+	"id": "built/box-stove",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"structural",
+			"shape",
+			"shape"
+		],
+		"old_key_sets": 5,
+		"sampled": 5,
+		"sets": 2
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__box-stove#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 1,
+				"trace": "built__box-stove#2.trace.jsonl"
+			},
+			"3": {
+				"candidates": 0,
+				"trace": "built__box-stove#3.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "a39abc2935d0236c075139c34247d37bf2645142f270c3fc3b20fc9a414a8b5e",
+		"2": "142e154977d41395089ab9ed4380f7c67d9e9f8ad7371182a18c00091c00b5bc",
+		"3": "3b1234042cc945266eb99b1d1e471f1bfcf8993fcd2899a39456aa012fa56725"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117,
+			"checked_at": 5,
+			"drawn": {
+				"excess": 0.5,
+				"gap": 0.0500000000000000028,
+				"judge": "drawn",
+				"pixel_m": 0.00164799999999999994
+			},
+			"error": 0.00185185185185185149,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"fastener": 0.03125
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel, keeping fastener 0.031)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 2666,
+				"coverage_rel": -0.00149000000000000022,
+				"floor": 0.00460000000000000079,
+				"part_shift": {
+
+				},
+				"picture": 0.00460000000000000079
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"door_open\":1.0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00178 m",
+				"IMPOSTOR, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastener 0.031)) is 1 route(s), and the one looked at did not improve on it"
+			],
+			"route": "kit",
+			"surfaces": 8,
+			"surfaces_ceiling": 8
+		},
+		"2": {
+			"budget": 9779,
+			"checked_at": 5,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.0065929999999999999
+			},
+			"error": 0.00740740740740740596,
+			"fraction": 0.168069999999999942,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.168",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"thin"
+				]
+			},
+			"material_transfer": {
+				"checked_at": 5,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.031377844512462616,
+							0.0304452013224363327,
+							0.0290866252034902573
+						],
+						"mean_before": [
+							0.031377844512462616,
+							0.0304452013224363327,
+							0.0290866252034902573
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0000906703062355518341,
+							0.0000544720678590238094,
+							0.0000281122047454118729
+						],
+						"variance_before": [
+							0.0000906703062355518341,
+							0.0000544720678590238094,
+							0.0000281122047454118729
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0315206870436668396,
+							0.0304999891668558121,
+							0.0291213300079107285
+						],
+						"mean_before": [
+							0.0315206870436668396,
+							0.0304999891668558121,
+							0.0291213300079107285
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0000842261360958218575,
+							0.0000504024792462587357,
+							0.0000258002546615898609
+						],
+						"variance_before": [
+							0.0000842261360958218575,
+							0.0000504024792462587357,
+							0.0000258002546615898609
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0313825234770774841,
+							0.0304474867880344391,
+							0.0290889441967010498
+						],
+						"mean_before": [
+							0.0313825234770774841,
+							0.0304474867880344391,
+							0.0290889441967010498
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0000904253683984279633,
+							0.0000543131027370691299,
+							0.0000280176172964274883
+						],
+						"variance_before": [
+							0.0000904253683984279633,
+							0.0000543131027370691299,
+							0.0000280176172964274883
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.031377844512462616,
+							0.0304452013224363327,
+							0.0290866252034902573
+						],
+						"mean_before": [
+							0.031377844512462616,
+							0.0304452013224363327,
+							0.0290866252034902573
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0000906703062355518341,
+							0.0000544720678590238094,
+							0.0000281122047454118729
+						],
+						"variance_before": [
+							0.0000906703062355518341,
+							0.0000544720678590238094,
+							0.0000281122047454118729
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.031377844512462616,
+							0.0304452013224363327,
+							0.0290866252034902573
+						],
+						"mean_before": [
+							0.031377844512462616,
+							0.0304452013224363327,
+							0.0290866252034902573
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0000906703062355518341,
+							0.0000544720678590238094,
+							0.0000281122047454118729
+						],
+						"variance_before": [
+							0.0000906703062355518341,
+							0.0000544720678590238094,
+							0.0000281122047454118729
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 1232,
+				"coverage_rel": -0.00665000000000000053,
+				"floor": 0.00460000000000000079,
+				"part_shift": {
+
+				},
+				"picture": 0.00708000000000000036
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00659 m",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00659 m",
+				"THIN: not searched -- the look past the first that held (REDUCE to 0.168) is 1 route(s), and the one looked at did not improve on it"
+			],
+			"route": "reduce",
+			"routes": {
+				"reduce": 71.0
+			},
+			"surfaces": 4,
+			"surfaces_ceiling": 1
+		},
+		"3": {
+			"budget": 2444,
+			"checked_at": 5,
+			"drawn": {
+				"excess": 0.25,
+				"gap": 0.394000000000000017,
+				"judge": "drawn",
+				"pixel_m": 0.0263699999999999976
+			},
+			"error": 0.0296296296296296238,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"fastener": 0.03125
+			},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel, keeping fastener 0.031)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"thin"
+				]
+			},
+			"material_transfer": {
+				"checked_at": 5,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.0313940122723579407,
+							0.0304745789617300034,
+							0.0291519463062286377
+						],
+						"mean_before": [
+							0.0313940122723579407,
+							0.0304745789617300034,
+							0.0291519463062286377
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0000917733414098620415,
+							0.0000551531556993722916,
+							0.0000281897373497486115
+						],
+						"variance_before": [
+							0.0000917733414098620415,
+							0.0000551531556993722916,
+							0.0000281897373497486115
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0315100103616714478,
+							0.030508045107126236,
+							0.0291709341108798981
+						],
+						"mean_before": [
+							0.0315100103616714478,
+							0.030508045107126236,
+							0.0291709341108798981
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0000851656077429652214,
+							0.0000510953250341117382,
+							0.0000261120731011033058
+						],
+						"variance_before": [
+							0.0000851656077429652214,
+							0.0000510953250341117382,
+							0.0000261120731011033058
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0313940122723579407,
+							0.0304745789617300034,
+							0.0291519444435834885
+						],
+						"mean_before": [
+							0.0313940122723579407,
+							0.0304745789617300034,
+							0.0291519444435834885
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0000917733414098620415,
+							0.0000551530392840504646,
+							0.0000281898537650704384
+						],
+						"variance_before": [
+							0.0000917733414098620415,
+							0.0000551530392840504646,
+							0.0000281898537650704384
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0313940122723579407,
+							0.0304745789617300034,
+							0.0291519463062286377
+						],
+						"mean_before": [
+							0.0313940122723579407,
+							0.0304745789617300034,
+							0.0291519463062286377
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0000917733414098620415,
+							0.0000551531556993722916,
+							0.0000281897373497486115
+						],
+						"variance_before": [
+							0.0000917733414098620415,
+							0.0000551531556993722916,
+							0.0000281897373497486115
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0313940122723579407,
+							0.0304745789617300034,
+							0.0291519463062286377
+						],
+						"mean_before": [
+							0.0313940122723579407,
+							0.0304745789617300034,
+							0.0291519463062286377
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0000917733414098620415,
+							0.0000551531556993722916,
+							0.0000281897373497486115
+						],
+						"variance_before": [
+							0.0000917733414098620415,
+							0.0000551531556993722916,
+							0.0000281897373497486115
+						]
+					}
+				],
+				"holds": true
+			},
+			"measured": {
+				"cost": 1206,
+				"coverage_rel": -0.00908000000000000126,
+				"floor": 0.00460000000000000079,
+				"part_shift": {
+
+				},
+				"picture": 0.00614000000000000049
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
+				"KIT at 4 pixels: none holds at 0.0296 -- the finest tried (1.000) fails at {\"door_open\":1.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.02851 m",
+				"IMPOSTOR, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastener 0.031)) is 1 route(s)",
+				"REDUCE to 0.118 held at 782, cheaper than the 1206 taken, but a replay of rung 0: KIT is within budget and builds directly"
+			],
+			"route": "kit",
+			"surfaces": 4,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "407fb284cd1d8512322cd6862aec897676de2c1dbda2bed6175332696a5fe24f"
+	}
+}

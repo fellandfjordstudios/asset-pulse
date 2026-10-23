@@ -1,0 +1,123 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"size": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"size": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"loft": 0.400000000000000022
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"loft": 1.19999999999999996
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"knit_thickness_m": 0.000760000000000000042
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"knit_thickness_m": 0.00204000000000000015
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "built/folded-wool-layer",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"seed"
+		],
+		"old_key_sets": 8,
+		"sampled": 8,
+		"sets": 2
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__folded-wool-layer#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "f2bb14741728eca2043788f0b1125118c88bb0dfe5df31b103e8fb8d35c26a2e"
+	},
+	"rungs": {
+		"1": {
+			"budget": 6387,
+			"checked_at": 8,
+			"drawn": {
+				"excess": 0.0,
+				"judge": "drawn",
+				"pixel_m": 0.00129699999999999998
+			},
+			"error": 0.00400000000000000008,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"measured": {
+				"cost": 468,
+				"coverage_rel": -0.000740000000000000098,
+				"floor": 0.00449000000000000007,
+				"part_shift": {
+
+				},
+				"picture": 0.00449000000000000007
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
+			],
+			"route": "kit",
+			"surfaces": 2,
+			"surfaces_ceiling": 2
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "3709be45b6749c93738cabb7fb3f89d9c8a45558321324e248827a05a82918d5"
+	}
+}

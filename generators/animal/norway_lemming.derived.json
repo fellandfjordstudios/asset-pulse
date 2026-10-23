@@ -1,0 +1,139 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"head_body_m": 0.0950000000000000011
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"head_body_m": 0.154999999999999999
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pelage_depth_m": 0.00600000000000000012
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pelage_depth_m": 0.0240000000000000005
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"width_over_depth": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"width_over_depth": 0.900000000000000022
+			},
+			"seed": 314
+		}
+	],
+	"id": "animal/norway-lemming",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural"
+		],
+		"old_key_sets": 7,
+		"sampled": 7,
+		"sets": 7
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "animal__norway-lemming#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "f9b9e370ce09f45f90a4838bd340cb20382d57d8867c82895aafae66199532ee"
+	},
+	"rungs": {
+		"1": {
+			"budget": 2232,
+			"checked_at": 7,
+			"drawn": {
+				"excess": 0.4375,
+				"judge": "drawn",
+				"pixel_m": 0.00135399999999999995
+			},
+			"error": 0.00845243667523380704,
+			"every_piece": true,
+			"fraction": 0.489999999999999936,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to 0.490",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 1866,
+				"coverage_rel": -0.0068800000000000007,
+				"floor": 0.00398000000000000003,
+				"part_shift": {
+					"belly": 0.000640000000000000052,
+					"cap": -0.000780000000000000094,
+					"cheek": 0.00110000000000000007,
+					"claw": -0.000950000000000000107,
+					"coat": 0.00130000000000000016,
+					"ear_inner": -0.000480000000000000066,
+					"eye": -0.000870000000000000114,
+					"foot": 0.000510000000000000037,
+					"incisor": -0.0016100000000000001,
+					"mask": 0.00028000000000000003,
+					"nose": 0.0000100000000000000008
+				},
+				"picture": 0.00510000000000000037
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"REDUCE from rung 0 at {} seed 314: element 4's part 'claw' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"KIT (its own build at the rung's pixel) held at 3708, dearer than the 1866 taken"
+			],
+			"route": "reduce",
+			"routes": {
+				"reduce": 12.0
+			},
+			"surfaces": 11,
+			"surfaces_ceiling": 11
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "27747ed6c64efd0776275e25fb74f7146d7c1885c118932919f74bdac28a90fa"
+	}
+}

@@ -1,0 +1,265 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"length_m": 0.5
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"length_m": 1.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"width_m": 0.340000000000000024
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"width_m": 0.599999999999999978
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"side_height_m": 0.0400000000000000008
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"side_height_m": 0.25
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"slat_width_m": 0.0160000000000000003
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"slat_width_m": 0.0400000000000000008
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"slat_gap_m": 0.00400000000000000008
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"slat_gap_m": 0.0250000000000000014
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"entrances": 2.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"rope_diameter_m": 0.00600000000000000012
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"rope_diameter_m": 0.0200000000000000004
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"mesh_m": 0.0120000000000000002
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"mesh_m": 0.0400000000000000008
+			},
+			"seed": 314.0
+		}
+	],
+	"id": "built/lobster-pot",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural"
+		],
+		"old_key_sets": 16.0,
+		"sampled": 16.0,
+		"sets": 16.0
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314.0
+	},
+	"replay": {
+		"1": "7238a3de969fe29fb5087f04cd62c3623c00dcb97e8baeb2c43ffaee89fae1b2",
+		"2": "dc0fd8f7bca4578a45c3b11a69e7ae034eb1c107f3d1b94a45f094ae96dd9dac",
+		"3": "9eb6550e4723083f8ba3f5884f2dbf2d1cab0773211397cd91b2a70139373fde"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117.0,
+			"checked_at": 16.0,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0.0,
+			"measured": {
+				"cost": 28132.0,
+				"coverage_rel": 0.0,
+				"floor": 0.00545999999999999958,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 1.0,
+			"not_taken": [
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 135 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00134 m",
+				"REDUCE from rung 0 at {} seed 314: part 'wood' is 78 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"length_m\":0.5} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00094 m",
+				"IMPOSTOR at 6x6 frames from rung 0: 55159 pixel(s) differ at {} seed 314 (worst 0.76)",
+				"IMPOSTOR at 8x8 frames from rung 0: 47348 pixel(s) differ at {} seed 314 (worst 0.60)",
+				"IMPOSTOR at 12x12 frames from rung 0: 44411 pixel(s) differ at {} seed 314 (worst 0.62)",
+				"IMPOSTOR at 16x16 frames from rung 0: 30262 pixel(s) differ at {} seed 314 (worst 0.77)",
+				"THIN: built/lobster-pot does not declare `reads_density`"
+			],
+			"route": "rung0",
+			"surfaces": 6.0,
+			"surfaces_ceiling": 6.0,
+			"tolerance": 0.00185185185185184997
+		},
+		"2": {
+			"budget": 9779.0,
+			"checked_at": 16.0,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.0107539999999999997
+			},
+			"error": 0.0148148148148148102,
+			"fraction": 1.0,
+			"from_rung": 0.0,
+			"keep": {
+
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at 2 of the band's pixels)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"thin"
+				]
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 4508.0,
+				"coverage_rel": -0.0362099999999999991,
+				"floor": 0.00545999999999999958,
+				"part_shift": {
+					"end_grain": -0.00957000000000000038,
+					"galvanised": -0.000710000000000000019,
+					"iron": 0.000320000000000000026,
+					"net": -0.00517000000000000012,
+					"rope": 0.00553000000000000019,
+					"wood": 0.00897000000000000054
+				},
+				"picture": 0.00545999999999999958
+			},
+			"measured_of": 3.0,
+			"not_taken": [
+				"REDUCE from rung 0 at {} seed 314: part 'wood' is 78 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
+				"IMPOSTOR, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels)) is 1 route(s), and the one looked at did not improve on it",
+				"KIT (its own build at the rung's pixel) held at 10192, dearer than the 4508 taken",
+				"REDUCE (every piece) to 0.343 held at 10270, dearer than the 4508 taken"
+			],
+			"pixel_scale": 2.0,
+			"route": "kit",
+			"surfaces": 3.0,
+			"surfaces_ceiling": 1.0
+		},
+		"3": {
+			"budget": 2444.0,
+			"checked_at": 16.0,
+			"drawn": {
+				"excess": 0.5,
+				"gap": 0.912000000000000033,
+				"judge": "drawn",
+				"pixel_m": 0.0215069999999999983
+			},
+			"error": 0.118518518518518537,
+			"fraction": 1.0,
+			"from_rung": 0.0,
+			"keep": {
+				"nail": 0.03125,
+				"twine": 0.03125
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 1364.0,
+				"coverage_rel": -0.0576399999999999968,
+				"floor": 0.00545999999999999958,
+				"part_shift": {
+
+				},
+				"picture": 0.0260899999999999986
+			},
+			"measured_of": 2.0,
+			"not_taken": [
+				"IMPOSTOR at 6x6 frames from rung 0: 19 pixel(s) differ at {} seed 314 (worst 0.63)",
+				"IMPOSTOR at 8x8 frames from rung 0: 2 pixel(s) differ at {\"length_m\":1.0} seed 314 (worst 0.53)",
+				"IMPOSTOR at 12x12 frames from rung 0: 4 pixel(s) differ at {\"slat_gap_m\":0.025} seed 314 (worst 0.58)",
+				"IMPOSTOR at 16x16 frames from rung 0: 11 pixel(s) differ at {\"slat_gap_m\":0.025} seed 314 (worst 0.60)",
+				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)",
+				"KIT (its own build at the rung's pixel, keeping nail 0.031, twine 0.031) held at 2412, dearer than the 1364 taken"
+			],
+			"pixel_scale": 4.0,
+			"route": "kit",
+			"surfaces": 3.0,
+			"surfaces_ceiling": 1.0
+		}
+	},
+	"source": {
+		"children": "7c505c9b4358f94e332e105dc0659f5e88eba7b3b74bc1f533ffe0a38817302e",
+		"deriver": "440273563dac65fc840f978d25ae74651ebce7cc41a0310a1f04f9921459c20b",
+		"generator": "a26c766951a08f5e021a15dc9a8c4a7c9b12f21c66b6197b710a9a910d6986d8"
+	}
+}

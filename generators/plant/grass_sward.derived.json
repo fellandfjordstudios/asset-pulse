@@ -1,0 +1,231 @@
+{
+	"checked_at": [
+		{
+			"params": {
+				"extent_m": 0.119999999999999996
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"extent_m": 0.0599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"extent_m": 0.479999999999999982
+			},
+			"seed": 314,
+			"short_of": {
+				"end": 8.0,
+				"param": "extent_m",
+				"why": "rung 0 at extent_m = 0.96 is 500202 triangles, over 32 x the probe's"
+			}
+		},
+		{
+			"params": {
+				"extent_m": 0.119999999999999996,
+				"spacing_m": 0.00600000000000000012
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"canopy_height_m": 0.0200000000000000004,
+				"extent_m": 0.119999999999999996
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"canopy_height_m": 0.450000000000000011,
+				"extent_m": 0.119999999999999996
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"extent_m": 0.119999999999999996,
+				"height_spread": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"extent_m": 0.119999999999999996,
+				"height_spread": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"extent_m": 0.119999999999999996,
+				"senescent_fraction": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"extent_m": 0.119999999999999996,
+				"senescent_fraction": 0.450000000000000011
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"extent_m": 0.119999999999999996
+			},
+			"seed": 315
+		}
+	],
+	"id": "plant/grass-sward",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 11,
+		"sampled": 11,
+		"sets": 11
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "plant__grass-sward#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "plant__grass-sward#2.trace.jsonl"
+			},
+			"3": {
+				"candidates": 0,
+				"trace": "plant__grass-sward#3.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+			"extent_m": 0.119999999999999996
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "cb2b9dcd8e61648092ef6e9a68eb3446bdaded2d406516de4c0181b498d8daac",
+		"2": "bf18b1fc58d7f043c2a086314a320207c6b27ff6e2d1648f129e878b367f7746",
+		"3": "c81845a561e82bd054ecc92dab859681700a8d267bf0c4f09509b5420d323c8e"
+	},
+	"rungs": {
+		"1": {
+			"above_tolerance": true,
+			"budget": 13108,
+			"checked_at": 11,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"measured": {
+				"cost": 9018,
+				"coverage_rel": 0.00424000000000000071,
+				"floor": 0.00474000000000000029,
+				"part_shift": {
+
+				},
+				"picture": 0.0644699999999999995
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"REDUCE from rung 0 at {\"extent_m\":0.12} seed 314: element 4's part 'body' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 15 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0023 -- the finest tried (0.700) fails at {\"extent_m\":0.12} seed 314: the picture moves 0.2269 of the extent against 0.0023 allowed (one pixel at the rung's near distance; raster floor 0.0044); coverage changes -0.2102 against 0.0264 allowed (a one-pixel shrink all round)",
+				"KIT: none holds at 0.0023 -- the finest tried (1.000) fails at {\"extent_m\":0.12} seed 314: the picture moves 0.0222 of the extent against 0.0023 allowed (one pixel at the rung's near distance; raster floor 0.0044)",
+				"THIN: plant/grass-sward does not declare `reads_density`"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.00228825992878990128
+		},
+		"2": {
+			"above_tolerance": true,
+			"budget": 3277,
+			"checked_at": 11,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"blade": 0.489999999999999991,
+				"tuft": 0.489999999999999991
+			},
+			"measured": {
+				"cost": 2478,
+				"coverage_rel": 0.204710000000000003,
+				"floor": 0.00474000000000000029,
+				"part_shift": {
+
+				},
+				"picture": 0.333690000000000042
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"REDUCE from rung 0 at {\"extent_m\":0.12} seed 314: element 4's part 'body' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 15 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0046 -- the finest tried (0.700) fails at {\"extent_m\":0.12} seed 314: the picture moves 0.2269 of the extent against 0.0046 allowed (one pixel at the rung's near distance; raster floor 0.0044); coverage changes -0.2102 against 0.0354 allowed (a one-pixel shrink all round)",
+				"KIT: none holds at 0.0046 -- the finest tried (1.000) fails at {\"extent_m\":0.12} seed 314: the picture moves 0.1868 of the extent against 0.0046 allowed (one pixel at the rung's near distance; raster floor 0.0044); coverage changes +0.0564 against 0.0354 allowed (a one-pixel shrink all round)",
+				"THIN: plant/grass-sward does not declare `reads_density`"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.00915303971515960511
+		},
+		"3": {
+			"above_tolerance": true,
+			"budget": 819,
+			"checked_at": 11,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"blade": 0.240100000000000008,
+				"tuft": 0.240100000000000008
+			},
+			"measured": {
+				"cost": 616,
+				"coverage_rel": -0.483070000000000055,
+				"floor": 0.00474000000000000029,
+				"part_shift": {
+
+				},
+				"picture": 0.387180000000000024
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"REDUCE from rung 0 at {\"extent_m\":0.12} seed 314: element 4's part 'body' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 15 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0092 -- the finest tried (0.700) fails at {\"extent_m\":0.12} seed 314: the picture moves 0.2269 of the extent against 0.0092 allowed (one pixel at the rung's near distance; raster floor 0.0044); coverage changes -0.2102 against 0.0533 allowed (a one-pixel shrink all round)",
+				"KIT: none holds at 0.0092 -- the finest tried (1.000) fails at {\"extent_m\":0.12} seed 314: the picture moves 0.3361 of the extent against 0.0092 allowed (one pixel at the rung's near distance; raster floor 0.0044); coverage changes -0.1077 against 0.0533 allowed (a one-pixel shrink all round)",
+				"THIN: plant/grass-sward does not declare `reads_density`"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.0366121588606384205
+		}
+	},
+	"source": {
+		"children": "e43d4e883ae5d459ec2959fbdfb5d3dc3b7af9a49b2fd4326921fbd277fe4a0f",
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "db05dea8174dcdfa1ea8a144f2b134420bf8583fc6e8e10ddbf45b2f80df8358"
+	}
+}

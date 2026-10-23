@@ -1,0 +1,144 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"ring_d_m": 0.100000000000000006
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"ring_d_m": 0.349999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bar_d_m": 0.0149999999999999994
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bar_d_m": 0.0400000000000000008
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"weld": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"fixing": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"setting": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"mount": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"ring_lift_deg": 180.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "built/mooring-ring",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"shape",
+			"seed"
+		],
+		"old_key_sets": 11,
+		"sampled": 11,
+		"sets": 10
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__mooring-ring#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "fbb1280dff0a9be29f1c7fbee8c22355179edce33ccebaab4b0a922f3cb9ba38"
+	},
+	"rungs": {
+		"1": {
+			"budget": 4806,
+			"checked_at": 11,
+			"drawn": {
+				"excess": 0.3125,
+				"judge": "drawn",
+				"pixel_m": 0.00129699999999999998
+			},
+			"error": 0.00493747859219178555,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"measured": {
+				"cost": 3812,
+				"coverage_rel": -0.00509000000000000077,
+				"floor": 0.0040300000000000006,
+				"part_shift": {
+
+				},
+				"picture": 0.0040300000000000006
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
+			],
+			"route": "kit",
+			"surfaces": 3,
+			"surfaces_ceiling": 3
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "c5c5adf30aecaf3ac80c54c1de7cdcbd01cf249f3435e8afe6950d77f15f7765"
+	}
+}

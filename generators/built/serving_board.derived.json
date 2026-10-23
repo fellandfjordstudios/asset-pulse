@@ -1,0 +1,87 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		}
+	],
+	"id": "built/serving-board",
+	"keyed_on": {
+		"moves": [
+			"probe"
+		],
+		"old_key_sets": 1,
+		"sampled": 1,
+		"sets": 1
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__serving-board#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "89f55ad8a0253e49cfea91567a904710b83a5f375bac6393591f3d3f2ba79ecb"
+	},
+	"rungs": {
+		"1": {
+			"budget": 8169,
+			"checked_at": 1,
+			"drawn": {
+				"excess": 0.25,
+				"judge": "drawn",
+				"pixel_m": 0.00129699999999999998
+			},
+			"error": 0.00405212695723211613,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 256,
+				"coverage_rel": -0.00270000000000000014,
+				"floor": 0.00406000000000000024,
+				"part_shift": {
+
+				},
+				"picture": 0.00406000000000000024
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"REDUCE to 0.490 held at 202, cheaper than the 256 taken, but a replay of rung 0: KIT is within budget and builds directly"
+			],
+			"route": "kit",
+			"surfaces": 2,
+			"surfaces_ceiling": 2
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "37a30b7c8dcae081a14d6bb3c8e2e49e97a26f6fe2591750ef17457f44ab31e7"
+	}
+}

@@ -1,0 +1,175 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.900000000000000022
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"width_m": 0.340000000000000024
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"width_m": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.239999999999999991
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.380000000000000004
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"hoops": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"mesh_m": 0.0250000000000000014
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"mesh_m": 0.0449999999999999983
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"weed": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"weed": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"damage": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"damage": 0.0500000000000000028
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"door_open": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "built/creel",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"shape",
+			"seed"
+		],
+		"old_key_sets": 16,
+		"sampled": 16,
+		"sets": 15
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__creel#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "df9eb5d4d8d20efba8f6e817706970682bbadd39145e2253218c9450cef3c8bc"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117,
+			"checked_at": 16,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 27366,
+				"coverage_rel": 0.0,
+				"floor": 0.00490000000000000071,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00139 m",
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"THIN: built/creel does not declare `reads_density`"
+			],
+			"route": "rung0",
+			"surfaces": 8,
+			"surfaces_ceiling": 8,
+			"tolerance": 0.00185185185185185192
+		}
+	},
+	"source": {
+		"children": "ca2427f2c1c6b6b9f530b55c1eef41c9c1179fd50e708badf6de14632b4aa8e3",
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "b847a1bc453da993b932b5670efa100891cfaddf1fdbdf669232e9f68f0c3006"
+	}
+}

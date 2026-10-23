@@ -1,0 +1,245 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"needle_length_m": 0.0149999999999999994
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"needle_length_m": 0.25
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"needles_per_fascicle": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"needles_per_fascicle": 8
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cohorts": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cohorts": 8
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"fascicles_per_cohort": 2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"fascicles_per_cohort": 24
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"shoot_length_m": 0.0299999999999999989
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"shoot_length_m": 0.400000000000000022
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"clothed_fraction": 0.149999999999999994
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"clothed_fraction": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"needle_length_spread": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"needle_length_spread": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"splay_deg": 5.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"splay_deg": 75.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"axis_diameter_m": 0.00100000000000000002
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"axis_diameter_m": 0.0299999999999999989
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "plant/pine-shoot",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 20,
+		"sampled": 20,
+		"sets": 20
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "plant__pine-shoot#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 1,
+				"trace": "plant__pine-shoot#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "5c726fe7c667039f95999287c8809bb377b9355a69b2e3c315fe870a972a21d0",
+		"2": "5c726fe7c667039f95999287c8809bb377b9355a69b2e3c315fe870a972a21d0"
+	},
+	"rungs": {
+		"1": {
+			"budget": 6081,
+			"checked_at": 20,
+			"drawn": {
+				"excess": 0.0,
+				"judge": "drawn",
+				"pixel_m": 0.000777999999999999937
+			},
+			"error": 0.00324235731156345382,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"measured": {
+				"cost": 646,
+				"coverage_rel": 0.0,
+				"floor": 0.0043,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"REDUCE from rung 0 at {} seed 314: element 1's part 'body' is 21 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"REDUCE (every piece) from rung 0: none holds at 0.0032 -- the finest tried (0.700) fails at {} seed 314: the picture moves 0.0244 of the extent against 0.0032 allowed (one pixel at the rung's near distance; raster floor 0.0040); coverage changes -0.1628 against 0.0289 allowed (a one-pixel shrink all round)"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		},
+		"2": {
+			"budget": 1520,
+			"checked_at": 20,
+			"drawn": {
+				"excess": 0.0,
+				"judge": "drawn",
+				"pixel_m": 0.00311199999999999975
+			},
+			"error": 0.0129694292462538153,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"measured": {
+				"cost": 646,
+				"coverage_rel": 0.0,
+				"floor": 0.0043,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"REDUCE from rung 0 at {} seed 314: element 1's part 'body' is 21 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"REDUCE (every piece) from rung 0: none holds at 0.0065 -- the finest tried (0.700) fails at {} seed 314: the picture moves 0.0244 of the extent against 0.0065 allowed (one pixel at the rung's near distance; raster floor 0.0040); coverage changes -0.1628 against 0.0416 allowed (a one-pixel shrink all round)"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "0ed1e4d4f8046974830bf92185bda90307409713f502fe68c71255d734672007"
+	}
+}

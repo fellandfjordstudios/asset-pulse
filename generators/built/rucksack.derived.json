@@ -1,0 +1,318 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.46000000000000002
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.560000000000000053
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"fullness": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"fullness": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"flap_open": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"side_pockets": 0
+			},
+			"seed": 314
+		}
+	],
+	"id": "built/rucksack",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"structural"
+		],
+		"old_key_sets": 7,
+		"sampled": 7,
+		"sets": 2
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__rucksack#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "built__rucksack#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "2a0e4659856d8afd0e2226848fa0600015fa978fcc86a51af96f6518200cccc1",
+		"2": "6ca113c981a18af2ba9ed0148e5276128e229a24d5a2fccd129f251ed610871a"
+	},
+	"rungs": {
+		"1": {
+			"budget": 16504,
+			"checked_at": 7,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 2122,
+				"coverage_rel": 0.0,
+				"floor": 0.00472000000000000024,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0026 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 10 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00120 m",
+				"REDUCE from rung 0: none holds at 0.0026 -- the finest tried (0.700) fails at {\"fullness\":0.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00109 m",
+				"THIN: built/rucksack does not declare `reads_density`"
+			],
+			"route": "rung0",
+			"surfaces": 4,
+			"surfaces_ceiling": 4,
+			"tolerance": 0.00262840667496137262
+		},
+		"2": {
+			"budget": 4126,
+			"checked_at": 7,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"material_transfer": {
+				"checked_at": 7,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.120736889541149139,
+							0.0911086946725845337,
+							0.057671722024679184
+						],
+						"mean_before": [
+							0.120736889541149139,
+							0.0911086946725845337,
+							0.057671722024679184
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00458682328462600708,
+							0.00238828640431165695,
+							0.000839934917166829109
+						],
+						"variance_before": [
+							0.00458682328462600708,
+							0.00238828640431165695,
+							0.000839934917166829109
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.120735935866832733,
+							0.0911050066351890564,
+							0.0576672106981277466
+						],
+						"mean_before": [
+							0.120735935866832733,
+							0.0911050066351890564,
+							0.0576672106981277466
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0045831603929400444,
+							0.00238646101206541061,
+							0.000839400338008999825
+						],
+						"variance_before": [
+							0.0045831603929400444,
+							0.00238646101206541061,
+							0.000839400338008999825
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.120738275349140167,
+							0.091114826500415802,
+							0.057678617537021637
+						],
+						"mean_before": [
+							0.120738275349140167,
+							0.091114826500415802,
+							0.057678617537021637
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00459387712180614471,
+							0.00239178258925676346,
+							0.000841103959828615189
+						],
+						"variance_before": [
+							0.00459387712180614471,
+							0.00239178258925676346,
+							0.000841103959828615189
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.12087598443031311,
+							0.0912440642714500427,
+							0.0577681511640548706
+						],
+						"mean_before": [
+							0.12087598443031311,
+							0.0912440642714500427,
+							0.0577681511640548706
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00457683950662612915,
+							0.00238198880106210709,
+							0.000837435480207204819
+						],
+						"variance_before": [
+							0.00457683950662612915,
+							0.00238198880106210709,
+							0.000837435480207204819
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.120773725211620331,
+							0.0911239758133888245,
+							0.0576757527887821198
+						],
+						"mean_before": [
+							0.120773725211620331,
+							0.0911239758133888245,
+							0.0576757527887821198
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00463934894651174545,
+							0.00241573434323072433,
+							0.000849687494337558746
+						],
+						"variance_before": [
+							0.00463934894651174545,
+							0.00241573434323072433,
+							0.000849687494337558746
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.120736882090568542,
+							0.0911086797714233398,
+							0.0576717257499694824
+						],
+						"mean_before": [
+							0.120736882090568542,
+							0.0911086797714233398,
+							0.0576717257499694824
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00458682514727115631,
+							0.0023882891982793808,
+							0.000839934451505541801
+						],
+						"variance_before": [
+							0.00458682514727115631,
+							0.0023882891982793808,
+							0.000839934451505541801
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.120430208742618561,
+							0.0907935425639152527,
+							0.0574415549635887146
+						],
+						"mean_before": [
+							0.120430208742618561,
+							0.0907935425639152527,
+							0.0574415549635887146
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00464994553476572037,
+							0.00242391787469387054,
+							0.000853320350870490074
+						],
+						"variance_before": [
+							0.00464994553476572037,
+							0.00242391787469387054,
+							0.000853320350870490074
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 2122,
+				"coverage_rel": 0.0,
+				"floor": 0.00472000000000000024,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0030 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 74 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00136 m",
+				"KIT at 2 pixels: none holds at 0.0030 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 220 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00136 m",
+				"REDUCE from rung 0: none holds at 0.0030 -- the finest tried (0.700) fails at {\"fullness\":0.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00124 m",
+				"THIN: built/rucksack does not declare `reads_density`"
+			],
+			"route": "rung0",
+			"surfaces": 2,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.00300000000000000006
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "e8ea911638e6385629497bd8c202c1d4236927809706371d13e0d8372ad4368b"
+	}
+}

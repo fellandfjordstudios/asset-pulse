@@ -1,0 +1,137 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 2.39999999999999991
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 3.60000000000000009
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.949999999999999956
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 1.14999999999999991
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"depth_m": 0.550000000000000044
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"depth_m": 0.75
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "built/shop-counter",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"seed"
+		],
+		"old_key_sets": 8,
+		"sampled": 8,
+		"sets": 2
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__shop-counter#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "58e55a4a6f1785f4d8ef8ebf388a3b8a9a406d36ad959922edf414941691735d"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117,
+			"checked_at": 8,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.00555600000000000017
+			},
+			"error": 0.00185185185185185192,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 3256,
+				"coverage_rel": -0.00031,
+				"floor": 0.00414000000000000045,
+				"part_shift": {
+
+				},
+				"picture": 0.00414000000000000045
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"REDUCE from rung 0 at {} seed 314: element 66's part 'brass' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"IMPOSTOR, MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
+				"REDUCE (every piece) to 0.700 held at 3322, dearer than the 3256 taken"
+			],
+			"route": "kit",
+			"surfaces": 5,
+			"surfaces_ceiling": 5
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "fa7d3b463f828cbaa8a571309e3478bbd912985771a4fe50ab44ba6c3bda8d2f"
+	}
+}

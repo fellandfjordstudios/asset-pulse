@@ -1,0 +1,157 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"needle_length_m": 0.0250000000000000014
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"needle_length_m": 0.0800000000000000017
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"size_spread": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"size_spread": 0.400000000000000022
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"density_per_m2": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"density_per_m2": 10000.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"patch_m": 0.25
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"matting": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"matting": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"split_share": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"split_share": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "plant/pine-needle-duff",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"structural",
+			"structural",
+			"structural",
+			"shape",
+			"shape",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 13,
+		"sampled": 13,
+		"sets": 7
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "plant__pine-needle-duff#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "38fce4135629301c0a5720d195cb60d2416b1120b1fdb70222c2b535ffad9175"
+	},
+	"rungs": {
+		"1": {
+			"above_tolerance": true,
+			"budget": 14224,
+			"checked_at": 13,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"debris": 0.117648999999999962
+			},
+			"measured": {
+				"cost": 18520,
+				"coverage_rel": 0.0453700000000000006,
+				"floor": 0.0056100000000000004,
+				"part_shift": {
+
+				},
+				"picture": 0.132840000000000014
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1046 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00185 m; part 'duff' changes its share of the picture by +0.0497 against 0.0296 allowed (its colour's share of the subject)",
+				"REDUCE from rung 0: nothing to try",
+				"THIN: plant/pine-needle-duff does not declare `reads_density`"
+			],
+			"route": "kit",
+			"surfaces": 5,
+			"surfaces_ceiling": 5,
+			"tolerance": 0.00185185185185185192
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "0142269a7a0c2cc5375b4fd3c877717e34455afdd7292ea5cc52efd7f4628fde"
+	}
+}

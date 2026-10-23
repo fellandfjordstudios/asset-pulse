@@ -1,0 +1,143 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"coil_length_m": 0.220000000000000001
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"dough_diameter_m": 0.0160000000000000003
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"dough_diameter_m": 0.0219999999999999987
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"shaft_diameter_m": 0.00800000000000000017
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"shaft_diameter_m": 0.0160000000000000003
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"shaft_length_m": 0.650000000000000022
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"shaft_length_m": 0.949999999999999956
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "food/twist-bread-coil",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"seed"
+		],
+		"old_key_sets": 9,
+		"sampled": 9,
+		"sets": 2
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "food__twist-bread-coil#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "09dc2c7bcc2b2c072e112c54feb351410c8772ca98e14f25451017e1477c9099"
+	},
+	"rungs": {
+		"1": {
+			"budget": 2760,
+			"checked_at": 9,
+			"drawn": {
+				"excess": 0.25,
+				"judge": "drawn",
+				"pixel_m": 0.00136399999999999998
+			},
+			"error": 0.00720378125730154056,
+			"fraction": 0.489999999999999936,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.490",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 2208,
+				"coverage_rel": -0.00478999999999999999,
+				"floor": 0.0040300000000000006,
+				"part_shift": {
+					"browned_crust": 0.000380000000000000021,
+					"pale_dough": -0.000380000000000000021
+				},
+				"picture": 0.0040300000000000006
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0072 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.78), one pixel 0.00136 m"
+			],
+			"route": "reduce",
+			"routes": {
+				"reduce": 2.0
+			},
+			"surfaces": 2,
+			"surfaces_ceiling": 2
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "3cc6ec759a848126bd8c9226ca3659472a57097365a96d787917746819f9c677"
+	}
+}

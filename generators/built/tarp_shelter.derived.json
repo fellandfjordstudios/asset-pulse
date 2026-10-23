@@ -1,0 +1,181 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pitch": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"packed": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"span_m": 2.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"span_m": 8.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"anchor_a_height_m": 0.299999999999999989
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"anchor_a_height_m": 2.20000000000000018
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"anchor_b_height_m": 0.299999999999999989
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"anchor_b_height_m": 2.20000000000000018
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tarp_length_m": 2.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tarp_length_m": 3.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tarp_width_m": 1.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tarp_width_m": 3.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pitch_angle_deg": 25.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pitch_angle_deg": 70.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sag_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sag_m": 0.149999999999999994
+			},
+			"seed": 314
+		}
+	],
+	"id": "built/tarp-shelter",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape"
+		],
+		"old_key_sets": 17,
+		"sampled": 17,
+		"sets": 3
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__tarp-shelter#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "e1fb177644912d2c674a27abe50d167774df2179538fc420b16fad0ceac8be03"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117,
+			"checked_at": 17,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 398,
+				"coverage_rel": 0.0,
+				"floor": 0.00530000000000000002,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0040 -- the finest tried (1.000) fails at {\"span_m\":2.0} seed 314: the picture changes at the drawn size: 2732 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.88), one pixel 0.00803 m; coverage changes -0.0502 against 0.0369 allowed (a one-pixel shrink all round)",
+				"REDUCE from rung 0: none holds at 0.0040 -- the finest tried (0.700) fails at {\"packed\":1} seed 314: coverage changes -0.0166 against 0.0161 a derivation may change (its error read as a change of size)",
+				"THIN: built/tarp-shelter does not declare `reads_density`"
+			],
+			"route": "rung0",
+			"surfaces": 5,
+			"surfaces_ceiling": 5,
+			"tolerance": 0.00400000000000000008
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "be7ca694edd6ac7d3c9653947cb20c6bd9f9e07cbb54bee6f73cfb953abbaa4b"
+	}
+}

@@ -1,0 +1,149 @@
+{
+	"checked_at": [
+		{
+			"params": {
+				"extent_m": 1.80000000000000004
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"extent_m": 2.29999999999999982
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"extent_m": 1.80000000000000004,
+				"pose": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"extent_m": 1.80000000000000004
+			},
+			"seed": 315
+		}
+	],
+	"id": "built/marker-buoy",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"seed"
+		],
+		"old_key_sets": 4,
+		"sampled": 4,
+		"sets": 2
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__marker-buoy#1.trace.jsonl"
+			},
+			"3": {
+				"candidates": 7,
+				"trace": "built__marker-buoy#3.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+			"extent_m": 1.80000000000000004
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "3a78629e6536e5400327252c62eb46b64e4c53f6f6294bc6d600291009b3dec5",
+		"3": "dc43d3a3aad7bb5b44b674233127c21550d6966aabb0788bee0fb1176d27aca6"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117,
+			"checked_at": 4,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 31258,
+				"coverage_rel": 0.0,
+				"floor": 0.00398000000000000003,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"extent_m\":1.8} seed 314: the picture changes at the drawn size: 37 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.75), one pixel 0.00326 m",
+				"REDUCE from rung 0 at {\"extent_m\":1.8} seed 314: element 3's part 'iron' is 121 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"extent_m\":1.8} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.00326 m",
+				"THIN: built/marker-buoy does not declare `reads_density`"
+			],
+			"route": "rung0",
+			"surfaces": 9,
+			"surfaces_ceiling": 9,
+			"tolerance": 0.00185185185185185171
+		},
+		"3": {
+			"atlas_bytes": 9437184,
+			"atlas_profiles": {
+				"native-desktop": {
+					"budget_mb": 2048.0,
+					"compressed_mb": 2.35999999999999988,
+					"refused": false,
+					"rgba8_mb": 9.4399999999999995
+				},
+				"native-mobile": {
+					"budget_mb": 256.0,
+					"compressed_mb": 2.35999999999999988,
+					"refused": false,
+					"rgba8_mb": 9.4399999999999995
+				},
+				"web": {
+					"budget_mb": 256.0,
+					"compressed_mb": 2.35999999999999988,
+					"refused": false,
+					"rgba8_mb": 9.4399999999999995
+				}
+			},
+			"budget": 2444,
+			"checked_at": 4,
+			"draw_calls": 1,
+			"drawn": {
+				"excess": 0.479000000000000037,
+				"judge": "drawn",
+				"why": "an impostor is judged at the drawn size, its frames blended"
+			},
+			"error": 0.0296296296296296273,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 2,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {
+
+				},
+				"picture": -1.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
+			],
+			"route": "impostor",
+			"source_pixel_scale": 8.0,
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tiles": 12
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "4b97e0c5c85f2388fc56840440efe459f5a7678e478a97fe25e0a5db9820114e"
+	}
+}

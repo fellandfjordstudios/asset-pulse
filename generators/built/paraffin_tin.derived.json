@@ -1,0 +1,112 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.349999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"fill": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stopper_out": 1
+			},
+			"seed": 314
+		}
+	],
+	"id": "built/paraffin-tin",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"structural"
+		],
+		"old_key_sets": 4,
+		"sampled": 4,
+		"sets": 2
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 5,
+				"trace": "built__paraffin-tin#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "0cdb1d8bc7c652569d0fa2a10c83c4dca61b161f7297dd442e4af531c5f1f233"
+	},
+	"rungs": {
+		"1": {
+			"budget": 6990,
+			"checked_at": 4,
+			"drawn": {
+				"excess": 0.375,
+				"judge": "drawn",
+				"pixel_m": 0.00118399999999999994
+			},
+			"error": 0.00400000000000000008,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 404,
+				"coverage_rel": -0.00419000000000000015,
+				"floor": 0.00495000000000000041,
+				"part_shift": {
+					"paint": -0.000860000000000000087,
+					"paraffin": 0.000720000000000000045,
+					"stopper": 0.0000500000000000000024,
+					"tinplate": 0.0000600000000000000083,
+					"washer": 0.0000200000000000000016
+				},
+				"picture": 0.00495000000000000041
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"REDUCE to 0.490 held at 344, cheaper than the 404 taken, but a replay of rung 0: KIT is within budget and builds directly"
+			],
+			"route": "kit",
+			"surfaces": 5,
+			"surfaces_ceiling": 5
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "a5cf1d7dff51e28a592e5f8d6108c1f7811805e4a7ab556ece04cfaa8a52aae6"
+	}
+}

@@ -1,0 +1,414 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bands": 2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bands": 4
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"wet": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"remaining": 0.25
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "built/fodder-bale",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 8,
+		"sampled": 8,
+		"sets": 8
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__fodder-bale#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "built__fodder-bale#2.trace.jsonl"
+			},
+			"3": {
+				"candidates": 2,
+				"trace": "built__fodder-bale#3.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "282f3de2cad98184d8ca0194dad5638a04cc40c207e66188c97fc962b0872053",
+		"2": "3de8691334ba228f92911d20061b467d638e6270df3933d8d80d2d3d14b9db11",
+		"3": "e662392b442fa85a6a2bb8d936365ade881c15fdb3f059c110fdc7fcaa5ab403"
+	},
+	"rungs": {
+		"1": {
+			"above_tolerance": true,
+			"budget": 39117,
+			"checked_at": 8,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"blade": 0.168069999999999942,
+				"fibre": 0.168069999999999942
+			},
+			"measured": {
+				"cost": 47396,
+				"coverage_rel": -0.0077600000000000004,
+				"floor": 0.00472000000000000024,
+				"part_shift": {
+
+				},
+				"picture": 0.00940000000000000037
+			},
+			"measured_of": 3,
+			"not_taken": [
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 45 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.77), one pixel 0.00159 m",
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"BUDGET: the cheapest derivation that holds the picture costs 239840 (6.13x), over rung 1's budget 39117 x 1.5 = 58675 (made, 0.86 m)"
+			],
+			"route": "kit",
+			"surfaces": 8,
+			"surfaces_ceiling": 8,
+			"tolerance": 0.00185185185185185192
+		},
+		"2": {
+			"above_tolerance": true,
+			"budget": 9779,
+			"checked_at": 8,
+			"density": 0.0282475248999999803,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"material_transfer": {
+				"checked_at": 8,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.444462448358535767,
+							0.372112959623336792,
+							0.165375351905822754
+						],
+						"mean_before": [
+							0.444462448358535767,
+							0.372112959623336792,
+							0.165375351905822754
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000327572226524353027,
+							0.000228568911552429199,
+							0.0000480022281408309937
+						],
+						"variance_before": [
+							0.000327572226524353027,
+							0.000228568911552429199,
+							0.0000480022281408309937
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.44433903694152832,
+							0.372009992599487305,
+							0.165336042642593384
+						],
+						"mean_before": [
+							0.44433903694152832,
+							0.372009992599487305,
+							0.165336042642593384
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000335261225700378418,
+							0.000227868556976318359,
+							0.0000455807894468307495
+						],
+						"variance_before": [
+							0.000335261225700378418,
+							0.000227868556976318359,
+							0.0000455807894468307495
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.444428235292434692,
+							0.372081607580184937,
+							0.165366828441619873
+						],
+						"mean_before": [
+							0.444428235292434692,
+							0.372081607580184937,
+							0.165366828441619873
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000335991382598876953,
+							0.000232964754104614258,
+							0.0000475030392408370972
+						],
+						"variance_before": [
+							0.000335991382598876953,
+							0.000232964754104614258,
+							0.0000475030392408370972
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.444577246904373169,
+							0.372207313776016235,
+							0.165420353412628174
+						],
+						"mean_before": [
+							0.444577246904373169,
+							0.372207313776016235,
+							0.165420353412628174
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000326558947563171387,
+							0.00022818148136138916,
+							0.0000468436628580093384
+						],
+						"variance_before": [
+							0.000326558947563171387,
+							0.00022818148136138916,
+							0.0000468436628580093384
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.44441598653793335,
+							0.372076243162155151,
+							0.16535736620426178
+						],
+						"mean_before": [
+							0.44441598653793335,
+							0.372076243162155151,
+							0.16535736620426178
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000325277447700500488,
+							0.000228315591812133789,
+							0.0000481419265270233154
+						],
+						"variance_before": [
+							0.000325277447700500488,
+							0.000228315591812133789,
+							0.0000481419265270233154
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.106097839772701263,
+							0.0767771452665328979,
+							0.0469492785632610321
+						],
+						"mean_before": [
+							0.106097839772701263,
+							0.0767771452665328979,
+							0.0469492785632610321
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0000147596001625061035,
+							0.00000908132642507553101,
+							0.00000422727316617965698
+						],
+						"variance_before": [
+							0.0000147596001625061035,
+							0.00000908132642507553101,
+							0.00000422727316617965698
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.444040924310684204,
+							0.371755868196487427,
+							0.165223672986030579
+						],
+						"mean_before": [
+							0.444040924310684204,
+							0.371755868196487427,
+							0.165223672986030579
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00130079686641693115,
+							0.000911027193069458008,
+							0.000180199742317199707
+						],
+						"variance_before": [
+							0.00130079686641693115,
+							0.000911027193069458008,
+							0.000180199742317199707
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.44448128342628479,
+							0.372129082679748535,
+							0.165383100509643555
+						],
+						"mean_before": [
+							0.44448128342628479,
+							0.372129082679748535,
+							0.165383100509643555
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000323265790939331055,
+							0.000225350260734558105,
+							0.0000471100211143493652
+						],
+						"variance_before": [
+							0.000323265790939331055,
+							0.000225350260734558105,
+							0.0000471100211143493652
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 14446,
+				"coverage_rel": -0.0170000000000000012,
+				"floor": 0.00472000000000000024,
+				"part_shift": {
+
+				},
+				"picture": 0.0106300000000000006
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"remaining\":0.25} seed 314: the picture changes at the drawn size: 106 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.78), one pixel 0.00358 m",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"bands\":2} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00635 m",
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"BUDGET: the cheapest derivation that holds the picture costs 224162 (22.92x), over rung 2's budget 9779 x 1.5 = 14668 (made, 0.86 m)"
+			],
+			"route": "thin",
+			"surfaces": 5,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.00740740740740740769
+		},
+		"3": {
+			"atlas_bytes": 4194304,
+			"atlas_profiles": {
+				"native-desktop": {
+					"budget_mb": 2048.0,
+					"compressed_mb": 1.05000000000000004,
+					"refused": false,
+					"rgba8_mb": 4.19000000000000039
+				},
+				"native-mobile": {
+					"budget_mb": 256.0,
+					"compressed_mb": 1.05000000000000004,
+					"refused": false,
+					"rgba8_mb": 4.19000000000000039
+				},
+				"web": {
+					"budget_mb": 256.0,
+					"compressed_mb": 1.05000000000000004,
+					"refused": false,
+					"rgba8_mb": 4.19000000000000039
+				}
+			},
+			"budget": 2444,
+			"checked_at": 8,
+			"draw_calls": 1,
+			"drawn": {
+				"excess": 0.492400000000000004,
+				"judge": "drawn",
+				"why": "an impostor is judged at the drawn size, its frames blended"
+			},
+			"error": 0.0296296296296296308,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 2,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {
+
+				},
+				"picture": -1.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
+			],
+			"route": "impostor",
+			"source_pixel_scale": 32.0,
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tiles": 8
+		}
+	},
+	"source": {
+		"children": "b9459ca048ec4671c6d7abfc99bdea02fe04298fca369c5d5aa007f1de1c95fd",
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "d42820572e3cefaca0fc2839d3b1d2918f046706694d190c7f3d9d33cd4aa5f4"
+	}
+}

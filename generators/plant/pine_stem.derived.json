@@ -1,0 +1,201 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.0200000000000000004
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 12.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"basal_diameter_m": 0.00200000000000000004
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"basal_diameter_m": 1.19999999999999996
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tip_diameter_ratio": 0.0200000000000000004
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tip_diameter_ratio": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sweep_deg": 70.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"furrow_pitch": 0.0200000000000000004
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"furrow_pitch": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"furrow_depth_ratio": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"furrow_depth_ratio": 0.349999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"furrowing_onset_diameter_m": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "plant/pine-stem",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 14,
+		"sampled": 14,
+		"sets": 14
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "plant__pine-stem#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 1,
+				"trace": "plant__pine-stem#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "9a29543347924249d9256ebcc68cf83f029f112e86c4f3771745bbe9ada65a45",
+		"2": "9a29543347924249d9256ebcc68cf83f029f112e86c4f3771745bbe9ada65a45"
+	},
+	"rungs": {
+		"1": {
+			"budget": 21336,
+			"checked_at": 14,
+			"drawn": {
+				"excess": 0.4375,
+				"judge": "drawn",
+				"pixel_m": 0.00222200000000000002
+			},
+			"error": 0.00185185185185185192,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"measured": {
+				"cost": 228,
+				"coverage_rel": -0.000490000000000000093,
+				"floor": 0.00547000000000000004,
+				"part_shift": {
+
+				},
+				"picture": 0.00410000000000000035
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"REDUCE to 0.168 held at 228, the same cost as the route taken, found first"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		},
+		"2": {
+			"budget": 5334,
+			"checked_at": 14,
+			"drawn": {
+				"excess": 0.0,
+				"judge": "drawn",
+				"pixel_m": 0.00888899999999999933
+			},
+			"error": 0.00740740740740740769,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"measured": {
+				"cost": 228,
+				"coverage_rel": -0.00207000000000000023,
+				"floor": 0.00547000000000000004,
+				"part_shift": {
+
+				},
+				"picture": 0.00410000000000000035
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"REDUCE to 0.168 held at 228, the same cost as the route taken, found first"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "e4bb5e564dcf58de51956ef4cda508bae02085634a0ddb614ec581c9d6dc3caa"
+	}
+}

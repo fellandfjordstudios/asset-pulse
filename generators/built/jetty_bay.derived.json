@@ -1,0 +1,198 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 1.19999999999999996
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 5.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"width_m": 2.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"width_m": 6.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"plank_w_m": 0.119999999999999996
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"plank_w_m": 0.25
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stringers": 2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stringers": 4
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"posts": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"posts": 2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"neglect": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "built/jetty-bay",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 13,
+		"sampled": 13,
+		"sets": 13
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__jetty-bay#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "built__jetty-bay#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "eb319b61a50fdea0ae8679caabf13730466c88c81cb9e0e968350282fd9779f2",
+		"2": "97ab0b2b84c3c85687cd7f0171630e8aaf37dd5108d544ca68e1eb719d1578ef"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117,
+			"checked_at": 13,
+			"drawn": {
+				"excess": 0.5,
+				"gap": 0.0280000000000000006,
+				"judge": "drawn",
+				"pixel_m": 0.00674999999999999992
+			},
+			"error": 0.00185185185185185192,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"nail": 0.03125
+			},
+			"measured": {
+				"cost": 656,
+				"coverage_rel": 0.000270000000000000003,
+				"floor": 0.0054300000000000008,
+				"part_shift": {
+
+				},
+				"picture": 0.00536000000000000018
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 2
+		},
+		"2": {
+			"budget": 9779,
+			"checked_at": 13,
+			"drawn": {
+				"excess": 0.25,
+				"gap": 0.0940000000000000002,
+				"judge": "drawn",
+				"pixel_m": 0.0269999999999999997
+			},
+			"error": 0.00740740740740740769,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"nail": 0.03125
+			},
+			"measured": {
+				"cost": 416,
+				"coverage_rel": 0.000989999999999999995,
+				"floor": 0.0054300000000000008,
+				"part_shift": {
+
+				},
+				"picture": 0.0054300000000000008
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)",
+				"KIT (its own build at the rung's pixel, keeping nail 0.031) held at 480, dearer than the 416 taken"
+			],
+			"pixel_scale": 2.0,
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "f2206de67c707b99b1446e58962b718895b9f9fa17c0308547b0adb5679f727f"
+	}
+}

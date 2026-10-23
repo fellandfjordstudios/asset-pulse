@@ -1,0 +1,425 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"age_years": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"age_years": 40.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"vigour": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"vigour": 1.39999999999999991
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"flower_density": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"flower_density": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"lean": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "plant/heather",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 9,
+		"sampled": 9,
+		"sets": 9
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "plant__heather#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "plant__heather#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "faf3635fdd9f2581ad312652bd88978f2c19ec56d0c64b39a539cced55da2b7a",
+		"2": "8a3bf9e8416e44eab7114d692b25b9c32cf7d6480ec11ff19419a62c016ed900"
+	},
+	"rungs": {
+		"1": {
+			"above_tolerance": true,
+			"budget": 48007,
+			"checked_at": 9,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"flower": 0.342999999999999916,
+				"leaf": 0.03125
+			},
+			"measured": {
+				"cost": 66454,
+				"coverage_rel": 0.121510000000000007,
+				"floor": 0.00437000000000000062,
+				"part_shift": {
+
+				},
+				"picture": 0.055090000000000007
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 59010 pixel(s) differ at {} seed 314 (worst 0.77)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 59992 pixel(s) differ at {} seed 314 (worst 0.86)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 52133 pixel(s) differ at {} seed 314 (worst 0.76)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 48355 pixel(s) differ at {} seed 314 (worst 0.80)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 54899 pixel(s) differ at {} seed 314 (worst 0.77)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 54504 pixel(s) differ at {} seed 314 (worst 0.86)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 45444 pixel(s) differ at {} seed 314 (worst 0.74)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 40877 pixel(s) differ at {} seed 314 (worst 0.80)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 43471 pixel(s) differ at {} seed 314 (worst 0.86)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 34918 pixel(s) differ at {} seed 314 (worst 0.86)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 41086 pixel(s) differ at {} seed 314 (worst 0.83)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 32269 pixel(s) differ at {} seed 314 (worst 0.83)",
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 95 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.00188 m; coverage changes -0.0822 against 0.0232 allowed (a one-pixel shrink all round); part 'floret' changes its share of the picture by -0.1028 against 0.0232 allowed (its colour's share of the subject); part 'shoot' changes its share of the picture by +0.0581 against 0.0232 allowed (its colour's share of the subject); part 'stem' changes its share of the picture by +0.0426 against 0.0232 allowed (its colour's share of the subject)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.20: 9151 pixel(s) differ at the drawn size at {} seed 314 (worst 0.56)",
+				"REDUCE from rung 0 at {} seed 314: part 'litter' is 60 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 279 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 41 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00188 m; coverage changes -0.0581 against 0.0232 allowed (a one-pixel shrink all round); part 'floret' changes its share of the picture by -0.0414 against 0.0232 allowed (its colour's share of the subject); part 'shoot' changes its share of the picture by +0.0425 against 0.0232 allowed (its colour's share of the subject)",
+				"THIN: plant/heather does not declare `reads_density`"
+			],
+			"route": "kit",
+			"surfaces": 4,
+			"surfaces_ceiling": 4,
+			"tolerance": 0.00185185185185185192
+		},
+		"2": {
+			"above_tolerance": true,
+			"budget": 12001,
+			"checked_at": 9,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"flower": 0.03125,
+				"leaf": 0.03125,
+				"shoot": 0.342999999999999916
+			},
+			"material_transfer": {
+				"checked_at": 9,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.0868664160370826721,
+							0.0984524935483932495,
+							0.0332297049462795258
+						],
+						"mean_before": [
+							0.0868664160370826721,
+							0.0984524935483932495,
+							0.0332297049462795258
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000716045033186674118,
+							0.0000206958502531051636,
+							0.00061418372206389904
+						],
+						"variance_before": [
+							0.000716045033186674118,
+							0.0000206958502531051636,
+							0.00061418372206389904
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0841801315546035767,
+							0.0991415306925773621,
+							0.0308073572814464569
+						],
+						"mean_before": [
+							0.0841801315546035767,
+							0.0991415306925773621,
+							0.0308073572814464569
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000540246721357107162,
+							0.0000138953328132629395,
+							0.000443379278294742107
+						],
+						"variance_before": [
+							0.000540246721357107162,
+							0.0000138953328132629395,
+							0.000443379278294742107
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0906317979097366333,
+							0.102824516594409943,
+							0.0390019379556179047
+						],
+						"mean_before": [
+							0.0906317979097366333,
+							0.102824516594409943,
+							0.0390019379556179047
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000962212681770324707,
+							0.0000573303550481796265,
+							0.00104675244074314833
+						],
+						"variance_before": [
+							0.000962212681770324707,
+							0.0000573303550481796265,
+							0.00104675244074314833
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0850257277488708496,
+							0.0987663641571998596,
+							0.0315883904695510864
+						],
+						"mean_before": [
+							0.0850257277488708496,
+							0.0987663641571998596,
+							0.0315883904695510864
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000559868756681680679,
+							0.000016712583601474762,
+							0.000471050734631717205
+						],
+						"variance_before": [
+							0.000559868756681680679,
+							0.000016712583601474762,
+							0.000471050734631717205
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0877983719110488892,
+							0.0984212607145309448,
+							0.034114643931388855
+						],
+						"mean_before": [
+							0.0877983719110488892,
+							0.0984212607145309448,
+							0.034114643931388855
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000832915306091308594,
+							0.0000220034271478652954,
+							0.000724175828509032726
+						],
+						"variance_before": [
+							0.000832915306091308594,
+							0.0000220034271478652954,
+							0.000724175828509032726
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0828924104571342468,
+							0.098377227783203125,
+							0.0294623356312513351
+						],
+						"mean_before": [
+							0.0828924104571342468,
+							0.098377227783203125,
+							0.0294623356312513351
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000149132218211889267,
+							0.0000178115442395210266,
+							0.0000880858860909938812
+						],
+						"variance_before": [
+							0.000149132218211889267,
+							0.0000178115442395210266,
+							0.0000880858860909938812
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0892552584409713745,
+							0.0984854996204376221,
+							0.0354884900152683258
+						],
+						"mean_before": [
+							0.0892552584409713745,
+							0.0984854996204376221,
+							0.0354884900152683258
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00103771686553955078,
+							0.0000225109979510307312,
+							0.000912820687517523766
+						],
+						"variance_before": [
+							0.00103771686553955078,
+							0.0000225109979510307312,
+							0.000912820687517523766
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0869011282920837402,
+							0.0984514206647872925,
+							0.0332633964717388153
+						],
+						"mean_before": [
+							0.0869011282920837402,
+							0.0984514206647872925,
+							0.0332633964717388153
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000720579177141189575,
+							0.0000207470729947090149,
+							0.000618470599874854088
+						],
+						"variance_before": [
+							0.000720579177141189575,
+							0.0000207470729947090149,
+							0.000618470599874854088
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0891772806644439697,
+							0.0985841602087020874,
+							0.0354635454714298248
+						],
+						"mean_before": [
+							0.0891772806644439697,
+							0.0985841602087020874,
+							0.0354635454714298248
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00105932261794805527,
+							0.0000215070322155952454,
+							0.000935528776608407497
+						],
+						"variance_before": [
+							0.00105932261794805527,
+							0.0000215070322155952454,
+							0.000935528776608407497
+						]
+					}
+				],
+				"holds": true
+			},
+			"measured": {
+				"cost": 14570,
+				"coverage_rel": -0.0888300000000000062,
+				"floor": 0.00437000000000000062,
+				"part_shift": {
+
+				},
+				"picture": 0.163270000000000026
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 8x its pixel: 519 pixel(s) differ at {} seed 314 (worst 0.64)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 8x its pixel: 605 pixel(s) differ at {} seed 314 (worst 0.72)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 8x its pixel: 344 pixel(s) differ at {} seed 314 (worst 0.70)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 8x its pixel: 315 pixel(s) differ at {} seed 314 (worst 0.71)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 4x its pixel: 507 pixel(s) differ at {} seed 314 (worst 0.64)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 4x its pixel: 596 pixel(s) differ at {} seed 314 (worst 0.72)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 4x its pixel: 344 pixel(s) differ at {} seed 314 (worst 0.70)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 4x its pixel: 309 pixel(s) differ at {} seed 314 (worst 0.71)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 267 pixel(s) differ at {} seed 314 (worst 0.67)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 333 pixel(s) differ at {} seed 314 (worst 0.71)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 138 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 91 pixel(s) differ at {} seed 314 (worst 0.56)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 8x its pixel: 224 pixel(s) differ at {} seed 314 (worst 0.66)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 4x its pixel: 215 pixel(s) differ at {} seed 314 (worst 0.66)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 35 pixel(s) differ at {} seed 314 (worst 0.58)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 8x its pixel: 173 pixel(s) differ at {} seed 314 (worst 0.64)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 4x its pixel: 159 pixel(s) differ at {} seed 314 (worst 0.64)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 13 pixel(s) differ at {} seed 314 (worst 0.53)",
+				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00751 m; coverage changes -0.0964 against 0.0450 allowed (a one-pixel shrink all round); part 'floret' changes its share of the picture by -0.1009 against 0.0450 allowed (its colour's share of the subject); part 'shoot' changes its share of the picture by +0.0503 against 0.0450 allowed (its colour's share of the subject); part 'stem' changes its share of the picture by +0.0477 against 0.0450 allowed (its colour's share of the subject)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.2401, cover 2.04: 10069 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0962 against 0.0450 allowed (a one-pixel shrink all round); part 'floret' changes its share of the picture by -0.1008 against 0.0450 allowed (its colour's share of the subject); part 'shoot' changes its share of the picture by +0.0509 against 0.0450 allowed (its colour's share of the subject); part 'stem' changes its share of the picture by +0.0465 against 0.0450 allowed (its colour's share of the subject)",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.2401, cover 2.04: 10069 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
+				"REDUCE from rung 0 at {} seed 314: part 'litter' is 60 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 279 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0581 against 0.0450 allowed (a one-pixel shrink all round)",
+				"THIN: plant/heather does not declare `reads_density`"
+			],
+			"route": "kit",
+			"surfaces": 4,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.00740740740740740769
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "36778588a06cab2a79ccab8e61cccf0d7c0e25faaf2e7e793bb97932a70e23c6"
+	}
+}

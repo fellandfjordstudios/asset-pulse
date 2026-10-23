@@ -1,0 +1,249 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"body_length_m": 0.0700000000000000067
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"body_length_m": 0.260000000000000009
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"body_width_m": 0.0160000000000000003
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"body_width_m": 0.0599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"body_height_m": 0.0120000000000000002
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"body_height_m": 0.048000000000000001
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"mantle_fraction_of_length": 0.200000000000000011
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"mantle_fraction_of_length": 0.450000000000000011
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pneumostome_from_front": 0.400000000000000022
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pneumostome_from_front": 0.900000000000000022
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pneumostome_diameter_m": 0.00200000000000000004
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pneumostome_diameter_m": 0.0120000000000000002
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tentacle_length_m": 0.00400000000000000008
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tentacle_length_m": 0.0280000000000000006
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"feeler_fraction": 0.149999999999999994
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"feeler_fraction": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"foot_fringe_fraction": 0.0400000000000000008
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"foot_fringe_fraction": 0.220000000000000001
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tail_keel_fraction": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tail_keel_fraction": 0.149999999999999994
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"body_curve_deg": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"body_curve_deg": 200.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"head_lift_deg": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"head_lift_deg": 35.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "animal/banana-slug",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 26,
+		"sampled": 26,
+		"sets": 26
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "animal__banana-slug#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "3cb8b183a86b6c0ec41ffb66f9e61a22cae61c2ee57ffd564bd1406526973291"
+	},
+	"rungs": {
+		"1": {
+			"budget": 3931,
+			"checked_at": 26,
+			"drawn": {
+				"excess": 0.25,
+				"judge": "drawn",
+				"pixel_m": 0.000777999999999999937
+			},
+			"error": 0.00432226875438092469,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"measured": {
+				"cost": 3806,
+				"coverage_rel": -0.00281000000000000043,
+				"floor": 0.00398000000000000003,
+				"part_shift": {
+
+				},
+				"picture": 0.00398000000000000003
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"REDUCE to 0.168 held at 1232, cheaper than the 3806 taken, but a replay of rung 0: KIT is within budget and builds directly"
+			],
+			"route": "kit",
+			"surfaces": 5,
+			"surfaces_ceiling": 5
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "b08df453c9f12d8461e559cb98fbbb54fc380af0fd68f9f193de2fb0a90ad776"
+	}
+}

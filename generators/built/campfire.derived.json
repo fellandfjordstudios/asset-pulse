@@ -1,0 +1,814 @@
+{
+	"checked_at": [
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"split_fraction": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"split_fraction": 0.599999999999999978,
+				"stick_count": 10
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"split_fraction": 0.599999999999999978,
+				"stick_count": 36
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"split_fraction": 0.599999999999999978,
+				"stick_length_max_m": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"split_fraction": 0.599999999999999978,
+				"stick_length_max_m": 1.60000000000000009
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"split_fraction": 0.599999999999999978,
+				"stick_diameter_max_m": 0.0299999999999999989
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"split_fraction": 0.599999999999999978,
+				"stick_diameter_max_m": 0.100000000000000006
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"split_fraction": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"fissure_pitch_m": 0.00800000000000000017,
+				"split_fraction": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"fissure_pitch_m": 0.0299999999999999989,
+				"split_fraction": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"fissure_depth_m": 0.0,
+				"split_fraction": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"fissure_depth_m": 0.00800000000000000017,
+				"split_fraction": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"split_fraction": 0.599999999999999978,
+				"tinder_fibres": 100
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"split_fraction": 0.599999999999999978,
+				"tinder_fibres": 1200
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"rootlets": 0,
+				"split_fraction": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"rootlets": 60,
+				"split_fraction": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.0,
+				"split_fraction": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.900000000000000022,
+				"split_fraction": 0.599999999999999978
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.280000000000000027,
+				"split_fraction": 0.599999999999999978
+			},
+			"seed": 315
+		}
+	],
+	"id": "built/campfire",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 19,
+		"sampled": 19,
+		"sets": 19
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__campfire#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "built__campfire#2.trace.jsonl"
+			},
+			"3": {
+				"candidates": 14,
+				"trace": "built__campfire#3.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+			"alight": 1,
+			"burnt_fraction": 0.280000000000000027,
+			"split_fraction": 0.599999999999999978
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "1976d57e473993c572fd55b38ff42dd51528f64b2936a7603f61f20d3accf477",
+		"2": "0ceddbeef8168693546050824cbc8b3ce37965c2cc18fcc2184eb4720e8a55b2",
+		"3": "d3da295bc80b27790ac49721f79c69053ddecc048ecc03ff8a2b1440af95e660"
+	},
+	"rungs": {
+		"1": {
+			"above_tolerance": true,
+			"budget": 39117,
+			"checked_at": 19,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"measured": {
+				"cost": 20271,
+				"coverage_rel": 0.0350300000000000056,
+				"floor": 0.0041700000000000001,
+				"part_shift": {
+
+				},
+				"picture": 0.00539000000000000069
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: the picture changes at the drawn size: 8 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.64), one pixel 0.00231 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.02: 21682 pixel(s) differ at the drawn size at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314 (worst 0.56)",
+				"REDUCE from rung 0 at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: element 0's part 'ash' is 85 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00231 m",
+				"THIN: built/campfire does not declare `reads_density`"
+			],
+			"route": "kit",
+			"surfaces": 6,
+			"surfaces_ceiling": 6,
+			"tolerance": 0.00185185185185185192
+		},
+		"2": {
+			"above_tolerance": true,
+			"budget": 9779,
+			"checked_at": 19,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"material_transfer": {
+				"checked_at": 19,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.229292646050453186,
+							0.193844512104988098,
+							0.167255133390426636
+						],
+						"mean_before": [
+							0.229292646050453186,
+							0.193844512104988098,
+							0.167255133390426636
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0339894890785217285,
+							0.0297281928360462189,
+							0.0251523833721876144
+						],
+						"variance_before": [
+							0.0339894890785217285,
+							0.0297281928360462189,
+							0.0251523833721876144
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.246961668133735657,
+							0.203827887773513794,
+							0.172946661710739136
+						],
+						"mean_before": [
+							0.246961668133735657,
+							0.203827887773513794,
+							0.172946661710739136
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0385702997446060181,
+							0.0309208482503890991,
+							0.0252333451062440872
+						],
+						"variance_before": [
+							0.0385702997446060181,
+							0.0309208482503890991,
+							0.0252333451062440872
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.22935059666633606,
+							0.195957496762275696,
+							0.170124530792236328
+						],
+						"mean_before": [
+							0.22935059666633606,
+							0.195957496762275696,
+							0.170124530792236328
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0322455242276191711,
+							0.029267728328704834,
+							0.0251496490091085434
+						],
+						"variance_before": [
+							0.0322455242276191711,
+							0.029267728328704834,
+							0.0251496490091085434
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.233344465494155884,
+							0.199738398194313049,
+							0.173261165618896484
+						],
+						"mean_before": [
+							0.233344465494155884,
+							0.199738398194313049,
+							0.173261165618896484
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0305593311786651611,
+							0.0283332951366901398,
+							0.0246000029146671295
+						],
+						"variance_before": [
+							0.0305593311786651611,
+							0.0283332951366901398,
+							0.0246000029146671295
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.231005281209945679,
+							0.193726778030395508,
+							0.166475176811218262
+						],
+						"mean_before": [
+							0.231005281209945679,
+							0.193726778030395508,
+							0.166475176811218262
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0364785231649875641,
+							0.0306959450244903564,
+							0.0255201421678066254
+						],
+						"variance_before": [
+							0.0364785231649875641,
+							0.0306959450244903564,
+							0.0255201421678066254
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.252013862133026123,
+							0.209801763296127319,
+							0.179503336548805237
+						],
+						"mean_before": [
+							0.252013862133026123,
+							0.209801763296127319,
+							0.179503336548805237
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0404624119400978088,
+							0.0325399041175842285,
+							0.026629667729139328
+						],
+						"variance_before": [
+							0.0404624119400978088,
+							0.0325399041175842285,
+							0.026629667729139328
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.226459339261054993,
+							0.191950395703315735,
+							0.165847182273864746
+						],
+						"mean_before": [
+							0.226459339261054993,
+							0.191950395703315735,
+							0.165847182273864746
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0329646207392215729,
+							0.0292814671993255615,
+							0.0249195937067270279
+						],
+						"variance_before": [
+							0.0329646207392215729,
+							0.0292814671993255615,
+							0.0249195937067270279
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.235771715641021729,
+							0.20618930459022522,
+							0.18271946907043457
+						],
+						"mean_before": [
+							0.235771715641021729,
+							0.20618930459022522,
+							0.18271946907043457
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0359220243990421295,
+							0.0328557156026363373,
+							0.0283030308783054352
+						],
+						"variance_before": [
+							0.0359220243990421295,
+							0.0328557156026363373,
+							0.0283030308783054352
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.229292646050453186,
+							0.193844512104988098,
+							0.167255133390426636
+						],
+						"mean_before": [
+							0.229292646050453186,
+							0.193844512104988098,
+							0.167255133390426636
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0339894890785217285,
+							0.0297281928360462189,
+							0.0251523833721876144
+						],
+						"variance_before": [
+							0.0339894890785217285,
+							0.0297281928360462189,
+							0.0251523833721876144
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.229292646050453186,
+							0.193844512104988098,
+							0.167255133390426636
+						],
+						"mean_before": [
+							0.229292646050453186,
+							0.193844512104988098,
+							0.167255133390426636
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0339894890785217285,
+							0.0297281928360462189,
+							0.0251523833721876144
+						],
+						"variance_before": [
+							0.0339894890785217285,
+							0.0297281928360462189,
+							0.0251523833721876144
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.229292646050453186,
+							0.193844512104988098,
+							0.167255133390426636
+						],
+						"mean_before": [
+							0.229292646050453186,
+							0.193844512104988098,
+							0.167255133390426636
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0339894890785217285,
+							0.0297281928360462189,
+							0.0251523833721876144
+						],
+						"variance_before": [
+							0.0339894890785217285,
+							0.0297281928360462189,
+							0.0251523833721876144
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.229292646050453186,
+							0.193844512104988098,
+							0.167255133390426636
+						],
+						"mean_before": [
+							0.229292646050453186,
+							0.193844512104988098,
+							0.167255133390426636
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0339894890785217285,
+							0.0297281928360462189,
+							0.0251523833721876144
+						],
+						"variance_before": [
+							0.0339894890785217285,
+							0.0297281928360462189,
+							0.0251523833721876144
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.234392151236534119,
+							0.199035078287124634,
+							0.172159060835838318
+						],
+						"mean_before": [
+							0.234392151236534119,
+							0.199035078287124634,
+							0.172159060835838318
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0343786850571632385,
+							0.0300260931253433228,
+							0.0253926645964384079
+						],
+						"variance_before": [
+							0.0343786850571632385,
+							0.0300260931253433228,
+							0.0253926645964384079
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.225602075457572937,
+							0.189988300204277039,
+							0.163559481501579285
+						],
+						"mean_before": [
+							0.225602075457572937,
+							0.189988300204277039,
+							0.163559481501579285
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0336137525737285614,
+							0.0294366516172885895,
+							0.0249225981533527374
+						],
+						"variance_before": [
+							0.0336137525737285614,
+							0.0294366516172885895,
+							0.0249225981533527374
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.22382982075214386,
+							0.187938615679740906,
+							0.161455497145652771
+						],
+						"mean_before": [
+							0.22382982075214386,
+							0.187938615679740906,
+							0.161455497145652771
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.033938281238079071,
+							0.0293565765023231506,
+							0.0246824156492948532
+						],
+						"variance_before": [
+							0.033938281238079071,
+							0.0293565765023231506,
+							0.0246824156492948532
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.232544556260108948,
+							0.197359666228294373,
+							0.170711040496826172
+						],
+						"mean_before": [
+							0.232544556260108948,
+							0.197359666228294373,
+							0.170711040496826172
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.034019075334072113,
+							0.0299329385161399841,
+							0.0254120137542486191
+						],
+						"variance_before": [
+							0.034019075334072113,
+							0.0299329385161399841,
+							0.0254120137542486191
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.361954569816589355,
+							0.318666845560073853,
+							0.27901574969291687
+						],
+						"mean_before": [
+							0.361954569816589355,
+							0.318666845560073853,
+							0.27901574969291687
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00700923800468444824,
+							0.0125000998377799988,
+							0.014970041811466217
+						],
+						"variance_before": [
+							0.00700923800468444824,
+							0.0125000998377799988,
+							0.014970041811466217
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.456823587417602539,
+							0.343262851238250732,
+							0.27184489369392395
+						],
+						"mean_before": [
+							0.456823587417602539,
+							0.343262851238250732,
+							0.27184489369392395
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0607676655054092407,
+							0.0345645993947982788,
+							0.022251322865486145
+						],
+						"variance_before": [
+							0.0607676655054092407,
+							0.0345645993947982788,
+							0.022251322865486145
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.238240867853164673,
+							0.202760934829711914,
+							0.17550976574420929
+						],
+						"mean_before": [
+							0.238240867853164673,
+							0.202760934829711914,
+							0.17550976574420929
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.033489767462015152,
+							0.0296927988529205322,
+							0.0253321956843137741
+						],
+						"variance_before": [
+							0.033489767462015152,
+							0.0296927988529205322,
+							0.0253321956843137741
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 9031,
+				"coverage_rel": 0.0148600000000000017,
+				"floor": 0.0041700000000000001,
+				"part_shift": {
+
+				},
+				"picture": 0.00965000000000000059
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6,\"stick_count\":10} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00878 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.00: 1756 pixel(s) differ at the drawn size at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314 (worst 0.53)",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00924 m",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.00: 1799 pixel(s) differ at the drawn size at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314 (worst 0.53)",
+				"REDUCE from rung 0 at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: element 0's part 'ash' is 85 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6,\"stick_length_max_m\":0.5} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00437 m",
+				"THIN: built/campfire does not declare `reads_density`"
+			],
+			"route": "kit",
+			"surfaces": 3,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.00740740740740740769
+		},
+		"3": {
+			"atlas_bytes": 37748736,
+			"atlas_profiles": {
+				"native-desktop": {
+					"budget_mb": 2048.0,
+					"compressed_mb": 9.4399999999999995,
+					"refused": false,
+					"rgba8_mb": 37.75
+				},
+				"native-mobile": {
+					"budget_mb": 256.0,
+					"compressed_mb": 9.4399999999999995,
+					"refused": false,
+					"rgba8_mb": 37.75
+				},
+				"web": {
+					"budget_mb": 256.0,
+					"compressed_mb": 9.4399999999999995,
+					"refused": false,
+					"rgba8_mb": 37.75
+				}
+			},
+			"budget": 2444,
+			"checked_at": 19,
+			"draw_calls": 1,
+			"drawn": {
+				"excess": 0.490100000000000036,
+				"judge": "drawn",
+				"why": "an impostor is judged at the drawn size, its frames blended"
+			},
+			"error": 0.0296296296296296308,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 2,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {
+
+				},
+				"picture": -1.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
+			],
+			"route": "impostor",
+			"source_pixel_scale": 8.0,
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tiles": 24
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "2dfb72a64497eac71140c96732f902c4cf06b7b6983bde5f05086c69f1e6c690"
+	}
+}

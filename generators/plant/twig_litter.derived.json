@@ -1,0 +1,442 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"density_per_m2": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"density_per_m2": 300.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"patch_m": 0.25
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_max_m": 0.0500000000000000028
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_max_m": 0.299999999999999989
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_exponent": 1.19999999999999996
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_exponent": 3.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"birch_share": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"birch_share": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "plant/twig-litter",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 11,
+		"sampled": 11,
+		"sets": 11
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "plant__twig-litter#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "plant__twig-litter#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "c279a0ef88b14fe6218dfa23f018612252a0d499eb63f6a9fe833ff728beef41",
+		"2": "8016752dedec1923040af1f93ba1741a08827c1665acca61c6b5af9b0bca9cb7"
+	},
+	"rungs": {
+		"1": {
+			"budget": 14224,
+			"checked_at": 11,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 3782,
+				"coverage_rel": 0.0,
+				"floor": 0.00536000000000000018,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"density_per_m2\":300.0} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00211 m",
+				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00210 m",
+				"THIN: plant/twig-litter does not declare `reads_density`"
+			],
+			"route": "rung0",
+			"surfaces": 4,
+			"surfaces_ceiling": 4,
+			"tolerance": 0.00185185185185185171
+		},
+		"2": {
+			"budget": 3556,
+			"checked_at": 11,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"material_transfer": {
+				"checked_at": 11,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.274332106113433838,
+							0.207356885075569153,
+							0.164341986179351807
+						],
+						"mean_before": [
+							0.274332106113433838,
+							0.207356885075569153,
+							0.164341986179351807
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00690861046314239502,
+							0.00597037374973297119,
+							0.00438026711344718933
+						],
+						"variance_before": [
+							0.00690861046314239502,
+							0.00597037374973297119,
+							0.00438026711344718933
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.0751618370413780212,
+							0.0318551957607269287,
+							0.0228805840015411377
+						],
+						"mean_before": [
+							0.0751618370413780212,
+							0.0318551957607269287,
+							0.0228805840015411377
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							-0.000000000465661287307739258,
+							0.0,
+							0.0
+						],
+						"variance_before": [
+							-0.000000000465661287307739258,
+							0.0,
+							0.0
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.274084538221359253,
+							0.207569822669029236,
+							0.164575532078742981
+						],
+						"mean_before": [
+							0.274084538221359253,
+							0.207569822669029236,
+							0.164575532078742981
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00688194483518600464,
+							0.00597660243511199951,
+							0.0044020581990480423
+						],
+						"variance_before": [
+							0.00688194483518600464,
+							0.00597660243511199951,
+							0.0044020581990480423
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.265549033880233765,
+							0.199832513928413391,
+							0.157728627324104309
+						],
+						"mean_before": [
+							0.265549033880233765,
+							0.199832513928413391,
+							0.157728627324104309
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00757418572902679443,
+							0.00633092224597930908,
+							0.00464245304465293884
+						],
+						"variance_before": [
+							0.00757418572902679443,
+							0.00633092224597930908,
+							0.00464245304465293884
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.105651214718818665,
+							0.0618277043104171753,
+							0.0438996553421020508
+						],
+						"mean_before": [
+							0.105651214718818665,
+							0.0618277043104171753,
+							0.0438996553421020508
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00157815497368574142,
+							0.00152508565224707127,
+							0.000750027596950531006
+						],
+						"variance_before": [
+							0.00157815497368574142,
+							0.00152508565224707127,
+							0.000750027596950531006
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.286519646644592285,
+							0.21876293420791626,
+							0.173862650990486145
+						],
+						"mean_before": [
+							0.286519646644592285,
+							0.21876293420791626,
+							0.173862650990486145
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00491822510957717896,
+							0.00454813241958618164,
+							0.00348996184766292572
+						],
+						"variance_before": [
+							0.00491822510957717896,
+							0.00454813241958618164,
+							0.00348996184766292572
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.280174046754837036,
+							0.212973460555076599,
+							0.169010758399963379
+						],
+						"mean_before": [
+							0.280174046754837036,
+							0.212973460555076599,
+							0.169010758399963379
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00592723488807678223,
+							0.00526952743530273438,
+							0.00395228341221809387
+						],
+						"variance_before": [
+							0.00592723488807678223,
+							0.00526952743530273438,
+							0.00395228341221809387
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.199861586093902588,
+							0.14011499285697937,
+							0.107836976647377014
+						],
+						"mean_before": [
+							0.199861586093902588,
+							0.14011499285697937,
+							0.107836976647377014
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0114720910787582397,
+							0.0084439348429441452,
+							0.00564669724553823471
+						],
+						"variance_before": [
+							0.0114720910787582397,
+							0.0084439348429441452,
+							0.00564669724553823471
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.284644931554794312,
+							0.217585965991020203,
+							0.171594336628913879
+						],
+						"mean_before": [
+							0.284644931554794312,
+							0.217585965991020203,
+							0.171594336628913879
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00359430909156799316,
+							0.00318718701601028442,
+							0.00275772064924240112
+						],
+						"variance_before": [
+							0.00359430909156799316,
+							0.00318718701601028442,
+							0.00275772064924240112
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.268820017576217651,
+							0.202015697956085205,
+							0.160552456974983215
+						],
+						"mean_before": [
+							0.268820017576217651,
+							0.202015697956085205,
+							0.160552456974983215
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00853580236434936523,
+							0.00732877105474472046,
+							0.00518400408327579498
+						],
+						"variance_before": [
+							0.00853580236434936523,
+							0.00732877105474472046,
+							0.00518400408327579498
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.276993244886398315,
+							0.210320457816123962,
+							0.166612103581428528
+						],
+						"mean_before": [
+							0.276993244886398315,
+							0.210320457816123962,
+							0.166612103581428528
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00612850487232208252,
+							0.00535665452480316162,
+							0.00403230264782905579
+						],
+						"variance_before": [
+							0.00612850487232208252,
+							0.00535665452480316162,
+							0.00403230264782905579
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 3782,
+				"coverage_rel": 0.0,
+				"floor": 0.00536000000000000018,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"patch_m\":0.25} seed 314: part 'stick_bark' changes its share of the picture by +0.0480 against 0.0450 allowed (its colour's share of the subject)",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: part 'stick_bark' changes its share of the picture by +0.0509 against 0.0498 allowed (its colour's share of the subject)",
+				"REDUCE from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00842 m",
+				"THIN: plant/twig-litter does not declare `reads_density`"
+			],
+			"route": "rung0",
+			"surfaces": 3,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.00740740740740740682
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "17de23c636cc9f856bff84d879755220de131411dc6fd69e90ffb654da9036a4"
+	}
+}

@@ -1,0 +1,186 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"block_length_m": 0.096000000000000002
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"block_length_m": 0.143999999999999989
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"slice_count": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"slice_count": 5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"serving_only": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "food/brunost",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 7,
+		"sampled": 7,
+		"sets": 5
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 17,
+				"trace": "food__brunost#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "food__brunost#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "25355f811c071eecc51da9a06fa324e5f47259f12b2f99a648583931347a8c3b",
+		"2": "7b0030a36feb2da6ad0c798a71bbef4662c4966b8dc0f66f8fbc8f8516af94b9"
+	},
+	"rungs": {
+		"1": {
+			"budget": 4057,
+			"checked_at": 7,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.00117000000000000003
+			},
+			"error": 0.0051867225052571091,
+			"every_piece": true,
+			"fraction": 0.342999999999999916,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to 0.343",
+				"looked": 0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 1262,
+				"coverage_rel": -0.00289000000000000021,
+				"floor": 0.00437000000000000062,
+				"part_shift": {
+					"block": 0.0122200000000000017,
+					"slice": 0.00157000000000000021,
+					"torn": -0.0126300000000000006
+				},
+				"picture": 0.00797000000000000139
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0052 -- the finest tried (1.000) fails at {\"slice_count\":1} seed 314: the picture changes at the drawn size: 4 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.73), one pixel 0.00091 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1176, cover 2.92: 1356 pixel(s) differ at the drawn size at {} seed 314 (worst 0.62)",
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'torn' is 135 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
+			],
+			"route": "reduce",
+			"routes": {
+				"reduce": 5
+			},
+			"surfaces": 3,
+			"surfaces_ceiling": 3
+		},
+		"2": {
+			"budget": 1014,
+			"checked_at": 7,
+			"drawn": {
+				"excess": 0.125,
+				"gap": 1.01000000000000001,
+				"judge": "drawn",
+				"pixel_m": 0.00518699999999999977
+			},
+			"error": 0.0207468900210284364,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"debris": 0.03125
+			},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel, keeping debris 0.031)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 480,
+				"coverage_rel": -0.0385100000000000026,
+				"floor": 0.00437000000000000062,
+				"part_shift": {
+
+				},
+				"picture": 0.0173800000000000031
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"KIT at 2 pixels: none holds at 0.0207 -- the finest tried (1.000) fails at {\"serving_only\":1} seed 314: the picture changes at the drawn size: 9 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00208 m",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1176, cover 2.92: 80 pixel(s) differ at the drawn size at {} seed 314 (worst 0.66)",
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'torn' is 135 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping debris 0.031)) is 1 route(s)",
+				"REDUCE (every piece) to 0.082 held at 300, cheaper than the 480 taken, but a replay of rung 0: KIT is within budget and builds directly"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "669b5bb1252026230e12ef50bdf3631994bb49269f64291147a6e3f2cb9a14f8"
+	}
+}

@@ -1,0 +1,325 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.800000000000000044
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"wear_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"wear_m": 0.00300000000000000006
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"marking": 0
+			},
+			"seed": 314
+		}
+	],
+	"id": "built/fish-box",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural"
+		],
+		"old_key_sets": 6,
+		"sampled": 6,
+		"sets": 6
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__fish-box#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "built__fish-box#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "0850297ea04ac4f5e62f0658c71498b3a9acb72e291a3beac3820a82e420f248",
+		"2": "184078b81c6f39823931bdf25cdf4ee914a19727e729248f9664f9b199564cce"
+	},
+	"rungs": {
+		"1": {
+			"budget": 34082,
+			"checked_at": 6,
+			"drawn": {
+				"excess": 0.3125,
+				"gap": 0.0650000000000000022,
+				"judge": "drawn",
+				"pixel_m": 0.00129699999999999998
+			},
+			"error": 0.001994893271252734,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"nail": 0.0823542999999999636
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel, keeping nail 0.082)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 2098,
+				"coverage_rel": -0.000770000000000000068,
+				"floor": 0.00468000000000000013,
+				"part_shift": {
+
+				},
+				"picture": 0.00468000000000000013
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"IMPOSTOR, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping nail 0.082)) is 1 route(s), and the one looked at did not improve on it"
+			],
+			"route": "kit",
+			"surfaces": 5,
+			"surfaces_ceiling": 5
+		},
+		"2": {
+			"budget": 8520,
+			"checked_at": 6,
+			"drawn": {
+				"excess": 0.5,
+				"gap": 0.129000000000000004,
+				"judge": "drawn",
+				"pixel_m": 0.00518699999999999977
+			},
+			"error": 0.00797957308501093601,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"nail": 0.03125
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at 2 of the band's pixels, keeping nail 0.031)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"thin"
+				]
+			},
+			"material_transfer": {
+				"checked_at": 6,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.198359638452529907,
+							0.196287050843238831,
+							0.196517020463943481
+						],
+						"mean_before": [
+							0.198359638452529907,
+							0.196287050843238831,
+							0.196517020463943481
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000931240618228912354,
+							0.000662285834550857544,
+							0.000612869858741760254
+						],
+						"variance_before": [
+							0.000931240618228912354,
+							0.000662285834550857544,
+							0.000612869858741760254
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.198244228959083557,
+							0.196191564202308655,
+							0.196425750851631165
+						],
+						"mean_before": [
+							0.198244228959083557,
+							0.196191564202308655,
+							0.196425750851631165
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000946827232837677002,
+							0.000673245638608932495,
+							0.000622969120740890503
+						],
+						"variance_before": [
+							0.000946827232837677002,
+							0.000673245638608932495,
+							0.000622969120740890503
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.198410257697105408,
+							0.196326494216918945,
+							0.19655396044254303
+						],
+						"mean_before": [
+							0.198410257697105408,
+							0.196326494216918945,
+							0.19655396044254303
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000922169536352157593,
+							0.000655878335237503052,
+							0.000606998801231384277
+						],
+						"variance_before": [
+							0.000922169536352157593,
+							0.000655878335237503052,
+							0.000606998801231384277
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.198559567332267761,
+							0.196447625756263733,
+							0.196669191122055054
+						],
+						"mean_before": [
+							0.198559567332267761,
+							0.196447625756263733,
+							0.196669191122055054
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000898975878953933716,
+							0.000639460980892181396,
+							0.000591780990362167358
+						],
+						"variance_before": [
+							0.000898975878953933716,
+							0.000639460980892181396,
+							0.000591780990362167358
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.19827994704246521,
+							0.196225881576538086,
+							0.1964598149061203
+						],
+						"mean_before": [
+							0.19827994704246521,
+							0.196225881576538086,
+							0.1964598149061203
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000946618616580963135,
+							0.000673212110996246338,
+							0.000622972846031188965
+						],
+						"variance_before": [
+							0.000946618616580963135,
+							0.000673212110996246338,
+							0.000622972846031188965
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.198525071144104004,
+							0.196449607610702515,
+							0.196681663393974304
+						],
+						"mean_before": [
+							0.198525071144104004,
+							0.196449607610702515,
+							0.196681663393974304
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000902913510799407959,
+							0.000634714961051940918,
+							0.000584527850151062012
+						],
+						"variance_before": [
+							0.000902913510799407959,
+							0.000634714961051940918,
+							0.000584527850151062012
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 884,
+				"coverage_rel": -0.0055200000000000006,
+				"floor": 0.00468000000000000013,
+				"part_shift": {
+
+				},
+				"picture": 0.00468000000000000013
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"IMPOSTOR, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping nail 0.031)) is 1 route(s), and the one looked at did not improve on it",
+				"KIT (its own build at the rung's pixel, keeping nail 0.031) held at 1380, dearer than the 884 taken"
+			],
+			"pixel_scale": 2.0,
+			"route": "kit",
+			"surfaces": 2,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"children": "4d3ff9f96c7ec66d26f63f3e137eea615976c2918e0668a8f6b30cc322764d37",
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "a3f4a4af0bfff2bccffb3fd5fbdec3b1bf002ee5c9357da9c0103fbc8a80280f"
+	}
+}

@@ -1,0 +1,179 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"width_m": 0.280000000000000027
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"width_m": 0.640000000000000013
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.200000000000000011
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"binding": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cut": 1
+			},
+			"seed": 314
+		}
+	],
+	"id": "built/fodder-bale-binding",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural"
+		],
+		"old_key_sets": 7,
+		"sampled": 7,
+		"sets": 7
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__fodder-bale-binding#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "built__fodder-bale-binding#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "3d2679c11aabfafe600e60672cef2ea7da4606969a55e946b31bb9f68a80e346",
+		"2": "3d2679c11aabfafe600e60672cef2ea7da4606969a55e946b31bb9f68a80e346"
+	},
+	"rungs": {
+		"1": {
+			"budget": 16354,
+			"checked_at": 7,
+			"drawn": {
+				"excess": 0.0,
+				"judge": "drawn",
+				"pixel_m": 0.00129699999999999998
+			},
+			"error": 0.00267081488427245569,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"thin",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 2332,
+				"coverage_rel": 0.0,
+				"floor": 0.00463000000000000043,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"REDUCE from rung 0: none holds at 0.0027 -- the finest tried (0.700) fails at {\"width_m\":0.64} seed 314: coverage changes +0.0153 against 0.0133 a derivation may change (its error read as a change of size)",
+				"IMPOSTOR, THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		},
+		"2": {
+			"budget": 4088,
+			"checked_at": 7,
+			"drawn": {
+				"excess": 0.0,
+				"judge": "drawn",
+				"pixel_m": 0.00518699999999999977
+			},
+			"error": 0.0106832595370898228,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+
+			},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"thin",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 2332,
+				"coverage_rel": 0.0,
+				"floor": 0.00463000000000000043,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 3,
+			"not_taken": [
+				"IMPOSTOR, THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"KIT (its own build at 2 of the band's pixels) held at 2332, the same cost as the route taken, found first",
+				"REDUCE to 0.343 held at 798, cheaper than the 2332 taken, but a replay of rung 0: KIT is within budget and builds directly"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "9a1859dffd3b4cd489aca351650adc1f46ccaa0a57448fc90d1b28e6714bb676"
+	}
+}

@@ -1,0 +1,140 @@
+{
+	"checked_at": [
+		{
+			"params": {
+
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"strip_count": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"strip_count": 10
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"strip_length_m": 0.0800000000000000017
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"strip_length_m": 0.160000000000000003
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"strip_width_m": 0.0149999999999999994
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"strip_width_m": 0.0350000000000000033
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"strip_thickness_m": 0.00300000000000000006
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"strip_thickness_m": 0.00600000000000000012
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"paper": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+
+			},
+			"seed": 315
+		}
+	],
+	"id": "built/dried-meat",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 11,
+		"sampled": 11,
+		"sets": 5
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__dried-meat#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "eb7f5615369ac39c3b49bd2c8306d265fb3522bd2935e41b36cd5d4b8a6543a9"
+	},
+	"rungs": {
+		"1": {
+			"budget": 4220,
+			"checked_at": 11,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 472,
+				"coverage_rel": 0.0,
+				"floor": 0.00522000000000000068,
+				"part_shift": {
+
+				},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0030 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 291 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00069 m",
+				"REDUCE from rung 0 at {\"strip_count\":10} seed 314: element 0's part 'strip' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"REDUCE (every piece) from rung 0: none holds at 0.0030 -- the finest tried (0.700) fails at {\"strip_length_m\":0.08} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00069 m",
+				"THIN: built/dried-meat does not declare `reads_density`"
+			],
+			"route": "rung0",
+			"surfaces": 2,
+			"surfaces_ceiling": 2,
+			"tolerance": 0.00300000000000000006
+		}
+	},
+	"source": {
+		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"generator": "a5edf3f3a55869848cff483ab8052cd52b313b7354c20fc6ff4e5cbaa390f21d"
+	}
+}
