@@ -7,7 +7,7 @@
 #
 # The library's expensive searches -- the derivation benchmark, the goal table,
 # every derived record and drawn ladder another deriver wrote -- run here by the
-# library's own job (`tools/derive-backlog.sh` in the library). What it finishes
+# library's own steps (`tools/derive-backlog.sh`'s, records first). What it finishes
 # is KEPT IN THIS REPOSITORY, on the branch `derive-results`, laid out as the
 # library's tree, with `manifest.json`; nothing is pushed to the library. The
 # library takes from there what is current for it (its `tools/derive-pull.sh`),
@@ -64,14 +64,32 @@ done < <(cd "$KEEP" && find generators test -type f \( -name '*.derived.json' -o
 echo "backlog: $laid file(s) kept by earlier runs laid over library/ at ${PIN:0:12}"
 BUDGET="${PULSE_BACKLOG_BUDGET_S:-18000}"
 SECONDS=0
-( cd "$LIB" && timeout --signal=TERM --kill-after=120 "$BUDGET" tools/derive-backlog.sh )
-code=$?
-case "$code" in
-  0) how="cleared" ;;
-  124|137) how="stopped at the budget (${BUDGET} s); the next run resumes" ;;
-  *) how="failed (exit $code); what it finished is kept" ;;
-esac
-echo "backlog: the library's job $how after ${SECONDS}s"
+# THE LIBRARY'S OWN STEPS, RECORDS FIRST (`tools/derive-backlog.sh`'s, in the
+# library, run here one by one): the stale derived records -- what the game
+# builds from, each written whole as it finishes and each re-checked from its
+# recorded winner, never from the tables -- then the build records and the
+# drawn ladders, then the benchmark and the goal table, which write nothing
+# until every job is done. Run in the library's order, the first run spent its
+# whole 5 h 10 min inside the benchmark and kept nothing (10-23); in this one,
+# what a budget cuts short is the tables, and their checkpoints resume.
+how="cleared"
+step() {
+  local name="$1"; shift
+  local left=$((BUDGET - SECONDS))
+  if [ "$left" -le 60 ]; then how="stopped at the budget (${BUDGET} s) before $name; the next run resumes"; return 1; fi
+  ( cd "$LIB" && AG_RUNNER=1 timeout --signal=TERM --kill-after=120 "$left" "$@" )
+  local code=$?
+  case "$code" in
+    0) echo "backlog: $name done at ${SECONDS}s" ;;
+    124|137) how="stopped at the budget (${BUDGET} s) in $name; the next run resumes"; return 1 ;;
+    *) how="failed in $name (exit $code); what it finished is kept"; return 1 ;;
+  esac
+}
+step "the stale records" tools/derive.sh --stale \
+  && step "the build records" bash -c 'tools/build-times.sh --stale && tools/ladder-records.sh && tools/cards.sh' \
+  && step "the drawn ladders" tools/drawn-ladder.sh --stale \
+  && step "the benchmark and the goal table" env DERIVE_BENCH_BOTH=1 tools/derive-bench.sh
+echo "backlog: the library's steps $how after ${SECONDS}s"
 # KEPT: every file written whole -- a file the budget cut mid-write does not
 # parse, and is left out.
 n=0; bad=0
