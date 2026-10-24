@@ -52,7 +52,7 @@
 				"trace": "built__goods-sack#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 28,
+				"candidates": 1,
 				"trace": "built__goods-sack#3.trace.jsonl"
 			}
 		}
@@ -254,12 +254,12 @@
 			},
 			"error": 0.02962962962962963,
 			"every_piece": true,
-			"fraction": 0.009688901040699992,
+			"fraction": 0.00968890104069999,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.010",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"reduce",
@@ -414,14 +414,14 @@
 			],
 			"route": "reduce",
 			"routes": {
-				"reduce": 5
+				"reduce": 5.0
 			},
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
+		"deriver": "de654f43b6921ce5cfc56df47d2253ac62fea43cf6060a0b3fca8fdd68d484f0",
 		"generator": "beac39292e4fa72ff778cf3338d157f7472345d3a500131099cbf8039f452ec1"
 	}
 }

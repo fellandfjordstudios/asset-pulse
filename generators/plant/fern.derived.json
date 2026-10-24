@@ -79,15 +79,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 25,
+				"candidates": 0,
 				"trace": "plant__fern#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "plant__fern#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "plant__fern#3.trace.jsonl"
 			}
 		}
@@ -111,10 +111,11 @@
 			"measured": {
 				"cost": 790,
 				"coverage_rel": 0.0,
-				"floor": 0.0,
+				"floor": 0.004220000000000001,
 				"part_shift": {},
 				"picture": 0.0
 			},
+			"measured_of": 1,
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames (atlas 0.6 MB) from rung 0 at 2x its pixel: 52390 pixel(s) differ at {} seed 314 (worst 0.67)",
 				"IMPOSTOR at 8x8 frames (atlas 1.0 MB) from rung 0 at 2x its pixel: 53917 pixel(s) differ at {} seed 314 (worst 0.67)",
@@ -197,7 +198,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
+		"deriver": "de654f43b6921ce5cfc56df47d2253ac62fea43cf6060a0b3fca8fdd68d484f0",
 		"generator": "9bd61140d177bfa637b83a1b47302fff866f918fb0556d7ac472fe2c51921a8f"
 	}
 }

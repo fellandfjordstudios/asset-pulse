@@ -41,6 +41,12 @@
 			"seed": 314
 		},
 		{
+			"params": {
+				"interior": 1
+			},
+			"seed": 314
+		},
+		{
 			"params": {},
 			"seed": 315
 		}
@@ -55,17 +61,18 @@
 			"shape",
 			"shape",
 			"shape",
+			"structural",
 			"seed"
 		],
-		"old_key_sets": 8,
-		"sampled": 8,
-		"sets": 2
+		"old_key_sets": 9,
+		"sampled": 9,
+		"sets": 3
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 14,
 				"trace": "built__shop-counter#1.trace.jsonl"
 			}
 		}
@@ -80,7 +87,7 @@
 	"rungs": {
 		"1": {
 			"budget": 39117,
-			"checked_at": 8,
+			"checked_at": 9,
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
@@ -93,7 +100,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"reduce",
@@ -106,14 +113,31 @@
 				"cost": 3256,
 				"coverage_rel": -0.00031,
 				"floor": 0.0041400000000000005,
-				"part_shift": {},
+				"part_shift": {
+					"brass": -0.0006000000000000001,
+					"edge_wood": 1e-05,
+					"frame": 0.00018,
+					"panel": 0.00016,
+					"top": 0.00039000000000000005
+				},
 				"picture": 0.0041400000000000005
 			},
-			"measured_of": 2,
+			"measured_of": 1,
 			"not_taken": [
-				"REDUCE from rung 0 at {} seed 314: element 66's part 'brass' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"IMPOSTOR, MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
-				"REDUCE (every piece) to 0.700 held at 3322, dearer than the 3256 taken"
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 34566 pixel(s) differ at {} seed 314 (worst 0.68)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 27773 pixel(s) differ at {} seed 314 (worst 0.63)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 22811 pixel(s) differ at {} seed 314 (worst 0.70)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 10934 pixel(s) differ at {} seed 314 (worst 0.77)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 34564 pixel(s) differ at {} seed 314 (worst 0.68)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 27776 pixel(s) differ at {} seed 314 (worst 0.63)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 22744 pixel(s) differ at {} seed 314 (worst 0.70)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 10990 pixel(s) differ at {} seed 314 (worst 0.77)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 5931 pixel(s) differ at {} seed 314 (worst 0.90)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 5952 pixel(s) differ at {} seed 314 (worst 0.90)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 4007 pixel(s) differ at {} seed 314 (worst 0.97)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 4047 pixel(s) differ at {} seed 314 (worst 0.97)",
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
 			"route": "kit",
 			"surfaces": 5,
@@ -121,7 +145,8 @@
 		}
 	},
 	"source": {
-		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
-		"generator": "fa7d3b463f828cbaa8a571309e3478bbd912985771a4fe50ab44ba6c3bda8d2f"
+		"children": "6ba3966cebecfe9d0e139dba50e26b3a0894dd3b55af4ca1c8611416ef2f1537",
+		"deriver": "de654f43b6921ce5cfc56df47d2253ac62fea43cf6060a0b3fca8fdd68d484f0",
+		"generator": "4169a391a86fa749547f6e7a4b0123390660855cd399d6849225171f319b30a1"
 	}
 }
