@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Check out the pinned library under library/, and prove it is the pin.
 #
 #   tools/sync-library.sh                 sync to library.lock (no-op if current)
@@ -41,7 +41,8 @@ if [ "$MODE" = "bump" ]; then
   git -C "$LIB" fetch -q origin "$BUMP_REV" || die "fetch of $BUMP_REV failed"
   NEW="$(git -C "$LIB" rev-parse FETCH_HEAD)"
   OLD="$(lock_value commit)"
-  sed -i "s/^commit=.*/commit=$NEW/" "$LOCK"
+  # BSD sed (macOS) needs a suffix after -i; GNU takes it too (transect's form).
+  sed -i.bak "s/^commit=.*/commit=$NEW/" "$LOCK" && rm -f "$LOCK.bak"
   echo "sync-library: pin $OLD -> $NEW ($BUMP_REV)"
 fi
 PIN="$(lock_value commit)"

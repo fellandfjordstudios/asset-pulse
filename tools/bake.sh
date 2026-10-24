@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # THE CATALOG'S BAKE: every rung's glTF and the impostor atlases, made by the
 # explorer's own tool exactly as its refresh.sh made them, against the pinned
 # library.
@@ -37,6 +37,14 @@ if [ "$(git -C "$EXP" rev-parse HEAD)" != "$PIN" ]; then
 fi
 [ -z "$(git -C "$EXP" status --porcelain)" ] || die "explorer/ has local changes; the pulse never edits it"
 ARGS=(--transfer); [ "${PULSE_TRANSFER:-1}" = "0" ] && ARGS=()
+# THE STORE (the library's plans/062 step 1): every rung keyed by what it is
+# made from (the library's derivation/bake_key.gd), so a rung whose key is in
+# the store is copied, not baked again, at any pin. The explorer hands it to
+# the library's bake (its bake-library --cache, 05b6cad). PULSE_STORE=0 bakes
+# everything.
+# The library's atlas tool reads and writes the same store (its step 2).
+STORE_ARGS=(); IMPOSTOR_ARGS=()
+if [ "${PULSE_STORE:-1}" = "1" ]; then STORE_ARGS=(--cache default); IMPOSTOR_ARGS=(--cache); fi
 # RESUME (the explorer's bake-library --resume): the artifacts on disk are kept
 # only while the record of what made them is, keyed by both pins and the mode.
 RESUME_DIR=""
@@ -53,20 +61,47 @@ fi
 if [ -n "$RESUME_DIR" ] && [ -f "$RESUME_DIR/atlases-done" ]; then
   echo "bake: impostor atlases already made for this resume"
 else
-echo "bake: impostor atlases (the library's tools/impostor.sh)"
-# The library's impostor.sh hands `xvfb-run` its `ag_godot` shell function,
-# which a child process cannot see (exit 127; filed in the library's feedback/).
-# Until it is fixed, the same tool (tools/impostor.gd) is run through the
-# library's own display guard, `ag_godot_display`, at impostor.sh's screen size
-# and software GL -- the library's functions and settings, nothing chosen here.
-( cd "$LIB" && export LIBGL_ALWAYS_SOFTWARE=1 GALLIUM_DRIVER=llvmpipe AG_SCREEN=512x512x24 \
-  && source tools/guard.sh && source tools/logdir.sh && source tools/import.sh && ag_import \
-  && LOG="$AG_LOGS/impostor.log" && ag_godot_display "$LOG" --path . --rendering-driver opengl3 --script tools/impostor.gd \
-  ; code=$?; grep -E "^  " "$AG_LOGS/impostor.log" | tail -3; exit $code ) \
-  || echo "bake: NO IMPOSTOR ATLASES this run (the library's tools/impostor.gd failed; see its log); the bake goes on and the catalog names every far rung that lacks one"
+echo "bake: impostor atlases (the library's tools/impostor.sh${IMPOSTOR_ARGS[*]:+ --cache})"
+# The library's own tool again: it runs its batch renderer through its display
+# guard now (its 78a0dc40; feedback/no-impostor-atlas-can-be-baked-e7ec9361),
+# and the pulse's own copy of the call, kept while that was broken, named a
+# script that is no longer a SceneTree -- every atlas missing since.
+( cd "$LIB" && tools/impostor.sh ${IMPOSTOR_ARGS[@]+"${IMPOSTOR_ARGS[@]}"} | tail -3; exit "${PIPESTATUS[0]}" ) \
+  || echo "bake: NO IMPOSTOR ATLASES this run (the library's tools/impostor.sh failed; see its log); the bake goes on and the catalog names every far rung that lacks one"
 [ -z "$RESUME_DIR" ] || touch "$RESUME_DIR/atlases-done"
 fi
 echo "bake: the registry (the explorer's tools/bake-library.sh ${ARGS[*]:-})"
+# THE LEDGER OF TRIES (tools/bake_ledger.py; the owner, 2026-10-24): a subject
+# begun and not finished -- the budget ran out on it, it hung, its bake had
+# problems -- is tried again the next run, when the subjects before it come
+# from the store; after PULSE_BAKE_TRIES (3) it is FAILED, left out by name and
+# not begun again until its bake key moves. Kept beside the store, at any pin.
+LEDGER="$ROOT/out/bake-ledger.json"
+MATERIAL_RUNG=1; [ "${#ARGS[@]}" -gt 0 ] && MATERIAL_RUNG=0
+LEDGER_DIRS=(); [ -z "$RESUME_DIR" ] || LEDGER_DIRS=("$RESUME_DIR/registry" "$RESUME_DIR/default")
+keys_of() { # out stem... -- each stem keyed in its own Godot, under a cap, so one that hangs to build costs one cap
+  local out=$1; shift; echo "{}" > "$out"
+  local s
+  for s in "$@"; do
+    ( cd "$LIB" && timeout "${PULSE_KEY_CAP_S:-300}" godot --headless --path . --script "$ROOT/tools/bake_keys.gd" -- \
+        "$EXP/tools/bake-library.gd" "$MATERIAL_RUNG" "$s" 2>/dev/null ) | grep '^{' | tail -1 > "$out.one" || true
+    python3 -c "import json,sys; a=json.load(open(sys.argv[1])); a.update(json.loads(open(sys.argv[2]).read() or '{}')); json.dump(a, open(sys.argv[1], 'w'))" "$out" "$out.one" 2>/dev/null || true
+  done
+  rm -f "$out.one"
+}
+if [ -n "$RESUME_DIR" ]; then
+  # shellcheck disable=SC2046
+  keys_of "$ROOT/out/bake-ledger-keys.json" $(python3 "$ROOT/tools/bake_ledger.py" stems "$LEDGER")
+  python3 "$ROOT/tools/bake_ledger.py" before "$LEDGER" "$ROOT/out/bake-ledger-keys.json" "${LEDGER_DIRS[@]}"
+  # Counted however the bake ends: a bake with problems writes no manifest and
+  # stops this script, and that subject's try is the one that most needs counting.
+  ledger_after() {
+    # shellcheck disable=SC2046
+    keys_of "$ROOT/out/bake-ledger-keys.json" $(python3 "$ROOT/tools/bake_ledger.py" started "$LEDGER" "${LEDGER_DIRS[@]}")
+    python3 "$ROOT/tools/bake_ledger.py" after "$LEDGER" "$ROOT/out/bake-ledger-keys.json" "${LEDGER_DIRS[@]}"
+  }
+  trap ledger_after EXIT
+fi
 # WITH RESUME, A CAP: the bake runs under `timeout`, PULSE_BAKE_CAP_S at a time
 # (default 2400 s); a run cut by the cap is resumed at once, the subject it was
 # on having used one of its two starts (bake-library --resume leaves a subject
@@ -76,7 +111,7 @@ echo "bake: the registry (the explorer's tools/bake-library.sh ${ARGS[*]:-})"
 registry() { # dir [args]
   local dir=$1; shift
   if [ -z "$RESUME_DIR" ]; then
-    LOG="${BAKE_LOG:-$ROOT/out/bake.log}" "$EXP/tools/bake-library.sh" "$LIB" "$@"; return
+    LOG="${BAKE_LOG:-$ROOT/out/bake.log}" "$EXP/tools/bake-library.sh" "$LIB" "$@" ${STORE_ARGS[@]+"${STORE_ARGS[@]}"}; return
   fi
   # A BUDGET FOR THE WHOLE BAKE (PULSE_BAKE_BUDGET_S, row 215): past it no
   # subject is begun (bake-library --deadline), a run still going is stopped at
@@ -91,12 +126,12 @@ registry() { # dir [args]
       local left=$(( deadline - $(date +%s) ))
       if [ "$left" -le 0 ]; then
         echo "bake: the ${PULSE_BAKE_BUDGET_S} s budget is spent; the manifest of what finished"
-        LOG="${BAKE_LOG:-$ROOT/out/bake.log}.final" "$EXP/tools/bake-library.sh" "$LIB" "$@" --resume "$RESUME_DIR/$dir" "${D[@]}"
+        LOG="${BAKE_LOG:-$ROOT/out/bake.log}.final" "$EXP/tools/bake-library.sh" "$LIB" "$@" ${STORE_ARGS[@]+"${STORE_ARGS[@]}"} --resume "$RESUME_DIR/$dir" "${D[@]}"
         return
       fi
       [ "$left" -lt "$cap" ] && cap=$left
     fi
-    LOG="${BAKE_LOG:-$ROOT/out/bake.log}" timeout "$cap" "$EXP/tools/bake-library.sh" "$LIB" "$@" --resume "$RESUME_DIR/$dir" "${D[@]}"
+    LOG="${BAKE_LOG:-$ROOT/out/bake.log}" timeout "$cap" "$EXP/tools/bake-library.sh" "$LIB" "$@" ${STORE_ARGS[@]+"${STORE_ARGS[@]}"} --resume "$RESUME_DIR/$dir" "${D[@]}"
     code=$?
     [ "$code" = 124 ] || return "$code"
     echo "bake: cut at ${cap} s; resuming (the subject it was on has used a start)"

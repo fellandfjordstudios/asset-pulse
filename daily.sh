@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # THE PULSE'S DAILY RUN, ONE COMMAND: everything a scheduled session does.
 #
 #   ./daily.sh        bump the pin, run (backlog, scorecard, sheets, page),

@@ -48,6 +48,8 @@ jobs:
         run: |
           python -m unittest discover -s tools -p 'test_catalog.py'
           python tools/test_catalog_guard.py
+          python tools/test_store_prune.py
+          python tools/test_bake_ledger.py
           python -m unittest discover -s tools -p 'test_catalog_impostors.py'
       - name: Customer browser behavior (isolated fixtures only)
         run: python tools/test_catalog_browser.py

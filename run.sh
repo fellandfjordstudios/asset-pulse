@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # THE PULSE, ONE RUN: sync the library to its pin, print the scorecard, append
 # the day's totals to history.csv, render every subject's bands (step 1, with
 # the library's per-band sheet, step 5) and write the page (step 2, out/<date>/site/).
@@ -86,7 +86,11 @@ echo "run: scorecard in $OUT/scorecard.txt; history row: $ROW"
 # manifest row that says so, and the run goes on. `--no-render` skips it.
 if [ "${PULSE_RENDER:-1}" = "1" ] && [ "${1:-}" != "--no-render" ] && [ "${2:-}" != "--no-render" ]; then
   command -v godot >/dev/null 2>&1 || fail_row "godot-missing"
-  command -v xvfb-run >/dev/null 2>&1 || fail_row "xvfb-missing"
+  # A virtual display only where there is no real one: not on macOS, not with
+  # DISPLAY set (the library's tools/display-mode.sh, its row 315).
+  if [ "$(uname -s)" != Darwin ] && [ -z "${DISPLAY:-}" ]; then
+    command -v xvfb-run >/dev/null 2>&1 || fail_row "xvfb-missing"
+  fi
   # A fresh checkout has no class cache; the import builds it (seconds) and is
   # a no-op when it exists for this pin.
   if [ ! -f library/.godot/global_script_class_cache.cfg ] || [ "$(cat library/.godot/pulse-pin 2>/dev/null)" != "$PIN" ]; then
@@ -106,6 +110,27 @@ if [ "${PULSE_RENDER:-1}" = "1" ] && [ "${1:-}" != "--no-render" ] && [ "${2:-}"
   RESUME=0
   if [ "${PULSE_RESUME:-0}" = "1" ] && [ "$(cat "$OUT/render-pin" 2>/dev/null)" = "$PIN" ]; then RESUME=1; fi
   echo "$PIN" > "$OUT/render-pin"
+  # THE STORE (the library's plans/062 step 1c): every subject's renders are
+  # kept under a key that says what they were made from -- its rungs as built,
+  # its card, ladder and goal rows, the render tools' code, the engine and the
+  # maths runtime (the library's AgBakeKey.render_key, tools/bake-key.gd) --
+  # and a subject whose key is in the store is copied, not drawn again, at any
+  # pin. The store is the library's ($AG_BAKE_CACHE, else ~/.cache/asset-
+  # generators/bakes), carried between runner jobs by the workflow's rolling
+  # cache. PULSE_STORE=0 draws everything.
+  STORE=""; KEYS="$OUT/render-keys.json"
+  if [ "${PULSE_STORE:-1}" = "1" ]; then
+    if ( cd library && [ -f tools/bake-key.gd ] && godot --headless --path . --script tools/bake-key.gd -- --renders ) > "$KEYS.raw" 2>"$OUT/render-keys.log" \
+        && python3 -c "import json,sys; t=open(sys.argv[1]).read(); json.dump(json.loads(t[t.index('{'):]), open(sys.argv[2], 'w'))" "$KEYS.raw" "$KEYS"; then
+      STORE="$(python3 -c "import json,sys; d=json.load(open(sys.argv[1])); print(d['store'])" "$KEYS")/renders"
+      WRITES="$(python3 -c "import json,sys; print(int(json.load(open(sys.argv[1]))['writes']))" "$KEYS")"
+      echo "run: render store $STORE ($([ "$WRITES" = 1 ] && echo "reads and writes" || echo "reads only: not the pinned maths runtime"))"
+    else
+      echo "run: no render keys (the library at this pin has no tools/bake-key.gd, or it failed: $OUT/render-keys.log); every subject is drawn"
+    fi
+  fi
+  key_of() { python3 -c "import json,sys; print(json.load(open(sys.argv[1]))['renders'].get(sys.argv[2], ''))" "$KEYS" "$1"; }
+  stored=0
   echo "[" > "$MANIFEST"; first=1; n=0; failed=0; resumed=0; t0=$(date +%s)
   for card in library/generators/*/*.card.json; do
     id="$(python3 -c "import json,sys; print(json.load(open(sys.argv[1]))['id'])" "$card" 2>/dev/null)" || continue
@@ -121,12 +146,23 @@ if [ "${PULSE_RENDER:-1}" = "1" ] && [ "${1:-}" != "--no-render" ] && [ "${2:-}"
       prev="$(cat "$dir/status" 2>/dev/null)"
       if [ -z "$prev" ] && ls "$dir"/sheet*.jpg >/dev/null 2>&1 && ls "$dir"/*closeup*.png >/dev/null 2>&1; then prev="ok"; fi
     fi
+    # FROM THE STORE: the subject's files as they were drawn, with the status
+    # they ended in (a failure with the same key fails the same way).
+    key=""; entry=""; how="resumed: already done at this pin"
+    if [ -z "$prev" ] && [ -n "$STORE" ]; then
+      key="$(key_of "$id")"
+      [ -z "$key" ] || entry="$STORE/${key:0:2}/$key"
+      if [ -n "$entry" ] && [ -f "$entry/status" ]; then
+        cp -a "$entry/." "$dir/" && prev="$(cat "$dir/status")" && stored=$((stored+1)) \
+          && how="from the store: nothing it is made from changed"
+      fi
+    fi
     if [ -n "$prev" ]; then
       n=$((n+1)); resumed=$((resumed+1)); [ "$prev" = "ok" ] || failed=$((failed+1))
       images="$(cd "$dir" && ls *.jpg *.png 2>/dev/null | python3 -c "import json,sys; print(json.dumps(sys.stdin.read().split()))")"
       [ $first = 1 ] || echo "," >> "$MANIFEST"; first=0
       printf '  {"id": "%s", "status": "%s", "seconds": 0, "images": %s}' "$id" "$prev" "$images" >> "$MANIFEST"
-      echo "render $id: $prev (resumed: already done at this pin)"; continue
+      echo "render $id: $prev ($how)"; continue
     fi
     ( cd library && timeout "$CAP" python3 tools/rung-sheet.py "$id" --out "$dir/sheet.jpg" "${SHEET_ARGS[@]}" ) > "$dir/sheet.log" 2>&1 || status="sheet-failed"
     if [ "$status" = "ok" ]; then
@@ -134,13 +170,18 @@ if [ "${PULSE_RENDER:-1}" = "1" ] && [ "${1:-}" != "--no-render" ] && [ "${2:-}"
     fi
     secs=$(( $(date +%s) - s )); n=$((n+1)); [ "$status" = "ok" ] || failed=$((failed+1))
     echo "$status" > "$dir/status"
+    # INTO THE STORE, whole or not at all (a copy beside the entry, renamed).
+    if [ -n "$entry" ] && [ "${WRITES:-0}" = 1 ]; then
+      mkdir -p "$(dirname "$entry")" && rm -rf "$entry.tmp.$$" && cp -a "$dir" "$entry.tmp.$$" \
+        && { rm -rf "$entry"; mv "$entry.tmp.$$" "$entry"; } || rm -rf "$entry.tmp.$$"
+    fi
     images="$(cd "$dir" && ls *.jpg *.png 2>/dev/null | python3 -c "import json,sys; print(json.dumps(sys.stdin.read().split()))")"
     [ $first = 1 ] || echo "," >> "$MANIFEST"; first=0
     printf '  {"id": "%s", "status": "%s", "seconds": %d, "images": %s}' "$id" "$status" "$secs" "$images" >> "$MANIFEST"
     echo "render $id: $status in ${secs}s"
   done
   echo "" >> "$MANIFEST"; echo "]" >> "$MANIFEST"
-  echo "run: rendered $n subjects ($resumed resumed), $failed failed, in $(( $(date +%s) - t0 )) s; manifest $MANIFEST"
+  echo "run: rendered $n subjects ($resumed resumed, $stored of them from the store), $failed failed, in $(( $(date +%s) - t0 )) s; manifest $MANIFEST"
   # STEP 2, THE PAGE: static HTML from this run's output and the history.
   python3 tools/site.py "$OUT" || fail_row "site"
   # THE CATALOG, the pulse's public half: the explorer's bake of every rung

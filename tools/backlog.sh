@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # THE DERIVATION BACKLOG, PAID ONCE AND KEPT HERE (the owner, 2026-10-02: "let
 # asset pulse fix the derivation ... I don't want to pay twice for a super
 # expensive job"; and 2026-10-23: "Why not have the asset generators library

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # PUBLISH ONE RUN (the plan's step 3): the private pulse behind Access, the
 # public catalog on the explorer's existing Pages hostname, the catalog's
 # objects to the `catalog` R2 bucket by hash.

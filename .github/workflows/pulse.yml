@@ -25,8 +25,11 @@
 name: pulse
 
 on:
+  # EVERY EIGHT HOURS (the owner, 10-14: "Can we just use GitHub actions with
+  # incremental updates? Maybe run every 8 hours?"): a run redoes only what
+  # changed (the store below), so three a day cost little more than one.
   schedule:
-    - cron: "37 5 * * *"
+    - cron: "37 */8 * * *"
   workflow_dispatch:
     inputs:
       refresh_catalog:
@@ -99,10 +102,29 @@ jobs:
             tools/sync-library.sh
           else
             tools/sync-library.sh --bump main
+            # THE LIBRARY'S OWN GODOT AND MATHS RUNTIME, as the derive job's: the
+            # store below is written only under the library's pinned runtime, and
+            # every key carries the engine, so a run on transect's 4.5 would make
+            # keys the library's own tools never read.
+            ( cd library && GIT_CONFIG_GLOBAL="$RUNNER_TEMP/library-setup.gitconfig" tools/setup.sh )
           fi
           echo "library=$(sed -n 's/^commit=//p' library.lock)" >> "$GITHUB_OUTPUT"
           echo "explorer=$(sed -n 's/^commit=//p' explorer.lock)" >> "$GITHUB_OUTPUT"
           echo "date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+      # THE STORE (the library's plans/062 step 1): every bake and render keyed
+      # by what it is made from, so a run redoes only the subjects whose key
+      # moved, at any pin. Carried forward by a ROLLING key: each run saves its
+      # own, and the newest is restored whatever the pins. With it the bake's
+      # ledger of tries (tools/bake_ledger.py): what was begun and not finished.
+      - name: the store, as the last run left it
+        if: inputs.refresh_catalog != true
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            ~/.cache/asset-generators/bakes
+            out/bake-ledger.json
+          key: store-${{ github.run_id }}
+          restore-keys: store-
       - name: renders done at this library pin
         id: renders
         uses: actions/cache/restore@v4
@@ -184,6 +206,17 @@ jobs:
         with:
           path: out/render-cache
           key: renders-${{ steps.pins.outputs.library }}-${{ github.run_id }}
+      - name: the store, under the cache's limit
+        if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
+        run: python3 tools/store-prune.py ~/.cache/asset-generators/bakes
+      - name: save the store for the next run
+        if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            ~/.cache/asset-generators/bakes
+            out/bake-ledger.json
+          key: store-${{ github.run_id }}
       - name: save the bake for these pins
         if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
         uses: actions/cache/save@v4
