@@ -1,14 +1,12 @@
 {
 	"checked_at": [
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 314
 		},
 		{
 			"params": {
-				"needle_length_m": 0.0149999999999999994
+				"needle_length_m": 0.015
 			},
 			"seed": 314
 		},
@@ -56,19 +54,19 @@
 		},
 		{
 			"params": {
-				"shoot_length_m": 0.0299999999999999989
+				"shoot_length_m": 0.03
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"shoot_length_m": 0.400000000000000022
+				"shoot_length_m": 0.4
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"clothed_fraction": 0.149999999999999994
+				"clothed_fraction": 0.15
 			},
 			"seed": 314
 		},
@@ -104,20 +102,18 @@
 		},
 		{
 			"params": {
-				"axis_diameter_m": 0.00100000000000000002
+				"axis_diameter_m": 0.001
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"axis_diameter_m": 0.0299999999999999989
+				"axis_diameter_m": 0.03
 			},
 			"seed": 314
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -163,9 +159,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -179,21 +173,17 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.000777999999999999937
+				"pixel_m": 0.0007779999999999999
 			},
-			"error": 0.00324235731156345382,
+			"error": 0.003242357311563454,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {
-
-			},
+			"keep": {},
 			"measured": {
 				"cost": 646,
 				"coverage_rel": 0.0,
 				"floor": 0.0043,
-				"part_shift": {
-
-				},
+				"part_shift": {},
 				"picture": 0.0
 			},
 			"measured_of": 1,
@@ -211,21 +201,17 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.00311199999999999975
+				"pixel_m": 0.0031119999999999997
 			},
-			"error": 0.0129694292462538153,
+			"error": 0.012969429246253815,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {
-
-			},
+			"keep": {},
 			"measured": {
 				"cost": 646,
 				"coverage_rel": 0.0,
 				"floor": 0.0043,
-				"part_shift": {
-
-				},
+				"part_shift": {},
 				"picture": 0.0
 			},
 			"measured_of": 1,
@@ -239,7 +225,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "0ed1e4d4f8046974830bf92185bda90307409713f502fe68c71255d734672007"
 	}
 }

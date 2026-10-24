@@ -1,0 +1,75 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"squash": 0.3
+			},
+			"seed": 314
+		}
+	],
+	"id": "fixture/derived",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural"
+		],
+		"old_key_sets": 2,
+		"sampled": 2,
+		"sets": 2
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "fixture__derived#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "55bd869519ed490c3ded092dfaef1d411f1b83312fd32e6b7ae548a21806d683"
+	},
+	"rungs": {
+		"1": {
+			"budget": 21336,
+			"checked_at": 2,
+			"drawn": {
+				"excess": 0.0,
+				"judge": "drawn",
+				"pixel_m": 0.06
+			},
+			"error": 0.03,
+			"fraction": 0.11764899999999996,
+			"from_rung": 0,
+			"measured": {
+				"cost": 202,
+				"coverage_rel": -0.054740000000000004,
+				"floor": 0.00398,
+				"part_shift": {
+					"base": 0.0009800000000000002,
+					"cap": -0.0009800000000000002
+				},
+				"picture": 0.02125
+			},
+			"measured_of": 1,
+			"route": "reduce",
+			"routes": {
+				"reduce": 2.0
+			},
+			"surfaces": 2,
+			"surfaces_ceiling": 2
+		}
+	},
+	"source": {
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
+		"generator": "d36fd39cec1b3e02b746094b8976e9ed4faacfb7ea2c435d6da3b5857f837012"
+	}
+}

@@ -1,9 +1,7 @@
 {
 	"checked_at": [
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 314
 		},
 		{
@@ -20,37 +18,37 @@
 		},
 		{
 			"params": {
-				"strip_length_m": 0.0800000000000000017
+				"strip_length_m": 0.08
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"strip_length_m": 0.160000000000000003
+				"strip_length_m": 0.16
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"strip_width_m": 0.0149999999999999994
+				"strip_width_m": 0.015
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"strip_width_m": 0.0350000000000000033
+				"strip_width_m": 0.035
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"strip_thickness_m": 0.00300000000000000006
+				"strip_thickness_m": 0.003
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"strip_thickness_m": 0.00600000000000000012
+				"strip_thickness_m": 0.006
 			},
 			"seed": 314
 		},
@@ -61,9 +59,7 @@
 			"seed": 314
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -96,9 +92,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -114,10 +108,8 @@
 			"measured": {
 				"cost": 472,
 				"coverage_rel": 0.0,
-				"floor": 0.00522000000000000068,
-				"part_shift": {
-
-				},
+				"floor": 0.005220000000000001,
+				"part_shift": {},
 				"picture": 0.0
 			},
 			"measured_of": 1,
@@ -130,11 +122,11 @@
 			"route": "rung0",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
-			"tolerance": 0.00300000000000000006
+			"tolerance": 0.003
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "a5edf3f3a55869848cff483ab8052cd52b313b7354c20fc6ff4e5cbaa390f21d"
 	}
 }

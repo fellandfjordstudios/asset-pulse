@@ -1,9 +1,7 @@
 {
 	"checked_at": [
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 314
 		},
 		{
@@ -20,13 +18,13 @@
 		},
 		{
 			"params": {
-				"diameter_m": 0.200000000000000011
+				"diameter_m": 0.2
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"diameter_m": 0.450000000000000011
+				"diameter_m": 0.45
 			},
 			"seed": 314
 		},
@@ -50,7 +48,7 @@
 		},
 		{
 			"params": {
-				"check_depth": 0.349999999999999978
+				"check_depth": 0.35
 			},
 			"seed": 314
 		},
@@ -74,7 +72,7 @@
 		},
 		{
 			"params": {
-				"split_depth_m": 0.299999999999999989
+				"split_depth_m": 0.3
 			},
 			"seed": 314
 		},
@@ -110,7 +108,7 @@
 		},
 		{
 			"params": {
-				"crust_m": 0.599999999999999978
+				"crust_m": 0.6
 			},
 			"seed": 314
 		},
@@ -151,9 +149,7 @@
 			"seed": 314
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -201,13 +197,11 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
-		"1": "be968a10e87f48573845030625cf7cbb45dccba97dc29c09e84cf274161ff34e"
+		"1": "0bb7897e64cc3b87a6f67febe1ed5f4b281e953d7519a9bb8972685bc15b27e4"
 	},
 	"rungs": {
 		"1": {
@@ -216,16 +210,14 @@
 			"checked_at": 26,
 			"error": -1.0,
 			"every_piece": true,
-			"fraction": 0.342999999999999916,
+			"fraction": 0.3429999999999999,
 			"from_rung": 0,
 			"measured": {
 				"cost": 58186,
-				"coverage_rel": -0.00872999999999999991,
-				"floor": 0.00450000000000000053,
-				"part_shift": {
-
-				},
-				"picture": 0.00461000000000000038
+				"coverage_rel": -0.008860000000000002,
+				"floor": 0.0045000000000000005,
+				"part_shift": {},
+				"picture": 0.00461
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -244,11 +236,11 @@
 			},
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
-			"tolerance": 0.00185185185185185171
+			"tolerance": 0.0018518518518518517
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "0fca5b6d1bef1b778d037ac34a8c398d1f1fdd21c3e7c209b3def18f2167f00a"
 	}
 }

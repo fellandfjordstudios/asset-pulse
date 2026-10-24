@@ -1,116 +1,114 @@
 {
 	"checked_at": [
 		{
+			"params": {},
+			"seed": 314
+		},
+		{
 			"params": {
-
+				"body_length_m": 0.07
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"body_length_m": 0.0700000000000000067
+				"body_length_m": 0.26
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"body_length_m": 0.260000000000000009
+				"body_width_m": 0.016
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"body_width_m": 0.0160000000000000003
+				"body_width_m": 0.06
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"body_width_m": 0.0599999999999999978
+				"body_height_m": 0.012
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"body_height_m": 0.0120000000000000002
+				"body_height_m": 0.048
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"body_height_m": 0.048000000000000001
+				"mantle_fraction_of_length": 0.2
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"mantle_fraction_of_length": 0.200000000000000011
+				"mantle_fraction_of_length": 0.45
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"mantle_fraction_of_length": 0.450000000000000011
+				"pneumostome_from_front": 0.4
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"pneumostome_from_front": 0.400000000000000022
+				"pneumostome_from_front": 0.9
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"pneumostome_from_front": 0.900000000000000022
+				"pneumostome_diameter_m": 0.002
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"pneumostome_diameter_m": 0.00200000000000000004
+				"pneumostome_diameter_m": 0.012
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"pneumostome_diameter_m": 0.0120000000000000002
+				"tentacle_length_m": 0.004
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"tentacle_length_m": 0.00400000000000000008
+				"tentacle_length_m": 0.028
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"tentacle_length_m": 0.0280000000000000006
+				"feeler_fraction": 0.15
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"feeler_fraction": 0.149999999999999994
+				"feeler_fraction": 0.6
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"feeler_fraction": 0.599999999999999978
+				"foot_fringe_fraction": 0.04
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"foot_fringe_fraction": 0.0400000000000000008
-			},
-			"seed": 314
-		},
-		{
-			"params": {
-				"foot_fringe_fraction": 0.220000000000000001
+				"foot_fringe_fraction": 0.22
 			},
 			"seed": 314
 		},
@@ -122,7 +120,7 @@
 		},
 		{
 			"params": {
-				"tail_keel_fraction": 0.149999999999999994
+				"tail_keel_fraction": 0.15
 			},
 			"seed": 314
 		},
@@ -151,9 +149,7 @@
 			"seed": 314
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -201,9 +197,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -216,22 +210,18 @@
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
-				"pixel_m": 0.000777999999999999937
+				"pixel_m": 0.0007779999999999999
 			},
-			"error": 0.00432226875438092469,
+			"error": 0.004322268754380925,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {
-
-			},
+			"keep": {},
 			"measured": {
 				"cost": 3806,
-				"coverage_rel": -0.00281000000000000043,
-				"floor": 0.00398000000000000003,
-				"part_shift": {
-
-				},
-				"picture": 0.00398000000000000003
+				"coverage_rel": -0.0028100000000000004,
+				"floor": 0.00398,
+				"part_shift": {},
+				"picture": 0.00398
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -243,7 +233,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "b08df453c9f12d8461e559cb98fbbb54fc380af0fd68f9f193de2fb0a90ad776"
 	}
 }

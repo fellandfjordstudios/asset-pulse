@@ -1,9 +1,7 @@
 {
 	"checked_at": [
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 314
 		},
 		{
@@ -20,32 +18,30 @@
 		},
 		{
 			"params": {
-				"loft": 0.400000000000000022
+				"loft": 0.4
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"loft": 1.19999999999999996
+				"loft": 1.2
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"knit_thickness_m": 0.000760000000000000042
+				"knit_thickness_m": 0.00076
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"knit_thickness_m": 0.00204000000000000015
+				"knit_thickness_m": 0.00204
 			},
 			"seed": 314
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -75,9 +71,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -90,22 +84,18 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.00129699999999999998
+				"pixel_m": 0.001297
 			},
-			"error": 0.00400000000000000008,
+			"error": 0.004,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {
-
-			},
+			"keep": {},
 			"measured": {
 				"cost": 468,
-				"coverage_rel": -0.000740000000000000098,
-				"floor": 0.00449000000000000007,
-				"part_shift": {
-
-				},
-				"picture": 0.00449000000000000007
+				"coverage_rel": -0.0007400000000000001,
+				"floor": 0.00449,
+				"part_shift": {},
+				"picture": 0.00449
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -117,7 +107,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "3709be45b6749c93738cabb7fb3f89d9c8a45558321324e248827a05a82918d5"
 	}
 }

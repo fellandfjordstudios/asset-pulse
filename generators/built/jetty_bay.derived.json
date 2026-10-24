@@ -1,14 +1,12 @@
 {
 	"checked_at": [
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 314
 		},
 		{
 			"params": {
-				"length_m": 1.19999999999999996
+				"length_m": 1.2
 			},
 			"seed": 314
 		},
@@ -32,7 +30,7 @@
 		},
 		{
 			"params": {
-				"plank_w_m": 0.119999999999999996
+				"plank_w_m": 0.12
 			},
 			"seed": 314
 		},
@@ -73,9 +71,7 @@
 			"seed": 314
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -114,9 +110,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -129,11 +123,11 @@
 			"checked_at": 13,
 			"drawn": {
 				"excess": 0.5,
-				"gap": 0.0280000000000000006,
+				"gap": 0.028,
 				"judge": "drawn",
-				"pixel_m": 0.00674999999999999992
+				"pixel_m": 0.00675
 			},
-			"error": 0.00185185185185185192,
+			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {
@@ -141,12 +135,10 @@
 			},
 			"measured": {
 				"cost": 656,
-				"coverage_rel": 0.000270000000000000003,
-				"floor": 0.0054300000000000008,
-				"part_shift": {
-
-				},
-				"picture": 0.00536000000000000018
+				"coverage_rel": 0.00027,
+				"floor": 0.005430000000000001,
+				"part_shift": {},
+				"picture": 0.00536
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -161,11 +153,11 @@
 			"checked_at": 13,
 			"drawn": {
 				"excess": 0.25,
-				"gap": 0.0940000000000000002,
+				"gap": 0.094,
 				"judge": "drawn",
-				"pixel_m": 0.0269999999999999997
+				"pixel_m": 0.027
 			},
-			"error": 0.00740740740740740769,
+			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {
@@ -173,12 +165,10 @@
 			},
 			"measured": {
 				"cost": 416,
-				"coverage_rel": 0.000989999999999999995,
-				"floor": 0.0054300000000000008,
-				"part_shift": {
-
-				},
-				"picture": 0.0054300000000000008
+				"coverage_rel": 0.00099,
+				"floor": 0.005430000000000001,
+				"part_shift": {},
+				"picture": 0.005430000000000001
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -192,7 +182,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "f2206de67c707b99b1446e58962b718895b9f9fa17c0308547b0adb5679f727f"
 	}
 }

@@ -1,0 +1,116 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"open": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.4
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 1.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"spread_m": 0.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"spread_m": 0.5
+			},
+			"seed": 314
+		}
+	],
+	"id": "fixture/hinge",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"shape",
+			"shape",
+			"shape"
+		],
+		"old_key_sets": 6,
+		"sampled": 6,
+		"sets": 1
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 6,
+				"trace": "fixture__hinge#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "20ddce74d3fe757518aac9d17dae728cad82aa4588893febcd7ecb4ccea4dd92"
+	},
+	"rungs": {
+		"1": {
+			"budget": 21336,
+			"checked_at": 6,
+			"drawn": {
+				"excess": 0.0,
+				"judge": "drawn",
+				"pixel_m": 0.001111
+			},
+			"error": 0.001851851851851852,
+			"fraction": 0.028247524899999984,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.028",
+				"looked": 0,
+				"order": [
+					"kit",
+					"reduce",
+					"thin",
+					"impostor",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 48,
+				"coverage_rel": 0.0,
+				"floor": 0.00953,
+				"part_shift": {
+					"box": 0.0,
+					"feet": 0.0,
+					"lid": 0.0
+				},
+				"picture": 0.00953
+			},
+			"measured_of": 1,
+			"route": "reduce",
+			"routes": {
+				"reduce": 3
+			},
+			"surfaces": 3,
+			"surfaces_ceiling": 3
+		}
+	},
+	"source": {
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
+		"generator": "b95ab8abb304a8803171e22eb50cb2266ba48360498ba384b33364f2b2299742"
+	}
+}

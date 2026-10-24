@@ -1,14 +1,12 @@
 {
 	"checked_at": [
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 314.0
 		},
 		{
 			"params": {
-				"radius_m": 0.0299999999999999885
+				"radius_m": 0.02999999999999999
 			},
 			"seed": 314.0
 		},
@@ -20,7 +18,7 @@
 		},
 		{
 			"params": {
-				"elongation": 0.349999999999999978
+				"elongation": 0.35
 			},
 			"seed": 314.0
 		},
@@ -98,7 +96,7 @@
 		},
 		{
 			"params": {
-				"arris_rounding": 0.599999999999999978
+				"arris_rounding": 0.6
 			},
 			"seed": 314.0
 		},
@@ -110,7 +108,7 @@
 		},
 		{
 			"params": {
-				"roughness_m": 0.0050000000000000001
+				"roughness_m": 0.005
 			},
 			"seed": 314.0
 		},
@@ -122,26 +120,24 @@
 		},
 		{
 			"params": {
-				"chip_depth_m": 0.0200000000000000004
+				"chip_depth_m": 0.02
 			},
 			"seed": 314.0
 		},
 		{
 			"params": {
-				"chip_width_m": 0.00300000000000000006
+				"chip_width_m": 0.003
 			},
 			"seed": 314.0
 		},
 		{
 			"params": {
-				"chip_width_m": 0.0599999999999999908
+				"chip_width_m": 0.05999999999999999
 			},
 			"seed": 314.0
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315.0
 		}
 	],
@@ -178,9 +174,7 @@
 		"sets": 24.0
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314.0
 	},
 	"replay": {
@@ -193,22 +187,18 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.0102930000000000001
+				"pixel_m": 0.010293
 			},
-			"error": 0.0237078245113180805,
+			"error": 0.02370782451131808,
 			"fraction": 1.0,
 			"from_rung": 0.0,
-			"keep": {
-
-			},
+			"keep": {},
 			"measured": {
 				"cost": 3932.0,
-				"coverage_rel": 0.0124600000000000006,
-				"floor": 0.00527000000000000038,
-				"part_shift": {
-
-				},
-				"picture": 0.0119799999999999993
+				"coverage_rel": 0.01246,
+				"floor": 0.00527,
+				"part_shift": {},
+				"picture": 0.01198
 			},
 			"measured_of": 3.0,
 			"not_taken": [

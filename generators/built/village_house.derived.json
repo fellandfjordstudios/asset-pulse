@@ -1,0 +1,368 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"length_m": 6.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"length_m": 12.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"depth_m": 5.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"depth_m": 8.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"eave_m": 4.5
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"eave_m": 6.5
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"pitch_deg": 30.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"pitch_deg": 48.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"plinth_m": 0.3
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"plinth_m": 1.2
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"storeys": 1.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"bays": 2.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"bays": 5.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"chimney_at": 0.2
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"chimney_at": 0.8
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"cladding": 1.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"roof_kind": 1.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"balcony": 0.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"shutters": 0.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"steps": 1.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"steps": 5.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"window_width_m": 0.7
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"window_width_m": 1.4
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"window_h_over_w": 1.0
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"window_h_over_w": 1.8
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"board_m": 0.1
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"board_m": 0.25
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {},
+			"seed": 315.0
+		}
+	],
+	"id": "built/village-house",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"shape",
+			"shape",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 29.0,
+		"sampled": 29.0,
+		"sets": 27.0
+	},
+	"probe": {
+		"params": {},
+		"seed": 314.0
+	},
+	"replay": {
+		"1": "5b154bd27fea49e0ce4f483476ce316fee39ebd1d1e5d5e71800494a94f81aa0",
+		"2": "5522f99056d600beef5286701f7e9ddae810312459b5215b1e920cd01ee3a5d3",
+		"3": "a0859c57e85f9b0f34e28bbcd635c2bed8a452189425fc2ec116f3aba1c2584d"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117.0,
+			"checked_at": 29.0,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.01745799999999999
+			},
+			"error": 0.00185185185185185,
+			"every_piece": true,
+			"fraction": 0.7,
+			"from_rung": 0.0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to 0.700",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 19708.0,
+				"coverage_rel": 0.0,
+				"floor": 0.0051,
+				"part_shift": {
+					"board": -2e-05,
+					"chimney": 1e-05,
+					"foundation": 6.000000000000001e-05,
+					"frame": -0.00011,
+					"gable": 0.00014,
+					"glass": 4e-05,
+					"iron": -8e-05,
+					"nail": 0.0,
+					"opening": 1e-05,
+					"roof": -0.00012,
+					"rust": 0.0,
+					"wall": 0.00011
+				},
+				"picture": 0.00505
+			},
+			"measured_of": 1.0,
+			"not_taken": [
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"eave_m\":4.5} seed 314: the picture changes at the drawn size: 189972 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.88), one pixel 0.01616 m; coverage changes -1.0000 against 0.0074 allowed (a one-pixel shrink all round)",
+				"REDUCE from rung 0 at {} seed 314: part 'wall' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)"
+			],
+			"route": "reduce",
+			"routes": {
+				"reduce": 12.0
+			},
+			"surfaces": 12.0,
+			"surfaces_ceiling": 12.0
+		},
+		"2": {
+			"budget": 9779.0,
+			"checked_at": 29.0,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.06983299999999999
+			},
+			"error": 0.0074074074074074,
+			"every_piece": true,
+			"fraction": 0.48999999999999994,
+			"from_rung": 0.0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to 0.490",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"thin"
+				]
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 14192.0,
+				"coverage_rel": -0.00117,
+				"floor": 0.0051,
+				"part_shift": {
+					"board": -0.00049,
+					"chimney": -4e-05,
+					"foundation": 0.00012,
+					"frame": -0.0017,
+					"gable": 0.00065,
+					"glass": 0.0002,
+					"iron": -0.00015,
+					"nail": 0.0,
+					"opening": 5e-05,
+					"roof": 0.00063,
+					"rust": 0.0,
+					"wall": 0.00079
+				},
+				"picture": 0.0051
+			},
+			"measured_of": 1.0,
+			"not_taken": [
+				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"eave_m\":4.5} seed 314: the picture changes at the drawn size: 11716 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.06465 m; coverage changes -1.0000 against 0.0294 allowed (a one-pixel shrink all round)",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"eave_m\":4.5} seed 314: the picture changes at the drawn size: 11716 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.06465 m; coverage changes -1.0000 against 0.0294 allowed (a one-pixel shrink all round)",
+				"REDUCE from rung 0 at {} seed 314: part 'wall' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)"
+			],
+			"route": "reduce",
+			"routes": {
+				"reduce": 12.0
+			},
+			"surfaces": 2.0,
+			"surfaces_ceiling": 1.0
+		},
+		"3": {
+			"atlas_bytes": 16777216.0,
+			"budget": 2444.0,
+			"checked_at": 29.0,
+			"draw_calls": 1.0,
+			"drawn": {
+				"excess": 0.2654,
+				"judge": "drawn",
+				"why": "an impostor is judged at the drawn size, its frames blended"
+			},
+			"error": 0.02962962962962962,
+			"fraction": 1.0,
+			"from_rung": 0.0,
+			"measured": {
+				"cost": 2.0,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {},
+				"picture": -1.0
+			},
+			"measured_of": 1.0,
+			"not_taken": [
+				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
+			],
+			"route": "impostor",
+			"surfaces": 1.0,
+			"surfaces_ceiling": 1.0,
+			"tiles": 16.0
+		}
+	},
+	"source": {
+		"children": "d710a08b1a4cf06bb07524a4bf83c8862c040084c7ea88baaf01187601b5b77a",
+		"deriver": "440273563dac65fc840f978d25ae74651ebce7cc41a0310a1f04f9921459c20b",
+		"generator": "91da6f58326c701cd75d55c49a185bbb4d302b3899d97b1c7b95d0be41104521"
+	}
+}

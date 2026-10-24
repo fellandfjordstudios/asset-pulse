@@ -1,32 +1,30 @@
 {
 	"checked_at": [
 		{
+			"params": {},
+			"seed": 314
+		},
+		{
 			"params": {
-
+				"height_m": 0.2
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"height_m": 0.200000000000000011
+				"height_m": 0.24
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"height_m": 0.239999999999999991
+				"body_diameter_m": 0.08
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"body_diameter_m": 0.0800000000000000017
-			},
-			"seed": 314
-		},
-		{
-			"params": {
-				"body_diameter_m": 0.100000000000000006
+				"body_diameter_m": 0.1
 			},
 			"seed": 314
 		}
@@ -54,9 +52,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -68,15 +64,15 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.5,
-				"gap": 0.471999999999999975,
+				"gap": 0.472,
 				"judge": "drawn",
-				"pixel_m": 0.00129699999999999998
+				"pixel_m": 0.001297
 			},
-			"error": 0.00589400284688307817,
+			"error": 0.005894002846883078,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {
-				"cap_rib": 0.489999999999999936
+				"cap_rib": 0.48999999999999994
 			},
 			"look_past": {
 				"beaten": false,
@@ -91,12 +87,10 @@
 			},
 			"measured": {
 				"cost": 2030,
-				"coverage_rel": -0.00674000000000000033,
+				"coverage_rel": -0.00674,
 				"floor": 0.0041600000000000005,
-				"part_shift": {
-
-				},
-				"picture": 0.00463000000000000043
+				"part_shift": {},
+				"picture": 0.0046300000000000004
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -110,7 +104,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "b90afed884a25e91ca1246772b50ab43a467417b3f694d2a16e58dc4f510fb51"
 	}
 }

@@ -1,0 +1,622 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"density_per_m2": 10.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"density_per_m2": 4000.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"patch_m": 0.25
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"blade_length_m": 0.012
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"blade_length_m": 0.075
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"size_spread": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"size_spread": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"curl": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"curl": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"fresh_share": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"fresh_share": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"skeleton_share": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"skeleton_share": 0.4
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		}
+	],
+	"id": "plant/birch-leaf-litter",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"shape",
+			"shape",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 15,
+		"sampled": 15,
+		"sets": 13
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "plant__birch-leaf-litter#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "plant__birch-leaf-litter#2.trace.jsonl"
+			},
+			"3": {
+				"candidates": 12,
+				"trace": "plant__birch-leaf-litter#3.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "f90829b51bcba7521d78b7fecede877ace55ede7a3d9ed366ecb71e581cbba14",
+		"2": "581df849ab318db6523d4d0bee27f3531c07e30f6ca3e11a22f97e8ff7c64585",
+		"3": "409525c6cfd8e5487e72a16167ca4dac4360fc927e9337e5ba56555f98f118e0"
+	},
+	"rungs": {
+		"1": {
+			"above_tolerance": true,
+			"budget": 14224,
+			"checked_at": 15,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"debris": 0.7,
+				"vein": 0.7
+			},
+			"measured": {
+				"cost": 16976,
+				"coverage_rel": -0.28802,
+				"floor": 0.0055000000000000005,
+				"part_shift": {},
+				"picture": 0.20055
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 22570 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.86), one pixel 0.00197 m; coverage changes -0.0398 against 0.0286 allowed (a one-pixel shrink all round)",
+				"REDUCE from rung 0 at {} seed 314: element 11's part 'lace' is 15 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 94 more groups)",
+				"REDUCE (every piece) from rung 0: nothing to try",
+				"THIN: plant/birch-leaf-litter does not declare `reads_density`"
+			],
+			"route": "kit",
+			"surfaces": 4,
+			"surfaces_ceiling": 4,
+			"tolerance": 0.0018518518518518517
+		},
+		"2": {
+			"above_tolerance": true,
+			"budget": 3556,
+			"checked_at": 15,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"debris": 0.24009999999999992,
+				"vein": 0.24009999999999992
+			},
+			"material_transfer": {
+				"checked_at": 15,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.4046255648136139,
+							0.2472415268421173,
+							0.14683929085731506
+						],
+						"mean_before": [
+							0.4046255648136139,
+							0.2472415268421173,
+							0.14683929085731506
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.025185585021972656,
+							0.013941165059804916,
+							0.004727974534034729
+						],
+						"variance_before": [
+							0.025185585021972656,
+							0.013941165059804916,
+							0.004727974534034729
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.4380854070186615,
+							0.2515377104282379,
+							0.1529451459646225
+						],
+						"mean_before": [
+							0.4380854070186615,
+							0.2515377104282379,
+							0.1529451459646225
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							5.960464477539063e-08,
+							2.2351741790771484e-08,
+							3.725290298461914e-09
+						],
+						"variance_before": [
+							5.960464477539063e-08,
+							2.2351741790771484e-08,
+							3.725290298461914e-09
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.40308678150177,
+							0.246175616979599,
+							0.14636242389678955
+						],
+						"mean_before": [
+							0.40308678150177,
+							0.246175616979599,
+							0.14636242389678955
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0250215083360672,
+							0.013800852000713348,
+							0.004690943285822868
+						],
+						"variance_before": [
+							0.0250215083360672,
+							0.013800852000713348,
+							0.004690943285822868
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.43511292338371277,
+							0.2727277874946594,
+							0.1605565994977951
+						],
+						"mean_before": [
+							0.43511292338371277,
+							0.2727277874946594,
+							0.1605565994977951
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.027219191193580627,
+							0.016204722225666046,
+							0.005345107987523079
+						],
+						"variance_before": [
+							0.027219191193580627,
+							0.016204722225666046,
+							0.005345107987523079
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.4048301875591278,
+							0.24736382067203522,
+							0.14696425199508667
+						],
+						"mean_before": [
+							0.4048301875591278,
+							0.24736382067203522,
+							0.14696425199508667
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.024906575679779053,
+							0.013752881437540054,
+							0.004673108458518982
+						],
+						"variance_before": [
+							0.024906575679779053,
+							0.013752881437540054,
+							0.004673108458518982
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.40456265211105347,
+							0.24725335836410522,
+							0.1467176228761673
+						],
+						"mean_before": [
+							0.40456265211105347,
+							0.24725335836410522,
+							0.1467176228761673
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.025442123413085938,
+							0.014100302010774612,
+							0.004779480397701263
+						],
+						"variance_before": [
+							0.025442123413085938,
+							0.014100302010774612,
+							0.004779480397701263
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.4065592586994171,
+							0.24894171953201294,
+							0.14783920347690582
+						],
+						"mean_before": [
+							0.4065592586994171,
+							0.24894171953201294,
+							0.14783920347690582
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.025267452001571655,
+							0.014071110635995865,
+							0.0047623161226511
+						],
+						"variance_before": [
+							0.025267452001571655,
+							0.014071110635995865,
+							0.0047623161226511
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.4046955704689026,
+							0.24719668924808502,
+							0.14676223695278168
+						],
+						"mean_before": [
+							0.4046955704689026,
+							0.24719668924808502,
+							0.14676223695278168
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.02520965039730072,
+							0.01394912600517273,
+							0.004729842767119408
+						],
+						"variance_before": [
+							0.02520965039730072,
+							0.01394912600517273,
+							0.004729842767119408
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.4042307138442993,
+							0.24701406061649323,
+							0.14661994576454163
+						],
+						"mean_before": [
+							0.4042307138442993,
+							0.24701406061649323,
+							0.14661994576454163
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.025422334671020508,
+							0.014067400246858597,
+							0.004770457744598389
+						],
+						"variance_before": [
+							0.025422334671020508,
+							0.014067400246858597,
+							0.004770457744598389
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.40623190999031067,
+							0.24810664355754852,
+							0.14769920706748962
+						],
+						"mean_before": [
+							0.40623190999031067,
+							0.24810664355754852,
+							0.14769920706748962
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.024147823452949524,
+							0.013385996222496033,
+							0.0045422036200761795
+						],
+						"variance_before": [
+							0.024147823452949524,
+							0.013385996222496033,
+							0.0045422036200761795
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.19984868168830872,
+							0.11039713025093079,
+							0.0647495687007904
+						],
+						"mean_before": [
+							0.19984868168830872,
+							0.11039713025093079,
+							0.0647495687007904
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.008856181055307388,
+							0.00381403136998415,
+							0.0017250776290893555
+						],
+						"variance_before": [
+							0.008856181055307388,
+							0.00381403136998415,
+							0.0017250776290893555
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.49069005250930786,
+							0.3043130040168762,
+							0.18094557523727417
+						],
+						"mean_before": [
+							0.49069005250930786,
+							0.3043130040168762,
+							0.18094557523727417
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.006962090730667114,
+							0.0070081427693367004,
+							0.001972649246454239
+						],
+						"variance_before": [
+							0.006962090730667114,
+							0.0070081427693367004,
+							0.001972649246454239
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.39553022384643555,
+							0.24144400656223297,
+							0.1426170915365219
+						],
+						"mean_before": [
+							0.39553022384643555,
+							0.24144400656223297,
+							0.1426170915365219
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.027933374047279358,
+							0.01526898518204689,
+							0.005188724026083946
+						],
+						"variance_before": [
+							0.027933374047279358,
+							0.01526898518204689,
+							0.005188724026083946
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.42733126878738403,
+							0.2620342969894409,
+							0.15722912549972534
+						],
+						"mean_before": [
+							0.42733126878738403,
+							0.2620342969894409,
+							0.15722912549972534
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.018513232469558716,
+							0.010860949754714966,
+							0.003598008304834366
+						],
+						"variance_before": [
+							0.018513232469558716,
+							0.010860949754714966,
+							0.003598008304834366
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.40212148427963257,
+							0.24650409817695618,
+							0.145839661359787
+						],
+						"mean_before": [
+							0.40212148427963257,
+							0.24650409817695618,
+							0.145839661359787
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.027272149920463562,
+							0.015119355171918869,
+							0.0051191821694374084
+						],
+						"variance_before": [
+							0.027272149920463562,
+							0.015119355171918869,
+							0.0051191821694374084
+						]
+					}
+				],
+				"holds": true
+			},
+			"measured": {
+				"cost": 5328,
+				"coverage_rel": 0.14972000000000002,
+				"floor": 0.0055000000000000005,
+				"part_shift": {},
+				"picture": 0.5086700000000001
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1896 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00787 m; part 'lace' changes its share of the picture by +0.0684 against 0.0504 allowed (its colour's share of the subject)",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2008 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00787 m; part 'brown' changes its share of the picture by -0.0537 against 0.0504 allowed (its colour's share of the subject); part 'decayed' changes its share of the picture by -0.0692 against 0.0504 allowed (its colour's share of the subject); part 'lace' changes its share of the picture by +0.1569 against 0.0504 allowed (its colour's share of the subject)",
+				"REDUCE from rung 0 at {} seed 314: element 11's part 'lace' is 15 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 94 more groups)",
+				"REDUCE (every piece) from rung 0: nothing to try",
+				"THIN: plant/birch-leaf-litter does not declare `reads_density`"
+			],
+			"route": "kit",
+			"surfaces": 4,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.007407407407407407
+		},
+		"3": {
+			"atlas_bytes": 4194304,
+			"atlas_profiles": {
+				"native-desktop": {
+					"budget_mb": 2048.0,
+					"compressed_mb": 1.05,
+					"refused": false,
+					"rgba8_mb": 4.19
+				},
+				"native-mobile": {
+					"budget_mb": 256.0,
+					"compressed_mb": 1.05,
+					"refused": false,
+					"rgba8_mb": 4.19
+				},
+				"web": {
+					"budget_mb": 256.0,
+					"compressed_mb": 1.05,
+					"refused": false,
+					"rgba8_mb": 4.19
+				}
+			},
+			"budget": 889,
+			"checked_at": 15,
+			"draw_calls": 1,
+			"drawn": {
+				"excess": 0.4728,
+				"judge": "drawn",
+				"why": "an impostor is judged at the drawn size, its frames blended"
+			},
+			"error": 0.029629629629629627,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 2,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {},
+				"picture": -1.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
+			],
+			"route": "impostor",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tiles": 16
+		}
+	},
+	"source": {
+		"children": "af3751b2014cedddcc44b371345a823c129c6b7e2f21a024b289df955b2472ff",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
+		"generator": "53d84c69966e02a5bacbc59abb143e33e0e3d0ff4abada0e0155203bd7bfdab8"
+	}
+}

@@ -1,9 +1,7 @@
 {
 	"checked_at": [
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 314
 		},
 		{
@@ -20,25 +18,25 @@
 		},
 		{
 			"params": {
-				"oatcake_diameter_m": 0.0599999999999999978
+				"oatcake_diameter_m": 0.06
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"oatcake_diameter_m": 0.0779999999999999999
+				"oatcake_diameter_m": 0.078
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"oatcake_thickness_m": 0.00400000000000000008
+				"oatcake_thickness_m": 0.004
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"oatcake_thickness_m": 0.00700000000000000015
+				"oatcake_thickness_m": 0.007
 			},
 			"seed": 314
 		},
@@ -49,9 +47,7 @@
 			"seed": 314
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -82,9 +78,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -97,21 +91,17 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.00129699999999999998
+				"pixel_m": 0.001297
 			},
-			"error": 0.00150000000000000003,
+			"error": 0.0015,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {
-
-			},
+			"keep": {},
 			"measured": {
 				"cost": 572,
 				"coverage_rel": 0.0,
-				"floor": 0.00436000000000000016,
-				"part_shift": {
-
-				},
+				"floor": 0.00436,
+				"part_shift": {},
 				"picture": 0.0
 			},
 			"measured_of": 1,
@@ -124,7 +114,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "6e4b27e31581f941cacc5b05a2294b1b33872c6961d5f2ffee7096ec8a7d9b68"
 	}
 }

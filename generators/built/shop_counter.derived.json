@@ -1,38 +1,36 @@
 {
 	"checked_at": [
 		{
+			"params": {},
+			"seed": 314
+		},
+		{
 			"params": {
-
+				"length_m": 2.4
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"length_m": 2.39999999999999991
+				"length_m": 3.6
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"length_m": 3.60000000000000009
+				"height_m": 0.95
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"height_m": 0.949999999999999956
+				"height_m": 1.15
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"height_m": 1.14999999999999991
-			},
-			"seed": 314
-		},
-		{
-			"params": {
-				"depth_m": 0.550000000000000044
+				"depth_m": 0.55
 			},
 			"seed": 314
 		},
@@ -43,9 +41,7 @@
 			"seed": 314
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -75,9 +71,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -90,14 +84,12 @@
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
-				"pixel_m": 0.00555600000000000017
+				"pixel_m": 0.005556
 			},
-			"error": 0.00185185185185185192,
+			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {
-
-			},
+			"keep": {},
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -113,11 +105,9 @@
 			"measured": {
 				"cost": 3256,
 				"coverage_rel": -0.00031,
-				"floor": 0.00414000000000000045,
-				"part_shift": {
-
-				},
-				"picture": 0.00414000000000000045
+				"floor": 0.0041400000000000005,
+				"part_shift": {},
+				"picture": 0.0041400000000000005
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -131,7 +121,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "fa7d3b463f828cbaa8a571309e3478bbd912985771a4fe50ab44ba6c3bda8d2f"
 	}
 }

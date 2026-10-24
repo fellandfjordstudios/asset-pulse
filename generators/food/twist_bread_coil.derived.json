@@ -1,57 +1,53 @@
 {
 	"checked_at": [
 		{
+			"params": {},
+			"seed": 314
+		},
+		{
 			"params": {
-
+				"coil_length_m": 0.22
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"coil_length_m": 0.220000000000000001
+				"dough_diameter_m": 0.016
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"dough_diameter_m": 0.0160000000000000003
+				"dough_diameter_m": 0.022
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"dough_diameter_m": 0.0219999999999999987
+				"shaft_diameter_m": 0.008
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"shaft_diameter_m": 0.00800000000000000017
+				"shaft_diameter_m": 0.016
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"shaft_diameter_m": 0.0160000000000000003
+				"shaft_length_m": 0.65
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"shaft_length_m": 0.650000000000000022
+				"shaft_length_m": 0.95
 			},
 			"seed": 314
 		},
 		{
-			"params": {
-				"shaft_length_m": 0.949999999999999956
-			},
-			"seed": 314
-		},
-		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -82,9 +78,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -97,10 +91,10 @@
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
-				"pixel_m": 0.00136399999999999998
+				"pixel_m": 0.001364
 			},
-			"error": 0.00720378125730154056,
-			"fraction": 0.489999999999999936,
+			"error": 0.0072037812573015406,
+			"fraction": 0.48999999999999994,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
@@ -116,13 +110,13 @@
 			},
 			"measured": {
 				"cost": 2208,
-				"coverage_rel": -0.00478999999999999999,
-				"floor": 0.0040300000000000006,
+				"coverage_rel": -0.00479,
+				"floor": 0.004030000000000001,
 				"part_shift": {
-					"browned_crust": 0.000380000000000000021,
-					"pale_dough": -0.000380000000000000021
+					"browned_crust": 0.00038,
+					"pale_dough": -0.00038
 				},
-				"picture": 0.0040300000000000006
+				"picture": 0.004030000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -137,7 +131,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "3cc6ec759a848126bd8c9226ca3659472a57097365a96d787917746819f9c677"
 	}
 }

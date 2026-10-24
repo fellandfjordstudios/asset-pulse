@@ -1,14 +1,12 @@
 {
 	"checked_at": [
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 314
 		},
 		{
 			"params": {
-				"length_m": 0.0200000000000000004
+				"length_m": 0.02
 			},
 			"seed": 314
 		},
@@ -20,19 +18,19 @@
 		},
 		{
 			"params": {
-				"basal_diameter_m": 0.00200000000000000004
+				"basal_diameter_m": 0.002
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"basal_diameter_m": 1.19999999999999996
+				"basal_diameter_m": 1.2
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"tip_diameter_ratio": 0.0200000000000000004
+				"tip_diameter_ratio": 0.02
 			},
 			"seed": 314
 		},
@@ -50,7 +48,7 @@
 		},
 		{
 			"params": {
-				"furrow_pitch": 0.0200000000000000004
+				"furrow_pitch": 0.02
 			},
 			"seed": 314
 		},
@@ -68,20 +66,18 @@
 		},
 		{
 			"params": {
-				"furrow_depth_ratio": 0.349999999999999978
+				"furrow_depth_ratio": 0.35
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"furrowing_onset_diameter_m": 0.599999999999999978
+				"furrowing_onset_diameter_m": 0.6
 			},
 			"seed": 314
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -121,9 +117,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -137,22 +131,18 @@
 			"drawn": {
 				"excess": 0.4375,
 				"judge": "drawn",
-				"pixel_m": 0.00222200000000000002
+				"pixel_m": 0.002222
 			},
-			"error": 0.00185185185185185192,
+			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {
-
-			},
+			"keep": {},
 			"measured": {
 				"cost": 228,
-				"coverage_rel": -0.000490000000000000093,
-				"floor": 0.00547000000000000004,
-				"part_shift": {
-
-				},
-				"picture": 0.00410000000000000035
+				"coverage_rel": -0.0004900000000000001,
+				"floor": 0.00547,
+				"part_shift": {},
+				"picture": 0.0041
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -168,22 +158,18 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.00888899999999999933
+				"pixel_m": 0.008889
 			},
-			"error": 0.00740740740740740769,
+			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {
-
-			},
+			"keep": {},
 			"measured": {
 				"cost": 228,
-				"coverage_rel": -0.00207000000000000023,
-				"floor": 0.00547000000000000004,
-				"part_shift": {
-
-				},
-				"picture": 0.00410000000000000035
+				"coverage_rel": -0.0020700000000000002,
+				"floor": 0.00547,
+				"part_shift": {},
+				"picture": 0.0041
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -195,7 +181,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "e4bb5e564dcf58de51956ef4cda508bae02085634a0ddb614ec581c9d6dc3caa"
 	}
 }

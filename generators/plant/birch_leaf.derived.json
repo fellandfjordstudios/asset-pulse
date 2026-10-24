@@ -1,32 +1,30 @@
 {
 	"checked_at": [
 		{
+			"params": {},
+			"seed": 314
+		},
+		{
 			"params": {
-
+				"blade_length_m": 0.012
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"blade_length_m": 0.0120000000000000002
+				"blade_length_m": 0.075
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"blade_length_m": 0.0749999999999999972
+				"petiole_fraction": 0.05
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"petiole_fraction": 0.0500000000000000028
-			},
-			"seed": 314
-		},
-		{
-			"params": {
-				"petiole_fraction": 0.450000000000000011
+				"petiole_fraction": 0.45
 			},
 			"seed": 314
 		}
@@ -54,9 +52,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -69,14 +65,12 @@
 			"drawn": {
 				"excess": 0.125,
 				"judge": "drawn",
-				"pixel_m": 0.000777999999999999937
+				"pixel_m": 0.0007779999999999999
 			},
-			"error": 0.0167818890377171362,
+			"error": 0.016781889037717136,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {
-
-			},
+			"keep": {},
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -90,12 +84,10 @@
 			},
 			"measured": {
 				"cost": 84,
-				"coverage_rel": 0.0249900000000000018,
-				"floor": 0.00739000000000000073,
-				"part_shift": {
-
-				},
-				"picture": 0.0109700000000000006
+				"coverage_rel": 0.024990000000000002,
+				"floor": 0.007390000000000001,
+				"part_shift": {},
+				"picture": 0.01097
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -108,7 +100,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "ec0453a720b7d0ea4dcd535d477d6772dc59820aee71dace4b371f7070005338"
 	}
 }

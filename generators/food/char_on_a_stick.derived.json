@@ -1,0 +1,292 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cross_sticks": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		}
+	],
+	"id": "food/char-on-a-stick",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 3,
+		"sampled": 3,
+		"sets": 3
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "food__char-on-a-stick#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 1,
+				"trace": "food__char-on-a-stick#2.trace.jsonl"
+			},
+			"3": {
+				"candidates": 11,
+				"trace": "food__char-on-a-stick#3.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "d9251b73cd2051529e434a977c856132f9eacc5c51e00202c5c1972ff1055a93",
+		"2": "ba37442ca62a6c1c3b62bf9a4e88906c6ecb0a008a941c683febb73b969cd0d0",
+		"3": "4a0473cf9332ba25297878141efe64d00f9f61fe618fe7181463079366755420"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117,
+			"checked_at": 3,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.001297
+			},
+			"error": 0.0018524008947346819,
+			"every_piece": true,
+			"fraction": 0.3429999999999999,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to 0.343",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 5258,
+				"coverage_rel": -0.0032700000000000003,
+				"floor": 0.00398,
+				"part_shift": {
+					"birch": -0.0016200000000000001,
+					"body": 0.0005300000000000001,
+					"dark": 3.0000000000000004e-05,
+					"dorsal_fin": 3.0000000000000004e-05,
+					"eye": -6.000000000000001e-05,
+					"fin": 0.00016,
+					"fin_edge": 4e-05,
+					"head": 0.0009800000000000002,
+					"scorch": 3.0000000000000004e-05,
+					"tail": 6.000000000000001e-05
+				},
+				"picture": 0.006880000000000001
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 375 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00130 m; coverage changes -0.0471 against 0.0232 allowed (a one-pixel shrink all round)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 370 pixel(s) differ at the drawn size at {} seed 314 (worst 0.64)",
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'body' is 48 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
+			],
+			"route": "reduce",
+			"routes": {
+				"reduce": 12.0
+			},
+			"surfaces": 10,
+			"surfaces_ceiling": 10
+		},
+		"2": {
+			"budget": 9779,
+			"checked_at": 3,
+			"drawn": {
+				"excess": 0.0625,
+				"judge": "drawn",
+				"pixel_m": 0.005188
+			},
+			"error": 0.0074096035789387275,
+			"every_piece": true,
+			"fraction": 0.48999999999999994,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to 0.490",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"material_transfer": {
+				"checked_at": 3,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.33744654059410095,
+							0.2128131240606308,
+							0.12103662639856339
+						],
+						"mean_before": [
+							0.33744654059410095,
+							0.2128131240606308,
+							0.12103662639856339
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.04212569445371628,
+							0.02044586092233658,
+							0.008822315372526646
+						],
+						"variance_before": [
+							0.04212569445371628,
+							0.02044586092233658,
+							0.008822315372526646
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.34010717272758484,
+							0.21582399308681488,
+							0.12307345122098923
+						],
+						"mean_before": [
+							0.34010717272758484,
+							0.21582399308681488,
+							0.12307345122098923
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.04195316135883331,
+							0.020729921758174896,
+							0.00896038580685854
+						],
+						"variance_before": [
+							0.04195316135883331,
+							0.020729921758174896,
+							0.00896038580685854
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3373551666736603,
+							0.21270819008350372,
+							0.12096899747848511
+						],
+						"mean_before": [
+							0.3373551666736603,
+							0.21270819008350372,
+							0.12096899747848511
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.042145319283008575,
+							0.02043919265270233,
+							0.00881792139261961
+						],
+						"variance_before": [
+							0.042145319283008575,
+							0.02043919265270233,
+							0.00881792139261961
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 7290,
+				"coverage_rel": -0.00271,
+				"floor": 0.00398,
+				"part_shift": {},
+				"picture": 0.00398
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00519 m; coverage changes -0.0924 against 0.0451 allowed (a one-pixel shrink all round)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 1 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 9 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00519 m; coverage changes -0.1384 against 0.0451 allowed (a one-pixel shrink all round); part 'birch' changes its share of the picture by -0.0751 against 0.0451 allowed (its colour's share of the subject); part 'body' changes its share of the picture by +0.0579 against 0.0451 allowed (its colour's share of the subject)",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 10 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'body' is 48 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"MERGED, THIN: not searched -- the look past the first that held (REDUCE (every piece) to 0.490) is 1 route(s), and the one looked at did not improve on it"
+			],
+			"route": "reduce",
+			"routes": {
+				"reduce": 12.0
+			},
+			"surfaces": 2,
+			"surfaces_ceiling": 1
+		},
+		"3": {
+			"atlas_bytes": 9437184,
+			"atlas_profiles": {
+				"native-desktop": {
+					"budget_mb": 2048.0,
+					"compressed_mb": 2.36,
+					"refused": false,
+					"rgba8_mb": 9.44
+				},
+				"native-mobile": {
+					"budget_mb": 256.0,
+					"compressed_mb": 2.36,
+					"refused": false,
+					"rgba8_mb": 9.44
+				},
+				"web": {
+					"budget_mb": 256.0,
+					"compressed_mb": 2.36,
+					"refused": false,
+					"rgba8_mb": 9.44
+				}
+			},
+			"budget": 2444,
+			"checked_at": 3,
+			"draw_calls": 1,
+			"drawn": {
+				"excess": 0.45680000000000004,
+				"judge": "drawn",
+				"why": "an impostor is judged at the drawn size, its frames blended"
+			},
+			"error": 0.02963841431575491,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 2,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {},
+				"picture": -1.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
+			],
+			"route": "impostor",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tiles": 12
+		}
+	},
+	"source": {
+		"children": "6c995633fc88110bc0ea35abc735f4cf92a09fc22c7d98d653d75fc505f18c5f",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
+		"generator": "88dfffa0d1cab7633a833ffa8630ddc22b600ba14d810ddb52162d64b418859e"
+	}
+}

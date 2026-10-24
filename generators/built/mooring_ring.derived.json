@@ -1,32 +1,30 @@
 {
 	"checked_at": [
 		{
+			"params": {},
+			"seed": 314
+		},
+		{
 			"params": {
-
+				"ring_d_m": 0.1
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"ring_d_m": 0.100000000000000006
+				"ring_d_m": 0.35
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"ring_d_m": 0.349999999999999978
+				"bar_d_m": 0.015
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"bar_d_m": 0.0149999999999999994
-			},
-			"seed": 314
-		},
-		{
-			"params": {
-				"bar_d_m": 0.0400000000000000008
+				"bar_d_m": 0.04
 			},
 			"seed": 314
 		},
@@ -61,9 +59,7 @@
 			"seed": 314
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -96,9 +92,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -111,22 +105,18 @@
 			"drawn": {
 				"excess": 0.3125,
 				"judge": "drawn",
-				"pixel_m": 0.00129699999999999998
+				"pixel_m": 0.001297
 			},
-			"error": 0.00493747859219178555,
+			"error": 0.0049374785921917855,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {
-
-			},
+			"keep": {},
 			"measured": {
 				"cost": 3812,
-				"coverage_rel": -0.00509000000000000077,
-				"floor": 0.0040300000000000006,
-				"part_shift": {
-
-				},
-				"picture": 0.0040300000000000006
+				"coverage_rel": -0.005090000000000001,
+				"floor": 0.004030000000000001,
+				"part_shift": {},
+				"picture": 0.004030000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -138,7 +128,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "c5c5adf30aecaf3ac80c54c1de7cdcbd01cf249f3435e8afe6950d77f15f7765"
 	}
 }

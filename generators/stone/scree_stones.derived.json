@@ -1,0 +1,567 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"patch_m": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"patch_m": 2.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"size_min_m": 0.06
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"size_max_m": 0.06
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"size_max_m": 0.25
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"size_exponent": 1.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"size_exponent": 3.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"slope_position": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"slope_position": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cover": 0.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cover": 0.98
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"clast_flatness": 0.3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"clast_flatness": 0.95
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		}
+	],
+	"id": "stone/scree-stones",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 15,
+		"sampled": 15,
+		"sets": 15
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "stone__scree-stones#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "stone__scree-stones#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "7ad85cbcf64289b73f64ad53b3c464b60902269e2c9b3592b012915b6c3ed00c",
+		"2": "aa2da96efb1f4e05493d3c0b64a84f2f7701398e98278ca9d8f2d5c5c5c9d37a"
+	},
+	"rungs": {
+		"1": {
+			"above_tolerance": true,
+			"budget": 42673,
+			"checked_at": 15,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"debris": 0.7
+			},
+			"measured": {
+				"cost": 45772,
+				"coverage_rel": -0.07963,
+				"floor": 0.005410000000000001,
+				"part_shift": {},
+				"picture": 0.11555000000000001
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 43370 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.70), one pixel 0.00214 m; coverage changes -0.0560 against 0.0267 allowed (a one-pixel shrink all round)",
+				"REDUCE from rung 0 at {} seed 314: element 4's part 'rind' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00214 m",
+				"THIN: stone/scree-stones does not declare `reads_density`"
+			],
+			"route": "kit",
+			"surfaces": 3,
+			"surfaces_ceiling": 3,
+			"tolerance": 0.001851851851851852
+		},
+		"2": {
+			"above_tolerance": true,
+			"budget": 10668,
+			"checked_at": 15,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {
+				"debris": 0.24009999999999992
+			},
+			"material_transfer": {
+				"checked_at": 15,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.18009421229362488,
+							0.1591099202632904,
+							0.13096365332603455
+						],
+						"mean_before": [
+							0.18009421229362488,
+							0.1591099202632904,
+							0.13096365332603455
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00022907182574272156,
+							0.00048024579882621765,
+							0.0005173701792955399
+						],
+						"variance_before": [
+							0.00022907182574272156,
+							0.00048024579882621765,
+							0.0005173701792955399
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.1825314164161682,
+							0.1609472781419754,
+							0.13054108619689941
+						],
+						"mean_before": [
+							0.1825314164161682,
+							0.1609472781419754,
+							0.13054108619689941
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0005523301661014557,
+							0.0008700042963027954,
+							0.0005884487181901932
+						],
+						"variance_before": [
+							0.0005523301661014557,
+							0.0008700042963027954,
+							0.0005884487181901932
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.18000054359436035,
+							0.1584824025630951,
+							0.12989480793476105
+						],
+						"mean_before": [
+							0.18000054359436035,
+							0.1584824025630951,
+							0.12989480793476105
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0002505108714103699,
+							0.0005080066621303558,
+							0.0005229562520980835
+						],
+						"variance_before": [
+							0.0002505108714103699,
+							0.0005080066621303558,
+							0.0005229562520980835
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.1807742863893509,
+							0.16016168892383575,
+							0.1318999081850052
+						],
+						"mean_before": [
+							0.1807742863893509,
+							0.16016168892383575,
+							0.1318999081850052
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0002867765724658966,
+							0.0005471408367156982,
+							0.0005273371934890747
+						],
+						"variance_before": [
+							0.0002867765724658966,
+							0.0005471408367156982,
+							0.0005273371934890747
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.18020424246788025,
+							0.15944264829158783,
+							0.13143377006053925
+						],
+						"mean_before": [
+							0.18020424246788025,
+							0.15944264829158783,
+							0.13143377006053925
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0002282373607158661,
+							0.00047866813838481903,
+							0.0005161724984645844
+						],
+						"variance_before": [
+							0.0002282373607158661,
+							0.00047866813838481903,
+							0.0005161724984645844
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.17984826862812042,
+							0.1583413928747177,
+							0.1298694610595703
+						],
+						"mean_before": [
+							0.17984826862812042,
+							0.1583413928747177,
+							0.1298694610595703
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00023125484585762024,
+							0.00048491358757019043,
+							0.0005186330527067184
+						],
+						"variance_before": [
+							0.00023125484585762024,
+							0.00048491358757019043,
+							0.0005186330527067184
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.18074695765972137,
+							0.16105656325817108,
+							0.13369178771972656
+						],
+						"mean_before": [
+							0.18074695765972137,
+							0.16105656325817108,
+							0.13369178771972656
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00022676587104797363,
+							0.00046936608850955963,
+							0.000504717230796814
+						],
+						"variance_before": [
+							0.00022676587104797363,
+							0.00046936608850955963,
+							0.000504717230796814
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.17999744415283203,
+							0.15889494121074677,
+							0.13070443272590637
+						],
+						"mean_before": [
+							0.17999744415283203,
+							0.15889494121074677,
+							0.13070443272590637
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0002243146300315857,
+							0.0004755929112434387,
+							0.0005167070776224136
+						],
+						"variance_before": [
+							0.0002243146300315857,
+							0.0004755929112434387,
+							0.0005167070776224136
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.18053224682807922,
+							0.15968534350395203,
+							0.13136647641658783
+						],
+						"mean_before": [
+							0.18053224682807922,
+							0.15968534350395203,
+							0.13136647641658783
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000272408127784729,
+							0.0005312729626893997,
+							0.0005259141325950623
+						],
+						"variance_before": [
+							0.000272408127784729,
+							0.0005312729626893997,
+							0.0005259141325950623
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.17992046475410461,
+							0.1585969477891922,
+							0.13024936616420746
+						],
+						"mean_before": [
+							0.17992046475410461,
+							0.1585969477891922,
+							0.13024936616420746
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0002288632094860077,
+							0.00048147328197956085,
+							0.0005179885774850845
+						],
+						"variance_before": [
+							0.0002288632094860077,
+							0.00048147328197956085,
+							0.0005179885774850845
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.18129460513591766,
+							0.16125144064426422,
+							0.13317129015922546
+						],
+						"mean_before": [
+							0.18129460513591766,
+							0.16125144064426422,
+							0.13317129015922546
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00031304359436035156,
+							0.0005737338215112686,
+							0.0005269758403301239
+						],
+						"variance_before": [
+							0.00031304359436035156,
+							0.0005737338215112686,
+							0.0005269758403301239
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.17985399067401886,
+							0.1583375483751297,
+							0.1298525184392929
+						],
+						"mean_before": [
+							0.17985399067401886,
+							0.1583375483751297,
+							0.1298525184392929
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00023274868726730347,
+							0.0004864707589149475,
+							0.0005190130323171616
+						],
+						"variance_before": [
+							0.00023274868726730347,
+							0.0004864707589149475,
+							0.0005190130323171616
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.1802218109369278,
+							0.15911027789115906,
+							0.1307559758424759
+						],
+						"mean_before": [
+							0.1802218109369278,
+							0.15911027789115906,
+							0.1307559758424759
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0002519749104976654,
+							0.0005082022398710251,
+							0.000522468239068985
+						],
+						"variance_before": [
+							0.0002519749104976654,
+							0.0005082022398710251,
+							0.000522468239068985
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.18004222214221954,
+							0.15966743230819702,
+							0.13213898241519928
+						],
+						"mean_before": [
+							0.18004222214221954,
+							0.15966743230819702,
+							0.13213898241519928
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0001848265528678894,
+							0.00042528100311756134,
+							0.0005044452846050262
+						],
+						"variance_before": [
+							0.0001848265528678894,
+							0.00042528100311756134,
+							0.0005044452846050262
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.1803777515888214,
+							0.15949657559394836,
+							0.1312534213066101
+						],
+						"mean_before": [
+							0.1803777515888214,
+							0.15949657559394836,
+							0.1312534213066101
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00025618821382522583,
+							0.0005123484879732132,
+							0.0005227625370025635
+						],
+						"variance_before": [
+							0.00025618821382522583,
+							0.0005123484879732132,
+							0.0005227625370025635
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 13212,
+				"coverage_rel": -0.16401000000000002,
+				"floor": 0.005410000000000001,
+				"part_shift": {},
+				"picture": 0.18594000000000002
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 4283 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00855 m; coverage changes -0.0551 against 0.0485 allowed (a one-pixel shrink all round)",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 4283 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00855 m; coverage changes -0.0551 against 0.0485 allowed (a one-pixel shrink all round)",
+				"REDUCE from rung 0 at {} seed 314: element 4's part 'rind' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00855 m",
+				"THIN: stone/scree-stones does not declare `reads_density`"
+			],
+			"route": "kit",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.007407407407407408
+		}
+	},
+	"source": {
+		"children": "09edb7eb622d9dafc1c51beffcd71047a090dbb84fb7f8bec98dba545a3fbccf",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
+		"generator": "320b2d40d0765b841bf7a88f8c81d67a15df155bbe603d38e9ee0227952d50dc"
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		}
+	],
+	"id": "fixture/thinned",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"seed"
+		],
+		"old_key_sets": 2,
+		"sampled": 2,
+		"sets": 2
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 7,
+				"trace": "fixture__thinned#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "c19233774de9084d9068a9a80af60479867bae112b69ba660e42088343154267"
+	},
+	"rungs": {
+		"1": {
+			"budget": 21336,
+			"checked_at": 2,
+			"drawn": {
+				"excess": 0.375,
+				"judge": "drawn",
+				"pixel_m": 0.330322
+			},
+			"error": 0.15,
+			"fraction": 0.11764899999999995,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.118",
+				"looked": 1,
+				"order": [
+					"kit",
+					"reduce",
+					"thin",
+					"impostor",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 950,
+				"coverage_rel": -0.24542000000000003,
+				"floor": 0.00515,
+				"part_shift": {
+					"brown": -0.05113,
+					"green": 0.039970000000000006,
+					"wood": 0.00744
+				},
+				"picture": 0.03055
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"MERGED: not searched -- the look past the first that held (REDUCE to 0.118) is 1 route(s), and the one looked at did not improve on it"
+			],
+			"route": "reduce",
+			"routes": {
+				"reduce": 101
+			},
+			"surfaces": 3,
+			"surfaces_ceiling": 3
+		}
+	},
+	"source": {
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
+		"generator": "7bc4b0908452bb03c4c195275728f7b0669035851b0ed084857e65d1ae93c76c"
+	}
+}

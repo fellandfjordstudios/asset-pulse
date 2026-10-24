@@ -1,9 +1,7 @@
 {
 	"checked_at": [
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 314.0
 		},
 		{
@@ -26,7 +24,7 @@
 		},
 		{
 			"params": {
-				"width_m": 0.699999999999999956
+				"width_m": 0.7
 			},
 			"seed": 314.0
 		},
@@ -44,13 +42,13 @@
 		},
 		{
 			"params": {
-				"deck_height_m": 0.149999999999999994
+				"deck_height_m": 0.15
 			},
 			"seed": 314.0
 		},
 		{
 			"params": {
-				"deck_height_m": 0.400000000000000022
+				"deck_height_m": 0.4
 			},
 			"seed": 314.0
 		},
@@ -73,9 +71,7 @@
 			"seed": 314.0
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315.0
 		}
 	],
@@ -101,9 +97,7 @@
 		"sets": 13.0
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314.0
 	},
 	"replay": {
@@ -121,10 +115,8 @@
 			"measured": {
 				"cost": 44794.0,
 				"coverage_rel": 0.0,
-				"floor": 0.00400999999999999968,
-				"part_shift": {
-
-				},
+				"floor": 0.00401,
+				"part_shift": {},
 				"picture": 0.0
 			},
 			"measured_of": 1.0,
@@ -141,7 +133,7 @@
 			"route": "rung0",
 			"surfaces": 8.0,
 			"surfaces_ceiling": 8.0,
-			"tolerance": 0.00185185185185184997
+			"tolerance": 0.00185185185185185
 		},
 		"2": {
 			"above_tolerance": true,
@@ -150,18 +142,14 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0.0,
-			"keep": {
-
-			},
+			"keep": {},
 			"materials": "merged",
 			"measured": {
 				"cost": 6200.0,
-				"coverage_rel": -0.106209999999999999,
-				"floor": 0.00400999999999999968,
-				"part_shift": {
-
-				},
-				"picture": 0.0319100000000000009
+				"coverage_rel": -0.10621,
+				"floor": 0.00401,
+				"part_shift": {},
+				"picture": 0.03191
 			},
 			"measured_of": 2.0,
 			"not_taken": [
@@ -177,7 +165,7 @@
 			"route": "kit",
 			"surfaces": 3.0,
 			"surfaces_ceiling": 1.0,
-			"tolerance": 0.0148148148148148102
+			"tolerance": 0.01481481481481481
 		},
 		"3": {
 			"atlas_bytes": 16777216.0,
@@ -185,20 +173,18 @@
 			"checked_at": 13.0,
 			"draw_calls": 1.0,
 			"drawn": {
-				"excess": 0.416200000000000014,
+				"excess": 0.4162,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
-			"error": 0.118518518518518523,
+			"error": 0.11851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0.0,
 			"measured": {
 				"cost": 2.0,
 				"coverage_rel": 0.0,
 				"floor": 0.0,
-				"part_shift": {
-
-				},
+				"part_shift": {},
 				"picture": -1.0
 			},
 			"measured_of": 1.0,

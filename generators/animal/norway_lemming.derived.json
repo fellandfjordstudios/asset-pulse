@@ -1,44 +1,42 @@
 {
 	"checked_at": [
 		{
+			"params": {},
+			"seed": 314
+		},
+		{
 			"params": {
-
+				"head_body_m": 0.095
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"head_body_m": 0.0950000000000000011
+				"head_body_m": 0.155
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"head_body_m": 0.154999999999999999
+				"pelage_depth_m": 0.006
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"pelage_depth_m": 0.00600000000000000012
+				"pelage_depth_m": 0.024
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"pelage_depth_m": 0.0240000000000000005
+				"width_over_depth": 0.6
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"width_over_depth": 0.599999999999999978
-			},
-			"seed": 314
-		},
-		{
-			"params": {
-				"width_over_depth": 0.900000000000000022
+				"width_over_depth": 0.9
 			},
 			"seed": 314
 		}
@@ -68,13 +66,11 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
-		"1": "f9b9e370ce09f45f90a4838bd340cb20382d57d8867c82895aafae66199532ee"
+		"1": "cb68857e619b48034c3e25aee4c60cd6600b315233b03181893341f0e08e2fee"
 	},
 	"rungs": {
 		"1": {
@@ -83,11 +79,11 @@
 			"drawn": {
 				"excess": 0.4375,
 				"judge": "drawn",
-				"pixel_m": 0.00135399999999999995
+				"pixel_m": 0.001354
 			},
-			"error": 0.00845243667523380704,
+			"error": 0.008452436675233807,
 			"every_piece": true,
-			"fraction": 0.489999999999999936,
+			"fraction": 0.48999999999999994,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
@@ -102,22 +98,22 @@
 			},
 			"measured": {
 				"cost": 1866,
-				"coverage_rel": -0.0068800000000000007,
-				"floor": 0.00398000000000000003,
+				"coverage_rel": -0.00721,
+				"floor": 0.00398,
 				"part_shift": {
-					"belly": 0.000640000000000000052,
-					"cap": -0.000780000000000000094,
-					"cheek": 0.00110000000000000007,
-					"claw": -0.000950000000000000107,
-					"coat": 0.00130000000000000016,
-					"ear_inner": -0.000480000000000000066,
-					"eye": -0.000870000000000000114,
-					"foot": 0.000510000000000000037,
-					"incisor": -0.0016100000000000001,
-					"mask": 0.00028000000000000003,
-					"nose": 0.0000100000000000000008
+					"belly": 0.00067,
+					"cap": -0.00075,
+					"cheek": 0.0011,
+					"claw": -0.001,
+					"coat": 0.0012900000000000001,
+					"ear_inner": -0.00048000000000000007,
+					"eye": -0.0008700000000000001,
+					"foot": 0.0005200000000000001,
+					"incisor": -0.00161,
+					"mask": 0.00030000000000000003,
+					"nose": 1e-05
 				},
-				"picture": 0.00510000000000000037
+				"picture": 0.0051
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -133,7 +129,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "27747ed6c64efd0776275e25fb74f7146d7c1885c118932919f74bdac28a90fa"
 	}
 }

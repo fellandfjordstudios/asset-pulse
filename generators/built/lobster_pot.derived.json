@@ -1,9 +1,7 @@
 {
 	"checked_at": [
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 314.0
 		},
 		{
@@ -20,19 +18,19 @@
 		},
 		{
 			"params": {
-				"width_m": 0.340000000000000024
+				"width_m": 0.34
 			},
 			"seed": 314.0
 		},
 		{
 			"params": {
-				"width_m": 0.599999999999999978
+				"width_m": 0.6
 			},
 			"seed": 314.0
 		},
 		{
 			"params": {
-				"side_height_m": 0.0400000000000000008
+				"side_height_m": 0.04
 			},
 			"seed": 314.0
 		},
@@ -44,25 +42,25 @@
 		},
 		{
 			"params": {
-				"slat_width_m": 0.0160000000000000003
+				"slat_width_m": 0.016
 			},
 			"seed": 314.0
 		},
 		{
 			"params": {
-				"slat_width_m": 0.0400000000000000008
+				"slat_width_m": 0.04
 			},
 			"seed": 314.0
 		},
 		{
 			"params": {
-				"slat_gap_m": 0.00400000000000000008
+				"slat_gap_m": 0.004
 			},
 			"seed": 314.0
 		},
 		{
 			"params": {
-				"slat_gap_m": 0.0250000000000000014
+				"slat_gap_m": 0.025
 			},
 			"seed": 314.0
 		},
@@ -74,25 +72,25 @@
 		},
 		{
 			"params": {
-				"rope_diameter_m": 0.00600000000000000012
+				"rope_diameter_m": 0.006
 			},
 			"seed": 314.0
 		},
 		{
 			"params": {
-				"rope_diameter_m": 0.0200000000000000004
+				"rope_diameter_m": 0.02
 			},
 			"seed": 314.0
 		},
 		{
 			"params": {
-				"mesh_m": 0.0120000000000000002
+				"mesh_m": 0.012
 			},
 			"seed": 314.0
 		},
 		{
 			"params": {
-				"mesh_m": 0.0400000000000000008
+				"mesh_m": 0.04
 			},
 			"seed": 314.0
 		}
@@ -122,9 +120,7 @@
 		"sets": 16.0
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314.0
 	},
 	"replay": {
@@ -142,10 +138,8 @@
 			"measured": {
 				"cost": 28132.0,
 				"coverage_rel": 0.0,
-				"floor": 0.00545999999999999958,
-				"part_shift": {
-
-				},
+				"floor": 0.00546,
+				"part_shift": {},
 				"picture": 0.0
 			},
 			"measured_of": 1.0,
@@ -162,7 +156,7 @@
 			"route": "rung0",
 			"surfaces": 6.0,
 			"surfaces_ceiling": 6.0,
-			"tolerance": 0.00185185185185184997
+			"tolerance": 0.00185185185185185
 		},
 		"2": {
 			"budget": 9779.0,
@@ -170,14 +164,12 @@
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
-				"pixel_m": 0.0107539999999999997
+				"pixel_m": 0.010754
 			},
-			"error": 0.0148148148148148102,
+			"error": 0.01481481481481481,
 			"fraction": 1.0,
 			"from_rung": 0.0,
-			"keep": {
-
-			},
+			"keep": {},
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels)",
@@ -192,17 +184,17 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 4508.0,
-				"coverage_rel": -0.0362099999999999991,
-				"floor": 0.00545999999999999958,
+				"coverage_rel": -0.03621,
+				"floor": 0.00546,
 				"part_shift": {
-					"end_grain": -0.00957000000000000038,
-					"galvanised": -0.000710000000000000019,
-					"iron": 0.000320000000000000026,
-					"net": -0.00517000000000000012,
-					"rope": 0.00553000000000000019,
-					"wood": 0.00897000000000000054
+					"end_grain": -0.00957,
+					"galvanised": -0.00071,
+					"iron": 0.00032,
+					"net": -0.00517,
+					"rope": 0.00553,
+					"wood": 0.00897
 				},
-				"picture": 0.00545999999999999958
+				"picture": 0.00546
 			},
 			"measured_of": 3.0,
 			"not_taken": [
@@ -221,11 +213,11 @@
 			"checked_at": 16.0,
 			"drawn": {
 				"excess": 0.5,
-				"gap": 0.912000000000000033,
+				"gap": 0.912,
 				"judge": "drawn",
-				"pixel_m": 0.0215069999999999983
+				"pixel_m": 0.021507
 			},
-			"error": 0.118518518518518537,
+			"error": 0.11851851851851854,
 			"fraction": 1.0,
 			"from_rung": 0.0,
 			"keep": {
@@ -235,12 +227,10 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 1364.0,
-				"coverage_rel": -0.0576399999999999968,
-				"floor": 0.00545999999999999958,
-				"part_shift": {
-
-				},
-				"picture": 0.0260899999999999986
+				"coverage_rel": -0.05764,
+				"floor": 0.00546,
+				"part_shift": {},
+				"picture": 0.02609
 			},
 			"measured_of": 2.0,
 			"not_taken": [

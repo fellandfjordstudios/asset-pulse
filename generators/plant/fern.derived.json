@@ -1,20 +1,18 @@
 {
 	"checked_at": [
 		{
+			"params": {},
+			"seed": 314
+		},
+		{
 			"params": {
-
+				"frond_length_m": 0.15
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"frond_length_m": 0.149999999999999994
-			},
-			"seed": 314
-		},
-		{
-			"params": {
-				"frond_length_m": 1.39999999999999991
+				"frond_length_m": 1.4
 			},
 			"seed": 314
 		},
@@ -32,13 +30,13 @@
 		},
 		{
 			"params": {
-				"tilt": 0.299999999999999989
+				"tilt": 0.3
 			},
 			"seed": 314
 		},
 		{
 			"params": {
-				"tilt": 1.39999999999999991
+				"tilt": 1.4
 			},
 			"seed": 314
 		},
@@ -50,14 +48,12 @@
 		},
 		{
 			"params": {
-				"size_spread": 0.800000000000000044
+				"size_spread": 0.8
 			},
 			"seed": 314
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -97,9 +93,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -118,9 +112,7 @@
 				"cost": 790,
 				"coverage_rel": 0.0,
 				"floor": 0.0,
-				"part_shift": {
-
-				},
+				"part_shift": {},
 				"picture": 0.0
 			},
 			"not_taken": [
@@ -145,7 +137,7 @@
 			"route": "rung0",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tolerance": 0.00185185185185185192
+			"tolerance": 0.001851851851851852
 		},
 		"2": {
 			"budget": 12001,
@@ -153,22 +145,18 @@
 			"drawn": {
 				"excess": 0.3125,
 				"judge": "drawn",
-				"pixel_m": 0.00917299999999999886
+				"pixel_m": 0.009172999999999999
 			},
-			"error": 0.00740740740740740769,
+			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {
-
-			},
+			"keep": {},
 			"measured": {
 				"cost": 754,
-				"coverage_rel": -0.00376000000000000032,
-				"floor": 0.00422000000000000066,
-				"part_shift": {
-
-				},
-				"picture": 0.00509000000000000077
+				"coverage_rel": -0.0037600000000000003,
+				"floor": 0.004220000000000001,
+				"part_shift": {},
+				"picture": 0.005090000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -185,22 +173,18 @@
 			"drawn": {
 				"excess": 0.1875,
 				"judge": "drawn",
-				"pixel_m": 0.0366910000000000014
+				"pixel_m": 0.036691
 			},
-			"error": 0.0296296296296296308,
+			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {
-
-			},
+			"keep": {},
 			"measured": {
 				"cost": 720,
-				"coverage_rel": -0.00478000000000000039,
-				"floor": 0.00422000000000000066,
-				"part_shift": {
-
-				},
-				"picture": 0.00977000000000000091
+				"coverage_rel": -0.00478,
+				"floor": 0.004220000000000001,
+				"part_shift": {},
+				"picture": 0.009770000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -213,7 +197,7 @@
 		}
 	},
 	"source": {
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "9bd61140d177bfa637b83a1b47302fff866f918fb0556d7ac472fe2c51921a8f"
 	}
 }

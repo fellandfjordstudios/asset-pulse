@@ -1,9 +1,7 @@
 {
 	"checked_at": [
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 314
 		},
 		{
@@ -31,9 +29,7 @@
 			"seed": 314
 		},
 		{
-			"params": {
-
-			},
+			"params": {},
 			"seed": 315
 		}
 	],
@@ -61,9 +57,7 @@
 		}
 	},
 	"probe": {
-		"params": {
-
-		},
+		"params": {},
 		"seed": 314
 	},
 	"replay": {
@@ -76,25 +70,23 @@
 			"checked_at": 6,
 			"drawn": {
 				"excess": 0.375,
-				"gap": 3.03800000000000026,
+				"gap": 3.0380000000000003,
 				"judge": "drawn",
-				"pixel_m": 0.00129699999999999998
+				"pixel_m": 0.001297
 			},
-			"error": 0.00617466964911560657,
+			"error": 0.006174669649115607,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {
-				"drupelet": 0.342999999999999916,
+				"drupelet": 0.3429999999999999,
 				"oat_flake": 0.03125
 			},
 			"measured": {
 				"cost": 7845,
-				"coverage_rel": -0.00116000000000000001,
-				"floor": 0.00471000000000000064,
-				"part_shift": {
-
-				},
-				"picture": 0.00471000000000000064
+				"coverage_rel": -0.00116,
+				"floor": 0.004710000000000001,
+				"part_shift": {},
+				"picture": 0.004710000000000001
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -120,7 +112,7 @@
 	},
 	"source": {
 		"children": "9d3cc55c4a90fcc6fe9e2ab359dddc091accc3eae1b7bd6b4a75296744fee4ba",
-		"deriver": "5c9c2aeb8fa758b383df7c1f51813054b9e17b01e59c5b62051c578add2b8936",
+		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
 		"generator": "c4c2fe52a9a21e8ad6e14845b99b5103fbdea1974026bfd31695961d7dc216df"
 	}
 }
