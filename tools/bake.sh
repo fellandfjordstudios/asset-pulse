@@ -7,6 +7,9 @@
 #   PULSE_TRANSFER=0 tools/bake.sh   the structural bake only (fast; no baked channel)
 #   PULSE_BAKE_BUDGET_S=2700 (with PULSE_RESUME=1)  the whole registry bake in
 #                                    that many seconds; what finished is shipped
+#   PULSE_BAKE_SUBJECT_CAP_S=600 (with PULSE_RESUME=1)  no one subject bakes
+#                                    longer than that; one that does is stopped and
+#                                    left out for the rest of the run, by name
 #   PULSE_RESUME=1 tools/bake.sh     finish a bake cut short (a session's time limit,
 #                                    a restart): the atlases are not made again and
 #                                    each subject already baked is skipped, kept in
@@ -131,11 +134,65 @@ registry() { # dir [args]
       fi
       [ "$left" -lt "$cap" ] && cap=$left
     fi
-    LOG="${BAKE_LOG:-$ROOT/out/bake.log}" timeout "$cap" "$EXP/tools/bake-library.sh" "$LIB" "$@" ${STORE_ARGS[@]+"${STORE_ARGS[@]}"} --resume "$RESUME_DIR/$dir" "${D[@]}"
+    capped "$cap" "$dir" "$@"
     code=$?
+    keep_times
+    [ "$code" = "$SUBJECT_STOPPED" ] && continue
     [ "$code" = 124 ] || return "$code"
     echo "bake: cut at ${cap} s; resuming (the subject it was on has used a start)"
   done
+}
+# A CAP PER SUBJECT (PULSE_BAKE_SUBJECT_CAP_S; row 555's fix, row 559). The cap
+# above stops a whole pass, so the subject it was on got the 300 s left of the
+# budget and every subject after it nothing: five runs, 10-23 to 10-25, spent
+# on built-rucksack, stone-scree-stones-foot and built-oar. With this set, a
+# subject begun (its `.tries`, which the explorer writes as it begins one) more
+# than that many seconds ago and not finished is stopped; its starts are set to
+# the explorer's limit, so the pass that resumes leaves it out by name
+# (`not_baked`) and bakes the rest. The ledger counts it as this run's try. The
+# key pass each start makes (279 s for 532 keys, 10-25) is not counted against
+# it: the clock starts at the subject's own `.tries`.
+SUBJECT_STOPPED=199
+capped() { # cap dir [args] -- one pass of the explorer's bake, under both caps
+  local cap=$1 d="$RESUME_DIR/$2" pid stuck began
+  shift 2
+  began=$(( $(date +%s) - 1 ))
+  LOG="${BAKE_LOG:-$ROOT/out/bake.log}" timeout "$cap" "$EXP/tools/bake-library.sh" "$LIB" "$@" ${STORE_ARGS[@]+"${STORE_ARGS[@]}"} --resume "$d" "${D[@]}" &
+  pid=$!
+  while [ -n "${PULSE_BAKE_SUBJECT_CAP_S:-}" ] && kill -0 "$pid" 2>/dev/null; do
+    sleep "${PULSE_BAKE_POLL_S:-10}"
+    # The subject in hand is the newest `.tries` of this pass; it is stuck when
+    # it has no entry and was begun more than the cap ago.
+    stuck="$(python3 - "$d" "$began" "$PULSE_BAKE_SUBJECT_CAP_S" <<'EOF'
+import sys, time
+from pathlib import Path
+d, began, cap = Path(sys.argv[1]), float(sys.argv[2]), float(sys.argv[3])
+tries = [(t.stat().st_mtime, t.name[: -len(".tries")]) for t in d.glob("*.tries")] if d.is_dir() else []
+tries = [t for t in tries if t[0] >= began]
+if tries:
+    m, stem = max(tries)
+    if not (d / (stem + ".entry.json")).exists() and time.time() - m > cap:
+        print(stem)
+EOF
+)"
+    if [ -n "$stuck" ]; then
+      kill -TERM "$pid" 2>/dev/null; wait "$pid"
+      echo 2 > "$d/$stuck.tries"
+      echo "bake: STOPPED $stuck: past the ${PULSE_BAKE_SUBJECT_CAP_S} s cap per subject; left out for the rest of this run, the bake goes on"
+      return "$SUBJECT_STOPPED"
+    fi
+  done
+  wait "$pid"
+}
+# THE SECONDS EACH SUBJECT TOOK, in the job's log: the explorer writes its log
+# afresh each pass and prints it only when a pass ends by itself, so a pass cut
+# short left no time anywhere (row 555 could not read one). Kept for the run.
+TIMES="${BAKE_LOG:-$ROOT/out/bake.log}.times"
+: > "$TIMES"
+keep_times() {
+  local log="${BAKE_LOG:-$ROOT/out/bake.log}"
+  [ -f "$log" ] && grep -E '^  baked .* in [0-9]+ s$' "$log" >> "$TIMES"
+  return 0
 }
 if ! registry registry "${ARGS[@]}"; then
   # The baked-channel bake writes no manifest when any one rung's channel is
@@ -146,6 +203,9 @@ if ! registry registry "${ARGS[@]}"; then
   [ "${#ARGS[@]}" -gt 0 ] || die "the registry bake failed"
   echo "bake: the baked-channel bake FAILED; falling back to the library's default bake (no baked channel)"
   BAKE_LOG="${BAKE_LOG:-$ROOT/out/bake.log}.default" registry default || die "the registry bake failed"
+fi
+if [ -s "$TIMES" ]; then
+  echo "bake: $(sort -u "$TIMES" | wc -l | tr -d ' ') subject(s) baked this run; the slowest: $(sort -u "$TIMES" | awk '{print $(NF-1) " s " $2}' | sort -rn | head -5 | paste -sd, - | sed 's/,/, /g')"
 fi
 [ -f "$LIB/build/artifacts/manifest.json" ] || die "the bake wrote no manifest"
 python3 "$ROOT/tools/catalog_impostors.py" || die "impostor completion failed"

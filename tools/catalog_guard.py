@@ -12,6 +12,11 @@ Exit 0: deploy (prints both counts). Exit 1: keep the live one. No live page
 catalog always deploys; a live page that cannot be read for any other reason
 (the network, a 5xx) keeps it, since a fuller catalog may be behind the error. An entry is one marked stable subject link on the new index, or one
 `<div class=card>` on the legacy index. Grouping variants never changes the unit.
+
+A total cannot say which subject went (the library's bake plan, step E): the
+line names every subject the live page offers for download and this one does
+not, whether it keeps the live page or deploys. The workflow writes the KEEP
+line as a warning on the run.
 """
 import re
 from html.parser import HTMLParser
@@ -41,6 +46,12 @@ def count(html):
 
 def downloads(html):
     """Preview-only cards must not conceal loss of existing downloads."""
+    return len(download_keys(html))
+
+
+def download_keys(html):
+    """The subjects offered for download: each entry's key, or the zip's href
+    on the legacy index."""
     class Downloads(HTMLParser):
         def __init__(self):
             super().__init__()
@@ -55,7 +66,7 @@ def downloads(html):
                 self.keys.add(attrs["href"])
     parser = Downloads()
     parser.feed(html or "")
-    return len(parser.keys)
+    return parser.keys
 
 
 def read(where):
@@ -79,12 +90,15 @@ def main(argv):
         sys.exit(__doc__)
     new_html, live_html = read(str(argv[1])), read(str(argv[2]))
     new, live = count(new_html), count(live_html)
-    new_downloads, live_downloads = downloads(new_html), downloads(live_html)
+    new_keys, live_keys = download_keys(new_html), download_keys(live_html)
+    new_downloads, live_downloads = len(new_keys), len(live_keys)
+    gone = sorted(k for k in live_keys - new_keys if k)
+    named = "; missing: %s" % ", ".join(gone) if gone else ""
     if new_downloads < live_downloads:
-        print("catalog-guard: KEEP the live catalog -- %d downloads now, %d live" % (new_downloads, live_downloads))
+        print("catalog-guard: KEEP the live catalog -- %d downloads now, %d live%s" % (new_downloads, live_downloads, named))
         return 1
     if new >= live:
-        print("catalog-guard: deploy -- %d subject(s) now, %d live" % (new, live))
+        print("catalog-guard: deploy -- %d subject(s) now, %d live%s" % (new, live, ("; no longer offered: %s" % ", ".join(gone)) if gone else ""))
         return 0
     print("catalog-guard: KEEP the live catalog -- this run has %d subject(s), the live one %d" % (new, live))
     return 1

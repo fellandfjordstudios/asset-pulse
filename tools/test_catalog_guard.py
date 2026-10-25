@@ -1,7 +1,15 @@
 #!/usr/bin/env python3
 """The guard's cases: fewer subjects keep the live catalog; as many or more
-deploy; an unreadable live catalog is kept. `python3 tools/test_catalog_guard.py`"""
+deploy; an unreadable live catalog is kept. With the bake plan's step E, two
+more, each built by tools/catalog.py itself (test_catalog's fixture): a
+subject the bake did not finish keeps its download from its last good build,
+and the guard deploys; a download truly gone keeps the live page and the
+guard names it. `python3 tools/test_catalog_guard.py`"""
+import contextlib
 import functools
+import io
+import json
+import shutil
 import http.server
 import subprocess
 import sys
@@ -45,6 +53,34 @@ def available_site(root, n, offered, legacy=False):
     return root
 
 
+def last_good_cases(t):
+    """(name, new catalog, live catalog, want, a word the guard's line must hold)."""
+    with contextlib.redirect_stdout(io.StringIO()):
+        from test_catalog import Fixture
+        f = Fixture(t / "fixture")
+        card = f.lib / "generators/built/vase.card.json"   # found by its card, as the library's are
+        card.write_text(json.dumps(dict(json.loads(card.read_text()), id="built/vase")))
+        live = shutil.copytree(f.build(), t / "fixture-live")
+        # built-vase is not finished this run: deferred past the budget, its entry gone from the bake
+        manifest = f.bake / "manifest.json"
+        bake = json.loads(manifest.read_text())
+        bake["entries"] = [e for e in bake["entries"] if e["key"] != "built-vase"]
+        bake["not_baked"] = ["built-vase"]
+        manifest.write_text(json.dumps(bake))
+        kept = shutil.copytree(f.build(), t / "fixture-kept")
+        none = shutil.copytree(f.build({"CATALOG_LAST_GOOD": str(t / "no-last-good")}), t / "fixture-none")
+        # withdrawn: its card gone too, so its last good build is no longer served
+        for p in (f.lib / "generators" / "built").glob("vase.*.json"):
+            p.unlink()
+        gone = shutil.copytree(f.build(), t / "fixture-gone")
+    marked = "its last good build" in (kept / "subject/built/vase/index.html").read_text()
+    return [
+        ("one subject not finished: its last good build keeps every live download, and the guard deploys", kept, live, 0 if marked else 9, "deploy"),
+        ("ABLATION -- with no last good build the same run keeps the live catalog and names built-vase", none, live, 1, "built-vase"),
+        ("a download truly gone (its card withdrawn) keeps the live catalog and names built-vase", gone, live, 1, "built-vase"),
+    ]
+
+
 def main():
     failed = 0
     with tempfile.TemporaryDirectory() as t:
@@ -73,9 +109,10 @@ def main():
             ("no live catalog yet (404): the first one deploys", site(t / "d", 2), url + "nothing-here/", 0),
             ("ABLATION -- a live catalog that cannot be reached is kept, never replaced", site(t / "e", 2), "http://127.0.0.1:9/", 1),
         ]
-        for name, new, lv, want in cases:
+        cases = [c + ("",) for c in cases] + last_good_cases(t)
+        for name, new, lv, want, word in cases:
             r = guard(new, lv)
-            ok = r.returncode == want
+            ok = r.returncode == want and word in r.stdout
             failed += not ok
             print("%s  %s  (%s)" % ("ok  " if ok else "FAIL", name, (r.stdout.strip().splitlines() or [r.stderr.strip()])[-1]))
         srv.shutdown()

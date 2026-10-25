@@ -132,15 +132,25 @@ jobs:
           path: out/render-cache
           key: renders-${{ steps.pins.outputs.library }}-${{ github.run_id }}
           restore-keys: renders-${{ steps.pins.outputs.library }}-
-      - name: the bake done at these pins
+      # ROLLING, as the store (row 555): the pin moves every run, so a key by pin
+      # alone was never found and each run lost what the last one made. The
+      # newest bake at these pins first, else the newest at any pin: tools/bake.sh
+      # starts afresh from another pin's resume, and the catalog keeps from it
+      # only each subject's last good build (out/catalog-last-good, the bake
+      # plan's step E), served marked with its pin when this run's bake does not
+      # finish that subject.
+      - name: the bake done at these pins, or the last one
         id: bake
         uses: actions/cache/restore@v4
         with:
           path: |
             out/bake-resume
             library/build/artifacts
+            out/catalog-last-good
           key: bake-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-${{ github.run_id }}
-          restore-keys: bake-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-
+          restore-keys: |
+            bake-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-
+            bake-
       - name: the catalog guard's test
         run: python3 tools/test_catalog_guard.py
       - name: Require matching cached inputs for a catalog refresh
@@ -149,7 +159,10 @@ jobs:
           RENDER_CACHE: ${{ steps.renders.outputs.cache-matched-key }}
           BAKE_CACHE: ${{ steps.bake.outputs.cache-matched-key }}
           LIBRARY_PIN: ${{ steps.pins.outputs.library }}
+          EXPLORER_PIN: ${{ steps.pins.outputs.explorer }}
         run: |
+          # The bake's restore rolls to any pin; a refresh takes only these pins'.
+          case "$BAKE_CACHE" in "bake-$LIBRARY_PIN-$EXPLORER_PIN-"*) ;; *) BAKE_CACHE="" ;; esac
           test -n "$RENDER_CACHE" && test -n "$BAKE_CACHE" || { echo "::error::No cached outputs at these pins. Run a normal pulse first."; exit 1; }
           test "$(cat out/render-cache/render-pin)" = "$LIBRARY_PIN"
           test -f library/build/artifacts/manifest.json
@@ -171,6 +184,15 @@ jobs:
           # (row 215; asset-generators feedback names the hang, 49cf1557).
           PULSE_RESUME: "1"
           PULSE_BAKE_BUDGET_S: "2700"
+          # A CAP PER SUBJECT (row 555's fix): one subject that does not finish
+          # costs 600 s and a restart, not the budget (five runs, 10-23 to 10-25,
+          # each spent its 2700 s on one subject and baked 0 after it). 600 s is
+          # the slowest healthy subject in Actions, built-oar at 466 s on 10-21,
+          # with a third to spare; built-oar now takes 815 s even alone on a
+          # faster machine, a cost for its generator to fix (the bake plan's
+          # step D), not one this budget can carry. Its clock starts when the
+          # subject begins, after the key pass (279 s, 10-25).
+          PULSE_BAKE_SUBJECT_CAP_S: "600"
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           DATE="${{ steps.pins.outputs.date }}"
@@ -185,8 +207,17 @@ jobs:
           # OPTION A (the owner, 2026-10-10): the public catalog is replaced only by
           # one listing at least as many subjects; a run whose bake was cut short
           # leaves the live page as it was (tools/catalog_guard.py, its test above).
-          if [ -f "out/$DATE/catalog/index.html" ] && python3 tools/catalog_guard.py "out/$DATE/catalog" "${{ steps.pages.outputs.base_url }}/"; then
+          # A skipped publish is a WARNING on the run, naming what is missing
+          # (row 555): the run is green and deploy skipped either way.
+          if [ ! -f "out/$DATE/catalog/index.html" ]; then
+            echo "::warning title=publish skipped::no catalog this run (the bake or the catalog failed; see this step's log)"
+          elif guard="$(python3 tools/catalog_guard.py "out/$DATE/catalog" "${{ steps.pages.outputs.base_url }}/" 2>&1)"; then
+            echo "$guard"
             echo "catalog=out/$DATE/catalog" >> "$GITHUB_OUTPUT"
+          else
+            echo "$guard"
+            echo "::warning title=publish skipped::$(echo "$guard" | tail -1)"
+            { echo "### publish skipped"; echo; echo "$guard"; } >> "$GITHUB_STEP_SUMMARY"
           fi
           grep -h "^catalog: " "out/$DATE"/*.log 2>/dev/null | tail -3 || true
           exit $code
@@ -224,6 +255,7 @@ jobs:
           path: |
             out/bake-resume
             library/build/artifacts
+            out/catalog-last-good
           key: bake-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-${{ github.run_id }}
       - name: commit the day's row and the pin
         if: always() && steps.checkout.outcome == 'success' && inputs.refresh_catalog != true
