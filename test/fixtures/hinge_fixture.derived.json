@@ -53,7 +53,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 1,
 				"trace": "fixture__hinge#1.trace.jsonl"
 			}
 		}
@@ -75,12 +75,12 @@
 				"pixel_m": 0.001111
 			},
 			"error": 0.001851851851851852,
-			"fraction": 0.028247524899999984,
+			"fraction": 0.02824752489999998,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.028",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"reduce",
@@ -103,14 +103,14 @@
 			"measured_of": 1,
 			"route": "reduce",
 			"routes": {
-				"reduce": 3
+				"reduce": 3.0
 			},
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "a9d6c10f77e74d3679bc5a277ac33ee217ba001db1bc0c874544c08279d8a142",
+		"deriver": "b5039db66e59443269655311271f5a142c29afe898f09ded4580bda0de909969",
 		"generator": "b95ab8abb304a8803171e22eb50cb2266ba48360498ba384b33364f2b2299742"
 	}
 }
