@@ -73,7 +73,7 @@
 	"replay": {
 		"1": "2cdcb4cdb631476089684bdc3319f1e16f7a5d6af3e30efb4136cd7cc3e27d8b",
 		"2": "b258e7c1d19209e745650efea497c94e1c97714ab898a342a47472fecc717a97",
-		"3": "8121a9b0d865e042dacd58c9163e6fe55b16c248a0aa8a17e9a708c6840bf0bb"
+		"3": "b40e6b0ada3ec9b4f91a8f97e650260900f415ca25f003cf447001a9e834c467"
 	},
 	"rungs": {
 		"1": {
@@ -474,7 +474,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 1806,
 				"coverage_rel": -0.004030000000000001,
@@ -496,7 +495,7 @@
 		}
 	},
 	"source": {
-		"deriver": "291426ee22241a7dd0b12323cd4521ecb44ca3ad3f7ac3e6e05a45c0b7ab28ab",
+		"deriver": "b5039db66e59443269655311271f5a142c29afe898f09ded4580bda0de909969",
 		"generator": "4f2b6e822f6f64a0434ad906adf38050c0f6c3366497fc5bc3af482778138029"
 	}
 }
