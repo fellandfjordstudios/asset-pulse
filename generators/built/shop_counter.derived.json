@@ -72,7 +72,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 14,
+				"candidates": 0,
 				"trace": "built__shop-counter#1.trace.jsonl"
 			}
 		}
@@ -100,7 +100,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"reduce",
@@ -113,13 +113,7 @@
 				"cost": 3256,
 				"coverage_rel": -0.00031,
 				"floor": 0.0041400000000000005,
-				"part_shift": {
-					"brass": -0.0006000000000000001,
-					"edge_wood": 1e-05,
-					"frame": 0.00018,
-					"panel": 0.00016,
-					"top": 0.00039000000000000005
-				},
+				"part_shift": {},
 				"picture": 0.0041400000000000005
 			},
 			"measured_of": 1,
@@ -146,7 +140,7 @@
 	},
 	"source": {
 		"children": "6ba3966cebecfe9d0e139dba50e26b3a0894dd3b55af4ca1c8611416ef2f1537",
-		"deriver": "de654f43b6921ce5cfc56df47d2253ac62fea43cf6060a0b3fca8fdd68d484f0",
+		"deriver": "291426ee22241a7dd0b12323cd4521ecb44ca3ad3f7ac3e6e05a45c0b7ab28ab",
 		"generator": "4169a391a86fa749547f6e7a4b0123390660855cd399d6849225171f319b30a1"
 	}
 }
