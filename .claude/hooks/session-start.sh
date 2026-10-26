@@ -8,3 +8,5 @@ case ":${PATH}:" in *":${INSTALL_DIR}:"*) ;; *)
   export PATH="${INSTALL_DIR}:${PATH}"
   [ -n "${CLAUDE_ENV_FILE:-}" ] && echo "export PATH=\"${INSTALL_DIR}:\${PATH}\"" >> "${CLAUDE_ENV_FILE}" ;;
 esac
+
+exit 0
