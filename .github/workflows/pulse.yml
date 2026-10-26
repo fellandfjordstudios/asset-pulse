@@ -260,8 +260,8 @@ jobs:
       - name: commit the day's row and the pin
         if: always() && steps.checkout.outcome == 'success' && inputs.refresh_catalog != true
         run: |
-          git config user.name "asset-pulse"
-          git config user.email "asset-pulse@users.noreply.github.com"
+          git config user.name "Fell & Fjord"
+          git config user.email "fellandfjord@gmail.com"
           git add history.csv library.lock
           git diff --cached --quiet && exit 0
           git commit -q -m "pulse $(date -u +%Y-%m-%d) (GitHub Actions)"
@@ -331,8 +331,8 @@ jobs:
         env:
           PULSE_BACKLOG_BUDGET_S: "18600"
         run: |
-          git config user.name "asset-pulse"
-          git config user.email "asset-pulse@users.noreply.github.com"
+          git config user.name "Fell & Fjord"
+          git config user.email "fellandfjord@gmail.com"
           tools/backlog.sh
       - name: save the checkpoints
         if: always() && steps.pins.outcome == 'success'

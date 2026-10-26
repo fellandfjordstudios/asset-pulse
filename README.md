@@ -351,3 +351,18 @@ To complete an existing bake at the current pins:
 
     python3 tools/catalog_impostors.py
     python3 -m unittest discover -s tools -p 'test_catalog_impostors.py'
+
+### Repository setup and push checks
+
+Run `tools/setup.sh` once in any clone. It syncs the committed library pin,
+uses that library's shared studio identity installer, installs the checked-in
+hook delegators, and provisions Godot 4.7.2 plus the test dependencies. A private
+library checkout needs normal Git credentials; `LIBRARY_URL` can also point at
+an existing local clone containing the exact committed pin. Setup never bumps
+that pin or runs the daily job. `--hooks-only` skips runtime provisioning.
+
+`tools/check.sh` verifies the engine, studio author, hooks and clean library pin,
+then runs isolated packaging, deployment-guard, store and ledger tests. Pre-push
+first runs the shared studio identity check, then these local checks. Browser
+checks remain the explicit commands above. Both automated commit paths use
+Fell & Fjord authorship; existing history is preserved.

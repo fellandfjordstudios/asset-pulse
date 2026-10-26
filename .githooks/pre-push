@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+"$HOME/.config/fellandfjord/hooks/pre-push" "$@"
+unset GIT_DIR GIT_WORK_TREE GIT_INDEX_FILE GIT_PREFIX GIT_COMMON_DIR
+cd "$(dirname "$0")/.."
+tools/check.sh

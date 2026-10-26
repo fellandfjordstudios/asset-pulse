@@ -14,13 +14,14 @@ OUT="out/$DATE"
 mkdir -p "$OUT"
 LOG="$OUT/daily.log"
 SECONDS=0
-[ -x .claude/hooks/session-start.sh ] && command -v godot >/dev/null 2>&1 || bash .claude/hooks/session-start.sh >>"$LOG" 2>&1
+tools/setup.sh >>"$LOG" 2>&1 || exit $?
+export PATH="$HOME/.local/bin:$PATH"
 git pull -q --rebase --autostash origin main >>"$LOG" 2>&1
 { tools/sync-library.sh --bump main && ./run.sh; } >>"$LOG" 2>&1
 RUN=$?
 git add history.csv library.lock
 if ! git diff --cached --quiet; then
-  git -c user.name="asset-pulse" -c user.email="asset-pulse@users.noreply.github.com" commit -q -m "pulse $DATE" >>"$LOG" 2>&1
+  git commit -q -m "pulse $DATE" >>"$LOG" 2>&1
   for i in 1 2 3; do git pull -q --rebase --autostash origin main >>"$LOG" 2>&1 && git push -q origin HEAD:main >>"$LOG" 2>&1 && break; sleep 5; done
 fi
 # PUBLISH (the plan's step 3): the pulse behind Access, the catalog on the
