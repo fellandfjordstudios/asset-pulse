@@ -46,11 +46,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 0,
 				"trace": "animal__atlantic-cod#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 8,
+				"candidates": 0,
 				"trace": "animal__atlantic-cod#2.trace.jsonl"
 			}
 		}
@@ -79,7 +79,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"reduce",
@@ -92,14 +92,7 @@
 				"cost": 9796,
 				"coverage_rel": -0.00034,
 				"floor": 0.00398,
-				"part_shift": {
-					"back": 0.00025,
-					"belly": 0.00015000000000000001,
-					"eye": -7.000000000000001e-05,
-					"fin": 0.0005200000000000001,
-					"flesh": 0.0,
-					"iris": -0.00055
-				},
+				"part_shift": {},
 				"picture": 0.00398
 			},
 			"measured_of": 2,
@@ -126,7 +119,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"reduce",
@@ -266,14 +259,7 @@
 				"cost": 2674,
 				"coverage_rel": -0.0049900000000000005,
 				"floor": 0.00398,
-				"part_shift": {
-					"back": 0.00218,
-					"belly": 0.0007800000000000001,
-					"eye": -0.00036,
-					"fin": -0.0007000000000000001,
-					"flesh": -0.00015000000000000001,
-					"iris": -0.00216
-				},
+				"part_shift": {},
 				"picture": 0.00398
 			},
 			"measured_of": 3,
@@ -288,7 +274,7 @@
 		}
 	},
 	"source": {
-		"deriver": "48aae9cabc95b0dc2efa250376301005d19e464aacf4f77cb1c0589f3d090e8f",
+		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
 		"generator": "e52411ac2a294bde31b9d88f299bcc168d306e549c57a8438febacb73d7404e1"
 	}
 }
