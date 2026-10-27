@@ -18,7 +18,7 @@
 		},
 		{
 			"params": {
-				"dressed": 1
+				"dressed": 2
 			},
 			"seed": 314
 		},
@@ -46,11 +46,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "animal__atlantic-cod#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 8,
 				"trace": "animal__atlantic-cod#2.trace.jsonl"
 			}
 		}
@@ -79,24 +79,32 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"reduce",
 					"impostor",
-					"thin"
+					"thin",
+					"merged"
 				]
 			},
 			"measured": {
 				"cost": 9796,
-				"coverage_rel": 0.00055,
-				"floor": 0.004,
-				"part_shift": {},
-				"picture": 0.004
+				"coverage_rel": -0.00034,
+				"floor": 0.00398,
+				"part_shift": {
+					"back": 0.00025,
+					"belly": 0.00015000000000000001,
+					"eye": -7.000000000000001e-05,
+					"fin": 0.0005200000000000001,
+					"flesh": 0.0,
+					"iris": -0.00055
+				},
+				"picture": 0.00398
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"IMPOSTOR, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.490 held at 8624, cheaper than the 9796 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
 			"route": "kit",
@@ -118,12 +126,13 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"reduce",
 					"impostor",
-					"thin"
+					"thin",
+					"merged"
 				]
 			},
 			"material_transfer": {
@@ -204,25 +213,25 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.5057213306427002,
-							0.4689966142177582,
-							0.39174067974090576
+							0.31489965319633484,
+							0.30294397473335266,
+							0.2523384988307953
 						],
 						"mean_before": [
-							0.5057213306427002,
-							0.4689966142177582,
-							0.39174067974090576
+							0.31489965319633484,
+							0.30294397473335266,
+							0.2523384988307953
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.07179290056228638,
-							0.06502625346183777,
-							0.06218123435974121
+							0.046203821897506714,
+							0.05373582988977432,
+							0.06721250712871552
 						],
 						"variance_before": [
-							0.07179290056228638,
-							0.06502625346183777,
-							0.06218123435974121
+							0.046203821897506714,
+							0.05373582988977432,
+							0.06721250712871552
 						]
 					},
 					{
@@ -256,13 +265,20 @@
 			"measured": {
 				"cost": 2674,
 				"coverage_rel": -0.0049900000000000005,
-				"floor": 0.004,
-				"part_shift": {},
-				"picture": 0.0041600000000000005
+				"floor": 0.00398,
+				"part_shift": {
+					"back": 0.00218,
+					"belly": 0.0007800000000000001,
+					"eye": -0.00036,
+					"fin": -0.0007000000000000001,
+					"flesh": -0.00015000000000000001,
+					"iris": -0.00216
+				},
+				"picture": 0.00398
 			},
 			"measured_of": 3,
 			"not_taken": [
-				"IMPOSTOR, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at 2 of the band's pixels) held at 3248, dearer than the 2674 taken",
 				"REDUCE to 0.020 held at 1154, cheaper than the 2674 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
@@ -272,7 +288,7 @@
 		}
 	},
 	"source": {
-		"deriver": "e9d32de3c81c1a522e11b219b852817f255d490629d5cbbcbf0a8c5f643a09f3",
-		"generator": "442b964e27ac80f89ab61b12878f3dfb588a48dc3d0634f01302f8a700e647f0"
+		"deriver": "48aae9cabc95b0dc2efa250376301005d19e464aacf4f77cb1c0589f3d090e8f",
+		"generator": "e52411ac2a294bde31b9d88f299bcc168d306e549c57a8438febacb73d7404e1"
 	}
 }
