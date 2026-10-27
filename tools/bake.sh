@@ -62,7 +62,7 @@ if [ "${PULSE_STORE:-1}" != "1" ]; then
   STORE="$ROOT/out/bake-store-this-run"; rm -rf "$STORE"; IMPOSTOR_ARGS=()
 fi
 mkdir -p "$STORE"
-rm -rf "$LIB/build/artifacts" "$COOKED"
+rm -rf "$LIB/build/artifacts" "$COOKED" "$ROOT/out/bake-resume"
 
 echo "bake: impostor atlases (the library's tools/impostor.sh${IMPOSTOR_ARGS[*]:+ --cache})"
 ( cd "$LIB" && AG_BAKE_CACHE="$STORE" tools/impostor.sh ${IMPOSTOR_ARGS[@]+"${IMPOSTOR_ARGS[@]}"} | tail -3; exit "${PIPESTATUS[0]}" ) \

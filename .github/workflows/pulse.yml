@@ -117,11 +117,16 @@ jobs:
       # own, and the newest is restored whatever the pins. It is the cook's one
       # write store (tools/bake.sh, the bake plan's step F): the cook's progress
       # across runs is the store, never a folder kept by the pin.
+      # The path list is the one the retired ledger of tries saved with
+      # (out/bake-ledger.json, now never written): actions/cache keys a cache by
+      # its paths, so a new list would restore no store the runs before saved.
       - name: the store, as the last run left it
         if: inputs.refresh_catalog != true
         uses: actions/cache/restore@v4
         with:
-          path: ~/.cache/asset-generators/bakes
+          path: |
+            ~/.cache/asset-generators/bakes
+            out/bake-ledger.json
           key: store-${{ github.run_id }}
           restore-keys: store-
       - name: renders done at this library pin
@@ -134,12 +139,20 @@ jobs:
       # EACH SUBJECT'S LAST GOOD BUILD (out/catalog-last-good, the bake plan's
       # step E), ROLLING as the store: served marked with its pin when this
       # run's cook does not finish that subject.
+      # Its path list, and the bake- prefix after its own, are the retired
+      # pin-keyed bake cache's, which carried the last good builds until now: a
+      # new list would restore none of them. tools/bake.sh empties the other two.
       - name: the last good build of each subject
         uses: actions/cache/restore@v4
         with:
-          path: out/catalog-last-good
+          path: |
+            out/bake-resume
+            library/build/artifacts
+            out/catalog-last-good
           key: last-good-${{ github.run_id }}
-          restore-keys: last-good-
+          restore-keys: |
+            last-good-
+            bake-
       # A REFRESH ONLY (no cook): the cook's output at these pins, as the last
       # run at them wrote it. A normal run never restores it; the store above
       # is what carries a cook's progress.
@@ -245,13 +258,18 @@ jobs:
         if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
         uses: actions/cache/save@v4
         with:
-          path: ~/.cache/asset-generators/bakes
+          path: |
+            ~/.cache/asset-generators/bakes
+            out/bake-ledger.json
           key: store-${{ github.run_id }}
       - name: save the last good builds
         if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
         uses: actions/cache/save@v4
         with:
-          path: out/catalog-last-good
+          path: |
+            out/bake-resume
+            library/build/artifacts
+            out/catalog-last-good
           key: last-good-${{ github.run_id }}
       - name: save the cooked catalog for a refresh at these pins
         if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true && hashFiles('out/cooked/catalog/manifest.json') != ''
