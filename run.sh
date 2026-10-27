@@ -70,9 +70,13 @@ with open(sys.argv[3]) as f:
 # the per-subject rows; the prototype printed them flat. The names are its own.
 t = raw.get("totals", raw)
 pick = lambda *ks: next(t[k] for k in ks if k in t)
+# A total the scorecard has retired is written empty, its column kept so the
+# rows before it still line up: src_over (sources_over_ceiling) left the
+# scorecard with the hero-over-band-0 flag (the library's D-derive-4, row 619).
+retired = lambda k: t.get(k, "")
 print(",".join(str(x) for x in [d, pin, "ok", pick("subjects"), pick("bands"), pick("covered_hand"),
       pick("covered_library", "covered_derived"), pick("uncovered"), pick("fully"),
-      pick("fully_from_rung0", "fully_rung0_only"), pick("src_over")]))
+      pick("fully_from_rung0", "fully_rung0_only"), retired("src_over")]))
 PY
 )" || fail_row "row"
 # One row per date: a re-run on the same day replaces the day's row.
