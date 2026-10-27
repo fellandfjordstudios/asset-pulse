@@ -49,8 +49,12 @@ kept_paths() {
     'generators/*.derived.json' 'generators/*.drawn.json' 'test/fixtures/*.derived.json' \
     | grep -v '^ D \|^D  ' | sed 's/^...//'
 }
+# The WHOLE tree back at the pin, not only generators/ and test/: the job also
+# files ladder demands under ladder-demands/ (row 594: one left there made the
+# push's pre-push check, `sync-library.sh --verify`, refuse the push). Ignored
+# files and library/.git/ag-logs, the checkpoints, are kept.
 restore_library() {
-  git -C "$LIB" checkout -q -- . && git -C "$LIB" clean -fdq -- generators test
+  git -C "$LIB" reset -q --hard "$PIN" && git -C "$LIB" clean -fdq
 }
 # THE RESULTS SO FAR, as a worktree of this repository's results branch.
 rm -rf "$KEEP"; git -C "$ROOT" worktree prune
