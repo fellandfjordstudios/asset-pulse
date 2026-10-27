@@ -14,7 +14,7 @@ python3 -m unittest discover -s tools -p 'test_setup.py'
 python3 -m unittest discover -s tools -p 'test_catalog.py'
 python3 tools/test_catalog_guard.py
 python3 tools/test_store_prune.py
-python3 tools/test_bake_ledger.py
+python3 tools/test_cook_hits.py
 python3 -m unittest discover -s tools -p 'test_catalog_impostors.py'
 node --check tools/catalog-assets/catalog.js
-bash -n tools/setup.sh tools/check.sh daily.sh tools/publish.sh .githooks/pre-push .githooks/commit-msg
+bash -n tools/setup.sh tools/check.sh daily.sh tools/publish.sh tools/bake.sh .githooks/pre-push .githooks/commit-msg

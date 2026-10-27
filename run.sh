@@ -184,8 +184,8 @@ if [ "${PULSE_RENDER:-1}" = "1" ] && [ "${1:-}" != "--no-render" ] && [ "${2:-}"
   echo "run: rendered $n subjects ($resumed resumed, $stored of them from the store), $failed failed, in $(( $(date +%s) - t0 )) s; manifest $MANIFEST"
   # STEP 2, THE PAGE: static HTML from this run's output and the history.
   python3 tools/site.py "$OUT" || fail_row "site"
-  # THE CATALOG, the pulse's public half: the explorer's bake of every rung
-  # (tools/bake.sh), then the cards, the 3D view and the free downloads. A
+  # THE CATALOG, the pulse's public half: every rung cooked by the library's
+  # tools/cook.sh (tools/bake.sh), then the cards, the 3D view and the free downloads. A
   # failed bake leaves the private page and the row standing and says so.
   if [ "${PULSE_BAKE:-1}" = "1" ]; then
     if BAKE_LOG="$OUT/bake.log" tools/bake.sh; then

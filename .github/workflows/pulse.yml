@@ -114,15 +114,14 @@ jobs:
       # THE STORE (the library's plans/062 step 1): every bake and render keyed
       # by what it is made from, so a run redoes only the subjects whose key
       # moved, at any pin. Carried forward by a ROLLING key: each run saves its
-      # own, and the newest is restored whatever the pins. With it the bake's
-      # ledger of tries (tools/bake_ledger.py): what was begun and not finished.
+      # own, and the newest is restored whatever the pins. It is the cook's one
+      # write store (tools/bake.sh, the bake plan's step F): the cook's progress
+      # across runs is the store, never a folder kept by the pin.
       - name: the store, as the last run left it
         if: inputs.refresh_catalog != true
         uses: actions/cache/restore@v4
         with:
-          path: |
-            ~/.cache/asset-generators/bakes
-            out/bake-ledger.json
+          path: ~/.cache/asset-generators/bakes
           key: store-${{ github.run_id }}
           restore-keys: store-
       - name: renders done at this library pin
@@ -132,25 +131,28 @@ jobs:
           path: out/render-cache
           key: renders-${{ steps.pins.outputs.library }}-${{ github.run_id }}
           restore-keys: renders-${{ steps.pins.outputs.library }}-
-      # ROLLING, as the store (row 555): the pin moves every run, so a key by pin
-      # alone was never found and each run lost what the last one made. The
-      # newest bake at these pins first, else the newest at any pin: tools/bake.sh
-      # starts afresh from another pin's resume, and the catalog keeps from it
-      # only each subject's last good build (out/catalog-last-good, the bake
-      # plan's step E), served marked with its pin when this run's bake does not
-      # finish that subject.
-      - name: the bake done at these pins, or the last one
+      # EACH SUBJECT'S LAST GOOD BUILD (out/catalog-last-good, the bake plan's
+      # step E), ROLLING as the store: served marked with its pin when this
+      # run's cook does not finish that subject.
+      - name: the last good build of each subject
+        uses: actions/cache/restore@v4
+        with:
+          path: out/catalog-last-good
+          key: last-good-${{ github.run_id }}
+          restore-keys: last-good-
+      # A REFRESH ONLY (no cook): the cook's output at these pins, as the last
+      # run at them wrote it. A normal run never restores it; the store above
+      # is what carries a cook's progress.
+      - name: the cooked catalog at these pins (a refresh)
         id: bake
+        if: inputs.refresh_catalog == true
         uses: actions/cache/restore@v4
         with:
           path: |
-            out/bake-resume
+            out/cooked
             library/build/artifacts
-            out/catalog-last-good
-          key: bake-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-${{ github.run_id }}
-          restore-keys: |
-            bake-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-
-            bake-
+          key: cooked-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-${{ github.run_id }}
+          restore-keys: cooked-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-
       - name: the catalog guard's test
         run: python3 tools/test_catalog_guard.py
       - name: Require matching cached inputs for a catalog refresh
@@ -161,11 +163,9 @@ jobs:
           LIBRARY_PIN: ${{ steps.pins.outputs.library }}
           EXPLORER_PIN: ${{ steps.pins.outputs.explorer }}
         run: |
-          # The bake's restore rolls to any pin; a refresh takes only these pins'.
-          case "$BAKE_CACHE" in "bake-$LIBRARY_PIN-$EXPLORER_PIN-"*) ;; *) BAKE_CACHE="" ;; esac
           test -n "$RENDER_CACHE" && test -n "$BAKE_CACHE" || { echo "::error::No cached outputs at these pins. Run a normal pulse first."; exit 1; }
           test "$(cat out/render-cache/render-pin)" = "$LIBRARY_PIN"
-          test -f library/build/artifacts/manifest.json
+          test -f out/cooked/catalog/manifest.json
       - name: the run
         id: run
         env:
@@ -179,19 +179,20 @@ jobs:
           TURNSTILE_SITEKEY: ${{ vars.TURNSTILE_SITEKEY }}
           ITCH_URL: ${{ vars.ITCH_URL }}
           REFRESH_CATALOG: ${{ inputs.refresh_catalog }}
-          # Resume what the caches hold, and give the explorer's registry bake
-          # 45 minutes in all: it ships what finished, the rest named not_baked
-          # (row 215; asset-generators feedback names the hang, 49cf1557).
+          # Renders done at this pin are not drawn again.
           PULSE_RESUME: "1"
+          # THE COOK'S DEADLINE (the library's tools/cook.sh --deadline, plans/107
+          # step 9): 45 minutes from its start. Only items whose recorded cost
+          # fits what remains are begun, under fits+shuffle:<run number>; the
+          # rest are deferred by name and the store keeps what finished, so the
+          # next run bakes only those and what moved.
           PULSE_BAKE_BUDGET_S: "2700"
-          # A CAP PER SUBJECT (row 555's fix): one subject that does not finish
-          # costs 600 s and a restart, not the budget (five runs, 10-23 to 10-25,
-          # each spent its 2700 s on one subject and baked 0 after it). 600 s is
-          # the slowest healthy subject in Actions, built-oar at 466 s on 10-21,
-          # with a third to spare; built-oar now takes 815 s even alone on a
-          # faster machine, a cost for its generator to fix (the bake plan's
-          # step D), not one this budget can carry. Its clock starts when the
-          # subject begins, after the key pass (279 s, 10-25).
+          # THE LIMIT PER ITEM (--item-limit, --item-floor): an item past 3 times
+          # its recorded cost, or 600 s, is stopped, put back once and failed by
+          # name on a second overrun (five runs, 10-23 to 10-25, each spent its
+          # budget on one subject; built-oar takes 815 s alone, a cost for its
+          # generator to fix, the bake plan's step D).
+          PULSE_BAKE_ITEM_LIMIT: "3"
           PULSE_BAKE_SUBJECT_CAP_S: "600"
         run: |
           export PATH="$HOME/.local/bin:$PATH"
@@ -244,19 +245,22 @@ jobs:
         if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
         uses: actions/cache/save@v4
         with:
-          path: |
-            ~/.cache/asset-generators/bakes
-            out/bake-ledger.json
+          path: ~/.cache/asset-generators/bakes
           key: store-${{ github.run_id }}
-      - name: save the bake for these pins
+      - name: save the last good builds
         if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
         uses: actions/cache/save@v4
         with:
+          path: out/catalog-last-good
+          key: last-good-${{ github.run_id }}
+      - name: save the cooked catalog for a refresh at these pins
+        if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true && hashFiles('out/cooked/catalog/manifest.json') != ''
+        uses: actions/cache/save@v4
+        with:
           path: |
-            out/bake-resume
+            out/cooked
             library/build/artifacts
-            out/catalog-last-good
-          key: bake-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-${{ github.run_id }}
+          key: cooked-${{ steps.pins.outputs.library }}-${{ steps.pins.outputs.explorer }}-${{ github.run_id }}
       - name: commit the day's row and the pin
         if: always() && steps.checkout.outcome == 'success' && inputs.refresh_catalog != true
         run: |

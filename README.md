@@ -21,9 +21,11 @@ plan it executes is the library's
     ./run.sh --no-render              the scorecard and the row only
     PULSE_BACKLOG=0 ./run.sh          skip the derivation backlog (a quick look)
     PULSE_RESUME=1 ./run.sh           resume a run cut short (a restart, a time limit): subjects
-                                      already rendered at the same pin are not rendered again, and
-                                      the bake (tools/bake.sh) skips the atlases and every subject
-                                      already baked at the same library and explorer pins
+                                      already rendered at the same pin are not rendered again; the
+                                      bake needs no resume -- its store carries every rung it made,
+                                      at any pin
+    PULSE_BAKE_BUDGET_S=2700 ./run.sh the cook's deadline: only items that fit are begun, the rest
+                                      deferred by name, and the next run bakes only those
     PULSE_DERIVE=none ./run.sh        drawn today only: no derived column
     PULSE_ONLY="built/vase" ./run.sh  render one subject, for a manual look
 
@@ -61,8 +63,10 @@ goal table and take seconds each. Each subject's renders are capped by the run
    fail in the library's tools, filed in its feedback/)
 2. the page: one per subject (scorecard row, band sheet, history) and an index
    with the totals and their trend -- `tools/site.py`, checked at 390 px
-3. the catalog, the pulse's public half: `tools/bake.sh` (asset-explorer's
-   bake, pinned in `explorer.lock`, run as its refresh.sh ran it), then
+3. the catalog, the pulse's public half: `tools/bake.sh` (the library's
+   impostor atlases, then the library's `tools/cook.sh --deadline` over the
+   explorer's own plan of what to bake, pinned in `explorer.lock`, into
+   `out/cooked/catalog/`; the bake plan's step F), then
    `tools/catalog.py`: one static page per subject from the library's committed
    JSON (class, size, rungs, ladder end, taxon, use), its close-ups and a
    `<model-viewer>` of rung 0; two numbers from the scorecard (draw cost at the
@@ -333,7 +337,8 @@ geometry or library copies belong in git.
 
 ### Completing terminal impostors
 
-`tools/bake.sh` now runs `tools/catalog_impostors.py` after the registry bake.
+`tools/bake.sh` now runs `tools/catalog_impostors.py` after the cook, on
+`out/cooked/catalog/`.
 The pinned library exports regular mesh rungs but can omit its separately
 specified terminal impostor. The completion step asks the library's own
 `AgImpostorRung` and `AgBaker` APIs to generate and verify that end; it does not

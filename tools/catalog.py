@@ -18,7 +18,7 @@ Environment (all optional to build; tools/publish.sh needs them to deploy):
     TURNSTILE_SITEKEY    public production widget key; required to enable sending
 
 What it reads, and decides nothing about (the owner's decisions, 2026-10-03):
-  - the bake (asset-explorer's tools/bake-library.gd via tools/bake.sh): every
+  - the bake (the library's tools/cook.sh via tools/bake.sh): every
     rung's glTF and, when the bake carries it, the impostor end and its atlas.
     The ladder end is part of the asset: a subject whose committed ladder ends
     in an impostor is offered for download only when its bake carries that rung
@@ -363,7 +363,9 @@ def main(argv):
         sys.exit(__doc__)
     run = Path(argv[1]).resolve()
     cfg = json.loads((ROOT / "catalog.json").read_text())
-    bake_dir = LIB / "build" / "artifacts"
+    # THE COOK'S FOLDER (tools/bake.sh: the library's tools/cook.sh, the bake
+    # plan's step F), in the bake's own manifest form.
+    bake_dir = Path(os.environ.get("CATALOG_BAKE_DIR", ROOT / "out" / "cooked" / "catalog"))
     if not (bake_dir / "manifest.json").exists():
         sys.exit("catalog: no bake at %s -- run tools/bake.sh" % bake_dir)
     bake = json.loads((bake_dir / "manifest.json").read_text())

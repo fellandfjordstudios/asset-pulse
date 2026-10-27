@@ -1,26 +1,38 @@
 #!/usr/bin/env bash
-# THE CATALOG'S BAKE: every rung's glTF and the impostor atlases, made by the
-# explorer's own tool exactly as its refresh.sh made them, against the pinned
-# library.
+# THE CATALOG'S BAKE, THROUGH THE LIBRARY'S COOK (the library's
+# fable-plans/the-bake-fills-a-store-and-counts-its-work, step F): the impostor
+# atlases, then every subject cooked by the library's own `tools/cook.sh` into
+# out/cooked/catalog/, against the pinned library.
 #
-#   tools/bake.sh                 impostor atlases, then the registry bake with --transfer
-#   PULSE_TRANSFER=0 tools/bake.sh   the structural bake only (fast; no baked channel)
-#   PULSE_BAKE_BUDGET_S=2700 (with PULSE_RESUME=1)  the whole registry bake in
-#                                    that many seconds; what finished is shipped
-#   PULSE_BAKE_SUBJECT_CAP_S=600 (with PULSE_RESUME=1)  no one subject bakes
-#                                    longer than that; one that does is stopped and
-#                                    left out for the rest of the run, by name
-#   PULSE_RESUME=1 tools/bake.sh     finish a bake cut short (a session's time limit,
-#                                    a restart): the atlases are not made again and
-#                                    each subject already baked is skipped, kept in
-#                                    out/bake-resume/<library>-<explorer>-<mode>/;
-#                                    another pin or mode starts fresh
+#   tools/bake.sh                    impostor atlases, then the cook (structural)
+#   PULSE_TRANSFER=1 tools/bake.sh   cook with the baked channel (--transfer)
+#   PULSE_BAKE_BUDGET_S=2700         the cook's deadline, that many seconds from its
+#                                    start (--deadline): only items that fit what
+#                                    remains are begun, the rest deferred by name;
+#                                    unset, no deadline
+#   PULSE_BAKE_ITEM_LIMIT=3          an item past that many times its recorded cost
+#                                    is stopped (--item-limit), put back once, and
+#                                    failed by name on a second overrun
+#   PULSE_BAKE_SUBJECT_CAP_S=600     the limit's floor (--item-floor), for an item
+#                                    never seen or a cheap one
+#   PULSE_BAKE_ORDER=fits+shuffle:<n>  the cook's order (--order); by default the
+#                                    fit test, then an order seeded by the run's
+#                                    number, so a budget is spread across runs
+#   PULSE_STORE=0                    a store of this run's own: everything is baked
 #
-# The order is refresh.sh's and it is not arbitrary: `tools/impostor.sh` must run
-# before the bake, because the bake only names an atlas already on disk
-# (asset-generators defects/017, 018). Both write only the library's
-# gitignored build/artifacts/; the library's source tree is never touched, and
-# `tools/sync-library.sh --verify` still holds after this.
+# THE STORE IS THE PROGRESS. Every key is content, so a rung whose key is in the
+# write store is copied, never baked again, at any pin; a run cut by its
+# deadline leaves the store fuller than it found it, and the next run bakes only
+# what was deferred or what moved. The workflow carries the store by a rolling
+# key (store-<run>), never by the pin. There is no resume folder and no loop of
+# our own: the cook's deadline, its order and its limit per item are the
+# library's (plans/107 steps 7 and 9).
+#
+# The atlases come first, as refresh.sh ordered it: the library's
+# `tools/impostor.sh` renders them into its gitignored build/artifacts/ (and its
+# store), and they are copied beside the cooked rungs for the catalog. The set
+# cooked is the explorer's own plan (tools/cook_manifest.gd). Nothing in the
+# library's source tree is touched; `tools/sync-library.sh --verify` still holds.
 set -uo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 LIB="$ROOT/library"
@@ -31,6 +43,8 @@ die() { echo "bake: $*" >&2; exit 1; }
 REPO="$(sed -n 's/^repo=//p' "$LOCK")"; PIN="$(sed -n 's/^commit=//p' "$LOCK")"
 [ -n "$REPO" ] && [ -n "$PIN" ] || die "explorer.lock needs repo= and commit="
 [ -d "$LIB/.git" ] || die "no library/ -- run tools/sync-library.sh"
+[ -x "$LIB/tools/cook.sh" ] && grep -q -- '--deadline' "$LIB/tools/cook.sh" \
+  || die "the library at this pin has no tools/cook.sh --deadline (plans/107 step 9); bump the pin"
 if [ ! -d "$EXP/.git" ]; then
   git clone -q "https://github.com/$REPO" "$EXP" || die "clone of $REPO failed"
 fi
@@ -39,175 +53,60 @@ if [ "$(git -C "$EXP" rev-parse HEAD)" != "$PIN" ]; then
   git -C "$EXP" checkout -q --detach "$PIN" || die "the explorer pin $PIN is not on its remote"
 fi
 [ -z "$(git -C "$EXP" status --porcelain)" ] || die "explorer/ has local changes; the pulse never edits it"
-ARGS=(--transfer); [ "${PULSE_TRANSFER:-1}" = "0" ] && ARGS=()
-# THE STORE (the library's plans/062 step 1): every rung keyed by what it is
-# made from (the library's derivation/bake_key.gd), so a rung whose key is in
-# the store is copied, not baked again, at any pin. The explorer hands it to
-# the library's bake (its bake-library --cache, 05b6cad). PULSE_STORE=0 bakes
-# everything.
-# The library's atlas tool reads and writes the same store (its step 2).
-STORE_ARGS=(); IMPOSTOR_ARGS=()
-if [ "${PULSE_STORE:-1}" = "1" ]; then STORE_ARGS=(--cache default); IMPOSTOR_ARGS=(--cache); fi
-# RESUME (the explorer's bake-library --resume): the artifacts on disk are kept
-# only while the record of what made them is, keyed by both pins and the mode.
-RESUME_DIR=""
-if [ "${PULSE_RESUME:-0}" = "1" ]; then
-  RESUME_DIR="$ROOT/out/bake-resume/$(git -C "$LIB" rev-parse --short=12 HEAD)-${PIN:0:12}-${ARGS[*]:-structural}"
-  RESUME_DIR="${RESUME_DIR// /}"
+LOG="${BAKE_LOG:-$ROOT/out/bake.log}"
+mkdir -p "$(dirname "$LOG")"
+COOKED="$ROOT/out/cooked"
+STORE="${AG_BAKE_CACHE:-$HOME/.cache/asset-generators/bakes}"
+IMPOSTOR_ARGS=(--cache)
+if [ "${PULSE_STORE:-1}" != "1" ]; then
+  STORE="$ROOT/out/bake-store-this-run"; rm -rf "$STORE"; IMPOSTOR_ARGS=()
 fi
-if [ -n "$RESUME_DIR" ] && [ -d "$RESUME_DIR" ]; then
-  echo "bake: resuming from $RESUME_DIR"
-else
-  rm -rf "$LIB/build/artifacts" "$ROOT/out/bake-resume"
-  [ -z "$RESUME_DIR" ] || mkdir -p "$RESUME_DIR"
-fi
-if [ -n "$RESUME_DIR" ] && [ -f "$RESUME_DIR/atlases-done" ]; then
-  echo "bake: impostor atlases already made for this resume"
-else
+mkdir -p "$STORE"
+rm -rf "$LIB/build/artifacts" "$COOKED"
+
 echo "bake: impostor atlases (the library's tools/impostor.sh${IMPOSTOR_ARGS[*]:+ --cache})"
-# The library's own tool again: it runs its batch renderer through its display
-# guard now (its 78a0dc40; feedback/no-impostor-atlas-can-be-baked-e7ec9361),
-# and the pulse's own copy of the call, kept while that was broken, named a
-# script that is no longer a SceneTree -- every atlas missing since.
-( cd "$LIB" && tools/impostor.sh ${IMPOSTOR_ARGS[@]+"${IMPOSTOR_ARGS[@]}"} | tail -3; exit "${PIPESTATUS[0]}" ) \
-  || echo "bake: NO IMPOSTOR ATLASES this run (the library's tools/impostor.sh failed; see its log); the bake goes on and the catalog names every far rung that lacks one"
-[ -z "$RESUME_DIR" ] || touch "$RESUME_DIR/atlases-done"
+( cd "$LIB" && AG_BAKE_CACHE="$STORE" tools/impostor.sh ${IMPOSTOR_ARGS[@]+"${IMPOSTOR_ARGS[@]}"} | tail -3; exit "${PIPESTATUS[0]}" ) \
+  || echo "bake: NO IMPOSTOR ATLASES this run (the library's tools/impostor.sh failed; see its log); the cook goes on and the catalog names every far rung that lacks one"
+
+MANIFEST="$ROOT/out/cook-manifest.json"
+( cd "$LIB" && godot --headless --path . --script "$ROOT/tools/cook_manifest.gd" -- "$MANIFEST" "$EXP" 2>&1 ) \
+  | grep -E '^cook manifest|SCRIPT ERROR|usage' || true
+[ -s "$MANIFEST" ] || die "no cook manifest (tools/cook_manifest.gd)"
+
+ARGS=(--target=catalog --out "$COOKED" --write "$STORE"
+  "--item-limit=${PULSE_BAKE_ITEM_LIMIT:-3}" "--item-floor=${PULSE_BAKE_SUBJECT_CAP_S:-600}")
+[ -n "${PULSE_BAKE_ORDER:-}" ] && ARGS+=("--order=$PULSE_BAKE_ORDER")
+if [ -n "${PULSE_BAKE_BUDGET_S:-}" ]; then
+  ARGS+=("--deadline=$(( $(date +%s) + PULSE_BAKE_BUDGET_S ))")
+  [ -n "${PULSE_BAKE_ORDER:-}" ] || ARGS+=("--order=fits+shuffle:${GITHUB_RUN_NUMBER:-$(date -u +%Y%m%d)}")
 fi
-echo "bake: the registry (the explorer's tools/bake-library.sh ${ARGS[*]:-})"
-# THE LEDGER OF TRIES (tools/bake_ledger.py; the owner, 2026-10-24): a subject
-# begun and not finished -- the budget ran out on it, it hung, its bake had
-# problems -- is tried again the next run, when the subjects before it come
-# from the store; after PULSE_BAKE_TRIES (3) it is FAILED, left out by name and
-# not begun again until its bake key moves. Kept beside the store, at any pin.
-LEDGER="$ROOT/out/bake-ledger.json"
-MATERIAL_RUNG=1; [ "${#ARGS[@]}" -gt 0 ] && MATERIAL_RUNG=0
-LEDGER_DIRS=(); [ -z "$RESUME_DIR" ] || LEDGER_DIRS=("$RESUME_DIR/registry" "$RESUME_DIR/default")
-keys_of() { # out stem... -- each stem keyed in its own Godot, under a cap, so one that hangs to build costs one cap
-  local out=$1; shift; echo "{}" > "$out"
-  local s
-  for s in "$@"; do
-    ( cd "$LIB" && timeout "${PULSE_KEY_CAP_S:-300}" godot --headless --path . --script "$ROOT/tools/bake_keys.gd" -- \
-        "$EXP/tools/bake-library.gd" "$MATERIAL_RUNG" "$s" 2>/dev/null ) | grep '^{' | tail -1 > "$out.one" || true
-    python3 -c "import json,sys; a=json.load(open(sys.argv[1])); a.update(json.loads(open(sys.argv[2]).read() or '{}')); json.dump(a, open(sys.argv[1], 'w'))" "$out" "$out.one" 2>/dev/null || true
-  done
-  rm -f "$out.one"
+python3 "$ROOT/tools/cook_hits.py" before "$STORE" "$ROOT/out/cook-store-before.txt"
+cook() { # [--transfer]
+  echo "bake: the library's tools/cook.sh ${ARGS[*]} $*"
+  ( cd "$LIB" && tools/cook.sh "$MANIFEST" "${ARGS[@]}" "$@" ) > "$LOG" 2>&1
+  local code=$?
+  # The cook's own report, without its line a layer a rung (out/bake.log keeps those).
+  grep -v -E '^  [^ ]+-r[0-9]+ +(mesh|bake|cook|channel|measure) +\((cached|made)' "$LOG" | sed 's/^/  /'
+  return "$code"
 }
-if [ -n "$RESUME_DIR" ]; then
-  # shellcheck disable=SC2046
-  keys_of "$ROOT/out/bake-ledger-keys.json" $(python3 "$ROOT/tools/bake_ledger.py" stems "$LEDGER")
-  python3 "$ROOT/tools/bake_ledger.py" before "$LEDGER" "$ROOT/out/bake-ledger-keys.json" "${LEDGER_DIRS[@]}"
-  # Counted however the bake ends: a bake with problems writes no manifest and
-  # stops this script, and that subject's try is the one that most needs counting.
-  ledger_after() {
-    # shellcheck disable=SC2046
-    keys_of "$ROOT/out/bake-ledger-keys.json" $(python3 "$ROOT/tools/bake_ledger.py" started "$LEDGER" "${LEDGER_DIRS[@]}")
-    python3 "$ROOT/tools/bake_ledger.py" after "$LEDGER" "$ROOT/out/bake-ledger-keys.json" "${LEDGER_DIRS[@]}"
-  }
-  trap ledger_after EXIT
-fi
-# WITH RESUME, A CAP: the bake runs under `timeout`, PULSE_BAKE_CAP_S at a time
-# (default 2400 s); a run cut by the cap is resumed at once, the subject it was
-# on having used one of its two starts (bake-library --resume leaves a subject
-# out, by name, after two). One stuck subject then costs two caps, not two
-# sessions (2026-10-05: herring, campfire, clinker boat and jetty each spent a
-# whole two-hour run). It ends: every cut uses up a start.
-registry() { # dir [args]
-  local dir=$1; shift
-  if [ -z "$RESUME_DIR" ]; then
-    LOG="${BAKE_LOG:-$ROOT/out/bake.log}" "$EXP/tools/bake-library.sh" "$LIB" "$@" ${STORE_ARGS[@]+"${STORE_ARGS[@]}"}; return
+if [ "${PULSE_TRANSFER:-0}" = "1" ]; then
+  # The baked-channel bake refuses a whole cook when one rung's channel is flat
+  # (core/baker.gd flat_channel_problem); the default bake, the Forward+/SDFGI
+  # product, is still a correct download, so the catalog falls back to it and says so.
+  if ! cook --transfer; then
+    echo "bake: the baked-channel cook FAILED; falling back to the library's default bake (no baked channel)"
+    cook || die "the cook failed (see $LOG)"
   fi
-  # A BUDGET FOR THE WHOLE BAKE (PULSE_BAKE_BUDGET_S, row 215): past it no
-  # subject is begun (bake-library --deadline), a run still going is stopped at
-  # it, and one last pass writes the manifest of what finished, the rest named
-  # not_baked -- so the catalog deploys with what is done. Unset, no budget.
-  local deadline=0 code cap
-  [ -z "${PULSE_BAKE_BUDGET_S:-}" ] || deadline=$(( $(date +%s) + PULSE_BAKE_BUDGET_S ))
-  local D=(); [ "$deadline" = 0 ] || D=(--deadline "$deadline")
-  while :; do
-    cap="${PULSE_BAKE_CAP_S:-2400}"
-    if [ "$deadline" != 0 ]; then
-      local left=$(( deadline - $(date +%s) ))
-      if [ "$left" -le 0 ]; then
-        echo "bake: the ${PULSE_BAKE_BUDGET_S} s budget is spent; the manifest of what finished"
-        LOG="${BAKE_LOG:-$ROOT/out/bake.log}.final" "$EXP/tools/bake-library.sh" "$LIB" "$@" ${STORE_ARGS[@]+"${STORE_ARGS[@]}"} --resume "$RESUME_DIR/$dir" "${D[@]}"
-        return
-      fi
-      [ "$left" -lt "$cap" ] && cap=$left
-    fi
-    capped "$cap" "$dir" "$@"
-    code=$?
-    keep_times
-    [ "$code" = "$SUBJECT_STOPPED" ] && continue
-    [ "$code" = 124 ] || return "$code"
-    echo "bake: cut at ${cap} s; resuming (the subject it was on has used a start)"
-  done
-}
-# A CAP PER SUBJECT (PULSE_BAKE_SUBJECT_CAP_S; row 555's fix, row 559). The cap
-# above stops a whole pass, so the subject it was on got the 300 s left of the
-# budget and every subject after it nothing: five runs, 10-23 to 10-25, spent
-# on built-rucksack, stone-scree-stones-foot and built-oar. With this set, a
-# subject begun (its `.tries`, which the explorer writes as it begins one) more
-# than that many seconds ago and not finished is stopped; its starts are set to
-# the explorer's limit, so the pass that resumes leaves it out by name
-# (`not_baked`) and bakes the rest. The ledger counts it as this run's try. The
-# key pass each start makes (279 s for 532 keys, 10-25) is not counted against
-# it: the clock starts at the subject's own `.tries`.
-SUBJECT_STOPPED=199
-capped() { # cap dir [args] -- one pass of the explorer's bake, under both caps
-  local cap=$1 d="$RESUME_DIR/$2" pid stuck began
-  shift 2
-  began=$(( $(date +%s) - 1 ))
-  LOG="${BAKE_LOG:-$ROOT/out/bake.log}" timeout "$cap" "$EXP/tools/bake-library.sh" "$LIB" "$@" ${STORE_ARGS[@]+"${STORE_ARGS[@]}"} --resume "$d" "${D[@]}" &
-  pid=$!
-  while [ -n "${PULSE_BAKE_SUBJECT_CAP_S:-}" ] && kill -0 "$pid" 2>/dev/null; do
-    sleep "${PULSE_BAKE_POLL_S:-10}"
-    # The subject in hand is the newest `.tries` of this pass; it is stuck when
-    # it has no entry and was begun more than the cap ago.
-    stuck="$(python3 - "$d" "$began" "$PULSE_BAKE_SUBJECT_CAP_S" <<'EOF'
-import sys, time
-from pathlib import Path
-d, began, cap = Path(sys.argv[1]), float(sys.argv[2]), float(sys.argv[3])
-tries = [(t.stat().st_mtime, t.name[: -len(".tries")]) for t in d.glob("*.tries")] if d.is_dir() else []
-tries = [t for t in tries if t[0] >= began]
-if tries:
-    m, stem = max(tries)
-    if not (d / (stem + ".entry.json")).exists() and time.time() - m > cap:
-        print(stem)
-EOF
-)"
-    if [ -n "$stuck" ]; then
-      kill -TERM "$pid" 2>/dev/null; wait "$pid"
-      echo 2 > "$d/$stuck.tries"
-      echo "bake: STOPPED $stuck: past the ${PULSE_BAKE_SUBJECT_CAP_S} s cap per subject; left out for the rest of this run, the bake goes on"
-      return "$SUBJECT_STOPPED"
-    fi
-  done
-  wait "$pid"
-}
-# THE SECONDS EACH SUBJECT TOOK, in the job's log: the explorer writes its log
-# afresh each pass and prints it only when a pass ends by itself, so a pass cut
-# short left no time anywhere (row 555 could not read one). Kept for the run.
-TIMES="${BAKE_LOG:-$ROOT/out/bake.log}.times"
-: > "$TIMES"
-keep_times() {
-  local log="${BAKE_LOG:-$ROOT/out/bake.log}"
-  [ -f "$log" ] && grep -E '^  baked .* in [0-9]+ s$' "$log" >> "$TIMES"
-  return 0
-}
-if ! registry registry "${ARGS[@]}"; then
-  # The baked-channel bake writes no manifest when any one rung's channel is
-  # flat (core/baker.gd flat_channel_problem; filed in the library's feedback/).
-  # The library's default bake -- no baked channel, "the Forward+/SDFGI
-  # product" -- is still a correct product for a download, so the catalog
-  # falls back to it and says so, rather than shipping nothing.
-  [ "${#ARGS[@]}" -gt 0 ] || die "the registry bake failed"
-  echo "bake: the baked-channel bake FAILED; falling back to the library's default bake (no baked channel)"
-  BAKE_LOG="${BAKE_LOG:-$ROOT/out/bake.log}.default" registry default || die "the registry bake failed"
+else
+  cook || die "the cook failed (see $LOG)"
 fi
-if [ -s "$TIMES" ]; then
-  echo "bake: $(sort -u "$TIMES" | wc -l | tr -d ' ') subject(s) baked this run; the slowest: $(sort -u "$TIMES" | awk '{print $(NF-1) " s " $2}' | sort -rn | head -5 | paste -sd, - | sed 's/,/, /g')"
-fi
-[ -f "$LIB/build/artifacts/manifest.json" ] || die "the bake wrote no manifest"
-python3 "$ROOT/tools/catalog_impostors.py" || die "impostor completion failed"
+OUTDIR="$COOKED/catalog"
+[ -f "$OUTDIR/manifest.json" ] && [ -f "$OUTDIR/index.json" ] || die "the cook wrote no manifest"
+python3 "$ROOT/tools/cook_hits.py" report "$ROOT/out/cook-store-before.txt" "$OUTDIR/index.json" | tee "$LOG.hits" | tail -1
+grep -E '^bake: (made|held)' "$LOG.hits" | head -20
+# THE ATLASES BESIDE THE RUNGS: the cook bakes into a folder of its own, where the
+# library's impostor atlases are not (filed in the library's feedback/).
+for a in "$LIB"/build/artifacts/*-impostor.png; do [ -f "$a" ] && cp "$a" "$OUTDIR/"; done
+python3 "$ROOT/tools/catalog_impostors.py" --bake "$OUTDIR" || die "impostor completion failed"
 "$ROOT/tools/sync-library.sh" --verify >/dev/null || die "the bake changed the library's source tree"
-echo "bake: manifest at $LIB/build/artifacts/manifest.json"
+echo "bake: manifest at $OUTDIR/manifest.json"

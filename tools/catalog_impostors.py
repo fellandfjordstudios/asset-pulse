@@ -16,7 +16,7 @@ def local_file(folder, name):
     return folder / name
 
 
-def expected_end(entry, library):
+def expected_end(entry, library, artifacts=None):
     """Only repair an end after every committed mesh rung already exists."""
     gid = entry['generator']
     parts = gid.split('/')
@@ -34,7 +34,7 @@ def expected_end(entry, library):
         return None
     if {int(r['rung']) for r in rows} != set(range(count)):
         return None
-    artifacts = library / 'build/artifacts'
+    artifacts = artifacts or library / 'build/artifacts'
     if any(not local_file(artifacts, r.get('gltf')).is_file() for r in rows):
         return None
     if not local_file(artifacts, entry['key'] + '-impostor.png').is_file():
@@ -71,15 +71,17 @@ def accept_row(entry, row, expected, artifacts, staged):
     entry['rungs'].append(row)
 
 
-def repair(library, explorer, godot='godot', timeout=300):
-    artifacts = library / 'build/artifacts'
+def repair(library, explorer, godot='godot', timeout=300, artifacts=None):
+    """artifacts: the bake's folder (the cook's out/cooked/catalog/); the atlases
+    are read beside its rungs, and the library's build/ keeps the repair's logs."""
+    artifacts = artifacts or library / 'build/artifacts'
     path = artifacts / 'manifest.json'
     manifest = json.loads(path.read_text())
     results = []
     logs = library / 'build/impostor-repair'
     logs.mkdir(parents=True, exist_ok=True)
     for entry in manifest['entries']:
-        expected = expected_end(entry, library)
+        expected = expected_end(entry, library, artifacts)
         if expected is None:
             continue
         stem = entry['key']
@@ -116,8 +118,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--library', type=Path, default=ROOT / 'library')
     parser.add_argument('--explorer', type=Path, default=ROOT / 'explorer')
+    parser.add_argument('--bake', type=Path, default=ROOT / 'out/cooked/catalog')
     parser.add_argument('--timeout', type=int, default=300)
     args = parser.parse_args()
     verify_pin(args.library, ROOT / 'library.lock')
     verify_pin(args.explorer, ROOT / 'explorer.lock')
-    repair(args.library.resolve(), args.explorer.resolve(), timeout=args.timeout)
+    repair(args.library.resolve(), args.explorer.resolve(), timeout=args.timeout, artifacts=args.bake.resolve())

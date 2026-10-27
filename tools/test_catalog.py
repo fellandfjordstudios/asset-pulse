@@ -33,8 +33,8 @@ class Fixture:
     def __init__(self, root):
         self.root = Path(root); self.lib = self.root / 'library'; self.run = self.root / 'out' / 'fixture'
         self.run.mkdir(parents=True)
-        self.bake = self.lib / 'build' / 'artifacts'; self.bake.mkdir(parents=True)
-        self.photos = self.lib / 'plates'; self.photos.mkdir()
+        self.bake = self.root / 'out' / 'cooked' / 'catalog'; self.bake.mkdir(parents=True)
+        self.photos = self.lib / 'plates'; self.photos.mkdir(parents=True)
         # A reserved source photo must not appear in any public object.
         self.secret = b'PRIVATE SOURCE PHOTO'
         self.digest = hashlib.sha256(self.secret).hexdigest()
