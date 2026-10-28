@@ -71,8 +71,8 @@
 				"order": [
 					"kit",
 					"child",
-					"reduce",
 					"impostor",
+					"reduce",
 					"merged",
 					"thin"
 				]

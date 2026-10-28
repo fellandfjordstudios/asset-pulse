@@ -114,11 +114,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 41,
+				"candidates": 0,
 				"trace": "stone__scree-stones#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 52,
+				"candidates": 0,
 				"trace": "stone__scree-stones#2.trace.jsonl"
 			}
 		}
@@ -145,7 +145,7 @@
 					0.1895,
 					0.15130000000000002
 				],
-				"band": 1,
+				"band": 1.0,
 				"coverage": 0.7321000000000001,
 				"luminance_sd": 0.0879,
 				"texel_m": 0.002137
@@ -187,7 +187,7 @@
 					0.1892,
 					0.1512
 				],
-				"band": 2,
+				"band": 2.0,
 				"coverage": 0.7295,
 				"luminance_sd": 0.0882,
 				"texel_m": 0.008548
