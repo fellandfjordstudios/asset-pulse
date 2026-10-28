@@ -1,0 +1,189 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"crates": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"crates": 24
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tins": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tins": 16
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bales": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bales": 12
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stones": 4
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stones": 16
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cover": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cover": 2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tins_on_top": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pole_height_m": 1.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pole_height_m": 3.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"flag_size_m": 0.3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"flag_size_m": 0.6
+			},
+			"seed": 314
+		}
+	],
+	"id": "built/supply-depot",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural"
+		],
+		"old_key_sets": 16,
+		"sampled": 16,
+		"sets": 16
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 15,
+				"trace": "built__supply-depot#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "45c62d15f6298fc21614d06837dcd626f2537cb6d3447d5521f6ceb50230e1b5"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117,
+			"budget_reason": "the cheapest derivation that holds the picture costs 77560, 1.98x rung 1's budget 39117: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"checked_at": 16,
+			"drawn": {
+				"excess": 0.25,
+				"judge": "drawn",
+				"pixel_m": 0.005554
+			},
+			"error": 0.0018518518518518517,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 77560,
+				"coverage_rel": -0.00141,
+				"floor": 0.004710000000000001,
+				"part_shift": {
+					"bundle": 7.000000000000001e-05,
+					"bundle_ink": 2e-05,
+					"bundle_seam": 3.0000000000000004e-05,
+					"cover": 0.0007700000000000001,
+					"flag": 3.0000000000000004e-05,
+					"lashing": 4e-05,
+					"paint": -0.00035000000000000005,
+					"paraffin": 5e-05,
+					"pole": 2e-05,
+					"stone": -0.0005200000000000001,
+					"stopper": 0.0,
+					"tinplate": 0.0,
+					"washer": 0.0
+				},
+				"picture": 0.004710000000000001
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"crates\":0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00555 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 1 pixel(s) differ at the drawn size at {\"crates\":0} seed 314 (worst 0.56)",
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
+			],
+			"route": "merged",
+			"surfaces": 15,
+			"surfaces_ceiling": 23
+		}
+	},
+	"source": {
+		"children": "33cfa92a0064963ef10ddd997a089c7d7764475fe1b95097290fb4e721142bf2",
+		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"generator": "d02e9217159bc14f24126fd5e28dde4b25ed8adf19c1b683b2c5ddd2b588d2bf"
+	}
+}

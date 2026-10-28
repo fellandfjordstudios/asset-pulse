@@ -114,11 +114,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 41,
 				"trace": "stone__scree-stones#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 52,
 				"trace": "stone__scree-stones#2.trace.jsonl"
 			}
 		}
@@ -139,6 +139,17 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"ground": {
+				"albedo_linear": [
+					0.2179,
+					0.1895,
+					0.15130000000000002
+				],
+				"band": 1,
+				"coverage": 0.7321000000000001,
+				"luminance_sd": 0.0879,
+				"texel_m": 0.002137
+			},
 			"keep": {
 				"debris": 0.7
 			},
@@ -151,7 +162,9 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
+				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 561 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: colour, spread, edges apart { \"coverage\": 0.0505, \"colour\": 2.3955, \"spread\": 0.1083, \"edges\": 0.757 }, the tolerance { \"coverage\": 0.1, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.1 }",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 43370 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.70), one pixel 0.00214 m; coverage changes -0.0560 against 0.0267 allowed (a one-pixel shrink all round)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.2401, cover 1.87: 82457 pixel(s) differ at the drawn size at {} seed 314 (worst 0.66)",
 				"REDUCE from rung 0 at {} seed 314: element 4's part 'rind' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00214 m",
 				"THIN: stone/scree-stones does not declare `reads_density`"
@@ -168,6 +181,17 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"ground": {
+				"albedo_linear": [
+					0.2175,
+					0.1892,
+					0.1512
+				],
+				"band": 2,
+				"coverage": 0.7295,
+				"luminance_sd": 0.0882,
+				"texel_m": 0.008548
+			},
 			"keep": {
 				"debris": 0.24009999999999992
 			},
@@ -547,8 +571,11 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
+				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 561 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: coverage, colour, spread, edges apart { \"coverage\": 0.1433, \"colour\": 2.5165, \"spread\": 0.2023, \"edges\": 0.1632 }, the tolerance { \"coverage\": 0.1, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.1 }",
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 4283 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00855 m; coverage changes -0.0551 against 0.0485 allowed (a one-pixel shrink all round)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 1441 pixel(s) differ at the drawn size at {} seed 314 (worst 0.66)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 4283 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00855 m; coverage changes -0.0551 against 0.0485 allowed (a one-pixel shrink all round)",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 1441 pixel(s) differ at the drawn size at {} seed 314 (worst 0.66)",
 				"REDUCE from rung 0 at {} seed 314: element 4's part 'rind' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00855 m",
 				"THIN: stone/scree-stones does not declare `reads_density`"
@@ -561,7 +588,7 @@
 	},
 	"source": {
 		"children": "09edb7eb622d9dafc1c51beffcd71047a090dbb84fb7f8bec98dba545a3fbccf",
-		"deriver": "e9d32de3c81c1a522e11b219b852817f255d490629d5cbbcbf0a8c5f643a09f3",
-		"generator": "320b2d40d0765b841bf7a88f8c81d67a15df155bbe603d38e9ee0227952d50dc"
+		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"generator": "a03cb760390adc7c588fbdd5d560e38cf183f6fdf70c989aca8850970140a790"
 	}
 }

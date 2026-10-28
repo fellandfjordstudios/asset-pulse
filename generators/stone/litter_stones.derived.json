@@ -121,11 +121,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 42,
 				"trace": "stone__litter-stones#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 52,
 				"trace": "stone__litter-stones#2.trace.jsonl"
 			}
 		}
@@ -146,6 +146,17 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"ground": {
+				"albedo_linear": [
+					0.27590000000000003,
+					0.24580000000000002,
+					0.20140000000000002
+				],
+				"band": 1,
+				"coverage": 0.0585,
+				"luminance_sd": 0.0585,
+				"texel_m": 0.001883
+			},
 			"keep": {},
 			"measured": {
 				"cost": 40798,
@@ -156,7 +167,9 @@
 			},
 			"measured_of": 2,
 			"not_taken": [
+				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 592 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: colour, spread apart { \"coverage\": 0.0185, \"colour\": 2.3787, \"spread\": 0.1394, \"edges\": 0.0064 }, the tolerance { \"coverage\": 0.1, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.1 }",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: coverage changes +0.0386 against 0.0283 allowed (a one-pixel shrink all round); part 'fracture' changes its share of the picture by +0.0347 against 0.0283 allowed (its colour's share of the subject); part 'skin' changes its share of the picture by -0.0347 against 0.0283 allowed (its colour's share of the subject)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.20: 11046 pixel(s) differ at the drawn size at {} seed 314 (worst 0.59)",
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"roundness\":0.05} seed 314: coverage changes -0.0169 against 0.0142 a derivation may change (its error read as a change of size)",
 				"THIN: stone/litter-stones does not declare `reads_density`"
 			],
@@ -172,6 +185,17 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"ground": {
+				"albedo_linear": [
+					0.276,
+					0.24580000000000002,
+					0.20140000000000002
+				],
+				"band": 2,
+				"coverage": 0.058300000000000005,
+				"luminance_sd": 0.0584,
+				"texel_m": 0.007533
+			},
 			"keep": {},
 			"material_transfer": {
 				"checked_at": 16,
@@ -573,8 +597,11 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
+				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 592 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: colour, spread, edges apart { \"coverage\": 0.0747, \"colour\": 2.462, \"spread\": 0.2031, \"edges\": 0.2273 }, the tolerance { \"coverage\": 0.1, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.1 }",
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes +0.0723 against 0.0500 allowed (a one-pixel shrink all round); part 'fracture' changes its share of the picture by +0.0717 against 0.0500 allowed (its colour's share of the subject); part 'skin' changes its share of the picture by -0.0717 against 0.0500 allowed (its colour's share of the subject)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1681, cover 1.25: 1693 pixel(s) differ at the drawn size at {} seed 314 (worst 0.64)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes +0.0723 against 0.0500 allowed (a one-pixel shrink all round); part 'fracture' changes its share of the picture by +0.0717 against 0.0500 allowed (its colour's share of the subject); part 'skin' changes its share of the picture by -0.0717 against 0.0500 allowed (its colour's share of the subject)",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1681, cover 1.25: 1693 pixel(s) differ at the drawn size at {} seed 314 (worst 0.64)",
 				"REDUCE from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"roundness\":0.05} seed 314: coverage changes -0.0317 against 0.0252 a derivation may change (its error read as a change of size)",
 				"THIN: stone/litter-stones does not declare `reads_density`"
 			],
@@ -586,7 +613,7 @@
 	},
 	"source": {
 		"children": "09edb7eb622d9dafc1c51beffcd71047a090dbb84fb7f8bec98dba545a3fbccf",
-		"deriver": "e9d32de3c81c1a522e11b219b852817f255d490629d5cbbcbf0a8c5f643a09f3",
-		"generator": "7e205db5ad6bf60cc78ffed1d436789e1db984ebf16625cae6bae37374e37ef4"
+		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"generator": "d077f8d59bb86e1c9e30e0fce3f2fac453cb88557e414b861e887e8d6c8777be"
 	}
 }
