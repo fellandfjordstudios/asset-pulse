@@ -107,6 +107,14 @@
 				"picture": 0.0094
 			},
 			"measured_of": 3,
+			"miss": {
+				"cost_of_ceiling": 1.2116471099521946,
+				"judge": "drawn",
+				"picture_over": 5.076,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 45 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.77), one pixel 0.00159 m",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
@@ -332,6 +340,14 @@
 				"picture": 0.01063
 			},
 			"measured_of": 1,
+			"miss": {
+				"cost_of_ceiling": 1.4772471622865324,
+				"judge": "drawn",
+				"picture_over": 1.43505,
+				"px_over": null,
+				"route": "thin",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"remaining\":0.25} seed 314: the picture changes at the drawn size: 106 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.78), one pixel 0.00358 m",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"bands\":2} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00635 m",
@@ -396,7 +412,7 @@
 	},
 	"source": {
 		"children": "b9459ca048ec4671c6d7abfc99bdea02fe04298fca369c5d5aa007f1de1c95fd",
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "d42820572e3cefaca0fc2839d3b1d2918f046706694d190c7f3d9d33cd4aa5f4"
 	}
 }

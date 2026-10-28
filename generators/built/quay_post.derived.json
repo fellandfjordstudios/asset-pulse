@@ -220,6 +220,14 @@
 				"picture": 0.00461
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 1.4874862591712044,
+				"judge": "drawn",
+				"picture_over": 2.4894000000000003,
+				"px_over": null,
+				"route": "reduce",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 11 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00177 m",
 				"REDUCE from rung 0 at {} seed 314: element 30000's part 'wrack' is 31 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 89 more groups)",
@@ -240,7 +248,7 @@
 		}
 	},
 	"source": {
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "0fca5b6d1bef1b778d037ac34a8c398d1f1fdd21c3e7c209b3def18f2167f00a"
 	}
 }

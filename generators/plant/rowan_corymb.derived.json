@@ -146,6 +146,14 @@
 				"picture": 0.007640000000000001
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 1.4705621956617974,
+				"judge": "drawn",
+				"picture_over": 1.4335687068661576,
+				"px_over": null,
+				"route": "reduce",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0053 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00073 m",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'ray' is 80 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
@@ -518,6 +526,14 @@
 				"picture": 0.05691
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 1.425531914893617,
+				"judge": "drawn",
+				"picture_over": 2.669646436772023,
+				"px_over": null,
+				"route": "reduce",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0213 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.2162 against 0.0990 allowed (a one-pixel shrink all round)",
 				"KIT at 2 pixels: none holds at 0.0213 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.2162 against 0.0990 allowed (a one-pixel shrink all round)",
@@ -893,6 +909,14 @@
 				"picture": 0.47077
 			},
 			"measured_of": 1,
+			"miss": {
+				"cost_of_ceiling": 1.4609929078014185,
+				"judge": "drawn",
+				"picture_over": 5.520951735367973,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0853 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.01163 m; part 'fruit' changes its share of the picture by +0.3299 against 0.3254 allowed (its colour's share of the subject); part 'ray' changes its share of the picture by -0.3299 against 0.3254 allowed (its colour's share of the subject)",
 				"KIT at 4 pixels: none holds at 0.0853 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.01163 m; part 'fruit' changes its share of the picture by +0.3299 against 0.3254 allowed (its colour's share of the subject); part 'ray' changes its share of the picture by -0.3299 against 0.3254 allowed (its colour's share of the subject)",
@@ -906,7 +930,7 @@
 		}
 	},
 	"source": {
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "a45360e80896a74d075e834f3a1edfa440d03eb431545b8e68b57e256a87af91"
 	}
 }

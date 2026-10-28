@@ -6,6 +6,12 @@
 		},
 		{
 			"params": {
+				"basal_turn_fraction": 0.1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
 				"length_m": 0.05
 			},
 			"seed": 314
@@ -69,17 +75,18 @@
 			"structural",
 			"structural",
 			"structural",
+			"structural",
 			"seed"
 		],
-		"old_key_sets": 10,
-		"sampled": 10,
-		"sets": 10
+		"old_key_sets": 11,
+		"sampled": 11,
+		"sets": 11
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 3,
 				"trace": "plant__birch-stem#1.trace.jsonl"
 			}
 		}
@@ -89,14 +96,14 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "f9ee74e80cfc048ad5c3f86582684de0f62c7b6cc084840b2d39136383112593"
+		"1": "2357d7766dd6e3102057926d626f9ca22478129b85f4f16a7f4265450e91651b"
 	},
 	"rungs": {
 		"1": {
 			"budget": 21336,
-			"checked_at": 10,
+			"checked_at": 11,
 			"drawn": {
-				"excess": 0.125,
+				"excess": 0.0625,
 				"judge": "drawn",
 				"pixel_m": 0.007378
 			},
@@ -104,16 +111,30 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"thin",
+					"impostor",
+					"merged"
+				]
+			},
 			"measured": {
-				"cost": 122,
-				"coverage_rel": 0.00538,
+				"cost": 150,
+				"coverage_rel": 0.007030000000000001,
 				"floor": 0.0039900000000000005,
 				"part_shift": {},
 				"picture": 0.0039900000000000005
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"basal_diameter_m\":0.002} seed 314: the picture moves 0.1253 of the extent against 0.0019 allowed (one pixel at the rung's near distance; raster floor 0.0040); coverage changes -0.0868 against 0.0232 allowed (a one-pixel shrink all round)"
+				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"basal_diameter_m\":0.002} seed 314: coverage changes -0.0442 against 0.0232 allowed (a one-pixel shrink all round)",
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
 			"route": "kit",
 			"surfaces": 1,
@@ -121,7 +142,7 @@
 		}
 	},
 	"source": {
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
-		"generator": "45e2aa13f8b7741fc96b640b95948e1af7f5be914a5ab800be7213b3d4c11b56"
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
+		"generator": "7b2f9892885f1d6ce850ad90dd83b1c37f88105e6ff6a8a8e61289666f287f54"
 	}
 }

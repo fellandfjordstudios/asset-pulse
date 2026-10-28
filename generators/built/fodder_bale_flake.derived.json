@@ -368,6 +368,14 @@
 				"picture": 0.03287
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 1.3219945883262467,
+				"judge": "drawn",
+				"picture_over": 2.9943909635146593,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0110 -- the finest tried (1.000) fails at {\"width_m\":0.18} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00214 m",
 				"KIT at 2 pixels: none holds at 0.0110 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00404 m",
@@ -381,7 +389,7 @@
 		}
 	},
 	"source": {
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "4e679e3baaadf432a780d6c835d0300bb9859db6357f7d79e5285764e0f05d0a"
 	}
 }

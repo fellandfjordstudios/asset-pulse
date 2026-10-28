@@ -155,6 +155,14 @@
 				"picture": 0.21383000000000002
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 0.9169732617814543,
+				"judge": "drawn",
+				"picture_over": 115.46820000000002,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0345 against 0.0239 allowed (a one-pixel shrink all round); part 'apophysis' changes its share of the picture by -0.0421 against 0.0239 allowed (its colour's share of the subject); part 'scale_inner' changes its share of the picture by +0.0421 against 0.0239 allowed (its colour's share of the subject)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'apophysis' is 70 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 69 more groups)",
@@ -576,6 +584,14 @@
 				"picture": 1.0
 			},
 			"measured_of": 1,
+			"miss": {
+				"cost_of_ceiling": 0.9745031871016123,
+				"judge": "drawn",
+				"picture_over": 135.0,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0956 against 0.0457 allowed (a one-pixel shrink all round); part 'apophysis' changes its share of the picture by -0.0664 against 0.0457 allowed (its colour's share of the subject); part 'scale_inner' changes its share of the picture by +0.0664 against 0.0457 allowed (its colour's share of the subject)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0956 against 0.0457 allowed (a one-pixel shrink all round); part 'apophysis' changes its share of the picture by -0.0664 against 0.0457 allowed (its colour's share of the subject); part 'scale_inner' changes its share of the picture by +0.0664 against 0.0457 allowed (its colour's share of the subject)",
@@ -589,7 +605,7 @@
 		}
 	},
 	"source": {
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "db30833395f7c071355d66d601b954d1a8b4d939931095ac2617abaa8bfb357b"
 	}
 }

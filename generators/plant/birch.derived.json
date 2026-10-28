@@ -216,6 +216,14 @@
 				"picture": 0.009300000000000001
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 1.023879267921168,
+				"judge": "drawn",
+				"picture_over": 5.022,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 50060 pixel(s) differ at {} seed 314 (worst 0.80)",
 				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 49651 pixel(s) differ at {} seed 314 (worst 0.90)",
@@ -839,6 +847,14 @@
 				"picture": 0.22707000000000002
 			},
 			"measured_of": 1,
+			"miss": {
+				"cost_of_ceiling": 1.4865016872890888,
+				"judge": "drawn",
+				"picture_over": 30.65445,
+				"px_over": null,
+				"route": "thin",
+				"tier": 1
+			},
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 8x its pixel: 858 pixel(s) differ at {} seed 314 (worst 0.67)",
 				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 8x its pixel: 816 pixel(s) differ at {} seed 314 (worst 0.75)",
@@ -922,7 +938,7 @@
 	},
 	"source": {
 		"children": "2b380c97b93bb754bdea46e590dfaf1b586c5513b5321661aef40e20065d5834",
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "2d7d68038b00caa76b2cdcebc3cc0e4b9dfe9f4787cf203d73754f5d983e9cfe"
 	}
 }

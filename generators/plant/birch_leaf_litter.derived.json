@@ -156,6 +156,14 @@
 				"picture": 0.20055
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 1.1934758155230596,
+				"judge": "drawn",
+				"picture_over": 108.29700000000001,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 22570 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.86), one pixel 0.00197 m; coverage changes -0.0398 against 0.0286 allowed (a one-pixel shrink all round)",
 				"REDUCE from rung 0 at {} seed 314: element 11's part 'lace' is 15 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 94 more groups)",
@@ -552,6 +560,14 @@
 				"picture": 0.5086700000000001
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 1.498312710911136,
+				"judge": "drawn",
+				"picture_over": 68.67045000000002,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1896 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00787 m; part 'lace' changes its share of the picture by +0.0684 against 0.0504 allowed (its colour's share of the subject)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2008 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00787 m; part 'brown' changes its share of the picture by -0.0537 against 0.0504 allowed (its colour's share of the subject); part 'decayed' changes its share of the picture by -0.0692 against 0.0504 allowed (its colour's share of the subject); part 'lace' changes its share of the picture by +0.1569 against 0.0504 allowed (its colour's share of the subject)",
@@ -616,7 +632,7 @@
 	},
 	"source": {
 		"children": "af3751b2014cedddcc44b371345a823c129c6b7e2f21a024b289df955b2472ff",
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "53d84c69966e02a5bacbc59abb143e33e0e3d0ff4abada0e0155203bd7bfdab8"
 	}
 }

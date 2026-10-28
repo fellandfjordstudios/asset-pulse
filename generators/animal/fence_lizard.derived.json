@@ -262,6 +262,14 @@
 				"picture": 0.00432
 			},
 			"measured_of": 1,
+			"miss": {
+				"cost_of_ceiling": 0.34388285309400096,
+				"judge": "drawn",
+				"picture_over": 1.0394541050799375,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0042 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0177 against 0.0162 a derivation may change (its error read as a change of size)",
 				"REDUCE from rung 0 at {} seed 314: element 5's part 'dorsum' is 441 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
@@ -275,7 +283,7 @@
 		}
 	},
 	"source": {
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "7a7ed4400dc7075504e00a141e559307f5d8c542ff7ea4725b13769c2d582c50"
 	}
 }

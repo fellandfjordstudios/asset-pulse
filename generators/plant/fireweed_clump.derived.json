@@ -160,6 +160,14 @@
 				"picture": 0.016790000000000003
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 1.1316085489313836,
+				"judge": "drawn",
+				"picture_over": 9.0666,
+				"px_over": null,
+				"route": "reduce",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00274 m",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'petal' is 98 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 41 more groups)",
@@ -581,6 +589,14 @@
 				"picture": 0.08120000000000001
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 1.4000749906261718,
+				"judge": "drawn",
+				"picture_over": 10.962,
+				"px_over": null,
+				"route": "reduce",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"patch_radius_m\":3.0} seed 314: coverage changes -0.0373 against 0.0227 a derivation may change (its error read as a change of size)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"patch_radius_m\":3.0} seed 314: coverage changes -0.0373 against 0.0227 a derivation may change (its error read as a change of size)",
@@ -1006,6 +1022,14 @@
 				"picture": 0.10628000000000001
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 1.2468117029257315,
+				"judge": "drawn",
+				"picture_over": 3.58695,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames from rung 0: 5 pixel(s) differ at {} seed 314 (worst 0.69)",
 				"IMPOSTOR at 8x8 frames from rung 0: 3 pixel(s) differ at {} seed 314 (worst 0.58)",
@@ -1022,7 +1046,7 @@
 	},
 	"source": {
 		"children": "fdc0e02ec60806a8951c3c5d690ba9f07a16babcb1bc72b58122ce6abb80a4ad",
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "03ae9973425872b2130257325a5729e330bc24e304e4202eb7fce1c3837c2cd9"
 	}
 }

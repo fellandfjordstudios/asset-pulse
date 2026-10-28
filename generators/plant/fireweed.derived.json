@@ -2092,6 +2092,14 @@
 				"picture": 0.06904
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 1.042760690172543,
+				"judge": "drawn",
+				"picture_over": 2.3301,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames from rung 0: 3 pixel(s) differ at {\"raceme_fraction\":0.05} seed 314 (worst 0.76)",
 				"IMPOSTOR at 8x8 frames from rung 0: 1 pixel(s) differ at {} seed 314 (worst 0.57)",
@@ -2109,7 +2117,7 @@
 		}
 	},
 	"source": {
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "ddf889fe49d1a1e30a49b4a2d5825aa4846055aa24914204b31ad0d32b239106"
 	}
 }

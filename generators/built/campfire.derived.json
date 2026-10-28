@@ -198,11 +198,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 15,
+				"candidates": 0,
 				"trace": "built__campfire#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 25,
+				"candidates": 0,
 				"trace": "built__campfire#2.trace.jsonl"
 			},
 			"3": {
@@ -241,6 +241,14 @@
 				"picture": 0.005390000000000001
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 0.5182145870082061,
+				"judge": "drawn",
+				"picture_over": 2.9106,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.64), one pixel 0.00231 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.02: 20778 pixel(s) differ at the drawn size at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314 (worst 0.56)",
@@ -732,6 +740,14 @@
 				"picture": 0.009000000000000001
 			},
 			"measured_of": 1,
+			"miss": {
+				"cost_of_ceiling": 0.9235095613048369,
+				"judge": "drawn",
+				"picture_over": 1.215,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00924 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.00: 1723 pixel(s) differ at the drawn size at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314 (worst 0.53)",
@@ -798,7 +814,7 @@
 		}
 	},
 	"source": {
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "6a1fad646399099bf007219b00a3617211d69a01a88bc41ecadc71ad73e6576a"
 	}
 }

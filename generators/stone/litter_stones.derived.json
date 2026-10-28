@@ -121,11 +121,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 42,
+				"candidates": 0,
 				"trace": "stone__litter-stones#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 52,
+				"candidates": 0,
 				"trace": "stone__litter-stones#2.trace.jsonl"
 			}
 		}
@@ -149,10 +149,10 @@
 			"ground": {
 				"albedo_linear": [
 					0.27590000000000003,
-					0.24580000000000002,
-					0.20140000000000002
+					0.2458,
+					0.2014
 				],
-				"band": 1,
+				"band": 1.0,
 				"coverage": 0.0585,
 				"luminance_sd": 0.0585,
 				"texel_m": 0.001883
@@ -166,6 +166,14 @@
 				"picture": 0.03055
 			},
 			"measured_of": 2,
+			"miss": {
+				"cost_of_ceiling": 0.9560612096641905,
+				"judge": "drawn",
+				"picture_over": 16.497,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 592 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: colour, spread apart { \"coverage\": 0.0185, \"colour\": 2.3787, \"spread\": 0.1394, \"edges\": 0.0064 }, the tolerance { \"coverage\": 0.1, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.1 }",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: coverage changes +0.0386 against 0.0283 allowed (a one-pixel shrink all round); part 'fracture' changes its share of the picture by +0.0347 against 0.0283 allowed (its colour's share of the subject); part 'skin' changes its share of the picture by -0.0347 against 0.0283 allowed (its colour's share of the subject)",
@@ -188,11 +196,11 @@
 			"ground": {
 				"albedo_linear": [
 					0.276,
-					0.24580000000000002,
-					0.20140000000000002
+					0.2458,
+					0.2014
 				],
-				"band": 2,
-				"coverage": 0.058300000000000005,
+				"band": 2.0,
+				"coverage": 0.0583,
 				"luminance_sd": 0.0584,
 				"texel_m": 0.007533
 			},
@@ -596,6 +604,14 @@
 				"picture": 0.03685
 			},
 			"measured_of": 1,
+			"miss": {
+				"cost_of_ceiling": 1.356955380577428,
+				"judge": "drawn",
+				"picture_over": 4.97475,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 592 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: colour, spread, edges apart { \"coverage\": 0.0747, \"colour\": 2.462, \"spread\": 0.2031, \"edges\": 0.2273 }, the tolerance { \"coverage\": 0.1, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.1 }",
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes +0.0723 against 0.0500 allowed (a one-pixel shrink all round); part 'fracture' changes its share of the picture by +0.0717 against 0.0500 allowed (its colour's share of the subject); part 'skin' changes its share of the picture by -0.0717 against 0.0500 allowed (its colour's share of the subject)",
@@ -613,7 +629,7 @@
 	},
 	"source": {
 		"children": "09edb7eb622d9dafc1c51beffcd71047a090dbb84fb7f8bec98dba545a3fbccf",
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "d077f8d59bb86e1c9e30e0fce3f2fac453cb88557e414b861e887e8d6c8777be"
 	}
 }

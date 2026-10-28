@@ -131,6 +131,14 @@
 				"picture": 0.13284
 			},
 			"measured_of": 1,
+			"miss": {
+				"cost_of_ceiling": 1.3020247469066366,
+				"judge": "drawn",
+				"picture_over": 71.73360000000001,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1
+			},
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1046 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00185 m; part 'duff' changes its share of the picture by +0.0497 against 0.0296 allowed (its colour's share of the subject)",
 				"REDUCE from rung 0: nothing to try",
@@ -143,7 +151,7 @@
 		}
 	},
 	"source": {
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
 		"generator": "0142269a7a0c2cc5375b4fd3c877717e34455afdd7292ea5cc52efd7f4628fde"
 	}
 }
