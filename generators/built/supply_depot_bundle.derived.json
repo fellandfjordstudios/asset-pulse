@@ -58,8 +58,8 @@
 	},
 	"replay": {
 		"1": "ce19e5fee09f103a49ad64b2030fab350994969dc083927cad7affa101ff8d35",
-		"2": "ed0d35e590fa6e3ca69f7488053a429cc986f325ca9324c391cf943da014aa4b",
-		"3": "abb018f145dddd6288594fa78ef9051366b39839680387d81ff6bc1067af5ee5"
+		"2": "48dafdc633ad226e7c4ba268ba88ec279a9de9692a505db77ab7f2ca5adc2fbe",
+		"3": "5fb5a225e1207416f2f9bf87a473e3abc75e988a614c2b1367b175435b83ebb3"
 	},
 	"rungs": {
 		"1": {
@@ -229,7 +229,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 9546,
 				"coverage_rel": -0.0011500000000000002,
@@ -374,7 +373,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 168,
 				"coverage_rel": -0.06411,
@@ -396,7 +394,7 @@
 		}
 	},
 	"source": {
-		"deriver": "88ddf5a2382ba87bb7b0cb664e339e64677c9c31fdbd592fd3ff3fde3bb4cc1f",
+		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
 		"generator": "763bd6b0e4de3d98ee6d924678b54a7584ad8b42ba8f15b40325424153e97a26"
 	}
 }
