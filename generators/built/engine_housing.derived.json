@@ -73,7 +73,7 @@
 	"replay": {
 		"1": "2cdcb4cdb631476089684bdc3319f1e16f7a5d6af3e30efb4136cd7cc3e27d8b",
 		"2": "207c41b5b229d65950245d75ab785995abb7402ecda2c9b436e89c3ff88e6a39",
-		"3": "b40e6b0ada3ec9b4f91a8f97e650260900f415ca25f003cf447001a9e834c467"
+		"3": "8121a9b0d865e042dacd58c9163e6fe55b16c248a0aa8a17e9a708c6840bf0bb"
 	},
 	"rungs": {
 		"1": {
@@ -474,6 +474,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 1806,
 				"coverage_rel": -0.004030000000000001,

@@ -133,7 +133,7 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "45c62d15f6298fc21614d06837dcd626f2537cb6d3447d5521f6ceb50230e1b5"
+		"1": "1349f6e914e192bdd03d675f18addca4b2d2dabc5f6a314f03ac66047668bceb"
 	},
 	"rungs": {
 		"1": {
@@ -177,13 +177,13 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
 			"route": "merged",
-			"surfaces": 15,
+			"surfaces": 19,
 			"surfaces_ceiling": 23
 		}
 	},
 	"source": {
 		"children": "33cfa92a0064963ef10ddd997a089c7d7764475fe1b95097290fb4e721142bf2",
-		"deriver": "67dc7439d7a6aba22da5accf434a810b8e009916b60c1dbdaafb702fa1fce30b",
+		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
 		"generator": "d02e9217159bc14f24126fd5e28dde4b25ed8adf19c1b683b2c5ddd2b588d2bf"
 	}
 }

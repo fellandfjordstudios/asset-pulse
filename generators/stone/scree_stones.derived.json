@@ -114,7 +114,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": -1,
 				"trace": "stone__scree-stones#1.trace.jsonl"
 			},
 			"2": {
@@ -604,7 +604,7 @@
 	},
 	"source": {
 		"children": "09edb7eb622d9dafc1c51beffcd71047a090dbb84fb7f8bec98dba545a3fbccf",
-		"deriver": "88ddf5a2382ba87bb7b0cb664e339e64677c9c31fdbd592fd3ff3fde3bb4cc1f",
+		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
 		"generator": "a03cb760390adc7c588fbdd5d560e38cf183f6fdf70c989aca8850970140a790"
 	}
 }
