@@ -276,7 +276,7 @@
 	},
 	"replay": {
 		"1": "14d4d01aebf8191920660367da190eb84d6b87d69dae53bfeb254dd202b85271",
-		"2": "d0013b9f697d1ce576f15b3a03daa908edd3a31ca655a274e298ff73480c9b18"
+		"2": "14d4d01aebf8191920660367da190eb84d6b87d69dae53bfeb254dd202b85271"
 	},
 	"rungs": {
 		"1": {
@@ -1180,7 +1180,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 6318,
 				"coverage_rel": 0.0,
@@ -1197,13 +1196,13 @@
 				"THIN: built/boat-rig does not declare `reads_density`"
 			],
 			"route": "rung0",
-			"surfaces": 3,
+			"surfaces": 5,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407407
 		}
 	},
 	"source": {
-		"deriver": "59c0050ca62593a6e6c86354866f68405045d22a928857c9903983d696eb6b02",
+		"deriver": "88ddf5a2382ba87bb7b0cb664e339e64677c9c31fdbd592fd3ff3fde3bb4cc1f",
 		"generator": "c7950009aebb770919bbfa22341509a4ecbeca3d0eef2d0f4e9fa2da0a88a747"
 	}
 }

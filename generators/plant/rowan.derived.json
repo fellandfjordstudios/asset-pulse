@@ -345,11 +345,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 28,
+				"candidates": 0,
 				"trace": "plant__rowan#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 49,
+				"candidates": 0,
 				"trace": "plant__rowan#2.trace.jsonl"
 			},
 			"3": {
@@ -1697,7 +1697,7 @@
 	},
 	"source": {
 		"children": "8baaeb02ba2a4ed3266910aff6780511376d89791bbcb70d37e1c25b891af417",
-		"deriver": "59c0050ca62593a6e6c86354866f68405045d22a928857c9903983d696eb6b02",
+		"deriver": "88ddf5a2382ba87bb7b0cb664e339e64677c9c31fdbd592fd3ff3fde3bb4cc1f",
 		"generator": "de58d5014f099151ed0adbd478ec0f230a18fecb6451c391dfe0af830017a83b"
 	}
 }

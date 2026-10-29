@@ -84,7 +84,7 @@
 	},
 	"replay": {
 		"1": "282f3de2cad98184d8ca0194dad5638a04cc40c207e66188c97fc962b0872053",
-		"2": "3de8691334ba228f92911d20061b467d638e6270df3933d8d80d2d3d14b9db11",
+		"2": "a0896031b27d46b7066435fbd8304a07a7d04dfc6c4fda8d50b1f7153f4a452a",
 		"3": "e662392b442fa85a6a2bb8d936365ade881c15fdb3f059c110fdc7fcaa5ab403"
 	},
 	"rungs": {
@@ -331,7 +331,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 14446,
 				"coverage_rel": -0.017,
@@ -355,7 +354,7 @@
 				"BUDGET: the cheapest derivation that holds the picture costs 224162 (22.92x), over rung 2's budget 9779 x 1.5 = 14668 (made, 0.86 m)"
 			],
 			"route": "thin",
-			"surfaces": 5,
+			"surfaces": 8,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408
 		},
@@ -412,7 +411,7 @@
 	},
 	"source": {
 		"children": "b9459ca048ec4671c6d7abfc99bdea02fe04298fca369c5d5aa007f1de1c95fd",
-		"deriver": "59c0050ca62593a6e6c86354866f68405045d22a928857c9903983d696eb6b02",
+		"deriver": "88ddf5a2382ba87bb7b0cb664e339e64677c9c31fdbd592fd3ff3fde3bb4cc1f",
 		"generator": "d42820572e3cefaca0fc2839d3b1d2918f046706694d190c7f3d9d33cd4aa5f4"
 	}
 }

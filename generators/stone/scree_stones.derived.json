@@ -597,14 +597,14 @@
 				"THIN: stone/scree-stones does not declare `reads_density`"
 			],
 			"route": "kit",
-			"surfaces": 1,
+			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408
 		}
 	},
 	"source": {
 		"children": "09edb7eb622d9dafc1c51beffcd71047a090dbb84fb7f8bec98dba545a3fbccf",
-		"deriver": "5b8ad7afb0ed1008c7abb57361cae67b986135df4bbd53c243ee864aa1143811",
+		"deriver": "88ddf5a2382ba87bb7b0cb664e339e64677c9c31fdbd592fd3ff3fde3bb4cc1f",
 		"generator": "a03cb760390adc7c588fbdd5d560e38cf183f6fdf70c989aca8850970140a790"
 	}
 }

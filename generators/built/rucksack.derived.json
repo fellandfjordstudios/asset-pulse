@@ -75,7 +75,7 @@
 	},
 	"replay": {
 		"1": "2a0e4659856d8afd0e2226848fa0600015fa978fcc86a51af96f6518200cccc1",
-		"2": "6ca113c981a18af2ba9ed0148e5276128e229a24d5a2fccd129f251ed610871a"
+		"2": "2a0e4659856d8afd0e2226848fa0600015fa978fcc86a51af96f6518200cccc1"
 	},
 	"rungs": {
 		"1": {
@@ -282,7 +282,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 2122,
 				"coverage_rel": 0.0,
@@ -298,13 +297,13 @@
 				"THIN: built/rucksack does not declare `reads_density`"
 			],
 			"route": "rung0",
-			"surfaces": 2,
+			"surfaces": 4,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.003
 		}
 	},
 	"source": {
-		"deriver": "59c0050ca62593a6e6c86354866f68405045d22a928857c9903983d696eb6b02",
+		"deriver": "88ddf5a2382ba87bb7b0cb664e339e64677c9c31fdbd592fd3ff3fde3bb4cc1f",
 		"generator": "e8ea911638e6385629497bd8c202c1d4236927809706371d13e0d8372ad4368b"
 	}
 }

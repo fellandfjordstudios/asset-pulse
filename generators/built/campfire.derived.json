@@ -758,7 +758,7 @@
 				"THIN: built/campfire does not declare `reads_density`"
 			],
 			"route": "kit",
-			"surfaces": 3,
+			"surfaces": 5,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408
 		},
@@ -814,7 +814,7 @@
 		}
 	},
 	"source": {
-		"deriver": "59c0050ca62593a6e6c86354866f68405045d22a928857c9903983d696eb6b02",
+		"deriver": "88ddf5a2382ba87bb7b0cb664e339e64677c9c31fdbd592fd3ff3fde3bb4cc1f",
 		"generator": "6a1fad646399099bf007219b00a3617211d69a01a88bc41ecadc71ad73e6576a"
 	}
 }

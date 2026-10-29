@@ -65,8 +65,8 @@
 	},
 	"replay": {
 		"1": "a39abc2935d0236c075139c34247d37bf2645142f270c3fc3b20fc9a414a8b5e",
-		"2": "149152d66d6c3a75ab73d3154b1097714cab1ad4b2313958b177249afb56d90f",
-		"3": "a62ea526bb5284b10757ec90dad2fa7f26e58c86dd9e674999fe93ee312b320b"
+		"2": "d3ad2ccdafadc55a45510b381fd5de5e6aac8bc4200522d81e2ca5f16de4e4eb",
+		"3": "3b1234042cc945266eb99b1d1e471f1bfcf8993fcd2899a39456aa012fa56725"
 	},
 	"rungs": {
 		"1": {
@@ -277,7 +277,7 @@
 			"routes": {
 				"reduce": 71.0
 			},
-			"surfaces": 4,
+			"surfaces": 5,
 			"surfaces_ceiling": 1
 		},
 		"3": {
@@ -432,7 +432,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 1206,
 				"coverage_rel": -0.009080000000000001,
@@ -448,12 +447,12 @@
 				"REDUCE to 0.118 held at 782, cheaper than the 1206 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
 			"route": "kit",
-			"surfaces": 4,
+			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "59c0050ca62593a6e6c86354866f68405045d22a928857c9903983d696eb6b02",
+		"deriver": "88ddf5a2382ba87bb7b0cb664e339e64677c9c31fdbd592fd3ff3fde3bb4cc1f",
 		"generator": "407fb284cd1d8512322cd6862aec897676de2c1dbda2bed6175332696a5fe24f"
 	}
 }

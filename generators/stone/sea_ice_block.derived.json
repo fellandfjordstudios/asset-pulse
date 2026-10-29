@@ -388,7 +388,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 144,
 				"coverage_rel": 0.0013900000000000002,
@@ -402,12 +401,12 @@
 				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
 			],
 			"route": "kit",
-			"surfaces": 2,
+			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "59c0050ca62593a6e6c86354866f68405045d22a928857c9903983d696eb6b02",
+		"deriver": "88ddf5a2382ba87bb7b0cb664e339e64677c9c31fdbd592fd3ff3fde3bb4cc1f",
 		"generator": "39178f31fb64df0eeb70cc469bfd9bebfafffc652314f84176a3e876d20fe916"
 	}
 }

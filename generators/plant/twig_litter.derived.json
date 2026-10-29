@@ -101,7 +101,7 @@
 	},
 	"replay": {
 		"1": "c279a0ef88b14fe6218dfa23f018612252a0d499eb63f6a9fe833ff728beef41",
-		"2": "8016752dedec1923040af1f93ba1741a08827c1665acca61c6b5af9b0bca9cb7"
+		"2": "c279a0ef88b14fe6218dfa23f018612252a0d499eb63f6a9fe833ff728beef41"
 	},
 	"rungs": {
 		"1": {
@@ -404,7 +404,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 3782,
 				"coverage_rel": 0.0,
@@ -420,13 +419,13 @@
 				"THIN: plant/twig-litter does not declare `reads_density`"
 			],
 			"route": "rung0",
-			"surfaces": 3,
+			"surfaces": 4,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407407
 		}
 	},
 	"source": {
-		"deriver": "59c0050ca62593a6e6c86354866f68405045d22a928857c9903983d696eb6b02",
+		"deriver": "88ddf5a2382ba87bb7b0cb664e339e64677c9c31fdbd592fd3ff3fde3bb4cc1f",
 		"generator": "17de23c636cc9f856bff84d879755220de131411dc6fd69e90ffb654da9036a4"
 	}
 }

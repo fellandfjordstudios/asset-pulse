@@ -775,7 +775,10 @@
 				"cost": 42,
 				"coverage_rel": 0.01493,
 				"floor": 0.01089,
-				"part_shift": {},
+				"part_shift": {
+					"end_grain": -3.0000000000000004e-05,
+					"wood": 3.0000000000000004e-05
+				},
 				"picture": 0.025380000000000003
 			},
 			"measured_of": 1,
@@ -792,7 +795,7 @@
 		}
 	},
 	"source": {
-		"deriver": "59c0050ca62593a6e6c86354866f68405045d22a928857c9903983d696eb6b02",
+		"deriver": "88ddf5a2382ba87bb7b0cb664e339e64677c9c31fdbd592fd3ff3fde3bb4cc1f",
 		"generator": "a7b5544315203b7e90f029a90e665c9261cf48f6eed3906d0622b6816bb2624b"
 	}
 }
