@@ -2,7 +2,8 @@
 # THE PULSE'S DAILY RUN, ONE COMMAND: everything a scheduled session does.
 #
 #   ./daily.sh        bump the pin, run (backlog, scorecard, sheets, page),
-#                     commit history.csv and the pin, push, print the report
+#                     commit history.csv and the pin, push, print the report,
+#                     which ends with the scorecard's read (--read)
 #
 # The report's last block is what a session relays. A failed step still ends
 # in a report and a committed history row that says so (run.sh's rule).
@@ -32,6 +33,19 @@ if [ -f "$OUT/site/index.html" ]; then
   tools/publish.sh "$OUT" >>"$LOG" 2>&1; p=$?
   case "$p" in 0) PUB="published" ;; 3) PUB="NOT published: $(grep -E "^publish: stopped" "$LOG" | tail -1 | sed "s/^publish: //")" ;; *) PUB="FAILED (exit $p) -- see $LOG" ;; esac
 fi
+# THE READ (the library's derivation scorecard plan, step 5): the scorecard's
+# own lines someone reads, from the goal table the backlog kept on
+# derive-results when this run has it, else the library's; the read's last
+# line says which. The library's tools/read-rows.py files a row from them.
+READ="$OUT/read.txt"
+TABLES=()
+[ -f out/derive-results/test/derive_goal.json ] && TABLES=(--tables "$ROOT/out/derive-results/test")
+if [ -f library/tools/scorecard.py ]; then
+  ( cd library && python3 tools/scorecard.py --read "${TABLES[@]}" ) > "$READ" 2>>"$LOG" \
+    || echo "the scorecard's --read failed (see $LOG)" > "$READ"
+else
+  echo "the library at this pin has no tools/scorecard.py" > "$READ"
+fi
 # THE REPORT.
 echo "== asset-pulse $DATE: run exit $RUN, $((SECONDS / 60)) min"
 grep -E "^backlog:" "$LOG" || echo "backlog: no line (skipped or failed early -- see $LOG)"
@@ -51,4 +65,5 @@ fi
 grep -E "^(bake|catalog): " "$LOG" | grep -E "NO IMPOSTOR|GAP|failed|subject\(s\)" | tail -5 | sed 's/^/  /'
 echo "publish: $PUB"
 echo "pushed: $(git rev-list --count origin/main..HEAD 2>/dev/null) commit(s) not on origin/main (0 is pushed); full log $LOG"
+echo "read (tools/scorecard.py --read):"; sed 's/^/  /' "$READ"
 exit $RUN
