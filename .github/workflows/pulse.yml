@@ -205,9 +205,13 @@ jobs:
           # its recorded cost, or 600 s, is stopped, put back once and failed by
           # name on a second overrun (five runs, 10-23 to 10-25, each spent its
           # budget on one subject; built-oar takes 815 s alone, a cost for its
-          # generator to fix, the bake plan's step D).
+          # generator to fix, the bake plan's step D). The floor is 1500 s since
+          # 10-30: built-mess-kit, never baked under its new key (the library's
+          # row 643 moved it), bakes in 950 s and failed every cook at 600 s
+          # (runs 31, 33, 34), so no catalog deployed; once in the store it is
+          # copied, and its recorded cost sets its limit.
           PULSE_BAKE_ITEM_LIMIT: "3"
-          PULSE_BAKE_SUBJECT_CAP_S: "600"
+          PULSE_BAKE_SUBJECT_CAP_S: "1500"
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           DATE="${{ steps.pins.outputs.date }}"
