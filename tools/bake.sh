@@ -87,6 +87,13 @@ cook() { # [--transfer]
   local code=$?
   # The cook's own report, without its line a layer a rung (out/bake.log keeps those).
   grep -v -E '^  [^ ]+-r[0-9]+ +(mesh|bake|cook|channel|measure) +\((cached|made)' "$LOG" | sed 's/^/  /'
+  # A failed worker's own log stays on the runner; its tail names the item.
+  if [ "$code" != 0 ]; then
+    for w in "$LIB"/.git/ag-logs/cook.log.work*; do
+      [ -f "$w" ] || continue
+      echo "bake: the tail of $(basename "$w"):"; tail -n 25 "$w" | sed 's/^/    /'
+    done
+  fi
   return "$code"
 }
 if [ "${PULSE_TRANSFER:-0}" = "1" ]; then
