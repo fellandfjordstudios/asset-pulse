@@ -46,7 +46,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 0,
 				"trace": "built__water-bottle#1.trace.jsonl"
 			}
 		}
@@ -74,11 +74,11 @@
 					}
 				},
 				{
-					"cost": 2422,
+					"cost": 2422.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00413,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -86,7 +86,7 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.5,
-				"gap": 0.47200000000000003,
+				"gap": 0.472,
 				"judge": "drawn",
 				"pixel_m": 0.001297
 			},
@@ -99,7 +99,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping cap_rib 0.490)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -122,10 +122,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0059 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00130 m",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping cap_rib 0.490)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 243.0,
 			"route": "kit",
-			"search_s": 82.5,
-			"searched": "search",
+			"search_s": 31.900000000000002,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		}

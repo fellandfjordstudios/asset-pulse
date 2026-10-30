@@ -121,11 +121,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 16,
+				"candidates": 1,
 				"trace": "built__hjell-pole#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 21,
+				"candidates": 0,
 				"trace": "built__hjell-pole#2.trace.jsonl"
 			}
 		}
@@ -143,11 +143,11 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2746,
+					"cost": 2746.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 6,
+					"px_over": 6.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -173,7 +173,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.240",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -198,13 +198,13 @@
 				"KIT: none holds at 0.0012 -- the finest tried (1.000) fails at {\"length_m\":0.4} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00050 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 24 pixel(s) differ at the drawn size at {} seed 314 (worst 0.97)"
 			],
-			"peak_mb": 1126.0,
+			"peak_mb": 1058.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 18
+				"reduce": 18.0
 			},
-			"search_s": 684.2,
-			"searched": "search",
+			"search_s": 242.9,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -221,10 +221,10 @@
 					"value": {}
 				},
 				{
-					"cost": 396,
+					"cost": 396.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.007970000000000001,
+					"picture": 0.00797,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.05764800999999997
@@ -243,7 +243,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -648,10 +648,7 @@
 				"cost": 628,
 				"coverage_rel": 0.015470000000000001,
 				"floor": 0.0039900000000000005,
-				"part_shift": {
-					"end_grain": 0.01237,
-					"wood": -0.01237
-				},
+				"part_shift": {},
 				"picture": 0.0039900000000000005
 			},
 			"measured_of": 2,
@@ -661,10 +658,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.058 held at 396, cheaper than the 628 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 302.0,
+			"peak_mb": 953.0,
 			"route": "kit",
-			"search_s": 359.6,
-			"searched": "search",
+			"search_s": 147.4,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}

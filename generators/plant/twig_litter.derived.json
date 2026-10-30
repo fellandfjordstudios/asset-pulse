@@ -86,11 +86,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 40,
 				"trace": "plant__twig-litter#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 51,
 				"trace": "plant__twig-litter#2.trace.jsonl"
 			}
 		}
@@ -106,34 +106,136 @@
 	"rungs": {
 		"1": {
 			"budget": 14224,
+			"candidates": [
+				{
+					"cost": 2916,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.02432,
+					"px_over": 7,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 3442,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.0069500000000000004,
+					"px_over": 1,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 3782,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				},
+				{
+					"cost": 252,
+					"holds": false,
+					"judge": "field",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "substitute",
+					"value": 126
+				}
+			],
 			"checked_at": 11,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"ground": {
+				"albedo_linear": [
+					0.2134,
+					0.1481,
+					0.1097
+				],
+				"band": 1,
+				"coverage": 0.0743,
+				"luminance_sd": 0.049100000000000005,
+				"texel_m": 0.002105
+			},
 			"measured": {
 				"cost": 3782,
 				"coverage_rel": 0.0,
-				"floor": 0.00536,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
+				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 583 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: coverage, colour apart { \"coverage\": 0.1731, \"colour\": 2.6299, \"spread\": 0.0886, \"edges\": 0.1276 }, the tolerance { \"coverage\": 0.1262, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.135 }",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"density_per_m2\":300.0} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00211 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.43: 28088 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00210 m",
 				"THIN: plant/twig-litter does not declare `reads_density`"
 			],
+			"peak_mb": 583.0,
 			"route": "rung0",
+			"search_s": 772.7,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"tolerance": 0.0018518518518518517
 		},
 		"2": {
 			"budget": 3556,
+			"candidates": [
+				{
+					"cost": 2166,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.03127,
+					"px_over": 0,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 3262,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.017320000000000002,
+					"px_over": 2,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 3782,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				},
+				{
+					"cost": 126,
+					"holds": false,
+					"judge": "field",
+					"picture": -1.0,
+					"px_over": 2,
+					"route": "substitute",
+					"value": 63
+				}
+			],
 			"checked_at": 11,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"ground": {
+				"albedo_linear": [
+					0.21180000000000002,
+					0.1464,
+					0.10840000000000001
+				],
+				"band": 2,
+				"coverage": 0.07440000000000001,
+				"luminance_sd": 0.0488,
+				"texel_m": 0.00842
+			},
 			"material_transfer": {
 				"checked_at": 11,
 				"checks": [
@@ -407,18 +509,23 @@
 			"measured": {
 				"cost": 3782,
 				"coverage_rel": 0.0,
-				"floor": 0.00536,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
+				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 583 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: coverage, colour, edges apart { \"coverage\": 0.2266, \"colour\": 3.7105, \"spread\": 0.0624, \"edges\": 0.1092 }, the tolerance { \"coverage\": 0.1153, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.1 }",
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"patch_m\":0.25} seed 314: part 'stick_bark' changes its share of the picture by +0.0480 against 0.0450 allowed (its colour's share of the subject)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.2401, cover 2.04: 2529 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: part 'stick_bark' changes its share of the picture by +0.0509 against 0.0498 allowed (its colour's share of the subject)",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.2401, cover 2.04: 2527 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
 				"REDUCE from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00842 m",
 				"THIN: plant/twig-litter does not declare `reads_density`"
 			],
+			"peak_mb": 270.0,
 			"route": "rung0",
+			"search_s": 538.1,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407407

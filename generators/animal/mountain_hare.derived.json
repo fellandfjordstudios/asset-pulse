@@ -163,11 +163,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 0,
 				"trace": "animal__mountain-hare#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 7,
+				"candidates": 1,
 				"trace": "animal__mountain-hare#2.trace.jsonl"
 			}
 		}
@@ -194,10 +194,10 @@
 					"value": {}
 				},
 				{
-					"cost": 5412,
+					"cost": 5412.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0044800000000000005,
+					"picture": 0.00448,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.48999999999999994
@@ -207,7 +207,7 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.001011
+				"pixel_m": 0.001297
 			},
 			"error": 0.0022364274341398365,
 			"fraction": 1.0,
@@ -216,7 +216,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -230,17 +230,7 @@
 				"cost": 10644,
 				"coverage_rel": -0.00012000000000000002,
 				"floor": 0.0044800000000000005,
-				"part_shift": {
-					"belly": 9e-05,
-					"ear": 2e-05,
-					"ear_inner": 1e-05,
-					"ear_tip": 1e-05,
-					"eye": -0.00042,
-					"face": 3.0000000000000004e-05,
-					"foot": 4e-05,
-					"nose": 0.0,
-					"pelage": 0.00023
-				},
+				"part_shift": {},
 				"picture": 0.00411
 			},
 			"measured_of": 2,
@@ -248,10 +238,10 @@
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.490 held at 5412, cheaper than the 10644 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 736.0,
+			"peak_mb": 356.0,
 			"route": "kit",
-			"search_s": 1191.3,
-			"searched": "search",
+			"search_s": 350.8,
+			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9
 		},
@@ -259,7 +249,7 @@
 			"budget": 4228,
 			"candidates": [
 				{
-					"cost": 10620,
+					"cost": 10620.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00411,
@@ -289,7 +279,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.168",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -838,17 +828,7 @@
 				"cost": 2196,
 				"coverage_rel": -0.015470000000000001,
 				"floor": 0.0044800000000000005,
-				"part_shift": {
-					"belly": 0.0038000000000000004,
-					"ear": 0.00099,
-					"ear_inner": 0.00035000000000000005,
-					"ear_tip": -0.00044,
-					"eye": -0.0015,
-					"face": -0.0011500000000000002,
-					"foot": -0.0020900000000000003,
-					"nose": 7.000000000000001e-05,
-					"pelage": 0.0019500000000000001
-				},
+				"part_shift": {},
 				"picture": 0.0082
 			},
 			"measured_of": 3,
@@ -856,13 +836,13 @@
 				"KIT (its own build at the rung's pixel) held at 10620, dearer than the 2196 taken",
 				"KIT (its own build at 2 of the band's pixels) held at 10620, dearer than the 2196 taken"
 			],
-			"peak_mb": 682.0,
+			"peak_mb": 363.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 22
+				"reduce": 22.0
 			},
-			"search_s": 1452.4,
-			"searched": "search",
+			"search_s": 893.5,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 1
 		}

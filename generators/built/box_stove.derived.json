@@ -46,15 +46,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 7,
+				"candidates": 0,
 				"trace": "built__box-stove#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 27,
+				"candidates": 1,
 				"trace": "built__box-stove#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 21,
+				"candidates": 0,
 				"trace": "built__box-stove#3.trace.jsonl"
 			}
 		}
@@ -66,7 +66,7 @@
 	"replay": {
 		"1": "a39abc2935d0236c075139c34247d37bf2645142f270c3fc3b20fc9a414a8b5e",
 		"2": "d3ad2ccdafadc55a45510b381fd5de5e6aac8bc4200522d81e2ca5f16de4e4eb",
-		"3": "800fd045aa181e1e1e2d621cc412da2be7c00fed2322ee3e7fa15aa0d31b17c0"
+		"3": "3b1234042cc945266eb99b1d1e471f1bfcf8993fcd2899a39456aa012fa56725"
 	},
 	"rungs": {
 		"1": {
@@ -84,11 +84,11 @@
 					}
 				},
 				{
-					"cost": 4452,
+					"cost": 4452.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004600000000000001,
-					"px_over": 2,
+					"picture": 0.0046,
+					"px_over": 2.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -109,7 +109,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping fastener 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -132,10 +132,10 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"door_open\":1.0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00178 m",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastener 0.031)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 593.0,
+			"peak_mb": 308.0,
 			"route": "kit",
-			"search_s": 596.8000000000001,
-			"searched": "search",
+			"search_s": 132.20000000000002,
+			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		},
@@ -143,11 +143,11 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 1972,
+					"cost": 1972.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004600000000000001,
-					"px_over": 2,
+					"picture": 0.0046,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -173,7 +173,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.168",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -314,16 +314,7 @@
 				"cost": 1228,
 				"coverage_rel": -0.0066500000000000005,
 				"floor": 0.004600000000000001,
-				"part_shift": {
-					"char": -0.0028100000000000004,
-					"edge": -0.009590000000000001,
-					"ember": -0.0014600000000000001,
-					"iron": 0.007320000000000001,
-					"mica": 0.0006900000000000001,
-					"pipe": -0.0008,
-					"soot": 0.0007300000000000001,
-					"top": 0.004560000000000001
-				},
+				"part_shift": {},
 				"picture": 0.00708
 			},
 			"measured_of": 1,
@@ -337,10 +328,10 @@
 			"peak_mb": 253.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 71
+				"reduce": 71.0
 			},
-			"search_s": 281.5,
-			"searched": "search",
+			"search_s": 115.9,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		},
@@ -359,13 +350,13 @@
 					}
 				},
 				{
-					"cost": 782,
+					"cost": 782.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.012280000000000001,
+					"picture": 0.01228,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.11764899999999995
+					"value": 0.11764899999999996
 				}
 			],
 			"checked_at": 5,
@@ -384,7 +375,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel, keeping fastener 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -520,7 +511,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 1206,
 				"coverage_rel": -0.009080000000000001,
@@ -538,8 +528,8 @@
 			],
 			"peak_mb": 253.0,
 			"route": "kit",
-			"search_s": 302.0,
-			"searched": "search",
+			"search_s": 26.400000000000002,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}

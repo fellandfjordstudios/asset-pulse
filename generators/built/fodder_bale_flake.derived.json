@@ -72,11 +72,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 14,
+				"candidates": 15,
 				"trace": "built__fodder-bale-flake#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 29,
+				"candidates": 0,
 				"trace": "built__fodder-bale-flake#2.trace.jsonl"
 			}
 		}
@@ -140,13 +140,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1681, cover 1.56: 31713 pixel(s) differ at the drawn size at {} seed 314 (worst 0.64)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'fodder' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 353.0,
+			"peak_mb": 354.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 2,
 				"reduce": 1
 			},
-			"search_s": 856.6,
+			"search_s": 965.3000000000001,
 			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -156,19 +156,21 @@
 			"budget": 2587,
 			"candidates": [
 				{
-					"cost": 15034,
+					"cost": 3420,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.01344,
-					"px_over": 1,
+					"picture": 0.03287,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
+					"value": {
+						"fibre": 0.08235429999999996
+					}
 				},
 				{
-					"cost": 15854,
+					"cost": 15854.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0041800000000000006,
+					"picture": 0.00418,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.3429999999999999
@@ -427,10 +429,10 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'fodder' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"BUDGET: the cheapest derivation that holds the picture costs 15854 (6.13x), over rung 2's budget 2587 x 1.5 = 3880 (made, 0.37 m)"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 334.0,
 			"route": "kit",
-			"search_s": 1528.2,
-			"searched": "search",
+			"search_s": 658.0,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.010977190487316633

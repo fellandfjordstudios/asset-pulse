@@ -191,7 +191,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 28,
 				"trace": "built__quay-post#1.trace.jsonl"
 			}
 		}
@@ -207,6 +207,35 @@
 		"1": {
 			"above_tolerance": true,
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 21644,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 95266,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.0043300000000000005,
+					"px_over": 11,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 109336,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.0043300000000000005,
+					"px_over": 5,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 26,
 			"error": -1.0,
 			"every_piece": true,
@@ -219,7 +248,7 @@
 				"part_shift": {},
 				"picture": 0.00461
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"miss": {
 				"cost_of_ceiling": 1.4874862591712044,
 				"judge": "drawn",
@@ -229,19 +258,31 @@
 				"tier": 1
 			},
 			"not_taken": [
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 52234 pixel(s) differ at {} seed 314 (worst 0.84)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 47443 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 40005 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 33219 pixel(s) differ at {} seed 314 (worst 0.73)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 52216 pixel(s) differ at {} seed 314 (worst 0.80)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 47214 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 39895 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 32773 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 25697 pixel(s) differ at {} seed 314 (worst 0.64)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 25411 pixel(s) differ at {} seed 314 (worst 0.62)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 21762 pixel(s) differ at {} seed 314 (worst 0.58)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 21644 pixel(s) differ at {} seed 314 (worst 0.57)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 11 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00177 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 12167 pixel(s) differ at the drawn size at {} seed 314 (worst 0.78)",
 				"REDUCE from rung 0 at {} seed 314: element 30000's part 'wrack' is 31 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 89 more groups)",
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00177 m",
-				"IMPOSTOR at 6x6 frames from rung 0: 52216 pixel(s) differ at {} seed 314 (worst 0.80)",
-				"IMPOSTOR at 8x8 frames from rung 0: 47214 pixel(s) differ at {} seed 314 (worst 0.75)",
-				"IMPOSTOR at 12x12 frames from rung 0: 39895 pixel(s) differ at {} seed 314 (worst 0.75)",
-				"IMPOSTOR at 16x16 frames from rung 0: 32773 pixel(s) differ at {} seed 314 (worst 0.75)",
 				"THIN: built/quay-post does not declare `reads_density`"
 			],
+			"peak_mb": 940.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 1962.0
+				"reduce": 1962
 			},
+			"search_s": 2810.1000000000004,
+			"searched": "search",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"tolerance": 0.0018518518518518517

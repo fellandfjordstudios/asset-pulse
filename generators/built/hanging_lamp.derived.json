@@ -18,11 +18,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 13,
+				"candidates": 0,
 				"trace": "built__hanging-lamp#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 21,
+				"candidates": 0,
 				"trace": "built__hanging-lamp#2.trace.jsonl"
 			}
 		}
@@ -40,20 +40,20 @@
 			"budget": 26371,
 			"candidates": [
 				{
-					"cost": 6416,
+					"cost": 6416.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 5420,
+					"cost": 5420.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.007970000000000001,
-					"px_over": 106,
+					"picture": 0.00797,
+					"px_over": 106.0,
 					"route": "reduce",
 					"value": 0.7
 				},
@@ -74,10 +74,11 @@
 			"measured": {
 				"cost": 8686,
 				"coverage_rel": 0.0,
-				"floor": 0.0,
+				"floor": 0.00398,
 				"part_shift": {},
 				"picture": 0.0
 			},
+			"measured_of": 1,
 			"not_taken": [
 				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
 				"KIT: none holds at 0.0022 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00129 m",
@@ -86,10 +87,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0022 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 106 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00129 m",
 				"THIN: built/hanging-lamp does not declare `reads_density`"
 			],
-			"peak_mb": 261.0,
+			"peak_mb": 233.0,
 			"route": "rung0",
-			"search_s": 89.30000000000001,
-			"searched": "search",
+			"search_s": 3.9000000000000004,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"tolerance": 0.0022462184077885116
@@ -107,7 +108,7 @@
 					"value": {}
 				},
 				{
-					"cost": 1996,
+					"cost": 1996.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.01195,
@@ -120,7 +121,7 @@
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
-				"pixel_m": 0.005166
+				"pixel_m": 0.005187
 			},
 			"error": 0.008984873631154047,
 			"fraction": 1.0,
@@ -129,7 +130,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -174,15 +175,7 @@
 				"cost": 4248,
 				"coverage_rel": -0.01667,
 				"floor": 0.00398,
-				"part_shift": {
-					"brass": -0.00036,
-					"chimney": -0.00133,
-					"enamel": 0.004710000000000001,
-					"iron": -0.00034,
-					"rim": -0.00021,
-					"wick": -0.00017,
-					"wick_tip": 0.0
-				},
+				"part_shift": {},
 				"picture": 0.0053100000000000005
 			},
 			"measured_of": 2,
@@ -194,10 +187,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.240 held at 1996, cheaper than the 4248 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 235.0,
+			"peak_mb": 233.0,
 			"route": "kit",
-			"search_s": 128.20000000000002,
-			"searched": "search",
+			"search_s": 63.1,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}

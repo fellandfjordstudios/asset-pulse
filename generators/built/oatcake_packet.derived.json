@@ -72,7 +72,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 0,
 				"trace": "built__oatcake-packet#1.trace.jsonl"
 			}
 		}
@@ -98,7 +98,7 @@
 					"value": {}
 				},
 				{
-					"cost": 500,
+					"cost": 500.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
@@ -111,7 +111,7 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.000185
+				"pixel_m": 0.001297
 			},
 			"error": 0.0015,
 			"fraction": 1.0,
@@ -120,7 +120,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -134,11 +134,7 @@
 				"cost": 572,
 				"coverage_rel": 0.0,
 				"floor": 0.00436,
-				"part_shift": {
-					"label": 0.0,
-					"oatcake": 0.0,
-					"seal": 0.0
-				},
+				"part_shift": {},
 				"picture": 0.0
 			},
 			"measured_of": 2,
@@ -147,10 +143,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.700 held at 500, cheaper than the 572 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 750.0,
+			"peak_mb": 248.0,
 			"route": "kit",
-			"search_s": 460.8,
-			"searched": "search",
+			"search_s": 47.400000000000006,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}

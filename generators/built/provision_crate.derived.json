@@ -79,11 +79,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 13,
+				"candidates": 0,
 				"trace": "built__provision-crate#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 16,
+				"candidates": 0,
 				"trace": "built__provision-crate#2.trace.jsonl"
 			}
 		}
@@ -101,20 +101,20 @@
 			"budget": 20427,
 			"candidates": [
 				{
-					"cost": 4065,
+					"cost": 4065.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.005450000000000001,
-					"px_over": 3,
+					"picture": 0.00545,
+					"px_over": 3.0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 4696,
+					"cost": 4696.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.005030000000000001,
-					"px_over": 1,
+					"picture": 0.00503,
+					"px_over": 1.0,
 					"route": "reduce",
 					"value": 0.7
 				},
@@ -135,10 +135,11 @@
 			"measured": {
 				"cost": 5810,
 				"coverage_rel": 0.0,
-				"floor": 0.0,
+				"floor": 0.005450000000000001,
 				"part_shift": {},
 				"picture": 0.0
 			},
+			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0026 -- the finest tried (1.000) fails at {\"lid_open\":1} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00131 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1681, cover 1.00: 64 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
@@ -146,10 +147,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0026 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00131 m",
 				"THIN: built/provision-crate does not declare `reads_density`"
 			],
-			"peak_mb": 408.0,
+			"peak_mb": 256.0,
 			"route": "rung0",
-			"search_s": 203.8,
-			"searched": "search",
+			"search_s": 37.7,
+			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11,
 			"tolerance": 0.0025933612526285546
@@ -169,10 +170,10 @@
 					}
 				},
 				{
-					"cost": 2414,
+					"cost": 2414.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.005450000000000001,
+					"picture": 0.00545,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.3429999999999999
@@ -194,7 +195,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping nail 0.240)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -465,11 +466,11 @@
 				"KIT (its own build at the rung's pixel, keeping nail 0.240) held at 2593, dearer than the 1413 taken",
 				"REDUCE (every piece) to 0.343 held at 2414, dearer than the 1413 taken"
 			],
-			"peak_mb": 364.0,
+			"peak_mb": 259.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 543.5,
-			"searched": "search",
+			"search_s": 177.9,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}

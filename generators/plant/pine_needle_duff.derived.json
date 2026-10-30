@@ -100,7 +100,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 40,
 				"trace": "plant__pine-needle-duff#1.trace.jsonl"
 			}
 		}
@@ -116,12 +116,43 @@
 		"1": {
 			"above_tolerance": true,
 			"budget": 14224,
+			"candidates": [
+				{
+					"cost": 30474,
+					"holds": false,
+					"judge": "drawn",
+					"picture": -1.0,
+					"px_over": 658,
+					"route": "kit",
+					"value": 0.24009999999999992
+				},
+				{
+					"cost": 128,
+					"holds": false,
+					"judge": "field",
+					"picture": -1.0,
+					"px_over": 4,
+					"route": "substitute",
+					"value": 64
+				}
+			],
 			"checked_at": 13,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"ground": {
+				"albedo_linear": [
+					0.19140000000000001,
+					0.10500000000000001,
+					0.06720000000000001
+				],
+				"band": 1,
+				"coverage": 1.0,
+				"luminance_sd": 0.11270000000000001,
+				"texel_m": 0.001852
+			},
 			"keep": {
-				"debris": 0.11764899999999996
+				"debris": 0.11764899999999995
 			},
 			"measured": {
 				"cost": 18520,
@@ -140,11 +171,16 @@
 				"tier": 1
 			},
 			"not_taken": [
+				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 618 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: coverage, colour, spread, edges apart { \"coverage\": 0.5189, \"colour\": 7.5456, \"spread\": 0.2377, \"edges\": 0.2129 }, the tolerance { \"coverage\": 0.1, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.1 }",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1046 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00185 m; part 'duff' changes its share of the picture by +0.0497 against 0.0296 allowed (its colour's share of the subject)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.2401, cover 1.09: 658 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0: nothing to try",
 				"THIN: plant/pine-needle-duff does not declare `reads_density`"
 			],
+			"peak_mb": 873.0,
 			"route": "kit",
+			"search_s": 1471.9,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"tolerance": 0.001851851851851852

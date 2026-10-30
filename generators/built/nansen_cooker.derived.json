@@ -23,11 +23,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 29,
+				"candidates": 1,
 				"trace": "built__nansen-cooker#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 51,
+				"candidates": 0,
 				"trace": "built__nansen-cooker#2.trace.jsonl"
 			},
 			"3": {
@@ -42,7 +42,7 @@
 	},
 	"replay": {
 		"1": "709d20715dc89906a6d6a81dd7b9649b0b9993e1a2b345fee242c5459cf4a91c",
-		"2": "219fef377a8f9247526b1fab246d62ed97b24dfa99c80bb29f8061176d340f87",
+		"2": "fb943bd1f1ed5f0e3e06c05118994009c0522d69a44d4b4fe3569023972c3432",
 		"3": "1513f59785baad70868089ce3b1123ece0781eb4214dc5d3f05660b089f3d153"
 	},
 	"rungs": {
@@ -50,20 +50,20 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 6296,
+					"px_over": 6296.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 10072,
+					"cost": 10072.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -77,11 +77,11 @@
 					"value": 0.48999999999999994
 				},
 				{
-					"cost": 10024,
+					"cost": 10024.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "thin",
 					"value": 0.7
 				}
@@ -98,7 +98,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -140,13 +140,13 @@
 				"CHILD: no welded child has a coarser rung at slot 1: {\"built/nansen-cooker-cup\":0,\"built/nansen-cooker-vessel\":0}",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00147 m"
 			],
-			"peak_mb": 328.0,
+			"peak_mb": 323.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 43
+				"reduce": 43.0
 			},
-			"search_s": 732.0,
-			"searched": "search",
+			"search_s": 80.80000000000001,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -154,13 +154,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 8,
+					"px_over": 8.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 5986,
@@ -198,7 +198,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping rivet 0.031, support 0.031, fitting 0.031, vessel 0.031, cup 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -262,7 +262,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 5986,
 				"coverage_rel": -0.014230000000000001,
@@ -295,10 +294,10 @@
 				"CHILD: no welded child has a coarser rung at slot 2: {\"built/nansen-cooker-cup\":0,\"built/nansen-cooker-vessel\":0}",
 				"REDUCE, MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.031, support 0.031, fitting 0.031, vessel 0.031, cup 0.031)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 269.0,
+			"peak_mb": 267.0,
 			"route": "kit",
-			"search_s": 553.7,
-			"searched": "search",
+			"search_s": 28.700000000000003,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -328,12 +327,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 4,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 12
 				}
 			],
 			"checked_at": 2,
@@ -357,10 +356,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 267.0,
 			"route": "impostor",
-			"search_s": 26.900000000000002,
-			"searched": "search",
+			"search_s": 22.3,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,

@@ -81,11 +81,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 1,
 				"trace": "animal__arctic-char#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 8,
+				"candidates": 1,
 				"trace": "animal__arctic-char#2.trace.jsonl"
 			}
 		}
@@ -103,11 +103,11 @@
 			"budget": 31804,
 			"candidates": [
 				{
-					"cost": 7172,
+					"cost": 7172.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.027880000000000002,
-					"px_over": 142,
+					"picture": 0.02788,
+					"px_over": 142.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -134,7 +134,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.168",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -165,13 +165,13 @@
 				"KIT: none holds at 0.0021 -- the finest tried (1.000) fails at {\"cooked\":1} seed 314: the picture changes at the drawn size: 142 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00129 m",
 				"REDUCE from rung 0 at {\"cooked\":1} seed 314: element 0's part 'body' is 123 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 414.0,
+			"peak_mb": 404.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 26
+				"reduce": 26.0
 			},
-			"search_s": 448.40000000000003,
-			"searched": "search",
+			"search_s": 198.9,
+			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		},
@@ -179,11 +179,11 @@
 			"budget": 7951,
 			"candidates": [
 				{
-					"cost": 2092,
+					"cost": 2092.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.028560000000000002,
-					"px_over": 11,
+					"picture": 0.02856,
+					"px_over": 11.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -210,7 +210,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.168",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -471,16 +471,7 @@
 				"cost": 2684,
 				"coverage_rel": -0.00804,
 				"floor": 0.00398,
-				"part_shift": {
-					"body": 0.00217,
-					"dark": -0.00026000000000000003,
-					"dorsal_fin": 0.00046,
-					"eye": -0.00185,
-					"fin": 0.00093,
-					"fin_edge": 0.0002,
-					"head": -0.00415,
-					"tail": 0.00042
-				},
+				"part_shift": {},
 				"picture": 0.0041
 			},
 			"measured_of": 1,
@@ -492,10 +483,10 @@
 			"peak_mb": 375.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 26
+				"reduce": 26.0
 			},
-			"search_s": 971.7,
-			"searched": "search",
+			"search_s": 655.5,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}

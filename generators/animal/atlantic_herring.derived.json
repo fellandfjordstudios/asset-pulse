@@ -53,7 +53,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 0,
 				"trace": "animal__atlantic-herring#1.trace.jsonl"
 			}
 		}
@@ -79,7 +79,7 @@
 					"value": {}
 				},
 				{
-					"cost": 1424,
+					"cost": 1424.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -90,9 +90,9 @@
 			],
 			"checked_at": 6,
 			"drawn": {
-				"excess": 0.4844,
+				"excess": 0.5,
 				"judge": "drawn",
-				"pixel_m": 0.001291
+				"pixel_m": 0.001297
 			},
 			"error": 0.004052126957232116,
 			"fraction": 1.0,
@@ -101,7 +101,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -115,14 +115,7 @@
 				"cost": 2598,
 				"coverage_rel": -0.004770000000000001,
 				"floor": 0.00398,
-				"part_shift": {
-					"back": 0.0006000000000000001,
-					"belly": 0.00071,
-					"eye": -0.00109,
-					"fin": -0.0014600000000000001,
-					"flank": 0.0014900000000000002,
-					"gill": 0.00016
-				},
+				"part_shift": {},
 				"picture": 0.00398
 			},
 			"measured_of": 2,
@@ -131,10 +124,10 @@
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.240 held at 1424, cheaper than the 2598 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 271.0,
+			"peak_mb": 253.0,
 			"route": "kit",
-			"search_s": 112.9,
-			"searched": "search",
+			"search_s": 47.5,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		}

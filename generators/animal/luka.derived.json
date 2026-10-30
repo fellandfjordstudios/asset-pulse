@@ -163,11 +163,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 7,
+				"candidates": 0,
 				"trace": "animal__luka#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 8,
+				"candidates": 0,
 				"trace": "animal__luka#2.trace.jsonl"
 			},
 			"3": {
@@ -199,7 +199,7 @@
 					"value": {}
 				},
 				{
-					"cost": 7960,
+					"cost": 7960.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -221,7 +221,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -235,25 +235,7 @@
 				"cost": 14210,
 				"coverage_rel": -0.00027,
 				"floor": 0.00398,
-				"part_shift": {
-					"claw": -4e-05,
-					"coat": 0.00031,
-					"ear": -0.00030000000000000003,
-					"face": 5e-05,
-					"feather": 0.00022,
-					"iris_l": 0.0,
-					"iris_r": 0.0,
-					"lid": -0.0002,
-					"lip": -0.00011,
-					"mouth": 1e-05,
-					"nose": -9e-05,
-					"pad": 1e-05,
-					"pupil": 0.0,
-					"sclera": -0.00019,
-					"short": 0.00011,
-					"teeth": 0.0002,
-					"toe": 1e-05
-				},
+				"part_shift": {},
 				"picture": 0.00398
 			},
 			"measured_of": 2,
@@ -262,10 +244,10 @@
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.490 held at 7960, cheaper than the 14210 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 816.0,
+			"peak_mb": 416.0,
 			"route": "kit",
-			"search_s": 1215.6000000000001,
-			"searched": "search",
+			"search_s": 509.0,
+			"searched": "recheck",
 			"surfaces": 17,
 			"surfaces_ceiling": 17
 		},
@@ -282,7 +264,7 @@
 					"value": {}
 				},
 				{
-					"cost": 4050,
+					"cost": 4050.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00751,
@@ -304,7 +286,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -853,25 +835,7 @@
 				"cost": 12738,
 				"coverage_rel": -0.0012200000000000002,
 				"floor": 0.00398,
-				"part_shift": {
-					"claw": -0.00033000000000000005,
-					"coat": 0.00076,
-					"ear": -0.00133,
-					"face": 0.0001,
-					"feather": 0.0004900000000000001,
-					"iris_l": 0.0,
-					"iris_r": 0.0,
-					"lid": -0.00021,
-					"lip": -0.00019,
-					"mouth": 1e-05,
-					"nose": -0.00019,
-					"pad": 1e-05,
-					"pupil": 0.0,
-					"sclera": -0.00019,
-					"short": 0.00023,
-					"teeth": 0.00102,
-					"toe": 2e-05
-				},
+				"part_shift": {},
 				"picture": 0.00398
 			},
 			"measured_of": 3,
@@ -881,10 +845,10 @@
 				"KIT (its own build at 2 of the band's pixels) held at 12738, the same cost as the route taken, found first",
 				"REDUCE (every piece) to 0.240 held at 4050, cheaper than the 12738 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 713.0,
+			"peak_mb": 393.0,
 			"route": "kit",
-			"search_s": 3758.4,
-			"searched": "search",
+			"search_s": 2725.3,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		},
@@ -914,12 +878,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 16
 				}
 			],
 			"checked_at": 22,
@@ -943,10 +907,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 442.0,
+			"peak_mb": 443.0,
 			"route": "impostor",
-			"search_s": 253.4,
-			"searched": "search",
+			"search_s": 213.20000000000002,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,

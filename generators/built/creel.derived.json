@@ -121,7 +121,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 26,
+				"candidates": 1,
 				"trace": "built__creel#1.trace.jsonl"
 			}
 		}
@@ -138,20 +138,20 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 31880,
+					"px_over": 31880.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 23634,
+					"cost": 23634.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00459,
-					"px_over": 6,
+					"px_over": 6.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -177,7 +177,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -221,10 +221,10 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.71: 9505 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"peak_mb": 937.0,
+			"peak_mb": 887.0,
 			"route": "merged",
-			"search_s": 2126.8,
-			"searched": "search",
+			"search_s": 1021.3000000000001,
+			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		}

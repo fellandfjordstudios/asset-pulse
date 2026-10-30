@@ -32,11 +32,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 0,
 				"trace": "built__rudder#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 25,
+				"candidates": 0,
 				"trace": "built__rudder#2.trace.jsonl"
 			},
 			"3": {
@@ -59,13 +59,13 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 20688,
+					"px_over": 20688.0,
 					"route": "impostor",
-					"value": 24
+					"value": 24.0
 				},
 				{
 					"cost": 672,
@@ -77,10 +77,10 @@
 					"value": {}
 				},
 				{
-					"cost": 314,
+					"cost": 314.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0043100000000000005,
+					"picture": 0.00431,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.24009999999999992
@@ -99,7 +99,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -113,11 +113,7 @@
 				"cost": 672,
 				"coverage_rel": -4e-05,
 				"floor": 0.0043100000000000005,
-				"part_shift": {
-					"blade": 6.000000000000001e-05,
-					"iron": 8e-05,
-					"tiller": -2e-05
-				},
+				"part_shift": {},
 				"picture": 0.0043100000000000005
 			},
 			"measured_of": 2,
@@ -137,10 +133,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.240 held at 314, cheaper than the 672 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 354.0,
+			"peak_mb": 295.0,
 			"route": "kit",
-			"search_s": 160.70000000000002,
-			"searched": "search",
+			"search_s": 30.400000000000002,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -148,13 +144,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 466,
+					"px_over": 466.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 332,
@@ -166,10 +162,10 @@
 					"value": {}
 				},
 				{
-					"cost": 466,
+					"cost": 466.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0043100000000000005,
+					"picture": 0.00431,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.48999999999999994
@@ -188,7 +184,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -281,11 +277,7 @@
 				"cost": 332,
 				"coverage_rel": -0.00649,
 				"floor": 0.0043100000000000005,
-				"part_shift": {
-					"blade": 0.00544,
-					"iron": -0.00321,
-					"tiller": -0.00287
-				},
+				"part_shift": {},
 				"picture": 0.0043100000000000005
 			},
 			"measured_of": 3,
@@ -312,11 +304,11 @@
 				"KIT (its own build at the rung's pixel) held at 436, dearer than the 332 taken",
 				"REDUCE to 0.490 held at 466, dearer than the 332 taken"
 			],
-			"peak_mb": 239.0,
+			"peak_mb": 238.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 74.4,
-			"searched": "search",
+			"search_s": 29.900000000000002,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -346,12 +338,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 24
 				}
 			],
 			"checked_at": 3,
@@ -375,10 +367,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 239.0,
+			"peak_mb": 238.0,
 			"route": "impostor",
-			"search_s": 10.600000000000001,
-			"searched": "search",
+			"search_s": 8.8,
+			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,

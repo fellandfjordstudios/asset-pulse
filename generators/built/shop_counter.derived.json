@@ -72,7 +72,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 14,
+				"candidates": 0,
 				"trace": "built__shop-counter#1.trace.jsonl"
 			}
 		}
@@ -89,13 +89,13 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 4007,
+					"px_over": 4007.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 3256,
@@ -120,7 +120,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -134,13 +134,7 @@
 				"cost": 3256,
 				"coverage_rel": -0.00031,
 				"floor": 0.0041400000000000005,
-				"part_shift": {
-					"brass": -0.0006000000000000001,
-					"edge_wood": 1e-05,
-					"frame": 0.00018,
-					"panel": 0.00016,
-					"top": 0.00039000000000000005
-				},
+				"part_shift": {},
 				"picture": 0.0041400000000000005
 			},
 			"measured_of": 1,
@@ -160,10 +154,10 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 526.0,
+			"peak_mb": 306.0,
 			"route": "kit",
-			"search_s": 604.4,
-			"searched": "search",
+			"search_s": 266.40000000000003,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		}

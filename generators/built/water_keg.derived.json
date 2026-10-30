@@ -65,7 +65,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 15,
 				"trace": "built__water-keg#1.trace.jsonl"
 			},
 			"2": {
@@ -85,6 +85,44 @@
 	"rungs": {
 		"1": {
 			"budget": 11490,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 1167,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 7416,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.0045000000000000005,
+					"px_over": 1,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 10788,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.0045000000000000005,
+					"px_over": 2,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 14458,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
 			"checked_at": 8,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -92,11 +130,10 @@
 			"measured": {
 				"cost": 14458,
 				"coverage_rel": 0.0,
-				"floor": 0.004540000000000001,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 14413 pixel(s) differ at {} seed 314 (worst 0.67)",
 				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 11691 pixel(s) differ at {} seed 314 (worst 0.78)",
@@ -115,7 +152,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0034 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00128 m",
 				"THIN: built/water-keg does not declare `reads_density`"
 			],
+			"peak_mb": 278.0,
 			"route": "rung0",
+			"search_s": 315.0,
+			"searched": "search",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"tolerance": 0.0033680016267903304
@@ -143,6 +183,17 @@
 				}
 			},
 			"budget": 2872,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "impostor",
+					"value": 16
+				}
+			],
 			"checked_at": 8,
 			"draw_calls": 1,
 			"drawn": {
@@ -164,7 +215,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
+			"peak_mb": 269.0,
 			"route": "impostor",
+			"search_s": 223.20000000000002,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 16

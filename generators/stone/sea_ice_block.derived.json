@@ -79,11 +79,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 3,
 				"trace": "stone__sea-ice-block#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 4,
 				"trace": "stone__sea-ice-block#2.trace.jsonl"
 			}
 		}
@@ -99,6 +99,26 @@
 	"rungs": {
 		"1": {
 			"budget": 42673,
+			"candidates": [
+				{
+					"cost": 260,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00412,
+					"px_over": 14,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 584,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 10,
 			"drawn": {
 				"excess": 0.0,
@@ -108,6 +128,19 @@
 			"error": 0.001851851851851852,
 			"fraction": 0.7,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.700",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"thin",
+					"merged"
+				]
+			},
 			"measured": {
 				"cost": 584,
 				"coverage_rel": 0.0,
@@ -123,25 +156,61 @@
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00056 m"
 			],
+			"peak_mb": 545.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 3.0
+				"reduce": 3
 			},
+			"search_s": 170.0,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
 		"2": {
 			"budget": 10668,
+			"candidates": [
+				{
+					"cost": 144,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00602,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 580,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.003920000000000001,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 10,
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.005187
+				"pixel_m": 0.004883
 			},
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"thin",
+					"merged"
+				]
+			},
 			"material_transfer": {
 				"checked_at": 10,
 				"checks": [
@@ -392,15 +461,23 @@
 				"cost": 144,
 				"coverage_rel": 0.0013900000000000002,
 				"floor": 0.0044,
-				"part_shift": {},
+				"part_shift": {
+					"block_face": -0.0017400000000000002,
+					"ice": 0.00088,
+					"snow": 0.00079
+				},
 				"picture": 0.00602
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 8 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00223 m",
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
+				"REDUCE to 0.700 held at 580, dearer than the 144 taken"
 			],
+			"peak_mb": 268.0,
 			"route": "kit",
+			"search_s": 86.60000000000001,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}

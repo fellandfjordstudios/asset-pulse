@@ -114,11 +114,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 41,
 				"trace": "plant__birch-leaf-litter#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 52,
 				"trace": "plant__birch-leaf-litter#2.trace.jsonl"
 			},
 			"3": {
@@ -140,10 +140,41 @@
 		"1": {
 			"above_tolerance": true,
 			"budget": 14224,
+			"candidates": [
+				{
+					"cost": 16976,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.015940000000000003,
+					"px_over": 22570,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 918,
+					"holds": false,
+					"judge": "field",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "substitute",
+					"value": 459
+				}
+			],
 			"checked_at": 15,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"ground": {
+				"albedo_linear": [
+					0.3972,
+					0.2439,
+					0.14400000000000002
+				],
+				"band": 1,
+				"coverage": 0.9118,
+				"luminance_sd": 0.14700000000000002,
+				"texel_m": 0.001969
+			},
 			"keep": {
 				"debris": 0.7,
 				"vein": 0.7
@@ -165,12 +196,17 @@
 				"tier": 1
 			},
 			"not_taken": [
+				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 598 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: colour, spread, edges apart { \"coverage\": 0.0826, \"colour\": 3.9129, \"spread\": 0.1781, \"edges\": 0.1919 }, the tolerance { \"coverage\": 0.1, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.1 }",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 22570 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.86), one pixel 0.00197 m; coverage changes -0.0398 against 0.0286 allowed (a one-pixel shrink all round)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.07: 24850 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
 				"REDUCE from rung 0 at {} seed 314: element 11's part 'lace' is 15 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 94 more groups)",
 				"REDUCE (every piece) from rung 0: nothing to try",
 				"THIN: plant/birch-leaf-litter does not declare `reads_density`"
 			],
+			"peak_mb": 1055.0,
 			"route": "kit",
+			"search_s": 2438.2000000000003,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"tolerance": 0.0018518518518518517
@@ -178,10 +214,41 @@
 		"2": {
 			"above_tolerance": true,
 			"budget": 3556,
+			"candidates": [
+				{
+					"cost": 12784,
+					"holds": false,
+					"judge": "drawn",
+					"picture": -1.0,
+					"px_over": 367,
+					"route": "kit",
+					"value": 0.7
+				},
+				{
+					"cost": 230,
+					"holds": false,
+					"judge": "field",
+					"picture": -1.0,
+					"px_over": 2,
+					"route": "substitute",
+					"value": 115
+				}
+			],
 			"checked_at": 15,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"ground": {
+				"albedo_linear": [
+					0.3981,
+					0.2441,
+					0.1442
+				],
+				"band": 2,
+				"coverage": 0.9092,
+				"luminance_sd": 0.1474,
+				"texel_m": 0.007873999999999999
+			},
 			"keep": {
 				"debris": 0.24009999999999992,
 				"vein": 0.24009999999999992
@@ -569,13 +636,19 @@
 				"tier": 1
 			},
 			"not_taken": [
+				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 598 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: coverage, colour, spread, edges apart { \"coverage\": 0.2073, \"colour\": 4.7353, \"spread\": 0.2976, \"edges\": 0.1827 }, the tolerance { \"coverage\": 0.1, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.1 }",
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1896 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00787 m; part 'lace' changes its share of the picture by +0.0684 against 0.0504 allowed (its colour's share of the subject)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.14: 367 pixel(s) differ at the drawn size at {} seed 314 (worst 0.59)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2008 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00787 m; part 'brown' changes its share of the picture by -0.0537 against 0.0504 allowed (its colour's share of the subject); part 'decayed' changes its share of the picture by -0.0692 against 0.0504 allowed (its colour's share of the subject); part 'lace' changes its share of the picture by +0.1569 against 0.0504 allowed (its colour's share of the subject)",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.07: 1572 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
 				"REDUCE from rung 0 at {} seed 314: element 11's part 'lace' is 15 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 94 more groups)",
 				"REDUCE (every piece) from rung 0: nothing to try",
 				"THIN: plant/birch-leaf-litter does not declare `reads_density`"
 			],
+			"peak_mb": 372.0,
 			"route": "kit",
+			"search_s": 1169.5,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407407
@@ -603,6 +676,17 @@
 				}
 			},
 			"budget": 889,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "impostor",
+					"value": 16
+				}
+			],
 			"checked_at": 15,
 			"draw_calls": 1,
 			"drawn": {
@@ -613,6 +697,17 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"ground": {
+				"albedo_linear": [
+					0.3951,
+					0.2419,
+					0.1429
+				],
+				"band": 3,
+				"coverage": 0.8919,
+				"luminance_sd": 0.14930000000000002,
+				"texel_m": 0.031497
+			},
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -624,7 +719,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
+			"peak_mb": 482.0,
 			"route": "impostor",
+			"search_s": 343.1,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 16
