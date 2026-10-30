@@ -3,8 +3,9 @@
 #
 # One job: sync the library to its main, the scorecard and the history row,
 # every subject's sheet and close-up, the explorer's bake, the catalog; commit
-# history.csv and the pin; deploy the catalog to Pages. The private pulse page
-# is built too and never deployed here.
+# history.csv and the pin; deploy the catalog to Pages, with the scorecard's
+# counts and read beside it at /scorecard.json. The private pulse page is built
+# too and never deployed here; it reads that file.
 #
 # The catalog is deployed as a Pages ARTIFACT, never committed: this repository
 # keeps no images and no generated geometry in git (CLAUDE.md). Every download
@@ -235,6 +236,24 @@ jobs:
           fi
           grep -h "^catalog: " "out/$DATE"/*.log 2>/dev/null | tail -3 || true
           exit $code
+      # THE SCORECARD, PUBLIC (the library's row 658; the owner, 10-29): the
+      # library scorecard's --json and its --read, as one file served beside
+      # the catalog at /scorecard.json, where the private pulse page reads it;
+      # counts and the read only, no image, no geometry. The totals and the read
+      # go on this run's page too (the job summary), deployed or not.
+      # A failure here is named on the run and stops nothing after it.
+      - name: the scorecard, public
+        if: always() && steps.pins.outcome == 'success'
+        continue-on-error: true
+        env:
+          CATALOG: ${{ steps.run.outputs.catalog }}
+          PUBLISH: ${{ github.event_name != 'workflow_dispatch' || inputs.publish }}
+        run: |
+          set -o pipefail
+          DATE="${{ steps.pins.outputs.date }}"
+          URL=""
+          [ -n "$CATALOG" ] && [ "$PUBLISH" = "true" ] && URL="${{ steps.pages.outputs.base_url }}/scorecard.json"
+          python3 tools/scorecard_public.py "out/$DATE" "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" "$URL" | tee -a "$GITHUB_STEP_SUMMARY"
       # Even when the run was cut short: every subject finished so far, with
       # its status, for the next run at the same pin.
       - name: what this run rendered
@@ -293,6 +312,7 @@ jobs:
         run: |
           mkdir -p _pages && cp -r "${{ steps.run.outputs.catalog }}/." _pages/
           rm -f _pages/objects.json
+          cp "out/${{ steps.pins.outputs.date }}/public/scorecard.json" _pages/ 2>/dev/null || echo "no scorecard.json this run"
           du -sh _pages
       - uses: actions/upload-pages-artifact@v3
         if: steps.run.outputs.catalog != ''

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """THE PAGE (the plan's step 2): one static HTML page per subject and an index,
-from one run's output and the history -- no scripts needed to read it.
+from one run's output and the history -- no scripts needed to read it, but for
+the index's one section that reads the public scorecard.
 
     tools/site.py out/<date>        # writes out/<date>/site/
 
@@ -9,17 +10,45 @@ subject (`scorecard.txt`), and the per-band sheet's numbers
 (`<subject>/sheet-bands.json`, `tools/rung-sheet.py` in the library). Nothing
 here scores, ranks or decides what a band is. A missing file is named on the
 page, never hidden. Images are re-encoded under 100 KB for a phone.
+
+THE PUBLIC SCORECARD (the library's row 658): the index reads the scorecard.json
+the pulse workflow serves beside the public catalog (tools/scorecard_public.py)
+and shows its totals and its read, so this private page shows the newest
+published one whenever it is opened. PULSE_SCORECARD_URL names another address.
 """
 import csv
 import html
 import io
 import json
+import os
 import sys
 from pathlib import Path
 
 from PIL import Image
 
 MAX_BYTES = 100_000
+SCORECARD_URL = "https://fellandfjordstudios.github.io/asset-pulse/scorecard.json"
+# The fetch fills its section with text only (textContent), never markup.
+PUBLIC_JS = """
+(function () {
+  var box = document.getElementById("public-scorecard"), url = box.dataset.url;
+  function say(text, cls) { var p = document.createElement("p"); p.textContent = text; if (cls) p.className = cls; box.appendChild(p); }
+  fetch(url, {cache: "no-store"}).then(function (r) {
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    return r.json();
+  }).then(function (d) {
+    box.textContent = "";
+    say((d.date || "?") + ", library at " + String(d.pin || "?").slice(0, 12) + ", written " + (d.written || "?"), "mute");
+    var t = (d.scorecard || {}).totals || {}, keys = %s;
+    var wrap = document.createElement("div"), table = document.createElement("table"), head = table.insertRow(), row = table.insertRow();
+    wrap.className = "wrap";
+    keys.forEach(function (k) { var th = document.createElement("th"); th.textContent = k; head.appendChild(th); row.insertCell().textContent = t[k] === undefined ? "" : t[k]; });
+    wrap.appendChild(table); box.appendChild(wrap);
+    var pre = document.createElement("pre"); pre.textContent = (d.read || []).join("\\n"); box.appendChild(pre);
+    var a = document.createElement("a"); a.href = url; a.textContent = url; var p = document.createElement("p"); p.className = "mute"; p.appendChild(a); box.appendChild(p);
+  }).catch(function (e) { box.textContent = ""; say("could not read " + url + ": " + e.message, "bad"); });
+})();
+"""
 CSS = """
 :root { --bg: #fff; --fg: #111; --mute: #666; --line: #ddd; --ok: #0a6e0a; --warn: #b36b00; --bad: #b00; }
 @media (prefers-color-scheme: dark) { :root { --bg: #111; --fg: #eee; --mute: #999; --line: #333;
@@ -187,7 +216,12 @@ def main(argv):
         hist.append("<tr>%s</tr>" % "".join("<td>%s</td>" % html.escape(h.get(k, "")) for k in ["date", "status",
                     "subjects", "bands", "covered_hand", "covered_library", "uncovered", "fully_covered", "fully_from_rung0"]))
     pin = history[-1]["pin"][:12] if history else "?"
+    public_url = os.environ.get("PULSE_SCORECARD_URL", SCORECARD_URL)
     index = ["<h1>the pulse</h1><p class=mute>%s, library at %s</p>" % (html.escape(run.name), html.escape(pin)),
+             "<h2>the public scorecard</h2><div id=public-scorecard data-url='%s'><p class=mute>reading %s</p></div>"
+             "<script>%s</script>" % (html.escape(public_url), html.escape(public_url),
+                                      PUBLIC_JS % json.dumps(["subjects", "bands", "covered_hand", "covered_library",
+                                                              "uncovered", "fully", "fully_from_rung0"])),
              "<h2>the trend</h2>" + trend_svg(history),
              "<h2>the library's totals, newest first</h2><div class=wrap><table>%s</table></div>" % "".join(hist),
              "<h2>subjects</h2>",
