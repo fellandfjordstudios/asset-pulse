@@ -128,11 +128,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "built__jetty-support#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 15,
 				"trace": "built__jetty-support#2.trace.jsonl"
 			}
 		}
@@ -148,6 +148,26 @@
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 1592,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.004880000000000001,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 1758,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.004880000000000001,
+					"px_over": 1,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 17,
 			"drawn": {
 				"excess": 0.25,
@@ -158,27 +178,70 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
 				"cost": 1592,
 				"coverage_rel": -0.0017000000000000001,
 				"floor": 0.004880000000000001,
-				"part_shift": {},
+				"part_shift": {
+					"iron": -0.00016,
+					"tide_growth": -0.0008500000000000001,
+					"timber": 0.0007300000000000001
+				},
 				"picture": 0.004880000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
+				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 315: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00830 m",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
+			"peak_mb": 1130.0,
 			"route": "kit",
+			"search_s": 566.6,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
 		"2": {
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 356,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.007470000000000001,
+					"px_over": null,
+					"route": "kit",
+					"value": {
+						"bolt": 0.08235429999999996
+					}
+				},
+				{
+					"cost": 1738,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.009340000000000001,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 17,
 			"drawn": {
 				"excess": 0.4375,
-				"gap": 0.03099999999999999,
+				"gap": 0.031,
 				"judge": "drawn",
 				"pixel_m": 0.033212
 			},
@@ -187,6 +250,19 @@
 			"from_rung": 0,
 			"keep": {
 				"bolt": 0.08235429999999996
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at 2 of the band's pixels, keeping bolt 0.082)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
 			},
 			"material_transfer": {
 				"checked_at": 17,
@@ -610,13 +686,17 @@
 				"part_shift": {},
 				"picture": 0.007470000000000001
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)",
-				"KIT (its own build at the rung's pixel, keeping bolt 0.082) held at 854, dearer than the 356 taken"
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping bolt 0.082)) is 1 route(s), and the one looked at did not improve on it",
+				"KIT (its own build at the rung's pixel, keeping bolt 0.082) held at 854, dearer than the 356 taken",
+				"REDUCE to 0.700 held at 1738, dearer than the 356 taken"
 			],
+			"peak_mb": 451.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
+			"search_s": 379.70000000000005,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}

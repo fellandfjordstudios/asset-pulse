@@ -95,11 +95,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__quay-ladder#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 12,
 				"trace": "built__quay-ladder#2.trace.jsonl"
 			}
 		}
@@ -115,6 +115,26 @@
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 340,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00434,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 296,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00434,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 12,
 			"drawn": {
 				"excess": 0.125,
@@ -125,23 +145,65 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
 				"cost": 340,
 				"coverage_rel": 0.00158,
 				"floor": 0.00472,
-				"part_shift": {},
+				"part_shift": {
+					"iron": -5e-05,
+					"tide_growth": -0.00012000000000000002,
+					"timber": 0.00033000000000000005
+				},
 				"picture": 0.00434
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
+				"REDUCE from rung 0 at {\"height_m\":9.0} seed 314: element 2000's part 'iron' is 16 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"REDUCE (every piece) to 0.700 held at 296, cheaper than the 340 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
+			"peak_mb": 624.0,
 			"route": "kit",
+			"search_s": 183.0,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
 		"2": {
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 236,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00434,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 296,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0069500000000000004,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 12,
 			"drawn": {
 				"excess": 0.25,
@@ -152,6 +214,19 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"material_transfer": {
 				"checked_at": 12,
 				"checks": [
@@ -451,15 +526,24 @@
 				"cost": 236,
 				"coverage_rel": -0.00816,
 				"floor": 0.00472,
-				"part_shift": {},
+				"part_shift": {
+					"iron": -0.01187,
+					"tide_growth": 0.006370000000000001,
+					"timber": 0.0055000000000000005
+				},
 				"picture": 0.00434
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)",
-				"KIT (its own build at 2 of the band's pixels) held at 236, the same cost as the route taken, found first"
+				"REDUCE from rung 0 at {\"height_m\":9.0} seed 314: element 2000's part 'iron' is 16 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
+				"KIT (its own build at 2 of the band's pixels) held at 236, the same cost as the route taken, found first",
+				"REDUCE (every piece) to 0.700 held at 296, dearer than the 236 taken"
 			],
+			"peak_mb": 272.0,
 			"route": "kit",
+			"search_s": 104.2,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}

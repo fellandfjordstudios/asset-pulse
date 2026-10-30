@@ -121,7 +121,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 26,
 				"trace": "built__creel#1.trace.jsonl"
 			}
 		}
@@ -136,27 +136,97 @@
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 31880,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 23634,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00459,
+					"px_over": 6,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 27366,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "merged",
+					"value": 1.0
+				}
+			],
 			"checked_at": 16,
-			"error": -1.0,
+			"drawn": {
+				"excess": 0.0,
+				"judge": "drawn",
+				"pixel_m": 0.001392
+			},
+			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "MERGED (its parts at their own rungs, joined)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
 				"cost": 27366,
 				"coverage_rel": 0.0,
 				"floor": 0.004900000000000001,
-				"part_shift": {},
+				"part_shift": {
+					"barnacle": 0.0,
+					"body": 0.0,
+					"end_grain": 0.0,
+					"hoop": 0.0,
+					"net": 0.0,
+					"rope": 0.0,
+					"weed": 0.0,
+					"wood": 0.0
+				},
 				"picture": 0.0
 			},
 			"measured_of": 1,
 			"not_taken": [
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 91972 pixel(s) differ at {} seed 314 (worst 0.61)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 92721 pixel(s) differ at {} seed 314 (worst 0.61)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 76511 pixel(s) differ at {} seed 314 (worst 0.67)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 57308 pixel(s) differ at {} seed 314 (worst 0.74)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 92206 pixel(s) differ at {} seed 314 (worst 0.64)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 93087 pixel(s) differ at {} seed 314 (worst 0.62)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 76158 pixel(s) differ at {} seed 314 (worst 0.67)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 57137 pixel(s) differ at {} seed 314 (worst 0.74)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 40183 pixel(s) differ at {} seed 314 (worst 0.76)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 40178 pixel(s) differ at {} seed 314 (worst 0.76)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 32022 pixel(s) differ at {} seed 314 (worst 0.66)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 31880 pixel(s) differ at {} seed 314 (worst 0.66)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00139 m",
-				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
-				"THIN: built/creel does not declare `reads_density`"
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.71: 9505 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"route": "rung0",
+			"peak_mb": 937.0,
+			"route": "merged",
+			"search_s": 2126.8,
+			"searched": "search",
 			"surfaces": 8,
-			"surfaces_ceiling": 8,
-			"tolerance": 0.001851851851851852
+			"surfaces_ceiling": 8
 		}
 	},
 	"source": {

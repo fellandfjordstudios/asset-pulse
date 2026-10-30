@@ -72,11 +72,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 15,
+				"candidates": 14,
 				"trace": "built__fodder-bale-flake#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 29,
 				"trace": "built__fodder-bale-flake#2.trace.jsonl"
 			}
 		}
@@ -93,6 +93,26 @@
 		"1": {
 			"budget": 10349,
 			"budget_reason": "the cheapest derivation that holds the picture costs 17394, 1.68x rung 1's budget 10349: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"candidates": [
+				{
+					"cost": 17396,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.012820000000000002,
+					"px_over": 228,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 17394,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0041800000000000006,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 9,
 			"drawn": {
 				"excess": 0.4375,
@@ -120,17 +140,40 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1681, cover 1.56: 31713 pixel(s) differ at the drawn size at {} seed 314 (worst 0.64)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'fodder' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
+			"peak_mb": 353.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 2,
 				"reduce": 1
 			},
+			"search_s": 856.6,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
 		"2": {
 			"above_tolerance": true,
 			"budget": 2587,
+			"candidates": [
+				{
+					"cost": 15034,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.01344,
+					"px_over": 1,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 15854,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0041800000000000006,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.3429999999999999
+				}
+			],
 			"checked_at": 9,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -378,11 +421,16 @@
 			},
 			"not_taken": [
 				"KIT: none holds at 0.0110 -- the finest tried (1.000) fails at {\"width_m\":0.18} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00214 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.09: 257 pixel(s) differ at the drawn size at {} seed 314 (worst 0.52)",
 				"KIT at 2 pixels: none holds at 0.0110 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00404 m",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.0312, cover 1.00: 1036 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'fodder' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"BUDGET: the cheapest derivation that holds the picture costs 15854 (6.13x), over rung 2's budget 2587 x 1.5 = 3880 (made, 0.37 m)"
 			],
+			"peak_mb": 270.0,
 			"route": "kit",
+			"search_s": 1528.2,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.010977190487316633

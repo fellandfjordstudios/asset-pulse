@@ -121,11 +121,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 16,
 				"trace": "built__hjell-pole#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 21,
 				"trace": "built__hjell-pole#2.trace.jsonl"
 			}
 		}
@@ -141,6 +141,26 @@
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 2746,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": 6,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 1324,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0039900000000000005,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.24009999999999992
+				}
+			],
 			"checked_at": 16,
 			"drawn": {
 				"excess": 0.5,
@@ -150,6 +170,19 @@
 			"error": 0.0012,
 			"fraction": 0.24009999999999992,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.240",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
 				"cost": 1324,
 				"coverage_rel": 0.00302,
@@ -162,17 +195,41 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"KIT: none holds at 0.0012 -- the finest tried (1.000) fails at {\"length_m\":0.4} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00050 m"
+				"KIT: none holds at 0.0012 -- the finest tried (1.000) fails at {\"length_m\":0.4} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00050 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 24 pixel(s) differ at the drawn size at {} seed 314 (worst 0.97)"
 			],
+			"peak_mb": 1126.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 18.0
+				"reduce": 18
 			},
+			"search_s": 684.2,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
 		"2": {
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 628,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0039900000000000005,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 396,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.007970000000000001,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.05764800999999997
+				}
+			],
 			"checked_at": 16,
 			"drawn": {
 				"excess": 0.25,
@@ -183,6 +240,19 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"material_transfer": {
 				"checked_at": 16,
 				"checks": [
@@ -578,15 +648,23 @@
 				"cost": 628,
 				"coverage_rel": 0.015470000000000001,
 				"floor": 0.0039900000000000005,
-				"part_shift": {},
+				"part_shift": {
+					"end_grain": 0.01237,
+					"wood": -0.01237
+				},
 				"picture": 0.0039900000000000005
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"top_diameter_m\":0.02} seed 314: coverage changes +0.0313 against 0.0227 a derivation may change (its error read as a change of size)",
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 10 pixel(s) differ at the drawn size at {\"length_m\":0.4} seed 314 (worst 0.83)",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"REDUCE to 0.058 held at 396, cheaper than the 628 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
+			"peak_mb": 302.0,
 			"route": "kit",
+			"search_s": 359.6,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}

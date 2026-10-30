@@ -100,11 +100,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 12,
 				"trace": "built__jetty-bay#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 20,
 				"trace": "built__jetty-bay#2.trace.jsonl"
 			}
 		}
@@ -120,6 +120,28 @@
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 656,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00536,
+					"px_over": null,
+					"route": "kit",
+					"value": {
+						"nail": 0.03125
+					}
+				},
+				{
+					"cost": 908,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.3429999999999999
+				}
+			],
 			"checked_at": 13,
 			"drawn": {
 				"excess": 0.5,
@@ -133,6 +155,19 @@
 			"keep": {
 				"nail": 0.03125
 			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel, keeping nail 0.031)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
 				"cost": 656,
 				"coverage_rel": 0.00027,
@@ -140,16 +175,43 @@
 				"part_shift": {},
 				"picture": 0.00536
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
+				"REDUCE from rung 0 at {\"length_m\":5.0} seed 314: element 5000's part 'timber' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping nail 0.031)) is 1 route(s), and the one looked at did not improve on it",
+				"REDUCE (every piece) to 0.343 held at 908, dearer than the 656 taken"
 			],
+			"peak_mb": 1111.0,
 			"route": "kit",
+			"search_s": 1417.6000000000001,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 2
 		},
 		"2": {
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 416,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.005430000000000001,
+					"px_over": null,
+					"route": "kit",
+					"value": {
+						"nail": 0.03125
+					}
+				},
+				{
+					"cost": 908,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.004900000000000001,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.3429999999999999
+				}
+			],
 			"checked_at": 13,
 			"drawn": {
 				"excess": 0.25,
@@ -163,6 +225,19 @@
 			"keep": {
 				"nail": 0.03125
 			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at 2 of the band's pixels, keeping nail 0.031)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
 				"cost": 416,
 				"coverage_rel": 0.00099,
@@ -170,13 +245,18 @@
 				"part_shift": {},
 				"picture": 0.005430000000000001
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)",
-				"KIT (its own build at the rung's pixel, keeping nail 0.031) held at 480, dearer than the 416 taken"
+				"REDUCE from rung 0 at {\"length_m\":5.0} seed 314: element 5000's part 'timber' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping nail 0.031)) is 1 route(s), and the one looked at did not improve on it",
+				"KIT (its own build at the rung's pixel, keeping nail 0.031) held at 480, dearer than the 416 taken",
+				"REDUCE (every piece) to 0.343 held at 908, dearer than the 416 taken"
 			],
+			"peak_mb": 308.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
+			"search_s": 493.3,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}

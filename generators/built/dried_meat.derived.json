@@ -86,7 +86,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 13,
 				"trace": "built__dried-meat#1.trace.jsonl"
 			}
 		}
@@ -101,6 +101,35 @@
 	"rungs": {
 		"1": {
 			"budget": 4220,
+			"candidates": [
+				{
+					"cost": 292,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00602,
+					"px_over": 291,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 330,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.005180000000000001,
+					"px_over": 1,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 472,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
 			"checked_at": 11,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -108,18 +137,21 @@
 			"measured": {
 				"cost": 472,
 				"coverage_rel": 0.0,
-				"floor": 0.005220000000000001,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0030 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 291 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00069 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.07: 911 pixel(s) differ at the drawn size at {} seed 314 (worst 0.59)",
 				"REDUCE from rung 0 at {\"strip_count\":10} seed 314: element 0's part 'strip' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE (every piece) from rung 0: none holds at 0.0030 -- the finest tried (0.700) fails at {\"strip_length_m\":0.08} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00069 m",
 				"THIN: built/dried-meat does not declare `reads_density`"
 			],
+			"peak_mb": 334.0,
 			"route": "rung0",
+			"search_s": 69.9,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"tolerance": 0.003

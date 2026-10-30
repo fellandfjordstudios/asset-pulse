@@ -233,7 +233,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 8,
 				"trace": "animal__fence-lizard#1.trace.jsonl"
 			}
 		}
@@ -243,43 +243,87 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "552d1ed4ecc3b9597f1d9773d540d0d0830aaed18fb6c8bb7503905caadf786b"
+		"1": "29287ba4efdfd3e21e44d2ac371f9a6a8844b0e5e363103364ab032a30c0df8f"
 	},
 	"rungs": {
 		"1": {
-			"above_tolerance": true,
 			"budget": 4234,
+			"candidates": [
+				{
+					"cost": 3704,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.007970000000000001,
+					"px_over": null,
+					"route": "kit",
+					"value": {
+						"scale": 0.24009999999999992
+					}
+				},
+				{
+					"cost": 8196,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": 0,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 32,
-			"error": -1.0,
+			"colour": {
+				"judge": "each part's share held to keep 1's at the band",
+				"tolerance": 0.0166,
+				"worst": 0.014700000000000001
+			},
+			"drawn": {
+				"below_failing_keep_1": true,
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.0007779999999999999
+			},
+			"error": 0.004156027648443196,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"keep": {},
+			"keep": {
+				"scale": 0.24009999999999992
+			},
+			"keep_cover": {
+				"scale": 1.0
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel, keeping scale 0.240, each kept piece covering 1.00x)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"thin",
+					"impostor",
+					"merged"
+				]
+			},
 			"measured": {
-				"cost": 1456,
-				"coverage_rel": -0.02612,
+				"cost": 3704,
+				"coverage_rel": 0.01796,
 				"floor": 0.00398,
 				"part_shift": {},
-				"picture": 0.00432
+				"picture": 0.007970000000000001
 			},
 			"measured_of": 1,
-			"miss": {
-				"cost_of_ceiling": 0.34388285309400096,
-				"judge": "drawn",
-				"picture_over": 1.0394541050799375,
-				"px_over": null,
-				"route": "kit",
-				"tier": 1
-			},
 			"not_taken": [
 				"KIT: none holds at 0.0042 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0177 against 0.0162 a derivation may change (its error read as a change of size)",
 				"REDUCE from rung 0 at {} seed 314: element 5's part 'dorsum' is 441 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"REDUCE (every piece) from rung 0: none holds at 0.0042 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0165 against 0.0162 a derivation may change (its error read as a change of size)",
-				"THIN: animal/fence-lizard does not declare `reads_density`"
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping scale 0.240, each kept piece covering 1.00x)) is 1 route(s), and the one looked at did not improve on it"
 			],
+			"peak_mb": 585.0,
 			"route": "kit",
+			"search_s": 669.5,
+			"searched": "search",
 			"surfaces": 7,
-			"surfaces_ceiling": 7,
-			"tolerance": 0.004156027648443196
+			"surfaces_ceiling": 7
 		}
 	},
 	"source": {

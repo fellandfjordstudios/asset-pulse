@@ -179,11 +179,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 16,
 				"trace": "built__dome-tent#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 26,
 				"trace": "built__dome-tent#2.trace.jsonl"
 			}
 		}
@@ -199,6 +199,53 @@
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 4960,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 14598,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00487,
+					"px_over": 2,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 22258,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00487,
+					"px_over": 7,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 31592,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				},
+				{
+					"cost": 14546,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00487,
+					"px_over": 67,
+					"route": "thin",
+					"value": 0.7
+				}
+			],
 			"checked_at": 24,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -206,11 +253,10 @@
 			"measured": {
 				"cost": 31592,
 				"coverage_rel": 0.0,
-				"floor": 0.00542,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 24239 pixel(s) differ at {} seed 314 (worst 0.58)",
 				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 20751 pixel(s) differ at {} seed 314 (worst 0.64)",
@@ -228,13 +274,45 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00397 m",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 67 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00397 m"
 			],
+			"peak_mb": 453.0,
 			"route": "rung0",
+			"search_s": 743.7,
+			"searched": "search",
 			"surfaces": 10,
 			"surfaces_ceiling": 10,
 			"tolerance": 0.0018518518518518517
 		},
 		"2": {
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "impostor",
+					"value": 24
+				},
+				{
+					"cost": 5774,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.05868,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 11076,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00591,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.3429999999999999
+				}
+			],
 			"checked_at": 24,
 			"drawn": {
 				"excess": 0.5,
@@ -248,7 +326,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -845,7 +923,18 @@
 				"cost": 5774,
 				"coverage_rel": -0.0034700000000000004,
 				"floor": 0.00542,
-				"part_shift": {},
+				"part_shift": {
+					"floor": -0.00026000000000000003,
+					"fly": 0.00046,
+					"fly_back": 0.00097,
+					"guy": 9e-05,
+					"inner": -0.0014500000000000001,
+					"mesh": -0.00023,
+					"pole": -0.00014000000000000001,
+					"seam": -0.00032,
+					"stake": -6.000000000000001e-05,
+					"zip": -0.00011
+				},
 				"picture": 0.05868
 			},
 			"measured_of": 2,
@@ -872,7 +961,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.343 held at 11076, dearer than the 5774 taken"
 			],
+			"peak_mb": 467.0,
 			"route": "kit",
+			"search_s": 4383.2,
+			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
 		}

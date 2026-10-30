@@ -130,7 +130,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 3,
 				"trace": "built__tarp-shelter#1.trace.jsonl"
 			}
 		}
@@ -145,6 +145,35 @@
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 326,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.06855,
+					"px_over": 2732,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 282,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.01178,
+					"px_over": 0,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 398,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
 			"checked_at": 17,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -152,17 +181,19 @@
 			"measured": {
 				"cost": 398,
 				"coverage_rel": 0.0,
-				"floor": 0.0053,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0040 -- the finest tried (1.000) fails at {\"span_m\":2.0} seed 314: the picture changes at the drawn size: 2732 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.88), one pixel 0.00803 m; coverage changes -0.0502 against 0.0369 allowed (a one-pixel shrink all round)",
 				"REDUCE from rung 0: none holds at 0.0040 -- the finest tried (0.700) fails at {\"packed\":1} seed 314: coverage changes -0.0166 against 0.0161 a derivation may change (its error read as a change of size)",
 				"THIN: built/tarp-shelter does not declare `reads_density`"
 			],
+			"peak_mb": 302.0,
 			"route": "rung0",
+			"search_s": 32.5,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"tolerance": 0.004

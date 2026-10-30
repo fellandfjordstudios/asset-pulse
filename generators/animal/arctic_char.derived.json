@@ -81,11 +81,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 6,
 				"trace": "animal__arctic-char#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 8,
 				"trace": "animal__arctic-char#2.trace.jsonl"
 			}
 		}
@@ -101,6 +101,26 @@
 	"rungs": {
 		"1": {
 			"budget": 31804,
+			"candidates": [
+				{
+					"cost": 7172,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.027880000000000002,
+					"px_over": 142,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 2708,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.16806999999999994
+				}
+			],
 			"checked_at": 10,
 			"drawn": {
 				"excess": 0.5,
@@ -114,9 +134,10 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.168",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
+					"child",
 					"reduce",
 					"impostor",
 					"thin",
@@ -144,15 +165,38 @@
 				"KIT: none holds at 0.0021 -- the finest tried (1.000) fails at {\"cooked\":1} seed 314: the picture changes at the drawn size: 142 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00129 m",
 				"REDUCE from rung 0 at {\"cooked\":1} seed 314: element 0's part 'body' is 123 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
+			"peak_mb": 414.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 26.0
+				"reduce": 26
 			},
+			"search_s": 448.40000000000003,
+			"searched": "search",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		},
 		"2": {
 			"budget": 7951,
+			"candidates": [
+				{
+					"cost": 2092,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.028560000000000002,
+					"px_over": 11,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 2684,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0041,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.16806999999999994
+				}
+			],
 			"checked_at": 10,
 			"drawn": {
 				"excess": 0.25,
@@ -166,9 +210,10 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.168",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
+					"child",
 					"reduce",
 					"impostor",
 					"thin",
@@ -426,7 +471,16 @@
 				"cost": 2684,
 				"coverage_rel": -0.00804,
 				"floor": 0.00398,
-				"part_shift": {},
+				"part_shift": {
+					"body": 0.00217,
+					"dark": -0.00026000000000000003,
+					"dorsal_fin": 0.00046,
+					"eye": -0.00185,
+					"fin": 0.00093,
+					"fin_edge": 0.0002,
+					"head": -0.00415,
+					"tail": 0.00042
+				},
 				"picture": 0.0041
 			},
 			"measured_of": 1,
@@ -435,10 +489,13 @@
 				"KIT at 2 pixels: none holds at 0.0085 -- the finest tried (1.000) fails at {\"cooked\":1} seed 314: the picture changes at the drawn size: 11 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00516 m",
 				"REDUCE from rung 0 at {\"cooked\":1} seed 314: element 0's part 'body' is 123 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
+			"peak_mb": 375.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 26.0
+				"reduce": 26
 			},
+			"search_s": 971.7,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}

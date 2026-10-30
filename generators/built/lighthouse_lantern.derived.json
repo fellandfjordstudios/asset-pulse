@@ -46,15 +46,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 3,
 				"trace": "built__lighthouse-lantern#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "built__lighthouse-lantern#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__lighthouse-lantern#3.trace.jsonl"
 			}
 		}
@@ -65,12 +65,32 @@
 	},
 	"replay": {
 		"1": "ed4c044ec688cb6aa5cdc0ee4775fae5cd90fca292809056aa68480b95f2535f",
-		"2": "232a330ebd58e519ed6beb2d21dc694cc9b0054124fe105fbc745837a85af96e",
-		"3": "49b5be0775c1d5fadbc48efb544539ed47518420544ad5b333faead6a29a136f"
+		"2": "9df440fe3816f49a37a2bc7c6746150385b83f1ed67364a87d44605a170f8a66",
+		"3": "232a330ebd58e519ed6beb2d21dc694cc9b0054124fe105fbc745837a85af96e"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 770,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00423,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 798,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00423,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.0,
@@ -81,23 +101,64 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
 				"cost": 770,
 				"coverage_rel": 0.0,
 				"floor": 0.00423,
-				"part_shift": {},
+				"part_shift": {
+					"lantern_glass": 1e-05,
+					"red_iron": -1e-05
+				},
 				"picture": 0.00423
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'red_iron' is 12 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
+				"REDUCE (every piece) to 0.700 held at 798, dearer than the 770 taken"
 			],
+			"peak_mb": 421.0,
 			"route": "kit",
+			"search_s": 121.5,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
 		"2": {
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 377,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00423,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 366,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00559,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.24009999999999992
+				}
+			],
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.0625,
@@ -108,6 +169,215 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at 2 of the band's pixels)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
+			"material_transfer": {
+				"checked_at": 5,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.27702274918556213,
+							0.08507797122001648,
+							0.0990135595202446
+						],
+						"mean_before": [
+							0.27702274918556213,
+							0.08507797122001648,
+							0.0990135595202446
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.003277711570262909,
+							0.00409126840531826,
+							0.00446681585162878
+						],
+						"variance_before": [
+							0.003277711570262909,
+							0.00409126840531826,
+							0.00446681585162878
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.27702197432518005,
+							0.08507852256298065,
+							0.09901394695043564
+						],
+						"mean_before": [
+							0.27702197432518005,
+							0.08507852256298065,
+							0.09901394695043564
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0032776817679405212,
+							0.004091249313205481,
+							0.0044668493792414665
+						],
+						"variance_before": [
+							0.0032776817679405212,
+							0.004091249313205481,
+							0.0044668493792414665
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.2770223617553711,
+							0.08507882803678513,
+							0.09901406615972519
+						],
+						"mean_before": [
+							0.2770223617553711,
+							0.08507882803678513,
+							0.09901406615972519
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.003277793526649475,
+							0.004091281909495592,
+							0.004466916434466839
+						],
+						"variance_before": [
+							0.003277793526649475,
+							0.004091281909495592,
+							0.004466916434466839
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.2766561508178711,
+							0.08548735827207565,
+							0.09944125264883041
+						],
+						"mean_before": [
+							0.2766561508178711,
+							0.08548735827207565,
+							0.09944125264883041
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0032957643270492554,
+							0.004113664850592613,
+							0.0044912900775671005
+						],
+						"variance_before": [
+							0.0032957643270492554,
+							0.004113664850592613,
+							0.0044912900775671005
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.27764615416526794,
+							0.08438241481781006,
+							0.09828661382198334
+						],
+						"mean_before": [
+							0.27764615416526794,
+							0.08438241481781006,
+							0.09828661382198334
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0032461509108543396,
+							0.004052415024489164,
+							0.004424424842000008
+						],
+						"variance_before": [
+							0.0032461509108543396,
+							0.004052415024489164,
+							0.004424424842000008
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 502,
+				"coverage_rel": -0.00012000000000000002,
+				"floor": 0.00423,
+				"part_shift": {
+					"lantern_glass": 7.000000000000001e-05,
+					"red_iron": -7.000000000000001e-05
+				},
+				"picture": 0.00423
+			},
+			"measured_of": 3,
+			"not_taken": [
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'red_iron' is 12 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels)) is 1 route(s)",
+				"KIT (its own build at 2 of the band's pixels) held at 377, cheaper than the 502 taken, but a replay of rung 0: KIT is within budget and builds directly",
+				"REDUCE (every piece) to 0.240 held at 366, cheaper than the 502 taken, but a replay of rung 0: KIT is within budget and builds directly"
+			],
+			"peak_mb": 247.0,
+			"route": "kit",
+			"search_s": 97.7,
+			"searched": "search",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		},
+		"3": {
+			"budget": 2444,
+			"candidates": [
+				{
+					"cost": 255,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.015510000000000001,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 194,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.021120000000000003,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.11764899999999995
+				}
+			],
+			"checked_at": 5,
+			"drawn": {
+				"excess": 0.0,
+				"judge": "drawn",
+				"pixel_m": 0.101128
+			},
+			"error": 0.02962962962962963,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at 4 of the band's pixels)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"material_transfer": {
 				"checked_at": 5,
 				"checks": [
@@ -239,172 +509,23 @@
 				"cost": 377,
 				"coverage_rel": -0.0004900000000000001,
 				"floor": 0.00423,
-				"part_shift": {},
+				"part_shift": {
+					"lantern_glass": 0.00031,
+					"red_iron": -0.00031
+				},
 				"picture": 0.00423
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)",
-				"KIT (its own build at the rung's pixel) held at 502, dearer than the 377 taken"
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'red_iron' is 12 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 4 of the band's pixels)) is 1 route(s)",
+				"KIT (its own build at 4 of the band's pixels) held at 255, cheaper than the 377 taken, but a replay of rung 0: KIT is within budget and builds directly",
+				"REDUCE (every piece) to 0.118 held at 194, cheaper than the 377 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"pixel_scale": 2.0,
+			"peak_mb": 247.0,
 			"route": "kit",
-			"surfaces": 1,
-			"surfaces_ceiling": 1
-		},
-		"3": {
-			"budget": 2444,
-			"checked_at": 5,
-			"drawn": {
-				"excess": 0.0,
-				"judge": "drawn",
-				"pixel_m": 0.101128
-			},
-			"error": 0.02962962962962963,
-			"fraction": 1.0,
-			"from_rung": 0,
-			"keep": {},
-			"material_transfer": {
-				"checked_at": 5,
-				"checks": [
-					{
-						"holds": true,
-						"mean_after": [
-							0.27669230103492737,
-							0.08544725924730301,
-							0.09939932078123093
-						],
-						"mean_before": [
-							0.27669230103492737,
-							0.08544725924730301,
-							0.09939932078123093
-						],
-						"spatial_rms": 0.0,
-						"variance_after": [
-							0.00329376757144928,
-							0.004111491609364748,
-							0.00448891706764698
-						],
-						"variance_before": [
-							0.00329376757144928,
-							0.004111491609364748,
-							0.00448891706764698
-						]
-					},
-					{
-						"holds": true,
-						"mean_after": [
-							0.2766913175582886,
-							0.08544739335775375,
-							0.09939932078123093
-						],
-						"mean_before": [
-							0.2766913175582886,
-							0.08544739335775375,
-							0.09939932078123093
-						],
-						"spatial_rms": 0.0,
-						"variance_after": [
-							0.0032940879464149475,
-							0.0041114566847682,
-							0.004488917998969555
-						],
-						"variance_before": [
-							0.0032940879464149475,
-							0.0041114566847682,
-							0.004488917998969555
-						]
-					},
-					{
-						"holds": true,
-						"mean_after": [
-							0.27669215202331543,
-							0.08544736355543137,
-							0.09939925372600555
-						],
-						"mean_before": [
-							0.27669215202331543,
-							0.08544736355543137,
-							0.09939925372600555
-						],
-						"spatial_rms": 0.0,
-						"variance_after": [
-							0.0032939985394477844,
-							0.004111466463655233,
-							0.004488939419388771
-						],
-						"variance_before": [
-							0.0032939985394477844,
-							0.004111466463655233,
-							0.004488939419388771
-						]
-					},
-					{
-						"holds": true,
-						"mean_after": [
-							0.2763299345970154,
-							0.08585193008184433,
-							0.09982211142778397
-						],
-						"mean_before": [
-							0.2763299345970154,
-							0.08585193008184433,
-							0.09982211142778397
-						],
-						"spatial_rms": 0.0,
-						"variance_after": [
-							0.0033113211393356323,
-							0.0041333287954330444,
-							0.004512772895395756
-						],
-						"variance_before": [
-							0.0033113211393356323,
-							0.0041333287954330444,
-							0.004512772895395756
-						]
-					},
-					{
-						"holds": true,
-						"mean_after": [
-							0.2773187756538391,
-							0.08474776893854141,
-							0.09866835176944733
-						],
-						"mean_before": [
-							0.2773187756538391,
-							0.08474776893854141,
-							0.09866835176944733
-						],
-						"spatial_rms": 0.0,
-						"variance_after": [
-							0.003262743353843689,
-							0.004072930198162794,
-							0.004446825012564659
-						],
-						"variance_before": [
-							0.003262743353843689,
-							0.004072930198162794,
-							0.004446825012564659
-						]
-					}
-				],
-				"holds": true
-			},
-			"materials": "merged",
-			"measured": {
-				"cost": 255,
-				"coverage_rel": 0.0004,
-				"floor": 0.00423,
-				"part_shift": {},
-				"picture": 0.015510000000000001
-			},
-			"measured_of": 2,
-			"not_taken": [
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)",
-				"KIT (its own build at the rung's pixel) held at 377, dearer than the 255 taken"
-			],
-			"pixel_scale": 4.0,
-			"route": "kit",
+			"search_s": 75.60000000000001,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}

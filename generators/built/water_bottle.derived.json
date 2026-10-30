@@ -46,7 +46,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "built__water-bottle#1.trace.jsonl"
 			}
 		}
@@ -61,10 +61,32 @@
 	"rungs": {
 		"1": {
 			"budget": 3861,
+			"candidates": [
+				{
+					"cost": 2030,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0046300000000000004,
+					"px_over": null,
+					"route": "kit",
+					"value": {
+						"cap_rib": 0.48999999999999994
+					}
+				},
+				{
+					"cost": 2422,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00413,
+					"px_over": 1,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.5,
-				"gap": 0.472,
+				"gap": 0.47200000000000003,
 				"judge": "drawn",
 				"pixel_m": 0.001297
 			},
@@ -77,11 +99,13 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping cap_rib 0.490)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
-					"reduce",
+					"child",
 					"impostor",
+					"reduce",
+					"merged",
 					"thin"
 				]
 			},
@@ -96,9 +120,12 @@
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 4's part 'print' is 113 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE (every piece) from rung 0: none holds at 0.0059 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00130 m",
-				"IMPOSTOR, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping cap_rib 0.490)) is 1 route(s), and the one looked at did not improve on it"
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping cap_rib 0.490)) is 1 route(s), and the one looked at did not improve on it"
 			],
+			"peak_mb": 268.0,
 			"route": "kit",
+			"search_s": 82.5,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		}

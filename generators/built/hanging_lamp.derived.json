@@ -18,11 +18,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 13,
 				"trace": "built__hanging-lamp#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 21,
 				"trace": "built__hanging-lamp#2.trace.jsonl"
 			}
 		}
@@ -38,6 +38,35 @@
 	"rungs": {
 		"1": {
 			"budget": 26371,
+			"candidates": [
+				{
+					"cost": 6416,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": 2,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 5420,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.007970000000000001,
+					"px_over": 106,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 8686,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
 			"checked_at": 1,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -45,41 +74,65 @@
 			"measured": {
 				"cost": 8686,
 				"coverage_rel": 0.0,
-				"floor": 0.00398,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
+				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
 				"KIT: none holds at 0.0022 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00129 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 89 pixel(s) differ at the drawn size at {} seed 314 (worst 0.89)",
 				"REDUCE from rung 0 at {} seed 314: element 2's part 'brass' is 103 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"REDUCE (every piece) from rung 0: none holds at 0.0022 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 106 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00129 m",
 				"THIN: built/hanging-lamp does not declare `reads_density`"
 			],
+			"peak_mb": 261.0,
 			"route": "rung0",
+			"search_s": 89.30000000000001,
+			"searched": "search",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"tolerance": 0.0022462184077885116
 		},
 		"2": {
 			"budget": 6592,
+			"candidates": [
+				{
+					"cost": 4248,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0053100000000000005,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 1996,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.01195,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.24009999999999992
+				}
+			],
 			"checked_at": 1,
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
-				"pixel_m": 0.005187
+				"pixel_m": 0.005166
 			},
 			"error": 0.008984873631154047,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
 			"look_past": {
-				"beaten": false,
+				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
+					"child",
 					"impostor",
 					"reduce",
 					"merged",
@@ -121,16 +174,30 @@
 				"cost": 4248,
 				"coverage_rel": -0.01667,
 				"floor": 0.00398,
-				"part_shift": {},
+				"part_shift": {
+					"brass": -0.00036,
+					"chimney": -0.00133,
+					"enamel": 0.004710000000000001,
+					"iron": -0.00034,
+					"rim": -0.00021,
+					"wick": -0.00017,
+					"wick_tip": 0.0
+				},
 				"picture": 0.0053100000000000005
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
+				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
 				"KIT at 2 pixels: none holds at 0.0090 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0322 against 0.0258 a derivation may change (its error read as a change of size)",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 4 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
-				"REDUCE, MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+				"REDUCE from rung 0 at {} seed 314: element 2's part 'brass' is 103 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"REDUCE (every piece) to 0.240 held at 1996, cheaper than the 4248 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
+			"peak_mb": 235.0,
 			"route": "kit",
+			"search_s": 128.20000000000002,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}

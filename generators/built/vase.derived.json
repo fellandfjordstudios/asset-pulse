@@ -53,11 +53,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 3,
 				"trace": "built__vase#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__vase#2.trace.jsonl"
 			}
 		}
@@ -73,6 +73,35 @@
 	"rungs": {
 		"1": {
 			"budget": 10283,
+			"candidates": [
+				{
+					"cost": 1352,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00489,
+					"px_over": 1,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 1370,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00404,
+					"px_over": 3,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 1876,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
 			"checked_at": 6,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -80,28 +109,50 @@
 			"measured": {
 				"cost": 1876,
 				"coverage_rel": 0.0,
-				"floor": 0.00404,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0036 -- the finest tried (1.000) fails at {\"height_m\":0.2} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.81), one pixel 0.00072 m",
 				"REDUCE from rung 0: none holds at 0.0036 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00129 m",
 				"THIN: built/vase does not declare `reads_density`"
 			],
+			"peak_mb": 264.0,
 			"route": "rung0",
+			"search_s": 22.900000000000002,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"tolerance": 0.0036018906286507703
 		},
 		"2": {
 			"budget": 2570,
+			"candidates": [
+				{
+					"cost": 760,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.01793,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 668,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.01391,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.16806999999999994
+				}
+			],
 			"checked_at": 6,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
-				"pixel_m": 0.005187
+				"pixel_m": 0.005173
 			},
 			"error": 0.014407562514603081,
 			"fraction": 1.0,
@@ -110,7 +161,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -275,7 +326,12 @@
 				"cost": 988,
 				"coverage_rel": -0.01429,
 				"floor": 0.00404,
-				"part_shift": {},
+				"part_shift": {
+					"bouquet": 0.0018800000000000002,
+					"glaze": 0.00303,
+					"leaf_band": -0.0009000000000000001,
+					"trim": -0.0034400000000000003
+				},
 				"picture": 0.01059
 			},
 			"measured_of": 3,
@@ -284,7 +340,10 @@
 				"KIT (its own build at 2 of the band's pixels) held at 760, cheaper than the 988 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"REDUCE to 0.168 held at 668, cheaper than the 988 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
+			"peak_mb": 244.0,
 			"route": "kit",
+			"search_s": 93.7,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
