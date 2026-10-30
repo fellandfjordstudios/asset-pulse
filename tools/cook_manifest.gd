@@ -19,6 +19,16 @@
 ## the library's own two functions, so this stops leaving it out once
 ## `registry_for` follows a style's bindings.
 ##
+## LEFT OUT TOO, BY NAME, while this runner has no shape library: a target
+## whose generator, or a generator it reaches, builds from the library's
+## private body pack (`AgShapeLibrary`, fetched by its `tools/shape-library.sh
+## fetch` with the references bucket's credentials, which this repository's
+## runner does not hold). Such a generator asserts in `prepare`, its bake
+## returns nothing and the cook stops whole (animal-human and
+## built-fisherman-trousers, runs 34 and 36). The test is
+## `AgShapeLibrary.open_default()`'s own problems, so they come back the run
+## the pack is there.
+##
 ##   godot --headless --path library --script tools/cook_manifest.gd -- <out.json> <explorer dir>
 extends SceneTree
 
@@ -32,6 +42,7 @@ func _init():
 		return
 	var reg := AgLibrary.registry()
 	var planner = load(args[1] + "/tools/bake-library.gd")
+	var no_pack: Array = AgShapeLibrary.open_default()["problems"]
 	var subjects := []
 	var left_out := 0
 	for spec in planner.plan(reg, planner.upstream_targets()):
@@ -45,6 +56,13 @@ func _init():
 				left_out += 1
 				print("cook manifest: LEFT OUT %s: its style %s binds %s, which the cook's per-item registry (AgLibrary.registry_for) does not load, so its worker would fail the whole cook (filed in the library's feedback/); the catalog serves its last good build"
 					% [id.replace("/", "-") + ("-" + tag if tag != "" else ""), style.name, ", ".join(PackedStringArray(unreached))])
+				continue
+		if not no_pack.is_empty():
+			var bodies := AgLibrary.registry_for([id]).ids().filter(func(g): return reads_body(String(g)))
+			if not bodies.is_empty():
+				left_out += 1
+				print("cook manifest: LEFT OUT %s: %s builds from the shape library, which this runner does not hold (%s); the catalog serves its last good build"
+					% [id.replace("/", "-") + ("-" + tag if tag != "" else ""), ", ".join(PackedStringArray(bodies)), String(no_pack[0])])
 				continue
 		var v := {"seed": int(spec.get("seed", planner.DEFAULT_SEED)), "params": spec.get("params", {})}
 		if tag != "":
@@ -69,3 +87,9 @@ func _init():
 	f.close()
 	print("cook manifest: %d subject(s), %d left out, target %s, at %s" % [subjects.size(), left_out, TARGET, args[0]])
 	quit()
+
+
+## Whether generator `id`'s own script reads the body pack.
+static func reads_body(id: String) -> bool:
+	var src := FileAccess.get_file_as_string(AgLibrary.script_for(id))
+	return src.contains("AgShapeLibrary") or src.contains("AgShapeBody")
