@@ -107,15 +107,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 15,
+				"candidates": 0,
 				"trace": "plant__rowan-corymb#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 26,
+				"candidates": 0,
 				"trace": "plant__rowan-corymb#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 29,
+				"candidates": 0,
 				"trace": "plant__rowan-corymb#3.trace.jsonl"
 			}
 		}
@@ -135,20 +135,20 @@
 			"budget": 2259,
 			"candidates": [
 				{
-					"cost": 3758,
+					"cost": 3758.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00436,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 3644,
+					"cost": 3322,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004070000000000001,
-					"px_over": 1,
+					"picture": 0.007640000000000001,
+					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -181,13 +181,13 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0053 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00073 m",
 				"THIN: plant/rowan-corymb does not declare `reads_density`"
 			],
-			"peak_mb": 277.0,
+			"peak_mb": 269.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 71
+				"reduce": 71.0
 			},
-			"search_s": 168.8,
-			"searched": "search",
+			"search_s": 68.5,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"tolerance": 0.005329357402549172
@@ -197,22 +197,22 @@
 			"budget": 564,
 			"candidates": [
 				{
-					"cost": 1010,
+					"cost": 1010.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.014,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 3322,
+					"cost": 804,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.007640000000000001,
-					"px_over": 0,
+					"picture": 0.05691,
+					"px_over": null,
 					"route": "reduce",
-					"value": 0.7
+					"value": 0.16806999999999994
 				}
 			],
 			"checked_at": 14,
@@ -590,10 +590,10 @@
 			"peak_mb": 271.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 71
+				"reduce": 71.0
 			},
-			"search_s": 194.4,
-			"searched": "search",
+			"search_s": 55.800000000000004,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.021317429610196687
@@ -606,16 +606,18 @@
 					"cost": 206,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.26177,
-					"px_over": 1,
+					"picture": 0.47077,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
+					"value": {
+						"pome": 0.04035360699999998
+					}
 				},
 				{
-					"cost": 2292,
+					"cost": 2292.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.018590000000000002,
+					"picture": 0.01859,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.48999999999999994
@@ -994,17 +996,17 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'ray' is 80 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"BUDGET: the cheapest derivation that holds the picture costs 2292 (16.26x), over rung 3's budget 141 x 1.5 = 211 (flower, 0.14 m)"
 			],
-			"peak_mb": 285.0,
+			"peak_mb": 271.0,
 			"route": "kit",
-			"search_s": 226.5,
-			"searched": "search",
+			"search_s": 50.400000000000006,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.08526971844078675
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "a45360e80896a74d075e834f3a1edfa440d03eb431545b8e68b57e256a87af91"
 	}
 }

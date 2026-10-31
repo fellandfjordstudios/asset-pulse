@@ -127,9 +127,9 @@
 				"REDUCE from rung 0: none holds at 0.0026 -- the finest tried (0.700) fails at {\"fullness\":0.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00109 m",
 				"THIN: built/rucksack does not declare `reads_density`"
 			],
-			"peak_mb": 248.0,
+			"peak_mb": 247.0,
 			"route": "rung0",
-			"search_s": 24.3,
+			"search_s": 29.1,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -360,9 +360,9 @@
 				"REDUCE from rung 0: none holds at 0.0030 -- the finest tried (0.700) fails at {\"fullness\":0.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00124 m",
 				"THIN: built/rucksack does not declare `reads_density`"
 			],
-			"peak_mb": 251.0,
+			"peak_mb": 250.0,
 			"route": "rung0",
-			"search_s": 125.80000000000001,
+			"search_s": 142.20000000000002,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -370,7 +370,7 @@
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "e8ea911638e6385629497bd8c202c1d4236927809706371d13e0d8372ad4368b"
 	}
 }

@@ -25,11 +25,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 4,
+				"candidates": 1,
 				"trace": "built__mess-kit#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 7,
+				"candidates": 6,
 				"trace": "built__mess-kit#2.trace.jsonl"
 			}
 		}
@@ -40,18 +40,18 @@
 	},
 	"replay": {
 		"1": "ad95781df1d2c815eaa0b246f3f47f757e86b0b9f6c0a74910ff23b7efa01129",
-		"2": "bf5bcce0d04cb72f993585604c160a91fa232823b668f0ce0ddb1b6b62b944dc"
+		"2": "fa56bcd9e25df2d7f1755d28404d7f5f0fd0283fc95c2994cb6b8940eeaf4390"
 	},
 	"rungs": {
 		"1": {
 			"budget": 3152,
 			"candidates": [
 				{
-					"cost": 1744,
+					"cost": 1744.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -77,7 +77,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -110,14 +110,14 @@
 			],
 			"peak_mb": 260.0,
 			"route": "merged",
-			"search_s": 22.8,
-			"searched": "search",
+			"search_s": 21.5,
+			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		},
 		"2": {
 			"budget": 788,
-			"budget_reason": "the cheapest derivation that holds the picture costs 1782, 2.26x rung 2's budget 788: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"budget_reason": "the cheapest derivation that holds the picture costs 2550, 3.24x rung 2's budget 788: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"candidates": [
 				{
 					"cost": 1050,
@@ -129,24 +129,23 @@
 					"value": 1.0
 				},
 				{
-					"cost": 1782,
+					"cost": 2550,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.007970000000000001,
+					"picture": 0.0,
 					"px_over": null,
 					"route": "merged",
-					"value": 0.7
+					"value": 1.0
 				}
 			],
 			"checked_at": 2,
 			"drawn": {
-				"excess": 0.4375,
+				"excess": 0.0,
 				"judge": "drawn",
 				"pixel_m": 0.005174
 			},
 			"error": 0.014990527471841358,
-			"every_piece": true,
-			"fraction": 0.7,
+			"fraction": 1.0,
 			"from_rung": 0,
 			"material_transfer": {
 				"checked_at": 2,
@@ -154,49 +153,49 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.088555708527565,
-							0.08919657766819,
-							0.09143545478582382
+							0.0918164998292923,
+							0.09245232492685318,
+							0.09447044134140015
 						],
 						"mean_before": [
-							0.088555708527565,
-							0.08919657766819,
-							0.09143545478582382
+							0.0918164998292923,
+							0.09245232492685318,
+							0.09447044134140015
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.01928936317563057,
-							0.01926521584391594,
-							0.018111292272806168
+							0.020264551043510437,
+							0.020267212763428688,
+							0.019050240516662598
 						],
 						"variance_before": [
-							0.01928936317563057,
-							0.01926521584391594,
-							0.018111292272806168
+							0.020264551043510437,
+							0.020267212763428688,
+							0.019050240516662598
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.0886264219880104,
-							0.08926723152399063,
-							0.0915045365691185
+							0.0918164849281311,
+							0.09245231747627258,
+							0.09447044134140015
 						],
 						"mean_before": [
-							0.0886264219880104,
-							0.08926723152399063,
-							0.0915045365691185
+							0.0918164849281311,
+							0.09245231747627258,
+							0.09447044134140015
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.019326625391840935,
-							0.019302386790513992,
-							0.018146900460124016
+							0.02026454731822014,
+							0.020267212763428688,
+							0.019050244241952896
 						],
 						"variance_before": [
-							0.019326625391840935,
-							0.019302386790513992,
-							0.018146900460124016
+							0.02026454731822014,
+							0.020267212763428688,
+							0.019050244241952896
 						]
 					}
 				],
@@ -204,20 +203,20 @@
 			},
 			"materials": "merged",
 			"measured": {
-				"cost": 1782,
-				"coverage_rel": -0.01685,
+				"cost": 2550,
+				"coverage_rel": 0.0,
 				"floor": 0.00447,
 				"part_shift": {
-					"abrasion": 0.00219,
-					"aluminium": 0.006520000000000001,
-					"clip": -0.0001,
-					"edge": 3.0000000000000004e-05,
-					"plastic": 0.00286,
-					"rim": -0.0022500000000000003,
-					"titanium": -0.00578,
-					"wire": -0.0031300000000000004
+					"abrasion": 0.0,
+					"aluminium": 0.0,
+					"clip": 0.0,
+					"edge": 0.0,
+					"plastic": 0.0,
+					"rim": 0.0,
+					"titanium": 0.0,
+					"wire": 0.0
 				},
-				"picture": 0.007970000000000001
+				"picture": 0.0
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -227,18 +226,15 @@
 			],
 			"peak_mb": 237.0,
 			"route": "merged",
-			"routes": {
-				"reduce": 8
-			},
-			"search_s": 44.6,
+			"search_s": 93.9,
 			"searched": "search",
-			"surfaces": 2,
+			"surfaces": 6,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"children": "a1322c8388a79e1c57fc17939594eb559199a36b60dd1ef26aad001a7de53b07",
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "105adbe15cea395c7bb3bdc7ac45d699df5c16cfd6ad51f410be908fed6d3748"
 	}
 }

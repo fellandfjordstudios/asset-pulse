@@ -83,14 +83,14 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "a306e947b3c0106e6fba45e0e5708529e16ab8c49cf204a3f1a8d5916c8eb0b7",
+		"1": "cc27a14c72a5add65b92869a74c1dbb8c5bdfe5efbfda3f464acc6d179eec697",
 		"2": "2c82eee0cbd2448416308b285ae695c1a16f52ea94842105f377c930b910e94e",
 		"3": "1c79ee1beb352ad9b02c3bb89380366b5182abd9f7b22c48095944efb44aaa8b"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
-			"budget_reason": "the cheapest derivation that holds the picture costs 58676, 1.50x rung 1's budget 39117: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 94582,
@@ -102,7 +102,7 @@
 					"value": 1.0
 				},
 				{
-					"cost": 58676,
+					"cost": 58626,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004050000000000001,
@@ -120,8 +120,21 @@
 			"error": 0.001851851851851852,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.490",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
-				"cost": 58676,
+				"cost": 58626,
 				"coverage_rel": -0.0036600000000000005,
 				"floor": 0.004050000000000001,
 				"part_shift": {
@@ -139,12 +152,12 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00177 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 1 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)"
 			],
-			"peak_mb": 932.0,
+			"peak_mb": 938.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9242
 			},
-			"search_s": 1452.9,
+			"search_s": 1648.1000000000001,
 			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
@@ -424,9 +437,9 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fuzz 0.031, stitch 0.031, each kept piece covering 1.00x)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.240 held at 38120, dearer than the 9996 taken"
 			],
-			"peak_mb": 722.0,
+			"peak_mb": 813.0,
 			"route": "kit",
-			"search_s": 2575.5,
+			"search_s": 2531.7000000000003,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -486,9 +499,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 722.0,
+			"peak_mb": 723.0,
 			"route": "impostor",
-			"search_s": 177.4,
+			"search_s": 201.10000000000002,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -497,7 +510,7 @@
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "1f697607ff034744c074f174271d915313627a8e3c759c20e861ec6ad7abafbf"
 	}
 }

@@ -243,9 +243,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"beam_m\":3.8} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00607 m",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 347.0,
+			"peak_mb": 348.0,
 			"route": "kit",
-			"search_s": 537.9,
+			"search_s": 643.4000000000001,
 			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -787,14 +787,14 @@
 			"peak_mb": 282.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 1375.0,
+			"search_s": 1422.9,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "bce0c6980e3c126862e257a722cff9c60d9fe208d003dca3fb4ceb1ed05abd18"
 	}
 }

@@ -86,7 +86,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 3,
+				"candidates": 0,
 				"trace": "plant__birch-stem#1.trace.jsonl"
 			}
 		}
@@ -112,11 +112,11 @@
 					"value": {}
 				},
 				{
-					"cost": 146,
+					"cost": 146.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.15162,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -134,7 +134,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -156,16 +156,16 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"basal_diameter_m\":0.002} seed 314: coverage changes -0.0442 against 0.0232 allowed (a one-pixel shrink all round)",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 516.0,
+			"peak_mb": 298.0,
 			"route": "kit",
-			"search_s": 78.7,
-			"searched": "search",
+			"search_s": 66.3,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "7b2f9892885f1d6ce850ad90dd83b1c37f88105e6ff6a8a8e61289666f287f54"
 	}
 }

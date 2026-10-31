@@ -149,7 +149,7 @@
 			],
 			"peak_mb": 258.0,
 			"route": "rung0",
-			"search_s": 38.0,
+			"search_s": 46.800000000000004,
 			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11,
@@ -466,17 +466,17 @@
 				"KIT (its own build at the rung's pixel, keeping nail 0.240) held at 2593, dearer than the 1413 taken",
 				"REDUCE (every piece) to 0.343 held at 2414, dearer than the 1413 taken"
 			],
-			"peak_mb": 261.0,
+			"peak_mb": 260.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 222.60000000000002,
+			"search_s": 245.3,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "cd8080fd8c3188d9c55b89b2c442c34707d9989f932e742334f2158ffb8bc874"
 	}
 }

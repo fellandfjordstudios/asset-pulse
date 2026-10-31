@@ -162,7 +162,7 @@
 				"trace": "plant__agave-leaf#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 12,
+				"candidates": 0,
 				"trace": "plant__agave-leaf#2.trace.jsonl"
 			}
 		}
@@ -215,9 +215,9 @@
 				"order": [
 					"kit",
 					"child",
+					"impostor",
 					"reduce",
 					"thin",
-					"impostor",
 					"merged"
 				]
 			},
@@ -237,9 +237,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0045 -- the finest tried (0.700) fails at {\"length_m\":0.3} seed 314: coverage changes -0.0218 against 0.0169 a derivation may change (its error read as a change of size)",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 468.0,
+			"peak_mb": 469.0,
 			"route": "kit",
-			"search_s": 591.3000000000001,
+			"search_s": 691.1,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -255,11 +255,11 @@
 					"px_over": null,
 					"route": "kit",
 					"value": {
-						"tooth": 0.11764899999999995
+						"tooth": 0.11764899999999996
 					}
 				},
 				{
-					"cost": 2128,
+					"cost": 2128.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -271,7 +271,7 @@
 			"checked_at": 21,
 			"drawn": {
 				"excess": 0.5,
-				"gap": 0.013000000000000001,
+				"gap": 0.013,
 				"judge": "drawn",
 				"pixel_m": 0.013835
 			},
@@ -279,12 +279,12 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {
-				"tooth": 0.11764899999999995
+				"tooth": 0.11764899999999996
 			},
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping tooth 0.118)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -818,16 +818,16 @@
 				"KIT (its own build at 2 of the band's pixels, keeping tooth 0.118) held at 238, the same cost as the route taken, found first",
 				"REDUCE (every piece) to 0.700 held at 2128, dearer than the 238 taken"
 			],
-			"peak_mb": 342.0,
+			"peak_mb": 343.0,
 			"route": "kit",
-			"search_s": 423.3,
-			"searched": "search",
+			"search_s": 159.3,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "a898c517f1342624fbba8abe4e96fefd9da86d9016484f9e358526825d2b6234"
 	}
 }

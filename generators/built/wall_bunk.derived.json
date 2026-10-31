@@ -146,7 +146,7 @@
 			],
 			"peak_mb": 302.0,
 			"route": "kit",
-			"search_s": 156.60000000000002,
+			"search_s": 194.70000000000002,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
@@ -346,7 +346,7 @@
 			],
 			"peak_mb": 255.0,
 			"route": "kit",
-			"search_s": 497.5,
+			"search_s": 550.2,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
@@ -408,7 +408,7 @@
 			],
 			"peak_mb": 255.0,
 			"route": "impostor",
-			"search_s": 21.200000000000003,
+			"search_s": 26.900000000000002,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -417,7 +417,7 @@
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "8f062aa0da8cc7c6e3e0c898560a4a9c671f6018a72656093f1181b1e4bbb115"
 	}
 }

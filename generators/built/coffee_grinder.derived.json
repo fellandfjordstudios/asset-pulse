@@ -23,7 +23,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 15,
 				"trace": "built__coffee-grinder#1.trace.jsonl"
 			},
 			"2": {
@@ -45,29 +45,29 @@
 			"budget": 21573,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 3376.0,
+					"px_over": 3376,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
-					"cost": 7438.0,
+					"cost": 7438,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 7.0,
+					"px_over": 7,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 7802.0,
+					"cost": 7802,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 22.0,
+					"px_over": 22,
 					"route": "reduce",
 					"value": 0.7
 				},
@@ -88,11 +88,10 @@
 			"measured": {
 				"cost": 11110,
 				"coverage_rel": 0.0,
-				"floor": 0.00412,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 20819 pixel(s) differ at {} seed 314 (worst 0.65)",
 				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 24361 pixel(s) differ at {} seed 314 (worst 0.59)",
@@ -111,10 +110,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0025 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 22 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00130 m",
 				"THIN: built/coffee-grinder does not declare `reads_density`"
 			],
-			"peak_mb": 237.0,
+			"peak_mb": 262.0,
 			"route": "rung0",
-			"search_s": 12.200000000000001,
-			"searched": "recheck",
+			"search_s": 274.3,
+			"searched": "search",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"tolerance": 0.0024936165890659177
@@ -145,12 +144,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 3,
 					"route": "impostor",
-					"value": 32
+					"value": 24
 				}
 			],
 			"checked_at": 2,
@@ -174,17 +173,17 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 239.0,
+			"peak_mb": 240.0,
 			"route": "impostor",
-			"search_s": 132.9,
-			"searched": "recheck",
+			"search_s": 160.8,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 32
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
-		"generator": "bbd706d5d5f6cfaa4eebd776e061abcfc02aeecde27d0df339ed8ea1d3cea0c3"
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
+		"generator": "a0b33d5d846fccd53a4e436afe76684062b8fee7a5898c04752870cecb4c1d88"
 	}
 }

@@ -32,7 +32,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 19,
 				"trace": "built__primus-stove#1.trace.jsonl"
 			}
 		}
@@ -47,21 +47,22 @@
 	"rungs": {
 		"1": {
 			"budget": 3971,
+			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 115.0,
+					"px_over": 115,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
-					"cost": 6914.0,
+					"cost": 6914,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00463,
+					"picture": 0.0046300000000000004,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
@@ -89,12 +90,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.168",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -130,19 +131,19 @@
 				"REDUCE from rung 0 at {} seed 314: element 60's part 'brass' is 17 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"KIT (its own build at the rung's pixel) held at 6914, dearer than the 3526 taken"
 			],
-			"peak_mb": 253.0,
+			"peak_mb": 255.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 18.0
+				"reduce": 18
 			},
-			"search_s": 35.6,
-			"searched": "recheck",
+			"search_s": 248.4,
+			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
-		"generator": "d06b9d6905fe4003f2eee9acee5870ecf3fa96ae3ad31a30359a53fc2d0a8845"
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
+		"generator": "cf18acb83a2ec55a7b7ef8ae9e784d50c7fd22e44d7fc5ae670e3914d13e4dd8"
 	}
 }

@@ -39,15 +39,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 0,
 				"trace": "built__supply-depot-bundle#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 8,
+				"candidates": 0,
 				"trace": "built__supply-depot-bundle#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 8,
+				"candidates": 0,
 				"trace": "built__supply-depot-bundle#3.trace.jsonl"
 			}
 		}
@@ -58,8 +58,8 @@
 	},
 	"replay": {
 		"1": "ce19e5fee09f103a49ad64b2030fab350994969dc083927cad7affa101ff8d35",
-		"2": "ed0d35e590fa6e3ca69f7488053a429cc986f325ca9324c391cf943da014aa4b",
-		"3": "abb018f145dddd6288594fa78ef9051366b39839680387d81ff6bc1067af5ee5"
+		"2": "48dafdc633ad226e7c4ba268ba88ec279a9de9692a505db77ab7f2ca5adc2fbe",
+		"3": "5fb5a225e1207416f2f9bf87a473e3abc75e988a614c2b1367b175435b83ebb3"
 	},
 	"rungs": {
 		"1": {
@@ -75,13 +75,13 @@
 					"value": {}
 				},
 				{
-					"cost": 4092,
+					"cost": 4092.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0044,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.11764899999999995
+					"value": 0.11764899999999996
 				}
 			],
 			"checked_at": 4,
@@ -97,7 +97,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -111,11 +111,7 @@
 				"cost": 24258,
 				"coverage_rel": -0.00038,
 				"floor": 0.0044,
-				"part_shift": {
-					"bundle": 0.00011,
-					"bundle_ink": -0.0001,
-					"bundle_seam": -9e-05
-				},
+				"part_shift": {},
 				"picture": 0.0044
 			},
 			"measured_of": 2,
@@ -124,10 +120,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.118 held at 4092, cheaper than the 24258 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 418.0,
+			"peak_mb": 319.0,
 			"route": "kit",
-			"search_s": 406.6,
-			"searched": "search",
+			"search_s": 238.0,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -135,7 +131,7 @@
 			"budget": 9168,
 			"candidates": [
 				{
-					"cost": 6408,
+					"cost": 9546,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0044,
@@ -144,7 +140,7 @@
 					"value": {}
 				},
 				{
-					"cost": 1334,
+					"cost": 1334.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00846,
@@ -166,7 +162,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -278,16 +274,11 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 9546,
 				"coverage_rel": -0.0011500000000000002,
 				"floor": 0.0044,
-				"part_shift": {
-					"bundle": 0.00017,
-					"bundle_ink": -0.00019,
-					"bundle_seam": -9e-05
-				},
+				"part_shift": {},
 				"picture": 0.0044
 			},
 			"measured_of": 3,
@@ -297,10 +288,10 @@
 				"KIT (its own build at 2 of the band's pixels) held at 6408, cheaper than the 9546 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"REDUCE (every piece) to 0.040 held at 1334, cheaper than the 9546 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 291.0,
+			"peak_mb": 260.0,
 			"route": "kit",
-			"search_s": 2320.2000000000003,
-			"searched": "search",
+			"search_s": 2295.1,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -317,7 +308,7 @@
 					"value": {}
 				},
 				{
-					"cost": 1334,
+					"cost": 1334.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00846,
@@ -328,7 +319,7 @@
 			],
 			"checked_at": 4,
 			"drawn": {
-				"excess": 0.25,
+				"excess": 0.4375,
 				"judge": "drawn",
 				"pixel_m": 0.020746999999999998
 			},
@@ -339,7 +330,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 4 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -451,16 +442,11 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 168,
 				"coverage_rel": -0.06411,
 				"floor": 0.0044,
-				"part_shift": {
-					"bundle": 0.012750000000000001,
-					"bundle_ink": -0.00464,
-					"bundle_seam": -0.005560000000000001
-				},
+				"part_shift": {},
 				"picture": 0.04231
 			},
 			"measured_of": 3,
@@ -470,17 +456,17 @@
 				"KIT (its own build at the rung's pixel) held at 6408, dearer than the 168 taken",
 				"REDUCE (every piece) to 0.040 held at 1334, dearer than the 168 taken"
 			],
-			"peak_mb": 281.0,
+			"peak_mb": 260.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 107.5,
-			"searched": "search",
+			"search_s": 48.300000000000004,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "763bd6b0e4de3d98ee6d924678b54a7584ad8b42ba8f15b40325424153e97a26"
 	}
 }

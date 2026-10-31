@@ -166,7 +166,7 @@
 			],
 			"peak_mb": 256.0,
 			"route": "rung0",
-			"search_s": 15.200000000000001,
+			"search_s": 19.3,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -523,12 +523,12 @@
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"length_m\":0.02} seed 314: the picture changes at the drawn size: 1922 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00019 m",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"length_m\":0.02} seed 314: the picture changes at the drawn size: 1922 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00019 m"
 			],
-			"peak_mb": 273.0,
+			"peak_mb": 272.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 27.3,
+			"search_s": 33.1,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -892,14 +892,14 @@
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 22.6,
+			"search_s": 27.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "a7b5544315203b7e90f029a90e665c9261cf48f6eed3906d0622b6816bb2624b"
 	}
 }

@@ -37,7 +37,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 28,
 				"trace": "food__klippfisk#1.trace.jsonl"
 			},
 			"2": {
@@ -57,22 +57,23 @@
 	"rungs": {
 		"1": {
 			"budget": 19945,
+			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 913.0,
+					"px_over": 913,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
-					"cost": 21532.0,
+					"cost": 21532,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.00407,
-					"px_over": 4.0,
+					"picture": 0.004070000000000001,
+					"px_over": 4,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -99,12 +100,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.490",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -142,10 +143,10 @@
 			"peak_mb": 335.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 173.0
+				"reduce": 173
 			},
-			"search_s": 169.0,
-			"searched": "recheck",
+			"search_s": 749.5,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		},
@@ -175,12 +176,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 1,
 					"route": "impostor",
-					"value": 32
+					"value": 24
 				}
 			],
 			"checked_at": 4,
@@ -204,10 +205,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 269.0,
+			"peak_mb": 280.0,
 			"route": "impostor",
-			"search_s": 237.20000000000002,
-			"searched": "recheck",
+			"search_s": 268.6,
+			"searched": "search",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -215,7 +216,7 @@
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
-		"generator": "9ec1aa127e17fd0f060e2a18f6f878048cad833006a33b5d182775ea5159bbbf"
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
+		"generator": "05c737abcd3db10779a34f624c2ec3a3b71efaf82894b377c46d2f4dddd4b3d8"
 	}
 }

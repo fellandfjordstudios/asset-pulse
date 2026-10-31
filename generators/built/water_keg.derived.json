@@ -155,7 +155,7 @@
 			],
 			"peak_mb": 260.0,
 			"route": "rung0",
-			"search_s": 69.3,
+			"search_s": 86.9,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
@@ -216,9 +216,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 271.0,
 			"route": "impostor",
-			"search_s": 243.4,
+			"search_s": 303.0,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -226,7 +226,7 @@
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "84baa0d003e6900da7fb87c0790d6d41ae577c8724b095b4e46838a83445a4ee"
 	}
 }

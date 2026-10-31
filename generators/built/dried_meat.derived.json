@@ -151,7 +151,7 @@
 			],
 			"peak_mb": 254.0,
 			"route": "rung0",
-			"search_s": 17.8,
+			"search_s": 21.200000000000003,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -159,7 +159,7 @@
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "a5edf3f3a55869848cff483ab8052cd52b313b7354c20fc6ff4e5cbaa390f21d"
 	}
 }

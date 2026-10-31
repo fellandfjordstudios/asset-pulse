@@ -149,11 +149,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 16,
+				"candidates": 1,
 				"trace": "built__window-boarding#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 10,
+				"candidates": 0,
 				"trace": "built__window-boarding#2.trace.jsonl"
 			}
 		}
@@ -171,11 +171,11 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 550,
+					"cost": 550.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": -1.0,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 0.48999999999999994
 				},
@@ -202,7 +202,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.490",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -229,13 +229,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 2 pixel(s) differ at the drawn size at {} seed 314 (worst 0.64)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'board' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)"
 			],
-			"peak_mb": 916.0,
+			"peak_mb": 883.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 3
+				"reduce": 3.0
 			},
-			"search_s": 524.3000000000001,
-			"searched": "search",
+			"search_s": 281.3,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -252,11 +252,11 @@
 					"value": {}
 				},
 				{
-					"cost": 666,
+					"cost": 666.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00476,
-					"px_over": 5,
+					"px_over": 5.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -274,7 +274,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -775,11 +775,7 @@
 				"cost": 470,
 				"coverage_rel": 0.0011500000000000002,
 				"floor": 0.00502,
-				"part_shift": {
-					"board": 0.007260000000000001,
-					"nail": -6.000000000000001e-05,
-					"rust": -0.007330000000000001
-				},
+				"part_shift": {},
 				"picture": 0.007970000000000001
 			},
 			"measured_of": 2,
@@ -789,17 +785,17 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel) held at 574, dearer than the 470 taken"
 			],
-			"peak_mb": 330.0,
+			"peak_mb": 500.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 215.8,
-			"searched": "search",
+			"search_s": 150.6,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "e03992e57bbd6810d821bc2a7a1a254cc17b96a5deb884a352c12400ccbaa972"
 	}
 }

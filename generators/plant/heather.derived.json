@@ -168,9 +168,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 41 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00188 m; coverage changes -0.0581 against 0.0232 allowed (a one-pixel shrink all round); part 'floret' changes its share of the picture by -0.0414 against 0.0232 allowed (its colour's share of the subject); part 'shoot' changes its share of the picture by +0.0425 against 0.0232 allowed (its colour's share of the subject)",
 				"THIN: plant/heather does not declare `reads_density`"
 			],
-			"peak_mb": 581.0,
+			"peak_mb": 584.0,
 			"route": "kit",
-			"search_s": 367.8,
+			"search_s": 413.5,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -486,9 +486,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0581 against 0.0450 allowed (a one-pixel shrink all round)",
 				"THIN: plant/heather does not declare `reads_density`"
 			],
-			"peak_mb": 583.0,
+			"peak_mb": 577.0,
 			"route": "kit",
-			"search_s": 2029.7,
+			"search_s": 2091.5,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -496,7 +496,7 @@
 		}
 	},
 	"source": {
-		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
 		"generator": "36778588a06cab2a79ccab8e61cccf0d7c0e25faaf2e7e793bb97932a70e23c6"
 	}
 }
