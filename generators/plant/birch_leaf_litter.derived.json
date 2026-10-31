@@ -114,11 +114,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 41,
+				"candidates": 0,
 				"trace": "plant__birch-leaf-litter#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 52,
+				"candidates": 0,
 				"trace": "plant__birch-leaf-litter#2.trace.jsonl"
 			},
 			"3": {
@@ -145,19 +145,22 @@
 					"cost": 16976,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.015940000000000003,
-					"px_over": 22570,
+					"picture": 0.20055,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
+					"value": {
+						"debris": 0.7,
+						"vein": 0.7
+					}
 				},
 				{
-					"cost": 918,
+					"cost": 918.0,
 					"holds": false,
 					"judge": "field",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "substitute",
-					"value": 459
+					"value": 459.0
 				}
 			],
 			"checked_at": 15,
@@ -170,7 +173,7 @@
 					0.2439,
 					0.14400000000000002
 				],
-				"band": 1,
+				"band": 1.0,
 				"coverage": 0.9118,
 				"luminance_sd": 0.14700000000000002,
 				"texel_m": 0.001969
@@ -203,10 +206,10 @@
 				"REDUCE (every piece) from rung 0: nothing to try",
 				"THIN: plant/birch-leaf-litter does not declare `reads_density`"
 			],
-			"peak_mb": 1055.0,
+			"peak_mb": 332.0,
 			"route": "kit",
-			"search_s": 2438.2000000000003,
-			"searched": "search",
+			"search_s": 104.60000000000001,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"tolerance": 0.0018518518518518517
@@ -216,22 +219,25 @@
 			"budget": 3556,
 			"candidates": [
 				{
-					"cost": 12784,
+					"cost": 5328,
 					"holds": false,
 					"judge": "drawn",
-					"picture": -1.0,
-					"px_over": 367,
+					"picture": 0.5086700000000001,
+					"px_over": null,
 					"route": "kit",
-					"value": 0.7
+					"value": {
+						"debris": 0.24009999999999992,
+						"vein": 0.24009999999999992
+					}
 				},
 				{
-					"cost": 230,
+					"cost": 230.0,
 					"holds": false,
 					"judge": "field",
 					"picture": -1.0,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "substitute",
-					"value": 115
+					"value": 115.0
 				}
 			],
 			"checked_at": 15,
@@ -244,10 +250,10 @@
 					0.2441,
 					0.1442
 				],
-				"band": 2,
+				"band": 2.0,
 				"coverage": 0.9092,
 				"luminance_sd": 0.1474,
-				"texel_m": 0.007873999999999999
+				"texel_m": 0.00787399999999999
 			},
 			"keep": {
 				"debris": 0.24009999999999992,
@@ -645,10 +651,10 @@
 				"REDUCE (every piece) from rung 0: nothing to try",
 				"THIN: plant/birch-leaf-litter does not declare `reads_density`"
 			],
-			"peak_mb": 372.0,
+			"peak_mb": 333.0,
 			"route": "kit",
-			"search_s": 1169.5,
-			"searched": "search",
+			"search_s": 613.3000000000001,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407407
@@ -679,10 +685,10 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
 					"value": 16
 				}
@@ -703,7 +709,7 @@
 					0.2419,
 					0.1429
 				],
-				"band": 3,
+				"band": 3.0,
 				"coverage": 0.8919,
 				"luminance_sd": 0.14930000000000002,
 				"texel_m": 0.031497
@@ -719,10 +725,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 482.0,
+			"peak_mb": 481.0,
 			"route": "impostor",
-			"search_s": 343.1,
-			"searched": "search",
+			"search_s": 320.70000000000005,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 16

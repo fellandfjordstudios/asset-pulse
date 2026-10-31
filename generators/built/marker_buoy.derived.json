@@ -133,9 +133,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"extent_m\":1.8} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.00326 m",
 				"THIN: built/marker-buoy does not declare `reads_density`"
 			],
-			"peak_mb": 256.0,
+			"peak_mb": 258.0,
 			"route": "rung0",
-			"search_s": 30.400000000000002,
+			"search_s": 30.200000000000003,
 			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9,
@@ -196,9 +196,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 257.0,
+			"peak_mb": 258.0,
 			"route": "impostor",
-			"search_s": 46.900000000000006,
+			"search_s": 45.400000000000006,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,

@@ -79,11 +79,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 3,
+				"candidates": 1,
 				"trace": "stone__sea-ice-block#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 4,
+				"candidates": 0,
 				"trace": "stone__sea-ice-block#2.trace.jsonl"
 			}
 		}
@@ -101,11 +101,11 @@
 			"budget": 42673,
 			"candidates": [
 				{
-					"cost": 260,
+					"cost": 260.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 14,
+					"px_over": 14.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -131,7 +131,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.700",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -156,13 +156,13 @@
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00056 m"
 			],
-			"peak_mb": 545.0,
+			"peak_mb": 539.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 3
+				"reduce": 3.0
 			},
-			"search_s": 170.0,
-			"searched": "search",
+			"search_s": 151.5,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -179,10 +179,10 @@
 					"value": {}
 				},
 				{
-					"cost": 580,
+					"cost": 580.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.003920000000000001,
+					"picture": 0.00392,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
@@ -192,7 +192,7 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.004883
+				"pixel_m": 0.005187
 			},
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
@@ -201,7 +201,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -461,11 +461,7 @@
 				"cost": 144,
 				"coverage_rel": 0.0013900000000000002,
 				"floor": 0.0044,
-				"part_shift": {
-					"block_face": -0.0017400000000000002,
-					"ice": 0.00088,
-					"snow": 0.00079
-				},
+				"part_shift": {},
 				"picture": 0.00602
 			},
 			"measured_of": 2,
@@ -474,10 +470,10 @@
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.700 held at 580, dearer than the 144 taken"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 295.0,
 			"route": "kit",
-			"search_s": 86.60000000000001,
-			"searched": "search",
+			"search_s": 52.7,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}

@@ -212,11 +212,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 0,
 				"trace": "built__store-front#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 27,
+				"candidates": 0,
 				"trace": "built__store-front#2.trace.jsonl"
 			},
 			"3": {
@@ -231,7 +231,7 @@
 	},
 	"replay": {
 		"1": "f57ee96099683906354aa9c7818f37ad88e253b1fb2c2cb99714d7aad8e67820",
-		"2": "d1ea9e96b6de053e65ceaa4671b732ee96558e87dcfc36f4399275d5517c6997",
+		"2": "832b58d6cb52647144b530f274e8e7dca998c21928fe3c74ecd872b295b04c6f",
 		"3": "393dd7befdb3999507db29ff6591dd6ced11e854c82d737ea50d935bf17a94b2"
 	},
 	"rungs": {
@@ -239,13 +239,13 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 8885,
+					"px_over": 8885.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 43146,
@@ -270,7 +270,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -284,20 +284,7 @@
 				"cost": 43146,
 				"coverage_rel": -0.0006100000000000001,
 				"floor": 0.005450000000000001,
-				"part_shift": {
-					"frame": -0.00013000000000000002,
-					"glass": -1e-05,
-					"interior": 2e-05,
-					"iron": 0.0,
-					"masonry": 0.00059,
-					"rainwater": -0.00039000000000000005,
-					"roof": -0.00047000000000000004,
-					"sign_board": -1e-05,
-					"step": 8e-05,
-					"trim": -0.00063,
-					"wall": 0.00037000000000000005,
-					"wall_end": 0.00030000000000000003
-				},
+				"part_shift": {},
 				"picture": 0.005450000000000001
 			},
 			"measured_of": 1,
@@ -317,10 +304,10 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 2134.0,
+			"peak_mb": 552.0,
 			"route": "kit",
-			"search_s": 5088.3,
-			"searched": "search",
+			"search_s": 2683.9,
+			"searched": "recheck",
 			"surfaces": 12,
 			"surfaces_ceiling": 12
 		},
@@ -328,13 +315,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 5,
+					"px_over": 5.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 4072,
@@ -364,7 +351,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping stone 0.490)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -1076,6 +1063,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 4072,
 				"coverage_rel": -0.0013700000000000001,
@@ -1107,11 +1095,11 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping stone 0.490)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel, keeping stone 0.490) held at 4870, dearer than the 4072 taken"
 			],
-			"peak_mb": 620.0,
+			"peak_mb": 475.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 2186.3,
-			"searched": "search",
+			"search_s": 707.6,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -1141,12 +1129,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 16
 				}
 			],
 			"checked_at": 29,
@@ -1170,10 +1158,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 476.0,
+			"peak_mb": 475.0,
 			"route": "impostor",
-			"search_s": 445.6,
-			"searched": "search",
+			"search_s": 412.70000000000005,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,

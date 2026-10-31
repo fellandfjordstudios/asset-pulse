@@ -221,9 +221,9 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.71: 9505 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"peak_mb": 887.0,
+			"peak_mb": 890.0,
 			"route": "merged",
-			"search_s": 1021.3000000000001,
+			"search_s": 978.8000000000001,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8

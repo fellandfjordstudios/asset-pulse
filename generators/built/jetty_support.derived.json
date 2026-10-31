@@ -205,7 +205,7 @@
 			],
 			"peak_mb": 343.0,
 			"route": "kit",
-			"search_s": 222.20000000000002,
+			"search_s": 216.9,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -691,7 +691,7 @@
 			"peak_mb": 276.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 104.0,
+			"search_s": 99.0,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1

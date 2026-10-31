@@ -146,7 +146,7 @@
 			],
 			"peak_mb": 300.0,
 			"route": "kit",
-			"search_s": 150.1,
+			"search_s": 152.9,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
@@ -346,7 +346,7 @@
 			],
 			"peak_mb": 253.0,
 			"route": "kit",
-			"search_s": 384.6,
+			"search_s": 366.20000000000005,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
@@ -408,7 +408,7 @@
 			],
 			"peak_mb": 253.0,
 			"route": "impostor",
-			"search_s": 18.8,
+			"search_s": 17.8,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,

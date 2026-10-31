@@ -191,9 +191,9 @@
 				"REDUCE from rung 0: none holds at 0.0040 -- the finest tried (0.700) fails at {\"packed\":1} seed 314: coverage changes -0.0166 against 0.0161 a derivation may change (its error read as a change of size)",
 				"THIN: built/tarp-shelter does not declare `reads_density`"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 271.0,
 			"route": "rung0",
-			"search_s": 25.700000000000003,
+			"search_s": 23.900000000000002,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,

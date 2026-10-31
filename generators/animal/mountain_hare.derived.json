@@ -240,7 +240,7 @@
 			],
 			"peak_mb": 356.0,
 			"route": "kit",
-			"search_s": 350.8,
+			"search_s": 352.3,
 			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9
@@ -836,12 +836,12 @@
 				"KIT (its own build at the rung's pixel) held at 10620, dearer than the 2196 taken",
 				"KIT (its own build at 2 of the band's pixels) held at 10620, dearer than the 2196 taken"
 			],
-			"peak_mb": 363.0,
+			"peak_mb": 364.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 893.5,
+			"search_s": 911.7,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 1

@@ -177,11 +177,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": -1,
 				"trace": "plant__birch#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 41,
 				"trace": "plant__birch#2.trace.jsonl"
 			},
 			"3": {
@@ -203,6 +203,53 @@
 		"1": {
 			"above_tolerance": true,
 			"budget": 42673,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 17308,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 43692,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.007970000000000001,
+					"px_over": 1,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 123048,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": 1,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 17840,
+					"holds": false,
+					"judge": "crown",
+					"picture": -1.0,
+					"px_over": 97,
+					"route": "substitute",
+					"value": 1.0
+				},
+				{
+					"cost": 35044,
+					"holds": false,
+					"judge": "crown",
+					"picture": -1.0,
+					"px_over": 5621,
+					"route": "thin",
+					"value": 0.7
+				}
+			],
 			"checked_at": 24,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -241,9 +288,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1681, cover 2.44: 39166 pixel(s) differ at the drawn size at {} seed 314 (worst 0.62)",
 				"CHILD: rung 0 carries a skin or a channel the child route does not splice",
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00741 m",
-				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1434 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00741 m"
+				"THIN (the crown's judge): none holds by the crown's judge -- the finest tried (0.700) fails at {} seed 314: the crown's judge refuses its envelope, leaves",
+				"SUBSTITUTE (crown photos): none holds by the crown's judge -- the finest tried (1.000) fails at {} seed 314: the crown's judge refuses its envelope, leaves"
 			],
+			"peak_mb": 6561.0,
 			"route": "kit",
+			"search_s": 4023.7000000000003,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"tolerance": 0.001851851851851852
@@ -251,8 +302,55 @@
 		"2": {
 			"above_tolerance": true,
 			"budget": 10668,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 9,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 43542,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.028280000000000003,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 123048,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.07702,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 17840,
+					"holds": false,
+					"judge": "crown",
+					"picture": -1.0,
+					"px_over": 0,
+					"route": "substitute",
+					"value": 1.0
+				},
+				{
+					"cost": 34894,
+					"holds": false,
+					"judge": "crown",
+					"picture": -1.0,
+					"px_over": 15,
+					"route": "thin",
+					"value": 0.7
+				}
+			],
 			"checked_at": 24,
-			"density": 0.01977326742999998,
+			"density": 0.019773267429999988,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -877,10 +975,14 @@
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"height_m\":2.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.01496 m",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.20: 5 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
 				"CHILD: rung 0 carries a skin or a channel the child route does not splice",
-				"THIN: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.02963 m",
+				"THIN (the crown's judge): none holds by the crown's judge -- the finest tried (0.700) fails at {\"height_m\":2.0} seed 314: the crown's judge refuses its envelope",
+				"SUBSTITUTE (crown photos): none holds by the crown's judge -- the finest tried (1.000) fails at {} seed 314: the crown's judge refuses its leaves",
 				"BUDGET: the cheapest derivation that holds the picture costs 43542 (4.08x), over rung 2's budget 10668 x 1.5 = 16002 (tree, 4.00 m)"
 			],
+			"peak_mb": 2722.0,
 			"route": "thin",
+			"search_s": 4531.9000000000005,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408
@@ -908,6 +1010,17 @@
 				}
 			},
 			"budget": 2667,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "impostor",
+					"value": 8
+				}
+			],
 			"checked_at": 24,
 			"draw_calls": 1,
 			"drawn": {
@@ -929,7 +1042,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
+			"peak_mb": 2622.0,
 			"route": "impostor",
+			"search_s": 549.6,
+			"searched": "search",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,

@@ -261,15 +261,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 13,
+				"candidates": 0,
 				"trace": "plant__fireweed#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 24,
+				"candidates": 0,
 				"trace": "plant__fireweed#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 26,
+				"candidates": 0,
 				"trace": "plant__fireweed#3.trace.jsonl"
 			}
 		}
@@ -288,20 +288,20 @@
 			"budget": 21336,
 			"candidates": [
 				{
-					"cost": 2380,
+					"cost": 2380.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.01727,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 1664,
+					"cost": 1664.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.019010000000000003,
-					"px_over": 3,
+					"picture": 0.01901,
+					"px_over": 3.0,
 					"route": "reduce",
 					"value": 0.7
 				},
@@ -322,10 +322,11 @@
 			"measured": {
 				"cost": 2452,
 				"coverage_rel": 0.0,
-				"floor": 0.0,
+				"floor": 0.0039900000000000005,
 				"part_shift": {},
 				"picture": 0.0
 			},
+			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"leaves\":120} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00218 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.2401, cover 2.04: 2835 pixel(s) differ at the drawn size at {} seed 314 (worst 0.72)",
@@ -333,10 +334,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00218 m; coverage changes -0.0291 against 0.0232 allowed (a one-pixel shrink all round); part 'leaf' changes its share of the picture by +0.0242 against 0.0232 allowed (its colour's share of the subject)",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 478.0,
+			"peak_mb": 326.0,
 			"route": "rung0",
-			"search_s": 106.30000000000001,
-			"searched": "search",
+			"search_s": 60.1,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"tolerance": 0.001851851851851852
@@ -345,20 +346,20 @@
 			"budget": 5334,
 			"candidates": [
 				{
-					"cost": 1762,
+					"cost": 1762.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.03055,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 1664,
+					"cost": 1664.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.019010000000000003,
-					"px_over": 0,
+					"picture": 0.01901,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.7
 				},
@@ -1250,10 +1251,11 @@
 			"measured": {
 				"cost": 2452,
 				"coverage_rel": 0.0,
-				"floor": 0.0,
+				"floor": 0.0039900000000000005,
 				"part_shift": {},
 				"picture": 0.0
 			},
+			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"flowering_front\":0.0} seed 314: coverage changes +0.0236 against 0.0227 a derivation may change (its error read as a change of size)",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 5 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
@@ -1263,10 +1265,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0291 against 0.0227 a derivation may change (its error read as a change of size)",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 341.0,
+			"peak_mb": 329.0,
 			"route": "rung0",
-			"search_s": 113.4,
-			"searched": "search",
+			"search_s": 63.900000000000006,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408
@@ -1279,17 +1281,17 @@
 					"cost": 1390,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.05315,
-					"px_over": 0,
+					"picture": 0.06904,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
+					"value": {}
 				},
 				{
-					"cost": 1664,
+					"cost": 1664.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.02281,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -2195,10 +2197,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0296 -- the finest tried (0.700) fails at {\"leaves\":2} seed 314: coverage changes -0.0922 against 0.0661 a derivation may change (its error read as a change of size)",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 367.0,
+			"peak_mb": 329.0,
 			"route": "kit",
-			"search_s": 261.6,
-			"searched": "search",
+			"search_s": 65.2,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.02962962962962963

@@ -61,7 +61,7 @@
 	},
 	"replay": {
 		"1": "d0cca0c1cb60e78aa7d41615ca373607cbf85df7bd1673273e068b82adfc84ca",
-		"2": "c01195005a3c41a1000ad5b0060afe7aef50e45f6fd4e6d4c0c946fcd2648bde"
+		"2": "0a6153142718b7808c3c06e708c21a225c8abdd31dd21e81a4588f636a00e8d0"
 	},
 	"rungs": {
 		"1": {
@@ -114,9 +114,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0029 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 4 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00097 m",
 				"THIN: built/storm-lantern does not declare `reads_density`"
 			],
-			"peak_mb": 275.0,
+			"peak_mb": 278.0,
 			"route": "rung0",
-			"search_s": 26.8,
+			"search_s": 25.1,
 			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10,
@@ -281,7 +281,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 4002,
 				"coverage_rel": -0.012950000000000001,
@@ -307,9 +306,9 @@
 				"REDUCE from rung 0 at {} seed 314: element 11's part 'fount' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"REDUCE (every piece) to 0.700 held at 6646, dearer than the 4002 taken"
 			],
-			"peak_mb": 275.0,
+			"peak_mb": 278.0,
 			"route": "kit",
-			"search_s": 99.2,
+			"search_s": 93.10000000000001,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1

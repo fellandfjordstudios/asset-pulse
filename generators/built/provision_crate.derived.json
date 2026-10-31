@@ -147,9 +147,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0026 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00131 m",
 				"THIN: built/provision-crate does not declare `reads_density`"
 			],
-			"peak_mb": 256.0,
+			"peak_mb": 258.0,
 			"route": "rung0",
-			"search_s": 37.7,
+			"search_s": 34.800000000000004,
 			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11,
@@ -466,10 +466,10 @@
 				"KIT (its own build at the rung's pixel, keeping nail 0.240) held at 2593, dearer than the 1413 taken",
 				"REDUCE (every piece) to 0.343 held at 2414, dearer than the 1413 taken"
 			],
-			"peak_mb": 259.0,
+			"peak_mb": 260.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 177.9,
+			"search_s": 165.3,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1

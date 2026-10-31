@@ -124,9 +124,9 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.490 held at 4142, dearer than the 3764 taken"
 			],
-			"peak_mb": 324.0,
+			"peak_mb": 326.0,
 			"route": "kit",
-			"search_s": 62.0,
+			"search_s": 61.900000000000006,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -270,9 +270,9 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.240 held at 3034, dearer than the 2660 taken"
 			],
-			"peak_mb": 258.0,
+			"peak_mb": 260.0,
 			"route": "kit",
-			"search_s": 283.3,
+			"search_s": 285.2,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
@@ -332,9 +332,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 258.0,
+			"peak_mb": 260.0,
 			"route": "impostor",
-			"search_s": 15.0,
+			"search_s": 15.3,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,

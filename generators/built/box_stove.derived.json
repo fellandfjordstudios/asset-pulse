@@ -66,7 +66,7 @@
 	"replay": {
 		"1": "a39abc2935d0236c075139c34247d37bf2645142f270c3fc3b20fc9a414a8b5e",
 		"2": "d3ad2ccdafadc55a45510b381fd5de5e6aac8bc4200522d81e2ca5f16de4e4eb",
-		"3": "3b1234042cc945266eb99b1d1e471f1bfcf8993fcd2899a39456aa012fa56725"
+		"3": "800fd045aa181e1e1e2d621cc412da2be7c00fed2322ee3e7fa15aa0d31b17c0"
 	},
 	"rungs": {
 		"1": {
@@ -132,9 +132,9 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"door_open\":1.0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00178 m",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastener 0.031)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 308.0,
+			"peak_mb": 309.0,
 			"route": "kit",
-			"search_s": 132.20000000000002,
+			"search_s": 131.9,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -325,12 +325,12 @@
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00659 m",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 2 pixel(s) differ at the drawn size at {} seed 314 (worst 1.00)"
 			],
-			"peak_mb": 253.0,
+			"peak_mb": 254.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 71.0
 			},
-			"search_s": 115.9,
+			"search_s": 117.4,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
@@ -511,6 +511,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 1206,
 				"coverage_rel": -0.009080000000000001,
@@ -526,9 +527,9 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastener 0.031)) is 1 route(s)",
 				"REDUCE to 0.118 held at 782, cheaper than the 1206 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 253.0,
+			"peak_mb": 254.0,
 			"route": "kit",
-			"search_s": 26.400000000000002,
+			"search_s": 95.5,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1

@@ -173,7 +173,7 @@
 			],
 			"peak_mb": 298.0,
 			"route": "kit",
-			"search_s": 78.7,
+			"search_s": 73.8,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -534,7 +534,7 @@
 			],
 			"peak_mb": 255.0,
 			"route": "kit",
-			"search_s": 50.5,
+			"search_s": 47.400000000000006,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1

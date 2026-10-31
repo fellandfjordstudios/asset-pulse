@@ -72,7 +72,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 4,
+				"candidates": 1,
 				"trace": "food__twist-bread-coil#1.trace.jsonl"
 			}
 		}
@@ -89,11 +89,11 @@
 			"budget": 2760,
 			"candidates": [
 				{
-					"cost": 1778,
+					"cost": 1778.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00805,
-					"px_over": 7,
+					"px_over": 7.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -119,7 +119,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -143,13 +143,13 @@
 			"not_taken": [
 				"KIT: none holds at 0.0072 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.78), one pixel 0.00136 m"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 267.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 2
+				"reduce": 2.0
 			},
-			"search_s": 83.4,
-			"searched": "search",
+			"search_s": 53.1,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}

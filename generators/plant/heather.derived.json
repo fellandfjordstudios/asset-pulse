@@ -72,11 +72,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 27,
 				"trace": "plant__heather#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 44,
 				"trace": "plant__heather#2.trace.jsonl"
 			}
 		}
@@ -93,6 +93,35 @@
 		"1": {
 			"above_tolerance": true,
 			"budget": 48007,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 32269,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 258674,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00911,
+					"px_over": 95,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 290396,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.0053100000000000005,
+					"px_over": 41,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 9,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -136,7 +165,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 41 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00188 m; coverage changes -0.0581 against 0.0232 allowed (a one-pixel shrink all round); part 'floret' changes its share of the picture by -0.0414 against 0.0232 allowed (its colour's share of the subject); part 'shoot' changes its share of the picture by +0.0425 against 0.0232 allowed (its colour's share of the subject)",
 				"THIN: plant/heather does not declare `reads_density`"
 			],
+			"peak_mb": 599.0,
 			"route": "kit",
+			"search_s": 4625.5,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"tolerance": 0.001851851851851852
@@ -144,6 +176,35 @@
 		"2": {
 			"above_tolerance": true,
 			"budget": 12001,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 13,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 191844,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.009300000000000001,
+					"px_over": 1,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 290396,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.0053100000000000005,
+					"px_over": 0,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 9,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -418,7 +479,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0581 against 0.0450 allowed (a one-pixel shrink all round)",
 				"THIN: plant/heather does not declare `reads_density`"
 			],
+			"peak_mb": 637.0,
 			"route": "kit",
+			"search_s": 3155.9,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408

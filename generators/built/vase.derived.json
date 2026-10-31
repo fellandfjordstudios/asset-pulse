@@ -119,9 +119,9 @@
 				"REDUCE from rung 0: none holds at 0.0036 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00129 m",
 				"THIN: built/vase does not declare `reads_density`"
 			],
-			"peak_mb": 243.0,
+			"peak_mb": 244.0,
 			"route": "rung0",
-			"search_s": 14.100000000000001,
+			"search_s": 13.3,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -336,9 +336,9 @@
 				"KIT (its own build at 2 of the band's pixels) held at 760, cheaper than the 988 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"REDUCE to 0.168 held at 668, cheaper than the 988 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 246.0,
 			"route": "kit",
-			"search_s": 33.2,
+			"search_s": 31.0,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1

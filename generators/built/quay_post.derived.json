@@ -191,7 +191,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 28,
+				"candidates": 0,
 				"trace": "built__quay-post#1.trace.jsonl"
 			}
 		}
@@ -209,31 +209,31 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 21644,
+					"px_over": 21644.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 95266,
+					"cost": 95266.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.0043300000000000005,
-					"px_over": 11,
+					"picture": 0.00433,
+					"px_over": 11.0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 109336,
+					"cost": 58186,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.0043300000000000005,
-					"px_over": 5,
+					"picture": 0.00461,
+					"px_over": null,
 					"route": "reduce",
-					"value": 0.7
+					"value": 0.3429999999999999
 				}
 			],
 			"checked_at": 26,
@@ -276,13 +276,13 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00177 m",
 				"THIN: built/quay-post does not declare `reads_density`"
 			],
-			"peak_mb": 940.0,
+			"peak_mb": 701.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 1962
+				"reduce": 1962.0
 			},
-			"search_s": 2810.1000000000004,
-			"searched": "search",
+			"search_s": 566.2,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"tolerance": 0.0018518518518518517
