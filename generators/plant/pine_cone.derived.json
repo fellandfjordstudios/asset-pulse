@@ -121,11 +121,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 15,
 				"trace": "plant__pine-cone#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 28,
 				"trace": "plant__pine-cone#2.trace.jsonl"
 			}
 		}
@@ -142,6 +142,26 @@
 		"1": {
 			"above_tolerance": true,
 			"budget": 42673,
+			"candidates": [
+				{
+					"cost": 39130,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.15141000000000002,
+					"px_over": 0,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 66094,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.062380000000000005,
+					"px_over": 0,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 16,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -165,11 +185,15 @@
 			},
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0345 against 0.0239 allowed (a one-pixel shrink all round); part 'apophysis' changes its share of the picture by -0.0421 against 0.0239 allowed (its colour's share of the subject); part 'scale_inner' changes its share of the picture by +0.0421 against 0.0239 allowed (its colour's share of the subject)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.31: 77 pixel(s) differ at the drawn size at {} seed 314 (worst 0.56)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'apophysis' is 70 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 69 more groups)",
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"cones\":150} seed 314: coverage changes -0.0192 against 0.0118 a derivation may change (its error read as a change of size)",
 				"THIN: plant/pine-cone does not declare `reads_density`"
 			],
+			"peak_mb": 518.0,
 			"route": "kit",
+			"search_s": 348.70000000000005,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"tolerance": 0.0018518518518518517
@@ -177,6 +201,26 @@
 		"2": {
 			"above_tolerance": true,
 			"budget": 10668,
+			"candidates": [
+				{
+					"cost": 10396,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.20537000000000002,
+					"px_over": 0,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 66094,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.47176,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 16,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -583,7 +627,7 @@
 				"part_shift": {},
 				"picture": 1.0
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"miss": {
 				"cost_of_ceiling": 0.9745031871016123,
 				"judge": "drawn",
@@ -593,19 +637,24 @@
 				"tier": 1
 			},
 			"not_taken": [
-				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0956 against 0.0457 allowed (a one-pixel shrink all round); part 'apophysis' changes its share of the picture by -0.0664 against 0.0457 allowed (its colour's share of the subject); part 'scale_inner' changes its share of the picture by +0.0664 against 0.0457 allowed (its colour's share of the subject)",
-				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0956 against 0.0457 allowed (a one-pixel shrink all round); part 'apophysis' changes its share of the picture by -0.0664 against 0.0457 allowed (its colour's share of the subject); part 'scale_inner' changes its share of the picture by +0.0664 against 0.0457 allowed (its colour's share of the subject)",
+				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: part 'apophysis' changes its share of the picture by -0.0629 against 0.0457 allowed (its colour's share of the subject); part 'scale_inner' changes its share of the picture by +0.0629 against 0.0457 allowed (its colour's share of the subject)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.0824, cover 3.48: 423 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: part 'apophysis' changes its share of the picture by -0.0629 against 0.0457 allowed (its colour's share of the subject); part 'scale_inner' changes its share of the picture by +0.0629 against 0.0457 allowed (its colour's share of the subject)",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1176, cover 1.00: 3 pixel(s) differ at the drawn size at {} seed 314 (worst 0.52)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'apophysis' is 70 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 69 more groups)",
-				"BUDGET: the cheapest derivation that holds the picture costs 66094, over rung 2's budget 10668 x 1.5 = 16002 (rock, 8.10 m)"
+				"BUDGET: the cheapest derivation that holds the picture costs 66094 (6.20x), over rung 2's budget 10668 x 1.5 = 16002 (rock, 8.10 m)"
 			],
+			"peak_mb": 432.0,
 			"route": "kit",
+			"search_s": 1527.1000000000001,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407407
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "db30833395f7c071355d66d601b954d1a8b4d939931095ac2617abaa8bfb357b"
 	}
 }

@@ -174,9 +174,9 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00210 m",
 				"THIN: plant/twig-litter does not declare `reads_density`"
 			],
-			"peak_mb": 257.0,
+			"peak_mb": 258.0,
 			"route": "rung0",
-			"search_s": 19.0,
+			"search_s": 21.3,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -524,9 +524,9 @@
 				"REDUCE from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00842 m",
 				"THIN: plant/twig-litter does not declare `reads_density`"
 			],
-			"peak_mb": 260.0,
+			"peak_mb": 261.0,
 			"route": "rung0",
-			"search_s": 368.40000000000003,
+			"search_s": 570.9,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -534,7 +534,7 @@
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "17de23c636cc9f856bff84d879755220de131411dc6fd69e90ffb654da9036a4"
 	}
 }

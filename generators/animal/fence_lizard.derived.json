@@ -318,16 +318,16 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0042 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0165 against 0.0162 a derivation may change (its error read as a change of size)",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping scale 0.240, each kept piece covering 1.00x)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 392.0,
+			"peak_mb": 391.0,
 			"route": "kit",
-			"search_s": 191.10000000000002,
+			"search_s": 220.9,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "7a7ed4400dc7075504e00a141e559307f5d8c542ff7ea4725b13769c2d582c50"
 	}
 }

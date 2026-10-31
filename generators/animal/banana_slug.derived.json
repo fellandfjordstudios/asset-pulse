@@ -261,16 +261,16 @@
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.343 held at 2368, cheaper than the 3806 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 344.0,
+			"peak_mb": 345.0,
 			"route": "kit",
-			"search_s": 191.9,
+			"search_s": 220.9,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "b08df453c9f12d8461e559cb98fbbb54fc380af0fd68f9f193de2fb0a90ad776"
 	}
 }

@@ -67,6 +67,38 @@
 		"1": {
 			"budget": 2035,
 			"budget_reason": "the cheapest derivation that holds the picture costs 7845, 3.86x rung 1's budget 2035: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 2,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 7845,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.004710000000000001,
+					"px_over": null,
+					"route": "kit",
+					"value": {
+						"drupelet": 0.3429999999999999,
+						"oat_flake": 0.03125
+					}
+				},
+				{
+					"cost": 23507,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "merged",
+					"value": 1.0
+				}
+			],
 			"checked_at": 6,
 			"drawn": {
 				"excess": 0.375,
@@ -105,14 +137,17 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED (its parts at their own rungs, joined) held at 23507, dearer than the 7845 taken"
 			],
+			"peak_mb": 304.0,
 			"route": "kit",
+			"search_s": 451.0,
+			"searched": "search",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
 		}
 	},
 	"source": {
 		"children": "9d3cc55c4a90fcc6fe9e2ab359dddc091accc3eae1b7bd6b4a75296744fee4ba",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "c4c2fe52a9a21e8ad6e14845b99b5103fbdea1974026bfd31695961d7dc216df"
 	}
 }

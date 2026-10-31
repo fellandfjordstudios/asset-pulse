@@ -153,9 +153,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0034 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00128 m",
 				"THIN: built/water-keg does not declare `reads_density`"
 			],
-			"peak_mb": 258.0,
+			"peak_mb": 260.0,
 			"route": "rung0",
-			"search_s": 58.400000000000006,
+			"search_s": 69.3,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
@@ -216,9 +216,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 269.0,
+			"peak_mb": 270.0,
 			"route": "impostor",
-			"search_s": 210.10000000000002,
+			"search_s": 243.4,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -226,7 +226,7 @@
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "84baa0d003e6900da7fb87c0790d6d41ae577c8724b095b4e46838a83445a4ee"
 	}
 }

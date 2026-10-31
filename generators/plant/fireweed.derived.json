@@ -334,9 +334,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00218 m; coverage changes -0.0291 against 0.0232 allowed (a one-pixel shrink all round); part 'leaf' changes its share of the picture by +0.0242 against 0.0232 allowed (its colour's share of the subject)",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 326.0,
+			"peak_mb": 327.0,
 			"route": "rung0",
-			"search_s": 60.1,
+			"search_s": 65.8,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
@@ -1265,9 +1265,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0291 against 0.0227 a derivation may change (its error read as a change of size)",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 329.0,
+			"peak_mb": 330.0,
 			"route": "rung0",
-			"search_s": 63.900000000000006,
+			"search_s": 70.8,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -2197,9 +2197,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0296 -- the finest tried (0.700) fails at {\"leaves\":2} seed 314: coverage changes -0.0922 against 0.0661 a derivation may change (its error read as a change of size)",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 329.0,
+			"peak_mb": 330.0,
 			"route": "kit",
-			"search_s": 65.2,
+			"search_s": 73.10000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -2207,7 +2207,7 @@
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "ddf889fe49d1a1e30a49b4a2d5825aa4846055aa24914204b31ad0d32b239106"
 	}
 }

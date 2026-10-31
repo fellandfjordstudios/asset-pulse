@@ -1,0 +1,221 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.4
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.6
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		}
+	],
+	"id": "food/klippfisk",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"seed"
+		],
+		"old_key_sets": 4,
+		"sampled": 4,
+		"sets": 2
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "food__klippfisk#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 16,
+				"trace": "food__klippfisk#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "9cbb95dec5e3e03868ed3ce252336339e01a4d1208595e0ab0cfe99fe5cdab61",
+		"2": "785920d66b769cd7da77d7fe231c309e198309452d68854e04a391e5018b334e"
+	},
+	"rungs": {
+		"1": {
+			"budget": 19945,
+			"candidates": [
+				{
+					"cost": 2.0,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 913.0,
+					"route": "impostor",
+					"value": 32.0
+				},
+				{
+					"cost": 21532.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00407,
+					"px_over": 4.0,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 26110,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.004070000000000001,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.48999999999999994
+				}
+			],
+			"checked_at": 4,
+			"drawn": {
+				"excess": 0.375,
+				"judge": "drawn",
+				"pixel_m": 0.001297
+			},
+			"error": 0.0025933612526285546,
+			"every_piece": true,
+			"fraction": 0.48999999999999994,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to 0.490",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 26110,
+				"coverage_rel": -0.00035000000000000005,
+				"floor": 0.004070000000000001,
+				"part_shift": {
+					"flesh": 0.00075,
+					"salt": -0.00099,
+					"skin": 0.00068,
+					"tail": -0.00012000000000000002
+				},
+				"picture": 0.004070000000000001
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 12080 pixel(s) differ at {} seed 314 (worst 0.71)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 10831 pixel(s) differ at {} seed 314 (worst 0.67)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 9116 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 5422 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 12038 pixel(s) differ at {} seed 314 (worst 0.76)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 10617 pixel(s) differ at {} seed 314 (worst 0.66)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 9125 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 5272 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 2013 pixel(s) differ at {} seed 314 (worst 0.82)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 1909 pixel(s) differ at {} seed 314 (worst 0.82)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 1017 pixel(s) differ at {} seed 314 (worst 0.92)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 913 pixel(s) differ at {} seed 314 (worst 0.92)",
+				"KIT: none holds at 0.0026 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 4 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.70), one pixel 0.00130 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1176, cover 2.92: 86353 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'flesh' is 46 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)"
+			],
+			"peak_mb": 335.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 173.0
+			},
+			"search_s": 169.0,
+			"searched": "recheck",
+			"surfaces": 4,
+			"surfaces_ceiling": 4
+		},
+		"2": {
+			"atlas_bytes": 67108864,
+			"atlas_profiles": {
+				"native-desktop": {
+					"budget_mb": 2048.0,
+					"compressed_mb": 16.78,
+					"refused": false,
+					"rgba8_mb": 67.11
+				},
+				"native-mobile": {
+					"budget_mb": 256.0,
+					"compressed_mb": 16.78,
+					"refused": false,
+					"rgba8_mb": 67.11
+				},
+				"web": {
+					"budget_mb": 256.0,
+					"compressed_mb": 16.78,
+					"refused": false,
+					"rgba8_mb": 67.11
+				}
+			},
+			"budget": 4986,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": true,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": null,
+					"route": "impostor",
+					"value": 32
+				}
+			],
+			"checked_at": 4,
+			"draw_calls": 1,
+			"drawn": {
+				"excess": 0.42650000000000005,
+				"judge": "drawn",
+				"why": "an impostor is judged at the drawn size, its frames blended"
+			},
+			"error": 0.010373445010514218,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 2,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {},
+				"picture": -1.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
+			],
+			"peak_mb": 269.0,
+			"route": "impostor",
+			"search_s": 237.20000000000002,
+			"searched": "recheck",
+			"source_pixel_scale": 8.0,
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tiles": 32
+		}
+	},
+	"source": {
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"generator": "9ec1aa127e17fd0f060e2a18f6f878048cad833006a33b5d182775ea5159bbbf"
+	}
+}

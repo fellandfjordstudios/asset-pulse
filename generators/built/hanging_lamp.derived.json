@@ -89,7 +89,7 @@
 			],
 			"peak_mb": 235.0,
 			"route": "rung0",
-			"search_s": 3.6,
+			"search_s": 4.2,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
@@ -189,14 +189,14 @@
 			],
 			"peak_mb": 235.0,
 			"route": "kit",
-			"search_s": 60.7,
+			"search_s": 81.9,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "f7c79da8df7f57d94dd4f1087d1b748fbec4014d73611554167dc3f464ff6aa2"
 	}
 }

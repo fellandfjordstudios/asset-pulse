@@ -146,7 +146,7 @@
 				"carry": 2,
 				"reduce": 1
 			},
-			"search_s": 923.4000000000001,
+			"search_s": 1078.3,
 			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -429,9 +429,9 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'fodder' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"BUDGET: the cheapest derivation that holds the picture costs 15854 (6.13x), over rung 2's budget 2587 x 1.5 = 3880 (made, 0.37 m)"
 			],
-			"peak_mb": 320.0,
+			"peak_mb": 322.0,
 			"route": "kit",
-			"search_s": 626.3000000000001,
+			"search_s": 830.0,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
@@ -439,7 +439,7 @@
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "4e679e3baaadf432a780d6c835d0300bb9859db6357f7d79e5285764e0f05d0a"
 	}
 }

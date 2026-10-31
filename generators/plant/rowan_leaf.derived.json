@@ -80,6 +80,17 @@
 	"rungs": {
 		"1": {
 			"budget": 3493,
+			"candidates": [
+				{
+					"cost": 8,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.07547000000000001,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				}
+			],
 			"checked_at": 8,
 			"drawn": {
 				"excess": 0.25,
@@ -115,13 +126,16 @@
 				"REDUCE from rung 0: nothing to try",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
+			"peak_mb": 247.0,
 			"route": "kit",
+			"search_s": 19.3,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "9b3d59ce7752ab40f219c3f795bff734f2550ad30f098b04360806978d43a59d"
 	}
 }

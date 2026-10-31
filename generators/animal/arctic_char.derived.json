@@ -165,12 +165,12 @@
 				"KIT: none holds at 0.0021 -- the finest tried (1.000) fails at {\"cooked\":1} seed 314: the picture changes at the drawn size: 142 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00129 m",
 				"REDUCE from rung 0 at {\"cooked\":1} seed 314: element 0's part 'body' is 123 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 404.0,
+			"peak_mb": 409.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 26.0
 			},
-			"search_s": 199.5,
+			"search_s": 231.3,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -480,19 +480,19 @@
 				"KIT at 2 pixels: none holds at 0.0085 -- the finest tried (1.000) fails at {\"cooked\":1} seed 314: the picture changes at the drawn size: 11 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00516 m",
 				"REDUCE from rung 0 at {\"cooked\":1} seed 314: element 0's part 'body' is 123 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 375.0,
+			"peak_mb": 405.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 26.0
 			},
-			"search_s": 660.5,
+			"search_s": 894.4000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "3ab4ad8f0708e68d875df50422288706e9a427f48696220d728a5ecfc1d88d81"
 	}
 }

@@ -46,7 +46,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 3,
 				"trace": "plant__birch-leaf#1.trace.jsonl"
 			}
 		}
@@ -61,9 +61,29 @@
 	"rungs": {
 		"1": {
 			"budget": 259,
+			"candidates": [
+				{
+					"cost": 84,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.01097,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 68,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.16261,
+					"px_over": 142,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 5,
 			"drawn": {
-				"excess": 0.125,
+				"excess": 0.25,
 				"judge": "drawn",
 				"pixel_m": 0.0007779999999999999
 			},
@@ -74,12 +94,14 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
+					"child",
 					"reduce",
 					"thin",
-					"impostor"
+					"impostor",
+					"merged"
 				]
 			},
 			"measured": {
@@ -92,15 +114,18 @@
 			"measured_of": 1,
 			"not_taken": [
 				"REDUCE from rung 0: none holds at 0.0168 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 142 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00078 m; coverage changes -0.2091 against 0.0944 allowed (a one-pixel shrink all round)",
-				"THIN, IMPOSTOR: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
+			"peak_mb": 235.0,
 			"route": "kit",
+			"search_s": 6.0,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "ec0453a720b7d0ea4dcd535d477d6772dc59820aee71dace4b371f7070005338"
 	}
 }

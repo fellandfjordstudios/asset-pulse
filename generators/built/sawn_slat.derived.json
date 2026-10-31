@@ -164,9 +164,9 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"length_m\":1.2} seed 314: coverage changes +0.0152 against 0.0116 a derivation may change (its error read as a change of size)",
 				"THIN: built/sawn-slat does not declare `reads_density`"
 			],
-			"peak_mb": 255.0,
+			"peak_mb": 256.0,
 			"route": "rung0",
-			"search_s": 14.4,
+			"search_s": 15.200000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -523,12 +523,12 @@
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"length_m\":0.02} seed 314: the picture changes at the drawn size: 1922 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00019 m",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"length_m\":0.02} seed 314: the picture changes at the drawn size: 1922 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00019 m"
 			],
-			"peak_mb": 271.0,
+			"peak_mb": 273.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 24.1,
+			"search_s": 27.3,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -887,19 +887,19 @@
 				"KIT: none holds at 0.0296 -- the finest tried (1.000) fails at {\"length_m\":0.02} seed 314: the picture changes at the drawn size: 75 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00076 m",
 				"KIT at 4 pixels: none holds at 0.0296 -- the finest tried (1.000) fails at {\"length_m\":0.02} seed 314: the picture changes at the drawn size: 36 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00076 m"
 			],
-			"peak_mb": 258.0,
+			"peak_mb": 259.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 19.900000000000002,
+			"search_s": 22.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "a7b5544315203b7e90f029a90e665c9261cf48f6eed3906d0622b6816bb2624b"
 	}
 }

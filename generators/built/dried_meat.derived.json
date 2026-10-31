@@ -149,9 +149,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0030 -- the finest tried (0.700) fails at {\"strip_length_m\":0.08} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00069 m",
 				"THIN: built/dried-meat does not declare `reads_density`"
 			],
-			"peak_mb": 253.0,
+			"peak_mb": 254.0,
 			"route": "rung0",
-			"search_s": 16.8,
+			"search_s": 17.8,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -159,7 +159,7 @@
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "a5edf3f3a55869848cff483ab8052cd52b313b7354c20fc6ff4e5cbaa390f21d"
 	}
 }

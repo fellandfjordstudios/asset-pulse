@@ -67,11 +67,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 16,
 				"trace": "built__motor-sledge#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 28,
+				"candidates": 27,
 				"trace": "built__motor-sledge#2.trace.jsonl"
 			},
 			"3": {
@@ -92,6 +92,35 @@
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 8269,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 19692,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00442,
+					"px_over": 9,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 43546,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "merged",
+					"value": 1.0
+				}
+			],
 			"checked_at": 8,
 			"drawn": {
 				"excess": 0.0,
@@ -104,13 +133,14 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
-					"reduce",
+					"child",
 					"impostor",
-					"thin",
-					"merged"
+					"reduce",
+					"merged",
+					"thin"
 				]
 			},
 			"measured": {
@@ -128,16 +158,60 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 50762 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 45476 pixel(s) differ at {} seed 314 (worst 0.73)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 47108 pixel(s) differ at {} seed 314 (worst 0.77)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 24520 pixel(s) differ at {} seed 314 (worst 0.73)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 50726 pixel(s) differ at {} seed 314 (worst 0.70)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 45203 pixel(s) differ at {} seed 314 (worst 0.73)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 47117 pixel(s) differ at {} seed 314 (worst 0.77)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 24525 pixel(s) differ at {} seed 314 (worst 0.73)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 14428 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 14368 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 8269 pixel(s) differ at {} seed 314 (worst 0.63)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 8438 pixel(s) differ at {} seed 314 (worst 0.66)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 9 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00566 m",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
+			"peak_mb": 578.0,
 			"route": "merged",
+			"search_s": 1031.6000000000001,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
 		"2": {
 			"budget": 9779,
 			"budget_reason": "the cheapest derivation that holds the picture costs 14930, 1.53x rung 2's budget 9779: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 3,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 15876,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.005600000000000001,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 14930,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.004690000000000001,
+					"px_over": null,
+					"route": "merged",
+					"value": 0.3429999999999999
+				}
+			],
 			"checked_at": 8,
 			"drawn": {
 				"excess": 0.5,
@@ -385,10 +459,13 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"KIT (its own build at the rung's pixel) held at 15876, dearer than the 14930 taken"
 			],
+			"peak_mb": 312.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 5
 			},
+			"search_s": 2358.3,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -415,6 +492,17 @@
 				}
 			},
 			"budget": 2444,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "impostor",
+					"value": 12
+				}
+			],
 			"checked_at": 8,
 			"draw_calls": 1,
 			"drawn": {
@@ -436,7 +524,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
+			"peak_mb": 267.0,
 			"route": "impostor",
+			"search_s": 408.8,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 24
@@ -444,7 +535,7 @@
 	},
 	"source": {
 		"children": "e3e997ca1819f1e503bcdb8eecea0dd75222332b6f9402fbe6e08844ee6aaa2e",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "beb8e613d47198e53799c298faa1f02d1ad35ecb53085fdb0f0ccf7ed88334d9"
 	}
 }

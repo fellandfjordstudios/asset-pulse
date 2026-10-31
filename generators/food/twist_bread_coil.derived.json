@@ -143,19 +143,19 @@
 			"not_taken": [
 				"KIT: none holds at 0.0072 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.78), one pixel 0.00136 m"
 			],
-			"peak_mb": 267.0,
+			"peak_mb": 268.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 53.1,
+			"search_s": 60.300000000000004,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "3cc6ec759a848126bd8c9226ca3659472a57097365a96d787917746819f9c677"
 	}
 }

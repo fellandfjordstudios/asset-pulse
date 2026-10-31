@@ -42,7 +42,7 @@
 	},
 	"replay": {
 		"1": "709d20715dc89906a6d6a81dd7b9649b0b9993e1a2b345fee242c5459cf4a91c",
-		"2": "219fef377a8f9247526b1fab246d62ed97b24dfa99c80bb29f8061176d340f87",
+		"2": "fb943bd1f1ed5f0e3e06c05118994009c0522d69a44d4b4fe3569023972c3432",
 		"3": "1513f59785baad70868089ce3b1123ece0781eb4214dc5d3f05660b089f3d153"
 	},
 	"rungs": {
@@ -140,12 +140,12 @@
 				"CHILD: no welded child has a coarser rung at slot 1: {\"built/nansen-cooker-cup\":0,\"built/nansen-cooker-vessel\":0}",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00147 m"
 			],
-			"peak_mb": 324.0,
+			"peak_mb": 326.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 43.0
 			},
-			"search_s": 74.9,
+			"search_s": 86.5,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -262,7 +262,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 5986,
 				"coverage_rel": -0.014230000000000001,
@@ -295,9 +294,9 @@
 				"CHILD: no welded child has a coarser rung at slot 2: {\"built/nansen-cooker-cup\":0,\"built/nansen-cooker-vessel\":0}",
 				"REDUCE, MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.031, support 0.031, fitting 0.031, vessel 0.031, cup 0.031)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 279.0,
+			"peak_mb": 270.0,
 			"route": "kit",
-			"search_s": 104.2,
+			"search_s": 32.0,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -357,9 +356,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 270.0,
 			"route": "impostor",
-			"search_s": 20.700000000000003,
+			"search_s": 24.900000000000002,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -369,7 +368,7 @@
 	},
 	"source": {
 		"children": "6c4a5c9a1ecab14beb95c3230bdd84250a8cb12b5e036110553ce14870464625",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "3df0ed37b3ca2c80fc544da4509d10c85892ecba96f9aa9fac9c908fa9e33366"
 	}
 }

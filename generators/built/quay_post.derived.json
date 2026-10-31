@@ -276,12 +276,12 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00177 m",
 				"THIN: built/quay-post does not declare `reads_density`"
 			],
-			"peak_mb": 701.0,
+			"peak_mb": 689.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 1962.0
 			},
-			"search_s": 566.2,
+			"search_s": 682.9000000000001,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
@@ -289,7 +289,7 @@
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "0fca5b6d1bef1b778d037ac34a8c398d1f1fdd21c3e7c209b3def18f2167f00a"
 	}
 }

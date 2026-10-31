@@ -147,7 +147,7 @@
 			],
 			"peak_mb": 312.0,
 			"route": "kit",
-			"search_s": 158.70000000000002,
+			"search_s": 172.10000000000002,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -384,10 +384,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping nail 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel, keeping nail 0.031) held at 1380, dearer than the 884 taken"
 			],
-			"peak_mb": 247.0,
+			"peak_mb": 248.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 115.30000000000001,
+			"search_s": 156.70000000000002,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -395,7 +395,7 @@
 	},
 	"source": {
 		"children": "4d3ff9f96c7ec66d26f63f3e137eea615976c2918e0668a8f6b30cc322764d37",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "a3f4a4af0bfff2bccffb3fd5fbdec3b1bf002ee5c9357da9c0103fbc8a80280f"
 	}
 }

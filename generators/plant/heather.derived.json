@@ -72,11 +72,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 27,
+				"candidates": 0,
 				"trace": "plant__heather#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 44,
+				"candidates": 0,
 				"trace": "plant__heather#2.trace.jsonl"
 			}
 		}
@@ -95,29 +95,32 @@
 			"budget": 48007,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 32269,
+					"px_over": 32269.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 258674,
+					"cost": 66454,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.00911,
-					"px_over": 95,
+					"picture": 0.05509000000000001,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
+					"value": {
+						"flower": 0.3429999999999999,
+						"leaf": 0.03125
+					}
 				},
 				{
-					"cost": 290396,
+					"cost": 290396.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.0053100000000000005,
-					"px_over": 41,
+					"picture": 0.00531,
+					"px_over": 41.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -165,10 +168,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 41 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00188 m; coverage changes -0.0581 against 0.0232 allowed (a one-pixel shrink all round); part 'floret' changes its share of the picture by -0.0414 against 0.0232 allowed (its colour's share of the subject); part 'shoot' changes its share of the picture by +0.0425 against 0.0232 allowed (its colour's share of the subject)",
 				"THIN: plant/heather does not declare `reads_density`"
 			],
-			"peak_mb": 599.0,
+			"peak_mb": 581.0,
 			"route": "kit",
-			"search_s": 4625.5,
-			"searched": "search",
+			"search_s": 367.8,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"tolerance": 0.001851851851851852
@@ -178,29 +181,33 @@
 			"budget": 12001,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 13,
+					"px_over": 13.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 191844,
+					"cost": 14570,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.009300000000000001,
-					"px_over": 1,
+					"picture": 0.16327000000000003,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
+					"value": {
+						"flower": 0.03125,
+						"leaf": 0.03125,
+						"shoot": 0.3429999999999999
+					}
 				},
 				{
-					"cost": 290396,
+					"cost": 290396.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.0053100000000000005,
-					"px_over": 0,
+					"picture": 0.00531,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -479,17 +486,17 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0581 against 0.0450 allowed (a one-pixel shrink all round)",
 				"THIN: plant/heather does not declare `reads_density`"
 			],
-			"peak_mb": 637.0,
+			"peak_mb": 583.0,
 			"route": "kit",
-			"search_s": 3155.9,
-			"searched": "search",
+			"search_s": 2029.7,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "36778588a06cab2a79ccab8e61cccf0d7c0e25faaf2e7e793bb97932a70e23c6"
 	}
 }

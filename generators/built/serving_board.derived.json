@@ -18,7 +18,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 4,
 				"trace": "built__serving-board#1.trace.jsonl"
 			}
 		}
@@ -33,6 +33,26 @@
 	"rungs": {
 		"1": {
 			"budget": 8169,
+			"candidates": [
+				{
+					"cost": 256,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00406,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 202,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00406,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.48999999999999994
+				}
+			],
 			"checked_at": 1,
 			"drawn": {
 				"excess": 0.25,
@@ -46,11 +66,12 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
-					"reduce",
+					"child",
 					"impostor",
+					"reduce",
 					"merged",
 					"thin"
 				]
@@ -59,7 +80,10 @@
 				"cost": 256,
 				"coverage_rel": -0.0027,
 				"floor": 0.00406,
-				"part_shift": {},
+				"part_shift": {
+					"board": 0.01047,
+					"end_grain": -0.01047
+				},
 				"picture": 0.00406
 			},
 			"measured_of": 2,
@@ -67,13 +91,16 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.490 held at 202, cheaper than the 256 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
+			"peak_mb": 244.0,
 			"route": "kit",
+			"search_s": 7.6000000000000005,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "37a30b7c8dcae081a14d6bb3c8e2e49e97a26f6fe2591750ef17457f44ab31e7"
 	}
 }

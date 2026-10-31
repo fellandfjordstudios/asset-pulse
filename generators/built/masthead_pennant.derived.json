@@ -130,9 +130,9 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"length_m\":0.6} seed 314: the picture changes at the drawn size: 21 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00115 m",
 				"THIN: built/masthead-pennant does not declare `reads_density`"
 			],
-			"peak_mb": 239.0,
+			"peak_mb": 240.0,
 			"route": "rung0",
-			"search_s": 11.0,
+			"search_s": 12.100000000000001,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
@@ -334,7 +334,7 @@
 			],
 			"peak_mb": 242.0,
 			"route": "kit",
-			"search_s": 24.3,
+			"search_s": 29.700000000000003,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -394,9 +394,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 238.0,
+			"peak_mb": 239.0,
 			"route": "impostor",
-			"search_s": 10.700000000000001,
+			"search_s": 11.700000000000001,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -405,7 +405,7 @@
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "9f04f80ed32e6e2f906cde0c946f4746b5b5dfd5ee94eb479e47308d4cedd3fc"
 	}
 }

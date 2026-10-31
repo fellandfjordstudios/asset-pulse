@@ -203,9 +203,9 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 315: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00830 m",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 343.0,
+			"peak_mb": 345.0,
 			"route": "kit",
-			"search_s": 216.9,
+			"search_s": 224.4,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -688,17 +688,17 @@
 				"KIT (its own build at the rung's pixel, keeping bolt 0.082) held at 854, dearer than the 356 taken",
 				"REDUCE to 0.700 held at 1738, dearer than the 356 taken"
 			],
-			"peak_mb": 276.0,
+			"peak_mb": 277.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 99.0,
+			"search_s": 114.30000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "3e341c41b5f135e044a867bc9128304c3d76355f64684e519db3d9936bcf0cf0"
 	}
 }

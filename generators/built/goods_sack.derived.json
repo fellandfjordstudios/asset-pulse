@@ -44,15 +44,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 13,
 				"trace": "built__goods-sack#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 24,
 				"trace": "built__goods-sack#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 1,
+				"candidates": 28,
 				"trace": "built__goods-sack#3.trace.jsonl"
 			}
 		}
@@ -69,6 +69,35 @@
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 5149,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00523,
+					"px_over": 498,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 5460,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.004600000000000001,
+					"px_over": 37,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 7804,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
 			"checked_at": 5,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -76,24 +105,56 @@
 			"measured": {
 				"cost": 7804,
 				"coverage_rel": 0.0,
-				"floor": 0.004600000000000001,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 498 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00157 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 498 pixel(s) differ at the drawn size at {} seed 314 (worst 0.69)",
 				"REDUCE from rung 0 at {} seed 314: element 3's part 'cloth' is 112 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"neck_open\":1.0} seed 314: the picture changes at the drawn size: 37 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00142 m",
 				"THIN: built/goods-sack does not declare `reads_density`"
 			],
+			"peak_mb": 382.0,
 			"route": "rung0",
+			"search_s": 148.3,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"tolerance": 0.001851851851851852
 		},
 		"2": {
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 3485,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.013070000000000002,
+					"px_over": 25,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 5460,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.004600000000000001,
+					"px_over": 1,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 7804,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
 			"checked_at": 5,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -227,25 +288,49 @@
 			"measured": {
 				"cost": 7804,
 				"coverage_rel": 0.0,
-				"floor": 0.004600000000000001,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 25 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.77), one pixel 0.00630 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 25 pixel(s) differ at the drawn size at {} seed 314 (worst 0.77)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 52 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00630 m",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 52 pixel(s) differ at the drawn size at {} seed 314 (worst 0.62)",
 				"REDUCE from rung 0 at {} seed 314: element 3's part 'cloth' is 112 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"neck_open\":1.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00567 m",
 				"THIN: built/goods-sack does not declare `reads_density`"
 			],
+			"peak_mb": 253.0,
 			"route": "rung0",
+			"search_s": 483.8,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408
 		},
 		"3": {
 			"budget": 2444,
+			"candidates": [
+				{
+					"cost": 2063,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.04655,
+					"px_over": 4,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 156,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.029320000000000002,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.009688901040699992
+				}
+			],
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.3125,
@@ -254,16 +339,17 @@
 			},
 			"error": 0.02962962962962963,
 			"every_piece": true,
-			"fraction": 0.00968890104069999,
+			"fraction": 0.009688901040699992,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.010",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
-					"reduce",
+					"child",
 					"impostor",
+					"reduce",
 					"merged",
 					"thin"
 				]
@@ -412,16 +498,19 @@
 				"KIT at 4 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 4 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0 at {} seed 314: element 3's part 'cloth' is 112 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
+			"peak_mb": 253.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5.0
+				"reduce": 5
 			},
+			"search_s": 152.8,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "beac39292e4fa72ff778cf3338d157f7472345d3a500131099cbf8039f452ec1"
 	}
 }

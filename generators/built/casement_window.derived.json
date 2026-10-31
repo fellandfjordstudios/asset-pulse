@@ -156,11 +156,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 3,
 				"trace": "built__casement-window#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 4,
 				"trace": "built__casement-window#2.trace.jsonl"
 			}
 		}
@@ -176,6 +176,26 @@
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 634,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00508,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 618,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0053,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 21,
 			"drawn": {
 				"excess": 0.25,
@@ -186,23 +206,63 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
 				"cost": 634,
 				"coverage_rel": -2e-05,
 				"floor": 0.0054,
-				"part_shift": {},
+				"part_shift": {
+					"frame": -0.00033000000000000005,
+					"glass": 0.00033000000000000005
+				},
 				"picture": 0.00508
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
-				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"panes_per_light\":1} seed 314: the picture changes at the drawn size: 2648 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.81), one pixel 0.00236 m; coverage changes -0.2750 against 0.0278 allowed (a one-pixel shrink all round); part 'frame' changes its share of the picture by +0.3180 against 0.0278 allowed (its colour's share of the subject); part 'glass' changes its share of the picture by -0.3180 against 0.0278 allowed (its colour's share of the subject)"
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"REDUCE to 0.700 held at 618, cheaper than the 634 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
+			"peak_mb": 1083.0,
 			"route": "kit",
+			"search_s": 639.5,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
 		"2": {
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 458,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0053,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 524,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.008060000000000001,
+					"px_over": 1,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 21,
 			"drawn": {
 				"excess": 0.25,
@@ -213,6 +273,19 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"material_transfer": {
 				"checked_at": 21,
 				"checks": [
@@ -728,20 +801,28 @@
 				"cost": 458,
 				"coverage_rel": -0.00046,
 				"floor": 0.0054,
-				"part_shift": {},
+				"part_shift": {
+					"frame": -0.00119,
+					"glass": 0.00119
+				},
 				"picture": 0.0053
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"REDUCE from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"panes_per_light\":1} seed 314: the picture changes at the drawn size: 149 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00942 m; coverage changes -0.2755 against 0.0496 allowed (a one-pixel shrink all round); part 'frame' changes its share of the picture by +0.3180 against 0.0496 allowed (its colour's share of the subject); part 'glass' changes its share of the picture by -0.3180 against 0.0496 allowed (its colour's share of the subject)"
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"width_m\":2.4} seed 314: the picture changes at the drawn size: 27 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.01831 m",
+				"REDUCE from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"casing_proud_m\":0.004} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00942 m",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
+			"peak_mb": 330.0,
 			"route": "kit",
+			"search_s": 293.90000000000003,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "afca6465079c8c17342aa68b5b2603b1005ff66580aeddd255585e1e0c1b8a56"
 	}
 }

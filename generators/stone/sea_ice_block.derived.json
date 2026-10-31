@@ -156,12 +156,12 @@
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00056 m"
 			],
-			"peak_mb": 539.0,
+			"peak_mb": 540.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 151.5,
+			"search_s": 165.70000000000002,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -470,16 +470,16 @@
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.700 held at 580, dearer than the 144 taken"
 			],
-			"peak_mb": 295.0,
+			"peak_mb": 255.0,
 			"route": "kit",
-			"search_s": 52.7,
+			"search_s": 66.8,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "39178f31fb64df0eeb70cc469bfd9bebfafffc652314f84176a3e876d20fe916"
 	}
 }

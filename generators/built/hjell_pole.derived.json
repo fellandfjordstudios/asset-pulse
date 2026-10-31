@@ -198,12 +198,12 @@
 				"KIT: none holds at 0.0012 -- the finest tried (1.000) fails at {\"length_m\":0.4} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00050 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 24 pixel(s) differ at the drawn size at {} seed 314 (worst 0.97)"
 			],
-			"peak_mb": 1062.0,
+			"peak_mb": 1063.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 233.20000000000002,
+			"search_s": 242.8,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -658,16 +658,16 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.058 held at 396, cheaper than the 628 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 1032.0,
+			"peak_mb": 1034.0,
 			"route": "kit",
-			"search_s": 141.70000000000002,
+			"search_s": 189.4,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "3c1129855423c47c2cf08a2bfb08474747a99c53b74c47b3de6f399b530216ac"
 	}
 }

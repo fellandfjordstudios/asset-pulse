@@ -1,0 +1,148 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.24
+			},
+			"seed": 314
+		}
+	],
+	"id": "built/primus-stove",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural"
+		],
+		"old_key_sets": 3,
+		"sampled": 3,
+		"sets": 3
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "built__primus-stove#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "4b3ce23040862e62af822e0eaaebc75fa5134fe4d4068d707320a4871795b3eb"
+	},
+	"rungs": {
+		"1": {
+			"budget": 3971,
+			"candidates": [
+				{
+					"cost": 2.0,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 115.0,
+					"route": "impostor",
+					"value": 32.0
+				},
+				{
+					"cost": 6914.0,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00463,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 3526,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0046300000000000004,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.16806999999999994
+				}
+			],
+			"checked_at": 3,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.001315
+			},
+			"error": 0.005894002846883078,
+			"every_piece": true,
+			"fraction": 0.16806999999999994,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to 0.168",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 3526,
+				"coverage_rel": -0.01353,
+				"floor": 0.0046300000000000004,
+				"part_shift": {
+					"brass": -0.0038300000000000005,
+					"burner": -0.0008500000000000001,
+					"knob": -0.0008700000000000001,
+					"stamp": 4e-05,
+					"steel": -0.0039900000000000005,
+					"tank": 0.00727
+				},
+				"picture": 0.0046300000000000004
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 4359 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 4275 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 2058 pixel(s) differ at {} seed 314 (worst 0.69)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 1309 pixel(s) differ at {} seed 314 (worst 0.66)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 4376 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 4308 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 2062 pixel(s) differ at {} seed 314 (worst 0.69)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 1327 pixel(s) differ at {} seed 314 (worst 0.66)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 422 pixel(s) differ at {} seed 314 (worst 0.62)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 424 pixel(s) differ at {} seed 314 (worst 0.62)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 115 pixel(s) differ at {} seed 314 (worst 0.70)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 122 pixel(s) differ at {} seed 314 (worst 0.69)",
+				"REDUCE from rung 0 at {} seed 314: element 60's part 'brass' is 17 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"KIT (its own build at the rung's pixel) held at 6914, dearer than the 3526 taken"
+			],
+			"peak_mb": 253.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 18.0
+			},
+			"search_s": 35.6,
+			"searched": "recheck",
+			"surfaces": 6,
+			"surfaces_ceiling": 6
+		}
+	},
+	"source": {
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
+		"generator": "d06b9d6905fe4003f2eee9acee5870ecf3fa96ae3ad31a30359a53fc2d0a8845"
+	}
+}

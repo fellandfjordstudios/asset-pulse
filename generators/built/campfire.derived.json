@@ -198,11 +198,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 15,
 				"trace": "built__campfire#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 25,
 				"trace": "built__campfire#2.trace.jsonl"
 			},
 			"3": {
@@ -228,6 +228,26 @@
 		"1": {
 			"above_tolerance": true,
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 20271,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00413,
+					"px_over": 2,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 81482,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00413,
+					"px_over": 3,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 19,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -256,7 +276,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00231 m",
 				"THIN: built/campfire does not declare `reads_density`"
 			],
+			"peak_mb": 554.0,
 			"route": "kit",
+			"search_s": 881.8000000000001,
+			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 6,
 			"tolerance": 0.001851851851851852
@@ -264,6 +287,26 @@
 		"2": {
 			"above_tolerance": true,
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 9031,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00515,
+					"px_over": 1,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 81476,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00996,
+					"px_over": 2,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 19,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -757,7 +800,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00924 m",
 				"THIN: built/campfire does not declare `reads_density`"
 			],
+			"peak_mb": 567.0,
 			"route": "kit",
+			"search_s": 3090.8,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408
@@ -785,6 +831,17 @@
 				}
 			},
 			"budget": 2444,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "impostor",
+					"value": 12
+				}
+			],
 			"checked_at": 19,
 			"draw_calls": 1,
 			"drawn": {
@@ -806,7 +863,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
+			"peak_mb": 526.0,
 			"route": "impostor",
+			"search_s": 876.6,
+			"searched": "search",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -814,7 +874,7 @@
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "6a1fad646399099bf007219b00a3617211d69a01a88bc41ecadc71ad73e6576a"
 	}
 }

@@ -107,15 +107,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 15,
 				"trace": "plant__rowan-corymb#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 26,
 				"trace": "plant__rowan-corymb#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 29,
 				"trace": "plant__rowan-corymb#3.trace.jsonl"
 			}
 		}
@@ -133,6 +133,26 @@
 		"1": {
 			"above_tolerance": true,
 			"budget": 2259,
+			"candidates": [
+				{
+					"cost": 3758,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00436,
+					"px_over": 1,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 3644,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.004070000000000001,
+					"px_over": 1,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 14,
 			"error": -1.0,
 			"every_piece": true,
@@ -156,14 +176,18 @@
 			},
 			"not_taken": [
 				"KIT: none holds at 0.0053 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00073 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.14: 246 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'ray' is 80 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE (every piece) from rung 0: none holds at 0.0053 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00073 m",
 				"THIN: plant/rowan-corymb does not declare `reads_density`"
 			],
+			"peak_mb": 277.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 71.0
+				"reduce": 71
 			},
+			"search_s": 168.8,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"tolerance": 0.005329357402549172
@@ -171,6 +195,26 @@
 		"2": {
 			"above_tolerance": true,
 			"budget": 564,
+			"candidates": [
+				{
+					"cost": 1010,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.014,
+					"px_over": 0,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 3322,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.007640000000000001,
+					"px_over": 0,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 14,
 			"error": -1.0,
 			"every_piece": true,
@@ -536,15 +580,20 @@
 			},
 			"not_taken": [
 				"KIT: none holds at 0.0213 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.2162 against 0.0990 allowed (a one-pixel shrink all round)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.43: 1 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"KIT at 2 pixels: none holds at 0.0213 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.2162 against 0.0990 allowed (a one-pixel shrink all round)",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.43: 1 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'ray' is 80 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE (every piece) from rung 0: none holds at 0.0213 -- the finest tried (0.700) fails at {\"fruit_diameter_m\":0.005} seed 314: coverage changes -0.0503 against 0.0501 a derivation may change (its error read as a change of size)",
 				"THIN: plant/rowan-corymb does not declare `reads_density`"
 			],
+			"peak_mb": 271.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 71.0
+				"reduce": 71
 			},
+			"search_s": 194.4,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.021317429610196687
@@ -552,6 +601,26 @@
 		"3": {
 			"above_tolerance": true,
 			"budget": 141,
+			"candidates": [
+				{
+					"cost": 206,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.26177,
+					"px_over": 1,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 2292,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.018590000000000002,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.48999999999999994
+				}
+			],
 			"checked_at": 14,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -919,18 +988,23 @@
 			},
 			"not_taken": [
 				"KIT: none holds at 0.0853 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.01163 m; part 'fruit' changes its share of the picture by +0.3299 against 0.3254 allowed (its colour's share of the subject); part 'ray' changes its share of the picture by -0.3299 against 0.3254 allowed (its colour's share of the subject)",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 1 pixel(s) differ at the drawn size at {\"fruits\":160} seed 314 (worst 0.52)",
 				"KIT at 4 pixels: none holds at 0.0853 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.01163 m; part 'fruit' changes its share of the picture by +0.3299 against 0.3254 allowed (its colour's share of the subject); part 'ray' changes its share of the picture by -0.3299 against 0.3254 allowed (its colour's share of the subject)",
+				"KIT at 4 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 1 pixel(s) differ at the drawn size at {\"fruits\":160} seed 314 (worst 0.52)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'ray' is 80 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"BUDGET: the cheapest derivation that holds the picture costs 2292 (16.37x), over rung 3's budget 140 x 1.5 = 210 (flower, 0.14 m)"
+				"BUDGET: the cheapest derivation that holds the picture costs 2292 (16.26x), over rung 3's budget 141 x 1.5 = 211 (flower, 0.14 m)"
 			],
+			"peak_mb": 285.0,
 			"route": "kit",
+			"search_s": 226.5,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.08526971844078675
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "a45360e80896a74d075e834f3a1edfa440d03eb431545b8e68b57e256a87af91"
 	}
 }

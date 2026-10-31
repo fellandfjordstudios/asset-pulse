@@ -25,11 +25,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 4,
 				"trace": "built__mess-kit#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 8,
+				"candidates": 7,
 				"trace": "built__mess-kit#2.trace.jsonl"
 			}
 		}
@@ -45,31 +45,99 @@
 	"rungs": {
 		"1": {
 			"budget": 3152,
+			"candidates": [
+				{
+					"cost": 1744,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": 1,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 2550,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "merged",
+					"value": 1.0
+				}
+			],
 			"checked_at": 2,
-			"error": -1.0,
+			"drawn": {
+				"excess": 0.0,
+				"judge": "drawn",
+				"pixel_m": 0.0012929999999999999
+			},
+			"error": 0.0037476318679603394,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "MERGED (its parts at their own rungs, joined)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
 				"cost": 2550,
 				"coverage_rel": 0.0,
 				"floor": 0.00447,
-				"part_shift": {},
+				"part_shift": {
+					"abrasion": 0.0,
+					"aluminium": 0.0,
+					"clip": 0.0,
+					"edge": 0.0,
+					"plastic": 0.0,
+					"rim": 0.0,
+					"titanium": 0.0,
+					"wire": 0.0
+				},
 				"picture": 0.0
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0037 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00129 m",
-				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
-				"THIN: built/mess-kit does not declare `reads_density`"
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"route": "rung0",
+			"peak_mb": 260.0,
+			"route": "merged",
+			"search_s": 22.8,
+			"searched": "search",
 			"surfaces": 8,
-			"surfaces_ceiling": 8,
-			"tolerance": 0.0037476318679603394
+			"surfaces_ceiling": 8
 		},
 		"2": {
 			"budget": 788,
 			"budget_reason": "the cheapest derivation that holds the picture costs 1782, 2.26x rung 2's budget 788: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"candidates": [
+				{
+					"cost": 1050,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.008320000000000001,
+					"px_over": 1,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 1782,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.007970000000000001,
+					"px_over": null,
+					"route": "merged",
+					"value": 0.7
+				}
+			],
 			"checked_at": 2,
 			"drawn": {
 				"excess": 0.4375,
@@ -157,17 +225,20 @@
 				"KIT at 2 pixels: none holds at 0.0150 -- the finest tried (1.000) fails at {} seed 314: part 'abrasion' changes its share of the picture by -0.0777 against 0.0745 allowed (its colour's share of the subject)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
+			"peak_mb": 237.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 8
 			},
+			"search_s": 44.6,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"children": "a1322c8388a79e1c57fc17939594eb559199a36b60dd1ef26aad001a7de53b07",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "105adbe15cea395c7bb3bdc7ac45d699df5c16cfd6ad51f410be908fed6d3748"
 	}
 }

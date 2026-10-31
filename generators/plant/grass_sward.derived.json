@@ -4,19 +4,19 @@
 			"params": {
 				"extent_m": 0.12
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"extent_m": 0.06
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"extent_m": 0.48
 			},
-			"seed": 314,
+			"seed": 314.0,
 			"short_of": {
 				"end": 8.0,
 				"param": "extent_m",
@@ -28,55 +28,55 @@
 				"extent_m": 0.12,
 				"spacing_m": 0.006
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"canopy_height_m": 0.02,
 				"extent_m": 0.12
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"canopy_height_m": 0.45,
 				"extent_m": 0.12
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"extent_m": 0.12,
 				"height_spread": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"extent_m": 0.12,
 				"height_spread": 1.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"extent_m": 0.12,
 				"senescent_fraction": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"extent_m": 0.12,
 				"senescent_fraction": 0.45
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"extent_m": 0.12
 			},
-			"seed": 315
+			"seed": 315.0
 		}
 	],
 	"id": "plant/grass-sward",
@@ -94,23 +94,23 @@
 			"structural",
 			"seed"
 		],
-		"old_key_sets": 11,
-		"sampled": 11,
-		"sets": 11
+		"old_key_sets": 11.0,
+		"sampled": 11.0,
+		"sets": 11.0
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 0.0,
 				"trace": "plant__grass-sward#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 0.0,
 				"trace": "plant__grass-sward#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 0.0,
 				"trace": "plant__grass-sward#3.trace.jsonl"
 			}
 		}
@@ -119,7 +119,7 @@
 		"params": {
 			"extent_m": 0.12
 		},
-		"seed": 314
+		"seed": 314.0
 	},
 	"replay": {
 		"1": "cb2b9dcd8e61648092ef6e9a68eb3446bdaded2d406516de4c0181b498d8daac",
@@ -129,27 +129,27 @@
 	"rungs": {
 		"1": {
 			"above_tolerance": true,
-			"budget": 13108,
-			"checked_at": 11,
+			"budget": 13108.0,
+			"checked_at": 11.0,
 			"error": -1.0,
 			"fraction": 1.0,
-			"from_rung": 0,
+			"from_rung": 0.0,
 			"keep": {},
 			"measured": {
-				"cost": 9018,
-				"coverage_rel": 0.004240000000000001,
+				"cost": 9018.0,
+				"coverage_rel": 0.00424,
 				"floor": 0.00474,
 				"part_shift": {},
 				"picture": 0.06447
 			},
-			"measured_of": 2,
+			"measured_of": 2.0,
 			"miss": {
 				"cost_of_ceiling": 0.6879768080561489,
 				"judge": "drawn",
 				"picture_over": 28.174246810367222,
 				"px_over": null,
 				"route": "kit",
-				"tier": 1
+				"tier": 1.0
 			},
 			"not_taken": [
 				"REDUCE from rung 0 at {\"extent_m\":0.12} seed 314: element 4's part 'body' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 15 more groups)",
@@ -158,36 +158,36 @@
 				"THIN: plant/grass-sward does not declare `reads_density`"
 			],
 			"route": "kit",
-			"surfaces": 1,
-			"surfaces_ceiling": 1,
-			"tolerance": 0.0022882599287899013
+			"surfaces": 1.0,
+			"surfaces_ceiling": 1.0,
+			"tolerance": 0.0022882599287899
 		},
 		"2": {
 			"above_tolerance": true,
-			"budget": 3277,
-			"checked_at": 11,
+			"budget": 3277.0,
+			"checked_at": 11.0,
 			"error": -1.0,
 			"fraction": 1.0,
-			"from_rung": 0,
+			"from_rung": 0.0,
 			"keep": {
 				"blade": 0.49,
 				"tuft": 0.49
 			},
 			"measured": {
-				"cost": 2478,
+				"cost": 2478.0,
 				"coverage_rel": 0.20471,
 				"floor": 0.00474,
 				"part_shift": {},
 				"picture": 0.33369000000000004
 			},
-			"measured_of": 2,
+			"measured_of": 2.0,
 			"miss": {
 				"cost_of_ceiling": 0.7561794324076899,
 				"judge": "drawn",
 				"picture_over": 36.45674119028788,
 				"px_over": null,
 				"route": "kit",
-				"tier": 1
+				"tier": 1.0
 			},
 			"not_taken": [
 				"REDUCE from rung 0 at {\"extent_m\":0.12} seed 314: element 4's part 'body' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 15 more groups)",
@@ -196,36 +196,36 @@
 				"THIN: plant/grass-sward does not declare `reads_density`"
 			],
 			"route": "kit",
-			"surfaces": 1,
-			"surfaces_ceiling": 1,
-			"tolerance": 0.009153039715159605
+			"surfaces": 1.0,
+			"surfaces_ceiling": 1.0,
+			"tolerance": 0.0091530397151596
 		},
 		"3": {
 			"above_tolerance": true,
-			"budget": 819,
-			"checked_at": 11,
+			"budget": 819.0,
+			"checked_at": 11.0,
 			"error": -1.0,
 			"fraction": 1.0,
-			"from_rung": 0,
+			"from_rung": 0.0,
 			"keep": {
 				"blade": 0.2401,
 				"tuft": 0.2401
 			},
 			"measured": {
-				"cost": 616,
+				"cost": 616.0,
 				"coverage_rel": -0.48307000000000005,
 				"floor": 0.00474,
 				"part_shift": {},
 				"picture": 0.38718
 			},
-			"measured_of": 2,
+			"measured_of": 2.0,
 			"miss": {
 				"cost_of_ceiling": 0.7521367521367521,
 				"judge": "drawn",
 				"picture_over": 10.575175352914128,
 				"px_over": null,
 				"route": "kit",
-				"tier": 1
+				"tier": 1.0
 			},
 			"not_taken": [
 				"REDUCE from rung 0 at {\"extent_m\":0.12} seed 314: element 4's part 'body' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 15 more groups)",
@@ -234,8 +234,8 @@
 				"THIN: plant/grass-sward does not declare `reads_density`"
 			],
 			"route": "kit",
-			"surfaces": 1,
-			"surfaces_ceiling": 1,
+			"surfaces": 1.0,
+			"surfaces_ceiling": 1.0,
 			"tolerance": 0.03661215886063842
 		}
 	},

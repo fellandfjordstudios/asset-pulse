@@ -109,15 +109,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 3,
 				"trace": "built__timber-door#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 4,
 				"trace": "built__timber-door#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__timber-door#3.trace.jsonl"
 			}
 		}
@@ -134,6 +134,26 @@
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 622,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 582,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0040100000000000005,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 14,
 			"drawn": {
 				"excess": 0.0,
@@ -144,23 +164,66 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
 				"cost": 622,
 				"coverage_rel": 0.0,
 				"floor": 0.0051600000000000005,
-				"part_shift": {},
+				"part_shift": {
+					"frame": 0.0,
+					"glass": 0.0,
+					"iron": 0.0,
+					"opening": 0.0
+				},
 				"picture": 0.0
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
+				"REDUCE from rung 0 at {} seed 314: element 1's part 'iron' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"REDUCE (every piece) to 0.700 held at 582, cheaper than the 622 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
+			"peak_mb": 702.0,
 			"route": "kit",
+			"search_s": 297.2,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		},
 		"2": {
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 622,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 438,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00757,
+					"px_over": 7,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 14,
 			"drawn": {
 				"excess": 0.0,
@@ -171,6 +234,19 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"material_transfer": {
 				"checked_at": 14,
 				"checks": [
@@ -518,20 +594,50 @@
 				"cost": 622,
 				"coverage_rel": 0.0,
 				"floor": 0.0051600000000000005,
-				"part_shift": {},
+				"part_shift": {
+					"frame": 0.0,
+					"glass": 0.0,
+					"iron": 0.0,
+					"opening": 0.0
+				},
 				"picture": 0.0
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"open\":1.0} seed 314: the picture changes at the drawn size: 20 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.91), one pixel 0.01837 m",
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
+				"REDUCE from rung 0 at {} seed 314: element 1's part 'iron' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.01837 m",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
+			"peak_mb": 289.0,
 			"route": "kit",
+			"search_s": 142.70000000000002,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
 		"3": {
 			"budget": 2444,
+			"candidates": [
+				{
+					"cost": 218,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.023500000000000004,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 214,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.02018,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.3429999999999999
+				}
+			],
 			"checked_at": 14,
 			"drawn": {
 				"excess": 0.1875,
@@ -542,6 +648,19 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"merged",
+					"thin"
+				]
+			},
 			"material_transfer": {
 				"checked_at": 14,
 				"checks": [
@@ -889,21 +1008,31 @@
 				"cost": 218,
 				"coverage_rel": -0.014830000000000001,
 				"floor": 0.0051600000000000005,
-				"part_shift": {},
+				"part_shift": {
+					"frame": -0.01597,
+					"glass": 0.009250000000000001,
+					"iron": -0.013630000000000001,
+					"opening": 0.0187
+				},
 				"picture": 0.023500000000000004
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)",
-				"KIT (its own build at 4 of the band's pixels) held at 218, the same cost as the route taken, found first"
+				"REDUCE from rung 0 at {} seed 314: element 1's part 'iron' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"KIT (its own build at 4 of the band's pixels) held at 218, the same cost as the route taken, found first",
+				"REDUCE (every piece) to 0.343 held at 214, cheaper than the 218 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
+			"peak_mb": 289.0,
 			"route": "kit",
+			"search_s": 130.3,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "40ac70283009aa2acf6fd2508b356547aca61e0b608767d620f3a700aca45a1f"
 	}
 }

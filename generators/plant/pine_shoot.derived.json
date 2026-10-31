@@ -149,11 +149,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "plant__pine-shoot#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 10,
 				"trace": "plant__pine-shoot#2.trace.jsonl"
 			}
 		}
@@ -169,6 +169,26 @@
 	"rungs": {
 		"1": {
 			"budget": 6081,
+			"candidates": [
+				{
+					"cost": 646,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 456,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.028820000000000002,
+					"px_over": 12,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 20,
 			"drawn": {
 				"excess": 0.0,
@@ -179,6 +199,19 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"thin",
+					"impostor",
+					"merged"
+				]
+			},
 			"measured": {
 				"cost": 646,
 				"coverage_rel": 0.0,
@@ -189,14 +222,38 @@
 			"measured_of": 1,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 1's part 'body' is 21 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"REDUCE (every piece) from rung 0: none holds at 0.0032 -- the finest tried (0.700) fails at {} seed 314: the picture moves 0.0244 of the extent against 0.0032 allowed (one pixel at the rung's near distance; raster floor 0.0040); coverage changes -0.1628 against 0.0289 allowed (a one-pixel shrink all round)"
+				"REDUCE (every piece) from rung 0: none holds at 0.0032 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 12 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00078 m; coverage changes -0.1603 against 0.0289 allowed (a one-pixel shrink all round)",
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
+			"peak_mb": 487.0,
 			"route": "kit",
+			"search_s": 239.3,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
 		"2": {
 			"budget": 1520,
+			"candidates": [
+				{
+					"cost": 646,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 450,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.028820000000000002,
+					"px_over": 0,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
 			"checked_at": 20,
 			"drawn": {
 				"excess": 0.0,
@@ -207,6 +264,19 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"thin",
+					"impostor",
+					"merged"
+				]
+			},
 			"measured": {
 				"cost": 646,
 				"coverage_rel": 0.0,
@@ -214,18 +284,23 @@
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 1's part 'body' is 21 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"REDUCE (every piece) from rung 0: none holds at 0.0065 -- the finest tried (0.700) fails at {} seed 314: the picture moves 0.0244 of the extent against 0.0065 allowed (one pixel at the rung's near distance; raster floor 0.0040); coverage changes -0.1628 against 0.0416 allowed (a one-pixel shrink all round)"
+				"REDUCE (every piece) from rung 0: none holds at 0.0130 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.2301 against 0.0669 allowed (a one-pixel shrink all round)",
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
+				"KIT (its own build at 2 of the band's pixels) held at 646, the same cost as the route taken, found first"
 			],
+			"peak_mb": 279.0,
 			"route": "kit",
+			"search_s": 133.0,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "0ed1e4d4f8046974830bf92185bda90307409713f502fe68c71255d734672007"
 	}
 }

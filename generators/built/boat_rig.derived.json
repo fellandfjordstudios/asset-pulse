@@ -329,9 +329,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0203 against 0.0116 a derivation may change (its error read as a change of size)",
 				"THIN: built/boat-rig does not declare `reads_density`"
 			],
-			"peak_mb": 343.0,
+			"peak_mb": 344.0,
 			"route": "rung0",
-			"search_s": 97.60000000000001,
+			"search_s": 109.10000000000001,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
@@ -1259,9 +1259,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"mast_diameter_ratio\":0.012} seed 314: coverage changes -0.0238 against 0.0227 a derivation may change (its error read as a change of size)",
 				"THIN: built/boat-rig does not declare `reads_density`"
 			],
-			"peak_mb": 354.0,
+			"peak_mb": 355.0,
 			"route": "rung0",
-			"search_s": 3297.0,
+			"search_s": 5051.200000000001,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1,
@@ -1269,7 +1269,7 @@
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "8dcbb177f2bab7581e75d421b9f5ca20bf640c6b2cd8125c520d059aa7747278",
 		"generator": "c7950009aebb770919bbfa22341509a4ecbeca3d0eef2d0f4e9fa2da0a88a747"
 	}
 }
