@@ -110,9 +110,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0025 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 22 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00130 m",
 				"THIN: built/coffee-grinder does not declare `reads_density`"
 			],
-			"peak_mb": 262.0,
+			"peak_mb": 263.0,
 			"route": "rung0",
-			"search_s": 274.3,
+			"search_s": 272.5,
 			"searched": "search",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
@@ -175,7 +175,7 @@
 			],
 			"peak_mb": 240.0,
 			"route": "impostor",
-			"search_s": 160.8,
+			"search_s": 154.8,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -183,7 +183,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "a0b33d5d846fccd53a4e436afe76684062b8fee7a5898c04752870cecb4c1d88"
+		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"generator": "31aadc0b435065abaaedff02166934f87c10262306006cab53bde1caa7da09d1"
 	}
 }

@@ -191,7 +191,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "animal__banana-slug#1.trace.jsonl"
 			}
 		}
@@ -217,7 +217,7 @@
 					"value": {}
 				},
 				{
-					"cost": 2368.0,
+					"cost": 2368,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -228,9 +228,9 @@
 			],
 			"checked_at": 26,
 			"drawn": {
-				"excess": 0.25,
+				"excess": 0.125,
 				"judge": "drawn",
-				"pixel_m": 0.0007779999999999999
+				"pixel_m": 0.000781
 			},
 			"error": 0.004322268754380925,
 			"fraction": 1.0,
@@ -239,7 +239,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -253,7 +253,13 @@
 				"cost": 3806,
 				"coverage_rel": -0.0028100000000000004,
 				"floor": 0.00398,
-				"part_shift": {},
+				"part_shift": {
+					"body": -0.0007700000000000001,
+					"foot": 0.0005700000000000001,
+					"mantle": -0.0017000000000000001,
+					"pore": 0.00101,
+					"tentacle": 0.0007700000000000001
+				},
 				"picture": 0.00398
 			},
 			"measured_of": 2,
@@ -261,16 +267,16 @@
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.343 held at 2368, cheaper than the 3806 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 344.0,
+			"peak_mb": 422.0,
 			"route": "kit",
-			"search_s": 250.20000000000002,
-			"searched": "recheck",
+			"search_s": 576.7,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "b08df453c9f12d8461e559cb98fbbb54fc380af0fd68f9f193de2fb0a90ad776"
+		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"generator": "c548a5fec74609622990c99c50616a8f1142e7bf3e828c97c7a385ab0b1efddc"
 	}
 }

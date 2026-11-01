@@ -163,11 +163,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "animal__luka#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "animal__luka#2.trace.jsonl"
 			},
 			"3": {
@@ -199,7 +199,7 @@
 					"value": {}
 				},
 				{
-					"cost": 7960.0,
+					"cost": 7948,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -221,7 +221,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -235,19 +235,37 @@
 				"cost": 14210,
 				"coverage_rel": -0.00027,
 				"floor": 0.00398,
-				"part_shift": {},
+				"part_shift": {
+					"claw": -4e-05,
+					"coat": 0.00031,
+					"ear": -0.00030000000000000003,
+					"face": 5e-05,
+					"feather": 0.00022,
+					"iris_l": 0.0,
+					"iris_r": 0.0,
+					"lid": -0.0002,
+					"lip": -0.00011,
+					"mouth": 1e-05,
+					"nose": -9e-05,
+					"pad": 1e-05,
+					"pupil": 0.0,
+					"sclera": -0.00019,
+					"short": 0.00011,
+					"teeth": 0.0002,
+					"toe": 1e-05
+				},
 				"picture": 0.00398
 			},
 			"measured_of": 2,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: part 'claw' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE (every piece) to 0.490 held at 7960, cheaper than the 14210 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"REDUCE (every piece) to 0.490 held at 7948, cheaper than the 14210 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 418.0,
+			"peak_mb": 817.0,
 			"route": "kit",
-			"search_s": 689.1,
-			"searched": "recheck",
+			"search_s": 1275.4,
+			"searched": "search",
 			"surfaces": 17,
 			"surfaces_ceiling": 17
 		},
@@ -264,7 +282,7 @@
 					"value": {}
 				},
 				{
-					"cost": 4050.0,
+					"cost": 4028,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00751,
@@ -286,7 +304,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -835,7 +853,25 @@
 				"cost": 12738,
 				"coverage_rel": -0.0012200000000000002,
 				"floor": 0.00398,
-				"part_shift": {},
+				"part_shift": {
+					"claw": -0.00033000000000000005,
+					"coat": 0.00076,
+					"ear": -0.00133,
+					"face": 0.0001,
+					"feather": 0.0004900000000000001,
+					"iris_l": 0.0,
+					"iris_r": 0.0,
+					"lid": -0.00021,
+					"lip": -0.00019,
+					"mouth": 1e-05,
+					"nose": -0.00019,
+					"pad": 1e-05,
+					"pupil": 0.0,
+					"sclera": -0.00019,
+					"short": 0.00023,
+					"teeth": 0.00102,
+					"toe": 2e-05
+				},
 				"picture": 0.00398
 			},
 			"measured_of": 3,
@@ -843,12 +879,12 @@
 				"REDUCE from rung 0 at {} seed 314: part 'claw' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at 2 of the band's pixels) held at 12738, the same cost as the route taken, found first",
-				"REDUCE (every piece) to 0.240 held at 4050, cheaper than the 12738 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"REDUCE (every piece) to 0.240 held at 4028, cheaper than the 12738 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 395.0,
+			"peak_mb": 775.0,
 			"route": "kit",
-			"search_s": 3957.4,
-			"searched": "recheck",
+			"search_s": 4478.9000000000005,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		},
@@ -878,12 +914,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 1,
 					"route": "impostor",
-					"value": 16
+					"value": 12
 				}
 			],
 			"checked_at": 22,
@@ -907,10 +943,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 444.0,
+			"peak_mb": 649.0,
 			"route": "impostor",
-			"search_s": 275.8,
-			"searched": "recheck",
+			"search_s": 285.2,
+			"searched": "search",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -918,7 +954,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "96a9aee1f1a6e5824b0daedc7fb0cf55272720732cd8eb1ee993720f753399ce"
+		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"generator": "9032e2b8686e3d2482fa123d89946c778c9c425f8e534e6a72aba9210778bb3f"
 	}
 }

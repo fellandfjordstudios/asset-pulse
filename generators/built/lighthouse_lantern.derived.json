@@ -46,15 +46,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 3,
 				"trace": "built__lighthouse-lantern#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "built__lighthouse-lantern#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__lighthouse-lantern#3.trace.jsonl"
 			}
 		}
@@ -82,7 +82,7 @@
 					"value": {}
 				},
 				{
-					"cost": 798.0,
+					"cost": 798,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00423,
@@ -104,12 +104,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -118,7 +118,10 @@
 				"cost": 770,
 				"coverage_rel": 0.0,
 				"floor": 0.00423,
-				"part_shift": {},
+				"part_shift": {
+					"lantern_glass": 1e-05,
+					"red_iron": -1e-05
+				},
 				"picture": 0.00423
 			},
 			"measured_of": 2,
@@ -127,10 +130,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.700 held at 798, dearer than the 770 taken"
 			],
-			"peak_mb": 298.0,
+			"peak_mb": 425.0,
 			"route": "kit",
-			"search_s": 78.60000000000001,
-			"searched": "recheck",
+			"search_s": 123.80000000000001,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -138,7 +141,7 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 502,
+					"cost": 377,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00423,
@@ -147,7 +150,7 @@
 					"value": {}
 				},
 				{
-					"cost": 366.0,
+					"cost": 366,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00559,
@@ -169,12 +172,12 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -310,7 +313,10 @@
 				"cost": 502,
 				"coverage_rel": -0.00012000000000000002,
 				"floor": 0.00423,
-				"part_shift": {},
+				"part_shift": {
+					"lantern_glass": 7.000000000000001e-05,
+					"red_iron": -7.000000000000001e-05
+				},
 				"picture": 0.00423
 			},
 			"measured_of": 3,
@@ -320,10 +326,10 @@
 				"KIT (its own build at 2 of the band's pixels) held at 377, cheaper than the 502 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"REDUCE (every piece) to 0.240 held at 366, cheaper than the 502 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 254.0,
+			"peak_mb": 250.0,
 			"route": "kit",
-			"search_s": 55.300000000000004,
-			"searched": "recheck",
+			"search_s": 108.9,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -331,22 +337,22 @@
 			"budget": 2444,
 			"candidates": [
 				{
-					"cost": 377,
+					"cost": 255,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00423,
+					"picture": 0.015510000000000001,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
 				},
 				{
-					"cost": 194.0,
+					"cost": 194,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.02112,
+					"picture": 0.028040000000000002,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.11764899999999996
+					"value": 0.11764899999999995
 				}
 			],
 			"checked_at": 5,
@@ -362,12 +368,12 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 4 of the band's pixels)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -503,7 +509,10 @@
 				"cost": 377,
 				"coverage_rel": -0.0004900000000000001,
 				"floor": 0.00423,
-				"part_shift": {},
+				"part_shift": {
+					"lantern_glass": 0.00031,
+					"red_iron": -0.00031
+				},
 				"picture": 0.00423
 			},
 			"measured_of": 3,
@@ -513,16 +522,16 @@
 				"KIT (its own build at 4 of the band's pixels) held at 255, cheaper than the 377 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"REDUCE (every piece) to 0.118 held at 194, cheaper than the 377 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 254.0,
+			"peak_mb": 250.0,
 			"route": "kit",
-			"search_s": 39.1,
-			"searched": "recheck",
+			"search_s": 83.0,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "75e92edfb81887bb0a61a7a52a15c9221b16ae35014476c948d22b428410619b"
+		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"generator": "3672299633c0c7075e27f702430bf5d3ae66aaf7255ba484f810556dd54b5858"
 	}
 }

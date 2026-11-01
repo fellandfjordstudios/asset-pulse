@@ -198,11 +198,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 15,
 				"trace": "built__campfire#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 25,
 				"trace": "built__campfire#2.trace.jsonl"
 			},
 			"3": {
@@ -233,17 +233,17 @@
 					"cost": 20271,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.005390000000000001,
-					"px_over": null,
+					"picture": 0.00413,
+					"px_over": 2,
 					"route": "kit",
-					"value": {}
+					"value": 1.0
 				},
 				{
-					"cost": 81482.0,
+					"cost": 81350,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00413,
-					"px_over": 3.0,
+					"px_over": 6,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -273,13 +273,13 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.64), one pixel 0.00231 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.02: 20778 pixel(s) differ at the drawn size at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314 (worst 0.56)",
 				"REDUCE from rung 0 at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: element 0's part 'ash' is 85 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00231 m",
+				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.00231 m",
 				"THIN: built/campfire does not declare `reads_density`"
 			],
-			"peak_mb": 464.0,
+			"peak_mb": 555.0,
 			"route": "kit",
-			"search_s": 380.3,
-			"searched": "recheck",
+			"search_s": 1057.5,
+			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 6,
 			"tolerance": 0.001851851851851852
@@ -292,17 +292,17 @@
 					"cost": 9031,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.009000000000000001,
-					"px_over": null,
+					"picture": 0.00515,
+					"px_over": 1,
 					"route": "kit",
-					"value": {}
+					"value": 1.0
 				},
 				{
-					"cost": 81476.0,
+					"cost": 81350,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00996,
-					"px_over": 2.0,
+					"px_over": 2,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -800,10 +800,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00924 m",
 				"THIN: built/campfire does not declare `reads_density`"
 			],
-			"peak_mb": 467.0,
+			"peak_mb": 560.0,
 			"route": "kit",
-			"search_s": 2579.5,
-			"searched": "recheck",
+			"search_s": 3355.4,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408
@@ -834,12 +834,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 1,
 					"route": "impostor",
-					"value": 24
+					"value": 12
 				}
 			],
 			"checked_at": 19,
@@ -863,10 +863,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 491.0,
+			"peak_mb": 512.0,
 			"route": "impostor",
-			"search_s": 1007.3000000000001,
-			"searched": "recheck",
+			"search_s": 1019.6,
+			"searched": "search",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -874,7 +874,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "6a1fad646399099bf007219b00a3617211d69a01a88bc41ecadc71ad73e6576a"
+		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"generator": "427fbdcea0485c37853bb1bd10fba11c965b97e4e3a1b85fa921fa10df2a51c5"
 	}
 }

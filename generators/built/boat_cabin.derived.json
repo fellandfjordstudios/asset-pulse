@@ -137,11 +137,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 26,
 				"trace": "built__boat-cabin#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 46,
 				"trace": "built__boat-cabin#2.trace.jsonl"
 			}
 		}
@@ -159,13 +159,13 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 10841.0,
+					"px_over": 10841,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
 					"cost": 1700,
@@ -181,11 +181,11 @@
 					}
 				},
 				{
-					"cost": 2566.0,
+					"cost": 2566,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.00439,
-					"px_over": 2.0,
+					"picture": 0.004390000000000001,
+					"px_over": 2,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -193,7 +193,7 @@
 			"checked_at": 18,
 			"drawn": {
 				"excess": 0.4219,
-				"gap": 0.052,
+				"gap": 0.052000000000000005,
 				"judge": "drawn",
 				"pixel_m": 0.0038889999999999997
 			},
@@ -208,12 +208,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -243,10 +243,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"beam_m\":3.8} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00607 m",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 348.0,
+			"peak_mb": 1506.0,
 			"route": "kit",
-			"search_s": 643.4000000000001,
-			"searched": "recheck",
+			"search_s": 4569.6,
+			"searched": "search",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
 		},
@@ -254,13 +254,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 86.0,
+					"px_over": 86,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
 					"cost": 1478,
@@ -276,11 +276,11 @@
 					}
 				},
 				{
-					"cost": 2344.0,
+					"cost": 2336,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00468,
-					"px_over": 2.0,
+					"px_over": 5,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -303,12 +303,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping fastening 0.031, trim 0.031, batten 0.031)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -780,21 +780,21 @@
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0 at 4x its pixel: 88 pixel(s) differ at {} seed 314 (worst 0.57)",
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0: 87 pixel(s) differ at {} seed 314 (worst 0.62)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'ends' is 19 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 4 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"hatch_open\":1.0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.01712 m",
+				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"length_m\":4.0} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.73), one pixel 0.03037 m; part 'joinery' changes its share of the picture by -0.0514 against 0.0454 allowed (its colour's share of the subject)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping fastening 0.031, trim 0.031, batten 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel, keeping fastening 0.031, batten 0.031, trim 0.031) held at 1558, dearer than the 1478 taken"
 			],
-			"peak_mb": 282.0,
+			"peak_mb": 359.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 1422.9,
-			"searched": "recheck",
+			"search_s": 3187.4,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "bce0c6980e3c126862e257a722cff9c60d9fe208d003dca3fb4ceb1ed05abd18"
+		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"generator": "fe85d2b6490872962a7736aa1e5f60a6ee850e2bcae6203be347bdbcf6e5407b"
 	}
 }

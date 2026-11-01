@@ -261,11 +261,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 13,
 				"trace": "built__boat-rig#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 24,
 				"trace": "built__boat-rig#2.trace.jsonl"
 			}
 		}
@@ -283,20 +283,20 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 4704.0,
+					"cost": 4704,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.04795,
-					"px_over": 0.0,
+					"picture": 0.047950000000000007,
+					"px_over": 0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 4402.0,
+					"cost": 4330,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.03911,
-					"px_over": 0.0,
+					"picture": 0.039110000000000006,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				},
@@ -317,11 +317,10 @@
 			"measured": {
 				"cost": 6318,
 				"coverage_rel": 0.0,
-				"floor": 0.00432,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"mast_height_m\":4.0} seed 314: coverage changes -0.0274 against 0.0232 allowed (a one-pixel shrink all round); part 'fittings' changes its share of the picture by -0.0235 against 0.0232 allowed (its colour's share of the subject)",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.43: 135 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
@@ -329,10 +328,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0203 against 0.0116 a derivation may change (its error read as a change of size)",
 				"THIN: built/boat-rig does not declare `reads_density`"
 			],
-			"peak_mb": 345.0,
+			"peak_mb": 453.0,
 			"route": "rung0",
-			"search_s": 125.60000000000001,
-			"searched": "recheck",
+			"search_s": 199.8,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"tolerance": 0.0018518518518518517
@@ -341,20 +340,20 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2716.0,
+					"cost": 2716,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.04183,
-					"px_over": 0.0,
+					"picture": 0.041830000000000006,
+					"px_over": 0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 4402.0,
+					"cost": 4330,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.03911,
-					"px_over": 0.0,
+					"picture": 0.039110000000000006,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				},
@@ -1245,31 +1244,30 @@
 			"measured": {
 				"cost": 6318,
 				"coverage_rel": 0.0,
-				"floor": 0.00432,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"mast_height_m\":4.0} seed 314: coverage changes -0.0394 against 0.0227 a derivation may change (its error read as a change of size)",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 4 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"mast_height_m\":4.0} seed 314: coverage changes -0.0459 against 0.0450 allowed (a one-pixel shrink all round)",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 4 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0 at {} seed 314: element 10's part 'rope' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"mast_diameter_ratio\":0.012} seed 314: coverage changes -0.0238 against 0.0227 a derivation may change (its error read as a change of size)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"mast_height_m\":4.0} seed 314: coverage changes -0.0227 against 0.0227 a derivation may change (its error read as a change of size)",
 				"THIN: built/boat-rig does not declare `reads_density`"
 			],
-			"peak_mb": 356.0,
+			"peak_mb": 355.0,
 			"route": "rung0",
-			"search_s": 5038.9000000000005,
-			"searched": "recheck",
+			"search_s": 5338.0,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407407
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "c7950009aebb770919bbfa22341509a4ecbeca3d0eef2d0f4e9fa2da0a88a747"
+		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"generator": "6fe5c0d28607be4007c129dfe2f90c92e9e7788ec0a0b65c1209ef6b864bf323"
 	}
 }

@@ -25,11 +25,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 4,
 				"trace": "built__mess-kit#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 6,
+				"candidates": 5,
 				"trace": "built__mess-kit#2.trace.jsonl"
 			}
 		}
@@ -47,11 +47,11 @@
 			"budget": 3152,
 			"candidates": [
 				{
-					"cost": 1744.0,
+					"cost": 1744,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 1.0,
+					"px_over": 1,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -77,12 +77,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -108,10 +108,10 @@
 				"KIT: none holds at 0.0037 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00129 m",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"peak_mb": 260.0,
+			"peak_mb": 261.0,
 			"route": "merged",
-			"search_s": 21.5,
-			"searched": "recheck",
+			"search_s": 26.900000000000002,
+			"searched": "search",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		},
@@ -226,15 +226,15 @@
 			],
 			"peak_mb": 237.0,
 			"route": "merged",
-			"search_s": 93.9,
+			"search_s": 89.0,
 			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"children": "a1322c8388a79e1c57fc17939594eb559199a36b60dd1ef26aad001a7de53b07",
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "105adbe15cea395c7bb3bdc7ac45d699df5c16cfd6ad51f410be908fed6d3748"
+		"children": "230fac3027486279529b5399b1d209718522f1208f7dd43c8def3b277dfe96cc",
+		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"generator": "9573d00a6f0d0c49ec646f1410cf17b1c852bcc8b849541f1640adfde5ce0510"
 	}
 }

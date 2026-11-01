@@ -86,7 +86,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 13,
 				"trace": "built__dried-meat#1.trace.jsonl"
 			}
 		}
@@ -103,20 +103,20 @@
 			"budget": 4220,
 			"candidates": [
 				{
-					"cost": 292.0,
+					"cost": 292,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00602,
-					"px_over": 291.0,
+					"px_over": 291,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 330.0,
+					"cost": 330,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.00518,
-					"px_over": 1.0,
+					"picture": 0.005180000000000001,
+					"px_over": 1,
 					"route": "reduce",
 					"value": 0.7
 				},
@@ -137,11 +137,10 @@
 			"measured": {
 				"cost": 472,
 				"coverage_rel": 0.0,
-				"floor": 0.005220000000000001,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0030 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 291 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00069 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.07: 911 pixel(s) differ at the drawn size at {} seed 314 (worst 0.59)",
@@ -149,17 +148,17 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0030 -- the finest tried (0.700) fails at {\"strip_length_m\":0.08} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00069 m",
 				"THIN: built/dried-meat does not declare `reads_density`"
 			],
-			"peak_mb": 254.0,
+			"peak_mb": 336.0,
 			"route": "rung0",
-			"search_s": 21.200000000000003,
-			"searched": "recheck",
+			"search_s": 71.3,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"tolerance": 0.003
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "a5edf3f3a55869848cff483ab8052cd52b313b7354c20fc6ff4e5cbaa390f21d"
+		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"generator": "0e3c4f5af2ae1f2f161d0445e81a12520adf7e159072f4100d10d3adeccd768b"
 	}
 }

@@ -53,7 +53,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "animal__atlantic-herring#1.trace.jsonl"
 			}
 		}
@@ -79,7 +79,7 @@
 					"value": {}
 				},
 				{
-					"cost": 1424.0,
+					"cost": 1396,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -90,9 +90,9 @@
 			],
 			"checked_at": 6,
 			"drawn": {
-				"excess": 0.5,
+				"excess": 0.4844,
 				"judge": "drawn",
-				"pixel_m": 0.001297
+				"pixel_m": 0.001291
 			},
 			"error": 0.004052126957232116,
 			"fraction": 1.0,
@@ -101,7 +101,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -115,25 +115,32 @@
 				"cost": 2598,
 				"coverage_rel": -0.004770000000000001,
 				"floor": 0.00398,
-				"part_shift": {},
+				"part_shift": {
+					"back": 0.0006000000000000001,
+					"belly": 0.00071,
+					"eye": -0.00109,
+					"fin": -0.0014600000000000001,
+					"flank": 0.0014900000000000002,
+					"gill": 0.00016
+				},
 				"picture": 0.00398
 			},
 			"measured_of": 2,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 18's part 'fin' is 19 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE (every piece) to 0.240 held at 1424, cheaper than the 2598 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"REDUCE (every piece) to 0.240 held at 1396, cheaper than the 2598 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 255.0,
+			"peak_mb": 273.0,
 			"route": "kit",
-			"search_s": 64.8,
-			"searched": "recheck",
+			"search_s": 118.80000000000001,
+			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "a9d39fbd05a54974111cb146d4261e94c4632195559f19e8caacc2935b34ecb1"
+		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"generator": "abf7a263594a0201dc5ba018882724af17fd71d2ab205c9bfc3f518450a39adf"
 	}
 }

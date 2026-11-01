@@ -128,11 +128,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "built__jetty-support#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 15,
 				"trace": "built__jetty-support#2.trace.jsonl"
 			}
 		}
@@ -159,11 +159,11 @@
 					"value": {}
 				},
 				{
-					"cost": 1758.0,
+					"cost": 1758,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.00488,
-					"px_over": 1.0,
+					"picture": 0.004880000000000001,
+					"px_over": 1,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -181,12 +181,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -195,7 +195,11 @@
 				"cost": 1592,
 				"coverage_rel": -0.0017000000000000001,
 				"floor": 0.004880000000000001,
-				"part_shift": {},
+				"part_shift": {
+					"iron": -0.00016,
+					"tide_growth": -0.0008500000000000001,
+					"timber": 0.0007300000000000001
+				},
 				"picture": 0.004880000000000001
 			},
 			"measured_of": 1,
@@ -203,10 +207,10 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 315: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00830 m",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 345.0,
+			"peak_mb": 1133.0,
 			"route": "kit",
-			"search_s": 260.40000000000003,
-			"searched": "recheck",
+			"search_s": 587.7,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -225,10 +229,10 @@
 					}
 				},
 				{
-					"cost": 1738.0,
+					"cost": 1738,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00934,
+					"picture": 0.009340000000000001,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
@@ -250,12 +254,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping bolt 0.082)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -688,17 +692,17 @@
 				"KIT (its own build at the rung's pixel, keeping bolt 0.082) held at 854, dearer than the 356 taken",
 				"REDUCE to 0.700 held at 1738, dearer than the 356 taken"
 			],
-			"peak_mb": 277.0,
+			"peak_mb": 345.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 131.8,
-			"searched": "recheck",
+			"search_s": 405.6,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "3e341c41b5f135e044a867bc9128304c3d76355f64684e519db3d9936bcf0cf0"
+		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"generator": "88c62ca228a896ad6d68ed272836e23af8915b444abe23cfd18f1928e4f3a764"
 	}
 }

@@ -72,11 +72,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 15,
+				"candidates": 14,
 				"trace": "built__fodder-bale-flake#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 29,
 				"trace": "built__fodder-bale-flake#2.trace.jsonl"
 			}
 		}
@@ -93,6 +93,7 @@
 		"1": {
 			"budget": 10349,
 			"budget_reason": "the cheapest derivation that holds the picture costs 17394, 1.68x rung 1's budget 10349: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"cancel_across": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -147,7 +148,7 @@
 				"carry": 2,
 				"reduce": 1
 			},
-			"search_s": 1252.9,
+			"search_s": 906.7,
 			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -157,21 +158,19 @@
 			"budget": 2587,
 			"candidates": [
 				{
-					"cost": 3420,
+					"cost": 15034,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.03287,
-					"px_over": null,
+					"picture": 0.01344,
+					"px_over": 1,
 					"route": "kit",
-					"value": {
-						"fibre": 0.08235429999999996
-					}
+					"value": 1.0
 				},
 				{
-					"cost": 15854.0,
+					"cost": 15854,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00418,
+					"picture": 0.0041800000000000006,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.3429999999999999
@@ -430,17 +429,17 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'fodder' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"BUDGET: the cheapest derivation that holds the picture costs 15854 (6.13x), over rung 2's budget 2587 x 1.5 = 3880 (made, 0.37 m)"
 			],
-			"peak_mb": 290.0,
+			"peak_mb": 273.0,
 			"route": "kit",
-			"search_s": 889.7,
-			"searched": "recheck",
+			"search_s": 1751.9,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.010977190487316633
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "4e679e3baaadf432a780d6c835d0300bb9859db6357f7d79e5285764e0f05d0a"
+		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"generator": "5e0df9a64094d9bffca46f958c77ac0872160fbb5a7a82c543154a0e8cf26882"
 	}
 }
