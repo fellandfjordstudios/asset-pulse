@@ -39,7 +39,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 5,
+				"candidates": 9,
 				"trace": "built__paraffin-tin#1.trace.jsonl"
 			}
 		}
@@ -49,7 +49,7 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "0cdb1d8bc7c652569d0fa2a10c83c4dca61b161f7297dd442e4af531c5f1f233"
+		"1": "54e0dfb5b8adc76d45630f17efc8d66cf55e4ab1f211a6a9fab068a720bc012d"
 	},
 	"rungs": {
 		"1": {
@@ -115,16 +115,16 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.490 held at 344, cheaper than the 404 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 277.0,
+			"peak_mb": 282.0,
 			"route": "kit",
-			"search_s": 59.0,
+			"search_s": 47.0,
 			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "4909e5757525648447e5c29e77cbcdc303e3945e690e7c0cd9381ff4913592af"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "33b8dfaaf60e065119276ca2c589963c6766985cd37b5b3f4415ea952a3840fe"
 	}
 }

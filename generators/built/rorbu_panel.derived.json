@@ -109,15 +109,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "built__rorbu-panel#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 9,
 				"trace": "built__rorbu-panel#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 10,
 				"trace": "built__rorbu-panel#3.trace.jsonl"
 			}
 		}
@@ -127,9 +127,9 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "90b880f74abc97b6b4228336554521788f7964553d070ef74d95d5830ff91b26",
-		"2": "e3e978ee18818f89167a3c2df06813a396cb5f8443a3ee4cc347b1cdeb4b3d5c",
-		"3": "399aac0469658160bb3e80d35b32a22a30865f86637fe5aad63ac88ea3c15969"
+		"1": "8eaf16266e88e2c34f1246157aa9695e88be18e565a02e557de6d6c7b826ebb7",
+		"2": "b5db0cf2b15892539c50a27acfc069303f2fa4e34485385e0fbb33175dbd9f44",
+		"3": "8eec96ebd5b5f387de291a4f647479c11361c3c4f37fc62a7e22c8aa22477645"
 	},
 	"rungs": {
 		"1": {
@@ -145,13 +145,13 @@
 					"value": {}
 				},
 				{
-					"cost": 550.0,
-					"holds": false,
+					"cost": 648,
+					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00438,
-					"px_over": 0.0,
+					"picture": 0.00404,
+					"px_over": null,
 					"route": "reduce",
-					"value": 0.7
+					"value": 0.8244269999999999
 				}
 			],
 			"checked_at": 14,
@@ -165,14 +165,14 @@
 			"from_rung": 0,
 			"keep": {},
 			"look_past": {
-				"beaten": false,
+				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -181,19 +181,22 @@
 				"cost": 786,
 				"coverage_rel": 0.0,
 				"floor": 0.00438,
-				"part_shift": {},
+				"part_shift": {
+					"iron": 0.0,
+					"wall": 0.0
+				},
 				"picture": 0.0012000000000000001
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
-				"REDUCE from rung 0 at {} seed 314: element 0's part 'iron' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"height_m\":0.001} seed 314: coverage changes -0.0141 against 0.0116 a derivation may change (its error read as a change of size)",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'wall' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"REDUCE (every piece) to its error cap 0.25x the band's (0.824 kept) held at 648, cheaper than the 786 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 314.0,
+			"peak_mb": 660.0,
 			"route": "kit",
-			"search_s": 171.8,
-			"searched": "recheck",
+			"search_s": 206.70000000000002,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -210,7 +213,7 @@
 					"value": {}
 				},
 				{
-					"cost": 550.0,
+					"cost": 550,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00438,
@@ -232,12 +235,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -246,20 +249,24 @@
 				"cost": 82,
 				"coverage_rel": -0.00024000000000000003,
 				"floor": 0.00438,
-				"part_shift": {},
+				"part_shift": {
+					"iron": -0.0009600000000000001,
+					"wall": 0.0009600000000000001
+				},
 				"picture": 0.00438
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"height_m\":0.001} seed 314: coverage changes -0.0540 against 0.0450 allowed (a one-pixel shrink all round)",
-				"REDUCE from rung 0 at {} seed 314: element 0's part 'iron' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'wall' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
-				"REDUCE (every piece) to 0.700 held at 550, dearer than the 82 taken"
+				"REDUCE (every piece) to 0.700 held at 550, dearer than the 82 taken",
+				"KIT (its own build at the rung's pixel), carried from rung 1 held at 786, dearer than the 82 taken"
 			],
-			"peak_mb": 264.0,
+			"peak_mb": 291.0,
 			"route": "kit",
-			"search_s": 48.0,
-			"searched": "recheck",
+			"search_s": 85.10000000000001,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -276,10 +283,10 @@
 					"value": {}
 				},
 				{
-					"cost": 382.0,
+					"cost": 310,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0084,
+					"picture": 0.008400000000000001,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.48999999999999994
@@ -298,12 +305,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 4 of the band's pixels)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -312,27 +319,32 @@
 				"cost": 2,
 				"coverage_rel": -0.05403,
 				"floor": 0.00438,
-				"part_shift": {},
+				"part_shift": {
+					"iron": -0.0009600000000000001,
+					"wall": 0.0009600000000000001
+				},
 				"picture": 0.6120000000000001
 			},
-			"measured_of": 3,
+			"measured_of": 5,
 			"not_taken": [
-				"REDUCE from rung 0 at {} seed 314: element 0's part 'iron' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'wall' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 4 of the band's pixels)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel) held at 82, dearer than the 2 taken",
-				"REDUCE (every piece) to 0.490 held at 382, dearer than the 2 taken"
+				"REDUCE (every piece) to 0.490 held at 310, dearer than the 2 taken",
+				"KIT (its own build at the rung's pixel), carried from rung 1 held at 786, dearer than the 2 taken",
+				"KIT (its own build at the rung's pixel), carried from rung 2 held at 82, dearer than the 2 taken"
 			],
-			"peak_mb": 264.0,
+			"peak_mb": 291.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 27.900000000000002,
-			"searched": "recheck",
+			"search_s": 69.10000000000001,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "945ba49bb3fd348b393e786223b0ec779ff4540f3d4007a9920b49a75c6366e7"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "1e86ff8a5d62fbbc3dca8d9cebcacdfee142a835de0e8682f47ecb1e89a1f37b"
 	}
 }

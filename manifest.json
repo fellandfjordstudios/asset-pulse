@@ -1,8 +1,8 @@
 {
- "backlog_left": "108 record(s) on the derivation backlog;139 drawn-ladder record(s) on the backlog (tools/drawn-ladder.sh --stale)",
+ "backlog_left": "44 record(s) on the derivation backlog;141 drawn-ladder record(s) on the backlog (tools/drawn-ladder.sh --stale)",
  "godot": "4.7.2.stable.official.ed1daf0bf",
  "job": "stopped at the budget (18600 s) in the stale records; the next run resumes",
- "library": "897bdf2655a1bf624133ef7ce3295c9565e3e7ee",
- "run": "https://github.com/fellandfjordstudios/asset-pulse/actions/runs/41238123526",
- "written_at": "2026-11-01T01:27:55Z"
+ "library": "5a5c6e6337572742c1ea0aa726c6b710e7192855",
+ "run": "https://github.com/fellandfjordstudios/asset-pulse/actions/runs/41282198277",
+ "written_at": "2026-11-01T11:58:21Z"
 }

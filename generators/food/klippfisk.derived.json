@@ -37,7 +37,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 28,
+				"candidates": 29,
 				"trace": "food__klippfisk#1.trace.jsonl"
 			},
 			"2": {
@@ -51,12 +51,14 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "9cbb95dec5e3e03868ed3ce252336339e01a4d1208595e0ab0cfe99fe5cdab61",
+		"1": "77f175c88fbd23c886fbb581f399be85de214cbaf491a9790adefde179c0e40c",
 		"2": "785920d66b769cd7da77d7fe231c309e198309452d68854e04a391e5018b334e"
 	},
 	"rungs": {
 		"1": {
 			"budget": 19945,
+			"budget_reason": "the cheapest derivation that holds the picture costs 37064, 1.86x rung 1's budget 19945: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"cancel_across": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -78,47 +80,37 @@
 					"value": 1.0
 				},
 				{
-					"cost": 26110,
+					"cost": 37064,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004070000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.48999999999999994
+					"value": 0.7
 				}
 			],
+			"chains": {
+				"error": "lost"
+			},
 			"checked_at": 4,
 			"drawn": {
-				"excess": 0.375,
+				"excess": 0.0,
 				"judge": "drawn",
 				"pixel_m": 0.001297
 			},
 			"error": 0.0025933612526285546,
 			"every_piece": true,
-			"fraction": 0.48999999999999994,
+			"fraction": 0.7,
 			"from_rung": 0,
-			"look_past": {
-				"beaten": false,
-				"first": "REDUCE (every piece) to 0.490",
-				"looked": 0,
-				"order": [
-					"kit",
-					"child",
-					"reduce",
-					"impostor",
-					"merged",
-					"thin"
-				]
-			},
 			"measured": {
-				"cost": 26110,
-				"coverage_rel": -0.00035000000000000005,
+				"cost": 37064,
+				"coverage_rel": 3.0000000000000004e-05,
 				"floor": 0.004070000000000001,
 				"part_shift": {
-					"flesh": 0.00075,
-					"salt": -0.00099,
-					"skin": 0.00068,
-					"tail": -0.00012000000000000002
+					"flesh": 0.00041000000000000005,
+					"salt": -0.0008600000000000001,
+					"skin": 0.00044,
+					"tail": 6.000000000000001e-05
 				},
 				"picture": 0.004070000000000001
 			},
@@ -140,12 +132,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1176, cover 2.92: 86353 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'flesh' is 46 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)"
 			],
-			"peak_mb": 335.0,
+			"peak_mb": 340.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 173
 			},
-			"search_s": 749.5,
+			"search_s": 412.1,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -205,9 +197,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 280.0,
+			"peak_mb": 284.0,
 			"route": "impostor",
-			"search_s": 268.6,
+			"search_s": 140.4,
 			"searched": "search",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -216,7 +208,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "05c737abcd3db10779a34f624c2ec3a3b71efaf82894b377c46d2f4dddd4b3d8"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "83cae152123d5029a95eda0da19e938f779772dcf99409dbe216681e83957b86"
 	}
 }

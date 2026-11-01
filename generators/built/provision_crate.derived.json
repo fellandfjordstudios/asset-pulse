@@ -79,11 +79,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 17,
 				"trace": "built__provision-crate#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 20,
 				"trace": "built__provision-crate#2.trace.jsonl"
 			}
 		}
@@ -93,67 +93,96 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "c7354bd856b596522b5ac100a69d9f2256f51854d9b530849748006f29d20421",
-		"2": "9274d0211f3a17da9ea1eeea868bfa8d0734c21bf6452ff48968d2db8d3266cf"
+		"1": "7dd938d2796775a25b77f8cad51dd252cbdb37cdf7398699671eeda0463e15d0",
+		"2": "a8293f5e1fb1c55316047837ca1ae51c6ca8399a451ef377438f0f6fcaf5c979"
 	},
 	"rungs": {
 		"1": {
 			"budget": 20427,
+			"cancel_across": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4065.0,
+					"cost": 4065,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.00545,
-					"px_over": 3.0,
+					"picture": 0.005450000000000001,
+					"px_over": 3,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 4696.0,
-					"holds": false,
-					"judge": "drawn",
-					"picture": 0.00503,
-					"px_over": 1.0,
-					"route": "reduce",
-					"value": 0.7
-				},
-				{
-					"cost": 5810,
+					"cost": 4386,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0,
+					"picture": 0.00495,
 					"px_over": null,
-					"route": "rung0",
-					"value": 1.0
+					"route": "reduce",
+					"value": 0.7549049999999999
 				}
 			],
+			"cap": 0.0012966806263142773,
+			"chain": "error",
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 10,
-			"error": -1.0,
-			"fraction": 1.0,
+			"drawn": {
+				"excess": 0.375,
+				"judge": "drawn",
+				"pixel_m": 0.001312
+			},
+			"error": 0.0025933612526285546,
+			"every_piece": true,
+			"fraction": 0.7549049999999999,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.755 kept)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
-				"cost": 5810,
-				"coverage_rel": 0.0,
+				"cost": 4386,
+				"coverage_rel": -0.00011,
 				"floor": 0.005450000000000001,
-				"part_shift": {},
-				"picture": 0.0
+				"part_shift": {
+					"battens": 7.000000000000001e-05,
+					"boards": 0.0006600000000000001,
+					"cleats": 0.00042,
+					"end_grain": 0.00012000000000000002,
+					"ends": 0.00028000000000000003,
+					"lid": 0.00037000000000000005,
+					"metal": 5e-05,
+					"nail": -0.0017100000000000001,
+					"rope": -4e-05,
+					"rust": 1e-05,
+					"stencil": 1e-05
+				},
+				"picture": 0.00495
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0026 -- the finest tried (1.000) fails at {\"lid_open\":1} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00131 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1681, cover 1.00: 64 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
-				"REDUCE from rung 0 at {} seed 314: element 0's part 'end_grain' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 4 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0026 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00131 m",
-				"THIN: built/provision-crate does not declare `reads_density`"
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'end_grain' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 4 more groups)"
 			],
-			"peak_mb": 258.0,
-			"route": "rung0",
-			"search_s": 46.800000000000004,
-			"searched": "recheck",
+			"peak_mb": 497.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 11
+			},
+			"search_s": 306.40000000000003,
+			"searched": "search",
 			"surfaces": 11,
-			"surfaces_ceiling": 11,
-			"tolerance": 0.0025933612526285546
+			"surfaces_ceiling": 11
 		},
 		"2": {
 			"budget": 5106,
@@ -170,13 +199,13 @@
 					}
 				},
 				{
-					"cost": 2414.0,
+					"cost": 4150,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00545,
+					"picture": 0.005450000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.3429999999999999
+					"value": 0.7
 				}
 			],
 			"checked_at": 10,
@@ -195,12 +224,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping nail 0.240)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -459,24 +488,25 @@
 				"part_shift": {},
 				"picture": 0.005450000000000001
 			},
-			"measured_of": 3,
+			"measured_of": 4,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'end_grain' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 4 more groups)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping nail 0.240)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel, keeping nail 0.240) held at 2593, dearer than the 1413 taken",
-				"REDUCE (every piece) to 0.343 held at 2414, dearer than the 1413 taken"
+				"REDUCE (every piece) to 0.700 held at 4150, dearer than the 1413 taken",
+				"REDUCE (every piece) to its error cap 0.125x the band's (0.755 kept), carried from rung 1 held at 4386, dearer than the 1413 taken"
 			],
-			"peak_mb": 260.0,
+			"peak_mb": 287.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 245.3,
-			"searched": "recheck",
+			"search_s": 340.0,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "cd8080fd8c3188d9c55b89b2c442c34707d9989f932e742334f2158ffb8bc874"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "101b09c472db928374ce7015dab9e3366ada9ab804bde3acfb7d8935d7f9b2cb"
 	}
 }

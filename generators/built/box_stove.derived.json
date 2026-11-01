@@ -2,31 +2,31 @@
 	"checked_at": [
 		{
 			"params": {},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"pipe_length_m": 0.6
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"door_open": 1.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"draught_open": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"draught_open": 1.0
 			},
-			"seed": 314
+			"seed": 314.0
 		}
 	],
 	"id": "built/box-stove",
@@ -38,30 +38,30 @@
 			"shape",
 			"shape"
 		],
-		"old_key_sets": 5,
-		"sampled": 5,
-		"sets": 2
+		"old_key_sets": 5.0,
+		"sampled": 5.0,
+		"sets": 2.0
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 7,
+				"candidates": 7.0,
 				"trace": "built__box-stove#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 26,
+				"candidates": 26.0,
 				"trace": "built__box-stove#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 21,
+				"candidates": 21.0,
 				"trace": "built__box-stove#3.trace.jsonl"
 			}
 		}
 	},
 	"probe": {
 		"params": {},
-		"seed": 314
+		"seed": 314.0
 	},
 	"replay": {
 		"1": "a39abc2935d0236c075139c34247d37bf2645142f270c3fc3b20fc9a414a8b5e",
@@ -70,13 +70,13 @@
 	},
 	"rungs": {
 		"1": {
-			"budget": 39117,
+			"budget": 39117.0,
 			"candidates": [
 				{
-					"cost": 2666,
+					"cost": 2666.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004600000000000001,
+					"picture": 0.0046,
 					"px_over": null,
 					"route": "kit",
 					"value": {
@@ -84,32 +84,32 @@
 					}
 				},
 				{
-					"cost": 4452,
+					"cost": 4452.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004600000000000001,
-					"px_over": 2,
+					"picture": 0.0046,
+					"px_over": 2.0,
 					"route": "reduce",
 					"value": 0.7
 				}
 			],
-			"checked_at": 5,
+			"checked_at": 5.0,
 			"drawn": {
 				"excess": 0.5,
 				"gap": 0.05,
 				"judge": "drawn",
 				"pixel_m": 0.001648
 			},
-			"error": 0.0018518518518518515,
+			"error": 0.00185185185185185,
 			"fraction": 1.0,
-			"from_rung": 0,
+			"from_rung": 0.0,
 			"keep": {
 				"fastener": 0.03125
 			},
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping fastener 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -120,13 +120,13 @@
 				]
 			},
 			"measured": {
-				"cost": 2666,
-				"coverage_rel": -0.0014900000000000002,
-				"floor": 0.004600000000000001,
+				"cost": 2666.0,
+				"coverage_rel": -0.00149,
+				"floor": 0.0046,
 				"part_shift": {},
-				"picture": 0.004600000000000001
+				"picture": 0.0046
 			},
-			"measured_of": 1,
+			"measured_of": 1.0,
 			"not_taken": [
 				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"door_open\":1.0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00178 m",
@@ -136,46 +136,46 @@
 			"route": "kit",
 			"search_s": 624.7,
 			"searched": "search",
-			"surfaces": 8,
-			"surfaces_ceiling": 8
+			"surfaces": 8.0,
+			"surfaces_ceiling": 8.0
 		},
 		"2": {
-			"budget": 9779,
+			"budget": 9779.0,
 			"cancel_across": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1972,
+					"cost": 1972.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004600000000000001,
-					"px_over": 2,
+					"picture": 0.0046,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 4434,
+					"cost": 4434.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004600000000000001,
+					"picture": 0.0046,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
 				}
 			],
-			"checked_at": 5,
+			"checked_at": 5.0,
 			"drawn": {
 				"excess": 0.125,
 				"judge": "drawn",
 				"pixel_m": 0.006593
 			},
-			"error": 0.007407407407407406,
+			"error": 0.0074074074074074,
 			"fraction": 0.7,
-			"from_rung": 0,
+			"from_rung": 0.0,
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.700",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -186,19 +186,19 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 5,
+				"checked_at": 5.0,
 				"checks": [
 					{
 						"holds": true,
 						"mean_after": [
 							0.03135020285844803,
 							0.03041183203458786,
-							0.029062660411000252
+							0.02906266041100025
 						],
 						"mean_before": [
 							0.03135020285844803,
 							0.03041183203458786,
-							0.029062660411000252
+							0.02906266041100025
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -215,37 +215,37 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.031470246613025665,
-							0.030450066551566124,
-							0.029088376089930534
+							0.03147024661302566,
+							0.03045006655156612,
+							0.02908837608993053
 						],
 						"mean_before": [
-							0.031470246613025665,
-							0.030450066551566124,
-							0.029088376089930534
+							0.03147024661302566,
+							0.03045006655156612,
+							0.02908837608993053
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							8.337630424648523e-05,
 							5.0240138079971075e-05,
-							2.6280118618160486e-05
+							2.628011861816049e-05
 						],
 						"variance_before": [
 							8.337630424648523e-05,
 							5.0240138079971075e-05,
-							2.6280118618160486e-05
+							2.628011861816049e-05
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.031350210309028625,
-							0.030411820858716965,
+							0.03135021030902862,
+							0.03041182085871696,
 							0.02906264364719391
 						],
 						"mean_before": [
-							0.031350210309028625,
-							0.030411820858716965,
+							0.03135021030902862,
+							0.03041182085871696,
 							0.02906264364719391
 						],
 						"spatial_rms": 0.0,
@@ -265,12 +265,12 @@
 						"mean_after": [
 							0.03135020285844803,
 							0.03041183203458786,
-							0.029062660411000252
+							0.02906266041100025
 						],
 						"mean_before": [
 							0.03135020285844803,
 							0.03041183203458786,
-							0.029062660411000252
+							0.02906266041100025
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -289,12 +289,12 @@
 						"mean_after": [
 							0.03135020285844803,
 							0.03041183203458786,
-							0.029062660411000252
+							0.02906266041100025
 						],
 						"mean_before": [
 							0.03135020285844803,
 							0.03041183203458786,
-							0.029062660411000252
+							0.02906266041100025
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -313,22 +313,22 @@
 			},
 			"materials": "merged",
 			"measured": {
-				"cost": 4434,
-				"coverage_rel": -0.0005700000000000001,
-				"floor": 0.004600000000000001,
+				"cost": 4434.0,
+				"coverage_rel": -0.00057,
+				"floor": 0.0046,
 				"part_shift": {
-					"char": -0.00026000000000000003,
-					"edge": -0.0012000000000000001,
+					"char": -0.00026,
+					"edge": -0.0012,
 					"ember": -0.0001,
 					"iron": 0.00176,
 					"mica": 0.00011,
-					"pipe": 0.00026000000000000003,
-					"soot": -0.0013200000000000002,
+					"pipe": 0.00026,
+					"soot": -0.00132,
 					"top": 0.00058
 				},
-				"picture": 0.004600000000000001
+				"picture": 0.0046
 			},
-			"measured_of": 1,
+			"measured_of": 1.0,
 			"not_taken": [
 				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00659 m",
@@ -339,21 +339,21 @@
 			"peak_mb": 255.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 71
+				"reduce": 71.0
 			},
 			"search_s": 633.5,
 			"searched": "search",
-			"surfaces": 5,
-			"surfaces_ceiling": 1
+			"surfaces": 5.0,
+			"surfaces_ceiling": 1.0
 		},
 		"3": {
-			"budget": 2444,
+			"budget": 2444.0,
 			"candidates": [
 				{
-					"cost": 1206,
+					"cost": 1206.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0061400000000000005,
+					"picture": 0.00614,
 					"px_over": null,
 					"route": "kit",
 					"value": {
@@ -361,32 +361,32 @@
 					}
 				},
 				{
-					"cost": 4424,
+					"cost": 4424.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.008620000000000001,
+					"picture": 0.00862,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
 				}
 			],
-			"checked_at": 5,
+			"checked_at": 5.0,
 			"drawn": {
 				"excess": 0.25,
 				"gap": 0.394,
 				"judge": "drawn",
-				"pixel_m": 0.026369999999999998
+				"pixel_m": 0.02636999999999999
 			},
-			"error": 0.029629629629629624,
+			"error": 0.02962962962962962,
 			"fraction": 1.0,
-			"from_rung": 0,
+			"from_rung": 0.0,
 			"keep": {
 				"fastener": 0.03125
 			},
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping fastener 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -397,19 +397,19 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 5,
+				"checked_at": 5.0,
 				"checks": [
 					{
 						"holds": true,
 						"mean_after": [
 							0.03139401227235794,
-							0.030474578961730003,
-							0.029151946306228638
+							0.03047457896173,
+							0.02915194630622863
 						],
 						"mean_before": [
 							0.03139401227235794,
-							0.030474578961730003,
-							0.029151946306228638
+							0.03047457896173,
+							0.02915194630622863
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -427,36 +427,36 @@
 						"holds": true,
 						"mean_after": [
 							0.03151001036167145,
-							0.030508045107126236,
-							0.029170934110879898
+							0.03050804510712623,
+							0.02917093411087989
 						],
 						"mean_before": [
 							0.03151001036167145,
-							0.030508045107126236,
-							0.029170934110879898
+							0.03050804510712623,
+							0.02917093411087989
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							8.516560774296522e-05,
 							5.109532503411174e-05,
-							2.6112073101103306e-05
+							2.6112073101103302e-05
 						],
 						"variance_before": [
 							8.516560774296522e-05,
 							5.109532503411174e-05,
-							2.6112073101103306e-05
+							2.6112073101103302e-05
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
 							0.03139401227235794,
-							0.030474578961730003,
+							0.03047457896173,
 							0.02915194444358349
 						],
 						"mean_before": [
 							0.03139401227235794,
-							0.030474578961730003,
+							0.03047457896173,
 							0.02915194444358349
 						],
 						"spatial_rms": 0.0,
@@ -475,13 +475,13 @@
 						"holds": true,
 						"mean_after": [
 							0.03139401227235794,
-							0.030474578961730003,
-							0.029151946306228638
+							0.03047457896173,
+							0.02915194630622863
 						],
 						"mean_before": [
 							0.03139401227235794,
-							0.030474578961730003,
-							0.029151946306228638
+							0.03047457896173,
+							0.02915194630622863
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -499,13 +499,13 @@
 						"holds": true,
 						"mean_after": [
 							0.03139401227235794,
-							0.030474578961730003,
-							0.029151946306228638
+							0.03047457896173,
+							0.02915194630622863
 						],
 						"mean_before": [
 							0.03139401227235794,
-							0.030474578961730003,
-							0.029151946306228638
+							0.03047457896173,
+							0.02915194630622863
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -523,13 +523,13 @@
 				"holds": true
 			},
 			"measured": {
-				"cost": 1206,
-				"coverage_rel": -0.009080000000000001,
-				"floor": 0.004600000000000001,
+				"cost": 1206.0,
+				"coverage_rel": -0.00908,
+				"floor": 0.0046,
 				"part_shift": {},
-				"picture": 0.0061400000000000005
+				"picture": 0.00614
 			},
-			"measured_of": 2,
+			"measured_of": 2.0,
 			"not_taken": [
 				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
 				"KIT at 4 pixels: none holds at 0.0296 -- the finest tried (1.000) fails at {\"door_open\":1.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.02851 m",
@@ -541,8 +541,8 @@
 			"route": "kit",
 			"search_s": 212.9,
 			"searched": "search",
-			"surfaces": 5,
-			"surfaces_ceiling": 1
+			"surfaces": 5.0,
+			"surfaces_ceiling": 1.0
 		}
 	},
 	"source": {

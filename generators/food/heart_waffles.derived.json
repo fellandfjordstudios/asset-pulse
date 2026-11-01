@@ -23,7 +23,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 19,
+				"candidates": 20,
 				"trace": "food__heart-waffles#1.trace.jsonl"
 			}
 		}
@@ -33,12 +33,13 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "e8d126ab6596cf6b565914df131d82faf5f7b4c4d965c0a6001bdade9de0f74a"
+		"1": "dc670e08ca488bb002cfdfa0a5b9ec196fbc449cb019aa6027dba0d7ae5800fc"
 	},
 	"rungs": {
 		"1": {
-			"budget": 4098,
-			"budget_reason": "the cheapest derivation that holds the picture costs 14606, 3.56x rung 1's budget 4098: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"budget": 2860,
+			"budget_reason": "the cheapest derivation that holds the picture costs 10682, 3.73x rung 1's budget 2860: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"cancel_across": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -46,81 +47,82 @@
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 45,
+					"px_over": 15,
 					"route": "impostor",
 					"value": 32
 				},
 				{
-					"cost": 102177,
+					"cost": 148376,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0,
+					"picture": 0.00421,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
 				},
 				{
-					"cost": 14606,
+					"cost": 10682,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00406,
+					"picture": 0.005790000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.009688901040699992
+					"value": 0.01384128720099999
 				}
 			],
+			"chains": {
+				"error": "lost"
+			},
 			"checked_at": 2,
 			"drawn": {
 				"excess": 0.4375,
 				"judge": "drawn",
-				"pixel_m": 0.0012979999999999999
+				"pixel_m": 0.0012959999999999998
 			},
-			"error": 0.005721070488922468,
-			"every_piece": true,
-			"fraction": 0.009688901040699992,
+			"error": 0.006846254626791326,
+			"fraction": 0.01384128720099999,
 			"from_rung": 0,
 			"measured": {
-				"cost": 14606,
-				"coverage_rel": -0.00152,
-				"floor": 0.00406,
+				"cost": 10682,
+				"coverage_rel": -0.01727,
+				"floor": 0.004410000000000001,
 				"part_shift": {
-					"cream": -0.0023000000000000004,
-					"crumb": 8e-05,
-					"jam": -0.002,
-					"waffle": 0.0041400000000000005
+					"cream": -0.00134,
+					"crumb": -0.0016400000000000002,
+					"jam": -0.0025800000000000003,
+					"waffle": 0.0048200000000000005
 				},
-				"picture": 0.00406
+				"picture": 0.005790000000000001
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 3844 pixel(s) differ at {} seed 314 (worst 0.61)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 3567 pixel(s) differ at {} seed 314 (worst 0.70)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 2763 pixel(s) differ at {} seed 314 (worst 0.67)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 1192 pixel(s) differ at {} seed 314 (worst 0.74)",
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 3844 pixel(s) differ at {} seed 314 (worst 0.61)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 3567 pixel(s) differ at {} seed 314 (worst 0.70)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 2763 pixel(s) differ at {} seed 314 (worst 0.67)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 1192 pixel(s) differ at {} seed 314 (worst 0.74)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 350 pixel(s) differ at {} seed 314 (worst 0.74)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 350 pixel(s) differ at {} seed 314 (worst 0.74)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 45 pixel(s) differ at {} seed 314 (worst 0.57)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 45 pixel(s) differ at {} seed 314 (worst 0.57)",
-				"REDUCE from rung 0 at {} seed 314: element 6's part 'crumb' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
-				"KIT (its own build at the rung's pixel) held at 102177, dearer than the 14606 taken"
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 2844 pixel(s) differ at {} seed 314 (worst 0.61)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 2687 pixel(s) differ at {} seed 314 (worst 0.59)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 2027 pixel(s) differ at {} seed 314 (worst 0.67)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 888 pixel(s) differ at {} seed 314 (worst 0.68)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 2844 pixel(s) differ at {} seed 314 (worst 0.61)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 2687 pixel(s) differ at {} seed 314 (worst 0.59)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 2027 pixel(s) differ at {} seed 314 (worst 0.67)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 888 pixel(s) differ at {} seed 314 (worst 0.68)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 142 pixel(s) differ at {} seed 314 (worst 0.63)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 142 pixel(s) differ at {} seed 314 (worst 0.63)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 15 pixel(s) differ at {} seed 314 (worst 0.67)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 15 pixel(s) differ at {} seed 314 (worst 0.67)",
+				"KIT (its own build at the rung's pixel) held at 148376, dearer than the 10682 taken"
 			],
-			"peak_mb": 282.0,
+			"peak_mb": 419.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 12
+				"reduce": 8
 			},
-			"search_s": 623.5,
+			"search_s": 652.2,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "f5cc791744b96449ae05a1349449614e67f7c85f19a05034b29a9bfedc8d9be7"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "9a0721c815102093253534f41491776163edc4ba818da99e1a9f784431622a8d"
 	}
 }

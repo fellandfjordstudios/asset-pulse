@@ -53,15 +53,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 14,
+				"candidates": 0,
 				"trace": "built__engine-housing#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 28,
+				"candidates": 1,
 				"trace": "built__engine-housing#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 21,
+				"candidates": 0,
 				"trace": "built__engine-housing#3.trace.jsonl"
 			}
 		}
@@ -71,29 +71,29 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "2cdcb4cdb631476089684bdc3319f1e16f7a5d6af3e30efb4136cd7cc3e27d8b",
-		"2": "cfa8b909f9fbeb9b2cd0005789309bb23de5527aefddbfc164ac74b035ee44fa",
-		"3": "8121a9b0d865e042dacd58c9163e6fe55b16c248a0aa8a17e9a708c6840bf0bb"
+		"1": "b3a2cd15c30ab66a5d819370ce884cd3d0dd65b431f99f5230e9caed7f22b527",
+		"2": "969eb15e43158dd83b610cbcc9c9f51bc23f06668297d187d0a786a60faa4c53",
+		"3": "fc9dbee02cc20f600971c7ac0b0e24735f7ce674ce2940c0255d454b331dd0ed"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 5294,
+					"cost": 5294.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00504,
-					"px_over": 147,
+					"px_over": 147.0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 5598,
+					"cost": 5598.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00504,
-					"px_over": 6,
+					"px_over": 6.0,
 					"route": "reduce",
 					"value": 0.7
 				},
@@ -107,11 +107,11 @@
 					"value": 1.0
 				},
 				{
-					"cost": 4610,
+					"cost": 4610.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00504,
-					"px_over": 147,
+					"px_over": 147.0,
 					"route": "thin",
 					"value": 0.7
 				}
@@ -123,10 +123,11 @@
 			"measured": {
 				"cost": 8156,
 				"coverage_rel": 0.0,
-				"floor": 0.0,
+				"floor": 0.005560000000000001,
 				"part_shift": {},
 				"picture": 0.0
 			},
+			"measured_of": 1,
 			"not_taken": [
 				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 147 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00357 m",
@@ -134,10 +135,10 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00357 m",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 147 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00357 m"
 			],
-			"peak_mb": 320.0,
+			"peak_mb": 259.0,
 			"route": "rung0",
-			"search_s": 182.4,
-			"searched": "search",
+			"search_s": 25.700000000000003,
+			"searched": "recheck",
 			"surfaces": 16,
 			"surfaces_ceiling": 16,
 			"tolerance": 0.0018518518518518517
@@ -148,13 +149,13 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2706,
+					"cost": 2706.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": -1.0,
-					"px_over": 8,
+					"px_over": 8.0,
 					"route": "kit",
-					"value": 0.11764899999999995
+					"value": 0.11764899999999996
 				},
 				{
 					"cost": 3764,
@@ -166,11 +167,11 @@
 					"value": 0.48999999999999994
 				},
 				{
-					"cost": 3894,
+					"cost": 3894.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.005560000000000001,
-					"px_over": 14,
+					"picture": 0.00556,
+					"px_over": 14.0,
 					"route": "thin",
 					"value": 0.7
 				}
@@ -187,7 +188,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -352,24 +353,7 @@
 				"cost": 3764,
 				"coverage_rel": -0.00318,
 				"floor": 0.005560000000000001,
-				"part_shift": {
-					"base": 0.00072,
-					"bearer": 0.00014000000000000001,
-					"brass": -0.0004,
-					"bulb": -3.0000000000000004e-05,
-					"castings": -0.00044,
-					"chips": -0.00059,
-					"copper": -0.0009800000000000002,
-					"edge": 7.000000000000001e-05,
-					"edge_lid": 0.00014000000000000001,
-					"glass": -0.00012000000000000002,
-					"housing": 0.0009500000000000001,
-					"iron": -0.0009400000000000001,
-					"lid": 0.00134,
-					"oil": -2e-05,
-					"rear": 0.0011400000000000002,
-					"rim": 0.0002
-				},
+				"part_shift": {},
 				"picture": 0.005560000000000001
 			},
 			"measured_of": 1,
@@ -381,13 +365,13 @@
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1176, cover 1.00: 8 pixel(s) differ at the drawn size at {} seed 314 (worst 0.52)",
 				"THIN: none holds at 0.0074 -- the finest tried (0.700) fails at {\"housing_open\":0.0} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.01037 m"
 			],
-			"peak_mb": 288.0,
+			"peak_mb": 274.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 160
+				"reduce": 160.0
 			},
-			"search_s": 1114.6000000000001,
-			"searched": "search",
+			"search_s": 255.4,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
 		},
@@ -406,10 +390,10 @@
 					}
 				},
 				{
-					"cost": 2622,
+					"cost": 2622.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.013980000000000001,
+					"picture": 0.01398,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.3429999999999999
@@ -431,7 +415,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping bolt 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -591,7 +575,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 1806,
 				"coverage_rel": -0.004030000000000001,
@@ -607,16 +590,16 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping bolt 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.343 held at 2622, dearer than the 1806 taken"
 			],
-			"peak_mb": 288.0,
+			"peak_mb": 258.0,
 			"route": "kit",
-			"search_s": 512.3000000000001,
-			"searched": "search",
+			"search_s": 37.4,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
 		"generator": "bccd6a22448bc1d6aae2669466619738343f2f4c9149f4ef4c2d0e631a9f547a"
 	}
 }

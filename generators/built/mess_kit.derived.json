@@ -25,11 +25,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 4,
+				"candidates": 1,
 				"trace": "built__mess-kit#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 5,
+				"candidates": 8,
 				"trace": "built__mess-kit#2.trace.jsonl"
 			}
 		}
@@ -47,11 +47,11 @@
 			"budget": 3152,
 			"candidates": [
 				{
-					"cost": 1744,
+					"cost": 1744.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -77,7 +77,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -108,10 +108,10 @@
 				"KIT: none holds at 0.0037 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00129 m",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"peak_mb": 261.0,
+			"peak_mb": 266.0,
 			"route": "merged",
-			"search_s": 26.900000000000002,
-			"searched": "search",
+			"search_s": 11.100000000000001,
+			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		},
@@ -218,15 +218,16 @@
 				},
 				"picture": 0.0
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
 				"KIT: none holds at 0.0150 -- the finest tried (1.000) fails at {\"pot_handle_open\":0.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00418 m",
 				"KIT at 2 pixels: none holds at 0.0150 -- the finest tried (1.000) fails at {} seed 314: part 'abrasion' changes its share of the picture by -0.0777 against 0.0745 allowed (its colour's share of the subject)",
-				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 2550, the same cost as the route taken, found first"
 			],
-			"peak_mb": 237.0,
+			"peak_mb": 245.0,
 			"route": "merged",
-			"search_s": 89.0,
+			"search_s": 48.1,
 			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
@@ -234,7 +235,7 @@
 	},
 	"source": {
 		"children": "230fac3027486279529b5399b1d209718522f1208f7dd43c8def3b277dfe96cc",
-		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
 		"generator": "9573d00a6f0d0c49ec646f1410cf17b1c852bcc8b849541f1640adfde5ce0510"
 	}
 }

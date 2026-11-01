@@ -1,0 +1,301 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"size": 0.9
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {
+				"size": 1.1
+			},
+			"seed": 314.0
+		},
+		{
+			"params": {},
+			"seed": 315.0
+		}
+	],
+	"id": "food/pickled-herring",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"seed"
+		],
+		"old_key_sets": 4.0,
+		"sampled": 4.0,
+		"sets": 2.0
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 4.0,
+				"trace": "food__pickled-herring#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 7.0,
+				"trace": "food__pickled-herring#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314.0
+	},
+	"replay": {
+		"1": "6a87326594b41023fba6ba1a0bfc34c8d99f1102cd399befce78e87cf9c0b192",
+		"2": "03157edd120a36d9c049be0f1f8e3eb256ae89aa984d6bc220e9408b4d65af04"
+	},
+	"rungs": {
+		"1": {
+			"above_tolerance": true,
+			"budget": 11733.0,
+			"candidates": [
+				{
+					"cost": 13620.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00403,
+					"px_over": 5.0,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 31442.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00403,
+					"px_over": 1.0,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
+			"checked_at": 4.0,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0.0,
+			"keep": {},
+			"measured": {
+				"cost": 13620.0,
+				"coverage_rel": -0.01703,
+				"floor": 0.00403,
+				"part_shift": {},
+				"picture": 0.00403
+			},
+			"measured_of": 1.0,
+			"miss": {
+				"cost_of_ceiling": 1.1608284326259268,
+				"judge": "drawn",
+				"picture_over": 1.191893337986385,
+				"px_over": null,
+				"route": "kit",
+				"tier": 1.0
+			},
+			"not_taken": [
+				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
+				"KIT: none holds at 0.0034 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00130 m",
+				"REDUCE from rung 0: none holds at 0.0034 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00130 m",
+				"THIN: food/pickled-herring does not declare `reads_density`"
+			],
+			"peak_mb": 225.0,
+			"route": "kit",
+			"search_s": 154.3,
+			"searched": "search",
+			"surfaces": 11.0,
+			"surfaces_ceiling": 11.0,
+			"tolerance": 0.00338117503602158
+		},
+		"2": {
+			"above_tolerance": true,
+			"budget": 2933.0,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 9855.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.0093,
+					"px_over": 0.0,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 31442.0,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00403,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
+			"checked_at": 4.0,
+			"drawn": {
+				"excess": 0.1875,
+				"judge": "drawn",
+				"pixel_m": 0.005187
+			},
+			"error": 0.01352470014408633,
+			"fraction": 0.7,
+			"from_rung": 0.0,
+			"material_transfer": {
+				"checked_at": 4.0,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.5938513278961182,
+							0.5941735506057739,
+							0.5554920434951782
+						],
+						"mean_before": [
+							0.5938513278961182,
+							0.5941735506057739,
+							0.5554920434951782
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.1080077588558197,
+							0.1179724633693695,
+							0.11300486326217651
+						],
+						"variance_before": [
+							0.1080077588558197,
+							0.1179724633693695,
+							0.11300486326217651
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.5939085483551025,
+							0.5942021608352661,
+							0.555549681186676
+						],
+						"mean_before": [
+							0.5939085483551025,
+							0.5942021608352661,
+							0.555549681186676
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.10798925161361694,
+							0.11798933148384094,
+							0.1129658818244934
+						],
+						"variance_before": [
+							0.10798925161361694,
+							0.11798933148384094,
+							0.1129658818244934
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.5938928723335266,
+							0.5941960215568542,
+							0.5555328130722046
+						],
+						"mean_before": [
+							0.5938928723335266,
+							0.5941960215568542,
+							0.5555328130722046
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.10798603296279909,
+							0.11791640520095824,
+							0.11300778388977052
+						],
+						"variance_before": [
+							0.10798603296279909,
+							0.11791640520095824,
+							0.11300778388977052
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.5938273668289185,
+							0.5941446423530579,
+							0.5554589033126831
+						],
+						"mean_before": [
+							0.5938273668289185,
+							0.5941446423530579,
+							0.5554589033126831
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.10800006985664368,
+							0.1179572343826294,
+							0.1129906177520752
+						],
+						"variance_before": [
+							0.10800006985664368,
+							0.1179572343826294,
+							0.1129906177520752
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 31442.0,
+				"coverage_rel": -0.00406,
+				"floor": 0.00403,
+				"part_shift": {
+					"bay": 6.000000000000001e-05,
+					"brine": 0.00034,
+					"flesh": 0.00053,
+					"glass": -0.00084,
+					"metal": 9e-05,
+					"onion": -0.00063,
+					"onion_skin": -0.0009,
+					"porcelain": 0.00024,
+					"seal": 0.00089,
+					"skin": 0.00052,
+					"spice": -0.00052
+				},
+				"picture": 0.00403
+			},
+			"miss": {
+				"cost_of_ceiling": 10.720081827480396,
+				"judge": "drawn",
+				"picture_over": 0.29797333449659624,
+				"px_over": null,
+				"route": "reduce",
+				"tier": 2.0
+			},
+			"not_taken": [
+				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
+				"KIT: none holds at 0.0135 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0358 against 0.0348 a derivation may change (its error read as a change of size)",
+				"KIT at 2 pixels: none holds at 0.0135 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 9 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00519 m; coverage changes -0.0821 against 0.0690 allowed (a one-pixel shrink all round)",
+				"BUDGET: the cheapest derivation that holds the picture costs 31442 (10.72x), over rung 2's budget 2933 x 1.5 = 4399 (made, 0.38 m)"
+			],
+			"peak_mb": 225.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 100.0
+			},
+			"search_s": 755.1,
+			"searched": "search",
+			"surfaces": 6.0,
+			"surfaces_ceiling": 1.0,
+			"tolerance": 0.01352470014408633
+		}
+	},
+	"source": {
+		"deriver": "4feb39211a155cc8ea1c75e8548f26e067318e3a1c57b9a8f9f18afc8a632ba1",
+		"generator": "fefb0131ed839e0dc38aafa16b589fdc252184ecf08e3360faecf021b7c81835"
+	}
+}

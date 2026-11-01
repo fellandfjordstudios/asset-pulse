@@ -86,7 +86,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 4,
 				"trace": "plant__birch-stem#1.trace.jsonl"
 			}
 		}
@@ -112,11 +112,11 @@
 					"value": {}
 				},
 				{
-					"cost": 146.0,
+					"cost": 146,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.15162,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -134,7 +134,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -153,19 +153,19 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"basal_diameter_m\":0.002} seed 314: coverage changes -0.0442 against 0.0232 allowed (a one-pixel shrink all round)",
+				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"basal_diameter_m\":0.002} seed 314: coverage changes -0.0442 against 0.0232 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0019",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 298.0,
+			"peak_mb": 520.0,
 			"route": "kit",
-			"search_s": 66.3,
-			"searched": "recheck",
+			"search_s": 61.5,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "7b2f9892885f1d6ce850ad90dd83b1c37f88105e6ff6a8a8e61289666f287f54"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "02eea89deeb0579b63bf02282fd2c370c0a2e69aa21c7242c88a22adc2a5ae3b"
 	}
 }

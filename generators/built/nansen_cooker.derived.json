@@ -23,11 +23,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 33,
 				"trace": "built__nansen-cooker#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 53,
 				"trace": "built__nansen-cooker#2.trace.jsonl"
 			},
 			"3": {
@@ -41,83 +41,95 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "709d20715dc89906a6d6a81dd7b9649b0b9993e1a2b345fee242c5459cf4a91c",
-		"2": "219fef377a8f9247526b1fab246d62ed97b24dfa99c80bb29f8061176d340f87",
+		"1": "5d371b69dd286fe3b6d7c0ded015e1a7e25520444a5d1dfd7bef299cf629febf",
+		"2": "aadee3122ea7c5b750f4f4a8b01a4d738a54cf0161c80acd050a592f74ee1bac",
 		"3": "1513f59785baad70868089ce3b1123ece0781eb4214dc5d3f05660b089f3d153"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"cancel_across": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 6296.0,
+					"px_over": 6296,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
-					"cost": 10072.0,
+					"cost": 10072,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 2.0,
+					"px_over": 2,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 12972,
+					"cost": 7870,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00412,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.48999999999999994
+					"value": 0.301325
 				},
 				{
-					"cost": 10024.0,
+					"cost": 10024,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 2.0,
+					"px_over": 2,
 					"route": "thin",
 					"value": 0.7
 				}
 			],
+			"cap": 0.0009259259259259259,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 12968,
+				"fraction": 0.48999999999999994
+			},
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 2,
 			"drawn": {
-				"excess": 0.5,
+				"excess": 0.1875,
 				"judge": "drawn",
 				"pixel_m": 0.0014739999999999998
 			},
 			"error": 0.0018518518518518517,
-			"fraction": 0.48999999999999994,
+			"fraction": 0.301325,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
-				"first": "REDUCE to 0.490",
-				"looked": 1.0,
+				"first": "REDUCE to its error cap 0.5x the band's (0.301 kept)",
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
 			},
 			"measured": {
-				"cost": 12972,
-				"coverage_rel": -0.0015600000000000002,
+				"cost": 7870,
+				"coverage_rel": -0.00197,
 				"floor": 0.00412,
 				"part_shift": {
-					"aluminium": 0.0015500000000000002,
-					"brass": -0.00048000000000000007,
-					"iron": -0.00063,
-					"rim": -0.00047000000000000004,
-					"soot": 3.0000000000000004e-05
+					"aluminium": 0.00044,
+					"brass": 9e-05,
+					"iron": -1e-05,
+					"rim": -0.00054,
+					"soot": 2e-05
 				},
 				"picture": 0.00412
 			},
@@ -140,13 +152,13 @@
 				"CHILD: no welded child has a coarser rung at slot 1: {\"built/nansen-cooker-cup\":0,\"built/nansen-cooker-vessel\":0}",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00147 m"
 			],
-			"peak_mb": 326.0,
+			"peak_mb": 335.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 43.0
+				"reduce": 43
 			},
-			"search_s": 98.5,
-			"searched": "recheck",
+			"search_s": 432.90000000000003,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -154,13 +166,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 8.0,
+					"px_over": 8,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
 					"cost": 5986,
@@ -176,6 +188,15 @@
 						"support": 0.03125,
 						"vessel": 0.03125
 					}
+				},
+				{
+					"cost": 7870,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00412,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.301325
 				}
 			],
 			"checked_at": 2,
@@ -198,12 +219,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping rivet 0.031, support 0.031, fitting 0.031, vessel 0.031, cup 0.031)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -262,7 +283,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 5986,
 				"coverage_rel": -0.014230000000000001,
@@ -270,7 +290,7 @@
 				"part_shift": {},
 				"picture": 0.00412
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 8x its pixel: 2056 pixel(s) differ at {} seed 314 (worst 0.66)",
 				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 8x its pixel: 1466 pixel(s) differ at {} seed 314 (worst 0.62)",
@@ -293,12 +313,13 @@
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 10 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.78), one pixel 0.00590 m",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 10 pixel(s) differ at the drawn size at {} seed 314 (worst 0.78)",
 				"CHILD: no welded child has a coarser rung at slot 2: {\"built/nansen-cooker-cup\":0,\"built/nansen-cooker-vessel\":0}",
-				"REDUCE, MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.031, support 0.031, fitting 0.031, vessel 0.031, cup 0.031)) is 1 route(s), and the one looked at did not improve on it"
+				"REDUCE, MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.031, support 0.031, fitting 0.031, vessel 0.031, cup 0.031)) is 1 route(s), and the one looked at did not improve on it",
+				"REDUCE to its error cap 0.125x the band's (0.301 kept), carried from rung 1 held at 7870, dearer than the 5986 taken"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 277.0,
 			"route": "kit",
-			"search_s": 144.5,
-			"searched": "recheck",
+			"search_s": 242.20000000000002,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -328,12 +349,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 4,
 					"route": "impostor",
-					"value": 12
+					"value": 8
 				}
 			],
 			"checked_at": 2,
@@ -357,10 +378,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 275.0,
 			"route": "impostor",
-			"search_s": 27.3,
-			"searched": "recheck",
+			"search_s": 14.4,
+			"searched": "search",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -368,8 +389,8 @@
 		}
 	},
 	"source": {
-		"children": "6c4a5c9a1ecab14beb95c3230bdd84250a8cb12b5e036110553ce14870464625",
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "3df0ed37b3ca2c80fc544da4509d10c85892ecba96f9aa9fac9c908fa9e33366"
+		"children": "8c4099458fe67933595d192df6829a11eda4ea966c3c3eb9b9dbd500dd3b92ae",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "c86a9bedfd5b4d411f7d35026b29e310afb0b7f4a56b32b40365a92423b84921"
 	}
 }

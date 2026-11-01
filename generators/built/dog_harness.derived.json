@@ -65,11 +65,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 16,
+				"candidates": 1,
 				"trace": "built__dog-harness#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 28,
+				"candidates": 0,
 				"trace": "built__dog-harness#2.trace.jsonl"
 			},
 			"3": {
@@ -83,8 +83,8 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "cc27a14c72a5add65b92869a74c1dbb8c5bdfe5efbfda3f464acc6d179eec697",
-		"2": "2c82eee0cbd2448416308b285ae695c1a16f52ea94842105f377c930b910e94e",
+		"1": "32797a9c326e6563bc67aee6b5d38fb445c4e932aaa2beb94ca865885c96d21a",
+		"2": "5ed2254b54d393f7c2b2ba3ca07591d084c1411f1bfce7b79d48b238f6e637e0",
 		"3": "1c79ee1beb352ad9b02c3bb89380366b5182abd9f7b22c48095944efb44aaa8b"
 	},
 	"rungs": {
@@ -94,11 +94,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 94582,
+					"cost": 94582.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00404,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -124,7 +124,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -153,13 +153,13 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00177 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 1 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)"
 			],
-			"peak_mb": 933.0,
+			"peak_mb": 699.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 9242
+				"reduce": 9242.0
 			},
-			"search_s": 1155.9,
-			"searched": "search",
+			"search_s": 297.1,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		},
@@ -179,10 +179,10 @@
 					}
 				},
 				{
-					"cost": 58546,
+					"cost": 58546.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004050000000000001,
+					"picture": 0.00405,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.48999999999999994
@@ -191,8 +191,8 @@
 			"checked_at": 8,
 			"colour": {
 				"judge": "each part's share held to keep 1's at the band",
-				"tolerance": 0.029400000000000003,
-				"worst": 0.016900000000000002
+				"tolerance": 0.0294,
+				"worst": 0.0169
 			},
 			"drawn": {
 				"below_failing_keep_1": true,
@@ -214,7 +214,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping fuzz 0.031, stitch 0.031, each kept piece covering 1.00x)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -438,10 +438,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fuzz 0.031, stitch 0.031, each kept piece covering 1.00x)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.490 held at 58546, dearer than the 9996 taken"
 			],
-			"peak_mb": 754.0,
+			"peak_mb": 593.0,
 			"route": "kit",
-			"search_s": 3550.2000000000003,
-			"searched": "search",
+			"search_s": 1323.2,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		},
@@ -471,12 +471,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 3,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 12
 				}
 			],
 			"checked_at": 8,
@@ -500,10 +500,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 754.0,
+			"peak_mb": 593.0,
 			"route": "impostor",
-			"search_s": 212.60000000000002,
-			"searched": "search",
+			"search_s": 106.4,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -511,7 +511,7 @@
 		}
 	},
 	"source": {
-		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
 		"generator": "4dcb368c13af0f2a8605cb0bee1b6ce54b3863a1d55ce55736cd22b956a290a7"
 	}
 }

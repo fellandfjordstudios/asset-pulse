@@ -149,11 +149,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "plant__pine-shoot#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 12,
 				"trace": "plant__pine-shoot#2.trace.jsonl"
 			}
 		}
@@ -180,11 +180,11 @@
 					"value": {}
 				},
 				{
-					"cost": 456.0,
+					"cost": 432,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.02882,
-					"px_over": 12.0,
+					"picture": 0.0459,
+					"px_over": 21,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -202,7 +202,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -222,13 +222,13 @@
 			"measured_of": 1,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 1's part 'body' is 21 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"REDUCE (every piece) from rung 0: none holds at 0.0032 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 12 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00078 m; coverage changes -0.1603 against 0.0289 allowed (a one-pixel shrink all round)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0032 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 21 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00078 m; coverage changes -0.1911 against 0.0289 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0032",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 299.0,
+			"peak_mb": 492.0,
 			"route": "kit",
-			"search_s": 219.9,
-			"searched": "recheck",
+			"search_s": 150.0,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -245,11 +245,11 @@
 					"value": {}
 				},
 				{
-					"cost": 450.0,
+					"cost": 426,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.02882,
-					"px_over": 0.0,
+					"picture": 0.0459,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -267,7 +267,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -284,23 +284,24 @@
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 1's part 'body' is 21 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"REDUCE (every piece) from rung 0: none holds at 0.0130 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.2301 against 0.0669 allowed (a one-pixel shrink all round)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0130 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.2653 against 0.0669 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0130",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
-				"KIT (its own build at 2 of the band's pixels) held at 646, the same cost as the route taken, found first"
+				"KIT (its own build at 2 of the band's pixels) held at 646, the same cost as the route taken, found first",
+				"KIT (its own build at the rung's pixel), carried from rung 1 held at 646, the same cost as the route taken, found first"
 			],
-			"peak_mb": 293.0,
+			"peak_mb": 286.0,
 			"route": "kit",
-			"search_s": 81.7,
-			"searched": "recheck",
+			"search_s": 113.80000000000001,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "0ed1e4d4f8046974830bf92185bda90307409713f502fe68c71255d734672007"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "d1332dfcad519c16dd4335fc3c6cc940298ebc04e255e7c97e6cd5da3141c227"
 	}
 }

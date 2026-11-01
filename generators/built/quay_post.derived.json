@@ -2,155 +2,155 @@
 	"checked_at": [
 		{
 			"params": {},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"height_m": 0.5
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"height_m": 1.5
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"diameter_m": 0.2
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"diameter_m": 0.45
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"checks": 0
+				"checks": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"checks": 60
+				"checks": 60.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"check_depth": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"check_depth": 0.35
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"splits": 0
+				"splits": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"splits": 8
+				"splits": 8.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"split_depth_m": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"split_depth_m": 0.3
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"rope_turns": 0
+				"rope_turns": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"rope_turns": 6
+				"rope_turns": 6.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"lead_m": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"lead_m": 1.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"crust_m": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"crust_m": 0.6
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"barnacles_per_m2": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"barnacles_per_m2": 10000.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"mussels_per_m2": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"mussels_per_m2": 2500.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"wrack_fronds": 0
+				"wrack_fronds": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"wrack_fronds": 160
+				"wrack_fronds": 160.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {},
-			"seed": 315
+			"seed": 315.0
 		}
 	],
 	"id": "built/quay-post",
@@ -183,22 +183,22 @@
 			"structural",
 			"seed"
 		],
-		"old_key_sets": 26,
-		"sampled": 26,
-		"sets": 26
+		"old_key_sets": 26.0,
+		"sampled": 26.0,
+		"sets": 26.0
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 0.0,
 				"trace": "built__quay-post#1.trace.jsonl"
 			}
 		}
 	},
 	"probe": {
 		"params": {},
-		"seed": 314
+		"seed": 314.0
 	},
 	"replay": {
 		"1": "0bb7897e64cc3b87a6f67febe1ed5f4b281e953d7519a9bb8972685bc15b27e4"
@@ -206,7 +206,7 @@
 	"rungs": {
 		"1": {
 			"above_tolerance": true,
-			"budget": 39117,
+			"budget": 39117.0,
 			"candidates": [
 				{
 					"cost": 2.0,
@@ -227,7 +227,7 @@
 					"value": 1.0
 				},
 				{
-					"cost": 58186,
+					"cost": 58186.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00461,
@@ -236,26 +236,26 @@
 					"value": 0.3429999999999999
 				}
 			],
-			"checked_at": 26,
+			"checked_at": 26.0,
 			"error": -1.0,
 			"every_piece": true,
 			"fraction": 0.3429999999999999,
-			"from_rung": 0,
+			"from_rung": 0.0,
 			"measured": {
-				"cost": 58186,
-				"coverage_rel": -0.008860000000000002,
-				"floor": 0.0045000000000000005,
+				"cost": 58186.0,
+				"coverage_rel": -0.00886,
+				"floor": 0.0045,
 				"part_shift": {},
 				"picture": 0.00461
 			},
-			"measured_of": 3,
+			"measured_of": 3.0,
 			"miss": {
 				"cost_of_ceiling": 1.4874862591712044,
 				"judge": "drawn",
 				"picture_over": 2.4894000000000003,
 				"px_over": null,
 				"route": "reduce",
-				"tier": 1
+				"tier": 1.0
 			},
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 52234 pixel(s) differ at {} seed 314 (worst 0.84)",
@@ -283,9 +283,9 @@
 			},
 			"search_s": 784.1,
 			"searched": "recheck",
-			"surfaces": 7,
-			"surfaces_ceiling": 7,
-			"tolerance": 0.0018518518518518517
+			"surfaces": 7.0,
+			"surfaces_ceiling": 7.0,
+			"tolerance": 0.00185185185185185
 		}
 	},
 	"source": {

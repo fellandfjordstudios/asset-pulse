@@ -95,11 +95,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 8,
 				"trace": "built__quay-ladder#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 14,
 				"trace": "built__quay-ladder#2.trace.jsonl"
 			}
 		}
@@ -109,8 +109,8 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "4a284f41124fafcfbba2bef113ff368b6327d7d1d44396f455b455e849f839a0",
-		"2": "6bd4c08a07e4a067dddd2cfc1b9b8f7747a439c417884cad90ab1467ea3268cf"
+		"1": "9efe6bfe251d208ea53296e4711496087e3bfb97fc78245ba3fa067a0f915c02",
+		"2": "0820d90acba7c6d5b79edc06c8bc0844ce21cb04dbcfc73af16dfc8cec7127cf"
 	},
 	"rungs": {
 		"1": {
@@ -126,7 +126,7 @@
 					"value": {}
 				},
 				{
-					"cost": 296.0,
+					"cost": 296,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00434,
@@ -148,12 +148,12 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -162,7 +162,11 @@
 				"cost": 340,
 				"coverage_rel": 0.00158,
 				"floor": 0.00472,
-				"part_shift": {},
+				"part_shift": {
+					"iron": -5e-05,
+					"tide_growth": -0.00012000000000000002,
+					"timber": 0.00033000000000000005
+				},
 				"picture": 0.00434
 			},
 			"measured_of": 2,
@@ -171,10 +175,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.700 held at 296, cheaper than the 340 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 301.0,
+			"peak_mb": 631.0,
 			"route": "kit",
-			"search_s": 97.0,
-			"searched": "recheck",
+			"search_s": 84.7,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -191,10 +195,10 @@
 					"value": {}
 				},
 				{
-					"cost": 296.0,
+					"cost": 296,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00695,
+					"picture": 0.0069500000000000004,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
@@ -213,12 +217,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -522,26 +526,31 @@
 				"cost": 236,
 				"coverage_rel": -0.00816,
 				"floor": 0.00472,
-				"part_shift": {},
+				"part_shift": {
+					"iron": -0.01187,
+					"tide_growth": 0.006370000000000001,
+					"timber": 0.0055000000000000005
+				},
 				"picture": 0.00434
 			},
-			"measured_of": 3,
+			"measured_of": 4,
 			"not_taken": [
 				"REDUCE from rung 0 at {\"height_m\":9.0} seed 314: element 2000's part 'iron' is 16 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at 2 of the band's pixels) held at 236, the same cost as the route taken, found first",
-				"REDUCE (every piece) to 0.700 held at 296, dearer than the 236 taken"
+				"REDUCE (every piece) to 0.700 held at 296, dearer than the 236 taken",
+				"KIT (its own build at the rung's pixel), carried from rung 1 held at 340, dearer than the 236 taken"
 			],
-			"peak_mb": 257.0,
+			"peak_mb": 279.0,
 			"route": "kit",
-			"search_s": 68.3,
-			"searched": "recheck",
+			"search_s": 68.2,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "77a6a0990c6fb0dc671751316d93ed77b11767b00f43a4dfd69c8e9a1448fd44"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "daf0a65b56462a9122c74203d2b847aeb76923c5bf456505b93bc9eec6a046b9"
 	}
 }

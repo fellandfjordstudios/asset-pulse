@@ -65,7 +65,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 4,
+				"candidates": 0,
 				"trace": "built__folded-wool-layer#1.trace.jsonl"
 			}
 		}
@@ -91,7 +91,7 @@
 					"value": {}
 				},
 				{
-					"cost": 332,
+					"cost": 332.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00449,
@@ -102,9 +102,9 @@
 			],
 			"checked_at": 8,
 			"drawn": {
-				"excess": 0.125,
+				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.001139
+				"pixel_m": 0.001297
 			},
 			"error": 0.004,
 			"fraction": 1.0,
@@ -113,7 +113,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -127,10 +127,7 @@
 				"cost": 468,
 				"coverage_rel": -0.0007400000000000001,
 				"floor": 0.00449,
-				"part_shift": {
-					"knit": 0.00041000000000000005,
-					"rib": -0.00041000000000000005
-				},
+				"part_shift": {},
 				"picture": 0.00449
 			},
 			"measured_of": 2,
@@ -138,16 +135,16 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.490 held at 332, cheaper than the 468 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 317.0,
+			"peak_mb": 262.0,
 			"route": "kit",
-			"search_s": 111.30000000000001,
-			"searched": "search",
+			"search_s": 25.8,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
-		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
 		"generator": "d8ae9a0862ab561423457a7d34c34e8a1516ac3a7d2578cb739dfbc14e63abf3"
 	}
 }

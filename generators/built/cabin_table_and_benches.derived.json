@@ -23,11 +23,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 18,
+				"candidates": 0,
 				"trace": "built__cabin-table-and-benches#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 25,
+				"candidates": 0,
 				"trace": "built__cabin-table-and-benches#2.trace.jsonl"
 			},
 			"3": {
@@ -41,8 +41,8 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "b2faf241563f57ac17e1deff4a8ddd203b5e46d87166ebb972fd79a3a67a21a9",
-		"2": "645c867f259df297084d19b8de6dad1e8010056ba1ccf2e463927330a4324da1",
+		"1": "5fe7b2cb1f0fc887e204bcc714063921c25b2267865358a87dff083c0aff589a",
+		"2": "00f6d9e027d136668c26766ebe9ca42aebd2f896a56a7da420eea1f57b0894bc",
 		"3": "82d6bc8de6dbaf415f2ad9097721655afd21a9c6715ed0a46add8c581c239e4a"
 	},
 	"rungs": {
@@ -50,13 +50,13 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 13389,
+					"px_over": 13389.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 3764,
@@ -68,10 +68,10 @@
 					"value": {}
 				},
 				{
-					"cost": 4142,
+					"cost": 4142.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.005070000000000001,
+					"picture": 0.00507,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.48999999999999994
@@ -90,7 +90,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -104,13 +104,7 @@
 				"cost": 3764,
 				"coverage_rel": -0.0009500000000000001,
 				"floor": 0.005070000000000001,
-				"part_shift": {
-					"end_grain": -0.0013000000000000002,
-					"peg": -3.0000000000000004e-05,
-					"timber_x": 0.00035000000000000005,
-					"timber_y": 0.0002,
-					"timber_z": 0.0010400000000000001
-				},
+				"part_shift": {},
 				"picture": 0.005070000000000001
 			},
 			"measured_of": 2,
@@ -130,10 +124,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.490 held at 4142, dearer than the 3764 taken"
 			],
-			"peak_mb": 377.0,
+			"peak_mb": 332.0,
 			"route": "kit",
-			"search_s": 498.20000000000005,
-			"searched": "search",
+			"search_s": 41.0,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -141,13 +135,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 47,
+					"px_over": 47.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 2660,
@@ -159,10 +153,10 @@
 					"value": {}
 				},
 				{
-					"cost": 3034,
+					"cost": 3034.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.005070000000000001,
+					"picture": 0.00507,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.24009999999999992
@@ -181,7 +175,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -249,13 +243,7 @@
 				"cost": 2660,
 				"coverage_rel": -0.005880000000000001,
 				"floor": 0.005070000000000001,
-				"part_shift": {
-					"end_grain": -0.00506,
-					"peg": 0.0,
-					"timber_x": 0.0011,
-					"timber_y": 0.00249,
-					"timber_z": 0.0025800000000000003
-				},
+				"part_shift": {},
 				"picture": 0.005070000000000001
 			},
 			"measured_of": 2,
@@ -282,10 +270,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.240 held at 3034, dearer than the 2660 taken"
 			],
-			"peak_mb": 243.0,
+			"peak_mb": 266.0,
 			"route": "kit",
-			"search_s": 606.5,
-			"searched": "search",
+			"search_s": 209.10000000000002,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		},
@@ -315,10 +303,10 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 20,
+					"px_over": null,
 					"route": "impostor",
 					"value": 12
 				}
@@ -344,10 +332,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 243.0,
+			"peak_mb": 266.0,
 			"route": "impostor",
-			"search_s": 23.0,
-			"searched": "search",
+			"search_s": 10.4,
+			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -355,7 +343,7 @@
 		}
 	},
 	"source": {
-		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
 		"generator": "d546c3446edbee3e57b375e514074c7dedc5c50145bf2a231b53c60bd7329d08"
 	}
 }

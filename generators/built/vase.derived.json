@@ -67,8 +67,8 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "c76a10e72aaa5912f45500766744fbe88b21f24bd39297e9c8a19c3eb037c6ce",
-		"2": "c452f9ade5427f1f6caeb4faa50275c5c44877881880df2a3f6f91f02ccfa0ce"
+		"1": "48caa49dcf577b65e13cecc81c4194c771f9d92c3ec9cca9faf1b89bfd481ef4",
+		"2": "a186f11321971c6b66b3b9ebb1b38c5694f0dde79a2e58b972a551054d3e1090"
 	},
 	"rungs": {
 		"1": {
@@ -119,9 +119,9 @@
 				"REDUCE from rung 0: none holds at 0.0036 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00129 m",
 				"THIN: built/vase does not declare `reads_density`"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 250.0,
 			"route": "rung0",
-			"search_s": 18.900000000000002,
+			"search_s": 9.4,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -336,16 +336,16 @@
 				"KIT (its own build at 2 of the band's pixels) held at 760, cheaper than the 988 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"REDUCE to 0.168 held at 668, cheaper than the 988 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 247.0,
+			"peak_mb": 250.0,
 			"route": "kit",
-			"search_s": 45.300000000000004,
+			"search_s": 22.700000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
 		"generator": "9d79841fc4bbc4355a30bac823e41e3c1eeaf0dfdfe4d9663d0b05c054d4df48"
 	}
 }

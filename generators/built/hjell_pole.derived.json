@@ -121,11 +121,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 16,
+				"candidates": 1,
 				"trace": "built__hjell-pole#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 21,
+				"candidates": 0,
 				"trace": "built__hjell-pole#2.trace.jsonl"
 			}
 		}
@@ -135,8 +135,8 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "9ed7bd01a9e1356ec2559632cd822290a69c2d94ccc89cac3e57dacba85d102e",
-		"2": "b7d5eea283c81c26906c550816f0739e1f5f38e775535021e3cc5a229d018a12"
+		"1": "f71a3ca6a669b679a3d97850e93de1d4766852802e469c9e656341efd7130627",
+		"2": "abb9b4ebff0a7b704742d5e401d22cdd33dc9a22b7b0a063bc5d916a1a9bdf26"
 	},
 	"rungs": {
 		"1": {
@@ -145,11 +145,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2746,
+					"cost": 2746.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 6,
+					"px_over": 6.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -175,7 +175,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.240",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -200,13 +200,13 @@
 				"KIT: none holds at 0.0012 -- the finest tried (1.000) fails at {\"length_m\":0.4} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00050 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 24 pixel(s) differ at the drawn size at {} seed 314 (worst 0.97)"
 			],
-			"peak_mb": 1129.0,
+			"peak_mb": 1068.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 18
+				"reduce": 18.0
 			},
-			"search_s": 696.9000000000001,
-			"searched": "search",
+			"search_s": 143.8,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -223,10 +223,10 @@
 					"value": {}
 				},
 				{
-					"cost": 396,
+					"cost": 396.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.007970000000000001,
+					"picture": 0.00797,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.05764800999999997
@@ -245,7 +245,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -650,10 +650,7 @@
 				"cost": 628,
 				"coverage_rel": 0.015470000000000001,
 				"floor": 0.0039900000000000005,
-				"part_shift": {
-					"end_grain": 0.01237,
-					"wood": -0.01237
-				},
+				"part_shift": {},
 				"picture": 0.0039900000000000005
 			},
 			"measured_of": 2,
@@ -663,16 +660,16 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.058 held at 396, cheaper than the 628 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 730.0,
+			"peak_mb": 282.0,
 			"route": "kit",
-			"search_s": 399.0,
-			"searched": "search",
+			"search_s": 96.60000000000001,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
 		"generator": "cd190414b50a885507848c88835693e7739a71398c4e5d2eb9a1ffcc468c2813"
 	}
 }

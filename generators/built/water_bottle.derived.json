@@ -46,7 +46,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__water-bottle#1.trace.jsonl"
 			}
 		}
@@ -56,7 +56,7 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "267fe6df49ba0bf083e084127f2d26684b9e478ef0c80af11f9bfae9aab1d72c"
+		"1": "54cb6f44f9399417d6cb161fec9da8565ab79712e956edde7763f96b891f1ad9"
 	},
 	"rungs": {
 		"1": {
@@ -74,11 +74,11 @@
 					}
 				},
 				{
-					"cost": 2422.0,
+					"cost": 2422,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00413,
-					"px_over": 1.0,
+					"px_over": 1,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -86,7 +86,7 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.5,
-				"gap": 0.472,
+				"gap": 0.47200000000000003,
 				"judge": "drawn",
 				"pixel_m": 0.001297
 			},
@@ -99,12 +99,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping cap_rib 0.490)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -119,19 +119,19 @@
 			"measured_of": 1,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 4's part 'print' is 113 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"REDUCE (every piece) from rung 0: none holds at 0.0059 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00130 m",
+				"REDUCE (every piece) from rung 0: none holds at 0.0059 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00130 m; the error ladder: none holds at 0.0059",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping cap_rib 0.490)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 275.0,
 			"route": "kit",
-			"search_s": 42.800000000000004,
-			"searched": "recheck",
+			"search_s": 45.1,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "b90afed884a25e91ca1246772b50ab43a467417b3f694d2a16e58dc4f510fb51"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "e46f4c4505757c4cc5c0eb7d55705aaf7166874f56d094e29f56f50325ed9c26"
 	}
 }

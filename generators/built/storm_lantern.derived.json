@@ -46,11 +46,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__storm-lantern#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 7,
+				"candidates": 13,
 				"trace": "built__storm-lantern#2.trace.jsonl"
 			}
 		}
@@ -60,67 +60,95 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "d0cca0c1cb60e78aa7d41615ca373607cbf85df7bd1673273e068b82adfc84ca",
-		"2": "0a6153142718b7808c3c06e708c21a225c8abdd31dd21e81a4588f636a00e8d0"
+		"1": "2debc76dfe6138a2a53ae85493fd3d68fe2b15e6810e6e3a527a200357fb4093",
+		"2": "0001f89ab206db1918c75338c3ffcb377cfda58a1da30539dd4b30f3f26bc617"
 	},
 	"rungs": {
 		"1": {
 			"budget": 8700,
+			"cancel_across": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 6442.0,
+					"cost": 6442,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.00414,
-					"px_over": 2.0,
+					"picture": 0.0041400000000000005,
+					"px_over": 2,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 6836.0,
-					"holds": false,
-					"judge": "drawn",
-					"picture": 0.00799,
-					"px_over": 4.0,
-					"route": "reduce",
-					"value": 0.7
-				},
-				{
-					"cost": 9512,
+					"cost": 8748,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0,
+					"picture": 0.0039900000000000005,
 					"px_over": null,
-					"route": "rung0",
-					"value": 1.0
+					"route": "reduce",
+					"value": 0.9196799999999999
 				}
 			],
+			"cap": 0.0007367503558603848,
+			"chain": "error",
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 5,
-			"error": -1.0,
-			"fraction": 1.0,
+			"drawn": {
+				"excess": 0.25,
+				"judge": "drawn",
+				"pixel_m": 0.0009729999999999999
+			},
+			"error": 0.002947001423441539,
+			"every_piece": true,
+			"fraction": 0.9196799999999999,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.920 kept)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
 			"measured": {
-				"cost": 9512,
+				"cost": 8748,
 				"coverage_rel": 0.0,
 				"floor": 0.0041400000000000005,
-				"part_shift": {},
-				"picture": 0.0
+				"part_shift": {
+					"bail": 0.0,
+					"brass": 0.0,
+					"flame": 0.0,
+					"fount": -5e-05,
+					"globe": -2e-05,
+					"guard": 0.0,
+					"hood": 0.00011,
+					"seam": 0.0,
+					"tubes": -1e-05,
+					"wick": 0.0
+				},
+				"picture": 0.0039900000000000005
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
 				"KIT: none holds at 0.0029 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00097 m",
-				"REDUCE from rung 0 at {} seed 314: element 11's part 'fount' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0029 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 4 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00097 m",
-				"THIN: built/storm-lantern does not declare `reads_density`"
+				"REDUCE from rung 0 at {} seed 314: element 11's part 'fount' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)"
 			],
-			"peak_mb": 279.0,
-			"route": "rung0",
-			"search_s": 34.1,
-			"searched": "recheck",
+			"peak_mb": 323.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 16
+			},
+			"search_s": 103.9,
+			"searched": "search",
 			"surfaces": 10,
-			"surfaces_ceiling": 10,
-			"tolerance": 0.002947001423441539
+			"surfaces_ceiling": 10
 		},
 		"2": {
 			"budget": 2175,
@@ -281,6 +309,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 4002,
 				"coverage_rel": -0.012950000000000001,
@@ -299,23 +328,24 @@
 				},
 				"picture": 0.0055000000000000005
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
 				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
 				"KIT at 2 pixels: none holds at 0.0118 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 13 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00389 m",
 				"REDUCE from rung 0 at {} seed 314: element 11's part 'fount' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
-				"REDUCE (every piece) to 0.700 held at 6646, dearer than the 4002 taken"
+				"REDUCE (every piece) to 0.700 held at 6646, dearer than the 4002 taken",
+				"REDUCE (every piece) to its error cap 0.0625x the band's (0.920 kept), carried from rung 1 held at 8748, dearer than the 4002 taken"
 			],
-			"peak_mb": 279.0,
+			"peak_mb": 283.0,
 			"route": "kit",
-			"search_s": 169.70000000000002,
+			"search_s": 248.60000000000002,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "42f1ab8691ca2bfbe34102c51e1b79ecb1275490f93b1c943e19a69358453419"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "8594c5d8aa0ec78ba71fa7558a5ab39d2700f0439de94194f7e65f4a98e8d0ec"
 	}
 }

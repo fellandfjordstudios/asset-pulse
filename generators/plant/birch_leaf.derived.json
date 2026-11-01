@@ -46,7 +46,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 4,
 				"trace": "plant__birch-leaf#1.trace.jsonl"
 			}
 		}
@@ -72,18 +72,18 @@
 					"value": {}
 				},
 				{
-					"cost": 68.0,
+					"cost": 0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.16261,
-					"px_over": 142.0,
+					"picture": 1.0,
+					"px_over": 798,
 					"route": "reduce",
 					"value": 0.7
 				}
 			],
 			"checked_at": 5,
 			"drawn": {
-				"excess": 0.125,
+				"excess": 0.25,
 				"judge": "drawn",
 				"pixel_m": 0.0007779999999999999
 			},
@@ -94,7 +94,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -113,19 +113,19 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"REDUCE from rung 0: none holds at 0.0168 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 142 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00078 m; coverage changes -0.2091 against 0.0944 allowed (a one-pixel shrink all round)",
+				"REDUCE from rung 0: none holds at 0.0168 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 798 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.75), one pixel 0.00078 m; coverage changes -1.0000 against 0.0660 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0168",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 238.0,
+			"peak_mb": 240.0,
 			"route": "kit",
-			"search_s": 6.7,
-			"searched": "recheck",
+			"search_s": 3.7,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "ec0453a720b7d0ea4dcd535d477d6772dc59820aee71dace4b371f7070005338"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "2f13fa930918aed40e728dea6f30a5e52f6537247697616257f0679ff1c6c162"
 	}
 }

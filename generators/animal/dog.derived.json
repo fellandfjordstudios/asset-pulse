@@ -1,0 +1,440 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"coat_m": 0.004
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"coat_m": 0.045
+			},
+			"seed": 314
+		}
+	],
+	"id": "animal/dog",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural"
+		],
+		"old_key_sets": 3,
+		"sampled": 3,
+		"sets": 3
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "animal__dog#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 0,
+				"trace": "animal__dog#2.trace.jsonl"
+			},
+			"3": {
+				"candidates": 13,
+				"trace": "animal__dog#3.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "2817a84c2771e1561b76ec313af33f99978ff453a11822188874d3ab83900c53",
+		"2": "b5a22ae0de8f1ddff4927ee3d4c8f2e1ee4e0d99cb738054039e269322c92ca5",
+		"3": "09f7acacafda12dc7c5172686b221282bcba71d38e454552caefd4900d488ef4"
+	},
+	"rungs": {
+		"1": {
+			"budget": 42673,
+			"candidates": [
+				{
+					"cost": 16972,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 16224.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": 6.0,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
+			"checked_at": 3,
+			"drawn": {
+				"excess": 0.0,
+				"judge": "drawn",
+				"pixel_m": 0.001959
+			},
+			"error": 0.0018518518518518515,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"thin",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 16972,
+				"coverage_rel": -3.0000000000000004e-05,
+				"floor": 0.00398,
+				"part_shift": {},
+				"picture": 0.00398
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"REDUCE from rung 0 at {} seed 314: part 'claw' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"coat_m\":0.004} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.64), one pixel 0.00197 m",
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+			],
+			"peak_mb": 358.0,
+			"route": "kit",
+			"search_s": 52.300000000000004,
+			"searched": "recheck",
+			"surfaces": 16,
+			"surfaces_ceiling": 16
+		},
+		"2": {
+			"budget": 10668,
+			"candidates": [
+				{
+					"cost": 14972,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 5824.0,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00412,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.24009999999999992
+				}
+			],
+			"checked_at": 3,
+			"drawn": {
+				"excess": 0.125,
+				"judge": "drawn",
+				"pixel_m": 0.007835
+			},
+			"error": 0.007407407407407406,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"thin",
+					"merged"
+				]
+			},
+			"material_transfer": {
+				"checked_at": 3,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.48273298144340515,
+							0.42428523302078247,
+							0.36855030059814453
+						],
+						"mean_before": [
+							0.48273298144340515,
+							0.42428523302078247,
+							0.36855030059814453
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.008128747344017029,
+							0.006507366895675659,
+							0.005112439393997192
+						],
+						"variance_before": [
+							0.008128747344017029,
+							0.006507366895675659,
+							0.005112439393997192
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.48846977949142456,
+							0.4301260709762573,
+							0.3743836283683777
+						],
+						"mean_before": [
+							0.48846977949142456,
+							0.4301260709762573,
+							0.3743836283683777
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0076234787702560425,
+							0.006153464317321777,
+							0.004863709211349487
+						],
+						"variance_before": [
+							0.0076234787702560425,
+							0.006153464317321777,
+							0.004863709211349487
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.48087072372436523,
+							0.4225963056087494,
+							0.3670291602611542
+						],
+						"mean_before": [
+							0.48087072372436523,
+							0.4225963056087494,
+							0.3670291602611542
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.008872702717781067,
+							0.00709553062915802,
+							0.0055668652057647705
+						],
+						"variance_before": [
+							0.008872702717781067,
+							0.00709553062915802,
+							0.0055668652057647705
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 14972,
+				"coverage_rel": -0.00015000000000000001,
+				"floor": 0.00398,
+				"part_shift": {},
+				"picture": 0.00398
+			},
+			"measured_of": 3,
+			"not_taken": [
+				"REDUCE from rung 0 at {} seed 314: part 'claw' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"KIT (its own build at 2 of the band's pixels) held at 14972, the same cost as the route taken, found first",
+				"REDUCE (every piece) to 0.240 held at 5824, cheaper than the 14972 taken, but a replay of rung 0: KIT is within budget and builds directly"
+			],
+			"peak_mb": 358.0,
+			"route": "kit",
+			"search_s": 248.5,
+			"searched": "recheck",
+			"surfaces": 6,
+			"surfaces_ceiling": 1
+		},
+		"3": {
+			"budget": 2667,
+			"budget_reason": "the cheapest derivation that holds the picture costs 5226, 1.96x rung 3's budget 2667: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 14796,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 5226,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.225297
+				}
+			],
+			"cap": 0.0018518518518518515,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 5808,
+				"fraction": 0.24009999999999992
+			},
+			"chains": {
+				"error": "kept"
+			},
+			"checked_at": 3,
+			"drawn": {
+				"excess": 0.25,
+				"judge": "drawn",
+				"pixel_m": 0.031342
+			},
+			"error": 0.029629629629629624,
+			"every_piece": true,
+			"fraction": 0.225297,
+			"from_rung": 0,
+			"material_transfer": {
+				"checked_at": 3,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.48356348276138306,
+							0.42500871419906616,
+							0.36917057633399963
+						],
+						"mean_before": [
+							0.48356348276138306,
+							0.42500871419906616,
+							0.36917057633399963
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.007764503359794617,
+							0.006224676966667175,
+							0.004899963736534119
+						],
+						"variance_before": [
+							0.007764503359794617,
+							0.006224676966667175,
+							0.004899963736534119
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.489237517118454,
+							0.43079861998558044,
+							0.3749687075614929
+						],
+						"mean_before": [
+							0.489237517118454,
+							0.43079861998558044,
+							0.3749687075614929
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.007294759154319763,
+							0.0058977603912353516,
+							0.00466977059841156
+						],
+						"variance_before": [
+							0.007294759154319763,
+							0.0058977603912353516,
+							0.00466977059841156
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.481906920671463,
+							0.42349496483802795,
+							0.36780330538749695
+						],
+						"mean_before": [
+							0.481906920671463,
+							0.42349496483802795,
+							0.36780330538749695
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.008423998951911926,
+							0.006748780608177185,
+							0.005306914448738098
+						],
+						"variance_before": [
+							0.008423998951911926,
+							0.006748780608177185,
+							0.005306914448738098
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 5226,
+				"coverage_rel": -0.004030000000000001,
+				"floor": 0.00398,
+				"part_shift": {
+					"claw": -0.00101,
+					"coat": 0.00117,
+					"cornea": 0.0,
+					"ear": 0.00012000000000000002,
+					"face": 7.000000000000001e-05,
+					"feather": 0.0005700000000000001,
+					"iris_l": 0.0,
+					"iris_r": 0.0,
+					"lid": -0.00030000000000000003,
+					"lip": -0.00062,
+					"nose": -0.0004900000000000001,
+					"pad": -4e-05,
+					"pupil": -3.0000000000000004e-05,
+					"sclera": -0.0001,
+					"short": 0.0008600000000000001,
+					"toe": -0.00022
+				},
+				"picture": 0.00398
+			},
+			"measured_of": 5,
+			"not_taken": [
+				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
+				"REDUCE from rung 0 at {} seed 314: part 'toe' is 16 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
+				"KIT (its own build at the rung's pixel) held at 14796, dearer than the 5226 taken",
+				"KIT (its own build at 4 of the band's pixels) held at 14796, dearer than the 5226 taken",
+				"KIT (its own build at the rung's pixel), carried from rung 1 held at 16972, dearer than the 5226 taken",
+				"KIT (its own build at the rung's pixel), carried from rung 2 held at 14972, dearer than the 5226 taken"
+			],
+			"peak_mb": 376.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 16
+			},
+			"search_s": 239.20000000000002,
+			"searched": "search",
+			"surfaces": 9,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "408d765599183001cfe98e1cf2e503b85a90127556a63e40fd3dde5d81069660"
+	}
+}

@@ -72,7 +72,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 8,
 				"trace": "food__twist-bread-coil#1.trace.jsonl"
 			}
 		}
@@ -82,18 +82,20 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "09dc2c7bcc2b2c072e112c54feb351410c8772ca98e14f25451017e1477c9099"
+		"1": "5b06486e78c1f0fb0fa20ccc1450d2976c4ad3cdb86294e9f105c2b88690e96a"
 	},
 	"rungs": {
 		"1": {
 			"budget": 2760,
+			"cancel_across": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1778.0,
+					"cost": 1778,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00805,
-					"px_over": 7.0,
+					"px_over": 7,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -107,6 +109,14 @@
 					"value": 0.48999999999999994
 				}
 			],
+			"chain_beaten": {
+				"cap": 0.0072037812573015406,
+				"chain": "error",
+				"cost": 2208
+			},
+			"chains": {
+				"error": "lost"
+			},
 			"checked_at": 9,
 			"drawn": {
 				"excess": 0.25,
@@ -119,12 +129,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -143,19 +153,19 @@
 			"not_taken": [
 				"KIT: none holds at 0.0072 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.78), one pixel 0.00136 m"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 275.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 2.0
+				"reduce": 2
 			},
-			"search_s": 71.4,
-			"searched": "recheck",
+			"search_s": 100.5,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "3cc6ec759a848126bd8c9226ca3659472a57097365a96d787917746819f9c677"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "c715090fd8c38e2b0447964cc767796cabf840ec28b49e7ac4703ea750851b49"
 	}
 }

@@ -100,8 +100,8 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "c279a0ef88b14fe6218dfa23f018612252a0d499eb63f6a9fe833ff728beef41",
-		"2": "c279a0ef88b14fe6218dfa23f018612252a0d499eb63f6a9fe833ff728beef41"
+		"1": "79b2059e097aefc8f831b95b04d4b24b01362930d382d7c6d5258607f8fc35a5",
+		"2": "79b2059e097aefc8f831b95b04d4b24b01362930d382d7c6d5258607f8fc35a5"
 	},
 	"rungs": {
 		"1": {
@@ -174,9 +174,9 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00210 m",
 				"THIN: plant/twig-litter does not declare `reads_density`"
 			],
-			"peak_mb": 258.0,
+			"peak_mb": 263.0,
 			"route": "rung0",
-			"search_s": 26.200000000000003,
+			"search_s": 13.3,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -524,9 +524,9 @@
 				"REDUCE from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00842 m",
 				"THIN: plant/twig-litter does not declare `reads_density`"
 			],
-			"peak_mb": 261.0,
+			"peak_mb": 263.0,
 			"route": "rung0",
-			"search_s": 552.3000000000001,
+			"search_s": 266.6,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -534,7 +534,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
 		"generator": "17de23c636cc9f856bff84d879755220de131411dc6fd69e90ffb654da9036a4"
 	}
 }

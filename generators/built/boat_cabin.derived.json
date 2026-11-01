@@ -137,11 +137,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 26,
+				"candidates": 0,
 				"trace": "built__boat-cabin#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 46,
+				"candidates": 0,
 				"trace": "built__boat-cabin#2.trace.jsonl"
 			}
 		}
@@ -151,21 +151,21 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "bc37c97b9b93c7a35c95eb1b11388f912222b83cf4e089ff260a019c83b18920",
-		"2": "0eda9a2ccc71995a070429f9776f6bb1d76cc298540a5e3512cc1998dcb959ba"
+		"1": "789dd8a48962f5a52fa256ae06547f81822d179fc96474c054ab1c078a8ddbb3",
+		"2": "ee3129110ef79e212db81e32b030d19733f43b4368d20b5b5c0b23add4915a22"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 10841,
+					"px_over": 10841.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 1700,
@@ -181,11 +181,11 @@
 					}
 				},
 				{
-					"cost": 2566,
+					"cost": 2566.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004390000000000001,
-					"px_over": 2,
+					"picture": 0.00439,
+					"px_over": 2.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -193,7 +193,7 @@
 			"checked_at": 18,
 			"drawn": {
 				"excess": 0.4219,
-				"gap": 0.052000000000000005,
+				"gap": 0.052,
 				"judge": "drawn",
 				"pixel_m": 0.0038889999999999997
 			},
@@ -208,7 +208,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -243,10 +243,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"beam_m\":3.8} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00607 m",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 1506.0,
+			"peak_mb": 354.0,
 			"route": "kit",
-			"search_s": 4569.6,
-			"searched": "search",
+			"search_s": 335.6,
+			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
 		},
@@ -254,13 +254,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 86,
+					"px_over": 86.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 1478,
@@ -276,11 +276,11 @@
 					}
 				},
 				{
-					"cost": 2336,
+					"cost": 2336.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00468,
-					"px_over": 5,
+					"px_over": 5.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -303,7 +303,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping fastening 0.031, trim 0.031, batten 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -784,17 +784,17 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping fastening 0.031, trim 0.031, batten 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel, keeping fastening 0.031, batten 0.031, trim 0.031) held at 1558, dearer than the 1478 taken"
 			],
-			"peak_mb": 359.0,
+			"peak_mb": 289.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 3187.4,
-			"searched": "search",
+			"search_s": 709.6,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
 		"generator": "fe85d2b6490872962a7736aa1e5f60a6ee850e2bcae6203be347bdbcf6e5407b"
 	}
 }

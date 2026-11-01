@@ -137,17 +137,17 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED (its parts at their own rungs, joined) held at 23507, dearer than the 7845 taken"
 			],
-			"peak_mb": 304.0,
+			"peak_mb": 310.0,
 			"route": "kit",
-			"search_s": 623.9000000000001,
+			"search_s": 272.3,
 			"searched": "search",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
 		}
 	},
 	"source": {
-		"children": "9d3cc55c4a90fcc6fe9e2ab359dddc091accc3eae1b7bd6b4a75296744fee4ba",
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "c4c2fe52a9a21e8ad6e14845b99b5103fbdea1974026bfd31695961d7dc216df"
+		"children": "ce3046ad505b021318e44b01815a0a8b26ef8a9b5e438629db8d8882a1b38b2e",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "dd42c1d88417270d16a6e9b646e54e3791fc3ca73ba53855e1ad82da8d6fbc54"
 	}
 }

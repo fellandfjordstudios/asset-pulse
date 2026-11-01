@@ -72,7 +72,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 9,
 				"trace": "built__oatcake-packet#1.trace.jsonl"
 			}
 		}
@@ -82,7 +82,7 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "b15fea18f9768636a36a4e228bbff1511a2f65522f8a6dfce38692fae235f405"
+		"1": "a236e6b6e47389f5c505a665ad59875af708ec626596020fc981b813b6f97489"
 	},
 	"rungs": {
 		"1": {
@@ -98,7 +98,7 @@
 					"value": {}
 				},
 				{
-					"cost": 500.0,
+					"cost": 500,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
@@ -111,7 +111,7 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.001297
+				"pixel_m": 0.000185
 			},
 			"error": 0.0015,
 			"fraction": 1.0,
@@ -120,12 +120,12 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -134,7 +134,11 @@
 				"cost": 572,
 				"coverage_rel": 0.0,
 				"floor": 0.00436,
-				"part_shift": {},
+				"part_shift": {
+					"label": 0.0,
+					"oatcake": 0.0,
+					"seal": 0.0
+				},
 				"picture": 0.0
 			},
 			"measured_of": 2,
@@ -143,16 +147,16 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.700 held at 500, cheaper than the 572 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 250.0,
+			"peak_mb": 759.0,
 			"route": "kit",
-			"search_s": 58.0,
-			"searched": "recheck",
+			"search_s": 459.90000000000003,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "6e4b27e31581f941cacc5b05a2294b1b33872c6961d5f2ffee7096ec8a7d9b68"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "599c25996758122cf4fd7bc8ef9f51338c472861d0241b0f0d9e010f3df663b3"
 	}
 }

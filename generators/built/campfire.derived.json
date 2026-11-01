@@ -2,169 +2,169 @@
 	"checked_at": [
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"split_fraction": 0.6
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"split_fraction": 0.6,
-				"stick_count": 10
+				"stick_count": 10.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"split_fraction": 0.6,
-				"stick_count": 36
+				"stick_count": 36.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"split_fraction": 0.6,
 				"stick_length_max_m": 0.5
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"split_fraction": 0.6,
 				"stick_length_max_m": 1.6
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"split_fraction": 0.6,
 				"stick_diameter_max_m": 0.03
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"split_fraction": 0.6,
 				"stick_diameter_max_m": 0.1
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"split_fraction": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"fissure_pitch_m": 0.008,
 				"split_fraction": 0.6
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"fissure_pitch_m": 0.03,
 				"split_fraction": 0.6
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"fissure_depth_m": 0.0,
 				"split_fraction": 0.6
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"fissure_depth_m": 0.008,
 				"split_fraction": 0.6
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"split_fraction": 0.6,
-				"tinder_fibres": 100
+				"tinder_fibres": 100.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"split_fraction": 0.6,
-				"tinder_fibres": 1200
+				"tinder_fibres": 1200.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
-				"rootlets": 0,
+				"rootlets": 0.0,
 				"split_fraction": 0.6
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
-				"rootlets": 60,
+				"rootlets": 60.0,
 				"split_fraction": 0.6
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.0,
 				"split_fraction": 0.6
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.9,
 				"split_fraction": 0.6
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"alight": 1,
+				"alight": 1.0,
 				"burnt_fraction": 0.28,
 				"split_fraction": 0.6
 			},
-			"seed": 315
+			"seed": 315.0
 		}
 	],
 	"id": "built/campfire",
@@ -190,34 +190,34 @@
 			"structural",
 			"seed"
 		],
-		"old_key_sets": 19,
-		"sampled": 19,
-		"sets": 19
+		"old_key_sets": 19.0,
+		"sampled": 19.0,
+		"sets": 19.0
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 15,
+				"candidates": 15.0,
 				"trace": "built__campfire#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 25,
+				"candidates": 25.0,
 				"trace": "built__campfire#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 14,
+				"candidates": 14.0,
 				"trace": "built__campfire#3.trace.jsonl"
 			}
 		}
 	},
 	"probe": {
 		"params": {
-			"alight": 1,
+			"alight": 1.0,
 			"burnt_fraction": 0.28,
 			"split_fraction": 0.6
 		},
-		"seed": 314
+		"seed": 314.0
 	},
 	"replay": {
 		"1": "1976d57e473993c572fd55b38ff42dd51528f64b2936a7603f61f20d3accf477",
@@ -227,47 +227,47 @@
 	"rungs": {
 		"1": {
 			"above_tolerance": true,
-			"budget": 39117,
+			"budget": 39117.0,
 			"candidates": [
 				{
-					"cost": 20271,
+					"cost": 20271.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00413,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 81350,
+					"cost": 81350.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00413,
-					"px_over": 6,
+					"px_over": 6.0,
 					"route": "reduce",
 					"value": 0.7
 				}
 			],
-			"checked_at": 19,
+			"checked_at": 19.0,
 			"error": -1.0,
 			"fraction": 1.0,
-			"from_rung": 0,
+			"from_rung": 0.0,
 			"keep": {},
 			"measured": {
-				"cost": 20271,
+				"cost": 20271.0,
 				"coverage_rel": -0.0044,
 				"floor": 0.00417,
 				"part_shift": {},
-				"picture": 0.005390000000000001
+				"picture": 0.00539
 			},
-			"measured_of": 2,
+			"measured_of": 2.0,
 			"miss": {
 				"cost_of_ceiling": 0.5182145870082061,
 				"judge": "drawn",
 				"picture_over": 2.9106,
 				"px_over": null,
 				"route": "kit",
-				"tier": 1
+				"tier": 1.0
 			},
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.64), one pixel 0.00231 m",
@@ -280,62 +280,62 @@
 			"route": "kit",
 			"search_s": 1057.5,
 			"searched": "search",
-			"surfaces": 6,
-			"surfaces_ceiling": 6,
-			"tolerance": 0.001851851851851852
+			"surfaces": 6.0,
+			"surfaces_ceiling": 6.0,
+			"tolerance": 0.00185185185185185
 		},
 		"2": {
 			"above_tolerance": true,
-			"budget": 9779,
+			"budget": 9779.0,
 			"candidates": [
 				{
-					"cost": 9031,
+					"cost": 9031.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00515,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 81350,
+					"cost": 81350.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00996,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "reduce",
 					"value": 0.7
 				}
 			],
-			"checked_at": 19,
+			"checked_at": 19.0,
 			"error": -1.0,
 			"fraction": 1.0,
-			"from_rung": 0,
+			"from_rung": 0.0,
 			"keep": {},
 			"material_transfer": {
-				"checked_at": 19,
+				"checked_at": 19.0,
 				"checks": [
 					{
 						"holds": true,
 						"mean_after": [
-							0.22872057557106018,
+							0.22872057557106015,
 							0.19325068593025208,
 							0.16669902205467224
 						],
 						"mean_before": [
-							0.22872057557106018,
+							0.22872057557106015,
 							0.19325068593025208,
 							0.16669902205467224
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.03389521315693855,
-							0.029685139656066895,
+							0.02968513965606689,
 							0.02515115588903427
 						],
 						"variance_before": [
 							0.03389521315693855,
-							0.029685139656066895,
+							0.02968513965606689,
 							0.02515115588903427
 						]
 					},
@@ -343,12 +343,12 @@
 						"holds": true,
 						"mean_after": [
 							0.2464151829481125,
-							0.20326010882854462,
+							0.20326010882854464,
 							0.1724151372909546
 						],
 						"mean_before": [
 							0.2464151829481125,
-							0.20326010882854462,
+							0.20326010882854464,
 							0.1724151372909546
 						],
 						"spatial_rms": 0.0,
@@ -379,12 +379,12 @@
 						"variance_after": [
 							0.03214326128363609,
 							0.02922350913286209,
-							0.025151662528514862
+							0.02515166252851486
 						],
 						"variance_before": [
 							0.03214326128363609,
 							0.02922350913286209,
-							0.025151662528514862
+							0.02515166252851486
 						]
 					},
 					{
@@ -401,14 +401,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.030442889779806137,
-							0.028285767883062363,
-							0.024606825783848763
+							0.03044288977980613,
+							0.02828576788306236,
+							0.02460682578384876
 						],
 						"variance_before": [
-							0.030442889779806137,
-							0.028285767883062363,
-							0.024606825783848763
+							0.03044288977980613,
+							0.02828576788306236,
+							0.02460682578384876
 						]
 					},
 					{
@@ -426,25 +426,25 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.03639974072575569,
-							0.030659005045890808,
-							0.025518294423818588
+							0.0306590050458908,
+							0.02551829442381858
 						],
 						"variance_before": [
 							0.03639974072575569,
-							0.030659005045890808,
-							0.025518294423818588
+							0.0306590050458908,
+							0.02551829442381858
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
 							0.2516684830188751,
-							0.20944316685199738,
+							0.20944316685199735,
 							0.17916730046272278
 						],
 						"mean_before": [
 							0.2516684830188751,
-							0.20944316685199738,
+							0.20944316685199735,
 							0.17916730046272278
 						],
 						"spatial_rms": 0.0,
@@ -462,12 +462,12 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.22585250437259674,
+							0.2258525043725967,
 							0.1913202702999115,
 							0.16525666415691376
 						],
 						"mean_before": [
-							0.22585250437259674,
+							0.2258525043725967,
 							0.1913202702999115,
 							0.16525666415691376
 						],
@@ -475,12 +475,12 @@
 						"variance_after": [
 							0.03286067768931389,
 							0.02923300489783287,
-							0.024916421622037888
+							0.02491642162203788
 						],
 						"variance_before": [
 							0.03286067768931389,
 							0.02923300489783287,
-							0.024916421622037888
+							0.02491642162203788
 						]
 					},
 					{
@@ -511,24 +511,24 @@
 						"holds": true,
 						"mean_after": [
 							0.2291790395975113,
-							0.19372688233852386,
+							0.19372688233852384,
 							0.16714458167552948
 						],
 						"mean_before": [
 							0.2291790395975113,
-							0.19372688233852386,
+							0.19372688233852384,
 							0.16714458167552948
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.033970460295677185,
-							0.029719408601522446,
-							0.025151826441287994
+							0.03397046029567718,
+							0.02971940860152244,
+							0.02515182644128799
 						],
 						"variance_before": [
-							0.033970460295677185,
-							0.029719408601522446,
-							0.025151826441287994
+							0.03397046029567718,
+							0.02971940860152244,
+							0.02515182644128799
 						]
 					},
 					{
@@ -545,86 +545,86 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.033829789608716965,
-							0.029656946659088135,
-							0.025153126567602158
+							0.03382978960871696,
+							0.02965694665908813,
+							0.02515312656760215
 						],
 						"variance_before": [
-							0.033829789608716965,
-							0.029656946659088135,
-							0.025153126567602158
+							0.03382978960871696,
+							0.02965694665908813,
+							0.02515312656760215
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.22872057557106018,
+							0.22872057557106015,
 							0.19325068593025208,
 							0.16669902205467224
 						],
 						"mean_before": [
-							0.22872057557106018,
+							0.22872057557106015,
 							0.19325068593025208,
 							0.16669902205467224
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.03389521315693855,
-							0.029685139656066895,
+							0.02968513965606689,
 							0.02515115588903427
 						],
 						"variance_before": [
 							0.03389521315693855,
-							0.029685139656066895,
+							0.02968513965606689,
 							0.02515115588903427
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.22872057557106018,
+							0.22872057557106015,
 							0.19325068593025208,
 							0.16669902205467224
 						],
 						"mean_before": [
-							0.22872057557106018,
+							0.22872057557106015,
 							0.19325068593025208,
 							0.16669902205467224
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.03389521315693855,
-							0.029685139656066895,
+							0.02968513965606689,
 							0.02515115588903427
 						],
 						"variance_before": [
 							0.03389521315693855,
-							0.029685139656066895,
+							0.02968513965606689,
 							0.02515115588903427
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.23379899561405182,
+							0.23379899561405185,
 							0.19841939210891724,
 							0.17158246040344238
 						],
 						"mean_before": [
-							0.23379899561405182,
+							0.23379899561405185,
 							0.19841939210891724,
 							0.17158246040344238
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.034286972135305405,
-							0.029987826943397522,
-							0.025397036224603653
+							0.0342869721353054,
+							0.02998782694339752,
+							0.02539703622460365
 						],
 						"variance_before": [
-							0.034286972135305405,
-							0.029987826943397522,
-							0.025397036224603653
+							0.0342869721353054,
+							0.02998782694339752,
+							0.02539703622460365
 						]
 					},
 					{
@@ -642,13 +642,13 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.03351803123950958,
-							0.029390349984169006,
-							0.024917414411902428
+							0.029390349984169,
+							0.02491741441190242
 						],
 						"variance_before": [
 							0.03351803123950958,
-							0.029390349984169006,
-							0.024917414411902428
+							0.029390349984169,
+							0.02491741441190242
 						]
 					},
 					{
@@ -665,14 +665,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.033835481852293015,
-							0.029305361211299896,
-							0.024674586951732635
+							0.03383548185229301,
+							0.02930536121129989,
+							0.02467458695173263
 						],
 						"variance_before": [
-							0.033835481852293015,
-							0.029305361211299896,
-							0.024674586951732635
+							0.03383548185229301,
+							0.02930536121129989,
+							0.02467458695173263
 						]
 					},
 					{
@@ -690,13 +690,13 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.03393011540174484,
-							0.029894720762968063,
-							0.025414591655135155
+							0.02989472076296806,
+							0.02541459165513515
 						],
 						"variance_before": [
 							0.03393011540174484,
-							0.029894720762968063,
-							0.025414591655135155
+							0.02989472076296806,
+							0.02541459165513515
 						]
 					},
 					{
@@ -713,14 +713,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.007117718458175659,
-							0.012700840830802917,
-							0.015204407274723053
+							0.00711771845817565,
+							0.01270084083080291,
+							0.01520440727472305
 						],
 						"variance_before": [
-							0.007117718458175659,
-							0.012700840830802917,
-							0.015204407274723053
+							0.00711771845817565,
+							0.01270084083080291,
+							0.01520440727472305
 						]
 					},
 					{
@@ -738,37 +738,37 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.06081506609916687,
-							0.034602947533130646,
-							0.022284165024757385
+							0.03460294753313064,
+							0.02228416502475738
 						],
 						"variance_before": [
 							0.06081506609916687,
-							0.034602947533130646,
-							0.022284165024757385
+							0.03460294753313064,
+							0.02228416502475738
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.23762443661689758,
+							0.2376244366168976,
 							0.2021212875843048,
 							0.17491061985492706
 						],
 						"mean_before": [
-							0.23762443661689758,
+							0.2376244366168976,
 							0.2021212875843048,
 							0.17491061985492706
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.03339911252260208,
-							0.029657505452632904,
-							0.025340670719742775
+							0.0296575054526329,
+							0.02534067071974277
 						],
 						"variance_before": [
 							0.03339911252260208,
-							0.029657505452632904,
-							0.025340670719742775
+							0.0296575054526329,
+							0.02534067071974277
 						]
 					}
 				],
@@ -776,20 +776,20 @@
 			},
 			"materials": "merged",
 			"measured": {
-				"cost": 9031,
-				"coverage_rel": -0.029580000000000002,
+				"cost": 9031.0,
+				"coverage_rel": -0.02958,
 				"floor": 0.00417,
 				"part_shift": {},
-				"picture": 0.009000000000000001
+				"picture": 0.009
 			},
-			"measured_of": 1,
+			"measured_of": 1.0,
 			"miss": {
-				"cost_of_ceiling": 0.9235095613048369,
+				"cost_of_ceiling": 0.9235095613048367,
 				"judge": "drawn",
 				"picture_over": 1.215,
 				"px_over": null,
 				"route": "kit",
-				"tier": 1
+				"tier": 1.0
 			},
 			"not_taken": [
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00924 m",
@@ -804,12 +804,12 @@
 			"route": "kit",
 			"search_s": 3355.4,
 			"searched": "search",
-			"surfaces": 5,
-			"surfaces_ceiling": 1,
-			"tolerance": 0.007407407407407408
+			"surfaces": 5.0,
+			"surfaces_ceiling": 1.0,
+			"tolerance": 0.0074074074074074
 		},
 		"3": {
-			"atlas_bytes": 37748736,
+			"atlas_bytes": 37748736.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -830,36 +830,36 @@
 					"rgba8_mb": 37.75
 				}
 			},
-			"budget": 2444,
+			"budget": 2444.0,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "impostor",
-					"value": 12
+					"value": 12.0
 				}
 			],
-			"checked_at": 19,
-			"draw_calls": 1,
+			"checked_at": 19.0,
+			"draw_calls": 1.0,
 			"drawn": {
-				"excess": 0.49010000000000004,
+				"excess": 0.4901,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
-			"from_rung": 0,
+			"from_rung": 0.0,
 			"measured": {
-				"cost": 2,
+				"cost": 2.0,
 				"coverage_rel": 0.0,
 				"floor": 0.0,
 				"part_shift": {},
 				"picture": -1.0
 			},
-			"measured_of": 1,
+			"measured_of": 1.0,
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
@@ -868,9 +868,9 @@
 			"search_s": 1019.6,
 			"searched": "search",
 			"source_pixel_scale": 8.0,
-			"surfaces": 1,
-			"surfaces_ceiling": 1,
-			"tiles": 24
+			"surfaces": 1.0,
+			"surfaces_ceiling": 1.0,
+			"tiles": 24.0
 		}
 	},
 	"source": {

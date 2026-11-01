@@ -110,7 +110,7 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "38fce4135629301c0a5720d195cb60d2416b1120b1fdb70222c2b535ffad9175"
+		"1": "a4b0fde36277858266a7d04b4c5f1c62a4509bbe51bd60fde72d9e785485a449"
 	},
 	"rungs": {
 		"1": {
@@ -179,9 +179,9 @@
 				"REDUCE from rung 0: nothing to try",
 				"THIN: plant/pine-needle-duff does not declare `reads_density`"
 			],
-			"peak_mb": 462.0,
+			"peak_mb": 460.0,
 			"route": "kit",
-			"search_s": 141.20000000000002,
+			"search_s": 74.10000000000001,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
@@ -189,7 +189,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
 		"generator": "0142269a7a0c2cc5375b4fd3c877717e34455afdd7292ea5cc52efd7f4628fde"
 	}
 }

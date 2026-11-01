@@ -79,11 +79,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 6,
 				"trace": "stone__sea-ice-block#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 9,
 				"trace": "stone__sea-ice-block#2.trace.jsonl"
 			}
 		}
@@ -93,32 +93,44 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "1226fd0a655e197c3c4c9184f04237c90e501f0e3892265f55474ca047d716b3",
-		"2": "d430e48f89fdafaebf61739e4faa97e3d8a3bb7dd2168215df99012fd7f0d46c"
+		"1": "56e2dade839a86bf39005231150300b310231bd1e6abff938f78fa901e20b149",
+		"2": "561642d6069dd8c4258b51a89af50ac63012b9dc8c7fa754c07795407d52370e"
 	},
 	"rungs": {
 		"1": {
 			"budget": 42673,
+			"cancel_across": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 260.0,
+					"cost": 260,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 14.0,
+					"px_over": 14,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 584,
+					"cost": 580,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0,
+					"picture": 0.003920000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.7
+					"value": 0.97973
 				}
 			],
+			"cap": 0.003703703703703704,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 584,
+				"fraction": 0.7
+			},
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 10,
 			"drawn": {
 				"excess": 0.0,
@@ -126,12 +138,12 @@
 				"pixel_m": 0.0012209999999999999
 			},
 			"error": 0.001851851851851852,
-			"fraction": 0.7,
+			"fraction": 0.97973,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
-				"first": "REDUCE to 0.700",
-				"looked": 0.0,
+				"first": "REDUCE to its error cap 2.0x the band's (0.980 kept)",
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -142,7 +154,7 @@
 				]
 			},
 			"measured": {
-				"cost": 584,
+				"cost": 580,
 				"coverage_rel": 0.0,
 				"floor": 0.0044,
 				"part_shift": {
@@ -150,19 +162,19 @@
 					"ice": 0.0,
 					"snow": 0.0
 				},
-				"picture": 0.0
+				"picture": 0.003920000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00056 m"
 			],
-			"peak_mb": 541.0,
+			"peak_mb": 566.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 3.0
+				"reduce": 3
 			},
-			"search_s": 198.8,
-			"searched": "recheck",
+			"search_s": 194.70000000000002,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -179,10 +191,10 @@
 					"value": {}
 				},
 				{
-					"cost": 580.0,
+					"cost": 580,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00392,
+					"picture": 0.003920000000000001,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
@@ -192,7 +204,7 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.005187
+				"pixel_m": 0.004883
 			},
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
@@ -201,7 +213,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -461,25 +473,30 @@
 				"cost": 144,
 				"coverage_rel": 0.0013900000000000002,
 				"floor": 0.0044,
-				"part_shift": {},
+				"part_shift": {
+					"block_face": -0.0017400000000000002,
+					"ice": 0.00088,
+					"snow": 0.00079
+				},
 				"picture": 0.00602
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 8 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00223 m",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
-				"REDUCE to 0.700 held at 580, dearer than the 144 taken"
+				"REDUCE to 0.700 held at 580, dearer than the 144 taken",
+				"REDUCE to its error cap 0.5x the band's (0.980 kept), carried from rung 1 held at 580, dearer than the 144 taken"
 			],
-			"peak_mb": 496.0,
+			"peak_mb": 276.0,
 			"route": "kit",
-			"search_s": 58.300000000000004,
-			"searched": "recheck",
+			"search_s": 77.4,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fde8aff5f46644668711b61610522cb7287207274c0af1da92a9118bb2f6b51c",
-		"generator": "39178f31fb64df0eeb70cc469bfd9bebfafffc652314f84176a3e876d20fe916"
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"generator": "e805a9d4c5440e49992e0c766c7dc8083dcd40bd8fbc3114c3431e12b2949f22"
 	}
 }

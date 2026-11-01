@@ -165,11 +165,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 22,
+				"candidates": 0,
 				"trace": "built__clinker-boat#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 37,
+				"candidates": 0,
 				"trace": "built__clinker-boat#2.trace.jsonl"
 			}
 		}
@@ -179,21 +179,21 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "b91ad9f1ea40a3d0d4e8d22854c60387d6c19828fd9b4b8694e26d3ea9d58d7a",
-		"2": "b31a8f921e723eec0c77657e9ae03129bc9c0faa206424048154c405534494c1"
+		"1": "69e0b56fd1e9d6123301586da9934736a3fa2bfa267e2a3b5a78cf520d75589a",
+		"2": "7c060901615dfaef72839f11605d603499a3e47c29785ce404bbf278f87cb2ed"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 3405,
+					"px_over": 3405.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 5360,
@@ -225,7 +225,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping rivet 0.082, frame 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -259,10 +259,10 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.082, frame 0.031)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 1320.0,
+			"peak_mb": 360.0,
 			"route": "kit",
-			"search_s": 3400.3,
-			"searched": "search",
+			"search_s": 376.5,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 9
 		},
@@ -270,13 +270,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 3,
+					"px_over": 3.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 1573,
@@ -308,7 +308,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping frame 0.031, rivet 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -884,18 +884,18 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping frame 0.031, rivet 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel, keeping frame 0.031, rivet 0.031) held at 3109, dearer than the 1573 taken"
 			],
-			"peak_mb": 362.0,
+			"peak_mb": 314.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 7028.4000000000005,
-			"searched": "search",
+			"search_s": 2873.3,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"children": "c8a034136bc5a50c81d89bdbd447e9a61920a76a3b01493aa0d20c6c1177a206",
-		"deriver": "8ee3e78d0b2bfa586e1c9858a15d132af52b5730faf593840563ee59a694a842",
+		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
 		"generator": "f7e000192b8e531fa17ca37b3562b5609bceac9cba8bcc81db4ebe373bee937a"
 	}
 }
