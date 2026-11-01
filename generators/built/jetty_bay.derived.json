@@ -100,11 +100,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 14,
+				"candidates": 0,
 				"trace": "built__jetty-bay#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 21,
+				"candidates": 0,
 				"trace": "built__jetty-bay#2.trace.jsonl"
 			}
 		}
@@ -133,7 +133,7 @@
 					}
 				},
 				{
-					"cost": 908,
+					"cost": 908.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
@@ -158,7 +158,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping nail 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -181,10 +181,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping nail 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.343 held at 908, dearer than the 656 taken"
 			],
-			"peak_mb": 1118.0,
+			"peak_mb": 356.0,
 			"route": "kit",
-			"search_s": 786.1,
-			"searched": "search",
+			"search_s": 224.4,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 2
 		},
@@ -203,7 +203,7 @@
 					}
 				},
 				{
-					"cost": 908,
+					"cost": 908.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
@@ -228,7 +228,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping nail 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -253,17 +253,17 @@
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.558 kept) held at 908, dearer than the 416 taken",
 				"KIT (its own build at the rung's pixel, keeping nail 0.031), carried from rung 1 held at 656, dearer than the 416 taken"
 			],
-			"peak_mb": 315.0,
+			"peak_mb": 270.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 251.60000000000002,
-			"searched": "search",
+			"search_s": 60.900000000000006,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
 		"generator": "cd6786f54106455569f4cb58babfe15209be3f86bc3b7de779f20bfe3ded844b"
 	}
 }

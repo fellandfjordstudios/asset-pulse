@@ -73,7 +73,7 @@
 	"replay": {
 		"1": "b3a2cd15c30ab66a5d819370ce884cd3d0dd65b431f99f5230e9caed7f22b527",
 		"2": "969eb15e43158dd83b610cbcc9c9f51bc23f06668297d187d0a786a60faa4c53",
-		"3": "fc9dbee02cc20f600971c7ac0b0e24735f7ce674ce2940c0255d454b331dd0ed"
+		"3": "8121a9b0d865e042dacd58c9163e6fe55b16c248a0aa8a17e9a708c6840bf0bb"
 	},
 	"rungs": {
 		"1": {
@@ -137,7 +137,7 @@
 			],
 			"peak_mb": 259.0,
 			"route": "rung0",
-			"search_s": 25.700000000000003,
+			"search_s": 35.800000000000004,
 			"searched": "recheck",
 			"surfaces": 16,
 			"surfaces_ceiling": 16,
@@ -370,7 +370,7 @@
 			"routes": {
 				"reduce": 160.0
 			},
-			"search_s": 255.4,
+			"search_s": 349.20000000000005,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
@@ -575,6 +575,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 1806,
 				"coverage_rel": -0.004030000000000001,
@@ -590,16 +591,16 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping bolt 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.343 held at 2622, dearer than the 1806 taken"
 			],
-			"peak_mb": 258.0,
+			"peak_mb": 259.0,
 			"route": "kit",
-			"search_s": 37.4,
+			"search_s": 178.0,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
 		"generator": "bccd6a22448bc1d6aae2669466619738343f2f4c9149f4ef4c2d0e631a9f547a"
 	}
 }

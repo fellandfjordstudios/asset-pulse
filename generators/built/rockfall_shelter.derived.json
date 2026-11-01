@@ -1,0 +1,504 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bays": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bays": 16
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bay_length_m": 0.6
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bay_length_m": 2.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"depth_m": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"depth_m": 3.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"eave_height_m": 1.8
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"eave_height_m": 3.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"handrail_height_m": 0.7
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"handrail_height_m": 1.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"roof_pitch_deg": 5.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"roof_pitch_deg": 35.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"front_overhang_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"front_overhang_m": 0.8
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"back_overhang_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"back_overhang_m": 0.8
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"end_overhang_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"end_overhang_m": 0.8
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"post_diameter_m": 0.05
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"post_diameter_m": 0.25
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"beam_diameter_m": 0.05
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"beam_diameter_m": 0.3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"rafter_diameter_m": 0.04
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"rafter_diameter_m": 0.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"rail_diameter_m": 0.04
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"rail_diameter_m": 0.15
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pole_taper": 0.6
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pole_taper": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pole_variation": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pole_variation": 0.3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"back_post_offset_bays": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"back_post_offset_bays": 0.95
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"skirting_height_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"skirting_height_m": 1.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"skirting_thickness_m": 0.005
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"skirting_thickness_m": 0.06
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"screen": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"corrugation_pitch_m": 0.03
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"corrugation_pitch_m": 0.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"corrugation_depth_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"corrugation_depth_m": 0.05
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sheet_width_m": 0.3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sheet_width_m": 1.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sheet_lap_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sheet_lap_m": 0.3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sheet_sag_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sheet_sag_m": 0.04
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sheet_droop_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sheet_droop_m": 0.04
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sag_variation": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"sag_variation": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pole_sweep_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pole_sweep_m": 0.04
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"grime_height_m": 0.02
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"grime_height_m": 0.6
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"litter_per_m2": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"litter_per_m2": 70.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"twigs_per_m2": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"twigs_per_m2": 4.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		}
+	],
+	"id": "built/rockfall-shelter",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 61,
+		"sampled": 61,
+		"sets": 61
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__rockfall-shelter#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "3fa7298410d45c74631258f06e39795448288c24bfb5051d91021d0674c57996"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 4640.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00493,
+					"px_over": 2.0,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 6422,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
+			"checked_at": 61,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 6422,
+				"coverage_rel": 0.0,
+				"floor": 0.00493,
+				"part_shift": {},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'roof' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"bay_length_m\":0.6} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00611 m",
+				"THIN: built/rockfall-shelter does not declare `reads_density`"
+			],
+			"peak_mb": 418.0,
+			"route": "rung0",
+			"search_s": 282.0,
+			"searched": "recheck",
+			"surfaces": 7,
+			"surfaces_ceiling": 7,
+			"tolerance": 0.0018518518518518521
+		}
+	},
+	"source": {
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"generator": "c267599d2c415bb7fa645d1bba22b86e2e8dfd4ed5bef09105a3f69275375944"
+	}
+}

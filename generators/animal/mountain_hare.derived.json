@@ -167,7 +167,7 @@
 				"trace": "animal__mountain-hare#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 12,
+				"candidates": 1,
 				"trace": "animal__mountain-hare#2.trace.jsonl"
 			}
 		}
@@ -238,9 +238,9 @@
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.490 held at 5412, cheaper than the 10644 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 362.0,
+			"peak_mb": 361.0,
 			"route": "kit",
-			"search_s": 233.8,
+			"search_s": 348.8,
 			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9
@@ -251,7 +251,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 10620,
+					"cost": 10620.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00411,
@@ -270,9 +270,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.0011182137170699183,
+				"cap": 0.00111821371706991,
 				"chain": "error",
-				"cost": 5326
+				"cost": 5326.0
 			},
 			"chains": {
 				"error": "lost"
@@ -289,7 +289,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -838,17 +838,7 @@
 				"cost": 5268,
 				"coverage_rel": -0.0032900000000000004,
 				"floor": 0.0044800000000000005,
-				"part_shift": {
-					"belly": 0.00042,
-					"ear": 0.00013000000000000002,
-					"ear_inner": 0.00011,
-					"ear_tip": 3.0000000000000004e-05,
-					"eye": -0.00045000000000000004,
-					"face": 0.00013000000000000002,
-					"foot": -0.00026000000000000003,
-					"nose": -4e-05,
-					"pelage": 0.0006900000000000001
-				},
+				"part_shift": {},
 				"picture": 0.0044800000000000005
 			},
 			"measured_of": 4,
@@ -857,19 +847,19 @@
 				"KIT (its own build at 2 of the band's pixels) held at 10620, dearer than the 5268 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 10644, dearer than the 5268 taken"
 			],
-			"peak_mb": 363.0,
+			"peak_mb": 361.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 22
+				"reduce": 22.0
 			},
-			"search_s": 1801.0,
-			"searched": "search",
+			"search_s": 1890.4,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
 		"generator": "a3512f8f0720501148a0e1c3a749c0f93e7a028da89a7015e9990aba9086c8d4"
 	}
 }

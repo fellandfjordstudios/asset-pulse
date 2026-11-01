@@ -86,7 +86,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 10,
 				"trace": "built__mooring-ring#1.trace.jsonl"
 			}
 		}
@@ -112,10 +112,10 @@
 					"value": {}
 				},
 				{
-					"cost": 1564.0,
+					"cost": 1512,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00538,
+					"picture": 0.00572,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.24009999999999992
@@ -123,18 +123,18 @@
 			],
 			"checked_at": 11,
 			"drawn": {
-				"excess": 0.3125,
+				"excess": 0.375,
 				"judge": "drawn",
-				"pixel_m": 0.001297
+				"pixel_m": 0.0013109999999999999
 			},
-			"error": 0.0049374785921917855,
+			"error": 0.005201286112976888,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -148,25 +148,29 @@
 				"cost": 3812,
 				"coverage_rel": -0.005090000000000001,
 				"floor": 0.004030000000000001,
-				"part_shift": {},
+				"part_shift": {
+					"iron": 0.01454,
+					"setting": -0.0020800000000000003,
+					"wear": -0.013730000000000001
+				},
 				"picture": 0.004030000000000001
 			},
 			"measured_of": 2,
 			"not_taken": [
 				"REDUCE from rung 0 at {\"ring_d_m\":0.1} seed 314: element 1's part 'wear' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE (every piece) to 0.240 held at 1564, cheaper than the 3812 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"REDUCE (every piece) to 0.240 held at 1512, cheaper than the 3812 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 273.0,
+			"peak_mb": 305.0,
 			"route": "kit",
-			"search_s": 51.5,
-			"searched": "recheck",
+			"search_s": 276.90000000000003,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
-		"generator": "b38547061e72bd584138fb3b9dd050034e91ed1859ebddca57f3ce483a83ccdf"
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"generator": "6d210ce30731ea50d20d8a780520e5c5312d0b81fd9d93808f4513ccc7b1f325"
 	}
 }

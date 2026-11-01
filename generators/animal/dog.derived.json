@@ -40,7 +40,7 @@
 				"trace": "animal__dog#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 13,
+				"candidates": 14,
 				"trace": "animal__dog#3.trace.jsonl"
 			}
 		}
@@ -115,7 +115,7 @@
 			],
 			"peak_mb": 358.0,
 			"route": "kit",
-			"search_s": 52.300000000000004,
+			"search_s": 77.4,
 			"searched": "recheck",
 			"surfaces": 16,
 			"surfaces_ceiling": 16
@@ -260,7 +260,7 @@
 			],
 			"peak_mb": 358.0,
 			"route": "kit",
-			"search_s": 248.5,
+			"search_s": 347.70000000000005,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
@@ -422,19 +422,19 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 16972, dearer than the 5226 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 14972, dearer than the 5226 taken"
 			],
-			"peak_mb": 376.0,
+			"peak_mb": 377.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 16
 			},
-			"search_s": 239.20000000000002,
+			"search_s": 339.40000000000003,
 			"searched": "search",
 			"surfaces": 9,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
 		"generator": "408d765599183001cfe98e1cf2e503b85a90127556a63e40fd3dde5d81069660"
 	}
 }

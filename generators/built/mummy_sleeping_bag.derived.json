@@ -1,0 +1,215 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 1.6
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 2.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"shoulder_width_m": 0.55
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"shoulder_width_m": 0.95
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"foot_width_m": 0.3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"foot_width_m": 0.65
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"hood_width_m": 0.4
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"hood_width_m": 0.85
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"loft_m": 0.03
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"loft_m": 0.15
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"baffle_pitch_m": 0.08
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"baffle_pitch_m": 0.35
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"seam_depth_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"seam_depth_m": 0.07
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"zip_open": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"occupied": 1.0
+			},
+			"seed": 314
+		}
+	],
+	"id": "built/mummy-sleeping-bag",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural"
+		],
+		"old_key_sets": 17,
+		"sampled": 17,
+		"sets": 17
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "built__mummy-sleeping-bag#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "69b82a97aa3a207ad8b455066adc369c06fa7d1a65b7768d39be706850c0827f"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 6434,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.11764899999999996
+				}
+			],
+			"chains": {
+				"error": "skipped by the prior"
+			},
+			"checked_at": 17,
+			"drawn": {
+				"excess": 0.3125,
+				"judge": "drawn",
+				"pixel_m": 0.0038889999999999997
+			},
+			"error": 0.0018518518518518517,
+			"fraction": 0.11764899999999996,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.118",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 6434,
+				"coverage_rel": -0.00289,
+				"floor": 0.00398,
+				"part_shift": {
+					"cord": -0.00026000000000000003,
+					"lining": 0.00023,
+					"shell": 0.00054,
+					"soiled": 0.0005600000000000001,
+					"zip": -0.0008600000000000001
+				},
+				"picture": 0.00398
+			},
+			"measured_of": 1,
+			"peak_mb": 678.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 5.0
+			},
+			"search_s": 525.4,
+			"searched": "recheck",
+			"surfaces": 5,
+			"surfaces_ceiling": 5
+		}
+	},
+	"source": {
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"generator": "583037edf3b02a179386064973b6bd84b5bfeaac1c58bd8fa5d08180c2d72785"
+	}
+}

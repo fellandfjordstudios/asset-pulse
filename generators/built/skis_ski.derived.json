@@ -1,0 +1,255 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		}
+	],
+	"id": "built/skis-ski",
+	"keyed_on": {
+		"moves": [
+			"probe"
+		],
+		"old_key_sets": 1,
+		"sampled": 1,
+		"sets": 1
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "built__skis-ski#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 1,
+				"trace": "built__skis-ski#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "d15bd5a154ee8976022d44b74a4f4cedf090b19e683a129c2fb7d7085e07fc7c",
+		"2": "54dd90f60a30cf7b97da09ab43acf5b826c53cefe83c76bd0f28ba4a744cd27f"
+	},
+	"rungs": {
+		"1": {
+			"budget": 39117,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 6690.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": 2.0,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 5096,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 5218.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": 2.0,
+					"route": "thin",
+					"value": 0.7
+				}
+			],
+			"chains": {
+				"error": "skipped by the prior"
+			},
+			"checked_at": 1,
+			"drawn": {
+				"excess": 0.3125,
+				"judge": "drawn",
+				"pixel_m": 0.00463
+			},
+			"error": 0.0018518518518518517,
+			"every_piece": true,
+			"fraction": 0.7,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to 0.700",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 5096,
+				"coverage_rel": -0.0027800000000000004,
+				"floor": 0.00398,
+				"part_shift": {
+					"base": 0.0006100000000000001,
+					"binding_iron": -0.00055,
+					"binding_leather": -0.00026000000000000003,
+					"edge_wood": 0.0005200000000000001,
+					"hickory": 0.00054,
+					"ridge": 1e-05,
+					"stitch": -8e-05
+				},
+				"picture": 0.00398
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00463 m; part 'edge_wood' changes its share of the picture by -0.0265 against 0.0232 allowed (its colour's share of the subject); part 'hickory' changes its share of the picture by +0.0267 against 0.0232 allowed (its colour's share of the subject)",
+				"REDUCE from rung 0 at {} seed 314: element 3's part 'binding_iron' is 28 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00463 m; part 'edge_wood' changes its share of the picture by -0.0264 against 0.0232 allowed (its colour's share of the subject); part 'hickory' changes its share of the picture by +0.0269 against 0.0232 allowed (its colour's share of the subject)"
+			],
+			"peak_mb": 271.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 9.0
+			},
+			"search_s": 6.1000000000000005,
+			"searched": "recheck",
+			"surfaces": 7,
+			"surfaces_ceiling": 7
+		},
+		"2": {
+			"budget": 9779,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 6476.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00472,
+					"px_over": 0.0,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 806,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00472,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.11023
+				},
+				{
+					"cost": 5004.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00472,
+					"px_over": 0.0,
+					"route": "thin",
+					"value": 0.7
+				}
+			],
+			"cap": 0.00092592592592592,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 3568.0,
+				"fraction": 0.48999999999999994
+			},
+			"chains": {
+				"error": "kept"
+			},
+			"checked_at": 1,
+			"drawn": {
+				"excess": 0.125,
+				"judge": "drawn",
+				"pixel_m": 0.01852
+			},
+			"error": 0.007407407407407407,
+			"every_piece": true,
+			"fraction": 0.11023,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.110 kept)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"material_transfer": {
+				"checked_at": 1,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.062349867075681686,
+							0.045205067843198776,
+							0.03271098807454109
+						],
+						"mean_before": [
+							0.062349867075681686,
+							0.045205067843198776,
+							0.03271098807454109
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0031955295708030462,
+							0.00288187013939023,
+							0.002118288539350033
+						],
+						"variance_before": [
+							0.0031955295708030462,
+							0.00288187013939023,
+							0.002118288539350033
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 806,
+				"coverage_rel": -0.0028000000000000004,
+				"floor": 0.00398,
+				"part_shift": {},
+				"picture": 0.00472
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0491 against 0.0450 allowed (a one-pixel shrink all round); part 'edge_wood' changes its share of the picture by -0.0682 against 0.0450 allowed (its colour's share of the subject)",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0481 against 0.0450 allowed (a one-pixel shrink all round); part 'edge_wood' changes its share of the picture by -0.0682 against 0.0450 allowed (its colour's share of the subject)",
+				"REDUCE from rung 0 at {} seed 314: element 3's part 'binding_iron' is 28 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"THIN: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0491 against 0.0450 allowed (a one-pixel shrink all round); part 'edge_wood' changes its share of the picture by -0.0682 against 0.0450 allowed (its colour's share of the subject)"
+			],
+			"peak_mb": 272.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 9.0
+			},
+			"search_s": 18.900000000000002,
+			"searched": "recheck",
+			"surfaces": 3,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"generator": "37d0dd6c68ea8a1253bbfc34945151907ec27af2acfb74fc63074fca060205fb"
+	}
+}

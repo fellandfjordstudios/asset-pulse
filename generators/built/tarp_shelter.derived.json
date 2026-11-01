@@ -132,6 +132,14 @@
 			"1": {
 				"candidates": 7,
 				"trace": "built__tarp-shelter#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 11,
+				"trace": "built__tarp-shelter#2.trace.jsonl"
+			},
+			"3": {
+				"candidates": 11,
+				"trace": "built__tarp-shelter#3.trace.jsonl"
 			}
 		}
 	},
@@ -140,7 +148,9 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "a346a72500cbeefa9ab531877c17765d9b55e9c9adb1fbc7a31584170dc30a72"
+		"1": "a346a72500cbeefa9ab531877c17765d9b55e9c9adb1fbc7a31584170dc30a72",
+		"2": "c384c674b74e86ac54f3d518a2c220764c439912ca892644d5ecd7e1d7573805",
+		"3": "d21d4415429631adb539041962bb2037261f9fe19c7892b866ca8aec28e74511"
 	},
 	"rungs": {
 		"1": {
@@ -216,14 +226,575 @@
 			"routes": {
 				"reduce": 6
 			},
-			"search_s": 66.3,
+			"search_s": 97.10000000000001,
 			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
+		},
+		"2": {
+			"budget": 9779,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 258,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00393,
+					"px_over": 0,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 150,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.13483,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.3429999999999999
+				}
+			],
+			"chain_beaten": {
+				"cap": 0.000462962962962963,
+				"chain": "error",
+				"cost": 208
+			},
+			"chains": {
+				"error": "lost"
+			},
+			"checked_at": 17,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.029630999999999998
+			},
+			"error": 0.007407407407407408,
+			"fraction": 0.3429999999999999,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.343",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"material_transfer": {
+				"checked_at": 17,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.3542422950267792,
+							0.39182591438293457,
+							0.2378435730934143
+						],
+						"mean_before": [
+							0.3542422950267792,
+							0.39182591438293457,
+							0.2378435730934143
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00021579861640930176,
+							0.0005376935005187988,
+							0.0003281235694885254
+						],
+						"variance_before": [
+							0.00021579861640930176,
+							0.0005376935005187988,
+							0.0003281235694885254
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3531598448753357,
+							0.38979536294937134,
+							0.23686213791370392
+						],
+						"mean_before": [
+							0.3531598448753357,
+							0.38979536294937134,
+							0.23686213791370392
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00030266493558883667,
+							0.000750809907913208,
+							0.0005172416567802429
+						],
+						"variance_before": [
+							0.00030266493558883667,
+							0.000750809907913208,
+							0.0005172416567802429
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3514276444911957,
+							0.37866154313087463,
+							0.23075126111507416
+						],
+						"mean_before": [
+							0.3514276444911957,
+							0.37866154313087463,
+							0.23075126111507416
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00039621442556381226,
+							0.0032179057598114014,
+							0.0009830109775066376
+						],
+						"variance_before": [
+							0.00039621442556381226,
+							0.0032179057598114014,
+							0.0009830109775066376
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.35505715012550354,
+							0.39315205812454224,
+							0.23873373866081238
+						],
+						"mean_before": [
+							0.35505715012550354,
+							0.39315205812454224,
+							0.23873373866081238
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00020010769367218018,
+							0.00044001638889312744,
+							0.0003291033208370209
+						],
+						"variance_before": [
+							0.00020010769367218018,
+							0.00044001638889312744,
+							0.0003291033208370209
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.35382822155952454,
+							0.39066770672798157,
+							0.237202987074852
+						],
+						"mean_before": [
+							0.35382822155952454,
+							0.39066770672798157,
+							0.237202987074852
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00023826956748962402,
+							0.0007287263870239258,
+							0.0003868900239467621
+						],
+						"variance_before": [
+							0.00023826956748962402,
+							0.0007287263870239258,
+							0.0003868900239467621
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.35381948947906494,
+							0.39112958312034607,
+							0.23744073510169983
+						],
+						"mean_before": [
+							0.35381948947906494,
+							0.39112958312034607,
+							0.23744073510169983
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00023573637008666992,
+							0.0005914270877838135,
+							0.0003605857491493225
+						],
+						"variance_before": [
+							0.00023573637008666992,
+							0.0005914270877838135,
+							0.0003605857491493225
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.35319915413856506,
+							0.3902430534362793,
+							0.23683081567287445
+						],
+						"mean_before": [
+							0.35319915413856506,
+							0.3902430534362793,
+							0.23683081567287445
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00024631619453430176,
+							0.0006264448165893555,
+							0.0003535449504852295
+						],
+						"variance_before": [
+							0.00024631619453430176,
+							0.0006264448165893555,
+							0.0003535449504852295
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.35383090376853943,
+							0.39114806056022644,
+							0.23745135962963104
+						],
+						"mean_before": [
+							0.35383090376853943,
+							0.39114806056022644,
+							0.23745135962963104
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00023518502712249756,
+							0.000590011477470398,
+							0.00035975873470306396
+						],
+						"variance_before": [
+							0.00023518502712249756,
+							0.000590011477470398,
+							0.00035975873470306396
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.35318872332572937,
+							0.39022785425186157,
+							0.2368212342262268
+						],
+						"mean_before": [
+							0.35318872332572937,
+							0.39022785425186157,
+							0.2368212342262268
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00024653971195220947,
+							0.0006272643804550171,
+							0.00035372376441955566
+						],
+						"variance_before": [
+							0.00024653971195220947,
+							0.0006272643804550171,
+							0.00035372376441955566
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3541635572910309,
+							0.39134785532951355,
+							0.23773342370986938
+						],
+						"mean_before": [
+							0.3541635572910309,
+							0.39134785532951355,
+							0.23773342370986938
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00025013089179992676,
+							0.0006542801856994629,
+							0.0004294775426387787
+						],
+						"variance_before": [
+							0.00025013089179992676,
+							0.0006542801856994629,
+							0.0004294775426387787
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.35426634550094604,
+							0.39196500182151794,
+							0.23787669837474823
+						],
+						"mean_before": [
+							0.35426634550094604,
+							0.39196500182151794,
+							0.23787669837474823
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00020579993724822998,
+							0.0005041062831878662,
+							0.000298820436000824
+						],
+						"variance_before": [
+							0.00020579993724822998,
+							0.0005041062831878662,
+							0.000298820436000824
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3530978560447693,
+							0.3899386525154114,
+							0.2367503046989441
+						],
+						"mean_before": [
+							0.3530978560447693,
+							0.3899386525154114,
+							0.2367503046989441
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00026907771825790405,
+							0.0006815940141677856,
+							0.0004144497215747833
+						],
+						"variance_before": [
+							0.00026907771825790405,
+							0.0006815940141677856,
+							0.0004144497215747833
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3539848327636719,
+							0.39165306091308594,
+							0.23762798309326172
+						],
+						"mean_before": [
+							0.3539848327636719,
+							0.39165306091308594,
+							0.23762798309326172
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0002066493034362793,
+							0.0004938691854476929,
+							0.00028113648295402527
+						],
+						"variance_before": [
+							0.0002066493034362793,
+							0.0004938691854476929,
+							0.00028113648295402527
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3530406057834625,
+							0.38992559909820557,
+							0.23664651811122894
+						],
+						"mean_before": [
+							0.3530406057834625,
+							0.38992559909820557,
+							0.23664651811122894
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00025300681591033936,
+							0.0006619542837142944,
+							0.0003663487732410431
+						],
+						"variance_before": [
+							0.00025300681591033936,
+							0.0006619542837142944,
+							0.0003663487732410431
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3555282950401306,
+							0.39348843693733215,
+							0.2390039563179016
+						],
+						"mean_before": [
+							0.3555282950401306,
+							0.39348843693733215,
+							0.2390039563179016
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00018860399723052979,
+							0.000508725643157959,
+							0.00034240633249282837
+						],
+						"variance_before": [
+							0.00018860399723052979,
+							0.000508725643157959,
+							0.00034240633249282837
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3747903108596802,
+							0.4147348701953888,
+							0.25175076723098755
+						],
+						"mean_before": [
+							0.3747903108596802,
+							0.4147348701953888,
+							0.25175076723098755
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00041791796684265137,
+							0.0008751153945922852,
+							0.0004469752311706543
+						],
+						"variance_before": [
+							0.00041791796684265137,
+							0.0008751153945922852,
+							0.0004469752311706543
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.35030826926231384,
+							0.3873501121997833,
+							0.23510539531707764
+						],
+						"mean_before": [
+							0.35030826926231384,
+							0.3873501121997833,
+							0.23510539531707764
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00019525736570358276,
+							0.0005006939172744751,
+							0.0003141239285469055
+						],
+						"variance_before": [
+							0.00019525736570358276,
+							0.0005006939172744751,
+							0.0003141239285469055
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 150,
+				"coverage_rel": -0.0172,
+				"floor": 0.0053,
+				"part_shift": {
+					"cord": -0.00319,
+					"hem": 0.00032,
+					"panel": 0.0032700000000000003,
+					"peg": -0.0005700000000000001,
+					"tieout": 1e-05
+				},
+				"picture": 0.13483
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"pitch\":1} seed 314: part 'panel' changes its share of the picture by +0.1377 against 0.0450 allowed (its colour's share of the subject); part 'hem' changes its share of the picture by -0.1377 against 0.0450 allowed (its colour's share of the subject)",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"pitch\":1} seed 314: part 'panel' changes its share of the picture by +0.1377 against 0.0450 allowed (its colour's share of the subject); part 'hem' changes its share of the picture by -0.1377 against 0.0450 allowed (its colour's share of the subject)",
+				"REDUCE to its error cap 0.0675x the band's (0.503 kept), carried from rung 1 held at 200, dearer than the 150 taken"
+			],
+			"peak_mb": 309.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 6
+			},
+			"search_s": 130.1,
+			"searched": "search",
+			"surfaces": 3,
+			"surfaces_ceiling": 1
+		},
+		"3": {
+			"atlas_bytes": 1327104,
+			"atlas_profiles": {
+				"native-desktop": {
+					"budget_mb": 2048.0,
+					"compressed_mb": 0.33,
+					"refused": false,
+					"rgba8_mb": 1.33
+				},
+				"native-mobile": {
+					"budget_mb": 256.0,
+					"compressed_mb": 0.33,
+					"refused": false,
+					"rgba8_mb": 1.33
+				},
+				"web": {
+					"budget_mb": 256.0,
+					"compressed_mb": 0.33,
+					"refused": false,
+					"rgba8_mb": 1.33
+				}
+			},
+			"budget": 2444,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "impostor",
+					"value": 8
+				}
+			],
+			"checked_at": 17,
+			"draw_calls": 1,
+			"drawn": {
+				"excess": 0.39440000000000003,
+				"judge": "drawn",
+				"why": "an impostor is judged at the drawn size, its frames blended"
+			},
+			"error": 0.02962962962962963,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 2,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {},
+				"picture": -1.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
+			],
+			"peak_mb": 309.0,
+			"route": "impostor",
+			"search_s": 18.5,
+			"searched": "search",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tiles": 12
 		}
 	},
 	"source": {
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
-		"generator": "934a3f6a0031aa1157d56641f22dbf7f2c75e41dbdd65a973b4ee849e796529e"
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"generator": "c8e38b13b3f8126ac2c083b0fe7e8347cf1f25fb8fd7ade6f36ac5412576cf0b"
 	}
 }

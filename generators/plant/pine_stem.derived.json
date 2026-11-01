@@ -107,11 +107,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 8,
+				"candidates": 0,
 				"trace": "plant__pine-stem#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 10,
+				"candidates": 0,
 				"trace": "plant__pine-stem#2.trace.jsonl"
 			}
 		}
@@ -138,10 +138,10 @@
 					"value": {}
 				},
 				{
-					"cost": 228,
+					"cost": 228.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0039700000000000004,
+					"picture": 0.00397,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.179245
@@ -160,7 +160,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -182,10 +182,10 @@
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to its error cap 0.125x the band's (0.179 kept) held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 699.0,
+			"peak_mb": 358.0,
 			"route": "kit",
-			"search_s": 393.70000000000005,
-			"searched": "search",
+			"search_s": 180.9,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -202,10 +202,10 @@
 					"value": {}
 				},
 				{
-					"cost": 228,
+					"cost": 228.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0039900000000000005,
+					"picture": 0.00399,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.179245
@@ -224,7 +224,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -248,16 +248,16 @@
 				"REDUCE to its error cap 0.0625x the band's (0.179 kept) held at 228, the same cost as the route taken, found first",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 290.0,
+			"peak_mb": 267.0,
 			"route": "kit",
-			"search_s": 154.4,
-			"searched": "search",
+			"search_s": 53.2,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
 		"generator": "8492dddd40c9d305dc85b5b43d4f47cab2aee518898129520513c8a8b82ef81e"
 	}
 }

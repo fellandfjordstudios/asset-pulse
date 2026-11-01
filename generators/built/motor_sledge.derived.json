@@ -67,7 +67,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 16,
+				"candidates": 1,
 				"trace": "built__motor-sledge#1.trace.jsonl"
 			},
 			"2": {
@@ -86,7 +86,7 @@
 	},
 	"replay": {
 		"1": "37ce7fe7b87bd4bde8676a821328d76dd5165417ebef37468abf570cf2e54932",
-		"2": "3090bbd26dfae688155aa95def169a9c86a3bf18a7f77b8ba0ec9223d2ece44b",
+		"2": "521d6f3b606705294e2d3018a213efcd2010ab3d5a66256aad5dab659b31c11c",
 		"3": "0708ec751e653cbd48e95a3f75d7a6049fb24a9e83e699be7b2ac2b73480ae0d"
 	},
 	"rungs": {
@@ -94,20 +94,20 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 8269,
+					"px_over": 8269.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 19692,
+					"cost": 19692.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00442,
-					"px_over": 9,
+					"px_over": 9.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -133,7 +133,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -173,10 +173,10 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 9 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00566 m",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"peak_mb": 583.0,
+			"peak_mb": 560.0,
 			"route": "merged",
-			"search_s": 593.4,
-			"searched": "search",
+			"search_s": 447.20000000000005,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -420,7 +420,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 15876,
 				"coverage_rel": -0.00805,
@@ -462,7 +461,7 @@
 			],
 			"peak_mb": 318.0,
 			"route": "kit",
-			"search_s": 1318.2,
+			"search_s": 1090.4,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -493,12 +492,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 24
 				}
 			],
 			"checked_at": 8,
@@ -522,10 +521,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 271.0,
+			"peak_mb": 282.0,
 			"route": "impostor",
-			"search_s": 235.8,
-			"searched": "search",
+			"search_s": 341.6,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 24
@@ -533,7 +532,7 @@
 	},
 	"source": {
 		"children": "bf954084f5a73ac7361a8ce9ee72fa3348598ee274c5e6dbad18329f09489109",
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
 		"generator": "b233df8499c7f7407f9e4eb7533877b733703c18ac921030efee96100d6260d9"
 	}
 }

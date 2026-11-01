@@ -79,11 +79,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 1,
 				"trace": "built__provision-crate#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 20,
+				"candidates": 0,
 				"trace": "built__provision-crate#2.trace.jsonl"
 			}
 		}
@@ -103,11 +103,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4065,
+					"cost": 4065.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.005450000000000001,
-					"px_over": 3,
+					"picture": 0.00545,
+					"px_over": 3.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -121,7 +121,7 @@
 					"value": 0.7549049999999999
 				}
 			],
-			"cap": 0.0012966806263142773,
+			"cap": 0.00129668062631427,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -139,7 +139,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.755 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -174,13 +174,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1681, cover 1.00: 64 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'end_grain' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 4 more groups)"
 			],
-			"peak_mb": 497.0,
+			"peak_mb": 483.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 11
+				"reduce": 11.0
 			},
-			"search_s": 306.40000000000003,
-			"searched": "search",
+			"search_s": 173.9,
+			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11
 		},
@@ -199,10 +199,10 @@
 					}
 				},
 				{
-					"cost": 4150,
+					"cost": 4150.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.005450000000000001,
+					"picture": 0.00545,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
@@ -224,7 +224,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping nail 0.240)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -496,17 +496,17 @@
 				"REDUCE (every piece) to 0.700 held at 4150, dearer than the 1413 taken",
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.755 kept), carried from rung 1 held at 4386, dearer than the 1413 taken"
 			],
-			"peak_mb": 287.0,
+			"peak_mb": 270.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 340.0,
-			"searched": "search",
+			"search_s": 166.60000000000002,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
 		"generator": "101b09c472db928374ce7015dab9e3366ada9ab804bde3acfb7d8935d7f9b2cb"
 	}
 }

@@ -1,0 +1,194 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.8
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"urn_staves": 20
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"urn_staves": 40
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bulb_staves": 30
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bulb_staves": 60
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"weave_rows": 5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"weave_rows": 12
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"weave_stakes": 12
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"weave_stakes": 36
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"handles": 0
+			},
+			"seed": 314
+		}
+	],
+	"id": "built/pierced-vase",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural"
+		],
+		"old_key_sets": 12,
+		"sampled": 12,
+		"sets": 12
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "built__pierced-vase#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "03b75c3307e6114e8fb0e159f1313d1ea945f3def5d9cf15a5902d6b7d5f92c0"
+	},
+	"rungs": {
+		"1": {
+			"budget": 19956,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 12650.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00411,
+					"px_over": 38.0,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 27739,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0039900000000000005,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
+			"chain_beaten": {
+				"cap": 0.00064834031315713,
+				"chain": "error",
+				"cost": 29419.0
+			},
+			"chains": {
+				"error": "lost"
+			},
+			"checked_at": 12,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.001297
+			},
+			"error": 0.0025933612526285546,
+			"every_piece": true,
+			"fraction": 0.7,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to 0.700",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 27739,
+				"coverage_rel": -0.0018100000000000002,
+				"floor": 0.0039900000000000005,
+				"part_shift": {},
+				"picture": 0.0039900000000000005
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"KIT: none holds at 0.0026 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 38 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00130 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 333 pixel(s) differ at the drawn size at {} seed 314 (worst 0.73)",
+				"REDUCE from rung 0 at {} seed 314: part 'body' is 345 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
+			],
+			"peak_mb": 454.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 1.0
+			},
+			"search_s": 407.8,
+			"searched": "recheck",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"generator": "946480b0d6378f96c082099709cff6bf96fda0f20b42ca99df55b32b6c2d426d"
+	}
+}

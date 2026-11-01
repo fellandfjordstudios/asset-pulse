@@ -119,7 +119,7 @@
 			],
 			"peak_mb": 258.0,
 			"route": "kit",
-			"search_s": 44.0,
+			"search_s": 67.8,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -183,9 +183,9 @@
 				"REDUCE to 0.058 held at 120, cheaper than the 536 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 1174, dearer than the 536 taken"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 246.0,
 			"route": "kit",
-			"search_s": 34.2,
+			"search_s": 52.1,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -250,16 +250,16 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 1174, dearer than the 348 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 536, dearer than the 348 taken"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 246.0,
 			"route": "kit",
-			"search_s": 27.6,
+			"search_s": 42.6,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
-		"generator": "b341f5c26760a64776e165b62aa33de4811b93fbe961555c587aa0332916827c"
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"generator": "babd048a47d0d7414b057bbc7d30775aa62f2a1555264f3a2f06831f96bdd065"
 	}
 }

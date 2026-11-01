@@ -1,0 +1,221 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.6
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"handles": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"finial_lean_deg": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"finial_lean_deg": 40.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"segments": 6
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"segments": 96
+			},
+			"seed": 314
+		}
+	],
+	"id": "built/vase-simple",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural"
+		],
+		"old_key_sets": 8,
+		"sampled": 8,
+		"sets": 8
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "built__vase-simple#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 1,
+				"trace": "built__vase-simple#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "cb43c341d76fb624aaaab7f2edf2469bb8942f17d0574bb24eeaa00e85d3b394",
+		"2": "5f036bcf3476aee784ab916e65f6e343c85d8f6334c24be3b7a2fe2faf13869a"
+	},
+	"rungs": {
+		"1": {
+			"budget": 10149,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 586,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0039900000000000005,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.24009999999999992
+				}
+			],
+			"chain_beaten": {
+				"cap": 0.00363215861712682,
+				"chain": "error",
+				"cost": 598.0
+			},
+			"chains": {
+				"error": "lost"
+			},
+			"checked_at": 8,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.001295
+			},
+			"error": 0.0036321586171268274,
+			"fraction": 0.24009999999999992,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.240",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 586,
+				"coverage_rel": -0.00978,
+				"floor": 0.0039900000000000005,
+				"part_shift": {},
+				"picture": 0.0039900000000000005
+			},
+			"measured_of": 1,
+			"peak_mb": 304.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 5.0
+			},
+			"search_s": 40.7,
+			"searched": "recheck",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		},
+		"2": {
+			"budget": 2537,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 354,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.020450000000000003,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.190323
+				}
+			],
+			"cap": 0.01452863446850731,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 362.0,
+				"fraction": 0.11764899999999996
+			},
+			"chains": {
+				"error": "kept"
+			},
+			"checked_at": 8,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.005182
+			},
+			"error": 0.01452863446850731,
+			"fraction": 0.190323,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to its error cap 1.0x the band's (0.190 kept)",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
+			},
+			"measured": {
+				"cost": 354,
+				"coverage_rel": -0.005050000000000001,
+				"floor": 0.0039900000000000005,
+				"part_shift": {},
+				"picture": 0.020450000000000003
+			},
+			"measured_of": 1,
+			"peak_mb": 255.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 5.0
+			},
+			"search_s": 18.7,
+			"searched": "recheck",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"generator": "6766554dc14379eca2fbe10927413b304ee5d1434fc879ec2851731cfa61df38"
+	}
+}

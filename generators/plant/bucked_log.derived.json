@@ -1,0 +1,366 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"diameter_m": 0.15
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"diameter_m": 1.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 3.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tip_diameter_ratio": 0.7
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tip_diameter_ratio": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"roundness_departure": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"roundness_departure": 0.15
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cut_squareness_deg": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cut_squareness_deg": 12.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bark_cover": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bark_cover": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bark_thickness_over_diameter": 0.01
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bark_thickness_over_diameter": 0.12
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"furrow_pitch": 0.02
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"furrow_pitch": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"furrow_depth_ratio": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"furrow_depth_ratio": 0.85
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"wood_groove_ratio": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"wood_groove_ratio": 0.7
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pith_offset_ratio": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pith_offset_ratio": 0.4
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"ring_width_m": 0.0015
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"ring_width_m": 0.02
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"ring_relief_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"ring_relief_m": 0.003
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"end_weathering": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"end_weathering": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"check_count": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"check_count": 16
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"check_reach_ratio": 0.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"check_reach_ratio": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tangential_shrinkage": 0.04
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tangential_shrinkage": 0.11
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"radial_shrinkage": 0.02
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"radial_shrinkage": 0.06
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		}
+	],
+	"id": "plant/bucked-log",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 38,
+		"sampled": 38,
+		"sets": 38
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "plant__bucked-log#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "6478798e9ca3e53110a08d5a0b36e79f8bc846b6b2007cacbdd36f4cdac79a4c"
+	},
+	"rungs": {
+		"1": {
+			"budget": 42673,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 1204,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0048000000000000004,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.052058
+				}
+			],
+			"cap": 0.00092592592592592,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 7928.0,
+				"fraction": 0.3429999999999999
+			},
+			"chains": {
+				"error": "kept"
+			},
+			"checked_at": 38,
+			"drawn": {
+				"excess": 0.125,
+				"judge": "drawn",
+				"pixel_m": 0.001607
+			},
+			"error": 0.0018518518518518517,
+			"fraction": 0.052058,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to its error cap 0.5x the band's (0.052 kept)",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"thin",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 1204,
+				"coverage_rel": -0.00035000000000000005,
+				"floor": 0.0048000000000000004,
+				"part_shift": {
+					"bark": -0.00014000000000000001,
+					"heartwood": 5e-05,
+					"sapwood": -9e-05,
+					"weathered_wood": 0.00011
+				},
+				"picture": 0.0048000000000000004
+			},
+			"measured_of": 1,
+			"peak_mb": 1739.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 4.0
+			},
+			"search_s": 1139.7,
+			"searched": "recheck",
+			"surfaces": 4,
+			"surfaces_ceiling": 4
+		}
+	},
+	"source": {
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"generator": "8d4e9b842bd8d67c018977ff2eec86d222b5d9f85692bab7b7a2b9d12304e19e"
+	}
+}

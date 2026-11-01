@@ -1,0 +1,266 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.6
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stem_diameter_m": 0.0008
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stem_diameter_m": 0.004
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"calyx_length_m": 0.006
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"calyx_length_m": 0.025
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pairs": 2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"pairs": 14
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"lateral_spikes": 0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"lateral_spikes": 4
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"internode_over_calyx": 0.8
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"internode_over_calyx": 2.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branch_angle_deg": 5.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branch_angle_deg": 60.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"calyx_splay_deg": 10.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"calyx_splay_deg": 80.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		}
+	],
+	"id": "plant/yellow-rattle",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 18,
+		"sampled": 18,
+		"sets": 18
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "plant__yellow-rattle#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 1,
+				"trace": "plant__yellow-rattle#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "a2f3cd3f40bc1ddd217bbb9af8279fb32cf7c4beadf31aae7a4ea5e24b2a4c23",
+		"2": "4d6081e64c671739ee5f9725b9f27e35ce3de54e3aaed33a559ca28f64d7417c"
+	},
+	"rungs": {
+		"1": {
+			"budget": 11216,
+			"candidates": [
+				{
+					"cost": 1776.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": 0.0,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 2376,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
+			"checked_at": 18,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 2376,
+				"coverage_rel": 0.0,
+				"floor": 0.00398,
+				"part_shift": {},
+				"picture": 0.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"REDUCE from rung 0: none holds at 0.0026 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0148 against 0.0130 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0026",
+				"THIN: plant/yellow-rattle does not declare `reads_density`"
+			],
+			"peak_mb": 271.0,
+			"route": "rung0",
+			"search_s": 31.400000000000002,
+			"searched": "recheck",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.002559238078251863
+		},
+		"2": {
+			"budget": 2804,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 1656,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
+			"chains": {
+				"error": "lost"
+			},
+			"checked_at": 18,
+			"drawn": {
+				"excess": 0.4375,
+				"judge": "drawn",
+				"pixel_m": 0.003119
+			},
+			"error": 0.010236952313007452,
+			"fraction": 0.7,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.700",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"thin",
+					"impostor",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 1656,
+				"coverage_rel": -0.02364,
+				"floor": 0.00398,
+				"part_shift": {},
+				"picture": 0.00398
+			},
+			"measured_of": 1,
+			"peak_mb": 271.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 33.0
+			},
+			"search_s": 44.0,
+			"searched": "recheck",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"children": "7d26b8f7a0edf9c80cea3104364203ca3cc630d80623e63e6623d05820fc17ba",
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"generator": "7ec8be66dc524b5594b3dec44bcdf61abec63833ffbfd6e6ec3515fb16fbdac8"
+	}
+}

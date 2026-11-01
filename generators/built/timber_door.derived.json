@@ -192,7 +192,7 @@
 			],
 			"peak_mb": 323.0,
 			"route": "kit",
-			"search_s": 122.10000000000001,
+			"search_s": 179.4,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -601,7 +601,7 @@
 			],
 			"peak_mb": 323.0,
 			"route": "kit",
-			"search_s": 65.3,
+			"search_s": 93.2,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -1010,14 +1010,14 @@
 			],
 			"peak_mb": 323.0,
 			"route": "kit",
-			"search_s": 42.400000000000006,
+			"search_s": 58.2,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
 		"generator": "40ac70283009aa2acf6fd2508b356547aca61e0b608767d620f3a700aca45a1f"
 	}
 }

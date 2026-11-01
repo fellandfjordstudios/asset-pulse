@@ -110,7 +110,7 @@
 			],
 			"peak_mb": 266.0,
 			"route": "merged",
-			"search_s": 11.100000000000001,
+			"search_s": 17.0,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -227,15 +227,15 @@
 			],
 			"peak_mb": 245.0,
 			"route": "merged",
-			"search_s": 48.1,
+			"search_s": 69.9,
 			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"children": "230fac3027486279529b5399b1d209718522f1208f7dd43c8def3b277dfe96cc",
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"children": "d4a8d60cee69daf08d9b0f5c8e2a2e6a14f180308bab729f58abff178412c5a9",
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
 		"generator": "9573d00a6f0d0c49ec646f1410cf17b1c852bcc8b849541f1640adfde5ce0510"
 	}
 }

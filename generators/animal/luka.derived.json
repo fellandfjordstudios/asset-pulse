@@ -163,11 +163,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "animal__luka#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 11,
+				"candidates": 1,
 				"trace": "animal__luka#2.trace.jsonl"
 			},
 			"3": {
@@ -202,9 +202,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.00023148148148148146,
+				"cap": 0.00023148148148148,
 				"chain": "error",
-				"cost": 12716
+				"cost": 12716.0
 			},
 			"chains": {
 				"error": "lost"
@@ -222,7 +222,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.490",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -262,13 +262,13 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"head_length_over_height\":0.26} seed 314: candidate emits 2 opposing duplicate faces",
 				"REDUCE from rung 0 at {} seed 314: part 'teeth' is 32 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)"
 			],
-			"peak_mb": 822.0,
+			"peak_mb": 798.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 39
+				"reduce": 39.0
 			},
-			"search_s": 1168.9,
-			"searched": "search",
+			"search_s": 508.70000000000005,
+			"searched": "recheck",
 			"surfaces": 17,
 			"surfaces_ceiling": 17
 		},
@@ -303,7 +303,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.490",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -852,25 +852,7 @@
 				"cost": 7796,
 				"coverage_rel": -0.00234,
 				"floor": 0.00398,
-				"part_shift": {
-					"claw": -2e-05,
-					"coat": 0.001,
-					"ear": -0.00036,
-					"face": 0.00021,
-					"feather": -0.0009100000000000001,
-					"iris_l": 0.0,
-					"iris_r": 0.0,
-					"lid": 0.0,
-					"lip": -0.00026000000000000003,
-					"mouth": -0.00015000000000000001,
-					"nose": 1e-05,
-					"pad": -0.00011,
-					"pupil": -4e-05,
-					"sclera": -0.00023,
-					"short": 0.0005600000000000001,
-					"teeth": -0.00017,
-					"toe": 5e-05
-				},
+				"part_shift": {},
 				"picture": 0.00398
 			},
 			"measured_of": 2,
@@ -880,13 +862,13 @@
 				"REDUCE from rung 0 at {} seed 314: part 'teeth' is 32 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"REDUCE (every piece) to 0.490, carried from rung 1 held at 7796, the same cost as the route taken, found first"
 			],
-			"peak_mb": 612.0,
+			"peak_mb": 406.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 39
+				"reduce": 39.0
 			},
-			"search_s": 1815.0,
-			"searched": "search",
+			"search_s": 2083.1,
+			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 1
 		},
@@ -945,9 +927,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 612.0,
+			"peak_mb": 449.0,
 			"route": "impostor",
-			"search_s": 136.70000000000002,
+			"search_s": 198.70000000000002,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -956,7 +938,7 @@
 		}
 	},
 	"source": {
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
 		"generator": "9032e2b8686e3d2482fa123d89946c778c9c425f8e534e6a72aba9210778bb3f"
 	}
 }

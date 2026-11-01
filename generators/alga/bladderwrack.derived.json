@@ -1,0 +1,259 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"thallus_length_m": 0.05
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"frond_width_m": 0.006
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"frond_width_m": 0.03
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"dichotomy_spacing_m": 0.02
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"dichotomy_spacing_m": 0.3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"dichotomy_angle_deg": 10.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"dichotomy_angle_deg": 80.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bladder_diameter_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bladder_diameter_m": 0.022
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"wave_exposure": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stipe_length_m": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stipe_length_m": 0.1
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		}
+	],
+	"id": "alga/bladderwrack",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 14,
+		"sampled": 14,
+		"sets": 14
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "alga__bladderwrack#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 1,
+				"trace": "alga__bladderwrack#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "2156bf9fcd94c6bde6cc8dc025dd25d3ad561c1e9243aab765dbd586f476e11b",
+		"2": "a9151f375f513b22439dfcc66839878629733616dafe32fc5564620f37eed352"
+	},
+	"rungs": {
+		"1": {
+			"budget": 22975,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 2240,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
+			"chain_beaten": {
+				"cap": 0.00015859596701495,
+				"chain": "error",
+				"cost": 2240.0
+			},
+			"chains": {
+				"error": "lost"
+			},
+			"checked_at": 14,
+			"drawn": {
+				"excess": 0.375,
+				"judge": "drawn",
+				"pixel_m": 0.0012749999999999999
+			},
+			"error": 0.0025375354722392903,
+			"fraction": 0.7,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.700",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"thin",
+					"impostor",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 2240,
+				"coverage_rel": -0.01004,
+				"floor": 0.00462,
+				"part_shift": {},
+				"picture": 0.00398
+			},
+			"measured_of": 1,
+			"peak_mb": 465.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 32.0
+			},
+			"search_s": 69.2,
+			"searched": "recheck",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		},
+		"2": {
+			"budget": 5743,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 1664,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00444,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
+			"chain_beaten": {
+				"cap": 0.00063438386805982,
+				"chain": "error",
+				"cost": 2240.0
+			},
+			"chains": {
+				"error": "lost"
+			},
+			"checked_at": 14,
+			"drawn": {
+				"excess": 0.3125,
+				"judge": "drawn",
+				"pixel_m": 0.0050999999999999995
+			},
+			"error": 0.010150141888957161,
+			"fraction": 0.7,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to 0.700",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"thin",
+					"impostor",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 1664,
+				"coverage_rel": -0.02025,
+				"floor": 0.00462,
+				"part_shift": {},
+				"picture": 0.00444
+			},
+			"measured_of": 1,
+			"peak_mb": 262.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 32.0
+			},
+			"search_s": 27.8,
+			"searched": "recheck",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"generator": "4760864bd328a064f9596d4366d8b9e0362dea0519c58f803f763f80d5c22e25"
+	}
+}

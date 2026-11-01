@@ -74,7 +74,7 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "e279300d3ce52b83a91d82787b0b000bac5cb39e0645ba64ef33750fea797338",
+		"1": "5a4be33b13abfe8248278dc14d17f3fa6f46ba80263a7dc7963cf283397c0696",
 		"2": "6e233bf4f826c546ea62bd1dd98e96811ae012e9b7aef72f7e38b02af59be454"
 	},
 	"rungs": {
@@ -88,21 +88,21 @@
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.004390000000000001,
-					"px_over": 10,
+					"px_over": 7,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 1834,
+					"cost": 1822,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00472,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.8642789999999999
+					"value": 0.8586239999999999
 				}
 			],
-			"cap": 0.0013142033374806863,
+			"cap": 0.0014284818885659633,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -111,14 +111,14 @@
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
-				"pixel_m": 0.0011949999999999999
+				"pixel_m": 0.001299
 			},
-			"error": 0.0026284066749613726,
-			"fraction": 0.8642789999999999,
+			"error": 0.0028569637771319266,
+			"fraction": 0.8586239999999999,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
-				"first": "REDUCE to its error cap 0.5x the band's (0.864 kept)",
+				"first": "REDUCE to its error cap 0.5x the band's (0.859 kept)",
 				"looked": 0,
 				"order": [
 					"kit",
@@ -130,28 +130,28 @@
 				]
 			},
 			"measured": {
-				"cost": 1834,
-				"coverage_rel": -0.00048000000000000007,
+				"cost": 1822,
+				"coverage_rel": -0.00044,
 				"floor": 0.00472,
 				"part_shift": {
 					"base": -0.00018,
 					"brass": 1e-05,
 					"canvas": 0.00015000000000000001,
-					"leather": 5e-05
+					"leather": 4e-05
 				},
 				"picture": 0.00472
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"KIT: none holds at 0.0026 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 10 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00120 m",
+				"KIT: none holds at 0.0029 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.91), one pixel 0.00130 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 206 pixel(s) differ at the drawn size at {} seed 314 (worst 0.88)"
 			],
-			"peak_mb": 387.0,
+			"peak_mb": 366.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 10
 			},
-			"search_s": 179.10000000000002,
+			"search_s": 264.5,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -399,21 +399,21 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.00: 8 pixel(s) differ at the drawn size at {} seed 314 (worst 0.59)",
 				"KIT at 2 pixels: none holds at 0.0030 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 220 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00136 m",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.00: 8 pixel(s) differ at the drawn size at {} seed 314 (worst 0.59)",
-				"REDUCE to its error cap 0.4381x the band's (0.864 kept), carried from rung 1 held at 1834, dearer than the 1808 taken"
+				"REDUCE to its error cap 0.4762x the band's (0.859 kept), carried from rung 1 held at 1822, dearer than the 1808 taken"
 			],
-			"peak_mb": 355.0,
+			"peak_mb": 356.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 10
 			},
-			"search_s": 267.2,
+			"search_s": 392.5,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
-		"generator": "a293022ea770a6328c20a2b92747ecc2b096f3e4089a35389019d9391b77215c"
+		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"generator": "a77b1a86dfe50036439a7a7bc8be6ef05d7695334c112c63e869b4ed4b5d3078"
 	}
 }
