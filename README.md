@@ -65,8 +65,10 @@ goal table and take seconds each. Each subject's renders are capped by the run
    with the totals and their trend -- `tools/site.py`, checked at 390 px
 3. the catalog, the pulse's public half: `tools/bake.sh` (the library's
    impostor atlases, then the library's `tools/cook.sh --deadline` over the
-   explorer's own plan of what to bake, pinned in `explorer.lock`, into
-   `out/cooked/catalog/`; the bake plan's step F), then
+   library's own plan of what to bake, its `tools/bake-library.gd`, into
+   `out/cooked/catalog/` through one content-keyed store; the bake plan's step
+   F; the explorer, pinned in `explorer.lock`, is read only by
+   `tools/publish.sh` for its hostname), then
    `tools/catalog.py`: one static page per subject from the library's committed
    JSON (class, size, rungs, ladder end, taxon, use), its close-ups and a
    `<model-viewer>` of rung 0; two numbers from the scorecard (draw cost at the
@@ -88,6 +90,7 @@ goal table and take seconds each. Each subject's renders are capped by the run
 
    Objects are named by content hash for the
    `catalog` bucket. Verified locally 2026-10-03 at library 552e8ca.
+
 4. publishing: `tools/publish.sh` -- objects to R2, the pulse to Pages behind
    Access on `pulse.<zone>`, the catalog to the `asset-explorer` Pages project
    on its existing hostname (`asset-explorer.pages.dev`, from the explorer's
@@ -349,7 +352,8 @@ an exported end whose index matches the committed ladder. Missing or conflicting
 ladder declarations remain blocked. Existing mesh files are preserved. Failed
 exports leave that entry unchanged and are named in the gitignored
 `library/build/impostor-repair/report.json`. Repeated runs skip completed ends.
-Both library and explorer checkouts must match their lock files and be clean.
+The library checkout must match its lock file and be clean; the set is the
+library's own `tools/bake-library.gd` plan.
 Outputs baked at older pins must not be relabeled as current builds.
 
 To complete an existing bake at the current pins:

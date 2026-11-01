@@ -1,9 +1,11 @@
 ## THE CATALOG'S COOK MANIFEST (the library's bake plan, step F): every target
-## the explorer's bake planned -- the registry union the library's package
+## the library's bake plans -- the registry union the library's package
 ## targets, with their seeds, parameters, tags and styles -- written as one
 ## game manifest (`ops/game-manifest.schema.json`) for the library's
-## `tools/cook.sh`. The set is the explorer's `plan()`, read and not copied, so
-## it keeps one spelling. One profile, `catalog`: no triangle cap, so the cook
+## `tools/cook.sh`. The set is the library's own `tools/bake-library.gd`
+## `plan()` (moved there from asset-explorer by its row 324; the pulse stopped
+## cloning the explorer for it in row 712), read and not copied, so it keeps
+## one spelling. One profile, `catalog`: no triangle cap, so the cook
 ## ships every rung the bake makes (the catalog's zip carries every rung).
 ## Every subject casts `moving`: the catalog ships glTF, which carries no
 ## caster flag (`AgCook.lower_scene`), and `static` on a subject that moves
@@ -29,19 +31,19 @@
 ## `AgShapeLibrary.open_default()`'s own problems, so they come back the run
 ## the pack is there.
 ##
-##   godot --headless --path library --script tools/cook_manifest.gd -- <out.json> <explorer dir>
+##   godot --headless --path library --script tools/cook_manifest.gd -- <out.json>
 extends SceneTree
 
 const TARGET := "catalog"
 
 func _init():
 	var args := OS.get_cmdline_user_args()
-	if args.size() != 2:
-		printerr("usage: -- <out.json> <pinned explorer directory>")
+	if args.size() != 1:
+		printerr("usage: -- <out.json>")
 		quit(2)
 		return
 	var reg := AgLibrary.registry()
-	var planner = load(args[1] + "/tools/bake-library.gd")
+	var planner = load("res://tools/bake-library.gd")
 	var no_pack: Array = AgShapeLibrary.open_default()["problems"]
 	var subjects := []
 	var left_out := 0

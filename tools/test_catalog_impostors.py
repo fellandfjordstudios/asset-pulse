@@ -74,7 +74,7 @@ class ImpostorRepairTests(unittest.TestCase):
         manifest.write_text(before)
         (self.staged / 'plant-fern.json').write_text(json.dumps(self.row))
         with patch.object(repair.subprocess, 'run', side_effect=OSError('export failed')):
-            result = repair.repair(self.lib, self.lib)
+            result = repair.repair(self.lib)
         self.assertEqual(result[0]['status'], 'blocked')
         self.assertFalse((self.staged / 'plant-fern.json').exists())
         self.assertEqual(manifest.read_text(), before)

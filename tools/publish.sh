@@ -42,8 +42,20 @@ WRANGLER="${WRANGLER:-npx --yes wrangler@3}"
 API="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID"
 auth=(-H "Authorization: Bearer $CLOUDFLARE_API_TOKEN")
 PULSE_HOSTNAME="pulse.$EDGE_ZONE"
-CATALOG_HOSTNAME="$(sed -n 's/^# hostname: //p' "$ROOT/explorer/wrangler.toml" 2>/dev/null | sed "s/<zone>/$EDGE_ZONE/")"
-[ -n "$CATALOG_HOSTNAME" ] || { say "REFUSED: no '# hostname:' in explorer/wrangler.toml (tools/bake.sh checks out the explorer pin)"; exit 1; }
+# THE EXPLORER AT ITS PIN, for its Pages config alone: the bake no longer reads
+# it (row 712), so publishing checks it out itself, clean and at explorer.lock.
+EXP="$ROOT/explorer"
+EXP_REPO="$(sed -n 's/^repo=//p' "$ROOT/explorer.lock")"; EXP_PIN="$(sed -n 's/^commit=//p' "$ROOT/explorer.lock")"
+if [ ! -d "$EXP/.git" ]; then
+  GIT_TERMINAL_PROMPT=0 git clone -q "https://github.com/$EXP_REPO" "$EXP" || { say "REFUSED: cannot clone $EXP_REPO for its Pages config"; exit 1; }
+fi
+if [ "$(git -C "$EXP" rev-parse HEAD)" != "$EXP_PIN" ]; then
+  { git -C "$EXP" fetch -q origin "$EXP_PIN" 2>/dev/null || git -C "$EXP" fetch -q origin; } && git -C "$EXP" checkout -q --detach "$EXP_PIN" \
+    || { say "REFUSED: the explorer pin $EXP_PIN is not on its remote"; exit 1; }
+fi
+[ -z "$(git -C "$EXP" status --porcelain)" ] || { say "REFUSED: explorer/ has local changes; the pulse never edits it"; exit 1; }
+CATALOG_HOSTNAME="$(sed -n 's/^# hostname: //p' "$EXP/wrangler.toml" 2>/dev/null | sed "s/<zone>/$EDGE_ZONE/")"
+[ -n "$CATALOG_HOSTNAME" ] || { say "REFUSED: no '# hostname:' in explorer/wrangler.toml at the explorer pin"; exit 1; }
 
 # 1. THE PULSE IS PRIVATE OR IT IS NOT PUBLISHED.
 apps="$(curl -fsS "${auth[@]}" "$API/access/apps?per_page=100")" || { say "REFUSED: cannot read the Access applications"; exit 1; }

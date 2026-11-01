@@ -71,7 +71,7 @@ def accept_row(entry, row, expected, artifacts, staged):
     entry['rungs'].append(row)
 
 
-def repair(library, explorer, godot='godot', timeout=300, artifacts=None):
+def repair(library, godot='godot', timeout=300, artifacts=None):
     """artifacts: the bake's folder (the cook's out/cooked/catalog/); the atlases
     are read beside its rungs, and the library's build/ keeps the repair's logs."""
     artifacts = artifacts or library / 'build/artifacts'
@@ -90,7 +90,7 @@ def repair(library, explorer, godot='godot', timeout=300, artifacts=None):
             row_path.unlink(missing_ok=True)  # Never accept a stale successful row.
             with local_file(logs, stem + '.log').open('w') as log:
                 subprocess.run([godot, '--headless', '--path', str(library), '--script',
-                                str(ROOT / 'tools/catalog_impostor.gd'), '--', stem, str(explorer)],
+                                str(ROOT / 'tools/catalog_impostor.gd'), '--', stem],
                                stdout=log, stderr=subprocess.STDOUT, check=True, timeout=timeout)
             row = json.loads(row_path.read_text())
             accept_row(entry, row, expected, artifacts, logs)
@@ -117,10 +117,8 @@ def verify_pin(folder, lock):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--library', type=Path, default=ROOT / 'library')
-    parser.add_argument('--explorer', type=Path, default=ROOT / 'explorer')
     parser.add_argument('--bake', type=Path, default=ROOT / 'out/cooked/catalog')
     parser.add_argument('--timeout', type=int, default=300)
     args = parser.parse_args()
     verify_pin(args.library, ROOT / 'library.lock')
-    verify_pin(args.explorer, ROOT / 'explorer.lock')
-    repair(args.library.resolve(), args.explorer.resolve(), timeout=args.timeout, artifacts=args.bake.resolve())
+    repair(args.library.resolve(), timeout=args.timeout, artifacts=args.bake.resolve())

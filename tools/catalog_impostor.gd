@@ -3,12 +3,12 @@
 extends SceneTree
 func _init():
  var args=OS.get_cmdline_user_args()
- if args.size()!=2:
-  printerr('usage: -- <asset stem> <pinned explorer directory>')
+ if args.size()!=1:
+  printerr('usage: -- <asset stem>')
   quit(2);return
  var wanted=args[0]
  var reg=AgLibrary.registry()
- var planner=load(args[1]+'/tools/bake-library.gd')
+ var planner=load('res://tools/bake-library.gd') # the library's own plan (its row 324; row 712)
  for spec in planner.plan(reg,planner.upstream_targets()):
   var style=AgStyle.named(spec['style']) if spec.get('style','') != '' else null
   if spec.get('style','')!='' and style==null:

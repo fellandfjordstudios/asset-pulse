@@ -1,9 +1,9 @@
-# THE BAKE TOOL THIS PULSE RUNS, pinned by commit.
+# THE EXPLORER'S PAGES CONFIG THIS PULSE PUBLISHES TO, pinned by commit.
 #
-# The catalog's bakes come from asset-explorer's `tools/bake-library.gd`, run
-# the way its `tools/refresh.sh` ran it: the library's impostor atlases first,
-# then the registry bake with the baked channel (`--transfer`), into the
-# library's gitignored `build/artifacts/`. tools/bake.sh checks this commit out
-# under explorer/ (gitignored) and calls it; nothing in it is edited here.
+# tools/publish.sh checks this commit out under explorer/ (gitignored) for one
+# thing: the catalog's hostname in its wrangler.toml. The bake no longer reads
+# the explorer (row 712): the catalog's set is the library's own
+# tools/bake-library.gd plan (moved there by the library's row 324), cooked by
+# the library's tools/cook.sh. Nothing in the explorer is edited here.
 repo=codestiff/asset-explorer
 commit=05b6cad913e18435e37808ef5d7c629e23ea1924
