@@ -190,10 +190,16 @@ if [ "${PULSE_RENDER:-1}" = "1" ] && [ "${1:-}" != "--no-render" ] && [ "${2:-}"
   python3 tools/site.py "$OUT" || fail_row "site"
   # THE CATALOG, the pulse's public half: every rung cooked by the library's
   # tools/cook.sh (tools/bake.sh), then the cards, the 3D view and the free downloads. A
-  # failed bake leaves the private page and the row standing and says so.
+  # failed bake leaves the private page and the row standing and says so. A
+  # cook that assembled nothing (bake.sh's exit 2, row 712) still makes a
+  # catalog: every subject from its last good build (the bake plan's step E).
   if [ "${PULSE_BAKE:-1}" = "1" ]; then
-    if BAKE_LOG="$OUT/bake.log" tools/bake.sh; then
+    BAKE_LOG="$OUT/bake.log" tools/bake.sh; b=$?
+    if [ "$b" = 0 ]; then
       python3 tools/catalog.py "$OUT" || echo "run: the catalog failed; the pulse's page stands"
+    elif [ "$b" = 2 ]; then
+      CATALOG_NO_BAKE="the cook failed; see $OUT/bake.log" python3 tools/catalog.py "$OUT" \
+        || echo "run: the catalog failed; the pulse's page stands"
     else
       echo "run: the bake failed (see $OUT/bake.log); no catalog this run"
     fi

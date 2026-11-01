@@ -62,7 +62,11 @@ PY
 fi
 [ -f "$OUT/site/index.html" ] && echo "page: $OUT/site/index.html"
 [ -f "$OUT/catalog/index.html" ] && echo "catalog: $OUT/catalog/index.html" || echo "catalog: none this run (see bake: lines in $LOG)"
-grep -E "^(bake|catalog): " "$LOG" | grep -E "NO IMPOSTOR|GAP|failed|subject\(s\)" | tail -5 | sed 's/^/  /'
+grep -E "^(bake|catalog): " "$LOG" | grep -E "NO IMPOSTOR|GAP|failed|subject\(s\)" | grep -vE "^bake: held" | tail -5 | sed 's/^/  /'
+# THE FAILURES BY NAME (the bake plan's step E, row 712): every subject the cook
+# held back (failed or deferred), a cook that assembled nothing, and every
+# subject this catalog serves from its last good build instead.
+grep -E "^bake: (held|NO BAKE)|^catalog: (LAST GOOD|NO BAKE)" "$LOG" | sed 's/^/  /'
 echo "publish: $PUB"
 echo "pushed: $(git rev-list --count origin/main..HEAD 2>/dev/null) commit(s) not on origin/main (0 is pushed); full log $LOG"
 echo "read (tools/scorecard.py --read):"; sed 's/^/  /' "$READ"

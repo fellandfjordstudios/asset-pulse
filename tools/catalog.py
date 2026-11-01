@@ -366,9 +366,18 @@ def main(argv):
     # THE COOK'S FOLDER (tools/bake.sh: the library's tools/cook.sh, the bake
     # plan's step F), in the bake's own manifest form.
     bake_dir = Path(os.environ.get("CATALOG_BAKE_DIR", ROOT / "out" / "cooked" / "catalog"))
-    if not (bake_dir / "manifest.json").exists():
+    # A COOK THAT FAILED WHOLE (tools/bake.sh's exit 2, row 712; the bake plan's
+    # step E): no bake this run, said why, and every subject is published from
+    # its last good build -- never no catalog. Without the reason a missing
+    # bake is still an error: nothing ran.
+    no_bake = os.environ.get("CATALOG_NO_BAKE", "")
+    if (bake_dir / "manifest.json").exists():
+        bake = json.loads((bake_dir / "manifest.json").read_text())
+    elif no_bake:
+        print("catalog: NO BAKE this run (%s); every subject from its last good build" % no_bake)
+        bake = {"entries": []}
+    else:
         sys.exit("catalog: no bake at %s -- run tools/bake.sh" % bake_dir)
-    bake = json.loads((bake_dir / "manifest.json").read_text())
     plates = json.loads((LIB / "plates" / "manifest.json").read_text()).get("plates", {})
     rev = subprocess.run(["git", "-C", str(LIB), "rev-parse", "--short", "HEAD"],
                          capture_output=True, text=True).stdout.strip() or "?"

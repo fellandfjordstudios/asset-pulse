@@ -91,6 +91,14 @@ goal table and take seconds each. Each subject's renders are capped by the run
    Objects are named by content hash for the
    `catalog` bucket. Verified locally 2026-10-03 at library 552e8ca.
 
+   A subject this run's cook did not deliver (failed by name, deferred past
+   the budget, left out of the manifest) is published from its last good
+   build, marked with the library commit it was baked at (the bake plan's step
+   E). A cook that assembled nothing at all is the same case for every subject
+   (`tools/bake.sh` exit 2, then `CATALOG_NO_BAKE`; row 712): the catalog is
+   still built, and the guard decides as on any run. The daily report names
+   each held subject (`bake: held`) and each last good build served
+   (`catalog: LAST GOOD`).
 4. publishing: `tools/publish.sh` -- objects to R2, the pulse to Pages behind
    Access on `pulse.<zone>`, the catalog to the `asset-explorer` Pages project
    on its existing hostname (`asset-explorer.pages.dev`, from the explorer's

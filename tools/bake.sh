@@ -33,6 +33,13 @@
 # our own: the cook's deadline, its order and its limit per item are the
 # library's (plans/107 steps 7 and 9).
 #
+# A COOK THAT FAILS WHOLE IS NOT "NO CATALOG" (row 712; the bake plan's step
+# E). Exit 2 says the cook ran and assembled nothing: run.sh then builds the
+# catalog with CATALOG_NO_BAKE, every subject from its last good build, and the
+# guard decides as on any run. One item that kills its worker costs only that
+# item once the pinned library carries row 712's cook (it is failed by name in
+# the index, and `bake: held` names it here); exit 2 is for what is left.
+#
 # The atlases come first, as refresh.sh ordered it: the library's
 # `tools/impostor.sh` renders them into its gitignored build/artifacts/ (and its
 # store), and they are copied beside the cooked rungs for the catalog (the cook
@@ -100,21 +107,29 @@ cook() { # [--transfer]
   fi
   return "$code"
 }
+no_bake() { # <why>: the cook assembled nothing; run.sh serves every last good build
+  echo "bake: NO BAKE this run: $1 (see $LOG); the catalog serves each subject's last good build"
+  "$ROOT/tools/sync-library.sh" --verify >/dev/null || die "the bake changed the library's source tree"
+  exit 2
+}
 if [ "${PULSE_TRANSFER:-0}" = "1" ]; then
   # The baked-channel bake refuses a whole cook when one rung's channel is flat
   # (core/baker.gd flat_channel_problem); the default bake, the Forward+/SDFGI
   # product, is still a correct download, so the catalog falls back to it and says so.
   if ! cook --transfer; then
     echo "bake: the baked-channel cook FAILED; falling back to the library's default bake (no baked channel)"
-    cook || die "the cook failed (see $LOG)"
+    cook || no_bake "the cook failed"
   fi
 else
-  cook || die "the cook failed (see $LOG)"
+  cook || no_bake "the cook failed"
 fi
 OUTDIR="$COOKED/catalog"
-[ -f "$OUTDIR/manifest.json" ] && [ -f "$OUTDIR/index.json" ] || die "the cook wrote no manifest"
+[ -f "$OUTDIR/manifest.json" ] && [ -f "$OUTDIR/index.json" ] || no_bake "the cook wrote no manifest"
 python3 "$ROOT/tools/cook_hits.py" report "$ROOT/out/cook-store-before.txt" "$OUTDIR/index.json" | tee "$LOG.hits" | tail -1
-grep -E '^bake: (made|held)' "$LOG.hits" | head -20
+grep -E '^bake: made' "$LOG.hits" | head -20
+# EVERY SUBJECT THE COOK HELD BACK, by name (the bake plan's step E): failed
+# (one that killed its worker twice, or ran past its limit twice) or deferred.
+grep -E '^bake: held' "$LOG.hits"
 # THE ATLASES BESIDE THE RUNGS: the cook bakes into a folder of its own, where the
 # library's impostor atlases are not (filed in the library's feedback/).
 for a in "$LIB"/build/artifacts/*-impostor.png; do [ -f "$a" ] && cp "$a" "$OUTDIR/"; done

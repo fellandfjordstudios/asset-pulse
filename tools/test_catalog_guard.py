@@ -60,6 +60,10 @@ def last_good_cases(t):
         f = Fixture(t / "fixture")
         card = f.lib / "generators/built/vase.card.json"   # found by its card, as the library's are
         card.write_text(json.dumps(dict(json.loads(card.read_text()), id="built/vase")))
+        rowan = f.lib / "generators/plant/rowan.card.json"   # and its tagged variant, as the library's cards list them
+        rowan.write_text(json.dumps(dict(json.loads(rowan.read_text()), id="plant/rowan", package_targets=[{"tag": "autumn"}])))
+        basalt = f.lib / "generators/rock/basalt.card.json"
+        basalt.write_text(json.dumps(dict(json.loads(basalt.read_text()), id="rock/basalt")))
         live = shutil.copytree(f.build(), t / "fixture-live")
         # built-vase is not finished this run: deferred past the budget, its entry gone from the bake
         manifest = f.bake / "manifest.json"
@@ -69,6 +73,15 @@ def last_good_cases(t):
         manifest.write_text(json.dumps(bake))
         kept = shutil.copytree(f.build(), t / "fixture-kept")
         none = shutil.copytree(f.build({"CATALOG_LAST_GOOD": str(t / "no-last-good")}), t / "fixture-none")
+        # the cook failed whole (row 712: one item killed its worker and the cook
+        # assembled nothing): no bake folder at all, tools/bake.sh's exit 2
+        nobake = {"CATALOG_BAKE_DIR": str(t / "no-bake-this-run"), "CATALOG_NO_BAKE": "the cook failed (exit 1)"}
+        failed = shutil.copytree(f.build(nobake), t / "fixture-cook-failed")
+        try:   # ABLATION: the same run without the reason is the old "no catalog"
+            f.build({"CATALOG_BAKE_DIR": str(t / "no-bake-this-run")})
+            refused = False
+        except SystemExit:
+            refused = True
         # withdrawn: its card gone too, so its last good build is no longer served
         for p in (f.lib / "generators" / "built").glob("vase.*.json"):
             p.unlink()
@@ -76,6 +89,8 @@ def last_good_cases(t):
     marked = "its last good build" in (kept / "subject/built/vase/index.html").read_text()
     return [
         ("one subject not finished: its last good build keeps every live download, and the guard deploys", kept, live, 0 if marked else 9, "deploy"),
+        ("the cook failed whole: every subject from its last good build keeps every live download, and the guard deploys", failed, live, 0, "deploy"),
+        ("ABLATION -- the same failed cook with no reason given writes no catalog (the runs before row 712)", failed if refused else live, live, 0 if refused else 9, ""),
         ("ABLATION -- with no last good build the same run keeps the live catalog and names built-vase", none, live, 1, "built-vase"),
         ("a download truly gone (its card withdrawn) keeps the live catalog and names built-vase", gone, live, 1, "built-vase"),
     ]
