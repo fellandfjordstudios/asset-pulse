@@ -173,6 +173,7 @@
 			"seed": 314
 		}
 	],
+	"effort": "full",
 	"id": "built/boat-sail",
 	"keyed_on": {
 		"moves": [
@@ -214,11 +215,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 14,
 				"trace": "built__boat-sail#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 40,
 				"trace": "built__boat-sail#2.trace.jsonl"
 			}
 		}
@@ -228,12 +229,41 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "345d40e5e1038eec5231693bd7d4d7c67d433ca787a57c994c62864682a96fd3",
-		"2": "978970f31ffd4f275174f287b4343875ba9678f8eb7bf6793e6e77b94460fbd2"
+		"1": "66d43e412f1e62f04337dc1d12f5517dfddf955eb123d02b42710811d64cb27b",
+		"2": "2c1dba9ac725f4de25e0b72272e20a98507f9b2ea155ba67d48bd730c855b4d0"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 3598,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00523,
+					"px_over": 2,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 2786,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.009160000000000001,
+					"px_over": 1,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 3946,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
 			"checked_at": 29,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -241,28 +271,60 @@
 			"measured": {
 				"cost": 3946,
 				"coverage_rel": 0.0,
-				"floor": 0.0058000000000000005,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
+				"IMPOSTOR: skipped by the prior -- judged 25 times for solid subjects at band 1 across 25 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"set\":0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00529 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 20 pixel(s) differ at the drawn size at {} seed 314 (worst 0.75)",
 				"REDUCE from rung 0 at {} seed 314: element 2's part 'bolt_rope' is 14 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"foot_ratio\":1.4} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00744 m",
-				"IMPOSTOR at 6x6 frames from rung 0: 73585 pixel(s) differ at {} seed 314 (worst 1.00)",
-				"IMPOSTOR at 8x8 frames from rung 0: 62260 pixel(s) differ at {} seed 314 (worst 0.82)",
-				"IMPOSTOR at 12x12 frames from rung 0: 27323 pixel(s) differ at {} seed 314 (worst 0.70)",
-				"IMPOSTOR at 16x16 frames from rung 0: 23388 pixel(s) differ at {} seed 314 (worst 0.86)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"set\":0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00529 m; the error ladder: none holds at 0.0019",
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: built/boat-sail does not declare `reads_density`"
 			],
+			"peak_mb": 908.0,
 			"route": "rung0",
+			"search_s": 211.60000000000002,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"tolerance": 0.001851851851851852
 		},
 		"2": {
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 228,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 2464,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.08939000000000001,
+					"px_over": null,
+					"route": "kit",
+					"value": {
+						"fitting": 0.03125
+					}
+				},
+				{
+					"cost": 2510,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.09961,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.636087
+				}
+			],
 			"checked_at": 29,
 			"drawn": {
 				"excess": 0.5,
@@ -275,6 +337,22 @@
 			"from_rung": 0,
 			"keep": {
 				"fitting": 0.03125
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at 2 of the band's pixels, keeping fitting 0.031)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
 			},
 			"material_transfer": {
 				"checked_at": 29,
@@ -986,20 +1064,44 @@
 				"part_shift": {},
 				"picture": 0.08939000000000001
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
-				"REDUCE, THIN, the impostor: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)",
-				"KIT (its own build at the rung's pixel, keeping fitting 0.031) held at 2622, dearer than the 2464 taken"
+				"IMPOSTOR at 6x6 frames (atlas 1.8 MB) from rung 0 at 8x its pixel: 3925 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 8x8 frames (atlas 3.2 MB) from rung 0 at 8x its pixel: 3154 pixel(s) differ at {} seed 314 (worst 0.76)",
+				"IMPOSTOR at 12x12 frames (atlas 7.2 MB) from rung 0 at 8x its pixel: 1021 pixel(s) differ at {} seed 314 (worst 0.56)",
+				"IMPOSTOR at 16x16 frames (atlas 12.8 MB) from rung 0 at 8x its pixel: 547 pixel(s) differ at {} seed 314 (worst 0.59)",
+				"IMPOSTOR at 6x6 frames (atlas 1.8 MB) from rung 0 at 4x its pixel: 3886 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 8x8 frames (atlas 3.2 MB) from rung 0 at 4x its pixel: 3113 pixel(s) differ at {} seed 314 (worst 0.76)",
+				"IMPOSTOR at 12x12 frames (atlas 7.2 MB) from rung 0 at 4x its pixel: 961 pixel(s) differ at {} seed 314 (worst 0.56)",
+				"IMPOSTOR at 16x16 frames (atlas 12.8 MB) from rung 0 at 4x its pixel: 557 pixel(s) differ at {} seed 314 (worst 0.59)",
+				"IMPOSTOR at 6x6 frames (atlas 1.8 MB) from rung 0: 3884 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 8x8 frames (atlas 3.2 MB) from rung 0: 3127 pixel(s) differ at {} seed 314 (worst 0.74)",
+				"IMPOSTOR at 12x12 frames (atlas 7.2 MB) from rung 0: 954 pixel(s) differ at {} seed 314 (worst 0.55)",
+				"IMPOSTOR at 16x16 frames (atlas 12.8 MB) from rung 0: 556 pixel(s) differ at {} seed 314 (worst 0.61)",
+				"IMPOSTOR at 24x24 frames (atlas 28.9 MB) from rung 0 at 8x its pixel: 305 pixel(s) differ at {} seed 314 (worst 0.64)",
+				"IMPOSTOR at 24x24 frames (atlas 28.9 MB) from rung 0 at 4x its pixel: 313 pixel(s) differ at {} seed 314 (worst 0.64)",
+				"IMPOSTOR at 24x24 frames (atlas 28.9 MB) from rung 0: 319 pixel(s) differ at {} seed 314 (worst 0.61)",
+				"IMPOSTOR at 32x32 frames (atlas 51.4 MB) from rung 0 at 8x its pixel: 235 pixel(s) differ at {} seed 314 (worst 0.60)",
+				"IMPOSTOR at 32x32 frames (atlas 51.4 MB) from rung 0 at 4x its pixel: 229 pixel(s) differ at {} seed 314 (worst 0.60)",
+				"IMPOSTOR at 32x32 frames (atlas 51.4 MB) from rung 0: 228 pixel(s) differ at {} seed 314 (worst 0.57)",
+				"REDUCE from rung 0 at {} seed 314: element 2's part 'bolt_rope' is 14 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping fitting 0.031)) is 1 route(s), and the one looked at did not improve on it",
+				"KIT (its own build at the rung's pixel, keeping fitting 0.031) held at 2622, dearer than the 2464 taken",
+				"REDUCE (every piece) to its error cap 0.125x the band's (0.636 kept) held at 2510, dearer than the 2464 taken"
 			],
+			"peak_mb": 456.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
+			"search_s": 924.4000000000001,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"children": "f52d0d729d88b2bc40d716de4557c2efb8d3065cdc0d1e1319a614421e1a27cd",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
-		"generator": "a0046e8eb1e6fcd15df9d8dd5e6b8e0e34c02bb5be2594dd4c7481d5685e9be8"
+		"children": "3473f299842500bfff63a1fc71f70190845689f001f82a755abe839c0b822178",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"generator": "3ddecd89a23d19c29945c61186dd5da4ca6920c2f81047cf1b68fcda0694c07b"
 	}
 }

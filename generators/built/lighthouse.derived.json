@@ -39,6 +39,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/lighthouse",
 	"keyed_on": {
 		"moves": [
@@ -58,11 +59,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 12,
 				"trace": "built__lighthouse#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 42,
 				"trace": "built__lighthouse#2.trace.jsonl"
 			},
 			"3": {
@@ -76,17 +77,30 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "232deee577fae76fbb5728af8ef82a8da314dbbb978c1dac81a56d2c26612515",
-		"2": "d921c9935feb56d50c83b90918819c5125e5fec0e75588ac337e5c474fd9ec4a",
+		"1": "693e68d429cf0b0b153301f52d1358e975336a3b3ee1809eb764f65925cd267d",
+		"2": "34ad9317c13669923aa769c0526eccdf812c53df7b1dd161f958a02a74482f27",
 		"3": "ac4eb15805aa6edd0cabd8401271964743f758ffa95326b84f2eff35c44dd5d4"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 8741,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00417,
+					"px_over": null,
+					"route": "kit",
+					"value": {
+						"rivet": 0.24009999999999992
+					}
+				}
+			],
 			"checked_at": 7,
 			"drawn": {
 				"excess": 0.5,
-				"gap": 0.474,
+				"gap": 0.47400000000000003,
 				"judge": "drawn",
 				"pixel_m": 0.024413999999999998
 			},
@@ -95,6 +109,22 @@
 			"from_rung": 0,
 			"keep": {
 				"rivet": 0.24009999999999992
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at the rung's pixel, keeping rivet 0.240)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"merged",
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
 			},
 			"measured": {
 				"cost": 8741,
@@ -105,14 +135,44 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"REDUCE, THIN, the impostor: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)"
+				"IMPOSTOR: skipped by the prior -- judged 25 times for solid subjects at band 1 across 25 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"CHILD: span 'built/lighthouse-lantern r0 6d5e6eb2' is 502 triangles and its child rebuilt is 1040: not a placed copy",
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"REDUCE, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.240)) is 1 route(s), and the one looked at did not improve on it"
 			],
+			"peak_mb": 650.0,
 			"route": "kit",
+			"search_s": 316.90000000000003,
+			"searched": "search",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		},
 		"2": {
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 2,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 1423,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.01597,
+					"px_over": null,
+					"route": "kit",
+					"value": {
+						"block": 0.7,
+						"post": 0.16806999999999994,
+						"rivet": 0.03125
+					}
+				}
+			],
 			"checked_at": 7,
 			"drawn": {
 				"excess": 0.5,
@@ -127,6 +187,22 @@
 				"block": 0.7,
 				"post": 0.16806999999999994,
 				"rivet": 0.03125
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at 2 of the band's pixels, keeping post 0.168, block 0.700, rivet 0.031)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
 			},
 			"material_transfer": {
 				"checked_at": 7,
@@ -310,13 +386,37 @@
 				"part_shift": {},
 				"picture": 0.01597
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
-				"REDUCE, THIN, the impostor: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)",
-				"KIT (its own build at the rung's pixel, keeping block 0.700, post 0.168, rivet 0.031) held at 1553, dearer than the 1423 taken"
+				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0 at 8x its pixel: 672 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0 at 8x its pixel: 655 pixel(s) differ at {} seed 314 (worst 0.74)",
+				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0 at 8x its pixel: 296 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 16x16 frames (atlas 9.4 MB) from rung 0 at 8x its pixel: 85 pixel(s) differ at {} seed 314 (worst 0.54)",
+				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0 at 4x its pixel: 668 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0 at 4x its pixel: 637 pixel(s) differ at {} seed 314 (worst 0.74)",
+				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0 at 4x its pixel: 292 pixel(s) differ at {} seed 314 (worst 0.73)",
+				"IMPOSTOR at 16x16 frames (atlas 9.4 MB) from rung 0 at 4x its pixel: 81 pixel(s) differ at {} seed 314 (worst 0.65)",
+				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0: 674 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0: 642 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0: 291 pixel(s) differ at {} seed 314 (worst 0.69)",
+				"IMPOSTOR at 16x16 frames (atlas 9.4 MB) from rung 0: 77 pixel(s) differ at {} seed 314 (worst 0.60)",
+				"IMPOSTOR at 24x24 frames (atlas 21.2 MB) from rung 0 at 8x its pixel: 6 pixel(s) differ at {} seed 314 (worst 0.59)",
+				"IMPOSTOR at 24x24 frames (atlas 21.2 MB) from rung 0 at 4x its pixel: 4 pixel(s) differ at {} seed 314 (worst 0.59)",
+				"IMPOSTOR at 24x24 frames (atlas 21.2 MB) from rung 0: 4 pixel(s) differ at {} seed 314 (worst 0.59)",
+				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0 at 8x its pixel: 4 pixel(s) differ at {} seed 314 (worst 0.52)",
+				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0 at 4x its pixel: 4 pixel(s) differ at {} seed 314 (worst 0.52)",
+				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0: 2 pixel(s) differ at {} seed 314 (worst 0.50)",
+				"CHILD: span 'built/lighthouse-lantern r0 6d5e6eb2' is 502 triangles and its child rebuilt is 1040: not a placed copy",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"REDUCE, MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping post 0.168, block 0.700, rivet 0.031)) is 1 route(s), and the one looked at did not improve on it",
+				"KIT (its own build at the rung's pixel, keeping post 0.168, block 0.700, rivet 0.031) held at 1553, dearer than the 1423 taken",
+				"KIT (its own build at the rung's pixel, keeping rivet 0.240), carried from rung 1 held at 8741, dearer than the 1423 taken"
 			],
+			"peak_mb": 319.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
+			"search_s": 311.40000000000003,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -343,6 +443,17 @@
 				}
 			},
 			"budget": 2444,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "impostor",
+					"value": 6
+				}
+			],
 			"checked_at": 7,
 			"draw_calls": 1,
 			"drawn": {
@@ -364,7 +475,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
+			"peak_mb": 320.0,
 			"route": "impostor",
+			"search_s": 53.0,
+			"searched": "search",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -372,8 +486,8 @@
 		}
 	},
 	"source": {
-		"children": "9c62815c5bb3a323faf98c5390185fae4f6de3331db8203db28cd60d6bbae9d6",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
-		"generator": "a63ef6246a3eb63207b9b8b06b5b5af872966cd31a0cbdaa739c2c0eca38109f"
+		"children": "96bf3587982f7472cd0930986018e12b991b975261d059a912f9a8b8dadaa6a0",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"generator": "a996d715c36af104d83b3a70c6de925da4c4211babaef41bf18a2e7e29ec5209"
 	}
 }

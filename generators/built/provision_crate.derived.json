@@ -57,6 +57,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/provision-crate",
 	"keyed_on": {
 		"moves": [
@@ -174,12 +175,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1681, cover 1.00: 64 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'end_grain' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 4 more groups)"
 			],
-			"peak_mb": 483.0,
+			"peak_mb": 484.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 11.0
 			},
-			"search_s": 173.9,
+			"search_s": 117.30000000000001,
 			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11
@@ -499,14 +500,14 @@
 			"peak_mb": 270.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 166.60000000000002,
+			"search_s": 126.0,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "101b09c472db928374ce7015dab9e3366ada9ab804bde3acfb7d8935d7f9b2cb"
 	}
 }

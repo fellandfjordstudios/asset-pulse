@@ -21,6 +21,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "food/klippfisk",
 	"keyed_on": {
 		"moves": [
@@ -37,7 +38,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 30,
+				"candidates": 18,
 				"trace": "food__klippfisk#1.trace.jsonl"
 			},
 			"2": {
@@ -61,15 +62,6 @@
 			"cancel_across": true,
 			"cancel_opposed": true,
 			"candidates": [
-				{
-					"cost": 2,
-					"holds": false,
-					"judge": "impostor",
-					"picture": -1.0,
-					"px_over": 913,
-					"route": "impostor",
-					"value": 32
-				},
 				{
 					"cost": 21532,
 					"holds": false,
@@ -116,28 +108,18 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 12080 pixel(s) differ at {} seed 314 (worst 0.71)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 10831 pixel(s) differ at {} seed 314 (worst 0.67)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 9116 pixel(s) differ at {} seed 314 (worst 0.78)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 5422 pixel(s) differ at {} seed 314 (worst 0.78)",
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 12038 pixel(s) differ at {} seed 314 (worst 0.76)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 10617 pixel(s) differ at {} seed 314 (worst 0.66)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 9125 pixel(s) differ at {} seed 314 (worst 0.78)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 5272 pixel(s) differ at {} seed 314 (worst 0.78)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 2013 pixel(s) differ at {} seed 314 (worst 0.82)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 1909 pixel(s) differ at {} seed 314 (worst 0.82)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 1017 pixel(s) differ at {} seed 314 (worst 0.92)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 913 pixel(s) differ at {} seed 314 (worst 0.92)",
+				"IMPOSTOR: skipped by the prior -- judged 30 times for solid subjects at band 1 across 30 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0026 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 4 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.70), one pixel 0.00130 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1176, cover 2.92: 86353 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
-				"REDUCE from rung 0 at {} seed 314: element 0's part 'flesh' is 46 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)"
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'flesh' is 46 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
 			"peak_mb": 341.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 173
 			},
-			"search_s": 711.7,
+			"search_s": 332.3,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -197,9 +179,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 272.0,
+			"peak_mb": 273.0,
 			"route": "impostor",
-			"search_s": 196.0,
+			"search_s": 133.3,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -208,7 +190,7 @@
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "83cae152123d5029a95eda0da19e938f779772dcf99409dbe216681e83957b86"
 	}
 }

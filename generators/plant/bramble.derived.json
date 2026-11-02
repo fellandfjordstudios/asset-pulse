@@ -1,0 +1,209 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"canes": 2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"canes": 14
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cane_length_m": 0.3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cane_length_m": 2.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cane_diameter_m": 0.003
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"cane_diameter_m": 0.012
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"emergence_deg": 25.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"emergence_deg": 85.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tip_deg": -80.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"tip_deg": 10.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"leaf_length_m": 0.06
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"leaf_length_m": 0.22
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"internode_m": 0.04
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"internode_m": 0.16
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"leaflet_pairs": 2
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		}
+	],
+	"effort": "full",
+	"id": "plant/bramble",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 17,
+		"sampled": 17,
+		"sets": 17
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 14,
+				"trace": "plant__bramble#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "c286cd9083878e10540320187ed7daa9124949e2926cbaeca1f5b5ee79fbdb45"
+	},
+	"rungs": {
+		"1": {
+			"budget": 48007,
+			"candidates": [
+				{
+					"cost": 3758,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00941,
+					"px_over": 1,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 17768,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.010610000000000001,
+					"px_over": 15,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 19812,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
+			"checked_at": 17,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 19812,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {},
+				"picture": 0.0
+			},
+			"not_taken": [
+				"IMPOSTOR: skipped by the prior -- judged 28 times for solid subjects at band 1 across 28 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00244 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.0824, cover 3.48: 117438 pixel(s) differ at the drawn size at {} seed 314 (worst 0.56)",
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'prickle' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 15 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00244 m; the error ladder: none holds at 0.0019",
+				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"THIN: plant/bramble does not declare `reads_density`"
+			],
+			"peak_mb": 408.0,
+			"route": "rung0",
+			"search_s": 526.2,
+			"searched": "search",
+			"surfaces": 3,
+			"surfaces_ceiling": 3,
+			"tolerance": 0.0018518518518518517
+		}
+	},
+	"source": {
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"generator": "30a2ab8de77e33246054d6a717acef46a62fe71b700f021c32cd9309305b80b5"
+	}
+}

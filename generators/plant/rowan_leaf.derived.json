@@ -45,6 +45,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "plant/rowan-leaf",
 	"keyed_on": {
 		"moves": [
@@ -109,9 +110,12 @@
 					"kit",
 					"child",
 					"reduce",
+					"merged",
 					"thin",
-					"impostor",
-					"merged"
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -124,18 +128,19 @@
 			"measured_of": 1,
 			"not_taken": [
 				"REDUCE from rung 0: nothing to try; the error ladder: nothing to try",
-				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 252.0,
+			"peak_mb": 253.0,
 			"route": "kit",
-			"search_s": 29.6,
+			"search_s": 20.400000000000002,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "dfe9cf7a2c2a59878a1f481b643febcdb8a5c70a6fa5fbc34dd53800bc498597"
 	}
 }

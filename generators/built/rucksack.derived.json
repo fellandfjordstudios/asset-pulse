@@ -41,6 +41,7 @@
 			"seed": 314
 		}
 	],
+	"effort": "full",
 	"id": "built/rucksack",
 	"keyed_on": {
 		"moves": [
@@ -60,11 +61,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 1,
 				"trace": "built__rucksack#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 30,
+				"candidates": 1,
 				"trace": "built__rucksack#2.trace.jsonl"
 			}
 		}
@@ -84,11 +85,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1628,
+					"cost": 1628.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004390000000000001,
-					"px_over": 7,
+					"picture": 0.00439,
+					"px_over": 7.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -102,7 +103,7 @@
 					"value": 0.8586239999999999
 				}
 			],
-			"cap": 0.0014284818885659633,
+			"cap": 0.00142848188856596,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -119,7 +120,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.859 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -146,13 +147,13 @@
 				"KIT: none holds at 0.0029 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.91), one pixel 0.00130 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 206 pixel(s) differ at the drawn size at {} seed 314 (worst 0.88)"
 			],
-			"peak_mb": 366.0,
+			"peak_mb": 358.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 10
+				"reduce": 10.0
 			},
-			"search_s": 264.5,
-			"searched": "search",
+			"search_s": 65.8,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		},
@@ -162,11 +163,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1098,
+					"cost": 1098.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": -1.0,
-					"px_over": 8,
+					"px_over": 8.0,
 					"route": "kit",
 					"value": 0.3429999999999999
 				},
@@ -197,7 +198,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.852 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -401,19 +402,19 @@
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.00: 8 pixel(s) differ at the drawn size at {} seed 314 (worst 0.59)",
 				"REDUCE to its error cap 0.4762x the band's (0.859 kept), carried from rung 1 held at 1822, dearer than the 1808 taken"
 			],
-			"peak_mb": 356.0,
+			"peak_mb": 350.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 10
+				"reduce": 10.0
 			},
-			"search_s": 392.5,
-			"searched": "search",
+			"search_s": 111.4,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "a77b1a86dfe50036439a7a7bc8be6ef05d7695334c112c63e869b4ed4b5d3078"
 	}
 }

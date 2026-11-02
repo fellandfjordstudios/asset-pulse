@@ -35,6 +35,7 @@
 			"seed": 314
 		}
 	],
+	"effort": "full",
 	"id": "built/vase",
 	"keyed_on": {
 		"moves": [
@@ -121,7 +122,7 @@
 			],
 			"peak_mb": 251.0,
 			"route": "rung0",
-			"search_s": 13.4,
+			"search_s": 9.1,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -336,16 +337,16 @@
 				"KIT (its own build at 2 of the band's pixels) held at 760, cheaper than the 988 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"REDUCE to 0.168 held at 668, cheaper than the 988 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 250.0,
+			"peak_mb": 251.0,
 			"route": "kit",
-			"search_s": 31.8,
+			"search_s": 22.400000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "9d79841fc4bbc4355a30bac823e41e3c1eeaf0dfdfe4d9663d0b05c054d4df48"
 	}
 }

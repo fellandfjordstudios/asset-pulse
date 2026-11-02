@@ -63,6 +63,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/dried-meat",
 	"keyed_on": {
 		"moves": [
@@ -86,7 +87,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 1,
 				"trace": "built__dried-meat#1.trace.jsonl"
 			}
 		}
@@ -105,11 +106,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 292,
+					"cost": 292.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00602,
-					"px_over": 291,
+					"px_over": 291.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -141,7 +142,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.852 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -167,19 +168,19 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.09: 911 pixel(s) differ at the drawn size at {} seed 314 (worst 0.59)",
 				"REDUCE from rung 0 at {\"strip_count\":10} seed 314: element 0's part 'strip' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 468.0,
+			"peak_mb": 459.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 2
+				"reduce": 2.0
 			},
-			"search_s": 171.5,
-			"searched": "search",
+			"search_s": 37.4,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "d1c67f66993894c2111bba1ffc7cf7ada1ca8efa71c281f5647aee3681262cd3"
 	}
 }

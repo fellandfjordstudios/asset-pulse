@@ -189,6 +189,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "plant/dock-rosette",
 	"keyed_on": {
 		"moves": [
@@ -233,7 +234,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 9,
 				"trace": "plant__dock-rosette#1.trace.jsonl"
 			}
 		}
@@ -252,15 +253,6 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2.0,
-					"holds": false,
-					"judge": "impostor",
-					"picture": -1.0,
-					"px_over": 39247.0,
-					"route": "impostor",
-					"value": 32.0
-				},
-				{
 					"cost": 10588,
 					"holds": true,
 					"judge": "drawn",
@@ -268,22 +260,13 @@
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.662755
-				},
-				{
-					"cost": 4014.0,
-					"holds": false,
-					"judge": "drawn",
-					"picture": 0.29224,
-					"px_over": 22608.0,
-					"route": "thin",
-					"value": 0.7
 				}
 			],
-			"cap": 0.00046296296296296,
+			"cap": 0.000462962962962963,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 12020.0,
+				"cost": 12020,
 				"fraction": 0.7
 			},
 			"chains": {
@@ -302,14 +285,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.663 kept)",
-				"looked": 1.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
+					"merged",
 					"thin",
-					"impostor",
-					"merged"
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -325,30 +311,24 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0: 113678 pixel(s) differ at {} seed 314 (worst 0.82)",
-				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0: 112631 pixel(s) differ at {} seed 314 (worst 0.74)",
-				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0: 82835 pixel(s) differ at {} seed 314 (worst 0.84)",
-				"IMPOSTOR at 16x16 frames (atlas 9.4 MB) from rung 0: 68150 pixel(s) differ at {} seed 314 (worst 0.61)",
-				"IMPOSTOR at 24x24 frames (atlas 21.2 MB) from rung 0: 47002 pixel(s) differ at {} seed 314 (worst 0.74)",
-				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0: 39247 pixel(s) differ at {} seed 314 (worst 0.62)",
+				"IMPOSTOR: skipped by the prior -- judged 28 times for solid subjects at band 1 across 28 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE from rung 0 at {} seed 314: element 16's part 'stalk' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
-				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 22608 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00097 m; coverage changes -0.0758 against 0.0263 allowed (a one-pixel shrink all round); part 'midrib' changes its share of the picture by -0.0355 against 0.0263 allowed (its colour's share of the subject); part 'stalk' changes its share of the picture by +0.0464 against 0.0263 allowed (its colour's share of the subject)",
-				"MERGED: not searched -- the look past the first that held (REDUCE (every piece) to its error cap 0.25x the band's (0.663 kept)) is 1 route(s), and the one looked at did not improve on it"
+				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1392.0,
+			"peak_mb": 1454.0,
 			"route": "reduce",
 			"routes": {
-				"carry": 16.0,
-				"reduce": 22.0
+				"carry": 16,
+				"reduce": 22
 			},
-			"search_s": 1091.0,
-			"searched": "recheck",
+			"search_s": 1801.6000000000001,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
-		"generator": "69307698495c545c944d2cce981468a9816deef987c382e4718af41ea5c4b94c"
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"generator": "104b6371287c6fa1c6cae6701dc1e21a040ceeb5311f44fa6458bf4fb255128d"
 	}
 }

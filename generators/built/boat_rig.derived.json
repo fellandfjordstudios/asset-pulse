@@ -213,6 +213,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/boat-rig",
 	"keyed_on": {
 		"moves": [
@@ -261,11 +262,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 1,
 				"trace": "built__boat-rig#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 27,
+				"candidates": 1,
 				"trace": "built__boat-rig#2.trace.jsonl"
 			}
 		}
@@ -285,11 +286,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4704,
+					"cost": 4704.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.047950000000000007,
-					"px_over": 0,
+					"picture": 0.04795,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -303,7 +304,7 @@
 					"value": 0.8648309999999999
 				}
 			],
-			"cap": 0.00011574074074074073,
+			"cap": 0.00011574074074074,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -321,7 +322,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.865 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -350,13 +351,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.43: 135 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
 				"REDUCE from rung 0 at {} seed 314: element 10's part 'rope' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)"
 			],
-			"peak_mb": 1313.0,
+			"peak_mb": 1279.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 22
+				"reduce": 22.0
 			},
-			"search_s": 652.6,
-			"searched": "search",
+			"search_s": 362.90000000000003,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -366,11 +367,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2716,
+					"cost": 2716.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.041830000000000006,
-					"px_over": 0,
+					"picture": 0.04183,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -384,7 +385,7 @@
 					"value": 0.8648309999999999
 				}
 			],
-			"cap": 0.00011574074074074073,
+			"cap": 0.00011574074074074,
 			"carried_from": 1,
 			"chain": "error",
 			"chains": {
@@ -1275,13 +1276,7 @@
 				"cost": 5464,
 				"coverage_rel": -0.00284,
 				"floor": 0.00432,
-				"part_shift": {
-					"fall": 4e-05,
-					"fittings": 0.00041000000000000005,
-					"iron": 1e-05,
-					"rope": 0.0011300000000000001,
-					"spar": -0.00151
-				},
+				"part_shift": {},
 				"picture": 0.55117
 			},
 			"measured_of": 1,
@@ -1293,19 +1288,19 @@
 				"REDUCE from rung 0 at {} seed 314: element 10's part 'rope' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"mast_height_m\":4.0} seed 314: coverage changes -0.0227 against 0.0227 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074"
 			],
-			"peak_mb": 410.0,
+			"peak_mb": 411.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 22
+				"reduce": 22.0
 			},
-			"search_s": 1691.7,
-			"searched": "search",
+			"search_s": 1166.7,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "fe4afbc042aa8f3c8058873291444d940f3832a17abb1c20e3e41b5446e6f496"
 	}
 }

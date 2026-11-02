@@ -101,6 +101,7 @@
 			"seed": 314
 		}
 	],
+	"effort": "full",
 	"id": "built/tarp-shelter",
 	"keyed_on": {
 		"moves": [
@@ -130,11 +131,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 7,
+				"candidates": 1,
 				"trace": "built__tarp-shelter#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 11,
+				"candidates": 1,
 				"trace": "built__tarp-shelter#2.trace.jsonl"
 			},
 			"3": {
@@ -159,11 +160,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 326,
+					"cost": 326.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.06855,
-					"px_over": 2732,
+					"px_over": 2732.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -194,7 +195,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.125x the band's (0.503 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -221,13 +222,13 @@
 			"not_taken": [
 				"KIT: none holds at 0.0040 -- the finest tried (1.000) fails at {\"span_m\":2.0} seed 314: the picture changes at the drawn size: 2732 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.88), one pixel 0.00803 m; coverage changes -0.0502 against 0.0369 allowed (a one-pixel shrink all round)"
 			],
-			"peak_mb": 391.0,
+			"peak_mb": 384.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 6
+				"reduce": 6.0
 			},
-			"search_s": 97.10000000000001,
-			"searched": "search",
+			"search_s": 32.1,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -237,11 +238,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 258,
+					"cost": 258.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00393,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -256,9 +257,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.000462962962962963,
+				"cap": 0.00046296296296296,
 				"chain": "error",
-				"cost": 208
+				"cost": 208.0
 			},
 			"chains": {
 				"error": "lost"
@@ -275,7 +276,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.343",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -705,11 +706,11 @@
 				"coverage_rel": -0.0172,
 				"floor": 0.0053,
 				"part_shift": {
-					"cord": -0.00319,
-					"hem": 0.00032,
-					"panel": 0.0032700000000000003,
-					"peg": -0.0005700000000000001,
-					"tieout": 1e-05
+					"cord": 0.0019000000000000002,
+					"hem": -2e-05,
+					"panel": -0.0019000000000000002,
+					"peg": -0.00033000000000000005,
+					"tieout": 0.0
 				},
 				"picture": 0.13483
 			},
@@ -719,13 +720,13 @@
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"pitch\":1} seed 314: part 'panel' changes its share of the picture by +0.1377 against 0.0450 allowed (its colour's share of the subject); part 'hem' changes its share of the picture by -0.1377 against 0.0450 allowed (its colour's share of the subject)",
 				"REDUCE to its error cap 0.0675x the band's (0.503 kept), carried from rung 1 held at 200, dearer than the 150 taken"
 			],
-			"peak_mb": 309.0,
+			"peak_mb": 307.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 6
+				"reduce": 6.0
 			},
-			"search_s": 130.1,
-			"searched": "search",
+			"search_s": 40.800000000000004,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		},
@@ -755,12 +756,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 12
 				}
 			],
 			"checked_at": 17,
@@ -784,17 +785,17 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 309.0,
+			"peak_mb": 278.0,
 			"route": "impostor",
-			"search_s": 18.5,
-			"searched": "search",
+			"search_s": 12.0,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 12
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "c8e38b13b3f8126ac2c083b0fe7e8347cf1f25fb8fd7ade6f36ac5412576cf0b"
 	}
 }

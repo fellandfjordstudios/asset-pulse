@@ -27,6 +27,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/goods-sack",
 	"keyed_on": {
 		"moves": [
@@ -119,7 +120,7 @@
 			],
 			"peak_mb": 252.0,
 			"route": "rung0",
-			"search_s": 19.5,
+			"search_s": 12.700000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -303,9 +304,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"neck_open\":1.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00567 m",
 				"THIN: built/goods-sack does not declare `reads_density`"
 			],
-			"peak_mb": 251.0,
+			"peak_mb": 252.0,
 			"route": "rung0",
-			"search_s": 296.5,
+			"search_s": 207.70000000000002,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -507,14 +508,14 @@
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 29.900000000000002,
+			"search_s": 20.6,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "944b489d55b377e47c5fe3c71d8510eec92e432e98213eb0662cb78a6139e401"
 	}
 }

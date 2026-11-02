@@ -107,6 +107,7 @@
 			"seed": 314
 		}
 	],
+	"effort": "full",
 	"id": "built/boat-cabin",
 	"keyed_on": {
 		"moves": [
@@ -243,9 +244,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"beam_m\":3.8} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00607 m",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 353.0,
+			"peak_mb": 354.0,
 			"route": "kit",
-			"search_s": 494.0,
+			"search_s": 330.40000000000003,
 			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -784,17 +785,17 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping fastening 0.031, trim 0.031, batten 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel, keeping fastening 0.031, batten 0.031, trim 0.031) held at 1558, dearer than the 1478 taken"
 			],
-			"peak_mb": 288.0,
+			"peak_mb": 289.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 982.6,
+			"search_s": 724.5,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "fe85d2b6490872962a7736aa1e5f60a6ee850e2bcae6203be347bdbcf6e5407b"
 	}
 }

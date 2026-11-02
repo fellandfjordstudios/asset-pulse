@@ -9,6 +9,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/coffee-grinder",
 	"keyed_on": {
 		"moves": [
@@ -111,9 +112,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0025 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 22 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00130 m",
 				"THIN: built/coffee-grinder does not declare `reads_density`"
 			],
-			"peak_mb": 241.0,
+			"peak_mb": 243.0,
 			"route": "rung0",
-			"search_s": 10.4,
+			"search_s": 7.4,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
@@ -174,9 +175,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 243.0,
+			"peak_mb": 245.0,
 			"route": "impostor",
-			"search_s": 113.0,
+			"search_s": 79.80000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -184,7 +185,7 @@
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "31aadc0b435065abaaedff02166934f87c10262306006cab53bde1caa7da09d1"
 	}
 }

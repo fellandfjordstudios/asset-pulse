@@ -123,6 +123,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/casement-window",
 	"keyed_on": {
 		"moves": [
@@ -233,7 +234,7 @@
 			],
 			"peak_mb": 367.0,
 			"route": "kit",
-			"search_s": 388.6,
+			"search_s": 258.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -809,14 +810,14 @@
 			],
 			"peak_mb": 290.0,
 			"route": "kit",
-			"search_s": 180.20000000000002,
+			"search_s": 129.8,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "afca6465079c8c17342aa68b5b2603b1005ff66580aeddd255585e1e0c1b8a56"
 	}
 }

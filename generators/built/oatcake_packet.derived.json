@@ -51,6 +51,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/oatcake-packet",
 	"keyed_on": {
 		"moves": [
@@ -143,16 +144,16 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.700 held at 500, cheaper than the 572 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 255.0,
+			"peak_mb": 256.0,
 			"route": "kit",
-			"search_s": 44.800000000000004,
+			"search_s": 29.1,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "599c25996758122cf4fd7bc8ef9f51338c472861d0241b0f0d9e010f3df663b3"
 	}
 }

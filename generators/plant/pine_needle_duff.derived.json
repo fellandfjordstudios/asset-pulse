@@ -75,6 +75,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "plant/pine-needle-duff",
 	"keyed_on": {
 		"moves": [
@@ -179,9 +180,9 @@
 				"REDUCE from rung 0: nothing to try",
 				"THIN: plant/pine-needle-duff does not declare `reads_density`"
 			],
-			"peak_mb": 460.0,
+			"peak_mb": 466.0,
 			"route": "kit",
-			"search_s": 102.9,
+			"search_s": 71.60000000000001,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
@@ -189,7 +190,7 @@
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "e32b6eb2bfaf63213532a0704a4f1d7d58f08c0501b092b448573f0335088a98",
 		"generator": "0142269a7a0c2cc5375b4fd3c877717e34455afdd7292ea5cc52efd7f4628fde"
 	}
 }

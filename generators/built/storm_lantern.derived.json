@@ -29,6 +29,7 @@
 			"seed": 314
 		}
 	],
+	"effort": "full",
 	"id": "built/storm-lantern",
 	"keyed_on": {
 		"moves": [
@@ -46,7 +47,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 7,
+				"candidates": 1,
 				"trace": "built__storm-lantern#1.trace.jsonl"
 			},
 			"2": {
@@ -61,7 +62,7 @@
 	},
 	"replay": {
 		"1": "2debc76dfe6138a2a53ae85493fd3d68fe2b15e6810e6e3a527a200357fb4093",
-		"2": "00772b57bd1b8928c1ec53bd45a3be974f3838fc201150d62426d1fd32afcc29"
+		"2": "0001f89ab206db1918c75338c3ffcb377cfda58a1da30539dd4b30f3f26bc617"
 	},
 	"rungs": {
 		"1": {
@@ -70,11 +71,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 6442,
+					"cost": 6442.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.0041400000000000005,
-					"px_over": 2,
+					"picture": 0.00414,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -85,10 +86,10 @@
 					"picture": 0.0039900000000000005,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.9196799999999999
+					"value": 0.91968
 				}
 			],
-			"cap": 0.0007367503558603848,
+			"cap": 0.00073675035586038,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -101,12 +102,12 @@
 			},
 			"error": 0.002947001423441539,
 			"every_piece": true,
-			"fraction": 0.9196799999999999,
+			"fraction": 0.91968,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.920 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -140,13 +141,13 @@
 				"KIT: none holds at 0.0029 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00097 m",
 				"REDUCE from rung 0 at {} seed 314: element 11's part 'fount' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)"
 			],
-			"peak_mb": 323.0,
+			"peak_mb": 326.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 16
+				"reduce": 16.0
 			},
-			"search_s": 160.0,
-			"searched": "search",
+			"search_s": 65.9,
+			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
 		},
@@ -309,6 +310,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 4002,
 				"coverage_rel": -0.012950000000000001,
@@ -332,19 +334,20 @@
 				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
 				"KIT at 2 pixels: none holds at 0.0118 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 13 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00389 m",
 				"REDUCE from rung 0 at {} seed 314: element 11's part 'fount' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to 0.700 held at 6646, dearer than the 4002 taken",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.920 kept), carried from rung 1 held at 8748, dearer than the 4002 taken"
 			],
-			"peak_mb": 283.0,
+			"peak_mb": 284.0,
 			"route": "kit",
-			"search_s": 149.8,
+			"search_s": 273.5,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "2a16af123def7c92712c78371cfb25be225de983710f99963826179dfcc89226"
 	}
 }

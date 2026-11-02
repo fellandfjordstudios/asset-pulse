@@ -5,6 +5,7 @@
 			"seed": 314
 		}
 	],
+	"effort": "full",
 	"id": "built/serving-board",
 	"keyed_on": {
 		"moves": [
@@ -90,14 +91,14 @@
 			],
 			"peak_mb": 247.0,
 			"route": "kit",
-			"search_s": 3.4000000000000004,
+			"search_s": 2.2,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "86d9ce697bc939fff16be26577e0603d1982485f8f097d808ae819bb21db7fbc"
 	}
 }

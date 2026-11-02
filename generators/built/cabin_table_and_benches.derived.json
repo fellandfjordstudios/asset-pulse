@@ -9,6 +9,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/cabin-table-and-benches",
 	"keyed_on": {
 		"moves": [
@@ -124,9 +125,9 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.490 held at 4142, dearer than the 3764 taken"
 			],
-			"peak_mb": 331.0,
+			"peak_mb": 332.0,
 			"route": "kit",
-			"search_s": 62.6,
+			"search_s": 41.300000000000004,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -270,9 +271,9 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.240 held at 3034, dearer than the 2660 taken"
 			],
-			"peak_mb": 265.0,
+			"peak_mb": 267.0,
 			"route": "kit",
-			"search_s": 285.90000000000003,
+			"search_s": 208.9,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
@@ -332,9 +333,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 265.0,
+			"peak_mb": 267.0,
 			"route": "impostor",
-			"search_s": 15.4,
+			"search_s": 9.9,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -343,7 +344,7 @@
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "d546c3446edbee3e57b375e514074c7dedc5c50145bf2a231b53c60bd7329d08"
 	}
 }

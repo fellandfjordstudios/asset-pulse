@@ -39,6 +39,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "food/brunost",
 	"keyed_on": {
 		"moves": [
@@ -58,11 +59,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 20,
+				"candidates": 1,
 				"trace": "food__brunost#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 30,
+				"candidates": 0,
 				"trace": "food__brunost#2.trace.jsonl"
 			}
 		}
@@ -73,7 +74,7 @@
 	},
 	"replay": {
 		"1": "8727f6c0bd620ebb8614c1b6c279d4856f69ab5fb48dca02391974dc4afde4cd",
-		"2": "7b0030a36feb2da6ad0c798a71bbef4662c4966b8dc0f66f8fbc8f8516af94b9"
+		"2": "9dff1e6ff6533f648ac455d7f4dc291a42d4bb6112baffa1b659efe1c6397cb9"
 	},
 	"rungs": {
 		"1": {
@@ -82,11 +83,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1824,
+					"cost": 1824.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.0041800000000000006,
-					"px_over": 2,
+					"picture": 0.00418,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -101,9 +102,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.0014407562514603082,
+				"cap": 0.0014407562514603,
 				"chain": "error",
-				"cost": 2108
+				"cost": 2108.0
 			},
 			"chains": {
 				"error": "lost"
@@ -121,7 +122,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.490",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -151,10 +152,10 @@
 			"peak_mb": 278.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5
+				"reduce": 5.0
 			},
-			"search_s": 126.9,
-			"searched": "search",
+			"search_s": 23.1,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -173,10 +174,10 @@
 					}
 				},
 				{
-					"cost": 1186,
+					"cost": 1186.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.007970000000000001,
+					"picture": 0.00797,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.3429999999999999
@@ -198,7 +199,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping debris 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -208,6 +209,181 @@
 					"thin"
 				]
 			},
+			"material_transfer": {
+				"checked_at": 7,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.40882351994514465,
+							0.21103790402412415,
+							0.09053187817335129
+						],
+						"mean_before": [
+							0.40882351994514465,
+							0.21103790402412415,
+							0.09053187817335129
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0023536235094070435,
+							0.0012447573244571686,
+							0.00031120143830776215
+						],
+						"variance_before": [
+							0.0023536235094070435,
+							0.0012447573244571686,
+							0.00031120143830776215
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.40882357954978943,
+							0.21103765070438385,
+							0.09053191542625427
+						],
+						"mean_before": [
+							0.40882357954978943,
+							0.21103765070438385,
+							0.09053191542625427
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.002353459596633911,
+							0.0012448132038116455,
+							0.000311204232275486
+						],
+						"variance_before": [
+							0.002353459596633911,
+							0.0012448132038116455,
+							0.000311204232275486
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.4088236689567566,
+							0.2110380083322525,
+							0.0905318558216095
+						],
+						"mean_before": [
+							0.4088236689567566,
+							0.2110380083322525,
+							0.0905318558216095
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0023534297943115234,
+							0.0012446828186511993,
+							0.0003112116828560829
+						],
+						"variance_before": [
+							0.0023534297943115234,
+							0.0012446828186511993,
+							0.0003112116828560829
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3926031291484833,
+							0.19923976063728333,
+							0.08463271707296371
+						],
+						"mean_before": [
+							0.3926031291484833,
+							0.19923976063728333,
+							0.08463271707296371
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0012541860342025757,
+							0.0006631650030612946,
+							0.0001657651737332344
+						],
+						"variance_before": [
+							0.0012541860342025757,
+							0.0006631650030612946,
+							0.0001657651737332344
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.42112720012664795,
+							0.21998727321624756,
+							0.09500665962696075
+						],
+						"mean_before": [
+							0.42112720012664795,
+							0.21998727321624756,
+							0.09500665962696075
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0028367042541503906,
+							0.0015002153813838959,
+							0.0003750910982489586
+						],
+						"variance_before": [
+							0.0028367042541503906,
+							0.0015002153813838959,
+							0.0003750910982489586
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.4411328434944153,
+							0.3182622790336609,
+							0.3064430356025696
+						],
+						"mean_before": [
+							0.4411328434944153,
+							0.3182622790336609,
+							0.3064430356025696
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							5.662441253662109e-07,
+							6.6980719566345215e-06,
+							5.0537288188934326e-05
+						],
+						"variance_before": [
+							5.662441253662109e-07,
+							6.6980719566345215e-06,
+							5.0537288188934326e-05
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.4088313579559326,
+							0.21104095876216888,
+							0.09053301811218262
+						],
+						"mean_before": [
+							0.4088313579559326,
+							0.21104095876216888,
+							0.09053301811218262
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0023532509803771973,
+							0.001244574785232544,
+							0.000311155803501606
+						],
+						"variance_before": [
+							0.0023532509803771973,
+							0.001244574785232544,
+							0.000311155803501606
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
 			"measured": {
 				"cost": 480,
 				"coverage_rel": -0.03851,
@@ -224,16 +400,16 @@
 				"REDUCE (every piece) to 0.343 held at 1186, dearer than the 480 taken",
 				"REDUCE (every piece) to 0.490, carried from rung 1 held at 1712, dearer than the 480 taken"
 			],
-			"peak_mb": 255.0,
+			"peak_mb": 254.0,
 			"route": "kit",
-			"search_s": 111.7,
-			"searched": "search",
+			"search_s": 25.1,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "6abfe047550d4755f464bb20202a0bab17c9240f2507052b2ed1612dd06f727e"
 	}
 }

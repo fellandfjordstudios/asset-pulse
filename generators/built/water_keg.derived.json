@@ -45,6 +45,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/water-keg",
 	"keyed_on": {
 		"moves": [
@@ -181,7 +182,7 @@
 			"routes": {
 				"reduce": 47.0
 			},
-			"search_s": 271.90000000000003,
+			"search_s": 187.0,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
@@ -241,9 +242,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 276.0,
+			"peak_mb": 277.0,
 			"route": "impostor",
-			"search_s": 208.9,
+			"search_s": 144.70000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -251,7 +252,7 @@
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "944477d61d954bb734da59c7e616854c79df892b17114e764967afe24a327448"
 	}
 }

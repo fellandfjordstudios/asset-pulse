@@ -21,6 +21,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/boat-anchor",
 	"keyed_on": {
 		"moves": [
@@ -129,9 +130,9 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 4 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.73), one pixel 0.00149 m",
 				"THIN: built/boat-anchor does not declare `reads_density`"
 			],
-			"peak_mb": 252.0,
+			"peak_mb": 253.0,
 			"route": "rung0",
-			"search_s": 19.3,
+			"search_s": 13.200000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -327,12 +328,12 @@
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.00595 m",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00595 m; coverage changes -0.0990 against 0.0481 allowed (a one-pixel shrink all round)"
 			],
-			"peak_mb": 267.0,
+			"peak_mb": 268.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 622.7,
+			"search_s": 450.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -392,9 +393,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 259.0,
+			"peak_mb": 260.0,
 			"route": "impostor",
-			"search_s": 51.7,
+			"search_s": 36.800000000000004,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -402,7 +403,7 @@
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "5adb9eb3f5416eac97a753aecd200748127d1183384801dccf8beb13c8f1de75"
 	}
 }

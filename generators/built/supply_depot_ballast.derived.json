@@ -21,6 +21,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/supply-depot-ballast",
 	"keyed_on": {
 		"moves": [
@@ -37,15 +38,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 0,
 				"trace": "built__supply-depot-ballast#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 13,
+				"candidates": 0,
 				"trace": "built__supply-depot-ballast#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 14,
+				"candidates": 0,
 				"trace": "built__supply-depot-ballast#3.trace.jsonl"
 			}
 		}
@@ -73,10 +74,10 @@
 					"value": {}
 				},
 				{
-					"cost": 444,
+					"cost": 444.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004050000000000001,
+					"picture": 0.00405,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.16806999999999994
@@ -84,9 +85,9 @@
 			],
 			"checked_at": 4,
 			"drawn": {
-				"excess": 0.5,
+				"excess": 0.25,
 				"judge": "drawn",
-				"pixel_m": 0.00132
+				"pixel_m": 0.001297
 			},
 			"error": 0.005186722505257109,
 			"fraction": 1.0,
@@ -95,7 +96,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -117,10 +118,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.168 held at 444, cheaper than the 1174 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 258.0,
+			"peak_mb": 251.0,
 			"route": "kit",
-			"search_s": 67.8,
-			"searched": "search",
+			"search_s": 12.0,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -137,7 +138,7 @@
 					"value": {}
 				},
 				{
-					"cost": 120,
+					"cost": 120.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0199,
@@ -150,7 +151,7 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.005281999999999999
+				"pixel_m": 0.005187
 			},
 			"error": 0.020746890021028436,
 			"fraction": 1.0,
@@ -159,7 +160,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -183,10 +184,10 @@
 				"REDUCE to 0.058 held at 120, cheaper than the 536 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 1174, dearer than the 536 taken"
 			],
-			"peak_mb": 246.0,
+			"peak_mb": 244.0,
 			"route": "kit",
-			"search_s": 52.1,
-			"searched": "search",
+			"search_s": 6.300000000000001,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -203,7 +204,7 @@
 					"value": {}
 				},
 				{
-					"cost": 52,
+					"cost": 52.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.04764,
@@ -216,7 +217,7 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.021127999999999997
+				"pixel_m": 0.020746999999999998
 			},
 			"error": 0.08298756008411375,
 			"fraction": 1.0,
@@ -225,7 +226,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -250,16 +251,16 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 1174, dearer than the 348 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 536, dearer than the 348 taken"
 			],
-			"peak_mb": 246.0,
+			"peak_mb": 244.0,
 			"route": "kit",
-			"search_s": 42.6,
-			"searched": "search",
+			"search_s": 4.9,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "babd048a47d0d7414b057bbc7d30775aa62f2a1555264f3a2f06831f96bdd065"
 	}
 }

@@ -33,6 +33,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "food/berry-porridge",
 	"keyed_on": {
 		"moves": [
@@ -51,7 +52,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 30,
+				"candidates": 18,
 				"trace": "food__berry-porridge#1.trace.jsonl"
 			}
 		}
@@ -68,15 +69,6 @@
 			"budget": 2035,
 			"budget_reason": "the cheapest derivation that holds the picture costs 7845, 3.86x rung 1's budget 2035: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"candidates": [
-				{
-					"cost": 2,
-					"holds": false,
-					"judge": "impostor",
-					"picture": -1.0,
-					"px_over": 2,
-					"route": "impostor",
-					"value": 32
-				},
 				{
 					"cost": 7845,
 					"holds": true,
@@ -122,24 +114,14 @@
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 2405 pixel(s) differ at {} seed 314 (worst 0.67)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 1941 pixel(s) differ at {} seed 314 (worst 0.67)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 1731 pixel(s) differ at {} seed 314 (worst 0.68)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 839 pixel(s) differ at {} seed 314 (worst 0.64)",
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 2387 pixel(s) differ at {} seed 314 (worst 0.67)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 1959 pixel(s) differ at {} seed 314 (worst 0.67)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 1758 pixel(s) differ at {} seed 314 (worst 0.68)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 826 pixel(s) differ at {} seed 314 (worst 0.60)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 65 pixel(s) differ at {} seed 314 (worst 0.55)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 71 pixel(s) differ at {} seed 314 (worst 0.61)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 2 pixel(s) differ at {} seed 314 (worst 0.55)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 2 pixel(s) differ at {} seed 314 (worst 0.55)",
+				"IMPOSTOR: skipped by the prior -- judged 31 times for solid subjects at band 1 across 31 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED (its parts at their own rungs, joined) held at 23507, dearer than the 7845 taken"
 			],
-			"peak_mb": 309.0,
+			"peak_mb": 311.0,
 			"route": "kit",
-			"search_s": 451.6,
+			"search_s": 239.60000000000002,
 			"searched": "search",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -147,7 +129,7 @@
 	},
 	"source": {
 		"children": "387e8ccb0bd3972569f25d0bc56648b29d44ef15e0ce8846af271d34fd8a8753",
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "dd42c1d88417270d16a6e9b646e54e3791fc3ca73ba53855e1ad82da8d6fbc54"
 	}
 }

@@ -63,6 +63,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "plant/birch-stem",
 	"keyed_on": {
 		"moves": [
@@ -158,14 +159,14 @@
 			],
 			"peak_mb": 302.0,
 			"route": "kit",
-			"search_s": 52.1,
+			"search_s": 34.2,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "9e764a22fcd3c89bfbcbb64f26325bcdf64f3c97a08887e22db4cc2a01d8b0ce",
+		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
 		"generator": "02eea89deeb0579b63bf02282fd2c370c0a2e69aa21c7242c88a22adc2a5ae3b"
 	}
 }
