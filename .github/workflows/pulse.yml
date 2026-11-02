@@ -288,6 +288,22 @@ jobs:
         env:
           CACHE_TOKEN: ${{ secrets.CACHE_TOKEN }}
         run: python3 tools/promote_roots.py "out/${{ steps.pins.outputs.date }}" library ~/.cache/asset-generators/bakes
+      # THE AUDIT (the library's plans/110 step 9, as plans/111 step 10 built it;
+      # row 724): a sample of this run's root re-made from each entry's recipe
+      # at its own pin and compared byte for byte -- the one check that catches
+      # an entry filed under the wrong key. Too slow for any push gate (each
+      # replay is a fresh compiler), so it runs here, a few entries a run, a new
+      # sample each run. A mismatch is a warning on the run, never a stop.
+      - name: the audit, a sample of this run's root
+        if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
+        continue-on-error: true
+        run: |
+          DATE="${{ steps.pins.outputs.date }}"
+          root="$(python3 -c 'import sys; sys.path.insert(0, "tools"); import promote_roots; r = promote_roots.roots_in(sys.argv[1]); print(r[-1] if r else "")' "out/$DATE")"
+          if [ -z "$root" ]; then echo "audit: no root this run"; exit 0; fi
+          ( cd library && bash tools/store.sh audit --root "$root" --store ~/.cache/asset-generators/bakes \
+              --sample 3 --seed "${{ github.run_number }}" --dir "$GITHUB_WORKSPACE/out/$DATE/audit" ) \
+            || echo "::warning title=audit::an entry of root ${root:0:12} did not re-make byte for byte (out/$DATE/audit)"
       - name: the store, under the cache's limit
         if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
         run: python3 tools/store-prune.py ~/.cache/asset-generators/bakes
