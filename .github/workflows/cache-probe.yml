@@ -1,0 +1,24 @@
+# WHAT THE PULSE'S CLOUDFLARE TOKEN CAN DO FOR THE GLOBAL CACHE (the library's
+# row 724). By hand only, about a minute: yes or no per question (R2, the D1
+# ledger, the Worker script, the Worker's admission), nothing of the token
+# printed and nothing written (tools/cache_probe.py). Its answer decides how the
+# pulse's promotion uses CLOUDFLARE_API_TOKEN instead of CACHE_TOKEN.
+name: cache probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: what the token can do
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: python3 tools/cache_probe.py | tee -a "$GITHUB_STEP_SUMMARY"
