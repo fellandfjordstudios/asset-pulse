@@ -279,14 +279,16 @@ jobs:
       # every entry it names, its memo records among them, before the prune below
       # removes any of it, so a machine that has not run this pulse -- a Vercel deploy, a session -- reads the bakes from
       # the Worker instead of baking them again. Create-if-absent: an entry the
-      # Worker holds is not sent twice. Needs the Actions secret CACHE_TOKEN (the
-      # Worker's writer token, its SHA-256 in the Worker's PUBLISH_TOKEN_SHA256;
-      # the owner's to add); with none it says so and stops nothing.
+      # Worker holds is not sent twice. The writer's bearer is the account's own
+      # CLOUDFLARE_API_TOKEN (the owner, 11-02: "move it to the existing
+      # Cloudflare token, no new token"), which the Worker admits once Cloudflare
+      # verifies it as the account's (the library's ops/cache, row 724); with
+      # none it says so and stops nothing.
       - name: the store, put to the global cache
         if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
         continue-on-error: true
         env:
-          CACHE_TOKEN: ${{ secrets.CACHE_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: python3 tools/promote_roots.py "out/${{ steps.pins.outputs.date }}" library ~/.cache/asset-generators/bakes
       # THE AUDIT (the library's plans/110 step 9, as plans/111 step 10 built it;
       # row 724): a sample of this run's root re-made from each entry's recipe

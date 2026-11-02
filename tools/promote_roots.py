@@ -11,10 +11,12 @@ library's cache Worker with every entry it names, by the library's own tool
 roots are read from the run's logs (`<run dir>/*.log`). The Worker keeps an
 entry it holds (create-if-absent), so promoting again sends nothing.
 
-CACHE_TOKEN (an Actions secret: the Worker's writer token, its SHA-256 in the
-Worker's PUBLISH_TOKEN_SHA256) is read from the environment and never printed;
-with none, it says so and exits 0. CACHE_URL overrides the Worker. A root the
-Worker refuses is named, and the exit is 1.
+The writer's bearer is CLOUDFLARE_API_TOKEN, the account's own API token (an
+Actions secret; the owner, 11-02: no token minted for the cache), which the
+Worker admits once Cloudflare verifies it as the account's. It is handed to the
+library's tool as the bearer that tool sends (CACHE_TOKEN), read from the
+environment and never printed; with none, it says so and exits 0. CACHE_URL
+overrides the Worker. A root the Worker refuses is named, and the exit is 1.
 """
 import os
 import re
@@ -46,14 +48,17 @@ def main(argv, environ=os.environ, run=subprocess.run):
     if not roots:
         print("promote: no root in this run's logs (no cook wrote the store)")
         return 0
-    if not environ.get("CACHE_TOKEN"):
-        print("promote: %d root(s) not put to the global cache: no CACHE_TOKEN secret (the owner's to add)" % len(roots))
+    token = environ.get("CLOUDFLARE_API_TOKEN")
+    if not token:
+        print("promote: %d root(s) not put to the global cache: no CLOUDFLARE_API_TOKEN secret" % len(roots))
         return 0
     url = environ.get("CACHE_URL", CACHE_URL)
+    env = {k: v for k, v in environ.items() if k != "CLOUDFLARE_API_TOKEN"}
+    env["CACHE_TOKEN"] = token
     bad = 0
     for h in roots:
         r = run(["bash", str(Path(library) / "tools/store.sh"), "promote", str(store), "--root", h, "--to", url],
-                env=dict(environ), capture_output=True, text=True)
+                env=env, capture_output=True, text=True)
         tail = ((r.stdout or "") + (r.stderr or "")).strip().splitlines()[-1:] or [""]
         print("promote: root %s %s: %s" % (h[:12], "promoted" if r.returncode == 0 else "REFUSED", tail[0][:300]))
         bad += r.returncode != 0
