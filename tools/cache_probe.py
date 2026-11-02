@@ -92,6 +92,15 @@ def probe(token, account, call=_call):
                    hashlib.sha256(token.encode()).hexdigest())
     code, _ = call("https://%s/%s?list-type=2&max-keys=1" % (host, NAME), h)
     out.append(("R2: it reads '%s' over the S3 API (derived credentials)" % NAME, code == 200, "HTTP %d" % code))
+    # Is it the Worker's bucket? The Worker writes roots/ and packs/ (ops/cache);
+    # a count of each, no key printed.
+    for prefix in ("roots/", "packs/", "blobs/"):
+        q = "list-type=2&max-keys=1000&prefix=" + prefix.replace("/", "%2F")
+        h = s3_headers("GET", host, "/" + NAME, q, info.get("id", ""), hashlib.sha256(token.encode()).hexdigest())
+        code, body = call("https://%s/%s?%s" % (host, NAME, q), h)
+        n = body.count(b"<Key>") if code == 200 else 0
+        out.append(("R2: '%s' holds the Worker's %s objects" % (NAME, prefix), n > 0,
+                    "HTTP %d, %s%d" % (code, "at least " if n == 1000 else "", n)))
     code, body = call(API + "/accounts/%s/d1/database?name=%s" % (account, NAME), auth)
     dbs = [d.get("name") for d in (_json(body).get("result") or [])] if code == 200 else []
     out.append(("D1: it lists the account's databases", code == 200, "HTTP %d" % code))
@@ -119,9 +128,11 @@ def self_test():
             return 200, json.dumps({"result": [{"name": "cache"}]}).encode()
         if url.endswith("/workers/scripts"):
             return 403, b"{}"
+        if "prefix=roots" in url:
+            return 200, b"<Key>roots/aa/x.json</Key>"
         return 401, b""
     rows = probe("secret-token", "acct", fake)
-    ok = [r[1] for r in rows] == [True, True, True, False, True, True, False, False, False]
+    ok = [r[1] for r in rows] == [True, True, True, False, True, False, False, True, True, False, False, False]
     ok = ok and rows[0][2] == "account token"
     text = " ".join("%s %s %s" % r for r in rows)
     ok = ok and "secret-token" not in text and "tid" not in text and hashlib.sha256(b"secret-token").hexdigest() not in text
