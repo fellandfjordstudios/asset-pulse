@@ -274,6 +274,20 @@ jobs:
         with:
           path: out/render-cache
           key: renders-${{ steps.pins.outputs.library }}-${{ github.run_id }}
+      # THE GLOBAL CACHE (the library's row 724; plans/111, its cache Worker): every
+      # root this run's cook published (`ROOT <hash>` in its logs) is promoted with
+      # every entry it names, its memo records among them, before the prune below
+      # removes any of it, so a machine that has not run this pulse -- a Vercel deploy, a session -- reads the bakes from
+      # the Worker instead of baking them again. Create-if-absent: an entry the
+      # Worker holds is not sent twice. Needs the Actions secret CACHE_TOKEN (the
+      # Worker's writer token, its SHA-256 in the Worker's PUBLISH_TOKEN_SHA256;
+      # the owner's to add); with none it says so and stops nothing.
+      - name: the store, put to the global cache
+        if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
+        continue-on-error: true
+        env:
+          CACHE_TOKEN: ${{ secrets.CACHE_TOKEN }}
+        run: python3 tools/promote_roots.py "out/${{ steps.pins.outputs.date }}" library ~/.cache/asset-generators/bakes
       - name: the store, under the cache's limit
         if: always() && steps.pins.outcome == 'success' && inputs.refresh_catalog != true
         run: python3 tools/store-prune.py ~/.cache/asset-generators/bakes
