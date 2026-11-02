@@ -59,8 +59,8 @@
 	},
 	"replay": {
 		"1": "ce19e5fee09f103a49ad64b2030fab350994969dc083927cad7affa101ff8d35",
-		"2": "ed0d35e590fa6e3ca69f7488053a429cc986f325ca9324c391cf943da014aa4b",
-		"3": "abb018f145dddd6288594fa78ef9051366b39839680387d81ff6bc1067af5ee5"
+		"2": "48dafdc633ad226e7c4ba268ba88ec279a9de9692a505db77ab7f2ca5adc2fbe",
+		"3": "5fb5a225e1207416f2f9bf87a473e3abc75e988a614c2b1367b175435b83ebb3"
 	},
 	"rungs": {
 		"1": {
@@ -123,7 +123,7 @@
 			],
 			"peak_mb": 323.0,
 			"route": "kit",
-			"search_s": 120.0,
+			"search_s": 245.70000000000002,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -275,7 +275,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 9546,
 				"coverage_rel": -0.0011500000000000002,
@@ -293,7 +292,7 @@
 			],
 			"peak_mb": 259.0,
 			"route": "kit",
-			"search_s": 1146.2,
+			"search_s": 2392.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -445,7 +444,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 168,
 				"coverage_rel": -0.06411,
@@ -465,14 +463,14 @@
 			"peak_mb": 259.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 26.900000000000002,
+			"search_s": 51.7,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "ff5b7a2a97a7a9667954b8236407c06c8a479ca7195ac69b63c140bcf187fde3"
 	}
 }

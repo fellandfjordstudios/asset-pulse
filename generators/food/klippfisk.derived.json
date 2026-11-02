@@ -108,18 +108,18 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 30 times for solid subjects at band 1 across 30 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 24 times for solid subjects at band 1 across 24 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0026 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 4 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.70), one pixel 0.00130 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1176, cover 2.92: 86353 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'flesh' is 46 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
-				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 341.0,
+			"peak_mb": 342.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 173
 			},
-			"search_s": 332.3,
+			"search_s": 679.5,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -179,9 +179,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 273.0,
+			"peak_mb": 274.0,
 			"route": "impostor",
-			"search_s": 133.3,
+			"search_s": 287.7,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -190,7 +190,7 @@
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "83cae152123d5029a95eda0da19e938f779772dcf99409dbe216681e83957b86"
 	}
 }

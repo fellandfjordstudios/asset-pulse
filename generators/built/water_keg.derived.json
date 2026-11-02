@@ -177,12 +177,12 @@
 				"KIT: none holds at 0.0034 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00128 m",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'stave' is 22 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 360.0,
+			"peak_mb": 361.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 47.0
 			},
-			"search_s": 187.0,
+			"search_s": 395.20000000000005,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
@@ -244,7 +244,7 @@
 			],
 			"peak_mb": 277.0,
 			"route": "impostor",
-			"search_s": 144.70000000000002,
+			"search_s": 297.2,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -252,7 +252,7 @@
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "944477d61d954bb734da59c7e616854c79df892b17114e764967afe24a327448"
 	}
 }

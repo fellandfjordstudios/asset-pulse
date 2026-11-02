@@ -182,9 +182,9 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping nail 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.343 held at 908, dearer than the 656 taken"
 			],
-			"peak_mb": 357.0,
+			"peak_mb": 358.0,
 			"route": "kit",
-			"search_s": 145.5,
+			"search_s": 303.8,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 2
@@ -254,17 +254,17 @@
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.558 kept) held at 908, dearer than the 416 taken",
 				"KIT (its own build at the rung's pixel, keeping nail 0.031), carried from rung 1 held at 656, dearer than the 416 taken"
 			],
-			"peak_mb": 271.0,
+			"peak_mb": 270.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 41.5,
+			"search_s": 84.80000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "cd6786f54106455569f4cb58babfe15209be3f86bc3b7de779f20bfe3ded844b"
 	}
 }

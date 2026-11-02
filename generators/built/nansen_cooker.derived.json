@@ -43,7 +43,7 @@
 	},
 	"replay": {
 		"1": "5d371b69dd286fe3b6d7c0ded015e1a7e25520444a5d1dfd7bef299cf629febf",
-		"2": "aadee3122ea7c5b750f4f4a8b01a4d738a54cf0161c80acd050a592f74ee1bac",
+		"2": "219fef377a8f9247526b1fab246d62ed97b24dfa99c80bb29f8061176d340f87",
 		"3": "1513f59785baad70868089ce3b1123ece0781eb4214dc5d3f05660b089f3d153"
 	},
 	"rungs": {
@@ -158,7 +158,7 @@
 			"routes": {
 				"reduce": 43.0
 			},
-			"search_s": 46.900000000000006,
+			"search_s": 96.0,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -284,6 +284,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 5986,
 				"coverage_rel": -0.014230000000000001,
@@ -319,7 +320,7 @@
 			],
 			"peak_mb": 272.0,
 			"route": "kit",
-			"search_s": 18.1,
+			"search_s": 156.70000000000002,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -381,7 +382,7 @@
 			],
 			"peak_mb": 272.0,
 			"route": "impostor",
-			"search_s": 14.700000000000001,
+			"search_s": 31.6,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -391,7 +392,7 @@
 	},
 	"source": {
 		"children": "625abb6152d174031b680a58d730802b3e567da91b0d5e91573debb096574482",
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "c86a9bedfd5b4d411f7d35026b29e310afb0b7f4a56b32b40365a92423b84921"
 	}
 }

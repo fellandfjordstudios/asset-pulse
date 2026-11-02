@@ -116,20 +116,20 @@
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.490 held at 344, cheaper than the 404 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
 			"peak_mb": 282.0,
 			"route": "kit",
-			"search_s": 52.300000000000004,
+			"search_s": 107.60000000000001,
 			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "33b8dfaaf60e065119276ca2c589963c6766985cd37b5b3f4415ea952a3840fe"
 	}
 }

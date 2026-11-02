@@ -150,15 +150,15 @@
 				"KIT: none holds at 0.0035 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 80 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00130 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.14: 7166 pixel(s) differ at the drawn size at {} seed 314 (worst 0.64)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'fodder' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 329.0,
+			"peak_mb": 330.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 2,
 				"reduce": 1
 			},
-			"search_s": 822.9000000000001,
+			"search_s": 1673.7,
 			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -442,7 +442,7 @@
 			],
 			"peak_mb": 268.0,
 			"route": "kit",
-			"search_s": 486.0,
+			"search_s": 1057.8,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
@@ -450,7 +450,7 @@
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "2436996fbfbcbe463afb7e11c9414e0ed77bda75cd9555e4ff9f8b085fb9b26c"
 	}
 }

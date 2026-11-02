@@ -240,7 +240,7 @@
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 142.4,
+			"search_s": 292.1,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -792,16 +792,16 @@
 				"KIT (its own build at 2 of the band's pixels) held at 470, cheaper than the 574 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.554 kept) held at 438, cheaper than the 574 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 414.0,
+			"peak_mb": 477.0,
 			"route": "kit",
-			"search_s": 103.30000000000001,
+			"search_s": 211.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "3c75ff6cafaee1cd0852017d06a840c0c72122ef48026635de1345d2f236afb6"
 	}
 }

@@ -142,7 +142,7 @@
 			],
 			"peak_mb": 292.0,
 			"route": "rung0",
-			"search_s": 67.7,
+			"search_s": 140.3,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
@@ -460,19 +460,19 @@
 				"KIT at 2 pixels: none holds at 0.0085 -- the finest tried (1.000) fails at {\"cooked\":1} seed 314: the picture changes at the drawn size: 11 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00516 m",
 				"REDUCE from rung 0 at {\"cooked\":1} seed 314: element 0's part 'body' is 123 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 312.0,
+			"peak_mb": 321.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 26.0
 			},
-			"search_s": 356.0,
+			"search_s": 736.6,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "3ab4ad8f0708e68d875df50422288706e9a427f48696220d728a5ecfc1d88d81"
 	}
 }

@@ -177,19 +177,19 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 333 pixel(s) differ at the drawn size at {} seed 314 (worst 0.73)",
 				"REDUCE from rung 0 at {} seed 314: part 'body' is 345 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 456.0,
+			"peak_mb": 455.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 1.0
 			},
-			"search_s": 279.7,
+			"search_s": 568.7,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "946480b0d6378f96c082099709cff6bf96fda0f20b42ca99df55b32b6c2d426d"
 	}
 }

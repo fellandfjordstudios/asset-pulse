@@ -117,12 +117,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 3's part 'binding_iron' is 28 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00463 m; part 'edge_wood' changes its share of the picture by -0.0264 against 0.0232 allowed (its colour's share of the subject); part 'hickory' changes its share of the picture by +0.0269 against 0.0232 allowed (its colour's share of the subject)"
 			],
-			"peak_mb": 272.0,
+			"peak_mb": 273.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 4.1000000000000005,
+			"search_s": 8.200000000000001,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
@@ -238,19 +238,19 @@
 				"REDUCE from rung 0 at {} seed 314: element 3's part 'binding_iron' is 28 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0491 against 0.0450 allowed (a one-pixel shrink all round); part 'edge_wood' changes its share of the picture by -0.0682 against 0.0450 allowed (its colour's share of the subject)"
 			],
-			"peak_mb": 272.0,
+			"peak_mb": 273.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 13.600000000000001,
+			"search_s": 29.5,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "37d0dd6c68ea8a1253bbfc34945151907ec27af2acfb74fc63074fca060205fb"
 	}
 }

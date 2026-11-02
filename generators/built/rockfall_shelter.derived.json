@@ -489,9 +489,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"bay_length_m\":0.6} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00611 m",
 				"THIN: built/rockfall-shelter does not declare `reads_density`"
 			],
-			"peak_mb": 417.0,
+			"peak_mb": 418.0,
 			"route": "rung0",
-			"search_s": 190.5,
+			"search_s": 397.40000000000003,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
@@ -499,7 +499,7 @@
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "c267599d2c415bb7fa645d1bba22b86e2e8dfd4ed5bef09105a3f69275375944"
 	}
 }

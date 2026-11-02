@@ -187,7 +187,7 @@
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 38.2,
+			"search_s": 76.7,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -561,7 +561,7 @@
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 16.8,
+			"search_s": 32.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -936,14 +936,14 @@
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 14.0,
+			"search_s": 28.400000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
 		"generator": "dfd683e0e034006adf18599c4a5c916add4688ca5d5785046191dc664c76d730"
 	}
 }
