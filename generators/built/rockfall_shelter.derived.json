@@ -437,7 +437,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "built__rockfall-shelter#1.trace.jsonl"
 			}
 		}
@@ -447,59 +447,88 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "3fa7298410d45c74631258f06e39795448288c24bfb5051d91021d0674c57996"
+		"1": "42aa2c978ecf914a0a601ee0301f1d2be84956dda78443ce8a8d8b57072f1bed"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"cancel_across": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4640.0,
-					"holds": false,
-					"judge": "drawn",
-					"picture": 0.00493,
-					"px_over": 2.0,
-					"route": "reduce",
-					"value": 0.7
-				},
-				{
-					"cost": 6422,
+					"cost": 3908,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0,
+					"picture": 0.00493,
 					"px_over": null,
-					"route": "rung0",
-					"value": 1.0
+					"route": "reduce",
+					"value": 0.608533
 				}
 			],
+			"cap": 0.0009259259259259261,
+			"chain": "error",
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 61,
-			"error": -1.0,
-			"fraction": 1.0,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.011481
+			},
+			"error": 0.0018518518518518521,
+			"every_piece": true,
+			"fraction": 0.608533,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.609 kept)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"merged",
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
+			},
 			"measured": {
-				"cost": 6422,
-				"coverage_rel": 0.0,
+				"cost": 3908,
+				"coverage_rel": -0.004560000000000001,
 				"floor": 0.00493,
-				"part_shift": {},
-				"picture": 0.0
+				"part_shift": {
+					"litter": -0.00221,
+					"panel": 0.0015300000000000001,
+					"panel_foot": 0.0006500000000000001,
+					"roof": 0.00304,
+					"screen": 0.00544,
+					"timber": -0.008010000000000001,
+					"timber_foot": -0.00071
+				},
+				"picture": 0.00493
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'roof' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"bay_length_m\":0.6} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00611 m",
-				"THIN: built/rockfall-shelter does not declare `reads_density`"
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 415.0,
-			"route": "rung0",
-			"search_s": 405.0,
-			"searched": "recheck",
+			"peak_mb": 2136.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 7
+			},
+			"search_s": 2767.9,
+			"searched": "search",
 			"surfaces": 7,
-			"surfaces_ceiling": 7,
-			"tolerance": 0.0018518518518518521
+			"surfaces_ceiling": 7
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "c267599d2c415bb7fa645d1bba22b86e2e8dfd4ed5bef09105a3f69275375944"
+		"generator": "482445b734e7722225559533e139e0ca93b739e1afeea7c39295e41050040364"
 	}
 }

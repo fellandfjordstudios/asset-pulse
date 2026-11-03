@@ -40,15 +40,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 9,
 				"trace": "built__supply-depot-bundle#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 12,
 				"trace": "built__supply-depot-bundle#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 12,
 				"trace": "built__supply-depot-bundle#3.trace.jsonl"
 			}
 		}
@@ -59,8 +59,8 @@
 	},
 	"replay": {
 		"1": "ce19e5fee09f103a49ad64b2030fab350994969dc083927cad7affa101ff8d35",
-		"2": "ed0d35e590fa6e3ca69f7488053a429cc986f325ca9324c391cf943da014aa4b",
-		"3": "abb018f145dddd6288594fa78ef9051366b39839680387d81ff6bc1067af5ee5"
+		"2": "48dafdc633ad226e7c4ba268ba88ec279a9de9692a505db77ab7f2ca5adc2fbe",
+		"3": "5fb5a225e1207416f2f9bf87a473e3abc75e988a614c2b1367b175435b83ebb3"
 	},
 	"rungs": {
 		"1": {
@@ -76,7 +76,7 @@
 					"value": {}
 				},
 				{
-					"cost": 3836.0,
+					"cost": 3836,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0044,
@@ -98,33 +98,41 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
 				"cost": 24258,
 				"coverage_rel": -0.00038,
 				"floor": 0.0044,
-				"part_shift": {},
+				"part_shift": {
+					"bundle": 0.00011,
+					"bundle_ink": -0.0001,
+					"bundle_seam": -9e-05
+				},
 				"picture": 0.0044
 			},
 			"measured_of": 2,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: part 'bundle_ink' is 22 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to its error cap 0.5x the band's (0.123 kept) held at 3836, cheaper than the 24258 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 320.0,
+			"peak_mb": 420.0,
 			"route": "kit",
-			"search_s": 249.20000000000002,
-			"searched": "recheck",
+			"search_s": 325.8,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -132,7 +140,7 @@
 			"budget": 9168,
 			"candidates": [
 				{
-					"cost": 9546,
+					"cost": 6408,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0044,
@@ -141,7 +149,7 @@
 					"value": {}
 				},
 				{
-					"cost": 1324.0,
+					"cost": 1324,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00846,
@@ -163,7 +171,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -171,6 +179,9 @@
 					"impostor",
 					"merged",
 					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -275,26 +286,30 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 9546,
 				"coverage_rel": -0.0011500000000000002,
 				"floor": 0.0044,
-				"part_shift": {},
+				"part_shift": {
+					"bundle": 0.00017,
+					"bundle_ink": -0.00019,
+					"bundle_seam": -9e-05
+				},
 				"picture": 0.0044
 			},
 			"measured_of": 4,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: part 'bundle_ink' is 22 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels)) is 1 route(s)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels)) is 1 route(s)",
 				"KIT (its own build at 2 of the band's pixels) held at 6408, cheaper than the 9546 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"REDUCE (every piece) to 0.040 held at 1324, cheaper than the 9546 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 24258, dearer than the 9546 taken"
 			],
-			"peak_mb": 256.0,
+			"peak_mb": 294.0,
 			"route": "kit",
-			"search_s": 2410.4,
-			"searched": "recheck",
+			"search_s": 1273.2,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -311,7 +326,7 @@
 					"value": {}
 				},
 				{
-					"cost": 1324.0,
+					"cost": 1324,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00846,
@@ -322,7 +337,7 @@
 			],
 			"checked_at": 4,
 			"drawn": {
-				"excess": 0.4375,
+				"excess": 0.25,
 				"judge": "drawn",
 				"pixel_m": 0.020746999999999998
 			},
@@ -333,14 +348,14 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 4 of the band's pixels)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"reduce",
 					"impostor",
-					"merged",
-					"thin"
+					"reduce",
+					"thin",
+					"merged"
 				]
 			},
 			"material_transfer": {
@@ -445,34 +460,37 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 168,
 				"coverage_rel": -0.06411,
 				"floor": 0.0044,
-				"part_shift": {},
+				"part_shift": {
+					"bundle": 0.012750000000000001,
+					"bundle_ink": -0.00464,
+					"bundle_seam": -0.005560000000000001
+				},
 				"picture": 0.04231
 			},
 			"measured_of": 5,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: part 'bundle_ink' is 22 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 4 of the band's pixels)) is 1 route(s), and the one looked at did not improve on it",
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at 4 of the band's pixels)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel) held at 6408, dearer than the 168 taken",
 				"REDUCE (every piece) to 0.040 held at 1324, dearer than the 168 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 24258, dearer than the 168 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 9546, dearer than the 168 taken"
 			],
-			"peak_mb": 256.0,
+			"peak_mb": 284.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 58.400000000000006,
-			"searched": "recheck",
+			"search_s": 107.60000000000001,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "ff5b7a2a97a7a9667954b8236407c06c8a479ca7195ac69b63c140bcf187fde3"
+		"generator": "a8fbdece5c32905afe7a8dbccbf31b3299a96155d20c621688fd7b1bca857a57"
 	}
 }

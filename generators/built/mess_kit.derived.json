@@ -26,11 +26,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 4,
 				"trace": "built__mess-kit#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 8,
+				"candidates": 7,
 				"trace": "built__mess-kit#2.trace.jsonl"
 			}
 		}
@@ -48,11 +48,11 @@
 			"budget": 3152,
 			"candidates": [
 				{
-					"cost": 1744.0,
+					"cost": 1744,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 1.0,
+					"px_over": 1,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -78,14 +78,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -107,12 +110,13 @@
 			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0037 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00129 m",
-				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 264.0,
+			"peak_mb": 265.0,
 			"route": "merged",
-			"search_s": 23.900000000000002,
-			"searched": "recheck",
+			"search_s": 14.700000000000001,
+			"searched": "search",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		},
@@ -224,20 +228,20 @@
 				"KIT: none holds at 0.0150 -- the finest tried (1.000) fails at {\"pot_handle_open\":0.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00418 m",
 				"KIT at 2 pixels: none holds at 0.0150 -- the finest tried (1.000) fails at {} seed 314: part 'abrasion' changes its share of the picture by -0.0777 against 0.0745 allowed (its colour's share of the subject)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
-				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 2550, the same cost as the route taken, found first"
 			],
 			"peak_mb": 243.0,
 			"route": "merged",
-			"search_s": 108.4,
+			"search_s": 46.5,
 			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"children": "d4a8d60cee69daf08d9b0f5c8e2a2e6a14f180308bab729f58abff178412c5a9",
+		"children": "e1e75fee5272afeb8dfd242829efb7a5b96bac908d0305e097f446093248cdc5",
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "9573d00a6f0d0c49ec646f1410cf17b1c852bcc8b849541f1640adfde5ce0510"
+		"generator": "1433980d5f920b0f4bf302874dd9693ee4fdb5e9a48bd35161cb7c5ec208f02c"
 	}
 }

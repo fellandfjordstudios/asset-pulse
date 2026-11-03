@@ -276,17 +276,17 @@
 				"picture": 0.0
 			},
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 25 times for solid subjects at band 1 across 25 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 14 times for solid subjects at band 1 across 14 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"set\":0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00529 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 20 pixel(s) differ at the drawn size at {} seed 314 (worst 0.75)",
 				"REDUCE from rung 0 at {} seed 314: element 2's part 'bolt_rope' is 14 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"set\":0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00529 m; the error ladder: none holds at 0.0019",
-				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: built/boat-sail does not declare `reads_density`"
 			],
-			"peak_mb": 908.0,
+			"peak_mb": 906.0,
 			"route": "rung0",
-			"search_s": 211.60000000000002,
+			"search_s": 223.10000000000002,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -1085,23 +1085,23 @@
 				"IMPOSTOR at 32x32 frames (atlas 51.4 MB) from rung 0 at 4x its pixel: 229 pixel(s) differ at {} seed 314 (worst 0.60)",
 				"IMPOSTOR at 32x32 frames (atlas 51.4 MB) from rung 0: 228 pixel(s) differ at {} seed 314 (worst 0.57)",
 				"REDUCE from rung 0 at {} seed 314: element 2's part 'bolt_rope' is 14 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
-				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping fitting 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel, keeping fitting 0.031) held at 2622, dearer than the 2464 taken",
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.636 kept) held at 2510, dearer than the 2464 taken"
 			],
-			"peak_mb": 456.0,
+			"peak_mb": 454.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 924.4000000000001,
+			"search_s": 945.2,
 			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"children": "3473f299842500bfff63a1fc71f70190845689f001f82a755abe839c0b822178",
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
-		"generator": "3ddecd89a23d19c29945c61186dd5da4ca6920c2f81047cf1b68fcda0694c07b"
+		"children": "5308e7059cb9bbfecf66faa6f199dcd7c7a9cb26accf8a9c0c832a8244b6b6cd",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"generator": "bc116d9e4cff9be4554a74ea070fbf38f2f5bc1b54a9c3340bc81d03dede6d74"
 	}
 }

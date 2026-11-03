@@ -101,7 +101,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 40,
 				"trace": "plant__pine-needle-duff#1.trace.jsonl"
 			}
 		}
@@ -119,24 +119,22 @@
 			"budget": 14224,
 			"candidates": [
 				{
-					"cost": 18520,
+					"cost": 30474,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.13284,
-					"px_over": null,
+					"picture": -1.0,
+					"px_over": 658,
 					"route": "kit",
-					"value": {
-						"debris": 0.11764899999999996
-					}
+					"value": 0.24009999999999992
 				},
 				{
-					"cost": 128.0,
+					"cost": 128,
 					"holds": false,
 					"judge": "field",
 					"picture": -1.0,
-					"px_over": 4.0,
+					"px_over": 4,
 					"route": "substitute",
-					"value": 64.0
+					"value": 64
 				}
 			],
 			"checked_at": 13,
@@ -145,17 +143,17 @@
 			"from_rung": 0,
 			"ground": {
 				"albedo_linear": [
-					0.1914,
-					0.105,
+					0.19140000000000001,
+					0.10500000000000001,
 					0.06720000000000001
 				],
-				"band": 1.0,
+				"band": 1,
 				"coverage": 1.0,
-				"luminance_sd": 0.1127,
+				"luminance_sd": 0.11270000000000001,
 				"texel_m": 0.001852
 			},
 			"keep": {
-				"debris": 0.11764899999999996
+				"debris": 0.11764899999999995
 			},
 			"measured": {
 				"cost": 18520,
@@ -177,13 +175,13 @@
 				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 618 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: coverage, colour, spread, edges apart { \"coverage\": 0.5189, \"colour\": 7.5456, \"spread\": 0.2377, \"edges\": 0.2129 }, the tolerance { \"coverage\": 0.1, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.1 }",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1046 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00185 m; part 'duff' changes its share of the picture by +0.0497 against 0.0296 allowed (its colour's share of the subject)",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.2401, cover 1.09: 658 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
-				"REDUCE from rung 0: nothing to try",
+				"REDUCE from rung 0: nothing to try; the error ladder: nothing to try",
 				"THIN: plant/pine-needle-duff does not declare `reads_density`"
 			],
-			"peak_mb": 466.0,
+			"peak_mb": 877.0,
 			"route": "kit",
-			"search_s": 103.9,
-			"searched": "recheck",
+			"search_s": 974.1,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"tolerance": 0.001851851851851852
@@ -191,6 +189,6 @@
 	},
 	"source": {
 		"deriver": "88ee514456488081f819de26f2504b414fa7fb7c98470606ab52112e1a066309",
-		"generator": "0142269a7a0c2cc5375b4fd3c877717e34455afdd7292ea5cc52efd7f4628fde"
+		"generator": "88d617b2a1d61415b913413e25fa0dea8cd3e62c763dd339ad61e70d3b0f9543"
 	}
 }

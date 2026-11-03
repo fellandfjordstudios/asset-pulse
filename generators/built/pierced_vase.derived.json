@@ -96,7 +96,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 19,
 				"trace": "built__pierced-vase#1.trace.jsonl"
 			}
 		}
@@ -115,11 +115,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 12650.0,
+					"cost": 12650,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00411,
-					"px_over": 38.0,
+					"px_over": 38,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -134,9 +134,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.00064834031315713,
+				"cap": 0.0006483403131571386,
 				"chain": "error",
-				"cost": 29419.0
+				"cost": 29419
 			},
 			"chains": {
 				"error": "lost"
@@ -154,14 +154,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.700",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -175,21 +178,22 @@
 			"not_taken": [
 				"KIT: none holds at 0.0026 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 38 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00130 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 333 pixel(s) differ at the drawn size at {} seed 314 (worst 0.73)",
-				"REDUCE from rung 0 at {} seed 314: part 'body' is 345 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
+				"REDUCE from rung 0 at {} seed 314: part 'body' is 345 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 452.0,
+			"peak_mb": 471.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 1.0
+				"reduce": 1
 			},
-			"search_s": 562.0,
-			"searched": "recheck",
+			"search_s": 604.4,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "946480b0d6378f96c082099709cff6bf96fda0f20b42ca99df55b32b6c2d426d"
+		"generator": "4054739b90de1cf5faf4f05a18db656eab09fab6d8d7e93db1f275e90d94935c"
 	}
 }

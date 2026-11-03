@@ -61,11 +61,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 17,
 				"trace": "built__rucksack#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 30,
 				"trace": "built__rucksack#2.trace.jsonl"
 			}
 		}
@@ -85,11 +85,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1628.0,
+					"cost": 1628,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.00439,
-					"px_over": 7.0,
+					"picture": 0.004390000000000001,
+					"px_over": 7,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -103,7 +103,7 @@
 					"value": 0.8586239999999999
 				}
 			],
-			"cap": 0.00142848188856596,
+			"cap": 0.0014284818885659633,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -120,14 +120,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.859 kept)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -145,15 +148,16 @@
 			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0029 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.91), one pixel 0.00130 m",
-				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 206 pixel(s) differ at the drawn size at {} seed 314 (worst 0.88)"
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 206 pixel(s) differ at the drawn size at {} seed 314 (worst 0.88)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 355.0,
+			"peak_mb": 364.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 10.0
+				"reduce": 10
 			},
-			"search_s": 138.20000000000002,
-			"searched": "recheck",
+			"search_s": 178.60000000000002,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		},
@@ -163,11 +167,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1098.0,
+					"cost": 1098,
 					"holds": false,
 					"judge": "drawn",
 					"picture": -1.0,
-					"px_over": 8.0,
+					"px_over": 8,
 					"route": "kit",
 					"value": 0.3429999999999999
 				},
@@ -198,7 +202,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.852 kept)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -206,6 +210,9 @@
 					"impostor",
 					"merged",
 					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -400,21 +407,22 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.00: 8 pixel(s) differ at the drawn size at {} seed 314 (worst 0.59)",
 				"KIT at 2 pixels: none holds at 0.0030 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 220 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00136 m",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.00: 8 pixel(s) differ at the drawn size at {} seed 314 (worst 0.59)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.4762x the band's (0.859 kept), carried from rung 1 held at 1822, dearer than the 1808 taken"
 			],
-			"peak_mb": 346.0,
+			"peak_mb": 354.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 10.0
+				"reduce": 10
 			},
-			"search_s": 237.70000000000002,
-			"searched": "recheck",
+			"search_s": 279.0,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "a77b1a86dfe50036439a7a7bc8be6ef05d7695334c112c63e869b4ed4b5d3078"
+		"generator": "c4d9dab94da387ceb1e6181297e42736a37b66697d0e5a4f117395ffa5a13a83"
 	}
 }

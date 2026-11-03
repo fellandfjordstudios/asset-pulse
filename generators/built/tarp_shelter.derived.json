@@ -131,11 +131,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 7,
 				"trace": "built__tarp-shelter#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 11,
 				"trace": "built__tarp-shelter#2.trace.jsonl"
 			},
 			"3": {
@@ -160,11 +160,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 326.0,
+					"cost": 326,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.06855,
-					"px_over": 2732.0,
+					"px_over": 2732,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -195,14 +195,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.125x the band's (0.503 kept)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -220,15 +223,16 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"KIT: none holds at 0.0040 -- the finest tried (1.000) fails at {\"span_m\":2.0} seed 314: the picture changes at the drawn size: 2732 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.88), one pixel 0.00803 m; coverage changes -0.0502 against 0.0369 allowed (a one-pixel shrink all round)"
+				"KIT: none holds at 0.0040 -- the finest tried (1.000) fails at {\"span_m\":2.0} seed 314: the picture changes at the drawn size: 2732 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.88), one pixel 0.00803 m; coverage changes -0.0502 against 0.0369 allowed (a one-pixel shrink all round)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 381.0,
+			"peak_mb": 389.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 6.0
+				"reduce": 6
 			},
-			"search_s": 65.3,
-			"searched": "recheck",
+			"search_s": 64.9,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -238,11 +242,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 258.0,
+					"cost": 258,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00393,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -257,9 +261,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.00046296296296296,
+				"cap": 0.000462962962962963,
 				"chain": "error",
-				"cost": 208.0
+				"cost": 208
 			},
 			"chains": {
 				"error": "lost"
@@ -276,7 +280,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.343",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -284,6 +288,9 @@
 					"impostor",
 					"merged",
 					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -706,11 +713,11 @@
 				"coverage_rel": -0.0172,
 				"floor": 0.0053,
 				"part_shift": {
-					"cord": 0.0019000000000000002,
-					"hem": -2e-05,
-					"panel": -0.0019000000000000002,
-					"peg": -0.00033000000000000005,
-					"tieout": 0.0
+					"cord": -0.00319,
+					"hem": 0.00032,
+					"panel": 0.0032700000000000003,
+					"peg": -0.0005700000000000001,
+					"tieout": 1e-05
 				},
 				"picture": 0.13483
 			},
@@ -718,15 +725,16 @@
 			"not_taken": [
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {\"pitch\":1} seed 314: part 'panel' changes its share of the picture by +0.1377 against 0.0450 allowed (its colour's share of the subject); part 'hem' changes its share of the picture by -0.1377 against 0.0450 allowed (its colour's share of the subject)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"pitch\":1} seed 314: part 'panel' changes its share of the picture by +0.1377 against 0.0450 allowed (its colour's share of the subject); part 'hem' changes its share of the picture by -0.1377 against 0.0450 allowed (its colour's share of the subject)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.0675x the band's (0.503 kept), carried from rung 1 held at 200, dearer than the 150 taken"
 			],
-			"peak_mb": 304.0,
+			"peak_mb": 307.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 6.0
+				"reduce": 6
 			},
-			"search_s": 87.5,
-			"searched": "recheck",
+			"search_s": 90.5,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		},
@@ -756,12 +764,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 1,
 					"route": "impostor",
-					"value": 12
+					"value": 8
 				}
 			],
 			"checked_at": 17,
@@ -785,10 +793,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 274.0,
+			"peak_mb": 306.0,
 			"route": "impostor",
-			"search_s": 26.700000000000003,
-			"searched": "recheck",
+			"search_s": 12.8,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 12
@@ -796,6 +804,6 @@
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "c8e38b13b3f8126ac2c083b0fe7e8347cf1f25fb8fd7ade6f36ac5412576cf0b"
+		"generator": "b4603c0f85aafc9b8d7c7ef2bf89c1fa91fc1f2c9eff261cb310ecafb7bc6c05"
 	}
 }

@@ -24,7 +24,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 9,
+				"candidates": 8,
 				"trace": "food__heart-waffles#1.trace.jsonl"
 			}
 		}
@@ -88,16 +88,16 @@
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 24 times for solid subjects at band 1 across 24 record(s), never held (tools/derive-prior.py --form solid --band 1)",
-				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 8 times for solid subjects at band 1 across 8 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 148376, dearer than the 10682 taken"
 			],
-			"peak_mb": 426.0,
+			"peak_mb": 421.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 8
 			},
-			"search_s": 750.0,
+			"search_s": 236.0,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -105,6 +105,6 @@
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "9a0721c815102093253534f41491776163edc4ba818da99e1a9f784431622a8d"
+		"generator": "2bf60bb9b05c449b41353b0560e18fcef8588e350f53a5a440fb08d24192a7c1"
 	}
 }

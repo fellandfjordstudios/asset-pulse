@@ -47,7 +47,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__water-bottle#1.trace.jsonl"
 			}
 		}
@@ -75,11 +75,11 @@
 					}
 				},
 				{
-					"cost": 2422.0,
+					"cost": 2422,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00413,
-					"px_over": 1.0,
+					"px_over": 1,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -87,7 +87,7 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.5,
-				"gap": 0.472,
+				"gap": 0.47200000000000003,
 				"judge": "drawn",
 				"pixel_m": 0.001297
 			},
@@ -100,14 +100,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping cap_rib 0.490)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -121,18 +124,19 @@
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 4's part 'print' is 113 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE (every piece) from rung 0: none holds at 0.0059 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00130 m; the error ladder: none holds at 0.0059",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping cap_rib 0.490)) is 1 route(s), and the one looked at did not improve on it"
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping cap_rib 0.490)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 248.0,
+			"peak_mb": 273.0,
 			"route": "kit",
-			"search_s": 41.2,
-			"searched": "recheck",
+			"search_s": 46.0,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "e46f4c4505757c4cc5c0eb7d55705aaf7166874f56d094e29f56f50325ed9c26"
+		"generator": "246d74d396717c4b6311dbab32f1c111b9897a6c41c2f7fc44867002700bddbc"
 	}
 }

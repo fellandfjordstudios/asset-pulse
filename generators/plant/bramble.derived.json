@@ -185,17 +185,17 @@
 				"picture": 0.0
 			},
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 14 times for solid subjects at band 1 across 14 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 8 times for solid subjects at band 1 across 8 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00244 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.0824, cover 3.48: 117438 pixel(s) differ at the drawn size at {} seed 314 (worst 0.56)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'prickle' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 15 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00244 m; the error ladder: none holds at 0.0019",
-				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/bramble does not declare `reads_density`"
 			],
-			"peak_mb": 406.0,
+			"peak_mb": 405.0,
 			"route": "rung0",
-			"search_s": 763.7,
+			"search_s": 451.6,
 			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
@@ -204,6 +204,6 @@
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "30a2ab8de77e33246054d6a717acef46a62fe71b700f021c32cd9309305b80b5"
+		"generator": "14562d556c93e0660687140c8f454fb3c42cb7f931f61a7b6b6099802d312a0f"
 	}
 }

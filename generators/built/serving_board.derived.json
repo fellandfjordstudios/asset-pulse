@@ -19,7 +19,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 8,
 				"trace": "built__serving-board#1.trace.jsonl"
 			}
 		}
@@ -45,7 +45,7 @@
 					"value": {}
 				},
 				{
-					"cost": 202.0,
+					"cost": 202,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00406,
@@ -67,38 +67,45 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
 				"cost": 256,
 				"coverage_rel": -0.0027,
 				"floor": 0.00406,
-				"part_shift": {},
+				"part_shift": {
+					"board": 0.01047,
+					"end_grain": -0.01047
+				},
 				"picture": 0.00406
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.490 held at 202, cheaper than the 256 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 244.0,
+			"peak_mb": 247.0,
 			"route": "kit",
-			"search_s": 4.7,
-			"searched": "recheck",
+			"search_s": 9.1,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "86d9ce697bc939fff16be26577e0603d1982485f8f097d808ae819bb21db7fbc"
+		"generator": "856128cd78f28defbc10b92bbb3b2787727383e2e4acb4bf9d3f86cb5c04fb8d"
 	}
 }

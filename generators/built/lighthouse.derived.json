@@ -135,14 +135,14 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 25 times for solid subjects at band 1 across 25 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 14 times for solid subjects at band 1 across 14 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"CHILD: span 'built/lighthouse-lantern r0 6d5e6eb2' is 502 triangles and its child rebuilt is 1040: not a placed copy",
-				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.240)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 650.0,
+			"peak_mb": 649.0,
 			"route": "kit",
-			"search_s": 316.90000000000003,
+			"search_s": 320.0,
 			"searched": "search",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -407,7 +407,7 @@
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0 at 4x its pixel: 4 pixel(s) differ at {} seed 314 (worst 0.52)",
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0: 2 pixel(s) differ at {} seed 314 (worst 0.50)",
 				"CHILD: span 'built/lighthouse-lantern r0 6d5e6eb2' is 502 triangles and its child rebuilt is 1040: not a placed copy",
-				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE, MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping post 0.168, block 0.700, rivet 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel, keeping post 0.168, block 0.700, rivet 0.031) held at 1553, dearer than the 1423 taken",
 				"KIT (its own build at the rung's pixel, keeping rivet 0.240), carried from rung 1 held at 8741, dearer than the 1423 taken"
@@ -415,7 +415,7 @@
 			"peak_mb": 319.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 311.40000000000003,
+			"search_s": 306.6,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -477,7 +477,7 @@
 			],
 			"peak_mb": 320.0,
 			"route": "impostor",
-			"search_s": 53.0,
+			"search_s": 52.7,
 			"searched": "search",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -486,8 +486,8 @@
 		}
 	},
 	"source": {
-		"children": "96bf3587982f7472cd0930986018e12b991b975261d059a912f9a8b8dadaa6a0",
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
-		"generator": "a996d715c36af104d83b3a70c6de925da4c4211babaef41bf18a2e7e29ec5209"
+		"children": "63865d8cdffb5a170f2980ce9c8a72840943ff3a85183485d09c0b8b8c065b60",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"generator": "a4bae2b93390263a329f84bae0f2b0d0f4ae331031d17ac1f6c0d28bd15a4f81"
 	}
 }

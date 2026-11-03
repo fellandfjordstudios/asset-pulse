@@ -54,11 +54,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__vase#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 12,
 				"trace": "built__vase#2.trace.jsonl"
 			}
 		}
@@ -68,93 +68,118 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "48caa49dcf577b65e13cecc81c4194c771f9d92c3ec9cca9faf1b89bfd481ef4",
+		"1": "942675fe3c05e29da662e7d82679c2b7b3748ba787584e60a1260e568fb34b20",
 		"2": "a186f11321971c6b66b3b9ebb1b38c5694f0dde79a2e58b972a551054d3e1090"
 	},
 	"rungs": {
 		"1": {
 			"budget": 10283,
+			"cancel_across": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1352.0,
+					"cost": 1352,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00489,
-					"px_over": 1.0,
+					"px_over": 1,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 1370.0,
-					"holds": false,
-					"judge": "drawn",
-					"picture": 0.00404,
-					"px_over": 3.0,
-					"route": "reduce",
-					"value": 0.7
-				},
-				{
-					"cost": 1876,
+					"cost": 1634,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0,
+					"picture": 0.00404,
 					"px_over": null,
-					"route": "rung0",
-					"value": 1.0
+					"route": "reduce",
+					"value": 0.8710019999999999
 				}
 			],
+			"cap": 0.0018009453143253851,
+			"chain": "error",
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 6,
-			"error": -1.0,
-			"fraction": 1.0,
+			"drawn": {
+				"excess": 0.0625,
+				"judge": "drawn",
+				"pixel_m": 0.0012929999999999999
+			},
+			"error": 0.0036018906286507703,
+			"fraction": 0.8710019999999999,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to its error cap 0.5x the band's (0.871 kept)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"merged",
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
+			},
 			"measured": {
-				"cost": 1876,
-				"coverage_rel": 0.0,
+				"cost": 1634,
+				"coverage_rel": -0.00036,
 				"floor": 0.00404,
-				"part_shift": {},
-				"picture": 0.0
+				"part_shift": {
+					"bouquet": 0.00026000000000000003,
+					"glaze": -0.00039000000000000005,
+					"leaf_band": 0.00015000000000000001,
+					"trim": 0.0001
+				},
+				"picture": 0.00404
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0036 -- the finest tried (1.000) fails at {\"height_m\":0.2} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.81), one pixel 0.00072 m",
-				"REDUCE from rung 0: none holds at 0.0036 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00129 m",
-				"THIN: built/vase does not declare `reads_density`"
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 248.0,
-			"route": "rung0",
-			"search_s": 17.8,
-			"searched": "recheck",
+			"peak_mb": 297.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 9
+			},
+			"search_s": 58.900000000000006,
+			"searched": "search",
 			"surfaces": 4,
-			"surfaces_ceiling": 4,
-			"tolerance": 0.0036018906286507703
+			"surfaces_ceiling": 4
 		},
 		"2": {
 			"budget": 2570,
 			"candidates": [
 				{
-					"cost": 988,
+					"cost": 760,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.01059,
+					"picture": 0.01793,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
 				},
 				{
-					"cost": 668.0,
+					"cost": 756,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.01391,
+					"picture": 0.009680000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.16806999999999994
+					"value": 0.3429999999999999
 				}
 			],
 			"checked_at": 6,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
-				"pixel_m": 0.005187
+				"pixel_m": 0.005173
 			},
 			"error": 0.014407562514603081,
 			"fraction": 1.0,
@@ -163,14 +188,17 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -328,25 +356,32 @@
 				"cost": 988,
 				"coverage_rel": -0.01429,
 				"floor": 0.00404,
-				"part_shift": {},
+				"part_shift": {
+					"bouquet": 0.0018800000000000002,
+					"glaze": 0.00303,
+					"leaf_band": -0.0009000000000000001,
+					"trim": -0.0034400000000000003
+				},
 				"picture": 0.01059
 			},
-			"measured_of": 3,
+			"measured_of": 4,
 			"not_taken": [
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels)) is 1 route(s)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels)) is 1 route(s)",
 				"KIT (its own build at 2 of the band's pixels) held at 760, cheaper than the 988 taken, but a replay of rung 0: KIT is within budget and builds directly",
-				"REDUCE to 0.168 held at 668, cheaper than the 988 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"REDUCE to 0.343 held at 756, cheaper than the 988 taken, but a replay of rung 0: KIT is within budget and builds directly",
+				"REDUCE to its error cap 0.125x the band's (0.871 kept), carried from rung 1 held at 1634, dearer than the 988 taken"
 			],
-			"peak_mb": 248.0,
+			"peak_mb": 252.0,
 			"route": "kit",
-			"search_s": 43.800000000000004,
-			"searched": "recheck",
+			"search_s": 67.4,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "9d79841fc4bbc4355a30bac823e41e3c1eeaf0dfdfe4d9663d0b05c054d4df48"
+		"generator": "1f397f74bfb152bdccb2605f0669ded383143afb944c5409edba00d2fa37e885"
 	}
 }

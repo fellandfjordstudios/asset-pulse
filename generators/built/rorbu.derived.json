@@ -255,6 +255,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/rorbu",
 	"keyed_on": {
 		"moves": [
@@ -310,11 +311,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 2,
 				"trace": "built__rorbu#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 4,
 				"trace": "built__rorbu#2.trace.jsonl"
 			},
 			"3": {
@@ -328,13 +329,24 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "ce22b9950e0f733971b8d8875765c3d9a97f01d3c6541fc9806a0644750d6011",
-		"2": "6aa6f4ed36856f0392e694987c832562f4e5eaa03c4dd7e0db698de747e8c3ce",
+		"1": "e454ea1aa5275a32a011e6fc25c44f7217103f96a1e17b1fb62515c33469b51b",
+		"2": "a3b7d5bab9167560da0d76f7c2e5b015b103a2d65c551045276630b60e76fbe4",
 		"3": "9b5fac82d0e73853e51c38389d06746ee94be26437e3f0b908f47ac8b592dade"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"candidates": [
+				{
+					"cost": 17126,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.004900000000000001,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				}
+			],
 			"checked_at": 43,
 			"drawn": {
 				"excess": 0.5,
@@ -348,34 +360,61 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
 				"cost": 17126,
 				"coverage_rel": 0.00045000000000000004,
 				"floor": 0.004900000000000001,
-				"part_shift": {},
+				"part_shift": {
+					"frame": -0.0036500000000000005,
+					"glass": 0.00011,
+					"interior": 0.0011400000000000002,
+					"iron": -0.00033000000000000005,
+					"roof": 0.00068,
+					"timber": 0.0006500000000000001,
+					"trim": 0.00021,
+					"wall": 0.00099
+				},
 				"picture": 0.004900000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
+			"peak_mb": 1549.0,
 			"route": "kit",
+			"search_s": 3910.5,
+			"searched": "search",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		},
 		"2": {
 			"budget": 9779,
+			"candidates": [
+				{
+					"cost": 4024,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.004900000000000001,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				}
+			],
 			"checked_at": 43,
 			"drawn": {
 				"excess": 0.5,
@@ -389,12 +428,12 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
+					"impostor",
 					"merged",
 					"thin"
 				]
@@ -1442,17 +1481,30 @@
 				"cost": 4024,
 				"coverage_rel": -0.0032900000000000004,
 				"floor": 0.004900000000000001,
-				"part_shift": {},
+				"part_shift": {
+					"frame": -0.007770000000000001,
+					"glass": 0.00045000000000000004,
+					"interior": 0.0046500000000000005,
+					"iron": -0.00042,
+					"roof": 0.00233,
+					"timber": 0.0022400000000000002,
+					"trim": -0.00462,
+					"wall": 0.0024300000000000003
+				},
 				"picture": 0.004900000000000001
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels)) is 1 route(s), and the one looked at did not improve on it",
-				"KIT (its own build at the rung's pixel) held at 8306, dearer than the 4024 taken"
+				"KIT (its own build at the rung's pixel) held at 8306, dearer than the 4024 taken",
+				"KIT (its own build at the rung's pixel), carried from rung 1 held at 17126, dearer than the 4024 taken"
 			],
+			"peak_mb": 1061.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
+			"search_s": 2849.0,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -1479,6 +1531,17 @@
 				}
 			},
 			"budget": 2444,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "impostor",
+					"value": 12
+				}
+			],
 			"checked_at": 43,
 			"draw_calls": 1,
 			"drawn": {
@@ -1500,7 +1563,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
+			"peak_mb": 1061.0,
 			"route": "impostor",
+			"search_s": 432.0,
+			"searched": "search",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -1508,8 +1574,8 @@
 		}
 	},
 	"source": {
-		"children": "200a19c5a50710ce35399f2021e63be04b4e65b74fe3233cb7fdafbf94a4844b",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
-		"generator": "c657ddabed14665475e31e0c60d6e81ed74a6bb8edea409256c4e0033f2beff4"
+		"children": "fbd55520c594615d5eb77c65676084fd1f7c2e206ce4dfca6d0154aa097ec468",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"generator": "ec508f0fb6bc45f7f684a75674576cc388ec3ad1d2bc2697cbb519f87635644f"
 	}
 }

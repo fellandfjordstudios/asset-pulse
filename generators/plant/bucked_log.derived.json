@@ -276,7 +276,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 10,
 				"trace": "plant__bucked-log#1.trace.jsonl"
 			}
 		}
@@ -304,11 +304,11 @@
 					"value": 0.052058
 				}
 			],
-			"cap": 0.00092592592592592,
+			"cap": 0.0009259259259259259,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 7928.0,
+				"cost": 7928,
 				"fraction": 0.3429999999999999
 			},
 			"chains": {
@@ -326,14 +326,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.052 kept)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
+					"merged",
 					"thin",
-					"merged"
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -349,19 +352,22 @@
 				"picture": 0.0048000000000000004
 			},
 			"measured_of": 1,
-			"peak_mb": 1739.0,
+			"not_taken": [
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+			],
+			"peak_mb": 1817.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 4.0
+				"reduce": 4
 			},
-			"search_s": 1149.8,
-			"searched": "recheck",
+			"search_s": 3327.5,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "8d4e9b842bd8d67c018977ff2eec86d222b5d9f85692bab7b7a2b9d12304e19e"
+		"generator": "13703e0ef9ae1391b96ac4d387817c64e8a661ba3a7cfc3a4f4e0db5616bc5d9"
 	}
 }

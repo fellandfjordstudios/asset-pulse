@@ -4,19 +4,19 @@
 			"params": {
 				"extent_m": 0.12
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"extent_m": 0.1
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"extent_m": 0.48
 			},
-			"seed": 314.0,
+			"seed": 314,
 			"short_of": {
 				"end": 6.0,
 				"param": "extent_m",
@@ -28,64 +28,65 @@
 				"cover_fraction": 0.0,
 				"extent_m": 0.12
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"cover_fraction": 1.0,
 				"extent_m": 0.12
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"cushion_diameter_m": 0.02,
 				"extent_m": 0.12
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"cushion_diameter_m": 1.0,
 				"extent_m": 0.12
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"cushion_diameter_sigma": 0.0,
 				"extent_m": 0.12
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"cushion_diameter_sigma": 1.0,
 				"extent_m": 0.12
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"extent_m": 0.12,
 				"mat_depth_m": 0.02
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"extent_m": 0.12,
 				"mat_depth_m": 0.6
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"extent_m": 0.12
 			},
-			"seed": 315.0
+			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "plant/moss-mat",
 	"keyed_on": {
 		"moves": [
@@ -102,23 +103,23 @@
 			"structural",
 			"seed"
 		],
-		"old_key_sets": 12.0,
-		"sampled": 12.0,
-		"sets": 12.0
+		"old_key_sets": 12,
+		"sampled": 12,
+		"sets": 12
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 7.0,
+				"candidates": 1,
 				"trace": "plant__moss-mat#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 7.0,
+				"candidates": 7,
 				"trace": "plant__moss-mat#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 5.0,
+				"candidates": 3,
 				"trace": "plant__moss-mat#3.trace.jsonl"
 			}
 		}
@@ -127,28 +128,19 @@
 		"params": {
 			"extent_m": 0.12
 		},
-		"seed": 314.0
+		"seed": 314
 	},
 	"replay": {
 		"1": "115a5815f743ff98d109893baed70457586eca2e8822b762baaa1625060ea896",
 		"2": "115a5815f743ff98d109893baed70457586eca2e8822b762baaa1625060ea896",
-		"3": "cf08c4717ca541a50fbb056c17d5c0d1aec6e470508356570d52aac06fba069b"
+		"3": "04cbbe134e482832fe19b0af8d3a108feff8e8374ba3ee5fd3f779cefb40c53f"
 	},
 	"rungs": {
 		"1": {
-			"budget": 14224.0,
+			"budget": 14224,
 			"candidates": [
 				{
-					"cost": 2.0,
-					"holds": false,
-					"judge": "impostor",
-					"picture": -1.0,
-					"px_over": 5546.0,
-					"route": "impostor",
-					"value": 32.0
-				},
-				{
-					"cost": 72.0,
+					"cost": 72,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
@@ -157,88 +149,83 @@
 					"value": 1.0
 				}
 			],
-			"checked_at": 12.0,
+			"checked_at": 12,
 			"error": -1.0,
 			"fraction": 1.0,
-			"from_rung": 0.0,
+			"from_rung": 0,
 			"measured": {
-				"cost": 72.0,
+				"cost": 72,
 				"coverage_rel": 0.0,
 				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 0.1 MB) from rung 0: 7777 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.64)",
-				"IMPOSTOR at 8x8 frames (atlas 0.3 MB) from rung 0: 6559 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.67)",
-				"IMPOSTOR at 12x12 frames (atlas 0.6 MB) from rung 0: 6230 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.66)",
-				"IMPOSTOR at 16x16 frames (atlas 1.0 MB) from rung 0: 5789 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.74)",
-				"IMPOSTOR at 24x24 frames (atlas 2.4 MB) from rung 0: 5566 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.62)",
-				"IMPOSTOR at 32x32 frames (atlas 4.2 MB) from rung 0: 5546 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.75)",
+				"IMPOSTOR: skipped by the prior -- judged 8 times for solid subjects at band 1 across 8 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"REDUCE from rung 0 at {\"cover_fraction\":0.0,\"extent_m\":0.12} seed 314: rung 0 has no geometry to derive from",
+				"THIN: plant/moss-mat does not declare `reads_density`"
+			],
+			"peak_mb": 244.0,
+			"route": "rung0",
+			"search_s": 4.4,
+			"searched": "search",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.001851851851851852
+		},
+		"2": {
+			"budget": 3556,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 2,
+					"route": "impostor",
+					"value": 16
+				},
+				{
+					"cost": 72,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
+			"checked_at": 12,
+			"error": -1.0,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 72,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {},
+				"picture": 0.0
+			},
+			"not_taken": [
+				"IMPOSTOR at 6x6 frames (atlas 0.6 MB) from rung 0: 131 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.62)",
+				"IMPOSTOR at 8x8 frames (atlas 1.0 MB) from rung 0: 60 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.65)",
+				"IMPOSTOR at 12x12 frames (atlas 2.4 MB) from rung 0: 18 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.79)",
+				"IMPOSTOR at 16x16 frames (atlas 4.2 MB) from rung 0: 2 pixel(s) differ at {\"extent_m\":0.1} seed 314 (worst 0.53)",
+				"IMPOSTOR at 24x24 frames (atlas 9.4 MB) from rung 0: 323 pixel(s) differ at {\"extent_m\":0.48} seed 314 (worst 0.72)",
+				"IMPOSTOR at 32x32 frames (atlas 16.8 MB) from rung 0: 230 pixel(s) differ at {\"extent_m\":0.48} seed 314 (worst 0.72)",
 				"REDUCE from rung 0 at {\"cover_fraction\":0.0,\"extent_m\":0.12} seed 314: rung 0 has no geometry to derive from",
 				"THIN: plant/moss-mat does not declare `reads_density`"
 			],
 			"peak_mb": 247.0,
 			"route": "rung0",
-			"search_s": 7.2,
+			"search_s": 7.7,
 			"searched": "search",
-			"surfaces": 1.0,
-			"surfaces_ceiling": 1.0,
-			"tolerance": 0.00185185185185185
-		},
-		"2": {
-			"budget": 3556.0,
-			"candidates": [
-				{
-					"cost": 2.0,
-					"holds": false,
-					"judge": "impostor",
-					"picture": -1.0,
-					"px_over": 12.0,
-					"route": "impostor",
-					"value": 24.0
-				},
-				{
-					"cost": 72.0,
-					"holds": true,
-					"judge": "drawn",
-					"picture": 0.0,
-					"px_over": null,
-					"route": "rung0",
-					"value": 1.0
-				}
-			],
-			"checked_at": 12.0,
-			"error": -1.0,
-			"fraction": 1.0,
-			"from_rung": 0.0,
-			"measured": {
-				"cost": 72.0,
-				"coverage_rel": 0.0,
-				"floor": 0.0,
-				"part_shift": {},
-				"picture": 0.0
-			},
-			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 0.1 MB) from rung 0: 136 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.60)",
-				"IMPOSTOR at 8x8 frames (atlas 0.3 MB) from rung 0: 64 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.65)",
-				"IMPOSTOR at 12x12 frames (atlas 0.6 MB) from rung 0: 28 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.64)",
-				"IMPOSTOR at 16x16 frames (atlas 1.0 MB) from rung 0: 25 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.67)",
-				"IMPOSTOR at 24x24 frames (atlas 2.4 MB) from rung 0: 12 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.64)",
-				"IMPOSTOR at 32x32 frames (atlas 4.2 MB) from rung 0: 16 pixel(s) differ at {\"extent_m\":0.12} seed 314 (worst 0.66)",
-				"REDUCE from rung 0 at {\"cover_fraction\":0.0,\"extent_m\":0.12} seed 314: rung 0 has no geometry to derive from",
-				"THIN: plant/moss-mat does not declare `reads_density`"
-			],
-			"peak_mb": 242.0,
-			"route": "rung0",
-			"search_s": 3.9,
-			"searched": "search",
-			"surfaces": 1.0,
-			"surfaces_ceiling": 1.0,
-			"tolerance": 0.0074074074074074
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.007407407407407408
 		},
 		"3": {
-			"atlas_bytes": 2359296.0,
+			"atlas_bytes": 2359296,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -259,50 +246,50 @@
 					"rgba8_mb": 2.36
 				}
 			},
-			"budget": 889.0,
+			"budget": 889,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1.0,
+					"px_over": 5,
 					"route": "impostor",
-					"value": 16.0
+					"value": 8
 				}
 			],
-			"checked_at": 12.0,
-			"draw_calls": 1.0,
+			"checked_at": 12,
+			"draw_calls": 1,
 			"drawn": {
-				"excess": 0.379,
+				"excess": 0.4136,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
-			"from_rung": 0.0,
+			"from_rung": 0,
 			"measured": {
-				"cost": 2.0,
+				"cost": 2,
 				"coverage_rel": 0.0,
 				"floor": 0.0,
 				"part_shift": {},
 				"picture": -1.0
 			},
-			"measured_of": 1.0,
+			"measured_of": 1,
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 242.0,
+			"peak_mb": 244.0,
 			"route": "impostor",
-			"search_s": 5.800000000000001,
+			"search_s": 6.7,
 			"searched": "search",
-			"surfaces": 1.0,
-			"surfaces_ceiling": 1.0,
-			"tiles": 24.0
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tiles": 12
 		}
 	},
 	"source": {
-		"deriver": "8d14ef79db6c95f4f207b8b912fd23b2c672e199f2b0494feb74a6129c0f43e9",
-		"generator": "c3befa15748d25d68969ee3842cf40a12ed16030ec5964aa3f46d7f8d8acfc43"
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"generator": "3c21ac139b7caa92ed1955ebcbafbae12df17355eba2ffbec30c2773fbbb8f77"
 	}
 }

@@ -33,7 +33,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 11,
 				"trace": "built__primus-stove#1.trace.jsonl"
 			}
 		}
@@ -52,19 +52,10 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2.0,
-					"holds": false,
-					"judge": "impostor",
-					"picture": -1.0,
-					"px_over": 115.0,
-					"route": "impostor",
-					"value": 32.0
-				},
-				{
-					"cost": 6914.0,
+					"cost": 6914,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00463,
+					"picture": 0.0046300000000000004,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
@@ -80,9 +71,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.00147350071172076,
+				"cap": 0.0014735007117207695,
 				"chain": "error",
-				"cost": 5116.0
+				"cost": 5116
 			},
 			"chains": {
 				"error": "lost"
@@ -100,14 +91,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.168",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -126,34 +120,24 @@
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 4359 pixel(s) differ at {} seed 314 (worst 0.78)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 4275 pixel(s) differ at {} seed 314 (worst 0.78)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 2058 pixel(s) differ at {} seed 314 (worst 0.69)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 1309 pixel(s) differ at {} seed 314 (worst 0.66)",
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 4376 pixel(s) differ at {} seed 314 (worst 0.78)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 4308 pixel(s) differ at {} seed 314 (worst 0.78)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 2062 pixel(s) differ at {} seed 314 (worst 0.69)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 1327 pixel(s) differ at {} seed 314 (worst 0.66)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 422 pixel(s) differ at {} seed 314 (worst 0.62)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 424 pixel(s) differ at {} seed 314 (worst 0.62)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 115 pixel(s) differ at {} seed 314 (worst 0.70)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 122 pixel(s) differ at {} seed 314 (worst 0.69)",
+				"IMPOSTOR: skipped by the prior -- judged 13 times for solid subjects at band 1 across 13 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE from rung 0 at {} seed 314: element 60's part 'brass' is 17 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 6914, dearer than the 3526 taken"
 			],
-			"peak_mb": 255.0,
+			"peak_mb": 259.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 18.0
+				"reduce": 18
 			},
-			"search_s": 42.6,
-			"searched": "recheck",
+			"search_s": 87.30000000000001,
+			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "e5fd884b76531f16f4fb360e23b29b4651aa67eadc0520c0b4549ddf3ab620d0"
+		"generator": "f8d33f47c37afd82b47ae9937afff8b4331847cc1d383722c7570fd2672d683c"
 	}
 }

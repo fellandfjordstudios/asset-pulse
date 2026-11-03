@@ -1,0 +1,427 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"blade_length_m": 0.012
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"blade_length_m": 0.075
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 0.6
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"height_m": 6.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"crown_aspect": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"crown_aspect": 3.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"widest_height_fraction": 0.15
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"widest_height_fraction": 0.95
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stems": 2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stems": 24
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"basal_radius_fraction": 0.01
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"basal_radius_fraction": 0.6
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"ground_width_fraction": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"ground_width_fraction": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branch_base_fraction": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branch_base_fraction": 0.9
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branch_length_fraction": 0.05
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branch_length_fraction": 0.9
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"splay_deg": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"splay_deg": 80.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"splay_spread_deg": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"splay_spread_deg": 45.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"crown_asymmetry": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"crown_asymmetry": 3.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stem_diameter_m": 0.004
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stem_diameter_m": 0.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stem_diameter_spread": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stem_diameter_spread": 0.8
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stem_taper": 0.05
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"stem_taper": 0.95
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_stem": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_stem": 12
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"twigs_per_branch": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"twigs_per_branch": 10
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branch_angle_deg": 5.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branch_angle_deg": 85.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"leaf_spacing_m": 0.008
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"leaf_spacing_m": 0.1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"leaf_size_spread": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"leaf_size_spread": 0.8
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		}
+	],
+	"effort": "full",
+	"id": "plant/birch-clump",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 42,
+		"sampled": 42,
+		"sets": 42
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "plant__birch-clump#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "73f5ee4de0bf89a6d20a3ee1f1b84985d8360f57cafd377049f21ae477cc346b"
+	},
+	"rungs": {
+		"1": {
+			"budget": 42673,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 2.0,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 36256.0,
+					"route": "impostor",
+					"value": 32.0
+				},
+				{
+					"cost": 20896,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00523,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.837967
+				},
+				{
+					"cost": 15728.0,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.01307,
+					"px_over": 455.0,
+					"route": "thin",
+					"value": 0.7
+				}
+			],
+			"cap": 0.00011574074074074,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 21612.0,
+				"fraction": 0.7
+			},
+			"chains": {
+				"error": "kept"
+			},
+			"checked_at": 42,
+			"drawn": {
+				"excess": 0.25,
+				"judge": "drawn",
+				"pixel_m": 0.005582999999999999
+			},
+			"error": 0.0018518518518518517,
+			"every_piece": true,
+			"fraction": 0.837967,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.838 kept)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"thin",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 20896,
+				"coverage_rel": -0.005450000000000001,
+				"floor": 0.00446,
+				"part_shift": {
+					"bark": -0.0054,
+					"leaf": 0.0054
+				},
+				"picture": 0.00523
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 63977 pixel(s) differ at {} seed 314 (worst 0.87)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 61381 pixel(s) differ at {} seed 314 (worst 0.88)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 56592 pixel(s) differ at {} seed 314 (worst 0.90)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 50732 pixel(s) differ at {} seed 314 (worst 0.86)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 42832 pixel(s) differ at {} seed 314 (worst 0.83)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 36256 pixel(s) differ at {} seed 314 (worst 0.83)",
+				"CROWN: (c) a crown with no clusters: 9 of 9 placed foliage elements carry no cluster -- a commission defect of plant/birch-clump, not a rung to hand-build (decisions/D-derive-3)",
+				"CROWN: (d) foliage not told from wood: 9 placed element(s) hold both foliage and wood -- a commission defect of plant/birch-clump, not a rung to hand-build (decisions/D-derive-3)",
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'bark' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 8 more groups)",
+				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 455 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.91), one pixel 0.00558 m",
+				"MERGED: not searched -- the look past the first that held (REDUCE (every piece) to its error cap 0.0625x the band's (0.838 kept)) is 1 route(s), and the one looked at did not improve on it"
+			],
+			"peak_mb": 1592.0,
+			"route": "reduce",
+			"routes": {
+				"carry": 9.0,
+				"reduce": 9.0
+			},
+			"search_s": 1154.3,
+			"searched": "recheck",
+			"surfaces": 2,
+			"surfaces_ceiling": 2
+		}
+	},
+	"source": {
+		"children": "a5a304d14a08f6c7273904771d0a8dcd6d369c58ba9ed231721d4fa210080a08",
+		"deriver": "c3cb2850fbd96d6f4923048674d30de28d03fa56272209c561861cd2018442e3",
+		"generator": "e3a74cde783c0bf18675e69feaf54f37812d56e6bf46a560726b62d951810ce5"
+	}
+}

@@ -68,11 +68,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 8,
 				"trace": "built__vase-simple#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 10,
 				"trace": "built__vase-simple#2.trace.jsonl"
 			}
 		}
@@ -102,9 +102,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.00363215861712682,
+				"cap": 0.0036321586171268274,
 				"chain": "error",
-				"cost": 598.0
+				"cost": 598
 			},
 			"chains": {
 				"error": "lost"
@@ -121,14 +121,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.240",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -139,13 +142,16 @@
 				"picture": 0.0039900000000000005
 			},
 			"measured_of": 1,
-			"peak_mb": 301.0,
+			"not_taken": [
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+			],
+			"peak_mb": 305.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5.0
+				"reduce": 5
 			},
-			"search_s": 55.1,
-			"searched": "recheck",
+			"search_s": 85.2,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -168,8 +174,8 @@
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 362.0,
-				"fraction": 0.11764899999999996
+				"cost": 490,
+				"fraction": 0.24009999999999992
 			},
 			"chains": {
 				"error": "kept"
@@ -186,7 +192,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 1.0x the band's (0.190 kept)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -194,6 +200,9 @@
 					"impostor",
 					"merged",
 					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -204,19 +213,23 @@
 				"picture": 0.020450000000000003
 			},
 			"measured_of": 1,
-			"peak_mb": 252.0,
+			"not_taken": [
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"CARRIED from rung 1, REDUCE to 0.240, carried from rung 1: none holds at 0.0145 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00518 m; coverage changes -0.1667 against 0.0727 allowed (a one-pixel shrink all round)"
+			],
+			"peak_mb": 254.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5.0
+				"reduce": 5
 			},
-			"search_s": 26.5,
-			"searched": "recheck",
+			"search_s": 36.0,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "6766554dc14379eca2fbe10927413b304ee5d1434fc879ec2851731cfa61df38"
+		"generator": "68f92aac2b05a01bed120292aa45884a10121e211ac90c29808ed421e051541a"
 	}
 }
