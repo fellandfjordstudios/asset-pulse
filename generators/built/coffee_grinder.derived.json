@@ -112,9 +112,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0025 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 22 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00130 m",
 				"THIN: built/coffee-grinder does not declare `reads_density`"
 			],
-			"peak_mb": 243.0,
+			"peak_mb": 239.0,
 			"route": "rung0",
-			"search_s": 15.600000000000001,
+			"search_s": 14.0,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
@@ -175,9 +175,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 244.0,
+			"peak_mb": 241.0,
 			"route": "impostor",
-			"search_s": 156.0,
+			"search_s": 161.60000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -185,7 +185,7 @@
 		}
 	},
 	"source": {
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "31aadc0b435065abaaedff02166934f87c10262306006cab53bde1caa7da09d1"
 	}
 }

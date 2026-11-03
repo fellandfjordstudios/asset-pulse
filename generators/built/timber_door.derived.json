@@ -191,9 +191,9 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.700 held at 582, cheaper than the 622 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 324.0,
+			"peak_mb": 320.0,
 			"route": "kit",
-			"search_s": 241.20000000000002,
+			"search_s": 237.8,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -600,9 +600,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.01837 m",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 324.0,
+			"peak_mb": 268.0,
 			"route": "kit",
-			"search_s": 133.9,
+			"search_s": 136.9,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -1009,16 +1009,16 @@
 				"KIT (its own build at 4 of the band's pixels) held at 218, the same cost as the route taken, found first",
 				"REDUCE (every piece) to 0.343 held at 214, cheaper than the 218 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 324.0,
+			"peak_mb": 268.0,
 			"route": "kit",
-			"search_s": 87.7,
+			"search_s": 86.30000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "40ac70283009aa2acf6fd2508b356547aca61e0b608767d620f3a700aca45a1f"
 	}
 }

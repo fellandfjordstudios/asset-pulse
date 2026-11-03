@@ -263,12 +263,12 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"head_length_over_height\":0.26} seed 314: candidate emits 2 opposing duplicate faces",
 				"REDUCE from rung 0 at {} seed 314: part 'teeth' is 32 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)"
 			],
-			"peak_mb": 799.0,
+			"peak_mb": 796.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 39.0
 			},
-			"search_s": 702.7,
+			"search_s": 697.5,
 			"searched": "recheck",
 			"surfaces": 17,
 			"surfaces_ceiling": 17
@@ -863,12 +863,12 @@
 				"REDUCE from rung 0 at {} seed 314: part 'teeth' is 32 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"REDUCE (every piece) to 0.490, carried from rung 1 held at 7796, the same cost as the route taken, found first"
 			],
-			"peak_mb": 408.0,
+			"peak_mb": 406.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 39.0
 			},
-			"search_s": 3276.1000000000004,
+			"search_s": 3229.5,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 1
@@ -928,9 +928,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 449.0,
+			"peak_mb": 446.0,
 			"route": "impostor",
-			"search_s": 274.40000000000003,
+			"search_s": 289.6,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -939,7 +939,7 @@
 		}
 	},
 	"source": {
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "9032e2b8686e3d2482fa123d89946c778c9c425f8e534e6a72aba9210778bb3f"
 	}
 }

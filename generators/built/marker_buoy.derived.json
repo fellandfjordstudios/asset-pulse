@@ -134,9 +134,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"extent_m\":1.8} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.00326 m; the error ladder: none holds at 0.0019",
 				"THIN: built/marker-buoy does not declare `reads_density`"
 			],
-			"peak_mb": 263.0,
+			"peak_mb": 259.0,
 			"route": "rung0",
-			"search_s": 42.0,
+			"search_s": 42.400000000000006,
 			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9,
@@ -197,9 +197,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 263.0,
+			"peak_mb": 260.0,
 			"route": "impostor",
-			"search_s": 65.3,
+			"search_s": 63.800000000000004,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -208,7 +208,7 @@
 		}
 	},
 	"source": {
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "17a940424a5c65fa52838f1cec608dd2486669c926dce4db22bc5aff2eebc113"
 	}
 }

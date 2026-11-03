@@ -152,13 +152,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'fodder' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 330.0,
+			"peak_mb": 326.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 2,
 				"reduce": 1
 			},
-			"search_s": 1673.7,
+			"search_s": 1674.3000000000002,
 			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -440,9 +440,9 @@
 				"CARRIED from rung 1, REDUCE (every piece) to 0.240, carried from rung 1: none holds at 0.0141 -- the finest tried (1.000) fails at {\"thickness_m\":0.12} seed 314: the picture changes at the drawn size: 70 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.00520 m; coverage changes -0.1366 against 0.0718 allowed (a one-pixel shrink all round); part 'fodder' changes its share of the picture by -0.0752 against 0.0718 allowed (its colour's share of the subject)",
 				"BUDGET: the cheapest derivation that holds the picture costs 15410 (5.96x), over rung 2's budget 2587 x 1.5 = 3880 (made, 0.37 m)"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 265.0,
 			"route": "kit",
-			"search_s": 1057.8,
+			"search_s": 1032.9,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
@@ -450,7 +450,7 @@
 		}
 	},
 	"source": {
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "2436996fbfbcbe463afb7e11c9414e0ed77bda75cd9555e4ff9f8b085fb9b26c"
 	}
 }

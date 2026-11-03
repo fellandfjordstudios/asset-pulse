@@ -141,19 +141,19 @@
 				"REDUCE from rung 0 at {} seed 314: element 60's part 'brass' is 17 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"KIT (its own build at the rung's pixel) held at 6914, dearer than the 3526 taken"
 			],
-			"peak_mb": 259.0,
+			"peak_mb": 255.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 43.6,
+			"search_s": 42.6,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		}
 	},
 	"source": {
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "e5fd884b76531f16f4fb360e23b29b4651aa67eadc0520c0b4549ddf3ab620d0"
 	}
 }

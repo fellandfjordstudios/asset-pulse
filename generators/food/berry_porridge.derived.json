@@ -119,9 +119,9 @@
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED (its parts at their own rungs, joined) held at 23507, dearer than the 7845 taken"
 			],
-			"peak_mb": 310.0,
+			"peak_mb": 307.0,
 			"route": "kit",
-			"search_s": 492.20000000000005,
+			"search_s": 493.40000000000003,
 			"searched": "search",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -129,7 +129,7 @@
 	},
 	"source": {
 		"children": "387e8ccb0bd3972569f25d0bc56648b29d44ef15e0ce8846af271d34fd8a8753",
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "dd42c1d88417270d16a6e9b646e54e3791fc3ca73ba53855e1ad82da8d6fbc54"
 	}
 }

@@ -74,7 +74,7 @@
 	"replay": {
 		"1": "b3a2cd15c30ab66a5d819370ce884cd3d0dd65b431f99f5230e9caed7f22b527",
 		"2": "969eb15e43158dd83b610cbcc9c9f51bc23f06668297d187d0a786a60faa4c53",
-		"3": "8121a9b0d865e042dacd58c9163e6fe55b16c248a0aa8a17e9a708c6840bf0bb"
+		"3": "fc9dbee02cc20f600971c7ac0b0e24735f7ce674ce2940c0255d454b331dd0ed"
 	},
 	"rungs": {
 		"1": {
@@ -136,7 +136,7 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00357 m",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 147 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00357 m"
 			],
-			"peak_mb": 260.0,
+			"peak_mb": 256.0,
 			"route": "rung0",
 			"search_s": 52.6,
 			"searched": "recheck",
@@ -366,12 +366,12 @@
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1176, cover 1.00: 8 pixel(s) differ at the drawn size at {} seed 314 (worst 0.52)",
 				"THIN: none holds at 0.0074 -- the finest tried (0.700) fails at {\"housing_open\":0.0} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.01037 m"
 			],
-			"peak_mb": 275.0,
+			"peak_mb": 271.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 160.0
 			},
-			"search_s": 537.4,
+			"search_s": 536.4,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
@@ -576,7 +576,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 1806,
 				"coverage_rel": -0.004030000000000001,
@@ -592,16 +591,16 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping bolt 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.343 held at 2622, dearer than the 1806 taken"
 			],
-			"peak_mb": 259.0,
+			"peak_mb": 255.0,
 			"route": "kit",
-			"search_s": 274.90000000000003,
+			"search_s": 78.4,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "bccd6a22448bc1d6aae2669466619738343f2f4c9149f4ef4c2d0e631a9f547a"
 	}
 }

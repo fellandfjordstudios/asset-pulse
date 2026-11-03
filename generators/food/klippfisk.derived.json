@@ -114,12 +114,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'flesh' is 46 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 342.0,
+			"peak_mb": 338.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 173
 			},
-			"search_s": 679.5,
+			"search_s": 690.5,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -179,9 +179,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 274.0,
+			"peak_mb": 270.0,
 			"route": "impostor",
-			"search_s": 287.7,
+			"search_s": 280.8,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -190,7 +190,7 @@
 		}
 	},
 	"source": {
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "83cae152123d5029a95eda0da19e938f779772dcf99409dbe216681e83957b86"
 	}
 }

@@ -109,9 +109,9 @@
 				"KIT: none holds at 0.0037 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00129 m",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"peak_mb": 267.0,
+			"peak_mb": 264.0,
 			"route": "merged",
-			"search_s": 22.900000000000002,
+			"search_s": 23.900000000000002,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -227,9 +227,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 2550, the same cost as the route taken, found first"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 243.0,
 			"route": "merged",
-			"search_s": 111.0,
+			"search_s": 108.4,
 			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
@@ -237,7 +237,7 @@
 	},
 	"source": {
 		"children": "d4a8d60cee69daf08d9b0f5c8e2a2e6a14f180308bab729f58abff178412c5a9",
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "9573d00a6f0d0c49ec646f1410cf17b1c852bcc8b849541f1640adfde5ce0510"
 	}
 }

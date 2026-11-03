@@ -157,16 +157,16 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"basal_diameter_m\":0.002} seed 314: coverage changes -0.0442 against 0.0232 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0019",
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 303.0,
+			"peak_mb": 301.0,
 			"route": "kit",
-			"search_s": 69.4,
+			"search_s": 68.7,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "02eea89deeb0579b63bf02282fd2c370c0a2e69aa21c7242c88a22adc2a5ae3b"
 	}
 }

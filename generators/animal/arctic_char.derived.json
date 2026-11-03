@@ -140,9 +140,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0021 -- the finest tried (0.700) fails at {\"cooked\":1} seed 314: candidate emits 3 opposing duplicate faces; the error ladder: none holds at 0.0021",
 				"THIN: animal/arctic-char does not declare `reads_density`"
 			],
-			"peak_mb": 292.0,
+			"peak_mb": 287.0,
 			"route": "rung0",
-			"search_s": 140.3,
+			"search_s": 140.5,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
@@ -460,19 +460,19 @@
 				"KIT at 2 pixels: none holds at 0.0085 -- the finest tried (1.000) fails at {\"cooked\":1} seed 314: the picture changes at the drawn size: 11 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00516 m",
 				"REDUCE from rung 0 at {\"cooked\":1} seed 314: element 0's part 'body' is 123 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 321.0,
+			"peak_mb": 309.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 26.0
 			},
-			"search_s": 736.6,
+			"search_s": 733.7,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "3ab4ad8f0708e68d875df50422288706e9a427f48696220d728a5ecfc1d88d81"
 	}
 }

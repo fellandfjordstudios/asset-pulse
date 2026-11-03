@@ -222,12 +222,12 @@
 			"not_taken": [
 				"KIT: none holds at 0.0040 -- the finest tried (1.000) fails at {\"span_m\":2.0} seed 314: the picture changes at the drawn size: 2732 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.88), one pixel 0.00803 m; coverage changes -0.0502 against 0.0369 allowed (a one-pixel shrink all round)"
 			],
-			"peak_mb": 385.0,
+			"peak_mb": 381.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 6.0
 			},
-			"search_s": 65.4,
+			"search_s": 65.3,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -720,12 +720,12 @@
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"pitch\":1} seed 314: part 'panel' changes its share of the picture by +0.1377 against 0.0450 allowed (its colour's share of the subject); part 'hem' changes its share of the picture by -0.1377 against 0.0450 allowed (its colour's share of the subject)",
 				"REDUCE to its error cap 0.0675x the band's (0.503 kept), carried from rung 1 held at 200, dearer than the 150 taken"
 			],
-			"peak_mb": 352.0,
+			"peak_mb": 304.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 6.0
 			},
-			"search_s": 88.7,
+			"search_s": 87.5,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -785,9 +785,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 352.0,
+			"peak_mb": 274.0,
 			"route": "impostor",
-			"search_s": 26.8,
+			"search_s": 26.700000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -795,7 +795,7 @@
 		}
 	},
 	"source": {
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "c8e38b13b3f8126ac2c083b0fe7e8347cf1f25fb8fd7ade6f36ac5412576cf0b"
 	}
 }

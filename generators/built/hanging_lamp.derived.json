@@ -88,9 +88,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0022 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 201 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.75), one pixel 0.00129 m",
 				"THIN: built/hanging-lamp does not declare `reads_density`"
 			],
-			"peak_mb": 242.0,
+			"peak_mb": 238.0,
 			"route": "rung0",
-			"search_s": 5.0,
+			"search_s": 5.300000000000001,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
@@ -188,16 +188,16 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.240 held at 1850, cheaper than the 4248 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 242.0,
+			"peak_mb": 238.0,
 			"route": "kit",
-			"search_s": 89.60000000000001,
+			"search_s": 89.2,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "da7367dbf47313f4f2d007f7d1f6a6b9ac05bd998f67f50882e63ccf684f8f51",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "e6a76b0fa741ca8bb84bc7bedb15b58c6a9e92837f86d93d1b2328eb8b0b22d6"
 	}
 }
