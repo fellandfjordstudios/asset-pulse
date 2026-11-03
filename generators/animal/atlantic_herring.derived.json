@@ -54,7 +54,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 10,
 				"trace": "animal__atlantic-herring#1.trace.jsonl"
 			}
 		}
@@ -80,7 +80,7 @@
 					"value": {}
 				},
 				{
-					"cost": 1396.0,
+					"cost": 1396,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -91,9 +91,9 @@
 			],
 			"checked_at": 6,
 			"drawn": {
-				"excess": 0.5,
+				"excess": 0.4844,
 				"judge": "drawn",
-				"pixel_m": 0.001297
+				"pixel_m": 0.001291
 			},
 			"error": 0.004052126957232116,
 			"fraction": 1.0,
@@ -102,39 +102,50 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
+					"merged",
 					"thin",
-					"merged"
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
 				"cost": 2598,
 				"coverage_rel": -0.004770000000000001,
 				"floor": 0.00398,
-				"part_shift": {},
+				"part_shift": {
+					"back": 0.0006000000000000001,
+					"belly": 0.00071,
+					"eye": -0.00109,
+					"fin": -0.0014600000000000001,
+					"flank": 0.0014900000000000002,
+					"gill": 0.00016
+				},
 				"picture": 0.00398
 			},
 			"measured_of": 2,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 18's part 'fin' is 19 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.240 held at 1396, cheaper than the 2598 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 258.0,
+			"peak_mb": 276.0,
 			"route": "kit",
-			"search_s": 64.7,
-			"searched": "recheck",
+			"search_s": 122.5,
+			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "abf7a263594a0201dc5ba018882724af17fd71d2ab205c9bfc3f518450a39adf"
+		"generator": "eb1df50c81d9e2cd3639d9f04758ee96e01af02c7ccd1bcae32af5ecb25ac262"
 	}
 }

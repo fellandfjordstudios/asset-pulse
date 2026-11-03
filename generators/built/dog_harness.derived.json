@@ -66,11 +66,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 20,
 				"trace": "built__dog-harness#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 34,
 				"trace": "built__dog-harness#2.trace.jsonl"
 			},
 			"3": {
@@ -95,11 +95,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 94582.0,
+					"cost": 94582,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00404,
-					"px_over": 1.0,
+					"px_over": 1,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -113,6 +113,14 @@
 					"value": 0.48999999999999994
 				}
 			],
+			"chain_beaten": {
+				"cap": 0.000462962962962963,
+				"chain": "error",
+				"cost": 69132
+			},
+			"chains": {
+				"error": "lost"
+			},
 			"checked_at": 8,
 			"drawn": {
 				"excess": 0.5,
@@ -125,14 +133,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -152,15 +163,16 @@
 			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00177 m",
-				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 1 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)"
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 1 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 699.0,
+			"peak_mb": 953.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 9242.0
+				"reduce": 9242
 			},
-			"search_s": 606.0,
-			"searched": "recheck",
+			"search_s": 1143.8,
+			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		},
@@ -180,20 +192,20 @@
 					}
 				},
 				{
-					"cost": 58546.0,
+					"cost": 41112,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00405,
+					"picture": 0.004050000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.48999999999999994
+					"value": 0.409474
 				}
 			],
 			"checked_at": 8,
 			"colour": {
 				"judge": "each part's share held to keep 1's at the band",
-				"tolerance": 0.0294,
-				"worst": 0.0169
+				"tolerance": 0.029400000000000003,
+				"worst": 0.016900000000000002
 			},
 			"drawn": {
 				"below_failing_keep_1": true,
@@ -215,7 +227,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping fuzz 0.031, stitch 0.031, each kept piece covering 1.00x)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -223,6 +235,9 @@
 					"impostor",
 					"merged",
 					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -431,18 +446,20 @@
 				"part_shift": {},
 				"picture": 0.004050000000000001
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0268 against 0.0228 a derivation may change (its error read as a change of size)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00709 m",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 1 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fuzz 0.031, stitch 0.031, each kept piece covering 1.00x)) is 1 route(s), and the one looked at did not improve on it",
-				"REDUCE to 0.490 held at 58546, dearer than the 9996 taken"
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fuzz 0.031, stitch 0.031, each kept piece covering 1.00x)) is 1 route(s), and the one looked at did not improve on it",
+				"REDUCE to its error cap 0.125x the band's (0.409 kept) held at 41112, dearer than the 9996 taken",
+				"REDUCE to 0.490, carried from rung 1 held at 58546, dearer than the 9996 taken"
 			],
-			"peak_mb": 532.0,
+			"peak_mb": 898.0,
 			"route": "kit",
-			"search_s": 2669.7000000000003,
-			"searched": "recheck",
+			"search_s": 2623.9,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		},
@@ -472,12 +489,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 3,
 					"route": "impostor",
-					"value": 12
+					"value": 8
 				}
 			],
 			"checked_at": 8,
@@ -501,10 +518,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 566.0,
+			"peak_mb": 858.0,
 			"route": "impostor",
-			"search_s": 207.3,
-			"searched": "recheck",
+			"search_s": 147.20000000000002,
+			"searched": "search",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -513,6 +530,6 @@
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "4dcb368c13af0f2a8605cb0bee1b6ce54b3863a1d55ce55736cd22b956a290a7"
+		"generator": "d592d5efdedc2888f387ba54c832c028b018d661493efa94402779b625ac64b2"
 	}
 }

@@ -183,9 +183,9 @@
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to its error cap 0.125x the band's (0.179 kept) held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 359.0,
+			"peak_mb": 356.0,
 			"route": "kit",
-			"search_s": 121.10000000000001,
+			"search_s": 179.0,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -249,16 +249,16 @@
 				"REDUCE to its error cap 0.0625x the band's (0.179 kept) held at 228, the same cost as the route taken, found first",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 316.0,
 			"route": "kit",
-			"search_s": 35.4,
+			"search_s": 52.2,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "8492dddd40c9d305dc85b5b43d4f47cab2aee518898129520513c8a8b82ef81e"
 	}
 }

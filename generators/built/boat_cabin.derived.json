@@ -138,11 +138,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 17,
 				"trace": "built__boat-cabin#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 51,
 				"trace": "built__boat-cabin#2.trace.jsonl"
 			}
 		}
@@ -160,15 +160,6 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2.0,
-					"holds": false,
-					"judge": "impostor",
-					"picture": -1.0,
-					"px_over": 10841.0,
-					"route": "impostor",
-					"value": 32.0
-				},
-				{
 					"cost": 1700,
 					"holds": true,
 					"judge": "drawn",
@@ -182,19 +173,19 @@
 					}
 				},
 				{
-					"cost": 2566.0,
-					"holds": false,
+					"cost": 3220,
+					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00439,
-					"px_over": 2.0,
+					"picture": 0.0041400000000000005,
+					"px_over": null,
 					"route": "reduce",
-					"value": 0.7
+					"value": 0.9919899999999999
 				}
 			],
 			"checked_at": 18,
 			"drawn": {
 				"excess": 0.4219,
-				"gap": 0.052,
+				"gap": 0.052000000000000005,
 				"judge": "drawn",
 				"pixel_m": 0.0038889999999999997
 			},
@@ -209,14 +200,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -226,28 +220,18 @@
 				"part_shift": {},
 				"picture": 0.00491
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0 at 2x its pixel: 42004 pixel(s) differ at {} seed 314 (worst 0.69)",
-				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 36010 pixel(s) differ at {} seed 314 (worst 0.69)",
-				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0 at 2x its pixel: 30214 pixel(s) differ at {} seed 314 (worst 0.72)",
-				"IMPOSTOR at 16x16 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 17309 pixel(s) differ at {} seed 314 (worst 0.77)",
-				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0: 41992 pixel(s) differ at {} seed 314 (worst 0.69)",
-				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0: 36172 pixel(s) differ at {} seed 314 (worst 0.69)",
-				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0: 30214 pixel(s) differ at {} seed 314 (worst 0.72)",
-				"IMPOSTOR at 16x16 frames (atlas 9.4 MB) from rung 0: 17290 pixel(s) differ at {} seed 314 (worst 0.77)",
-				"IMPOSTOR at 24x24 frames (atlas 21.2 MB) from rung 0 at 2x its pixel: 11553 pixel(s) differ at {} seed 314 (worst 0.82)",
-				"IMPOSTOR at 24x24 frames (atlas 21.2 MB) from rung 0: 11468 pixel(s) differ at {} seed 314 (worst 0.82)",
-				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 10942 pixel(s) differ at {} seed 314 (worst 0.69)",
-				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0: 10841 pixel(s) differ at {} seed 314 (worst 0.69)",
-				"REDUCE from rung 0 at {} seed 314: element 0's part 'ends' is 19 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 4 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"beam_m\":3.8} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00607 m",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)) is 1 route(s), and the one looked at did not improve on it"
+				"IMPOSTOR: skipped by the prior -- judged 24 times for solid subjects at band 1 across 24 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'sides' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 4 more groups)",
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)) is 1 route(s), and the one looked at did not improve on it",
+				"REDUCE (every piece) to its error cap 0.25x the band's (0.992 kept) held at 3220, dearer than the 1700 taken"
 			],
-			"peak_mb": 351.0,
+			"peak_mb": 1509.0,
 			"route": "kit",
-			"search_s": 676.4000000000001,
-			"searched": "recheck",
+			"search_s": 3531.2000000000003,
+			"searched": "search",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
 		},
@@ -255,13 +239,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 86.0,
+					"px_over": 86,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
 					"cost": 1478,
@@ -277,13 +261,13 @@
 					}
 				},
 				{
-					"cost": 2336.0,
-					"holds": false,
+					"cost": 1896,
+					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00468,
-					"px_over": 5.0,
+					"picture": 0.0044800000000000005,
+					"px_over": null,
 					"route": "reduce",
-					"value": 0.7
+					"value": 0.584104
 				}
 			],
 			"checked_at": 18,
@@ -304,7 +288,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping fastening 0.031, trim 0.031, batten 0.031)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -312,6 +296,9 @@
 					"impostor",
 					"merged",
 					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -760,7 +747,7 @@
 				"part_shift": {},
 				"picture": 0.00491
 			},
-			"measured_of": 2,
+			"measured_of": 4,
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0 at 8x its pixel: 2276 pixel(s) differ at {} seed 314 (worst 0.68)",
 				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0 at 8x its pixel: 1280 pixel(s) differ at {} seed 314 (worst 0.58)",
@@ -780,22 +767,24 @@
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0 at 8x its pixel: 86 pixel(s) differ at {} seed 314 (worst 0.57)",
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0 at 4x its pixel: 88 pixel(s) differ at {} seed 314 (worst 0.57)",
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0: 87 pixel(s) differ at {} seed 314 (worst 0.62)",
-				"REDUCE from rung 0 at {} seed 314: element 0's part 'ends' is 19 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 4 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"length_m\":4.0} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.73), one pixel 0.03037 m; part 'joinery' changes its share of the picture by -0.0514 against 0.0454 allowed (its colour's share of the subject)",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping fastening 0.031, trim 0.031, batten 0.031)) is 1 route(s), and the one looked at did not improve on it",
-				"KIT (its own build at the rung's pixel, keeping fastening 0.031, batten 0.031, trim 0.031) held at 1558, dearer than the 1478 taken"
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'sides' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 4 more groups)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping fastening 0.031, trim 0.031, batten 0.031)) is 1 route(s), and the one looked at did not improve on it",
+				"KIT (its own build at the rung's pixel, keeping fastening 0.031, batten 0.031, trim 0.031) held at 1558, dearer than the 1478 taken",
+				"REDUCE (every piece) to its error cap 0.25x the band's (0.584 kept) held at 1896, dearer than the 1478 taken",
+				"KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700), carried from rung 1 held at 1700, dearer than the 1478 taken"
 			],
-			"peak_mb": 286.0,
+			"peak_mb": 362.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 1487.4,
-			"searched": "recheck",
+			"search_s": 2583.1000000000004,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "fe85d2b6490872962a7736aa1e5f60a6ee850e2bcae6203be347bdbcf6e5407b"
+		"generator": "b1da9acf4da66bc359aea571838625c0d2d4ada9b7f724f22f40e5b8cac287a7"
 	}
 }

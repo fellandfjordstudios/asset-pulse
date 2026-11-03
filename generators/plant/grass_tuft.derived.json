@@ -198,9 +198,9 @@
 				"REDUCE from rung 0: none holds at 0.0050 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 280 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00090 m; coverage changes -0.2324 against 0.0385 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0050",
 				"THIN: plant/grass-tuft does not declare `reads_density`"
 			],
-			"peak_mb": 278.0,
+			"peak_mb": 275.0,
 			"route": "rung0",
-			"search_s": 18.3,
+			"search_s": 27.8,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -208,7 +208,7 @@
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "aaf3952b7334001fdb5036d9b4db72fa4eddef8ff2131384dddb9a65a96deb6a"
 	}
 }

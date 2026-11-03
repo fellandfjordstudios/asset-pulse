@@ -234,7 +234,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 9,
+				"candidates": 1,
 				"trace": "plant__dock-rosette#1.trace.jsonl"
 			}
 		}
@@ -262,11 +262,11 @@
 					"value": 0.662755
 				}
 			],
-			"cap": 0.000462962962962963,
+			"cap": 0.00046296296296296,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 12020,
+				"cost": 12020.0,
 				"fraction": 0.7
 			},
 			"chains": {
@@ -285,7 +285,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.663 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -315,20 +315,20 @@
 				"REDUCE from rung 0 at {} seed 314: element 16's part 'stalk' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
 				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1454.0,
+			"peak_mb": 1391.0,
 			"route": "reduce",
 			"routes": {
-				"carry": 16,
-				"reduce": 22
+				"carry": 16.0,
+				"reduce": 22.0
 			},
-			"search_s": 1801.6000000000001,
-			"searched": "search",
+			"search_s": 1089.7,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "104b6371287c6fa1c6cae6701dc1e21a040ceeb5311f44fa6458bf4fb255128d"
 	}
 }

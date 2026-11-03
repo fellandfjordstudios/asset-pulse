@@ -19,11 +19,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 17,
 				"trace": "built__hanging-lamp#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 27,
 				"trace": "built__hanging-lamp#2.trace.jsonl"
 			}
 		}
@@ -33,68 +33,97 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "d5ed4b51cea722de89ccdf242954541c360c0ddd46ba2177a061008832c8f627",
+		"1": "5b19fab03ac99c8c7f800f8c51769b1d3021bd689b65304f7ed714ca5eaa8296",
 		"2": "1df2754ebe08ca1277790a747f1c097e70bd0a9237793b63052c58e8aacbac43"
 	},
 	"rungs": {
 		"1": {
 			"budget": 26371,
+			"cancel_across": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 6416.0,
+					"cost": -1,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.00398,
-					"px_over": 2.0,
+					"picture": -1.0,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
-				},
-				{
-					"cost": 5264.0,
-					"holds": false,
-					"judge": "drawn",
-					"picture": 0.01195,
-					"px_over": 201.0,
-					"route": "reduce",
 					"value": 0.7
 				},
 				{
-					"cost": 8686,
+					"cost": 8338,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0,
+					"picture": 0.00387,
 					"px_over": null,
-					"route": "rung0",
-					"value": 1.0
+					"route": "reduce",
+					"value": 0.959936
 				}
 			],
+			"cap": 0.0005615546019471279,
+			"chain": "error",
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 1,
-			"error": -1.0,
-			"fraction": 1.0,
+			"drawn": {
+				"excess": 0.3125,
+				"judge": "drawn",
+				"pixel_m": 0.001291
+			},
+			"error": 0.0022462184077885116,
+			"every_piece": true,
+			"fraction": 0.959936,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.960 kept)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"merged",
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
+			},
 			"measured": {
-				"cost": 8686,
+				"cost": 8338,
 				"coverage_rel": 0.0,
 				"floor": 0.00398,
-				"part_shift": {},
-				"picture": 0.0
+				"part_shift": {
+					"brass": -2e-05,
+					"chimney": 0.0,
+					"enamel": 3.0000000000000004e-05,
+					"iron": 0.0,
+					"rim": 0.0,
+					"wick": 0.0,
+					"wick_tip": 0.0
+				},
+				"picture": 0.00387
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
-				"KIT: none holds at 0.0022 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00129 m",
-				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 89 pixel(s) differ at the drawn size at {} seed 314 (worst 0.89)",
+				"IMPOSTOR: skipped by the prior -- judged 18 times for solid subjects at band 1 across 18 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"KIT: none holds at 0.0022 -- the finest tried (1.000) fails at {} seed 314: candidate emits 5 opposing duplicate faces; the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00129 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: candidate emits 5 opposing duplicate faces",
 				"REDUCE from rung 0 at {} seed 314: element 2's part 'brass' is 103 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0022 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 201 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.75), one pixel 0.00129 m",
-				"THIN: built/hanging-lamp does not declare `reads_density`"
+				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 1 across 5 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 238.0,
-			"route": "rung0",
-			"search_s": 5.300000000000001,
-			"searched": "recheck",
+			"peak_mb": 273.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 7
+			},
+			"search_s": 58.800000000000004,
+			"searched": "search",
 			"surfaces": 7,
-			"surfaces_ceiling": 7,
-			"tolerance": 0.0022462184077885116
+			"surfaces_ceiling": 7
 		},
 		"2": {
 			"budget": 6592,
@@ -109,7 +138,7 @@
 					"value": {}
 				},
 				{
-					"cost": 1850.0,
+					"cost": 1850,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.01743,
@@ -122,7 +151,7 @@
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
-				"pixel_m": 0.005187
+				"pixel_m": 0.005166
 			},
 			"error": 0.008984873631154047,
 			"fraction": 1.0,
@@ -131,7 +160,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -139,6 +168,9 @@
 					"impostor",
 					"merged",
 					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -176,28 +208,38 @@
 				"cost": 4248,
 				"coverage_rel": -0.01667,
 				"floor": 0.00398,
-				"part_shift": {},
+				"part_shift": {
+					"brass": -0.00036,
+					"chimney": -0.00133,
+					"enamel": 0.004710000000000001,
+					"iron": -0.00034,
+					"rim": -0.00021,
+					"wick": -0.00017,
+					"wick_tip": 0.0
+				},
 				"picture": 0.0053100000000000005
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
 				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
 				"KIT at 2 pixels: none holds at 0.0090 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0322 against 0.0258 a derivation may change (its error read as a change of size)",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 4 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
 				"REDUCE from rung 0 at {} seed 314: element 2's part 'brass' is 103 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE (every piece) to 0.240 held at 1850, cheaper than the 4248 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"REDUCE (every piece) to 0.240 held at 1850, cheaper than the 4248 taken, but a replay of rung 0: KIT is within budget and builds directly",
+				"REDUCE (every piece) to its error cap 0.0625x the band's (0.960 kept), carried from rung 1 held at 8338, dearer than the 4248 taken"
 			],
-			"peak_mb": 238.0,
+			"peak_mb": 241.0,
 			"route": "kit",
-			"search_s": 89.2,
-			"searched": "recheck",
+			"search_s": 109.80000000000001,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "e6a76b0fa741ca8bb84bc7bedb15b58c6a9e92837f86d93d1b2328eb8b0b22d6"
+		"generator": "5875623c213bf88fa3f74741bfcb93f42c42646d3a7a1f44ef073407902b4df4"
 	}
 }

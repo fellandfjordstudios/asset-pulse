@@ -122,11 +122,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 20,
 				"trace": "built__hjell-pole#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 24,
 				"trace": "built__hjell-pole#2.trace.jsonl"
 			}
 		}
@@ -146,11 +146,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2746.0,
+					"cost": 2746,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 6.0,
+					"px_over": 6,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -164,6 +164,14 @@
 					"value": 0.24009999999999992
 				}
 			],
+			"chain_beaten": {
+				"cap": 0.00015,
+				"chain": "error",
+				"cost": 1330
+			},
+			"chains": {
+				"error": "lost"
+			},
 			"checked_at": 16,
 			"drawn": {
 				"excess": 0.5,
@@ -176,14 +184,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.240",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -199,15 +210,16 @@
 			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0012 -- the finest tried (1.000) fails at {\"length_m\":0.4} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00050 m",
-				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 24 pixel(s) differ at the drawn size at {} seed 314 (worst 0.97)"
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 24 pixel(s) differ at the drawn size at {} seed 314 (worst 0.97)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1065.0,
+			"peak_mb": 1128.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 18.0
+				"reduce": 18
 			},
-			"search_s": 303.90000000000003,
-			"searched": "recheck",
+			"search_s": 816.7,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -224,13 +236,13 @@
 					"value": {}
 				},
 				{
-					"cost": 396.0,
+					"cost": 784,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00797,
+					"picture": 0.0039900000000000005,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.05764800999999997
+					"value": 0.16
 				}
 			],
 			"checked_at": 16,
@@ -244,9 +256,9 @@
 			"from_rung": 0,
 			"keep": {},
 			"look_past": {
-				"beaten": true,
+				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -254,6 +266,9 @@
 					"impostor",
 					"merged",
 					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -651,26 +666,31 @@
 				"cost": 628,
 				"coverage_rel": 0.015470000000000001,
 				"floor": 0.0039900000000000005,
-				"part_shift": {},
+				"part_shift": {
+					"end_grain": 0.01237,
+					"wood": -0.01237
+				},
 				"picture": 0.0039900000000000005
 			},
 			"measured_of": 2,
 			"not_taken": [
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"top_diameter_m\":0.02} seed 314: coverage changes +0.0313 against 0.0227 a derivation may change (its error read as a change of size)",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 10 pixel(s) differ at the drawn size at {\"length_m\":0.4} seed 314 (worst 0.83)",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE to 0.058 held at 396, cheaper than the 628 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
+				"CARRIED from rung 1, REDUCE to 0.240, carried from rung 1: candidate emits 1 opposing duplicate faces",
+				"REDUCE to its error cap 0.0625x the band's (0.160 kept) held at 784, dearer than the 628 taken"
 			],
-			"peak_mb": 787.0,
+			"peak_mb": 308.0,
 			"route": "kit",
-			"search_s": 217.8,
-			"searched": "recheck",
+			"search_s": 256.0,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "cd190414b50a885507848c88835693e7739a71398c4e5d2eb9a1ffcc468c2813"
+		"generator": "e6da475d58189b62b60d909a80b0042f8598d14832021b06ee4880cc0c888d80"
 	}
 }

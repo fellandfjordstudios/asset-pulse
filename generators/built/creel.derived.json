@@ -122,7 +122,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 14,
 				"trace": "built__creel#1.trace.jsonl"
 			}
 		}
@@ -139,20 +139,11 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 2.0,
-					"holds": false,
-					"judge": "impostor",
-					"picture": -1.0,
-					"px_over": 31880.0,
-					"route": "impostor",
-					"value": 32.0
-				},
-				{
-					"cost": 23634.0,
+					"cost": 23634,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00459,
-					"px_over": 6.0,
+					"px_over": 6,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -178,14 +169,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -206,33 +200,23 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 91972 pixel(s) differ at {} seed 314 (worst 0.61)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 92721 pixel(s) differ at {} seed 314 (worst 0.61)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 76511 pixel(s) differ at {} seed 314 (worst 0.67)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 57308 pixel(s) differ at {} seed 314 (worst 0.74)",
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 92206 pixel(s) differ at {} seed 314 (worst 0.64)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 93087 pixel(s) differ at {} seed 314 (worst 0.62)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 76158 pixel(s) differ at {} seed 314 (worst 0.67)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 57137 pixel(s) differ at {} seed 314 (worst 0.74)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 40183 pixel(s) differ at {} seed 314 (worst 0.76)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 40178 pixel(s) differ at {} seed 314 (worst 0.76)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 32022 pixel(s) differ at {} seed 314 (worst 0.66)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 31880 pixel(s) differ at {} seed 314 (worst 0.66)",
+				"IMPOSTOR: skipped by the prior -- judged 21 times for solid subjects at band 1 across 21 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00139 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.71: 9505 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
-				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 892.0,
+			"peak_mb": 946.0,
 			"route": "merged",
-			"search_s": 1358.9,
-			"searched": "recheck",
+			"search_s": 1202.8,
+			"searched": "search",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		}
 	},
 	"source": {
-		"children": "17adc1c86c48aa5022b29c2b97e8abcc4f369894c5e671dfa3d366af7c919d9a",
+		"children": "58f6b8a6d09a911af71ae5b69b216d5917409913db3eac58fb4cb18a0f8388ce",
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "bd2eb26b2dd2412743d03975f43fc0e834343e42a644d9281c7aeffc7cd87075"
+		"generator": "8664bb28b87955a8d608d6838c8ca48fd0f1d876a6cd6ecec2def62ba2b62177"
 	}
 }

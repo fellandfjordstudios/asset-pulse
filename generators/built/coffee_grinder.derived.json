@@ -24,7 +24,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__coffee-grinder#1.trace.jsonl"
 			},
 			"2": {
@@ -38,87 +38,96 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "6705d6121bb3686f0cd51a26ed5017251c74e982a5afafbae8810e0ec0b2427e",
+		"1": "df31f9fb8670337265d0a0ae833896bab7ec96276c2729970fa6824f0f41d3da",
 		"2": "b70d8685d73c902c573f6b0c87eb4ec6744532fe11b2f51a3f0000ffdf890245"
 	},
 	"rungs": {
 		"1": {
 			"budget": 21573,
+			"cancel_across": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2.0,
-					"holds": false,
-					"judge": "impostor",
-					"picture": -1.0,
-					"px_over": 3376.0,
-					"route": "impostor",
-					"value": 32.0
-				},
-				{
-					"cost": 7438.0,
+					"cost": 7438,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 7.0,
+					"px_over": 7,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 7802.0,
-					"holds": false,
-					"judge": "drawn",
-					"picture": 0.00412,
-					"px_over": 22.0,
-					"route": "reduce",
-					"value": 0.7
-				},
-				{
-					"cost": 11110,
+					"cost": 9108,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0,
+					"picture": 0.00412,
 					"px_over": null,
-					"route": "rung0",
-					"value": 1.0
+					"route": "reduce",
+					"value": 0.8198019999999999
 				}
 			],
+			"cap": 0.0012468082945329589,
+			"chain": "error",
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 2,
-			"error": -1.0,
-			"fraction": 1.0,
+			"drawn": {
+				"excess": 0.4375,
+				"judge": "drawn",
+				"pixel_m": 0.001297
+			},
+			"error": 0.0024936165890659177,
+			"every_piece": true,
+			"fraction": 0.8198019999999999,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.820 kept)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"merged",
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
+			},
 			"measured": {
-				"cost": 11110,
-				"coverage_rel": 0.0,
+				"cost": 9108,
+				"coverage_rel": -0.00012000000000000002,
 				"floor": 0.00412,
-				"part_shift": {},
-				"picture": 0.0
+				"part_shift": {
+					"brass": 0.00042,
+					"drawer_front": 0.00025,
+					"gold": -0.00337,
+					"iron": 0.0007300000000000001,
+					"paint": 0.00152,
+					"wood": 0.00042,
+					"worn_edge": -5e-05
+				},
+				"picture": 0.00412
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 20819 pixel(s) differ at {} seed 314 (worst 0.65)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 24361 pixel(s) differ at {} seed 314 (worst 0.59)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 15524 pixel(s) differ at {} seed 314 (worst 0.69)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 9473 pixel(s) differ at {} seed 314 (worst 0.64)",
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 20822 pixel(s) differ at {} seed 314 (worst 0.87)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 24421 pixel(s) differ at {} seed 314 (worst 0.55)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 15691 pixel(s) differ at {} seed 314 (worst 0.65)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 9201 pixel(s) differ at {} seed 314 (worst 0.59)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 5070 pixel(s) differ at {} seed 314 (worst 0.84)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 5178 pixel(s) differ at {} seed 314 (worst 0.67)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 3699 pixel(s) differ at {} seed 314 (worst 0.63)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 3376 pixel(s) differ at {} seed 314 (worst 0.80)",
+				"IMPOSTOR: skipped by the prior -- judged 22 times for solid subjects at band 1 across 22 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0025 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00130 m",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'paint' is 14 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0025 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 22 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00130 m",
-				"THIN: built/coffee-grinder does not declare `reads_density`"
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 239.0,
-			"route": "rung0",
-			"search_s": 14.0,
-			"searched": "recheck",
+			"peak_mb": 290.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 7
+			},
+			"search_s": 113.9,
+			"searched": "search",
 			"surfaces": 7,
-			"surfaces_ceiling": 7,
-			"tolerance": 0.0024936165890659177
+			"surfaces_ceiling": 7
 		},
 		"2": {
 			"atlas_bytes": 67108864,
@@ -146,12 +155,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 3,
 					"route": "impostor",
-					"value": 32
+					"value": 24
 				}
 			],
 			"checked_at": 2,
@@ -175,10 +184,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 241.0,
+			"peak_mb": 242.0,
 			"route": "impostor",
-			"search_s": 161.60000000000002,
-			"searched": "recheck",
+			"search_s": 113.5,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 32
@@ -186,6 +195,6 @@
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "31aadc0b435065abaaedff02166934f87c10262306006cab53bde1caa7da09d1"
+		"generator": "a9bab44a4c2a0625cf2740720795ed6808826641b41f4564eb416f75a31916f8"
 	}
 }

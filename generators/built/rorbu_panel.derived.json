@@ -110,15 +110,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "built__rorbu-panel#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 9,
 				"trace": "built__rorbu-panel#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 10,
 				"trace": "built__rorbu-panel#3.trace.jsonl"
 			}
 		}
@@ -146,7 +146,7 @@
 					"value": {}
 				},
 				{
-					"cost": 648.0,
+					"cost": 648,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00404,
@@ -168,33 +168,40 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
 				"cost": 786,
 				"coverage_rel": 0.0,
 				"floor": 0.00438,
-				"part_shift": {},
+				"part_shift": {
+					"iron": 0.0,
+					"wall": 0.0
+				},
 				"picture": 0.0012000000000000001
 			},
 			"measured_of": 2,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'wall' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.824 kept) held at 648, cheaper than the 786 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 316.0,
+			"peak_mb": 657.0,
 			"route": "kit",
-			"search_s": 175.9,
-			"searched": "recheck",
+			"search_s": 326.70000000000005,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -211,7 +218,7 @@
 					"value": {}
 				},
 				{
-					"cost": 550.0,
+					"cost": 550,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00438,
@@ -233,7 +240,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -241,27 +248,34 @@
 					"impostor",
 					"merged",
 					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
 				"cost": 82,
 				"coverage_rel": -0.00024000000000000003,
 				"floor": 0.00438,
-				"part_shift": {},
+				"part_shift": {
+					"iron": -0.0009600000000000001,
+					"wall": 0.0009600000000000001
+				},
 				"picture": 0.00438
 			},
 			"measured_of": 3,
 			"not_taken": [
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"height_m\":0.001} seed 314: coverage changes -0.0540 against 0.0450 allowed (a one-pixel shrink all round)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'wall' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.700 held at 550, dearer than the 82 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 786, dearer than the 82 taken"
 			],
-			"peak_mb": 267.0,
+			"peak_mb": 289.0,
 			"route": "kit",
-			"search_s": 47.800000000000004,
-			"searched": "recheck",
+			"search_s": 129.0,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -278,10 +292,10 @@
 					"value": {}
 				},
 				{
-					"cost": 310.0,
+					"cost": 310,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0084,
+					"picture": 0.008400000000000001,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.48999999999999994
@@ -300,43 +314,46 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 4 of the band's pixels)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"reduce",
 					"impostor",
-					"merged",
-					"thin"
+					"reduce",
+					"thin",
+					"merged"
 				]
 			},
 			"measured": {
 				"cost": 2,
 				"coverage_rel": -0.05403,
 				"floor": 0.00438,
-				"part_shift": {},
+				"part_shift": {
+					"iron": -0.0009600000000000001,
+					"wall": 0.0009600000000000001
+				},
 				"picture": 0.6120000000000001
 			},
 			"measured_of": 5,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'wall' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 4 of the band's pixels)) is 1 route(s), and the one looked at did not improve on it",
+				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at 4 of the band's pixels)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel) held at 82, dearer than the 2 taken",
 				"REDUCE (every piece) to 0.490 held at 310, dearer than the 2 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 786, dearer than the 2 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 82, dearer than the 2 taken"
 			],
-			"peak_mb": 267.0,
+			"peak_mb": 289.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 27.900000000000002,
-			"searched": "recheck",
+			"search_s": 104.4,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "1e86ff8a5d62fbbc3dca8d9cebcacdfee142a835de0e8682f47ecb1e89a1f37b"
+		"generator": "7175aa0176aa663fc00ba4defdda819a9e743c41b759794f8dea90c7eccad29f"
 	}
 }

@@ -51,6 +51,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "built/shop-counter",
 	"keyed_on": {
 		"moves": [
@@ -72,7 +73,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 2,
 				"trace": "built__shop-counter#1.trace.jsonl"
 			}
 		}
@@ -82,21 +83,12 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "58e55a4a6f1785f4d8ef8ebf388a3b8a9a406d36ad959922edf414941691735d"
+		"1": "2e77dfcb61d27d0dba58b7cd201d716b63bf68d39e624109cce00e5face96c01"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
 			"candidates": [
-				{
-					"cost": 2.0,
-					"holds": false,
-					"judge": "impostor",
-					"picture": -1.0,
-					"px_over": 4007.0,
-					"route": "impostor",
-					"value": 32.0
-				},
 				{
 					"cost": 3256,
 					"holds": true,
@@ -120,51 +112,50 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
-					"impostor",
 					"reduce",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
 				"cost": 3256,
 				"coverage_rel": -0.00031,
 				"floor": 0.0041400000000000005,
-				"part_shift": {},
+				"part_shift": {
+					"brass": -0.0006000000000000001,
+					"edge_wood": 1e-05,
+					"frame": 0.00018,
+					"panel": 0.00016,
+					"top": 0.00039000000000000005
+				},
 				"picture": 0.0041400000000000005
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 34566 pixel(s) differ at {} seed 314 (worst 0.68)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 27773 pixel(s) differ at {} seed 314 (worst 0.63)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 22811 pixel(s) differ at {} seed 314 (worst 0.70)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 10934 pixel(s) differ at {} seed 314 (worst 0.77)",
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 34564 pixel(s) differ at {} seed 314 (worst 0.68)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 27776 pixel(s) differ at {} seed 314 (worst 0.63)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 22744 pixel(s) differ at {} seed 314 (worst 0.70)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 10990 pixel(s) differ at {} seed 314 (worst 0.77)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 5931 pixel(s) differ at {} seed 314 (worst 0.90)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 5952 pixel(s) differ at {} seed 314 (worst 0.90)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 4007 pixel(s) differ at {} seed 314 (worst 0.97)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 4047 pixel(s) differ at {} seed 314 (worst 0.97)",
+				"IMPOSTOR: skipped by the prior -- judged 15 times for solid subjects at band 1 across 15 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 306.0,
+			"peak_mb": 533.0,
 			"route": "kit",
-			"search_s": 248.9,
-			"searched": "recheck",
+			"search_s": 252.8,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		}
 	},
 	"source": {
-		"children": "6ba3966cebecfe9d0e139dba50e26b3a0894dd3b55af4ca1c8611416ef2f1537",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
-		"generator": "4169a391a86fa749547f6e7a4b0123390660855cd399d6849225171f319b30a1"
+		"children": "ddec23801b9f0447a94725c8753d5b4734a4719bb62509c784122ada454283bb",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"generator": "2d7f4e1b6ed8b933b3d5e4536b91e6d5f2bf232f6909370969ae20d0401a58b0"
 	}
 }

@@ -234,7 +234,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 12,
 				"trace": "animal__fence-lizard#1.trace.jsonl"
 			}
 		}
@@ -262,20 +262,20 @@
 					}
 				},
 				{
-					"cost": 8196.0,
-					"holds": false,
+					"cost": 10000,
+					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0.0,
+					"px_over": null,
 					"route": "reduce",
-					"value": 0.7
+					"value": 0.855725
 				}
 			],
 			"checked_at": 32,
 			"colour": {
 				"judge": "each part's share held to keep 1's at the band",
 				"tolerance": 0.0166,
-				"worst": 0.0147
+				"worst": 0.014700000000000001
 			},
 			"drawn": {
 				"below_failing_keep_1": true,
@@ -295,14 +295,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping scale 0.240, each kept piece covering 1.00x)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
+					"merged",
 					"thin",
-					"impostor",
-					"merged"
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -312,23 +315,24 @@
 				"part_shift": {},
 				"picture": 0.007970000000000001
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
 				"KIT: none holds at 0.0042 -- the finest tried (1.000) fails at {\"snout_vent_m\":0.024} seed 314: coverage changes +0.0180 against 0.0162 a derivation may change (its error read as a change of size)",
 				"REDUCE from rung 0 at {} seed 314: element 5's part 'dorsum' is 441 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0042 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0165 against 0.0162 a derivation may change (its error read as a change of size)",
-				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping scale 0.240, each kept piece covering 1.00x)) is 1 route(s), and the one looked at did not improve on it"
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping scale 0.240, each kept piece covering 1.00x)) is 1 route(s), and the one looked at did not improve on it",
+				"REDUCE (every piece) to its error cap 0.25x the band's (0.856 kept) held at 10000, dearer than the 3704 taken"
 			],
-			"peak_mb": 393.0,
+			"peak_mb": 595.0,
 			"route": "kit",
-			"search_s": 273.1,
-			"searched": "recheck",
+			"search_s": 773.4000000000001,
+			"searched": "search",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "367fdb73c2039b5597d3085d2fb116812916d6b6878345edf71d58bc84b3494e"
+		"generator": "69fd4d39b86a1c0da4f4f1dd6d5ded7619d917b47fab64d2312cc7159551459b"
 	}
 }

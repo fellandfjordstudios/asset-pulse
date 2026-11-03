@@ -82,11 +82,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 4,
 				"trace": "animal__arctic-char#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 8,
 				"trace": "animal__arctic-char#2.trace.jsonl"
 			}
 		}
@@ -104,11 +104,11 @@
 			"budget": 31804,
 			"candidates": [
 				{
-					"cost": 7172.0,
+					"cost": 7172,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.02788,
-					"px_over": 142.0,
+					"picture": 0.027880000000000002,
+					"px_over": 142,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -129,21 +129,21 @@
 			"measured": {
 				"cost": 13400,
 				"coverage_rel": 0.0,
-				"floor": 0.00398,
+				"floor": 0.0,
 				"part_shift": {},
 				"picture": 0.0
 			},
-			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0021 -- the finest tried (1.000) fails at {\"cooked\":1} seed 314: the picture changes at the drawn size: 142 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.72), one pixel 0.00129 m",
 				"REDUCE from rung 0 at {\"cooked\":1} seed 314: element 0's part 'body' is 123 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE (every piece) from rung 0: none holds at 0.0021 -- the finest tried (0.700) fails at {\"cooked\":1} seed 314: candidate emits 3 opposing duplicate faces; the error ladder: none holds at 0.0021",
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: animal/arctic-char does not declare `reads_density`"
 			],
-			"peak_mb": 287.0,
+			"peak_mb": 420.0,
 			"route": "rung0",
-			"search_s": 140.5,
-			"searched": "recheck",
+			"search_s": 344.70000000000005,
+			"searched": "search",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
 			"tolerance": 0.002135508277856188
@@ -154,11 +154,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2092.0,
+					"cost": 2092,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.02856,
-					"px_over": 11.0,
+					"picture": 0.028560000000000002,
+					"px_over": 11,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -172,7 +172,7 @@
 					"value": 0.092537
 				}
 			],
-			"cap": 0.00213550827785618,
+			"cap": 0.002135508277856188,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -190,14 +190,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.093 kept)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
 					"impostor",
-					"thin",
-					"merged"
+					"merged",
+					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -451,28 +454,38 @@
 				"cost": 1240,
 				"coverage_rel": -0.007030000000000001,
 				"floor": 0.00398,
-				"part_shift": {},
+				"part_shift": {
+					"body": -0.00218,
+					"dark": -0.00012000000000000002,
+					"dorsal_fin": 0.0006000000000000001,
+					"eye": -0.00031,
+					"fin": 0.00109,
+					"fin_edge": 0.00028000000000000003,
+					"head": -0.00103,
+					"tail": 0.00047000000000000004
+				},
 				"picture": 0.00398
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0085 -- the finest tried (1.000) fails at {\"cooked\":1} seed 314: the picture changes at the drawn size: 11 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00516 m",
 				"KIT at 2 pixels: none holds at 0.0085 -- the finest tried (1.000) fails at {\"cooked\":1} seed 314: the picture changes at the drawn size: 11 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00516 m",
-				"REDUCE from rung 0 at {\"cooked\":1} seed 314: element 0's part 'body' is 123 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
+				"REDUCE from rung 0 at {\"cooked\":1} seed 314: element 0's part 'body' is 123 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)"
 			],
-			"peak_mb": 309.0,
+			"peak_mb": 373.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 26.0
+				"reduce": 26
 			},
-			"search_s": 733.7,
-			"searched": "recheck",
+			"search_s": 586.0,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "3ab4ad8f0708e68d875df50422288706e9a427f48696220d728a5ecfc1d88d81"
+		"generator": "318b58c4c4777ca6ec90edf9529842b413d65dd16f4d815eb18ae314b1959572"
 	}
 }

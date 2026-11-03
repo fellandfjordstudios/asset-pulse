@@ -238,13 +238,13 @@
 			"measured_of": 2,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 1's part 'spine' is 106 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.341 kept) held at 1710, dearer than the 376 taken"
 			],
-			"peak_mb": 474.0,
+			"peak_mb": 473.0,
 			"route": "kit",
-			"search_s": 444.0,
+			"search_s": 633.7,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -824,16 +824,16 @@
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.417 kept) held at 1904, dearer than the 238 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 376, dearer than the 238 taken"
 			],
-			"peak_mb": 348.0,
+			"peak_mb": 347.0,
 			"route": "kit",
-			"search_s": 78.7,
+			"search_s": 113.60000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "5c2d6938f61a9c77a87e22c492b0a6321059d319bd32b3d062d48dc969c9c6bd"
 	}
 }

@@ -47,7 +47,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 4,
 				"trace": "plant__birch-leaf#1.trace.jsonl"
 			}
 		}
@@ -73,18 +73,18 @@
 					"value": {}
 				},
 				{
-					"cost": 0.0,
+					"cost": 0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 1.0,
-					"px_over": 798.0,
+					"px_over": 798,
 					"route": "reduce",
 					"value": 0.7
 				}
 			],
 			"checked_at": 5,
 			"drawn": {
-				"excess": 0.125,
+				"excess": 0.25,
 				"judge": "drawn",
 				"pixel_m": 0.0007779999999999999
 			},
@@ -95,14 +95,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
+					"merged",
 					"thin",
-					"impostor",
-					"merged"
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -115,18 +118,19 @@
 			"measured_of": 1,
 			"not_taken": [
 				"REDUCE from rung 0: none holds at 0.0168 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 798 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.75), one pixel 0.00078 m; coverage changes -1.0000 against 0.0660 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0168",
-				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 239.0,
+			"peak_mb": 238.0,
 			"route": "kit",
-			"search_s": 7.0,
-			"searched": "recheck",
+			"search_s": 6.0,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "2f13fa930918aed40e728dea6f30a5e52f6537247697616257f0679ff1c6c162"
+		"generator": "93e65136bea3e4251cd5d447f4b06da5b5fed5f4cf0fdd893234b4276dcb0593"
 	}
 }

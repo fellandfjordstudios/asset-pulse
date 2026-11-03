@@ -383,9 +383,9 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"strip_thickness_ratio\":1.0} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00408 m; the error ladder: none holds at 0.0019",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 1291 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.81), one pixel 0.00408 m"
 			],
-			"peak_mb": 464.0,
+			"peak_mb": 459.0,
 			"route": "rung0",
-			"search_s": 217.3,
+			"search_s": 321.5,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
@@ -1527,14 +1527,14 @@
 			"routes": {
 				"reduce": 15.0
 			},
-			"search_s": 1118.9,
+			"search_s": 1548.4,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "7cb761784ec549dd4e0e4b5fefa3ab8252081800a42170e88be4ad60133c893c"
 	}
 }

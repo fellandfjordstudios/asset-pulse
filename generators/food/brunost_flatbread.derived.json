@@ -33,6 +33,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "food/brunost-flatbread",
 	"keyed_on": {
 		"moves": [
@@ -51,7 +52,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 16,
 				"trace": "food__brunost-flatbread#1.trace.jsonl"
 			},
 			"2": {
@@ -71,6 +72,28 @@
 	"rungs": {
 		"1": {
 			"budget": 8169,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 6688,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00406,
+					"px_over": 6,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 8162,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00406,
+					"px_over": null,
+					"route": "merged",
+					"value": 0.24009999999999992
+				}
+			],
 			"checked_at": 6,
 			"drawn": {
 				"excess": 0.5,
@@ -84,13 +107,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.240)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
+					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -114,26 +141,19 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 6194 pixel(s) differ at {} seed 314 (worst 0.63)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 2x its pixel: 5204 pixel(s) differ at {} seed 314 (worst 0.63)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 4817 pixel(s) differ at {} seed 314 (worst 0.57)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 2x its pixel: 1961 pixel(s) differ at {} seed 314 (worst 0.59)",
-				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 6170 pixel(s) differ at {} seed 314 (worst 0.70)",
-				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 5256 pixel(s) differ at {} seed 314 (worst 0.63)",
-				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 4740 pixel(s) differ at {} seed 314 (worst 0.57)",
-				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 2025 pixel(s) differ at {} seed 314 (worst 0.59)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 563 pixel(s) differ at {} seed 314 (worst 0.64)",
-				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 549 pixel(s) differ at {} seed 314 (worst 0.64)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 56 pixel(s) differ at {} seed 314 (worst 0.91)",
-				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 54 pixel(s) differ at {} seed 314 (worst 0.59)",
+				"IMPOSTOR: skipped by the prior -- judged 14 times for solid subjects at band 1 across 14 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0041 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00130 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.05: 184 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
-				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
+			"peak_mb": 303.0,
 			"route": "merged",
 			"routes": {
-				"reduce": 11.0
+				"reduce": 11
 			},
+			"search_s": 269.0,
+			"searched": "search",
 			"surfaces": 11,
 			"surfaces_ceiling": 11
 		},
@@ -160,6 +180,17 @@
 				}
 			},
 			"budget": 2042,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 2,
+					"route": "impostor",
+					"value": 16
+				}
+			],
 			"checked_at": 6,
 			"draw_calls": 1,
 			"drawn": {
@@ -181,7 +212,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
+			"peak_mb": 260.0,
 			"route": "impostor",
+			"search_s": 86.2,
+			"searched": "search",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -189,8 +223,8 @@
 		}
 	},
 	"source": {
-		"children": "ac75ed7973a7ede84e63750ea41fc9d78cc255fa8dc57ad5b2545cf41c7a84bf",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
-		"generator": "8fba65f5f89c5101a15183ed76882e419c6c3eaef471e71418ab90a954411cb1"
+		"children": "e902096de6e63406d67ffe354d064146a9521894e497eab95482bdce5931cd46",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"generator": "e93e6a35c0c0dfb98d4a727169c30acbe5758c7d80157bb31700d9686c36a248"
 	}
 }

@@ -40,7 +40,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 10,
 				"trace": "animal__bear#1.trace.jsonl"
 			},
 			"2": {
@@ -58,8 +58,8 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "d42af60ee8ee8bded7cb37c0901737fd7251f12d725597d1ae9ba75f0458e2e3",
-		"2": "8e26529a32d2ca5a3aec8f024bbbfef12ab89dee3bb804bd77d61c321fa2ef4c",
+		"1": "a3fa937af9bd592f2e2fc76205e3d7f30e561f2d2ca455c9cdbe29bf1145d559",
+		"2": "91e3562691a3b0f584ae05725f1f88549a033e002debac08150e9b49769a57a8",
 		"3": "3b7a95966fc65fd900d91cd27fa3ceef7fedee81353ec2fb4abc3f00dfe40f60"
 	},
 	"rungs": {
@@ -69,16 +69,16 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 16776.0,
+					"cost": 16936,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 4.0,
+					"px_over": 4,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 21850,
+					"cost": 21790,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -88,9 +88,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.00023148148148148,
+				"cap": 0.00023148148148148146,
 				"chain": "error",
-				"cost": 31336.0
+				"cost": 31358
 			},
 			"chains": {
 				"error": "lost"
@@ -108,7 +108,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.343",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -122,50 +122,50 @@
 				]
 			},
 			"measured": {
-				"cost": 21850,
+				"cost": 21790,
 				"coverage_rel": -0.0006600000000000001,
 				"floor": 0.00398,
 				"part_shift": {
 					"claw": -7.000000000000001e-05,
-					"coat": 0.00022,
+					"coat": 0.00011,
 					"ear": -3.0000000000000004e-05,
-					"face": 3.0000000000000004e-05,
-					"feather": 0.00021,
+					"face": 2e-05,
+					"feather": 0.00014000000000000001,
 					"iris": 0.0,
 					"lid": 0.0,
-					"lip": 1e-05,
+					"lip": -1e-05,
 					"mouth": 1e-05,
 					"nose": 0.0,
 					"pad": 2e-05,
 					"pupil": -1e-05,
-					"sclera": -6.000000000000001e-05,
-					"short": 0.00034,
-					"teeth": -0.0007000000000000001,
-					"toe": 5e-05,
+					"sclera": -7.000000000000001e-05,
+					"short": 0.00025,
+					"teeth": -0.00042,
+					"toe": 1e-05,
 					"tongue": 7.000000000000001e-05
 				},
 				"picture": 0.00398
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 14 times for solid subjects at band 1 across 14 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 24 times for solid subjects at band 1 across 24 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"build\":1.0} seed 314: the picture changes at the drawn size: 4 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.66), one pixel 0.00404 m",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'pad' is 24 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
-				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 1 across 5 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 925.0,
+			"peak_mb": 939.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 17.0
+				"reduce": 17
 			},
-			"search_s": 241.0,
-			"searched": "recheck",
+			"search_s": 478.6,
+			"searched": "search",
 			"surfaces": 17,
 			"surfaces_ceiling": 17
 		},
 		"2": {
 			"budget": 10668,
-			"budget_reason": "the cheapest derivation that holds the picture costs 16716, 1.57x rung 2's budget 10668: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"budget_reason": "the cheapest derivation that holds the picture costs 16668, 1.56x rung 2's budget 10668: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"candidates": [
 				{
 					"cost": 2,
@@ -177,7 +177,7 @@
 					"value": 32
 				},
 				{
-					"cost": 16716,
+					"cost": 16668,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -186,7 +186,7 @@
 					"value": {}
 				},
 				{
-					"cost": 21716,
+					"cost": 21764,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -211,97 +211,97 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.6686719059944153,
-							0.6297956705093384,
-							0.525237500667572
+							0.6687484979629517,
+							0.6298858523368835,
+							0.5253415703773499
 						],
 						"mean_before": [
-							0.6686719059944153,
-							0.6297956705093384,
-							0.525237500667572
+							0.6687484979629517,
+							0.6298858523368835,
+							0.5253415703773499
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.01841142773628235,
-							0.016977369785308838,
-							0.011271804571151733
+							0.018433451652526855,
+							0.016999423503875732,
+							0.011279433965682983
 						],
 						"variance_before": [
-							0.01841142773628235,
-							0.016977369785308838,
-							0.011271804571151733
+							0.018433451652526855,
+							0.016999423503875732,
+							0.011279433965682983
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.6686742305755615,
-							0.629800021648407,
-							0.5252432823181152
+							0.6687489151954651,
+							0.629889190196991,
+							0.525343656539917
 						],
 						"mean_before": [
-							0.6686742305755615,
-							0.629800021648407,
-							0.5252432823181152
+							0.6687489151954651,
+							0.629889190196991,
+							0.525343656539917
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.01840081810951233,
-							0.016969025135040283,
-							0.011268258094787598
+							0.018427670001983643,
+							0.016994476318359375,
+							0.011278808116912842
 						],
 						"variance_before": [
-							0.01840081810951233,
-							0.016969025135040283,
-							0.011268258094787598
+							0.018427670001983643,
+							0.016994476318359375,
+							0.011278808116912842
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.6686690449714661,
-							0.6297987699508667,
-							0.525245726108551
+							0.668744683265686,
+							0.6298903822898865,
+							0.5253497362136841
 						],
 						"mean_before": [
-							0.6686690449714661,
-							0.6297987699508667,
-							0.525245726108551
+							0.668744683265686,
+							0.6298903822898865,
+							0.5253497362136841
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.018413186073303223,
-							0.01697409152984619,
-							0.011266350746154785
+							0.01843622326850891,
+							0.016995549201965332,
+							0.011272519826889038
 						],
 						"variance_before": [
-							0.018413186073303223,
-							0.01697409152984619,
-							0.011266350746154785
+							0.01843622326850891,
+							0.016995549201965332,
+							0.011272519826889038
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.6690220236778259,
-							0.6301329731941223,
-							0.5255146026611328
+							0.6690983176231384,
+							0.6302226185798645,
+							0.5256178975105286
 						],
 						"mean_before": [
-							0.6690220236778259,
-							0.6301329731941223,
-							0.5255146026611328
+							0.6690983176231384,
+							0.6302226185798645,
+							0.5256178975105286
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.01821732521057129,
-							0.0167996883392334,
-							0.011152863502502441
+							0.018238723278045654,
+							0.016821205615997314,
+							0.011160194873809814
 						],
 						"variance_before": [
-							0.01821732521057129,
-							0.0167996883392334,
-							0.011152863502502441
+							0.018238723278045654,
+							0.016821205615997314,
+							0.011160194873809814
 						]
 					}
 				],
@@ -309,15 +309,15 @@
 			},
 			"materials": "merged",
 			"measured": {
-				"cost": 16716,
+				"cost": 16668,
 				"coverage_rel": -0.0022700000000000003,
 				"floor": 0.00398,
 				"part_shift": {
 					"claw": -0.0006000000000000001,
-					"coat": -0.018080000000000002,
+					"coat": -0.018330000000000003,
 					"ear": 0.00214,
 					"face": 0.00015000000000000001,
-					"feather": 0.00931,
+					"feather": 0.00927,
 					"iris": 0.0,
 					"lid": -6.000000000000001e-05,
 					"lip": 0.00079,
@@ -326,10 +326,10 @@
 					"pad": -0.00036,
 					"pupil": 0.0,
 					"sclera": -0.00012000000000000002,
-					"short": 0.0071600000000000006,
-					"teeth": -0.00051,
-					"toe": 0.00075,
-					"tongue": -0.0009500000000000001
+					"short": 0.00717,
+					"teeth": -0.00013000000000000002,
+					"toe": 0.00071,
+					"tongue": -0.0009600000000000001
 				},
 				"picture": 0.00398
 			},
@@ -355,13 +355,13 @@
 				"IMPOSTOR at 32x32 frames (atlas 16.8 MB) from rung 0: 49 pixel(s) differ at {} seed 314 (worst 0.65)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'pad' is 24 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
-				"KIT (its own build at 2 of the band's pixels) held at 16716, the same cost as the route taken, found first",
-				"REDUCE (every piece) to 0.343 held at 21716, dearer than the 16716 taken",
-				"REDUCE (every piece) to 0.343, carried from rung 1 held at 21716, dearer than the 16716 taken"
+				"KIT (its own build at 2 of the band's pixels) held at 16668, the same cost as the route taken, found first",
+				"REDUCE (every piece) to 0.343 held at 21764, dearer than the 16668 taken",
+				"REDUCE (every piece) to 0.343, carried from rung 1 held at 21764, dearer than the 16668 taken"
 			],
-			"peak_mb": 937.0,
+			"peak_mb": 945.0,
 			"route": "kit",
-			"search_s": 673.5,
+			"search_s": 405.3,
 			"searched": "search",
 			"surfaces": 7,
 			"surfaces_ceiling": 1
@@ -392,12 +392,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 1,
 					"route": "impostor",
-					"value": 8
+					"value": 6
 				}
 			],
 			"checked_at": 4,
@@ -421,10 +421,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 926.0,
+			"peak_mb": 945.0,
 			"route": "impostor",
-			"search_s": 73.7,
-			"searched": "recheck",
+			"search_s": 54.1,
+			"searched": "search",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -433,6 +433,6 @@
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "07889d35f7e6f7196a2ad98fa127c79a989093d89a750cf6a5318e6b531be2a6"
+		"generator": "57aaa2d747323ee4695f4fdfb0abcb9c0e165c3f87cb61e503ada9988e1087fb"
 	}
 }

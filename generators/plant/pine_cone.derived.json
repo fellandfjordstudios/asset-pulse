@@ -191,9 +191,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"cones\":150} seed 314: coverage changes -0.0192 against 0.0118 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0019",
 				"THIN: plant/pine-cone does not declare `reads_density`"
 			],
-			"peak_mb": 406.0,
+			"peak_mb": 402.0,
 			"route": "kit",
-			"search_s": 85.7,
+			"search_s": 127.4,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -649,9 +649,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0345 against 0.0230 a derivation may change (its error read as a change of size)",
 				"BUDGET: the cheapest derivation that holds the picture costs 66094 (6.20x), over rung 2's budget 10668 x 1.5 = 16002 (rock, 8.10 m)"
 			],
-			"peak_mb": 399.0,
+			"peak_mb": 401.0,
 			"route": "kit",
-			"search_s": 673.0,
+			"search_s": 930.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -659,7 +659,7 @@
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "11616098a875b4c49f6bed15bf231a3aa2de1805dc0a437d4dd86af9e4429101"
 	}
 }

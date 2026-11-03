@@ -129,11 +129,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 9,
 				"trace": "built__jetty-support#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 20,
 				"trace": "built__jetty-support#2.trace.jsonl"
 			}
 		}
@@ -160,13 +160,13 @@
 					"value": {}
 				},
 				{
-					"cost": 1758.0,
-					"holds": false,
+					"cost": 1714,
+					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00488,
-					"px_over": 1.0,
+					"picture": 0.004880000000000001,
+					"px_over": null,
 					"route": "reduce",
-					"value": 0.7
+					"value": 0.6922459999999999
 				}
 			],
 			"checked_at": 17,
@@ -182,32 +182,40 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
 				"cost": 1592,
 				"coverage_rel": -0.0017000000000000001,
 				"floor": 0.004880000000000001,
-				"part_shift": {},
+				"part_shift": {
+					"iron": -0.00016,
+					"tide_growth": -0.0008500000000000001,
+					"timber": 0.0007300000000000001
+				},
 				"picture": 0.004880000000000001
 			},
-			"measured_of": 1,
+			"measured_of": 2,
 			"not_taken": [
-				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 315: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00830 m",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
+				"REDUCE to its error cap 1.0x the band's (0.692 kept) held at 1714, dearer than the 1592 taken"
 			],
-			"peak_mb": 348.0,
+			"peak_mb": 1136.0,
 			"route": "kit",
-			"search_s": 281.1,
-			"searched": "recheck",
+			"search_s": 664.2,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -226,13 +234,13 @@
 					}
 				},
 				{
-					"cost": 1738.0,
+					"cost": 594,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00934,
+					"picture": 0.004880000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.7
+					"value": 0.23990299999999998
 				}
 			],
 			"checked_at": 17,
@@ -251,7 +259,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping bolt 0.082)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -259,6 +267,9 @@
 					"impostor",
 					"merged",
 					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -683,23 +694,25 @@
 				"part_shift": {},
 				"picture": 0.007470000000000001
 			},
-			"measured_of": 3,
+			"measured_of": 4,
 			"not_taken": [
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping bolt 0.082)) is 1 route(s), and the one looked at did not improve on it",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping bolt 0.082)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel, keeping bolt 0.082) held at 854, dearer than the 356 taken",
-				"REDUCE to 0.700 held at 1738, dearer than the 356 taken"
+				"REDUCE to its error cap 0.5x the band's (0.240 kept) held at 594, dearer than the 356 taken",
+				"KIT (its own build at the rung's pixel), carried from rung 1 held at 1592, dearer than the 356 taken"
 			],
-			"peak_mb": 280.0,
+			"peak_mb": 347.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 140.0,
-			"searched": "recheck",
+			"search_s": 428.6,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "88c62ca228a896ad6d68ed272836e23af8915b444abe23cfd18f1928e4f3a764"
+		"generator": "0271bc55112f6961e1bd7075badfa21b52fcb9c751d976dc6db9f9c710b03306"
 	}
 }

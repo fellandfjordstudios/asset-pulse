@@ -66,7 +66,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 8,
 				"trace": "built__folded-wool-layer#1.trace.jsonl"
 			}
 		}
@@ -92,7 +92,7 @@
 					"value": {}
 				},
 				{
-					"cost": 332.0,
+					"cost": 332,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00449,
@@ -103,9 +103,9 @@
 			],
 			"checked_at": 8,
 			"drawn": {
-				"excess": 0.0,
+				"excess": 0.125,
 				"judge": "drawn",
-				"pixel_m": 0.001297
+				"pixel_m": 0.001139
 			},
 			"error": 0.004,
 			"fraction": 1.0,
@@ -114,38 +114,45 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
 				"cost": 468,
 				"coverage_rel": -0.0007400000000000001,
 				"floor": 0.00449,
-				"part_shift": {},
+				"part_shift": {
+					"knit": 0.00041000000000000005,
+					"rib": -0.00041000000000000005
+				},
 				"picture": 0.00449
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 1 across 5 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.490 held at 332, cheaper than the 468 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 261.0,
+			"peak_mb": 320.0,
 			"route": "kit",
-			"search_s": 52.800000000000004,
-			"searched": "recheck",
+			"search_s": 159.9,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "d8ae9a0862ab561423457a7d34c34e8a1516ac3a7d2578cb739dfbc14e63abf3"
+		"generator": "36c731e7ff20f9a426bff67c5c09ab9674f414b0918367b3ce031d200508167f"
 	}
 }

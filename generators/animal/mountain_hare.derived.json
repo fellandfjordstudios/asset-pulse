@@ -164,11 +164,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 10,
 				"trace": "animal__mountain-hare#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 12,
 				"trace": "animal__mountain-hare#2.trace.jsonl"
 			}
 		}
@@ -195,20 +195,20 @@
 					"value": {}
 				},
 				{
-					"cost": 5412.0,
+					"cost": 5326,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00448,
+					"picture": 0.0044800000000000005,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.48999999999999994
+					"value": 0.494981
 				}
 			],
 			"checked_at": 22,
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.001297
+				"pixel_m": 0.001011
 			},
 			"error": 0.0022364274341398365,
 			"fraction": 1.0,
@@ -217,32 +217,46 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
+					"merged",
 					"thin",
-					"merged"
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
 				"cost": 10644,
 				"coverage_rel": -0.00012000000000000002,
 				"floor": 0.0044800000000000005,
-				"part_shift": {},
+				"part_shift": {
+					"belly": 9e-05,
+					"ear": 2e-05,
+					"ear_inner": 1e-05,
+					"ear_tip": 1e-05,
+					"eye": -0.00042,
+					"face": 3.0000000000000004e-05,
+					"foot": 4e-05,
+					"nose": 0.0,
+					"pelage": 0.00023
+				},
 				"picture": 0.00411
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE to 0.490 held at 5412, cheaper than the 10644 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"REDUCE to its error cap 0.5x the band's (0.495 kept) held at 5326, cheaper than the 10644 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 360.0,
+			"peak_mb": 743.0,
 			"route": "kit",
-			"search_s": 477.8,
-			"searched": "recheck",
+			"search_s": 1479.7,
+			"searched": "search",
 			"surfaces": 9,
 			"surfaces_ceiling": 9
 		},
@@ -252,7 +266,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 10620.0,
+					"cost": 10620,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00411,
@@ -271,9 +285,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.00111821371706991,
+				"cap": 0.0011182137170699183,
 				"chain": "error",
-				"cost": 5326.0
+				"cost": 5326
 			},
 			"chains": {
 				"error": "lost"
@@ -290,14 +304,17 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
 					"impostor",
-					"thin",
-					"merged"
+					"merged",
+					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -839,28 +856,39 @@
 				"cost": 5268,
 				"coverage_rel": -0.0032900000000000004,
 				"floor": 0.0044800000000000005,
-				"part_shift": {},
+				"part_shift": {
+					"belly": 0.00042,
+					"ear": 0.00013000000000000002,
+					"ear_inner": 0.00011,
+					"ear_tip": 3.0000000000000004e-05,
+					"eye": -0.00045000000000000004,
+					"face": 0.00013000000000000002,
+					"foot": -0.00026000000000000003,
+					"nose": -4e-05,
+					"pelage": 0.0006900000000000001
+				},
 				"picture": 0.0044800000000000005
 			},
 			"measured_of": 4,
 			"not_taken": [
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"KIT (its own build at the rung's pixel) held at 10620, dearer than the 5268 taken",
 				"KIT (its own build at 2 of the band's pixels) held at 10620, dearer than the 5268 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 10644, dearer than the 5268 taken"
 			],
-			"peak_mb": 358.0,
+			"peak_mb": 399.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 22.0
+				"reduce": 22
 			},
-			"search_s": 2942.6000000000004,
-			"searched": "recheck",
+			"search_s": 2383.3,
+			"searched": "search",
 			"surfaces": 7,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "a3512f8f0720501148a0e1c3a749c0f93e7a028da89a7015e9990aba9086c8d4"
+		"generator": "54b3ce43fc7e0f0081eab47c5852de6139a7320def8b90f0faad1ebc496ca3c2"
 	}
 }
