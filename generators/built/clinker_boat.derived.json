@@ -131,6 +131,7 @@
 			"seed": 314
 		}
 	],
+	"effort": "full",
 	"id": "built/clinker-boat",
 	"keyed_on": {
 		"moves": [
@@ -165,11 +166,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 10,
 				"trace": "built__clinker-boat#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 38,
 				"trace": "built__clinker-boat#2.trace.jsonl"
 			}
 		}
@@ -186,15 +187,6 @@
 		"1": {
 			"budget": 39117,
 			"candidates": [
-				{
-					"cost": 2.0,
-					"holds": false,
-					"judge": "impostor",
-					"picture": -1.0,
-					"px_over": 3405.0,
-					"route": "impostor",
-					"value": 32.0
-				},
 				{
 					"cost": 5360,
 					"holds": true,
@@ -225,14 +217,14 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping rivet 0.082, frame 0.031)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
 					"merged",
-					"thin"
+					"thin",
+					"impostor"
 				]
 			},
 			"measured": {
@@ -244,25 +236,14 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0 at 2x its pixel: 21020 pixel(s) differ at {} seed 314 (worst 0.86)",
-				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0 at 2x its pixel: 17547 pixel(s) differ at {} seed 314 (worst 0.85)",
-				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0 at 2x its pixel: 14386 pixel(s) differ at {} seed 314 (worst 0.78)",
-				"IMPOSTOR at 16x16 frames (atlas 9.4 MB) from rung 0 at 2x its pixel: 8173 pixel(s) differ at {} seed 314 (worst 0.78)",
-				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0: 20844 pixel(s) differ at {} seed 314 (worst 0.86)",
-				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0: 17291 pixel(s) differ at {} seed 314 (worst 0.85)",
-				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0: 14538 pixel(s) differ at {} seed 314 (worst 0.78)",
-				"IMPOSTOR at 16x16 frames (atlas 9.4 MB) from rung 0: 7699 pixel(s) differ at {} seed 314 (worst 0.78)",
-				"IMPOSTOR at 24x24 frames (atlas 21.2 MB) from rung 0 at 2x its pixel: 4821 pixel(s) differ at {} seed 314 (worst 0.68)",
-				"IMPOSTOR at 24x24 frames (atlas 21.2 MB) from rung 0: 4705 pixel(s) differ at {} seed 314 (worst 0.66)",
-				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0 at 2x its pixel: 3477 pixel(s) differ at {} seed 314 (worst 0.82)",
-				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0: 3405 pixel(s) differ at {} seed 314 (worst 0.82)",
+				"IMPOSTOR: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.082, frame 0.031)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 360.0,
+			"peak_mb": 1325.0,
 			"route": "kit",
-			"search_s": 376.5,
-			"searched": "recheck",
+			"search_s": 1812.5,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 9
 		},
@@ -270,13 +251,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 3.0,
+					"px_over": 3,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
 					"cost": 1573,
@@ -308,7 +289,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping frame 0.031, rivet 0.031)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -855,12 +836,12 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 1573,
-				"coverage_rel": -0.00821,
+				"coverage_rel": -0.008100000000000001,
 				"floor": 0.00398,
 				"part_shift": {},
 				"picture": 0.00461
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0 at 8x its pixel: 848 pixel(s) differ at {} seed 314 (worst 0.72)",
 				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0 at 8x its pixel: 559 pixel(s) differ at {} seed 314 (worst 0.81)",
@@ -882,20 +863,21 @@
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0: 3 pixel(s) differ at {} seed 314 (worst 0.52)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping frame 0.031, rivet 0.031)) is 1 route(s), and the one looked at did not improve on it",
-				"KIT (its own build at the rung's pixel, keeping frame 0.031, rivet 0.031) held at 3109, dearer than the 1573 taken"
+				"KIT (its own build at the rung's pixel, keeping frame 0.031, rivet 0.031) held at 3109, dearer than the 1573 taken",
+				"KIT (its own build at the rung's pixel, keeping rivet 0.082, frame 0.031), carried from rung 1 held at 5360, dearer than the 1573 taken"
 			],
-			"peak_mb": 314.0,
+			"peak_mb": 365.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 2873.3,
-			"searched": "recheck",
+			"search_s": 3693.6000000000004,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"children": "c8a034136bc5a50c81d89bdbd447e9a61920a76a3b01493aa0d20c6c1177a206",
-		"deriver": "96a83c07de58ad63717243d4fcb2594789d8e5986cf6bbdae4692f89e3241d8b",
-		"generator": "f7e000192b8e531fa17ca37b3562b5609bceac9cba8bcc81db4ebe373bee937a"
+		"children": "36f4930940b3c8c6a1d171f354f6d01accbbee71bdd2d4565f6ad1b9b431bfa7",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"generator": "caac353d1fa1ffb8c1a489d748153d11694d2954418bbd2d378dde05cc3d7740"
 	}
 }

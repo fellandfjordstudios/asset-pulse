@@ -1,0 +1,502 @@
+{
+	"checked_at": [
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 40.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"trunk_diameter_m": 0.03,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"trunk_diameter_m": 1.2,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"trunk_taper": 0.05,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"trunk_taper": 0.95,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_base_fraction": 0.02,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_base_fraction": 0.9,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 40
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 8,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 12,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 0,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 12,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branch_angle_deg": 5.0,
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branch_angle_deg": 89.0,
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"crown_half_angle_deg": 8.0,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"crown_half_angle_deg": 55.0,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"apex_bluntness": 0.0,
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"apex_bluntness": 0.6,
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.9,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bare_branch_fraction": 0.0,
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bare_branch_fraction": 0.8,
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.004,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"tuft_size_spread": 0.0,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"tuft_size_spread": 0.8,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"basal_sweep_deg": 70.0,
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 315
+		}
+	],
+	"effort": "full",
+	"id": "plant/pine",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 27,
+		"sampled": 27,
+		"sets": 27
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "plant__pine#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {
+			"branches_per_whorl": 2,
+			"branchlets_per_limb": 1,
+			"crown_duty_cycle": 0.2,
+			"height_m": 3.0,
+			"tuft_over_crown": 0.05,
+			"twigs_per_branchlet": 1,
+			"whorls": 3
+		},
+		"seed": 314
+	},
+	"replay": {
+		"1": "d78ef3bf48d1dca6e4db11137d856ebaf89ecdd6128ea6bd189a989e6736f0ee"
+	},
+	"rungs": {
+		"1": {
+			"budget": 42673,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 2.0,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 5404.0,
+					"route": "impostor",
+					"value": 32.0
+				},
+				{
+					"cost": 3498,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.004050000000000001,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.27452699999999997
+				}
+			],
+			"cap": 0.00023148148148148,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 6124.0,
+				"fraction": 0.48999999999999994
+			},
+			"chains": {
+				"error": "kept"
+			},
+			"checked_at": 27,
+			"drawn": {
+				"excess": 0.375,
+				"judge": "drawn",
+				"pixel_m": 0.006359999999999999
+			},
+			"error": 0.0018518518518518517,
+			"every_piece": true,
+			"fraction": 0.27452699999999997,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.275 kept)",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"impostor",
+					"reduce",
+					"thin",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 3498,
+				"coverage_rel": -0.00238,
+				"floor": 0.0041400000000000005,
+				"part_shift": {
+					"bark": -0.0024600000000000004,
+					"needle": 0.0024600000000000004
+				},
+				"picture": 0.004050000000000001
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 26554 pixel(s) differ at {\"branches_per_whorl\":2,\"branchlets_per_limb\":1,\"crown_duty_cycle\":0.2,\"height_m\":3.0,\"tuft_over_crown\":0.05,\"twigs_per_branchlet\":1,\"whorls\":3} seed 314 (worst 0.76)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 25357 pixel(s) differ at {\"branches_per_whorl\":2,\"branchlets_per_limb\":1,\"crown_duty_cycle\":0.2,\"height_m\":3.0,\"tuft_over_crown\":0.05,\"twigs_per_branchlet\":1,\"whorls\":3} seed 314 (worst 0.73)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 14936 pixel(s) differ at {\"branches_per_whorl\":2,\"branchlets_per_limb\":1,\"crown_duty_cycle\":0.2,\"height_m\":3.0,\"tuft_over_crown\":0.05,\"twigs_per_branchlet\":1,\"whorls\":3} seed 314 (worst 0.64)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 11473 pixel(s) differ at {\"branches_per_whorl\":2,\"branchlets_per_limb\":1,\"crown_duty_cycle\":0.2,\"height_m\":3.0,\"tuft_over_crown\":0.05,\"twigs_per_branchlet\":1,\"whorls\":3} seed 314 (worst 0.70)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 6998 pixel(s) differ at {\"branches_per_whorl\":2,\"branchlets_per_limb\":1,\"crown_duty_cycle\":0.2,\"height_m\":3.0,\"tuft_over_crown\":0.05,\"twigs_per_branchlet\":1,\"whorls\":3} seed 314 (worst 0.71)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 5404 pixel(s) differ at {\"branches_per_whorl\":2,\"branchlets_per_limb\":1,\"crown_duty_cycle\":0.2,\"height_m\":3.0,\"tuft_over_crown\":0.05,\"twigs_per_branchlet\":1,\"whorls\":3} seed 314 (worst 0.76)",
+				"CROWN: (b) a crown that does not read density: plant/pine does not declare `reads_density` -- a commission defect of plant/pine, not a rung to hand-build (decisions/D-derive-3)",
+				"CROWN: (c) a crown with no clusters: 2 of 2 placed foliage elements carry no cluster -- a commission defect of plant/pine, not a rung to hand-build (decisions/D-derive-3)",
+				"REDUCE from rung 0 at {\"branches_per_whorl\":2,\"branchlets_per_limb\":1,\"crown_duty_cycle\":0.2,\"height_m\":3.0,\"tuft_over_crown\":0.05,\"twigs_per_branchlet\":1,\"whorls\":40} seed 314: element 0's part 'bark' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
+			],
+			"peak_mb": 959.0,
+			"route": "reduce",
+			"routes": {
+				"carry": 2.0,
+				"reduce": 4.0
+			},
+			"search_s": 1780.5,
+			"searched": "recheck",
+			"surfaces": 2,
+			"surfaces_ceiling": 2
+		}
+	},
+	"source": {
+		"children": "b687b0c7d062d5d63ae55842226cdba83467df6aa58552f29f2c847dd3c4f151",
+		"deriver": "c3cb2850fbd96d6f4923048674d30de28d03fa56272209c561861cd2018442e3",
+		"generator": "cd7bf0748cd09412cf21ce2bf7e8160f4d72e603e01345d8658edfee991c9d0f"
+	}
+}

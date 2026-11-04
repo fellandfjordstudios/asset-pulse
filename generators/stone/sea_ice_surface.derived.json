@@ -152,6 +152,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "stone/sea-ice-surface",
 	"keyed_on": {
 		"moves": [
@@ -186,11 +187,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 17,
 				"trace": "stone__sea-ice-surface#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 25,
 				"trace": "stone__sea-ice-surface#2.trace.jsonl"
 			}
 		}
@@ -202,12 +203,34 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "70ac2046ef524855e7aa6c824a4417cf55d5c0113fb1f4f0e3c2762fd2372283",
-		"2": "febf3b8325074050a398a89c20fe246f844368cc87e6a09fd9f051c42997dc79"
+		"1": "20e0ce97e60ae830a8d550cfd7b6fb1a987422aaa7fc9336d0173eb8f270fbe9",
+		"2": "2f56668edef873250b69515763daa6e718b2f70aaaf5ca195575cd81864e6200"
 	},
 	"rungs": {
 		"1": {
 			"budget": 42673,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 32754,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00508,
+					"px_over": 88,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 16986,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.004880000000000001,
+					"px_over": null,
+					"route": "merged",
+					"value": 0.05764800999999997
+				}
+			],
 			"checked_at": 22,
 			"drawn": {
 				"excess": 0.25,
@@ -216,11 +239,24 @@
 			},
 			"error": 0.001851851851851852,
 			"every_piece": true,
-			"fraction": 0.11764899999999996,
+			"fraction": 0.05764800999999997,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.058)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"merged",
+					"thin",
+					"impostor"
+				]
+			},
 			"measured": {
-				"cost": 16768,
-				"coverage_rel": 0.0,
+				"cost": 16986,
+				"coverage_rel": -2e-05,
 				"floor": 0.00523,
 				"part_shift": {
 					"block_face": -1e-05,
@@ -235,17 +271,43 @@
 			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"ridge\":0,\"tile_m\":4.0} seed 314: the picture changes at the drawn size: 88 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00795 m",
-				"REDUCE from rung 0 at {\"tile_m\":4.0} seed 314: part 'snow' is 45 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)"
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1681, cover 1.12: 55824 pixel(s) differ at the drawn size at {\"tile_m\":4.0} seed 314 (worst 0.73)",
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"route": "reduce",
+			"peak_mb": 1309.0,
+			"route": "merged",
 			"routes": {
-				"reduce": 6.0
+				"reduce": 6
 			},
+			"search_s": 3795.9,
+			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		},
 		"2": {
 			"budget": 10668,
+			"candidates": [
+				{
+					"cost": 4992,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00858,
+					"px_over": null,
+					"route": "kit",
+					"value": {
+						"frost_flower": 0.03125
+					}
+				},
+				{
+					"cost": 12538,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00816,
+					"px_over": null,
+					"route": "merged",
+					"value": 0.05764800999999997
+				}
+			],
 			"checked_at": 22,
 			"drawn": {
 				"excess": 0.5,
@@ -258,6 +320,19 @@
 			"from_rung": 0,
 			"keep": {
 				"frost_flower": 0.03125
+			},
+			"look_past": {
+				"beaten": false,
+				"first": "KIT (its own build at 2 of the band's pixels, keeping frost_flower 0.031)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				]
 			},
 			"material_transfer": {
 				"checked_at": 22,
@@ -803,18 +878,23 @@
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"REDUCE, THIN: not searched -- KIT holds within budget, and the owner's order takes it over any of them (KIT first)",
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping frost_flower 0.031)) is 1 route(s), and the one looked at did not improve on it",
+				"CARRIED from rung 1, MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.058), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {\"ice_stage\":0,\"tile_m\":4.0} seed 314: the picture changes at the drawn size: 10 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.73), one pixel 0.03656 m",
 				"KIT (its own build at the rung's pixel, keeping frost_flower 0.031) held at 10458, dearer than the 4992 taken"
 			],
+			"peak_mb": 806.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
+			"search_s": 1685.0,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"children": "d4bd3eae75d78253f1004309ff0a790b0a51fef8b8d23c596012925a06c687e5",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
-		"generator": "701f87eefd8c8d6e61614618edb35595919ced1dda20d6efed108eb392e40dc2"
+		"children": "9a06641a1055c6c26f720d2ac3d6e1f1b58d3591cb0a21c1d5dcafb3bc076e76",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"generator": "022134fd34a7b4b499a710895da1d882761f24344e6623979cb125f1d17e425c"
 	}
 }
