@@ -285,6 +285,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "plant/rowan",
 	"keyed_on": {
 		"moves": [
@@ -345,11 +346,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": -1,
+				"candidates": 32,
 				"trace": "plant__rowan#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": -1,
+				"candidates": 52,
 				"trace": "plant__rowan#2.trace.jsonl"
 			},
 			"3": {
@@ -363,14 +364,52 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "e0be5b9c342fe648581f99474680eaa6c6b23c35791d9da6721581155c1bfedb",
-		"2": "7466932c6a70609c619e44a822b97cbe673ebbdb997da0112e7f2037df2899c9",
+		"1": "ae0653abe463fbb9cc5320e58718f9e15fce7fbf8e33196012e7ac7897a2a7ef",
+		"2": "090d405340af8581131fe74fa5e8d73dbcb0f4425aeb9300364fc414ba339f0d",
 		"3": "bc883aabff8f3a17fc3d15293caa99d71a0ed3b89352e3c04a711e9e07df1e8e"
 	},
 	"rungs": {
 		"1": {
 			"above_tolerance": true,
 			"budget": 42673,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 32561,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 63328,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.00867,
+					"px_over": 700,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 182608,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0088,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.985945
+				},
+				{
+					"cost": 166892,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.014220000000000002,
+					"px_over": 4874,
+					"route": "thin",
+					"value": 0.7
+				}
+			],
 			"checked_at": 48,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -410,15 +449,18 @@
 				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 37774 pixel(s) differ at {} seed 314 (worst 0.58)",
 				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 2x its pixel: 142992 pixel(s) differ at {} seed 314 (worst 0.66)",
 				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 32561 pixel(s) differ at {} seed 314 (worst 0.61)",
-				"CROWN: (c) a crown with no clusters: 4 of 4 placed foliage elements carry no cluster -- a commission defect of plant/rowan, not a rung to hand-build (decisions/D-derive-3)",
 				"CROWN: (d) foliage not told from wood: 4 placed element(s) hold both foliage and wood -- a commission defect of plant/rowan, not a rung to hand-build (decisions/D-derive-3)",
-				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 13257 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00662 m; coverage changes +0.0594 against 0.0237 allowed (a one-pixel shrink all round); part 'leaf' changes its share of the picture by +0.0312 against 0.0237 allowed (its colour's share of the subject)",
+				"CROWN: the spec declares form.kind crown, and the hero hands over no crown (d missing) -- a claim the build refuses, a commission defect of plant/rowan",
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 700 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00662 m; part 'bark' changes its share of the picture by -0.0472 against 0.0237 allowed (its colour's share of the subject); part 'leaf' changes its share of the picture by +0.0270 against 0.0237 allowed (its colour's share of the subject)",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.0824, cover 1.37: 62681 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'bark' is 161 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"height_m\":2.0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00388 m",
-				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 4874 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00662 m; coverage changes +0.0297 against 0.0237 allowed (a one-pixel shrink all round)"
+				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 4874 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00662 m; coverage changes +0.0297 against 0.0237 allowed (a one-pixel shrink all round)",
+				"BUDGET: the cheapest derivation that holds the picture costs 182608 (4.28x), over rung 1's budget 42673 x 1.5 = 64009 (tree, 3.57 m)"
 			],
+			"peak_mb": 2784.0,
 			"route": "kit",
+			"search_s": 10135.2,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"tolerance": 0.0018518518518518517
@@ -426,6 +468,44 @@
 		"2": {
 			"above_tolerance": true,
 			"budget": 10668,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 50,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 81710,
+					"holds": false,
+					"judge": "drawn",
+					"picture": -1.0,
+					"px_over": 66,
+					"route": "kit",
+					"value": 0.7
+				},
+				{
+					"cost": 145504,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.005030000000000001,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 147838,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.01438,
+					"px_over": 8,
+					"route": "thin",
+					"value": 0.7
+				}
+			],
 			"checked_at": 48,
 			"error": -1.0,
 			"fraction": 1.0,
@@ -1630,17 +1710,21 @@
 				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 8x its pixel: 9874 pixel(s) differ at {} seed 314 (worst 0.67)",
 				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 4x its pixel: 5077 pixel(s) differ at {} seed 314 (worst 0.67)",
 				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 50 pixel(s) differ at {} seed 314 (worst 0.61)",
-				"CROWN: (c) a crown with no clusters: 4 of 4 placed foliage elements carry no cluster -- a commission defect of plant/rowan, not a rung to hand-build (decisions/D-derive-3)",
 				"CROWN: (d) foliage not told from wood: 4 placed element(s) hold both foliage and wood -- a commission defect of plant/rowan, not a rung to hand-build (decisions/D-derive-3)",
+				"CROWN: the spec declares form.kind crown, and the hero hands over no crown (d missing) -- a claim the build refuses, a commission defect of plant/rowan",
 				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1101 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.80), one pixel 0.02648 m; coverage changes +0.1243 against 0.0456 allowed (a one-pixel shrink all round); part 'leaf' changes its share of the picture by +0.0750 against 0.0456 allowed (its colour's share of the subject)",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.20: 66 pixel(s) differ at the drawn size at {} seed 314 (worst 0.56)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1266 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.77), one pixel 0.02648 m; coverage changes +0.1147 against 0.0456 allowed (a one-pixel shrink all round); part 'leaf' changes its share of the picture by +0.0748 against 0.0456 allowed (its colour's share of the subject)",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.31: 943 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'bark' is 161 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
 				"THIN: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 8 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.02648 m",
-				"BUDGET: the cheapest derivation that holds the picture costs 117976 (11.06x), over rung 2's budget 10668 x 1.5 = 16002 (tree, 3.57 m)"
+				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping shoot 0.031, pome 0.031, branchlet 0.031, corymb 0.700), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.02648 m; part 'bark' changes its share of the picture by -0.0472 against 0.0456 allowed (its colour's share of the subject)",
+				"BUDGET: the cheapest derivation that holds the picture costs 145504 (13.64x), over rung 2's budget 10668 x 1.5 = 16002 (tree, 3.57 m)"
 			],
+			"peak_mb": 1618.0,
 			"route": "kit",
+			"search_s": 3460.8,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407407
@@ -1668,6 +1752,17 @@
 				}
 			},
 			"budget": 2667,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "impostor",
+					"value": 12
+				}
+			],
 			"checked_at": 48,
 			"draw_calls": 1,
 			"drawn": {
@@ -1689,15 +1784,18 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
+			"peak_mb": 2245.0,
 			"route": "impostor",
+			"search_s": 1433.7,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 24
 		}
 	},
 	"source": {
-		"children": "8baaeb02ba2a4ed3266910aff6780511376d89791bbcb70d37e1c25b891af417",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
-		"generator": "de58d5014f099151ed0adbd478ec0f230a18fecb6451c391dfe0af830017a83b"
+		"children": "547da4324417fb21bae68f1a9b6a7534bcb6a948fb3c2786a15287f36c6edb3f",
+		"deriver": "c3cb2850fbd96d6f4923048674d30de28d03fa56272209c561861cd2018442e3",
+		"generator": "44cd04a916e62aa292a5a3930a4602ddd2e9c4290ad21cefcd06012c5b07d94a"
 	}
 }

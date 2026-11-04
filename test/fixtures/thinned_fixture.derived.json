@@ -9,6 +9,7 @@
 			"seed": 315
 		}
 	],
+	"effort": "full",
 	"id": "fixture/thinned",
 	"keyed_on": {
 		"moves": [
@@ -23,7 +24,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 24,
 				"trace": "fixture__thinned#1.trace.jsonl"
 			}
 		}
@@ -38,6 +39,36 @@
 	"rungs": {
 		"1": {
 			"budget": 21336,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 950,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.03055,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.11764899999999995
+				},
+				{
+					"cost": 972,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.14211000000000001,
+					"px_over": null,
+					"route": "thin",
+					"value": 0.24009999999999992
+				}
+			],
+			"chain_beaten": {
+				"cap": 0.01875,
+				"chain": "error",
+				"cost": 2008
+			},
+			"chains": {
+				"error": "lost"
+			},
 			"checked_at": 2,
 			"drawn": {
 				"excess": 0.375,
@@ -45,18 +76,19 @@
 				"pixel_m": 0.330322
 			},
 			"error": 0.15,
-			"fraction": 0.11764899999999996,
+			"fraction": 0.11764899999999995,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.118",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
+					"child",
 					"reduce",
+					"merged",
 					"thin",
-					"impostor",
-					"merged"
+					"impostor"
 				]
 			},
 			"measured": {
@@ -70,20 +102,25 @@
 				},
 				"picture": 0.03055
 			},
-			"measured_of": 1,
+			"measured_of": 4,
 			"not_taken": [
-				"MERGED: not searched -- the look past the first that held (REDUCE to 0.118) is 1 route(s), and the one looked at did not improve on it"
+				"THIN to 0.343 held at 4240, dearer than the 950 taken",
+				"THIN to 0.343+REDUCE to 0.240 held at 972, dearer than the 950 taken",
+				"THIN to 0.343+REDUCE (every piece) to 0.240 held at 972, dearer than the 950 taken"
 			],
+			"peak_mb": 248.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 101.0
+				"reduce": 101
 			},
+			"search_s": 26.900000000000002,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
 		"generator": "7bc4b0908452bb03c4c195275728f7b0669035851b0ed084857e65d1ae93c76c"
 	}
 }
