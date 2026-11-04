@@ -108,11 +108,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 8,
 				"trace": "plant__pine-stem#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 10,
 				"trace": "plant__pine-stem#2.trace.jsonl"
 			}
 		}
@@ -139,10 +139,10 @@
 					"value": {}
 				},
 				{
-					"cost": 228.0,
+					"cost": 228,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00397,
+					"picture": 0.0039700000000000004,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.179245
@@ -161,14 +161,14 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
+					"merged",
 					"thin",
-					"impostor",
-					"merged"
+					"impostor"
 				]
 			},
 			"measured": {
@@ -180,13 +180,13 @@
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to its error cap 0.125x the band's (0.179 kept) held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 356.0,
+			"peak_mb": 698.0,
 			"route": "kit",
-			"search_s": 179.0,
-			"searched": "recheck",
+			"search_s": 632.6,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -203,10 +203,10 @@
 					"value": {}
 				},
 				{
-					"cost": 228.0,
+					"cost": 228,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00399,
+					"picture": 0.0039900000000000005,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.179245
@@ -225,14 +225,14 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"thin",
 					"impostor",
-					"merged"
+					"merged",
+					"thin"
 				]
 			},
 			"measured": {
@@ -244,21 +244,21 @@
 			},
 			"measured_of": 4,
 			"not_taken": [
-				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at 2 of the band's pixels) held at 228, the same cost as the route taken, found first",
 				"REDUCE to its error cap 0.0625x the band's (0.179 kept) held at 228, the same cost as the route taken, found first",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 316.0,
+			"peak_mb": 290.0,
 			"route": "kit",
-			"search_s": 52.2,
-			"searched": "recheck",
+			"search_s": 243.20000000000002,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "8492dddd40c9d305dc85b5b43d4f47cab2aee518898129520513c8a8b82ef81e"
+		"generator": "95c7e49fde0c685a2f753b5cea5d6e031753a304066740b4a5edd0a4cce5e83e"
 	}
 }

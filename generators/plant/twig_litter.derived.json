@@ -87,11 +87,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 43,
 				"trace": "plant__twig-litter#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 56,
 				"trace": "plant__twig-litter#2.trace.jsonl"
 			}
 		}
@@ -111,16 +111,34 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
+					"cost": 2916,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.02432,
+					"px_over": 7,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
 					"cost": 3778,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.005200000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.998611
+					"value": 0.9986109999999999
+				},
+				{
+					"cost": 252,
+					"holds": false,
+					"judge": "field",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "substitute",
+					"value": 126
 				}
 			],
-			"cap": 0.00046296296296296,
+			"cap": 0.00046296296296296287,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -132,7 +150,7 @@
 				"pixel_m": 0.002105
 			},
 			"error": 0.0018518518518518515,
-			"fraction": 0.998611,
+			"fraction": 0.9986109999999999,
 			"from_rung": 0,
 			"ground": {
 				"albedo_linear": [
@@ -140,15 +158,15 @@
 					0.1481,
 					0.1097
 				],
-				"band": 1.0,
+				"band": 1,
 				"coverage": 0.0743,
-				"luminance_sd": 0.0491,
+				"luminance_sd": 0.049100000000000005,
 				"texel_m": 0.002105
 			},
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.25x the band's (0.999 kept)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"substitute",
 					"kit",
@@ -157,10 +175,6 @@
 					"thin",
 					"impostor",
 					"merged"
-				],
-				"skipped_by_prior": [
-					"SUBSTITUTE",
-					"KIT"
 				]
 			},
 			"measured": {
@@ -177,17 +191,18 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"SUBSTITUTE: skipped by the prior -- judged 3 times for field subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form field --band 1)",
-				"KIT: skipped by the prior -- judged 3 times for field subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form field --band 1)"
+				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 583 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: coverage, colour apart { \"coverage\": 0.1731, \"colour\": 2.6299, \"spread\": 0.0886, \"edges\": 0.1276 }, the tolerance { \"coverage\": 0.1262, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.135 }",
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"density_per_m2\":300.0} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00211 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.43: 28088 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)"
 			],
-			"peak_mb": 717.0,
+			"peak_mb": 781.0,
 			"route": "reduce",
 			"routes": {
-				"carry": 157.0,
-				"reduce": 86.0
+				"carry": 157,
+				"reduce": 86
 			},
-			"search_s": 161.5,
-			"searched": "recheck",
+			"search_s": 1004.3000000000001,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		},
@@ -197,11 +212,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2166.0,
+					"cost": 2166,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.03127,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -212,19 +227,19 @@
 					"picture": 0.005200000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.998611
+					"value": 0.9986109999999999
 				},
 				{
-					"cost": 126.0,
+					"cost": 126,
 					"holds": false,
 					"judge": "field",
 					"picture": -1.0,
-					"px_over": 2.0,
+					"px_over": 2,
 					"route": "substitute",
-					"value": 63.0
+					"value": 63
 				}
 			],
-			"cap": 0.00046296296296296,
+			"cap": 0.00046296296296296287,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -236,15 +251,15 @@
 				"pixel_m": 0.00842
 			},
 			"error": 0.007407407407407406,
-			"fraction": 0.998611,
+			"fraction": 0.9986109999999999,
 			"from_rung": 0,
 			"ground": {
 				"albedo_linear": [
-					0.2118,
+					0.21180000000000002,
 					0.1464,
-					0.1084
+					0.10840000000000001
 				],
-				"band": 2.0,
+				"band": 2,
 				"coverage": 0.07440000000000001,
 				"luminance_sd": 0.0488,
 				"texel_m": 0.00842
@@ -252,7 +267,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.0625x the band's (0.999 kept)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"substitute",
 					"kit",
@@ -538,7 +553,12 @@
 				"cost": 3778,
 				"coverage_rel": 0.0,
 				"floor": 0.00536,
-				"part_shift": {},
+				"part_shift": {
+					"bare_wood": 0.0,
+					"birch_twig": 0.0,
+					"pine_twig": 0.0,
+					"stick_bark": 0.0
+				},
 				"picture": 0.005200000000000001
 			},
 			"measured_of": 2,
@@ -550,20 +570,20 @@
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.2401, cover 2.04: 2527 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
 				"REDUCE to its error cap 0.0625x the band's (0.999 kept), carried from rung 1 held at 3778, the same cost as the route taken, found first"
 			],
-			"peak_mb": 292.0,
+			"peak_mb": 293.0,
 			"route": "reduce",
 			"routes": {
-				"carry": 157.0,
-				"reduce": 86.0
+				"carry": 157,
+				"reduce": 86
 			},
-			"search_s": 269.5,
-			"searched": "recheck",
+			"search_s": 555.5,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "88ee514456488081f819de26f2504b414fa7fb7c98470606ab52112e1a066309",
-		"generator": "2c0abe8cea2b3fadd1fa64977652c21e52c26d9edddbfec66e8ddbb0f6a62acd"
+		"generator": "7ca85362b6179843df09fe2cec1fbca4b33b06581b1990e6e113062afa720123"
 	}
 }

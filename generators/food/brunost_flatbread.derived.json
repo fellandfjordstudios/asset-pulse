@@ -115,9 +115,6 @@
 					"merged",
 					"thin",
 					"impostor"
-				],
-				"skipped_by_prior": [
-					"THIN"
 				]
 			},
 			"measured": {
@@ -141,18 +138,17 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 14 times for solid subjects at band 1 across 14 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0041 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00130 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.05: 184 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
-				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
-				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
 			"peak_mb": 303.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 11
 			},
-			"search_s": 269.0,
+			"search_s": 301.5,
 			"searched": "search",
 			"surfaces": 11,
 			"surfaces_ceiling": 11
@@ -214,7 +210,7 @@
 			],
 			"peak_mb": 260.0,
 			"route": "impostor",
-			"search_s": 86.2,
+			"search_s": 98.80000000000001,
 			"searched": "search",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -223,8 +219,8 @@
 		}
 	},
 	"source": {
-		"children": "e902096de6e63406d67ffe354d064146a9521894e497eab95482bdce5931cd46",
+		"children": "cb51b65ba592095c36c8501bc984d0e0bccea378f3cf5f302896c11c5fde48db",
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "e93e6a35c0c0dfb98d4a727169c30acbe5758c7d80157bb31700d9686c36a248"
+		"generator": "94a4e3a5796cd4aa0dfdb54a5255384b89659a59aa6e558ca81d5652efdbe97b"
 	}
 }

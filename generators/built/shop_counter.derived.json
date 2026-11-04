@@ -120,9 +120,6 @@
 					"merged",
 					"thin",
 					"impostor"
-				],
-				"skipped_by_prior": [
-					"THIN"
 				]
 			},
 			"measured": {
@@ -140,22 +137,21 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 15 times for solid subjects at band 1 across 15 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
-				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
-				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 533.0,
+			"peak_mb": 532.0,
 			"route": "kit",
-			"search_s": 252.8,
+			"search_s": 275.5,
 			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		}
 	},
 	"source": {
-		"children": "ddec23801b9f0447a94725c8753d5b4734a4719bb62509c784122ada454283bb",
+		"children": "e3826732e1d5920df59760b5a4b77ff98b34cb02d383eb344d14537ff5ef1138",
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "2d7f4e1b6ed8b933b3d5e4536b91e6d5f2bf232f6909370969ae20d0401a58b0"
+		"generator": "d66147cec03ed46fa6d08eb31c2f67f62195062adbb26027b222fe0b559a0c38"
 	}
 }

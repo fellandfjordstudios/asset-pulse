@@ -1,0 +1,247 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"rounds": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"rounds": 12
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"butt_diameter_m": 0.15
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"butt_diameter_m": 1.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"round_taper": 0.7
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"round_taper": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"round_length_m": 0.2
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"round_length_m": 3.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"spacing_over_diameter": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"spacing_over_diameter": 3.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bearing_spread_deg": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bearing_spread_deg": 120.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"weathering_front": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"weathering_front": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"weathering_spread": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bark_cover": 0.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"bark_cover": 1.0
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		}
+	],
+	"effort": "full",
+	"id": "plant/log-pile",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"structural",
+			"seed"
+		],
+		"old_key_sets": 19,
+		"sampled": 19,
+		"sets": 19
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "plant__log-pile#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "8e165c67e73be41f04b0693a203275a72278b0ec13af6735b6dd2cba563b6180"
+	},
+	"rungs": {
+		"1": {
+			"budget": 42673,
+			"cancel_across": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 86964.0,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00453,
+					"px_over": null,
+					"route": "child",
+					"value": 1.0
+				},
+				{
+					"cost": 4696,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00459,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.053999
+				}
+			],
+			"cap": 0.00092592592592592,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 30126.0,
+				"fraction": 0.3429999999999999
+			},
+			"chains": {
+				"error": "kept"
+			},
+			"checked_at": 19,
+			"drawn": {
+				"excess": 0.0625,
+				"judge": "drawn",
+				"pixel_m": 0.004772
+			},
+			"error": 0.001851851851851852,
+			"fraction": 0.053999,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to its error cap 0.5x the band's (0.054 kept)",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"thin",
+					"merged"
+				]
+			},
+			"measured": {
+				"cost": 4696,
+				"coverage_rel": -0.00033000000000000005,
+				"floor": 0.00459,
+				"part_shift": {
+					"bark": -0.00015000000000000001,
+					"heartwood": 5e-05,
+					"sapwood": 0.00012000000000000002,
+					"weathered_wood": 8e-05
+				},
+				"picture": 0.00459
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"CHILD (its welded children at their own rungs {\"plant/bucked-log\":1}) held at 86964, dearer than the 4696 taken"
+			],
+			"peak_mb": 896.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 16.0
+			},
+			"search_s": 866.0,
+			"searched": "recheck",
+			"surfaces": 4,
+			"surfaces_ceiling": 4
+		}
+	},
+	"source": {
+		"children": "a7af0f4756375caf5456d8c0457f2c98910998e44339f5c3f74e23bb8e906e07",
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"generator": "12de98991158a8800e83e82c012a873605609ebfcb60999d5937689d25eeeb0c"
+	}
+}

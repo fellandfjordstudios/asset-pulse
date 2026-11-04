@@ -150,11 +150,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "plant__pine-shoot#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 12,
 				"trace": "plant__pine-shoot#2.trace.jsonl"
 			}
 		}
@@ -181,11 +181,11 @@
 					"value": {}
 				},
 				{
-					"cost": 432.0,
+					"cost": 432,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.0459,
-					"px_over": 21.0,
+					"px_over": 21,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -203,14 +203,14 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
+					"merged",
 					"thin",
-					"impostor",
-					"merged"
+					"impostor"
 				]
 			},
 			"measured": {
@@ -224,12 +224,12 @@
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 1's part 'body' is 21 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE (every piece) from rung 0: none holds at 0.0032 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 21 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00078 m; coverage changes -0.1911 against 0.0289 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0032",
-				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 302.0,
+			"peak_mb": 490.0,
 			"route": "kit",
-			"search_s": 169.70000000000002,
-			"searched": "recheck",
+			"search_s": 232.4,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -246,11 +246,11 @@
 					"value": {}
 				},
 				{
-					"cost": 426.0,
+					"cost": 426,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.0459,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -268,14 +268,14 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"thin",
 					"impostor",
-					"merged"
+					"merged",
+					"thin"
 				]
 			},
 			"measured": {
@@ -289,20 +289,20 @@
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 1's part 'body' is 21 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE (every piece) from rung 0: none holds at 0.0130 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.2653 against 0.0669 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0130",
-				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at 2 of the band's pixels) held at 646, the same cost as the route taken, found first",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 646, the same cost as the route taken, found first"
 			],
-			"peak_mb": 297.0,
+			"peak_mb": 284.0,
 			"route": "kit",
-			"search_s": 63.400000000000006,
-			"searched": "recheck",
+			"search_s": 178.8,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "1defb0ea1201e83c0ee2d8335c9e6eb006a1cf65c8978d1510622d4016c73463"
+		"generator": "68b179ce55b4db6fa7c1d243686a8bfc64d375db06d740cb11937f9408842d99"
 	}
 }

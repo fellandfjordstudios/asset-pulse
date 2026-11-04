@@ -73,11 +73,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 18,
 				"trace": "plant__heather#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 2,
+				"candidates": 47,
 				"trace": "plant__heather#2.trace.jsonl"
 			}
 		}
@@ -96,19 +96,16 @@
 			"budget": 48007,
 			"candidates": [
 				{
-					"cost": 66454,
+					"cost": 258674,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.05509000000000001,
-					"px_over": null,
+					"picture": 0.00911,
+					"px_over": 95,
 					"route": "kit",
-					"value": {
-						"flower": 0.3429999999999999,
-						"leaf": 0.03125
-					}
+					"value": 1.0
 				},
 				{
-					"cost": 353426.0,
+					"cost": 353426,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00412,
@@ -142,17 +139,16 @@
 				"tier": 1
 			},
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 27 times for solid subjects at band 1 across 27 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 95 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.00188 m; coverage changes -0.0822 against 0.0232 allowed (a one-pixel shrink all round); part 'shoot' changes its share of the picture by +0.0581 against 0.0232 allowed (its colour's share of the subject); part 'floret' changes its share of the picture by -0.1028 against 0.0232 allowed (its colour's share of the subject); part 'stem' changes its share of the picture by +0.0426 against 0.0232 allowed (its colour's share of the subject)",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.20: 9151 pixel(s) differ at the drawn size at {} seed 314 (worst 0.56)",
 				"REDUCE from rung 0 at {} seed 314: part 'litter' is 60 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 279 more groups)",
-				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"BUDGET: the cheapest derivation that holds the picture costs 353426 (7.36x), over rung 1's budget 48007 x 1.5 = 72010 (shrub, 1.01 m)"
 			],
-			"peak_mb": 524.0,
+			"peak_mb": 892.0,
 			"route": "kit",
-			"search_s": 299.7,
-			"searched": "recheck",
+			"search_s": 5309.6,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"tolerance": 0.001851851851851852
@@ -162,33 +158,29 @@
 			"budget": 12001,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 13.0,
+					"px_over": 13,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
-					"cost": 14570,
+					"cost": 191844,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.16327000000000003,
-					"px_over": null,
+					"picture": 0.009300000000000001,
+					"px_over": 1,
 					"route": "kit",
-					"value": {
-						"flower": 0.03125,
-						"leaf": 0.03125,
-						"shoot": 0.3429999999999999
-					}
+					"value": 1.0
 				},
 				{
-					"cost": 290140.0,
+					"cost": 290140,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.00769,
-					"px_over": 0.0,
+					"picture": 0.007690000000000001,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -465,14 +457,13 @@
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.2401, cover 2.04: 10069 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
 				"REDUCE from rung 0 at {} seed 314: part 'litter' is 60 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 279 more groups)",
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0652 against 0.0450 allowed (a one-pixel shrink all round); part 'shoot' changes its share of the picture by +0.0481 against 0.0450 allowed (its colour's share of the subject); the error ladder: none holds at 0.0074",
-				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping leaf 0.031, flower 0.343), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 163 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00751 m; part 'shoot' changes its share of the picture by +0.0989 against 0.0450 allowed (its colour's share of the subject); part 'floret' changes its share of the picture by -0.1155 against 0.0450 allowed (its colour's share of the subject)",
 				"THIN: plant/heather does not declare `reads_density`"
 			],
-			"peak_mb": 518.0,
+			"peak_mb": 661.0,
 			"route": "kit",
-			"search_s": 1838.4,
-			"searched": "recheck",
+			"search_s": 3537.0,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408
@@ -480,6 +471,6 @@
 	},
 	"source": {
 		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
-		"generator": "2c9eb61a60f9babce2e6718c5c9acf72b17ef2d1df0bf6b66d931bb5395a5eef"
+		"generator": "d0e0325deff1cf29e01f8955b944981fcf2beeefdd35384bcd80491899772ac9"
 	}
 }

@@ -150,9 +150,6 @@
 					"merged",
 					"thin",
 					"impostor"
-				],
-				"skipped_by_prior": [
-					"THIN"
 				]
 			},
 			"measured": {
@@ -168,15 +165,14 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00056 m",
-				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00056 m"
 			],
-			"peak_mb": 566.0,
+			"peak_mb": 563.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3
 			},
-			"search_s": 239.20000000000002,
+			"search_s": 374.70000000000005,
 			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -224,9 +220,6 @@
 					"impostor",
 					"merged",
 					"thin"
-				],
-				"skipped_by_prior": [
-					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -489,21 +482,20 @@
 			"measured_of": 3,
 			"not_taken": [
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 8 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00223 m",
-				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
-				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to 0.700 held at 656, dearer than the 196 taken",
 				"REDUCE to 0.700, carried from rung 1 held at 656, dearer than the 196 taken"
 			],
-			"peak_mb": 277.0,
+			"peak_mb": 274.0,
 			"route": "kit",
-			"search_s": 113.60000000000001,
+			"search_s": 193.5,
 			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "b6d3d5656425e51d45b5ced02fb838fc2190af2ade545c896d37adbec4d855ba",
-		"generator": "6e1e00a0105059c3bcba379da422c9afccb42fcf2db885847190f99f8bf3a4ff"
+		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"generator": "6689ba61e850370fe2e031b13297e266f24bdf20fa639e0d687f48c6f0ec920f"
 	}
 }
