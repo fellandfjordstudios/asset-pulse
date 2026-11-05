@@ -49,6 +49,7 @@ fi
 # THE REPORT.
 echo "== asset-pulse $DATE: run exit $RUN, $((SECONDS / 60)) min"
 grep -E "^backlog:" "$LOG" || echo "backlog: no line (skipped or failed early -- see $LOG)"
+cat "$OUT/measurements.txt" 2>/dev/null || echo "measurements: no line (skipped or failed early -- see $LOG)"
 echo "history (last two rows):"; tail -n 2 history.csv | sed 's/^/  /'
 if [ -f "$OUT/manifest.json" ]; then
   python3 - "$OUT/manifest.json" <<'PY'

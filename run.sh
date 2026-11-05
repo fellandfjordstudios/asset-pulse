@@ -8,6 +8,7 @@
 #   ./run.sh --no-render     the scorecard and the row only
 #   PULSE_CAP_S=1800         the per-subject time cap for the renders
 #   PULSE_BACKLOG=0          skip the derivation backlog (tools/backlog.sh, on by default)
+#   PULSE_MEASURE=0          skip the library's measurement suites (tools/measure.sh, on by default)
 #   PULSE_DERIVE=none        drawn today only: no derived column
 #   PULSE_ONLY="a/b c/d"     render only these subjects (a manual look)
 #   PULSE_BAKE=0             skip the bake and the catalog (tools/bake.sh, tools/catalog.py)
@@ -51,6 +52,11 @@ if [ "${PULSE_BACKLOG:-1}" = "1" ] && [ "${1:-}" != "--no-render" ] && [ "${2:-}
   tools/backlog.sh || echo "run: the backlog failed; the sheets read the tables as they are"
 fi
 PIN="$(sed -n 's/^commit=//p' library.lock)"
+# THE LIBRARY'S MEASUREMENTS (tools/measure.sh; the library's row 737): its instruments,
+# moved off its push gate onto this clock. PULSE_MEASURE=0 skips them (a quick look).
+if [ "${PULSE_MEASURE:-1}" = "1" ]; then
+  tools/measure.sh "$OUT" || echo "run: the measurements failed to start; see $OUT/measurements.out"
+fi
 # THE SCORECARD: the library's tool when it exists (the tooling plan's step 10),
 # the prototype beside the library's plans until then. Run from the library root,
 # since both read the library's committed JSON by relative path.

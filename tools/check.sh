@@ -19,4 +19,4 @@ python3 tools/test_promote_roots.py
 python3 tools/cache_probe.py --self-test
 python3 -m unittest discover -s tools -p 'test_catalog_impostors.py'
 node --check tools/catalog-assets/catalog.js
-bash -n tools/setup.sh tools/check.sh daily.sh tools/publish.sh tools/bake.sh .githooks/pre-push .githooks/commit-msg
+bash -n tools/setup.sh tools/check.sh tools/measure.sh daily.sh tools/publish.sh tools/bake.sh .githooks/pre-push .githooks/commit-msg
