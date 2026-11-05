@@ -24,7 +24,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 7,
+				"candidates": 1,
 				"trace": "built__coffee-grinder#1.trace.jsonl"
 			},
 			"2": {
@@ -48,11 +48,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 7438,
+					"cost": 7438.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 7,
+					"px_over": 7.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -66,7 +66,7 @@
 					"value": 0.8198019999999999
 				}
 			],
-			"cap": 0.0012468082945329589,
+			"cap": 0.00124680829453295,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -84,7 +84,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.820 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -119,13 +119,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'paint' is 14 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 290.0,
+			"peak_mb": 287.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 7
+				"reduce": 7.0
 			},
-			"search_s": 113.9,
-			"searched": "search",
+			"search_s": 35.1,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
 		},
@@ -155,12 +155,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 3,
+					"px_over": null,
 					"route": "impostor",
-					"value": 24
+					"value": 32
 				}
 			],
 			"checked_at": 2,
@@ -184,17 +184,17 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 242.0,
+			"peak_mb": 287.0,
 			"route": "impostor",
-			"search_s": 113.5,
-			"searched": "search",
+			"search_s": 79.0,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 32
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "a9bab44a4c2a0625cf2740720795ed6808826641b41f4564eb416f75a31916f8"
 	}
 }

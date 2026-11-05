@@ -26,11 +26,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 9,
+				"candidates": 1,
 				"trace": "built__skis#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 29,
+				"candidates": 1,
 				"trace": "built__skis#2.trace.jsonl"
 			},
 			"3": {
@@ -55,7 +55,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4564,
+					"cost": 4564.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004,
@@ -64,11 +64,11 @@
 					"value": 1.0
 				},
 				{
-					"cost": 14344,
+					"cost": 14344.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -82,7 +82,7 @@
 					"value": 0.276495
 				}
 			],
-			"cap": 0.00023148148148148146,
+			"cap": 0.00023148148148148,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -100,7 +100,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "CHILD (its welded children at their own rungs {\"built/skis-pole\":0,\"built/skis-ski\":1})",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -135,13 +135,13 @@
 				"MERGED, THIN: not searched -- the look past the first that held (CHILD (its welded children at their own rungs {\"built/skis-pole\":0,\"built/skis-ski\":1})) is 1 route(s)",
 				"CHILD (its welded children at their own rungs {\"built/skis-pole\":0,\"built/skis-ski\":1}) held at 4564, dearer than the 4550 taken"
 			],
-			"peak_mb": 312.0,
+			"peak_mb": 310.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 22
+				"reduce": 22.0
 			},
-			"search_s": 64.5,
-			"searched": "search",
+			"search_s": 14.5,
+			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9
 		},
@@ -151,29 +151,29 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 3444,
+					"cost": 3444.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "child",
 					"value": 1.0
 				},
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 13628,
+					"cost": 13628.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00551,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -187,16 +187,16 @@
 					"value": 0.241006
 				},
 				{
-					"cost": 10684,
+					"cost": 10684.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00551,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "thin",
 					"value": 0.7
 				}
 			],
-			"cap": 0.0004629629629629629,
+			"cap": 0.00046296296296296,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -214,7 +214,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.241 kept)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -283,17 +283,7 @@
 				"cost": 3966,
 				"coverage_rel": -0.0007300000000000001,
 				"floor": 0.004,
-				"part_shift": {
-					"bamboo": 0.00013000000000000002,
-					"base": 0.00068,
-					"basket": 3.0000000000000004e-05,
-					"binding_iron": -0.0007400000000000001,
-					"binding_leather": 0.00022,
-					"edge_wood": 0.00013000000000000002,
-					"hickory": 0.00068,
-					"ridge": 0.0,
-					"stitch": -0.0015
-				},
+				"part_shift": {},
 				"picture": 0.004
 			},
 			"measured_of": 2,
@@ -323,13 +313,13 @@
 				"THIN: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0463 against 0.0450 allowed (a one-pixel shrink all round)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.276 kept), carried from rung 1 held at 4550, dearer than the 3966 taken"
 			],
-			"peak_mb": 265.0,
+			"peak_mb": 309.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 22
+				"reduce": 22.0
 			},
-			"search_s": 263.7,
-			"searched": "search",
+			"search_s": 93.7,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		},
@@ -359,12 +349,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 2,
+					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 16
 				}
 			],
 			"checked_at": 2,
@@ -388,10 +378,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 265.0,
+			"peak_mb": 309.0,
 			"route": "impostor",
-			"search_s": 28.5,
-			"searched": "search",
+			"search_s": 15.600000000000001,
+			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -400,7 +390,7 @@
 	},
 	"source": {
 		"children": "c7f57c8e0efa776274a86eed013517e0fd1e0769d447cbe2fd447d6cc04288a6",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "90570db34a3aae8490f0271fb745f5cb9f923afa2875eaeedca33a50cb3fbbda"
 	}
 }

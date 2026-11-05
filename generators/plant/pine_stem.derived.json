@@ -108,11 +108,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 8,
+				"candidates": 0,
 				"trace": "plant__pine-stem#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 10,
+				"candidates": 0,
 				"trace": "plant__pine-stem#2.trace.jsonl"
 			}
 		}
@@ -139,10 +139,10 @@
 					"value": {}
 				},
 				{
-					"cost": 228,
+					"cost": 228.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0039700000000000004,
+					"picture": 0.00397,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.179245
@@ -161,7 +161,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -183,10 +183,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to its error cap 0.125x the band's (0.179 kept) held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 698.0,
+			"peak_mb": 356.0,
 			"route": "kit",
-			"search_s": 632.6,
-			"searched": "search",
+			"search_s": 124.7,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -203,10 +203,10 @@
 					"value": {}
 				},
 				{
-					"cost": 228,
+					"cost": 228.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0039900000000000005,
+					"picture": 0.00399,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.179245
@@ -225,7 +225,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -249,16 +249,16 @@
 				"REDUCE to its error cap 0.0625x the band's (0.179 kept) held at 228, the same cost as the route taken, found first",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 290.0,
+			"peak_mb": 316.0,
 			"route": "kit",
-			"search_s": 243.20000000000002,
-			"searched": "search",
+			"search_s": 27.200000000000003,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "95c7e49fde0c685a2f753b5cea5d6e031753a304066740b4a5edd0a4cce5e83e"
 	}
 }

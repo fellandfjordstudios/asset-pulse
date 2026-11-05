@@ -304,7 +304,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 9,
+				"candidates": 10,
 				"trace": "plant__fallen-redwood-log#1.trace.jsonl"
 			}
 		}
@@ -366,22 +366,21 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"REDUCE from rung 0 at {} seed 314: element 0's part 'bark' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
-				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'bark' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)"
 			],
-			"peak_mb": 2002.0,
+			"peak_mb": 2296.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5
 			},
-			"search_s": 2575.2000000000003,
+			"search_s": 2665.7000000000003,
 			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "bc667f5767c0477e02ba4583c55e5e751128d7a2cce406e3872e075497976df7"
 	}
 }

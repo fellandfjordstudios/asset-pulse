@@ -96,11 +96,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 8,
+				"candidates": 0,
 				"trace": "built__quay-ladder#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 14,
+				"candidates": 0,
 				"trace": "built__quay-ladder#2.trace.jsonl"
 			}
 		}
@@ -127,7 +127,7 @@
 					"value": {}
 				},
 				{
-					"cost": 296,
+					"cost": 296.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00434,
@@ -149,7 +149,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -166,11 +166,7 @@
 				"cost": 340,
 				"coverage_rel": 0.00158,
 				"floor": 0.00472,
-				"part_shift": {
-					"iron": -5e-05,
-					"tide_growth": -0.00012000000000000002,
-					"timber": 0.00033000000000000005
-				},
+				"part_shift": {},
 				"picture": 0.00434
 			},
 			"measured_of": 2,
@@ -180,10 +176,10 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.700 held at 296, cheaper than the 340 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 630.0,
+			"peak_mb": 303.0,
 			"route": "kit",
-			"search_s": 133.3,
-			"searched": "search",
+			"search_s": 48.1,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -200,10 +196,10 @@
 					"value": {}
 				},
 				{
-					"cost": 296,
+					"cost": 296.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0069500000000000004,
+					"picture": 0.00695,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
@@ -222,7 +218,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -534,11 +530,7 @@
 				"cost": 236,
 				"coverage_rel": -0.00816,
 				"floor": 0.00472,
-				"part_shift": {
-					"iron": -0.01187,
-					"tide_growth": 0.006370000000000001,
-					"timber": 0.0055000000000000005
-				},
+				"part_shift": {},
 				"picture": 0.00434
 			},
 			"measured_of": 4,
@@ -550,16 +542,16 @@
 				"REDUCE (every piece) to 0.700 held at 296, dearer than the 236 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 340, dearer than the 236 taken"
 			],
-			"peak_mb": 277.0,
+			"peak_mb": 261.0,
 			"route": "kit",
-			"search_s": 97.0,
-			"searched": "search",
+			"search_s": 29.700000000000003,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "4953392381444985ce5abce5f318ef27c9dbcdb39dd3b0d114017371aa9cd7df"
 	}
 }

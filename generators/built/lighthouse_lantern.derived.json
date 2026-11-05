@@ -47,15 +47,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 7,
+				"candidates": 0,
 				"trace": "built__lighthouse-lantern#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 11,
+				"candidates": 0,
 				"trace": "built__lighthouse-lantern#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 13,
+				"candidates": 0,
 				"trace": "built__lighthouse-lantern#3.trace.jsonl"
 			}
 		}
@@ -83,7 +83,7 @@
 					"value": {}
 				},
 				{
-					"cost": 798,
+					"cost": 798.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00423,
@@ -105,7 +105,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -122,10 +122,7 @@
 				"cost": 770,
 				"coverage_rel": 0.0,
 				"floor": 0.00423,
-				"part_shift": {
-					"lantern_glass": 1e-05,
-					"red_iron": -1e-05
-				},
+				"part_shift": {},
 				"picture": 0.00423
 			},
 			"measured_of": 2,
@@ -135,10 +132,10 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.700 held at 798, dearer than the 770 taken"
 			],
-			"peak_mb": 426.0,
+			"peak_mb": 302.0,
 			"route": "kit",
-			"search_s": 167.8,
-			"searched": "search",
+			"search_s": 42.300000000000004,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -146,7 +143,7 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 377,
+					"cost": 502,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00423,
@@ -155,7 +152,7 @@
 					"value": {}
 				},
 				{
-					"cost": 376,
+					"cost": 376.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00423,
@@ -177,7 +174,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -321,10 +318,7 @@
 				"cost": 502,
 				"coverage_rel": -0.00012000000000000002,
 				"floor": 0.00423,
-				"part_shift": {
-					"lantern_glass": 7.000000000000001e-05,
-					"red_iron": -7.000000000000001e-05
-				},
+				"part_shift": {},
 				"picture": 0.00423
 			},
 			"measured_of": 4,
@@ -336,10 +330,10 @@
 				"REDUCE (every piece) to 0.343 held at 376, cheaper than the 502 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 770, dearer than the 502 taken"
 			],
-			"peak_mb": 254.0,
+			"peak_mb": 258.0,
 			"route": "kit",
-			"search_s": 122.7,
-			"searched": "search",
+			"search_s": 25.200000000000003,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -356,7 +350,7 @@
 					"value": {}
 				},
 				{
-					"cost": 376,
+					"cost": 376.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00534,
@@ -378,7 +372,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 4 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -519,10 +513,7 @@
 				"cost": 255,
 				"coverage_rel": 0.0004,
 				"floor": 0.00423,
-				"part_shift": {
-					"lantern_glass": 0.00011,
-					"red_iron": -0.00011
-				},
+				"part_shift": {},
 				"picture": 0.015510000000000001
 			},
 			"measured_of": 5,
@@ -534,17 +525,17 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 770, dearer than the 255 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 502, dearer than the 255 taken"
 			],
-			"peak_mb": 254.0,
+			"peak_mb": 258.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 87.0,
-			"searched": "search",
+			"search_s": 13.0,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "f3f01a37a875a72db6eff3a046178512eb0aa142a02698e721de6b4e8a38a2ce"
 	}
 }

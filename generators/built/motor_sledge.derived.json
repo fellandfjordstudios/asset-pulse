@@ -68,11 +68,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 4,
+				"candidates": 1,
 				"trace": "built__motor-sledge#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 25,
+				"candidates": 29,
 				"trace": "built__motor-sledge#2.trace.jsonl"
 			},
 			"3": {
@@ -87,7 +87,7 @@
 	},
 	"replay": {
 		"1": "37ce7fe7b87bd4bde8676a821328d76dd5165417ebef37468abf570cf2e54932",
-		"2": "521d6f3b606705294e2d3018a213efcd2010ab3d5a66256aad5dab659b31c11c",
+		"2": "3090bbd26dfae688155aa95def169a9c86a3bf18a7f77b8ba0ec9223d2ece44b",
 		"3": "0708ec751e653cbd48e95a3f75d7a6049fb24a9e83e699be7b2ac2b73480ae0d"
 	},
 	"rungs": {
@@ -95,11 +95,11 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 19692,
+					"cost": 19692.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00442,
-					"px_over": 9,
+					"px_over": 9.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -125,7 +125,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -158,10 +158,10 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 581.0,
+			"peak_mb": 552.0,
 			"route": "merged",
-			"search_s": 344.0,
-			"searched": "search",
+			"search_s": 307.6,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -195,6 +195,15 @@
 					"px_over": null,
 					"route": "merged",
 					"value": 1.0
+				},
+				{
+					"cost": 23108,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.004690000000000001,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.5306569999999999
 				}
 			],
 			"checked_at": 8,
@@ -405,6 +414,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 15876,
 				"coverage_rel": -0.00805,
@@ -419,7 +429,7 @@
 				},
 				"picture": 0.005600000000000001
 			},
-			"measured_of": 3,
+			"measured_of": 4,
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 8x its pixel: 2249 pixel(s) differ at {} seed 314 (worst 0.75)",
 				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 8x its pixel: 1749 pixel(s) differ at {} seed 314 (worst 0.63)",
@@ -440,14 +450,15 @@
 				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 4x its pixel: 4 pixel(s) differ at {} seed 314 (worst 0.77)",
 				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 3 pixel(s) differ at {} seed 314 (worst 0.77)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"length_m\":2.8} seed 314: the picture changes at the drawn size: 4 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.02117 m",
+				"REDUCE from rung 1, the derived band above at {} seed 314: part 'wood' is 166 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
-				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"REDUCE (every piece) to its error cap 0.125x the band's (0.531 kept) held at 23108, dearer than the 15876 taken",
 				"MERGED (its parts at their own rungs, joined) held at 43546, dearer than the 15876 taken",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 43546, dearer than the 15876 taken"
 			],
-			"peak_mb": 316.0,
+			"peak_mb": 588.0,
 			"route": "kit",
-			"search_s": 706.5,
+			"search_s": 1550.9,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -478,12 +489,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 24
 				}
 			],
 			"checked_at": 8,
@@ -507,10 +518,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 269.0,
+			"peak_mb": 588.0,
 			"route": "impostor",
-			"search_s": 248.5,
-			"searched": "search",
+			"search_s": 234.8,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 24
@@ -518,7 +529,7 @@
 	},
 	"source": {
 		"children": "b9261c1d417ec26346f06238cfa2dfd0f8205ab5c72be5cdfb8a03ba12747331",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "e7f5dd46263ed4eca2c0737b37ec07d2d89ba65a01742183edd59a0f9d7389c8"
 	}
 }

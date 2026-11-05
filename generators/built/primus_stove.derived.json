@@ -33,7 +33,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 11,
+				"candidates": 1,
 				"trace": "built__primus-stove#1.trace.jsonl"
 			}
 		}
@@ -52,10 +52,10 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 6914,
+					"cost": 6914.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0046300000000000004,
+					"picture": 0.00463,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
@@ -71,9 +71,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.0014735007117207695,
+				"cap": 0.00147350071172076,
 				"chain": "error",
-				"cost": 5116
+				"cost": 5116.0
 			},
 			"chains": {
 				"error": "lost"
@@ -91,7 +91,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.168",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -125,19 +125,19 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 6914, dearer than the 3526 taken"
 			],
-			"peak_mb": 259.0,
+			"peak_mb": 262.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 18
+				"reduce": 18.0
 			},
-			"search_s": 87.30000000000001,
-			"searched": "search",
+			"search_s": 20.8,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "f8d33f47c37afd82b47ae9937afff8b4331847cc1d383722c7570fd2672d683c"
 	}
 }

@@ -47,7 +47,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 4,
+				"candidates": 0,
 				"trace": "plant__birch-leaf#1.trace.jsonl"
 			}
 		}
@@ -73,18 +73,18 @@
 					"value": {}
 				},
 				{
-					"cost": 0,
+					"cost": 0.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 1.0,
-					"px_over": 798,
+					"px_over": 798.0,
 					"route": "reduce",
 					"value": 0.7
 				}
 			],
 			"checked_at": 5,
 			"drawn": {
-				"excess": 0.25,
+				"excess": 0.125,
 				"judge": "drawn",
 				"pixel_m": 0.0007779999999999999
 			},
@@ -95,7 +95,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -121,16 +121,16 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 238.0,
+			"peak_mb": 240.0,
 			"route": "kit",
-			"search_s": 6.0,
-			"searched": "search",
+			"search_s": 3.9000000000000004,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "93e65136bea3e4251cd5d447f4b06da5b5fed5f4cf0fdd893234b4276dcb0593"
 	}
 }

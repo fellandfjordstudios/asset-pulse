@@ -318,11 +318,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 3,
+				"candidates": 0,
 				"trace": "plant__fallen-trunk#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 9,
+				"candidates": 1,
 				"trace": "plant__fallen-trunk#2.trace.jsonl"
 			}
 		}
@@ -340,11 +340,11 @@
 			"budget": 42673,
 			"candidates": [
 				{
-					"cost": 23910,
+					"cost": 23910.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00438,
-					"px_over": 3,
+					"px_over": 3.0,
 					"route": "reduce",
 					"value": 0.7
 				},
@@ -365,18 +365,19 @@
 			"measured": {
 				"cost": 34176,
 				"coverage_rel": 0.0,
-				"floor": 0.0,
+				"floor": 0.00438,
 				"part_shift": {},
 				"picture": 0.0
 			},
+			"measured_of": 1,
 			"not_taken": [
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"strip_thickness_ratio\":1.0} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00408 m; the error ladder: none holds at 0.0019",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 945.0,
+			"peak_mb": 549.0,
 			"route": "rung0",
-			"search_s": 650.0,
-			"searched": "search",
+			"search_s": 217.9,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"tolerance": 0.001851851851851852
@@ -396,11 +397,11 @@
 					"value": 0.3125
 				}
 			],
-			"cap": 0.000462962962962963,
+			"cap": 0.00046296296296296,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 23910,
+				"cost": 23910.0,
 				"fraction": 0.7
 			},
 			"chains": {
@@ -418,7 +419,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.0625x the band's (0.312 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -1498,32 +1499,26 @@
 				"cost": 10680,
 				"coverage_rel": -0.004220000000000001,
 				"floor": 0.00438,
-				"part_shift": {
-					"bark": 0.0008300000000000001,
-					"basebark": -0.0005200000000000001,
-					"crack": -0.0009800000000000002,
-					"soiled": 0.00101,
-					"splitwood": -0.0013200000000000002
-				},
+				"part_shift": {},
 				"picture": 0.007810000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)"
 			],
-			"peak_mb": 541.0,
+			"peak_mb": 614.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 15
+				"reduce": 15.0
 			},
-			"search_s": 1425.7,
-			"searched": "search",
+			"search_s": 1076.2,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "7e65865c58ca5b39b5baa21b1a555dc0d43cdf0ee314add0e07057953d45e3c9"
 	}
 }

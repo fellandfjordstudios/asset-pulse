@@ -26,11 +26,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 4,
+				"candidates": 1,
 				"trace": "built__mess-kit#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 7,
+				"candidates": 13,
 				"trace": "built__mess-kit#2.trace.jsonl"
 			}
 		}
@@ -41,18 +41,18 @@
 	},
 	"replay": {
 		"1": "ad95781df1d2c815eaa0b246f3f47f757e86b0b9f6c0a74910ff23b7efa01129",
-		"2": "fa56bcd9e25df2d7f1755d28404d7f5f0fd0283fc95c2994cb6b8940eeaf4390"
+		"2": "da1c9ccfb51fd15ef52ad0660158f96090aaaaf92169db1d2f906e316f105862"
 	},
 	"rungs": {
 		"1": {
 			"budget": 3152,
 			"candidates": [
 				{
-					"cost": 1744,
+					"cost": 1744.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -78,7 +78,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -113,16 +113,18 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 265.0,
+			"peak_mb": 264.0,
 			"route": "merged",
-			"search_s": 14.700000000000001,
-			"searched": "search",
+			"search_s": 11.5,
+			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		},
 		"2": {
 			"budget": 788,
-			"budget_reason": "the cheapest derivation that holds the picture costs 2550, 3.24x rung 2's budget 788: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"budget_reason": "the cheapest derivation that holds the picture costs 2352, 2.98x rung 2's budget 788: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
+			"cancel_across": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 1050,
@@ -141,66 +143,81 @@
 					"px_over": null,
 					"route": "merged",
 					"value": 1.0
+				},
+				{
+					"cost": 2352,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00447,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.922353
 				}
 			],
+			"cap": 0.0018738159339801697,
+			"chain": "error",
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 2,
 			"drawn": {
-				"excess": 0.0,
+				"excess": 0.25,
 				"judge": "drawn",
 				"pixel_m": 0.005174
 			},
 			"error": 0.014990527471841358,
-			"fraction": 1.0,
-			"from_rung": 0,
+			"every_piece": true,
+			"fraction": 0.922353,
+			"from_rung": 1,
 			"material_transfer": {
 				"checked_at": 2,
 				"checks": [
 					{
 						"holds": true,
 						"mean_after": [
-							0.0918164998292923,
-							0.09245232492685318,
-							0.09447044134140015
+							0.09144667536020279,
+							0.09207628667354584,
+							0.09411247819662094
 						],
 						"mean_before": [
-							0.0918164998292923,
-							0.09245232492685318,
-							0.09447044134140015
+							0.09144667536020279,
+							0.09207628667354584,
+							0.09411247819662094
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.020264551043510437,
-							0.020267212763428688,
-							0.019050240516662598
+							0.02016177400946617,
+							0.020158030092716217,
+							0.01894877292215824
 						],
 						"variance_before": [
-							0.020264551043510437,
-							0.020267212763428688,
-							0.019050240516662598
+							0.02016177400946617,
+							0.020158030092716217,
+							0.01894877292215824
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.0918164849281311,
-							0.09245231747627258,
-							0.09447044134140015
+							0.09163884818553925,
+							0.09227008372545242,
+							0.09429646283388138
 						],
 						"mean_before": [
-							0.0918164849281311,
-							0.09245231747627258,
-							0.09447044134140015
+							0.09163884818553925,
+							0.09227008372545242,
+							0.09429646283388138
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.02026454731822014,
-							0.020267212763428688,
-							0.019050244241952896
+							0.02022487297654152,
+							0.020224623382091522,
+							0.019011780619621277
 						],
 						"variance_before": [
-							0.02026454731822014,
-							0.020267212763428688,
-							0.019050244241952896
+							0.02022487297654152,
+							0.020224623382091522,
+							0.019011780619621277
 						]
 					}
 				],
@@ -208,40 +225,44 @@
 			},
 			"materials": "merged",
 			"measured": {
-				"cost": 2550,
-				"coverage_rel": 0.0,
+				"cost": 2352,
+				"coverage_rel": -0.00109,
 				"floor": 0.00447,
 				"part_shift": {
-					"abrasion": 0.0,
-					"aluminium": 0.0,
-					"clip": 0.0,
+					"abrasion": 0.00016,
+					"aluminium": 0.0008900000000000001,
+					"clip": -0.00102,
 					"edge": 0.0,
-					"plastic": 0.0,
-					"rim": 0.0,
-					"titanium": 0.0,
-					"wire": 0.0
+					"plastic": 0.00035000000000000005,
+					"rim": 5e-05,
+					"titanium": -0.00038,
+					"wire": 4e-05
 				},
-				"picture": 0.0
+				"picture": 0.00447
 			},
-			"measured_of": 2,
+			"measured_of": 3,
 			"not_taken": [
 				"KIT: none holds at 0.0150 -- the finest tried (1.000) fails at {\"pot_handle_open\":0.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00418 m",
 				"KIT at 2 pixels: none holds at 0.0150 -- the finest tried (1.000) fails at {} seed 314: part 'abrasion' changes its share of the picture by -0.0777 against 0.0745 allowed (its colour's share of the subject)",
+				"REDUCE from rung 1, the derived band above at {} seed 314: part 'wire' is 15 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
-				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
-				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 2550, the same cost as the route taken, found first"
+				"MERGED (its parts at their own rungs, joined) held at 2550, dearer than the 2352 taken",
+				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 2550, dearer than the 2352 taken"
 			],
-			"peak_mb": 243.0,
-			"route": "merged",
-			"search_s": 46.5,
+			"peak_mb": 264.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 8
+			},
+			"search_s": 40.900000000000006,
 			"searched": "search",
-			"surfaces": 6,
+			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"children": "e1e75fee5272afeb8dfd242829efb7a5b96bac908d0305e097f446093248cdc5",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "1433980d5f920b0f4bf302874dd9693ee4fdb5e9a48bd35161cb7c5ec208f02c"
 	}
 }

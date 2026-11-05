@@ -151,12 +151,12 @@
 				"picture": 0.00459
 			},
 			"measured_of": 1,
-			"peak_mb": 554.0,
+			"peak_mb": 555.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 129.8,
+			"search_s": 64.3,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -214,12 +214,12 @@
 				"picture": 0.00459
 			},
 			"measured_of": 1,
-			"peak_mb": 255.0,
+			"peak_mb": 555.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 36.800000000000004,
+			"search_s": 14.100000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -279,9 +279,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 255.0,
+			"peak_mb": 555.0,
 			"route": "impostor",
-			"search_s": 29.5,
+			"search_s": 10.4,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -289,7 +289,7 @@
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "52005c89e185db1498668b10d93361d728f2a1260b69755325b9ce32f47ff571"
 	}
 }

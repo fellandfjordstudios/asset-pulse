@@ -61,11 +61,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 0,
 				"trace": "built__fodder-bale-binding#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 12,
+				"candidates": 0,
 				"trace": "built__fodder-bale-binding#2.trace.jsonl"
 			}
 		}
@@ -92,10 +92,10 @@
 					"value": {}
 				},
 				{
-					"cost": 2222,
+					"cost": 2222.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0046300000000000004,
+					"picture": 0.00463,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.95283
@@ -105,7 +105,7 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.001286
+				"pixel_m": 0.001297
 			},
 			"error": 0.0028404832997026884,
 			"fraction": 1.0,
@@ -114,7 +114,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -140,10 +140,10 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to its error cap 0.0625x the band's (0.953 kept) held at 2222, cheaper than the 2332 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 350.0,
+			"peak_mb": 280.0,
 			"route": "kit",
-			"search_s": 66.4,
-			"searched": "search",
+			"search_s": 21.200000000000003,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -160,7 +160,7 @@
 					"value": {}
 				},
 				{
-					"cost": 798,
+					"cost": 798.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.11228,
@@ -173,7 +173,7 @@
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.005144
+				"pixel_m": 0.005187
 			},
 			"error": 0.011361933198810754,
 			"fraction": 1.0,
@@ -182,7 +182,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -210,16 +210,16 @@
 				"REDUCE to 0.343 held at 798, cheaper than the 2332 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 2332, the same cost as the route taken, found first"
 			],
-			"peak_mb": 251.0,
+			"peak_mb": 277.0,
 			"route": "kit",
-			"search_s": 63.300000000000004,
-			"searched": "search",
+			"search_s": 6.4,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "671fa3c935d3a76f267032bdc839a120157930284a11e84f2e077044b76d0d4e"
 	}
 }

@@ -73,11 +73,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 18,
+				"candidates": 0,
 				"trace": "plant__heather#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 47,
+				"candidates": 2,
 				"trace": "plant__heather#2.trace.jsonl"
 			}
 		}
@@ -96,16 +96,19 @@
 			"budget": 48007,
 			"candidates": [
 				{
-					"cost": 258674,
+					"cost": 66454,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.00911,
-					"px_over": 95,
+					"picture": 0.05509000000000001,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
+					"value": {
+						"flower": 0.3429999999999999,
+						"leaf": 0.03125
+					}
 				},
 				{
-					"cost": 353426,
+					"cost": 353426.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00412,
@@ -145,10 +148,10 @@
 				"REDUCE from rung 0 at {} seed 314: part 'litter' is 60 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 279 more groups)",
 				"BUDGET: the cheapest derivation that holds the picture costs 353426 (7.36x), over rung 1's budget 48007 x 1.5 = 72010 (shrub, 1.01 m)"
 			],
-			"peak_mb": 892.0,
+			"peak_mb": 697.0,
 			"route": "kit",
-			"search_s": 5309.6,
-			"searched": "search",
+			"search_s": 223.4,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"tolerance": 0.001851851851851852
@@ -158,29 +161,33 @@
 			"budget": 12001,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 13,
+					"px_over": 13.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 191844,
+					"cost": 14570,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.009300000000000001,
-					"px_over": 1,
+					"picture": 0.16327000000000003,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
+					"value": {
+						"flower": 0.03125,
+						"leaf": 0.03125,
+						"shoot": 0.3429999999999999
+					}
 				},
 				{
-					"cost": 290140,
+					"cost": 290140.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.007690000000000001,
-					"px_over": 0,
+					"picture": 0.00769,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -460,17 +467,17 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping leaf 0.031, flower 0.343), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 163 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00751 m; part 'shoot' changes its share of the picture by +0.0989 against 0.0450 allowed (its colour's share of the subject); part 'floret' changes its share of the picture by -0.1155 against 0.0450 allowed (its colour's share of the subject)",
 				"THIN: plant/heather does not declare `reads_density`"
 			],
-			"peak_mb": 661.0,
+			"peak_mb": 697.0,
 			"route": "kit",
-			"search_s": 3537.0,
-			"searched": "search",
+			"search_s": 1249.0,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "d0e0325deff1cf29e01f8955b944981fcf2beeefdd35384bcd80491899772ac9"
 	}
 }

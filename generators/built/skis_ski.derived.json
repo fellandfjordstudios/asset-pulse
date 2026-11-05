@@ -19,11 +19,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "built__skis-ski#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 13,
+				"candidates": 1,
 				"trace": "built__skis-ski#2.trace.jsonl"
 			}
 		}
@@ -43,11 +43,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 6690,
+					"cost": 6690.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -58,14 +58,14 @@
 					"picture": 0.00398,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.18681599999999998
+					"value": 0.186816
 				}
 			],
-			"cap": 0.00023148148148148146,
+			"cap": 0.00023148148148148,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 5096,
+				"cost": 5096.0,
 				"fraction": 0.7
 			},
 			"chains": {
@@ -79,12 +79,12 @@
 			},
 			"error": 0.0018518518518518517,
 			"every_piece": true,
-			"fraction": 0.18681599999999998,
+			"fraction": 0.186816,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.187 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -118,13 +118,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 3's part 'binding_iron' is 28 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 279.0,
+			"peak_mb": 271.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 9
+				"reduce": 9.0
 			},
-			"search_s": 14.0,
-			"searched": "search",
+			"search_s": 3.6,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 7
 		},
@@ -134,11 +134,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 6476,
+					"cost": 6476.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00472,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -152,11 +152,11 @@
 					"value": 0.11023
 				}
 			],
-			"cap": 0.0009259259259259259,
+			"cap": 0.00092592592592592,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 3568,
+				"cost": 3568.0,
 				"fraction": 0.48999999999999994
 			},
 			"chains": {
@@ -175,7 +175,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.110 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -223,15 +223,7 @@
 				"cost": 806,
 				"coverage_rel": -0.0028000000000000004,
 				"floor": 0.00398,
-				"part_shift": {
-					"base": 0.00177,
-					"binding_iron": -0.0017400000000000002,
-					"binding_leather": -0.00124,
-					"edge_wood": 0.00054,
-					"hickory": 0.0017200000000000002,
-					"ridge": 1e-05,
-					"stitch": -0.0011500000000000002
-				},
+				"part_shift": {},
 				"picture": 0.00472
 			},
 			"measured_of": 2,
@@ -242,19 +234,19 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.187 kept), carried from rung 1 held at 1366, dearer than the 806 taken"
 			],
-			"peak_mb": 241.0,
+			"peak_mb": 271.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 9
+				"reduce": 9.0
 			},
-			"search_s": 22.200000000000003,
-			"searched": "search",
+			"search_s": 12.4,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "124abfbab26836b8d7cf0c0c3c2fae152584f575acc17b46bf6e95b1bd346965"
 	}
 }

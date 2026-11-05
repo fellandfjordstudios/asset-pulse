@@ -73,11 +73,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 9,
+				"candidates": 1,
 				"trace": "food__twist-bread#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 30,
+				"candidates": 1,
 				"trace": "food__twist-bread#2.trace.jsonl"
 			},
 			"3": {
@@ -102,11 +102,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1572,
+					"cost": 1572.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 4,
+					"px_over": 4.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -121,9 +121,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.0009259259259259259,
+				"cap": 0.00092592592592592,
 				"chain": "error",
-				"cost": 2346
+				"cost": 2346.0
 			},
 			"chains": {
 				"error": "lost"
@@ -140,7 +140,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.343",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -173,13 +173,13 @@
 				"CHILD: span 'food/twist-bread-coil r0 f448dd6d' is 2680 triangles and its child rebuilt is 3260: not a placed copy",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 467.0,
+			"peak_mb": 453.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5
+				"reduce": 5.0
 			},
-			"search_s": 202.9,
-			"searched": "search",
+			"search_s": 49.0,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -189,20 +189,20 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 27,
+					"px_over": 27.0,
 					"route": "impostor",
-					"value": 12
+					"value": 12.0
 				},
 				{
-					"cost": 788,
+					"cost": 788.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -216,11 +216,11 @@
 					"value": 0.6904589999999999
 				}
 			],
-			"cap": 0.0018518518518518517,
+			"cap": 0.00185185185185185,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 1976,
+				"cost": 1976.0,
 				"fraction": 0.7
 			},
 			"chains": {
@@ -238,7 +238,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.25x the band's (0.690 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -478,13 +478,7 @@
 				"cost": 1954,
 				"coverage_rel": 0.020200000000000003,
 				"floor": 0.00398,
-				"part_shift": {
-					"browned_crust": -0.0049700000000000005,
-					"charred_tip": -0.00033000000000000005,
-					"green_bark": -0.0006500000000000001,
-					"pale_dough": -0.00513,
-					"peeled_wood": 0.011080000000000001
-				},
+				"part_shift": {},
 				"picture": 0.00398
 			},
 			"measured_of": 1,
@@ -513,13 +507,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"CARRIED from rung 1, REDUCE to 0.343, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 11 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00593 m; coverage changes -0.1105 against 0.0450 allowed (a one-pixel shrink all round)"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 453.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5
+				"reduce": 5.0
 			},
-			"search_s": 343.90000000000003,
-			"searched": "search",
+			"search_s": 289.6,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -549,12 +543,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 5,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 12
 				}
 			],
 			"checked_at": 9,
@@ -578,10 +572,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 453.0,
 			"route": "impostor",
-			"search_s": 8.9,
-			"searched": "search",
+			"search_s": 2.4000000000000004,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -590,7 +584,7 @@
 	},
 	"source": {
 		"children": "25f39b7f8d39b5d81abfa748fa52f402aff73bd47af7278ea31176ceb22a011e",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "b017f23dda3f7d5a2b03a9e03087dad6787e74c6d85b02c6c818d01106e05472"
 	}
 }

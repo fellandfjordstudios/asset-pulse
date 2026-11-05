@@ -150,11 +150,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 7,
+				"candidates": 0,
 				"trace": "plant__pine-shoot#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 12,
+				"candidates": 0,
 				"trace": "plant__pine-shoot#2.trace.jsonl"
 			}
 		}
@@ -181,11 +181,11 @@
 					"value": {}
 				},
 				{
-					"cost": 432,
+					"cost": 432.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.0459,
-					"px_over": 21,
+					"px_over": 21.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -203,7 +203,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -226,10 +226,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0032 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 21 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00078 m; coverage changes -0.1911 against 0.0289 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0032",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 490.0,
+			"peak_mb": 303.0,
 			"route": "kit",
-			"search_s": 232.4,
-			"searched": "search",
+			"search_s": 123.30000000000001,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -246,11 +246,11 @@
 					"value": {}
 				},
 				{
-					"cost": 426,
+					"cost": 426.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.0459,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -268,7 +268,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -293,16 +293,16 @@
 				"KIT (its own build at 2 of the band's pixels) held at 646, the same cost as the route taken, found first",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 646, the same cost as the route taken, found first"
 			],
-			"peak_mb": 284.0,
+			"peak_mb": 297.0,
 			"route": "kit",
-			"search_s": 178.8,
-			"searched": "search",
+			"search_s": 31.5,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "68b179ce55b4db6fa7c1d243686a8bfc64d375db06d740cb11937f9408842d99"
 	}
 }

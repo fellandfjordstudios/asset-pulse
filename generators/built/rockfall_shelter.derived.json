@@ -437,7 +437,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 1,
 				"trace": "built__rockfall-shelter#1.trace.jsonl"
 			}
 		}
@@ -465,7 +465,7 @@
 					"value": 0.608533
 				}
 			],
-			"cap": 0.0009259259259259261,
+			"cap": 0.00092592592592592,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -483,7 +483,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.609 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -516,19 +516,19 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'roof' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 2136.0,
+			"peak_mb": 2046.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 7
+				"reduce": 7.0
 			},
-			"search_s": 2767.9,
-			"searched": "search",
+			"search_s": 1297.7,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "482445b734e7722225559533e139e0ca93b739e1afeea7c39295e41050040364"
 	}
 }

@@ -54,15 +54,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 1,
 				"trace": "built__engine-housing#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 33,
+				"candidates": 1,
 				"trace": "built__engine-housing#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 28,
+				"candidates": 0,
 				"trace": "built__engine-housing#3.trace.jsonl"
 			}
 		}
@@ -74,7 +74,7 @@
 	"replay": {
 		"1": "b34f2c2bd3ca9ab638d54baa94f4cb9e9d928cba66a4fff67d5b2c55f53ef426",
 		"2": "833ef17bd899d24696397f538fb4f65d328a8cc1883e02cea7b9ccd51b15be45",
-		"3": "8121a9b0d865e042dacd58c9163e6fe55b16c248a0aa8a17e9a708c6840bf0bb"
+		"3": "fc9dbee02cc20f600971c7ac0b0e24735f7ce674ce2940c0255d454b331dd0ed"
 	},
 	"rungs": {
 		"1": {
@@ -83,11 +83,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 5294,
+					"cost": 5294.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00504,
-					"px_over": 147,
+					"px_over": 147.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -101,7 +101,7 @@
 					"value": 0.7604219999999999
 				}
 			],
-			"cap": 0.0009259259259259259,
+			"cap": 0.00092592592592592,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -118,7 +118,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.760 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -162,13 +162,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 147 pixel(s) differ at the drawn size at {} seed 314 (worst 0.72)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 565.0,
+			"peak_mb": 518.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 160
+				"reduce": 160.0
 			},
-			"search_s": 667.4000000000001,
-			"searched": "search",
+			"search_s": 190.70000000000002,
+			"searched": "recheck",
 			"surfaces": 16,
 			"surfaces_ceiling": 16
 		},
@@ -178,13 +178,13 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2706,
+					"cost": 2706.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": -1.0,
-					"px_over": 8,
+					"px_over": 8.0,
 					"route": "kit",
-					"value": 0.11764899999999995
+					"value": 0.11764899999999996
 				},
 				{
 					"cost": 3366,
@@ -193,14 +193,14 @@
 					"picture": 0.005560000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.41270199999999996
+					"value": 0.412702
 				}
 			],
-			"cap": 0.0018518518518518517,
+			"cap": 0.00185185185185185,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 3764,
+				"cost": 3764.0,
 				"fraction": 0.48999999999999994
 			},
 			"chains": {
@@ -213,12 +213,12 @@
 				"pixel_m": 0.014299
 			},
 			"error": 0.007407407407407407,
-			"fraction": 0.41270199999999996,
+			"fraction": 0.412702,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.25x the band's (0.413 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -386,24 +386,7 @@
 				"cost": 3366,
 				"coverage_rel": -0.00316,
 				"floor": 0.005560000000000001,
-				"part_shift": {
-					"base": 0.00075,
-					"bearer": 0.00022,
-					"brass": -0.00035000000000000005,
-					"bulb": -1e-05,
-					"castings": 0.0008,
-					"chips": -0.00062,
-					"copper": -0.00047000000000000004,
-					"edge": 9e-05,
-					"edge_lid": -0.0006100000000000001,
-					"glass": -0.00014000000000000001,
-					"housing": 0.00062,
-					"iron": -0.00015000000000000001,
-					"lid": 0.00125,
-					"oil": -0.0024400000000000003,
-					"rear": 0.0010500000000000002,
-					"rim": 0.0005300000000000001
-				},
+				"part_shift": {},
 				"picture": 0.005560000000000001
 			},
 			"measured_of": 2,
@@ -416,13 +399,13 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.125x the band's (0.760 kept), carried from rung 1 held at 6202, dearer than the 3366 taken"
 			],
-			"peak_mb": 291.0,
+			"peak_mb": 518.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 160
+				"reduce": 160.0
 			},
-			"search_s": 898.9000000000001,
-			"searched": "search",
+			"search_s": 231.10000000000002,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
 		},
@@ -441,10 +424,10 @@
 					}
 				},
 				{
-					"cost": 2622,
+					"cost": 2622.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.013980000000000001,
+					"picture": 0.01398,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.3429999999999999
@@ -466,7 +449,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping bolt 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -626,7 +609,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 1806,
 				"coverage_rel": -0.004030000000000001,
@@ -644,16 +626,16 @@
 				"REDUCE to its error cap 0.0313x the band's (0.760 kept), carried from rung 1 held at 6202, dearer than the 1806 taken",
 				"REDUCE to its error cap 0.0625x the band's (0.413 kept), carried from rung 2 held at 3366, dearer than the 1806 taken"
 			],
-			"peak_mb": 291.0,
+			"peak_mb": 518.0,
 			"route": "kit",
-			"search_s": 419.90000000000003,
-			"searched": "search",
+			"search_s": 23.8,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "85cbd64e5edca75f08c5655beb091248083e5f550c00a9f882e2145f1b4c1607"
 	}
 }

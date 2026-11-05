@@ -31,11 +31,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 16,
+				"candidates": 1,
 				"trace": "food__char-on-a-stick#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 49,
+				"candidates": 1,
 				"trace": "food__char-on-a-stick#2.trace.jsonl"
 			},
 			"3": {
@@ -60,11 +60,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4732,
+					"cost": 4732.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": -1.0,
-					"px_over": 370,
+					"px_over": 370.0,
 					"route": "kit",
 					"value": 0.7
 				},
@@ -94,7 +94,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.700",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -134,13 +134,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'body' is 48 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 342.0,
+			"peak_mb": 335.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 12
+				"reduce": 12.0
 			},
-			"search_s": 113.60000000000001,
-			"searched": "search",
+			"search_s": 45.5,
+			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
 		},
@@ -150,20 +150,20 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 1901,
+					"cost": 1901.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.05498,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -177,11 +177,11 @@
 					"value": 0.312957
 				}
 			],
-			"cap": 0.00046310022368367047,
+			"cap": 0.00046310022368367,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 10034,
+				"cost": 10034.0,
 				"fraction": 0.7
 			},
 			"chains": {
@@ -200,7 +200,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.313 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -296,18 +296,7 @@
 				"cost": 4536,
 				"coverage_rel": -0.0015500000000000002,
 				"floor": 0.00398,
-				"part_shift": {
-					"birch": -0.00042,
-					"body": 0.00038,
-					"dark": 1e-05,
-					"dorsal_fin": 3.0000000000000004e-05,
-					"eye": 0.0,
-					"fin": 0.00011,
-					"fin_edge": 3.0000000000000004e-05,
-					"head": -0.00037000000000000005,
-					"scorch": 4e-05,
-					"tail": 4e-05
-				},
+				"part_shift": {},
 				"picture": 0.00398
 			},
 			"measured_of": 2,
@@ -339,13 +328,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to 0.700, carried from rung 1 held at 10034, dearer than the 4536 taken"
 			],
-			"peak_mb": 258.0,
+			"peak_mb": 335.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 12
+				"reduce": 12.0
 			},
-			"search_s": 375.1,
-			"searched": "search",
+			"search_s": 250.5,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		},
@@ -375,12 +364,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 12
 				}
 			],
 			"checked_at": 3,
@@ -404,10 +393,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 258.0,
+			"peak_mb": 335.0,
 			"route": "impostor",
-			"search_s": 38.0,
-			"searched": "search",
+			"search_s": 27.900000000000002,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 12
@@ -415,7 +404,7 @@
 	},
 	"source": {
 		"children": "e84759d27aac5486384a9f1395e16b6338d9fc740dadcac020876305008e20cc",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "2a5c9bbfa88ec7909f295c4f9ba201ce25ce5b657d641179c2495318f7309f95"
 	}
 }

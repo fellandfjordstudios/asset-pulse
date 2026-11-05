@@ -52,7 +52,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 16,
+				"candidates": 1,
 				"trace": "food__brunost-flatbread#1.trace.jsonl"
 			},
 			"2": {
@@ -76,11 +76,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 6688,
+					"cost": 6688.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00406,
-					"px_over": 6,
+					"px_over": 6.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -107,7 +107,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.240)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -143,13 +143,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.05: 184 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"peak_mb": 303.0,
+			"peak_mb": 296.0,
 			"route": "merged",
 			"routes": {
-				"reduce": 11
+				"reduce": 11.0
 			},
-			"search_s": 301.5,
-			"searched": "search",
+			"search_s": 50.1,
+			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11
 		},
@@ -179,12 +179,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 2,
+					"px_over": null,
 					"route": "impostor",
-					"value": 16
+					"value": 24
 				}
 			],
 			"checked_at": 6,
@@ -208,10 +208,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 260.0,
+			"peak_mb": 310.0,
 			"route": "impostor",
-			"search_s": 98.80000000000001,
-			"searched": "search",
+			"search_s": 60.900000000000006,
+			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -220,7 +220,7 @@
 	},
 	"source": {
 		"children": "cb51b65ba592095c36c8501bc984d0e0bccea378f3cf5f302896c11c5fde48db",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "94a4e3a5796cd4aa0dfdb54a5255384b89659a59aa6e558ca81d5652efdbe97b"
 	}
 }

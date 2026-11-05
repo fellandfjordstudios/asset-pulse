@@ -45,15 +45,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 1,
 				"trace": "built__goods-sack#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 30,
+				"candidates": 1,
 				"trace": "built__goods-sack#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 36,
+				"candidates": 1,
 				"trace": "built__goods-sack#3.trace.jsonl"
 			}
 		}
@@ -74,11 +74,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 5149,
+					"cost": 5149.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00523,
-					"px_over": 498,
+					"px_over": 498.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -92,7 +92,7 @@
 					"value": 0.952588
 				}
 			],
-			"cap": 0.0002314814814814815,
+			"cap": 0.00023148148148148,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -110,7 +110,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.953 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -140,13 +140,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 3's part 'cloth' is 112 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 1 across 5 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 443.0,
+			"peak_mb": 432.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5
+				"reduce": 5.0
 			},
-			"search_s": 298.2,
-			"searched": "search",
+			"search_s": 78.5,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -156,11 +156,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 3485,
+					"cost": 3485.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.013070000000000002,
-					"px_over": 25,
+					"picture": 0.01307,
+					"px_over": 25.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -174,7 +174,7 @@
 					"value": 0.53306
 				}
 			],
-			"cap": 0.000925925925925926,
+			"cap": 0.00092592592592592,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -192,7 +192,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.533 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -351,13 +351,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.953 kept), carried from rung 1 held at 7434, dearer than the 4160 taken"
 			],
-			"peak_mb": 262.0,
+			"peak_mb": 432.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5
+				"reduce": 5.0
 			},
-			"search_s": 303.2,
-			"searched": "search",
+			"search_s": 125.9,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -367,11 +367,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2063,
+					"cost": 2063.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.04655,
-					"px_over": 4,
+					"px_over": 4.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -386,9 +386,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.014814814814814815,
+				"cap": 0.01481481481481481,
 				"chain": "error",
-				"cost": 256
+				"cost": 256.0
 			},
 			"chains": {
 				"error": "lost"
@@ -406,7 +406,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.040",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -562,19 +562,19 @@
 				"REDUCE (every piece) to its error cap 0.0078x the band's (0.953 kept), carried from rung 1 held at 7434, dearer than the 208 taken",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.533 kept), carried from rung 2 held at 4160, dearer than the 208 taken"
 			],
-			"peak_mb": 262.0,
+			"peak_mb": 432.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5
+				"reduce": 5.0
 			},
-			"search_s": 189.0,
-			"searched": "search",
+			"search_s": 15.0,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "2c4b76031dac402c66146e4f5bcef1b84cc608cd9662d6165de456a6a21de932"
 	}
 }

@@ -163,7 +163,7 @@
 				"trace": "plant__agave-leaf#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 15,
+				"candidates": 0,
 				"trace": "plant__agave-leaf#2.trace.jsonl"
 			}
 		}
@@ -220,9 +220,6 @@
 					"merged",
 					"thin",
 					"impostor"
-				],
-				"skipped_by_prior": [
-					"THIN"
 				]
 			},
 			"measured": {
@@ -238,13 +235,12 @@
 			"measured_of": 2,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 1's part 'spine' is 106 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
-				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.341 kept) held at 1710, dearer than the 376 taken"
 			],
-			"peak_mb": 473.0,
+			"peak_mb": 475.0,
 			"route": "kit",
-			"search_s": 456.70000000000005,
+			"search_s": 487.90000000000003,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -260,11 +256,11 @@
 					"px_over": null,
 					"route": "kit",
 					"value": {
-						"tooth": 0.11764899999999995
+						"tooth": 0.11764899999999996
 					}
 				},
 				{
-					"cost": 1904,
+					"cost": 1904.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00421,
@@ -276,7 +272,7 @@
 			"checked_at": 21,
 			"drawn": {
 				"excess": 0.5,
-				"gap": 0.013000000000000001,
+				"gap": 0.013,
 				"judge": "drawn",
 				"pixel_m": 0.013835
 			},
@@ -284,12 +280,12 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {
-				"tooth": 0.11764899999999995
+				"tooth": 0.11764899999999996
 			},
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping tooth 0.118)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -828,16 +824,16 @@
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.417 kept) held at 1904, dearer than the 238 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 376, dearer than the 238 taken"
 			],
-			"peak_mb": 347.0,
+			"peak_mb": 349.0,
 			"route": "kit",
-			"search_s": 339.20000000000005,
-			"searched": "search",
+			"search_s": 67.10000000000001,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "99dfa9755a1267e1d4859406ddb2370e94cd91042653ff09da687ba5c34b9de3"
 	}
 }

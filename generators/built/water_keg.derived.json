@@ -66,7 +66,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 7,
+				"candidates": 1,
 				"trace": "built__water-keg#1.trace.jsonl"
 			},
 			"2": {
@@ -90,11 +90,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 7416,
+					"cost": 7416.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.0045000000000000005,
-					"px_over": 1,
+					"picture": 0.0045,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -108,7 +108,7 @@
 					"value": 0.8150499999999999
 				}
 			],
-			"cap": 0.0008420004066975826,
+			"cap": 0.00084200040669758,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -126,7 +126,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.815 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -161,13 +161,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'stave' is 22 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 356.0,
+			"peak_mb": 358.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 47
+				"reduce": 47.0
 			},
-			"search_s": 328.90000000000003,
-			"searched": "search",
+			"search_s": 193.0,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
 		},
@@ -197,10 +197,10 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
 					"value": 16
 				}
@@ -226,17 +226,17 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 274.0,
+			"peak_mb": 360.0,
 			"route": "impostor",
-			"search_s": 152.4,
-			"searched": "search",
+			"search_s": 130.4,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 16
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "de348d2344c615af46a81d8530db01e877c998580b87c6cfe6b47aad0b956759"
 	}
 }

@@ -276,7 +276,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "plant__bucked-log#1.trace.jsonl"
 			}
 		}
@@ -304,11 +304,11 @@
 					"value": 0.052058
 				}
 			],
-			"cap": 0.0009259259259259259,
+			"cap": 0.00092592592592592,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 7928,
+				"cost": 7928.0,
 				"fraction": 0.3429999999999999
 			},
 			"chains": {
@@ -326,7 +326,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.052 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -355,19 +355,19 @@
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1817.0,
+			"peak_mb": 1768.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 4
+				"reduce": 4.0
 			},
-			"search_s": 3327.5,
-			"searched": "search",
+			"search_s": 803.5,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "13703e0ef9ae1391b96ac4d387817c64e8a661ba3a7cfc3a4f4e0db5616bc5d9"
 	}
 }

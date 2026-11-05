@@ -94,15 +94,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 1,
 				"trace": "built__sawn-slat#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 11,
+				"candidates": 1,
 				"trace": "built__sawn-slat#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 12,
+				"candidates": 1,
 				"trace": "built__sawn-slat#3.trace.jsonl"
 			}
 		}
@@ -123,11 +123,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 36,
+					"cost": 36.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.09304000000000001,
-					"px_over": 23499,
+					"picture": 0.09304,
+					"px_over": 23499.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -141,7 +141,7 @@
 					"value": 0.526316
 				}
 			],
-			"cap": 0.0018518518518518521,
+			"cap": 0.00185185185185185,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -158,7 +158,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 1.0x the band's (0.526 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -186,13 +186,13 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.02} seed 314: the picture changes at the drawn size: 23499 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00005 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 590.0,
+			"peak_mb": 557.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 2
+				"reduce": 2.0
 			},
-			"search_s": 109.10000000000001,
-			"searched": "search",
+			"search_s": 36.800000000000004,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -202,11 +202,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 12,
+					"cost": 12.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.14454,
-					"px_over": 1922,
+					"px_over": 1922.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -220,11 +220,11 @@
 					"value": 0.526316
 				}
 			],
-			"cap": 0.0018518518518518521,
+			"cap": 0.00185185185185185,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 42,
+				"cost": 42.0,
 				"fraction": 0.48999999999999994
 			},
 			"chains": {
@@ -242,7 +242,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.25x the band's (0.526 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -554,10 +554,7 @@
 				"cost": 40,
 				"coverage_rel": 0.009720000000000001,
 				"floor": 0.01089,
-				"part_shift": {
-					"end_grain": -8e-05,
-					"wood": 8e-05
-				},
+				"part_shift": {},
 				"picture": 0.004
 			},
 			"measured_of": 2,
@@ -567,13 +564,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.25x the band's (0.526 kept), carried from rung 1 held at 40, the same cost as the route taken, found first"
 			],
-			"peak_mb": 278.0,
+			"peak_mb": 557.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 2
+				"reduce": 2.0
 			},
-			"search_s": 76.80000000000001,
-			"searched": "search",
+			"search_s": 12.5,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -583,11 +580,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 12,
+					"cost": 12.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.14454,
-					"px_over": 75,
+					"px_over": 75.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -601,11 +598,11 @@
 					"value": 0.526316
 				}
 			],
-			"cap": 0.0018518518518518521,
+			"cap": 0.00185185185185185,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 42,
+				"cost": 42.0,
 				"fraction": 0.48999999999999994
 			},
 			"chains": {
@@ -623,7 +620,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.0625x the band's (0.526 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -932,10 +929,7 @@
 				"cost": 40,
 				"coverage_rel": 0.009720000000000001,
 				"floor": 0.01089,
-				"part_shift": {
-					"end_grain": -8e-05,
-					"wood": 8e-05
-				},
+				"part_shift": {},
 				"picture": 0.004
 			},
 			"measured_of": 3,
@@ -945,19 +939,19 @@
 				"REDUCE to its error cap 0.0625x the band's (0.526 kept), carried from rung 1 held at 40, the same cost as the route taken, found first",
 				"REDUCE to its error cap 0.0625x the band's (0.526 kept), carried from rung 2 held at 40, the same cost as the route taken, found first"
 			],
-			"peak_mb": 278.0,
+			"peak_mb": 557.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 2
+				"reduce": 2.0
 			},
-			"search_s": 63.2,
-			"searched": "search",
+			"search_s": 10.100000000000001,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "e18a6712b70dc269d35dd6741f37744b33c804942f7794aa6b0f269ec614ce1e"
 	}
 }

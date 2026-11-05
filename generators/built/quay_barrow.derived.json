@@ -33,11 +33,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 16,
+				"candidates": 1,
 				"trace": "built__quay-barrow#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 40,
+				"candidates": 0,
 				"trace": "built__quay-barrow#2.trace.jsonl"
 			},
 			"3": {
@@ -62,11 +62,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 3412,
+					"cost": 3412.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.0041,
-					"px_over": 10,
+					"px_over": 10.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -93,7 +93,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.700)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -165,13 +165,13 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 357.0,
+			"peak_mb": 351.0,
 			"route": "merged",
 			"routes": {
-				"reduce": 43
+				"reduce": 43.0
 			},
-			"search_s": 157.8,
-			"searched": "search",
+			"search_s": 52.300000000000004,
+			"searched": "recheck",
 			"surfaces": 43,
 			"surfaces_ceiling": 43
 		},
@@ -179,13 +179,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 9,
+					"px_over": 9.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 2044,
@@ -199,7 +199,7 @@
 					}
 				},
 				{
-					"cost": 3888,
+					"cost": 3888.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0041,
@@ -224,7 +224,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping bolt 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -350,10 +350,10 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping bolt 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.700), carried from rung 1 held at 3888, dearer than the 2044 taken"
 			],
-			"peak_mb": 254.0,
+			"peak_mb": 351.0,
 			"route": "kit",
-			"search_s": 216.70000000000002,
-			"searched": "search",
+			"search_s": 89.7,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -383,12 +383,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 4,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 12
 				}
 			],
 			"checked_at": 3,
@@ -412,10 +412,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 254.0,
+			"peak_mb": 351.0,
 			"route": "impostor",
-			"search_s": 11.0,
-			"searched": "search",
+			"search_s": 11.200000000000001,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -424,7 +424,7 @@
 	},
 	"source": {
 		"children": "ef8410c8f039f2289cff0c19d0e6c49f36a05a81f77ee98a4ba48247df1f053e",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "28c7c654997e8e51956ac49e2328c92443208228220cb7e91ba4a172ce5ab6ef"
 	}
 }

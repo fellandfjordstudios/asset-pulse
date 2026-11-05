@@ -47,11 +47,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 4,
+				"candidates": 0,
 				"trace": "animal__atlantic-cod#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 6,
+				"candidates": 0,
 				"trace": "animal__atlantic-cod#2.trace.jsonl"
 			}
 		}
@@ -91,7 +91,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -108,14 +108,7 @@
 				"cost": 9796,
 				"coverage_rel": -0.00034,
 				"floor": 0.00398,
-				"part_shift": {
-					"back": 0.00025,
-					"belly": 0.00015000000000000001,
-					"eye": -7.000000000000001e-05,
-					"fin": 0.0005200000000000001,
-					"flesh": 0.0,
-					"iris": -0.00055
-				},
+				"part_shift": {},
 				"picture": 0.00398
 			},
 			"measured_of": 1,
@@ -124,10 +117,10 @@
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 367.0,
+			"peak_mb": 310.0,
 			"route": "kit",
-			"search_s": 173.8,
-			"searched": "search",
+			"search_s": 78.5,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		},
@@ -157,7 +150,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -301,14 +294,7 @@
 				"cost": 2674,
 				"coverage_rel": -0.0049900000000000005,
 				"floor": 0.00398,
-				"part_shift": {
-					"back": 0.00218,
-					"belly": 0.0007800000000000001,
-					"eye": -0.00036,
-					"fin": -0.0007000000000000001,
-					"flesh": -0.00015000000000000001,
-					"iris": -0.00216
-				},
+				"part_shift": {},
 				"picture": 0.00398
 			},
 			"measured_of": 3,
@@ -319,16 +305,16 @@
 				"KIT (its own build at 2 of the band's pixels) held at 3248, dearer than the 2674 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 9796, dearer than the 2674 taken"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 269.0,
 			"route": "kit",
-			"search_s": 276.7,
-			"searched": "search",
+			"search_s": 126.80000000000001,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "bd8e4c004398eba759b76b8d0c4f9cf77a18f494862f24f488edabeaa9f7ca2e"
 	}
 }

@@ -234,7 +234,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 12,
+				"candidates": 0,
 				"trace": "animal__fence-lizard#1.trace.jsonl"
 			}
 		}
@@ -262,7 +262,7 @@
 					}
 				},
 				{
-					"cost": 10000,
+					"cost": 10000.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -275,7 +275,7 @@
 			"colour": {
 				"judge": "each part's share held to keep 1's at the band",
 				"tolerance": 0.0166,
-				"worst": 0.014700000000000001
+				"worst": 0.0147
 			},
 			"drawn": {
 				"below_failing_keep_1": true,
@@ -295,7 +295,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping scale 0.240, each kept piece covering 1.00x)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -323,16 +323,16 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping scale 0.240, each kept piece covering 1.00x)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.856 kept) held at 10000, dearer than the 3704 taken"
 			],
-			"peak_mb": 595.0,
+			"peak_mb": 400.0,
 			"route": "kit",
-			"search_s": 773.4000000000001,
-			"searched": "search",
+			"search_s": 119.0,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "69fd4d39b86a1c0da4f4f1dd6d5ded7619d917b47fab64d2312cc7159551459b"
 	}
 }

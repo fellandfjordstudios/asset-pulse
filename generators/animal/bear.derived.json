@@ -40,11 +40,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "animal__bear#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 29,
+				"candidates": 31,
 				"trace": "animal__bear#2.trace.jsonl"
 			},
 			"3": {
@@ -69,11 +69,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 16936,
+					"cost": 16936.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 4,
+					"px_over": 4.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -88,9 +88,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.00023148148148148146,
+				"cap": 0.00023148148148148,
 				"chain": "error",
-				"cost": 31358
+				"cost": 31358.0
 			},
 			"chains": {
 				"error": "lost"
@@ -108,7 +108,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.343",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -153,13 +153,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'pad' is 24 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 939.0,
+			"peak_mb": 1124.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 17
+				"reduce": 17.0
 			},
-			"search_s": 478.6,
-			"searched": "search",
+			"search_s": 113.7,
+			"searched": "recheck",
 			"surfaces": 17,
 			"surfaces_ceiling": 17
 		},
@@ -353,15 +353,16 @@
 				"IMPOSTOR at 32x32 frames (atlas 16.8 MB) from rung 0 at 8x its pixel: 55 pixel(s) differ at {} seed 314 (worst 0.67)",
 				"IMPOSTOR at 32x32 frames (atlas 16.8 MB) from rung 0 at 4x its pixel: 43 pixel(s) differ at {} seed 314 (worst 0.65)",
 				"IMPOSTOR at 32x32 frames (atlas 16.8 MB) from rung 0: 49 pixel(s) differ at {} seed 314 (worst 0.65)",
+				"REDUCE from rung 1, the derived band above at {} seed 314: element 0's part 'pad' is 24 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'pad' is 24 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
-				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"REDUCE (every piece) from rung 1, the derived band above: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: candidate emits 4 opposing duplicate faces; the error ladder: none holds at 0.0074",
 				"KIT (its own build at 2 of the band's pixels) held at 16668, the same cost as the route taken, found first",
 				"REDUCE (every piece) to 0.343 held at 21764, dearer than the 16668 taken",
 				"REDUCE (every piece) to 0.343, carried from rung 1 held at 21764, dearer than the 16668 taken"
 			],
-			"peak_mb": 945.0,
+			"peak_mb": 1335.0,
 			"route": "kit",
-			"search_s": 405.3,
+			"search_s": 326.90000000000003,
 			"searched": "search",
 			"surfaces": 7,
 			"surfaces_ceiling": 1
@@ -392,12 +393,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 6
+					"value": 8
 				}
 			],
 			"checked_at": 4,
@@ -421,10 +422,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 945.0,
+			"peak_mb": 1267.0,
 			"route": "impostor",
-			"search_s": 54.1,
-			"searched": "search",
+			"search_s": 16.2,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -432,7 +433,7 @@
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "57aaa2d747323ee4695f4fdfb0abcb9c0e165c3f87cb61e503ada9988e1087fb"
 	}
 }

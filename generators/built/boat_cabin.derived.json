@@ -138,11 +138,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 0,
 				"trace": "built__boat-cabin#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 51,
+				"candidates": 0,
 				"trace": "built__boat-cabin#2.trace.jsonl"
 			}
 		}
@@ -173,19 +173,19 @@
 					}
 				},
 				{
-					"cost": 3220,
+					"cost": 3220.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0041400000000000005,
+					"picture": 0.00414,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.9919899999999999
+					"value": 0.99199
 				}
 			],
 			"checked_at": 18,
 			"drawn": {
 				"excess": 0.4219,
-				"gap": 0.052000000000000005,
+				"gap": 0.052,
 				"judge": "drawn",
 				"pixel_m": 0.0038889999999999997
 			},
@@ -200,7 +200,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -228,10 +228,10 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.992 kept) held at 3220, dearer than the 1700 taken"
 			],
-			"peak_mb": 1509.0,
+			"peak_mb": 355.0,
 			"route": "kit",
-			"search_s": 3531.2000000000003,
-			"searched": "search",
+			"search_s": 339.90000000000003,
+			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
 		},
@@ -239,13 +239,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 86,
+					"px_over": 86.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 1478,
@@ -261,10 +261,10 @@
 					}
 				},
 				{
-					"cost": 1896,
+					"cost": 1896.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0044800000000000005,
+					"picture": 0.00448,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.584104
@@ -288,7 +288,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping fastening 0.031, trim 0.031, batten 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -774,17 +774,17 @@
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.584 kept) held at 1896, dearer than the 1478 taken",
 				"KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700), carried from rung 1 held at 1700, dearer than the 1478 taken"
 			],
-			"peak_mb": 362.0,
+			"peak_mb": 291.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 2583.1000000000004,
-			"searched": "search",
+			"search_s": 714.3000000000001,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "b1da9acf4da66bc359aea571838625c0d2d4ada9b7f724f22f40e5b8cac287a7"
 	}
 }

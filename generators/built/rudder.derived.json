@@ -33,11 +33,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 9,
+				"candidates": 0,
 				"trace": "built__rudder#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 30,
+				"candidates": 0,
 				"trace": "built__rudder#2.trace.jsonl"
 			},
 			"3": {
@@ -69,10 +69,10 @@
 					"value": {}
 				},
 				{
-					"cost": 290,
+					"cost": 290.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0043100000000000005,
+					"picture": 0.00431,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.24009999999999992
@@ -91,7 +91,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -108,11 +108,7 @@
 				"cost": 672,
 				"coverage_rel": -4e-05,
 				"floor": 0.0043100000000000005,
-				"part_shift": {
-					"blade": 6.000000000000001e-05,
-					"iron": 8e-05,
-					"tiller": -2e-05
-				},
+				"part_shift": {},
 				"picture": 0.0043100000000000005
 			},
 			"measured_of": 2,
@@ -122,10 +118,10 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.240 held at 290, cheaper than the 672 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 359.0,
+			"peak_mb": 301.0,
 			"route": "kit",
-			"search_s": 70.5,
-			"searched": "search",
+			"search_s": 18.3,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -133,16 +129,16 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 466,
+					"px_over": 466.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 332,
+					"cost": 436,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0043100000000000005,
@@ -151,10 +147,10 @@
 					"value": {}
 				},
 				{
-					"cost": 290,
+					"cost": 290.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0043100000000000005,
+					"picture": 0.00431,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.299587
@@ -173,7 +169,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -269,11 +265,7 @@
 				"cost": 436,
 				"coverage_rel": -0.00444,
 				"floor": 0.0043100000000000005,
-				"part_shift": {
-					"blade": 0.00388,
-					"iron": -0.0018700000000000001,
-					"tiller": -0.0010600000000000002
-				},
+				"part_shift": {},
 				"picture": 0.0043100000000000005
 			},
 			"measured_of": 4,
@@ -302,10 +294,10 @@
 				"REDUCE to its error cap 0.25x the band's (0.300 kept) held at 290, cheaper than the 436 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 672, dearer than the 436 taken"
 			],
-			"peak_mb": 246.0,
+			"peak_mb": 244.0,
 			"route": "kit",
-			"search_s": 58.6,
-			"searched": "search",
+			"search_s": 22.400000000000002,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -335,12 +327,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 24
 				}
 			],
 			"checked_at": 3,
@@ -364,10 +356,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 246.0,
+			"peak_mb": 244.0,
 			"route": "impostor",
-			"search_s": 6.1000000000000005,
-			"searched": "search",
+			"search_s": 4.0,
+			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -375,7 +367,7 @@
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "3634c6f01d4c437828ea77ded59ce48581e8f6dd07f64c83bf0e22e1a27b8710"
 	}
 }

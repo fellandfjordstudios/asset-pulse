@@ -73,7 +73,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 2,
+				"candidates": 0,
 				"trace": "built__shop-counter#1.trace.jsonl"
 			}
 		}
@@ -112,7 +112,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -126,13 +126,7 @@
 				"cost": 3256,
 				"coverage_rel": -0.00031,
 				"floor": 0.0041400000000000005,
-				"part_shift": {
-					"brass": -0.0006000000000000001,
-					"edge_wood": 1e-05,
-					"frame": 0.00018,
-					"panel": 0.00016,
-					"top": 0.00039000000000000005
-				},
+				"part_shift": {},
 				"picture": 0.0041400000000000005
 			},
 			"measured_of": 1,
@@ -141,17 +135,17 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 532.0,
+			"peak_mb": 317.0,
 			"route": "kit",
-			"search_s": 275.5,
-			"searched": "search",
+			"search_s": 179.20000000000002,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		}
 	},
 	"source": {
 		"children": "e3826732e1d5920df59760b5a4b77ff98b34cb02d383eb344d14537ff5ef1138",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "d66147cec03ed46fa6d08eb31c2f67f62195062adbb26027b222fe0b559a0c38"
 	}
 }

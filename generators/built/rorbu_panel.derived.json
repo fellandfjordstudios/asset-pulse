@@ -110,15 +110,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 0,
 				"trace": "built__rorbu-panel#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 9,
+				"candidates": 0,
 				"trace": "built__rorbu-panel#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 10,
+				"candidates": 0,
 				"trace": "built__rorbu-panel#3.trace.jsonl"
 			}
 		}
@@ -146,7 +146,7 @@
 					"value": {}
 				},
 				{
-					"cost": 648,
+					"cost": 648.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00404,
@@ -168,7 +168,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -185,10 +185,7 @@
 				"cost": 786,
 				"coverage_rel": 0.0,
 				"floor": 0.00438,
-				"part_shift": {
-					"iron": 0.0,
-					"wall": 0.0
-				},
+				"part_shift": {},
 				"picture": 0.0012000000000000001
 			},
 			"measured_of": 2,
@@ -198,10 +195,10 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.824 kept) held at 648, cheaper than the 786 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 657.0,
+			"peak_mb": 317.0,
 			"route": "kit",
-			"search_s": 326.70000000000005,
-			"searched": "search",
+			"search_s": 83.30000000000001,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -218,7 +215,7 @@
 					"value": {}
 				},
 				{
-					"cost": 550,
+					"cost": 550.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00438,
@@ -240,7 +237,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -257,10 +254,7 @@
 				"cost": 82,
 				"coverage_rel": -0.00024000000000000003,
 				"floor": 0.00438,
-				"part_shift": {
-					"iron": -0.0009600000000000001,
-					"wall": 0.0009600000000000001
-				},
+				"part_shift": {},
 				"picture": 0.00438
 			},
 			"measured_of": 3,
@@ -272,10 +266,10 @@
 				"REDUCE (every piece) to 0.700 held at 550, dearer than the 82 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 786, dearer than the 82 taken"
 			],
-			"peak_mb": 289.0,
+			"peak_mb": 269.0,
 			"route": "kit",
-			"search_s": 129.0,
-			"searched": "search",
+			"search_s": 17.0,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -292,10 +286,10 @@
 					"value": {}
 				},
 				{
-					"cost": 310,
+					"cost": 310.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.008400000000000001,
+					"picture": 0.0084,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.48999999999999994
@@ -314,7 +308,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 4 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -328,10 +322,7 @@
 				"cost": 2,
 				"coverage_rel": -0.05403,
 				"floor": 0.00438,
-				"part_shift": {
-					"iron": -0.0009600000000000001,
-					"wall": 0.0009600000000000001
-				},
+				"part_shift": {},
 				"picture": 0.6120000000000001
 			},
 			"measured_of": 5,
@@ -343,17 +334,17 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 786, dearer than the 2 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 82, dearer than the 2 taken"
 			],
-			"peak_mb": 289.0,
+			"peak_mb": 269.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 104.4,
-			"searched": "search",
+			"search_s": 7.5,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "7175aa0176aa663fc00ba4defdda819a9e743c41b759794f8dea90c7eccad29f"
 	}
 }

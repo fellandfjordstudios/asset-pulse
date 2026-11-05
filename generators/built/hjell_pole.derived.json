@@ -122,11 +122,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 20,
+				"candidates": 1,
 				"trace": "built__hjell-pole#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 24,
+				"candidates": 0,
 				"trace": "built__hjell-pole#2.trace.jsonl"
 			}
 		}
@@ -146,11 +146,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2746,
+					"cost": 2746.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 6,
+					"px_over": 6.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -167,7 +167,7 @@
 			"chain_beaten": {
 				"cap": 0.00015,
 				"chain": "error",
-				"cost": 1330
+				"cost": 1330.0
 			},
 			"chains": {
 				"error": "lost"
@@ -184,7 +184,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.240",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -213,13 +213,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 24 pixel(s) differ at the drawn size at {} seed 314 (worst 0.97)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1128.0,
+			"peak_mb": 1071.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 18
+				"reduce": 18.0
 			},
-			"search_s": 816.7,
-			"searched": "search",
+			"search_s": 151.5,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -236,10 +236,10 @@
 					"value": {}
 				},
 				{
-					"cost": 784,
+					"cost": 784.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0039900000000000005,
+					"picture": 0.00399,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.16
@@ -258,7 +258,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -666,10 +666,7 @@
 				"cost": 628,
 				"coverage_rel": 0.015470000000000001,
 				"floor": 0.0039900000000000005,
-				"part_shift": {
-					"end_grain": 0.01237,
-					"wood": -0.01237
-				},
+				"part_shift": {},
 				"picture": 0.0039900000000000005
 			},
 			"measured_of": 2,
@@ -681,16 +678,16 @@
 				"CARRIED from rung 1, REDUCE to 0.240, carried from rung 1: candidate emits 1 opposing duplicate faces",
 				"REDUCE to its error cap 0.0625x the band's (0.160 kept) held at 784, dearer than the 628 taken"
 			],
-			"peak_mb": 308.0,
+			"peak_mb": 1042.0,
 			"route": "kit",
-			"search_s": 256.0,
-			"searched": "search",
+			"search_s": 90.10000000000001,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "e6da475d58189b62b60d909a80b0042f8598d14832021b06ee4880cc0c888d80"
 	}
 }

@@ -179,12 +179,12 @@
 				"picture": 0.00398
 			},
 			"measured_of": 1,
-			"peak_mb": 462.0,
+			"peak_mb": 464.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 32.0
 			},
-			"search_s": 91.60000000000001,
+			"search_s": 43.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -242,19 +242,19 @@
 				"picture": 0.00444
 			},
 			"measured_of": 1,
-			"peak_mb": 260.0,
+			"peak_mb": 464.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 32.0
 			},
-			"search_s": 36.9,
+			"search_s": 12.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "4760864bd328a064f9596d4366d8b9e0362dea0519c58f803f763f80d5c22e25"
 	}
 }

@@ -66,11 +66,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 20,
+				"candidates": 1,
 				"trace": "built__dog-harness#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 34,
+				"candidates": 0,
 				"trace": "built__dog-harness#2.trace.jsonl"
 			},
 			"3": {
@@ -95,11 +95,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 94582,
+					"cost": 94582.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00404,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -114,9 +114,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.000462962962962963,
+				"cap": 0.00046296296296296,
 				"chain": "error",
-				"cost": 69132
+				"cost": 69132.0
 			},
 			"chains": {
 				"error": "lost"
@@ -133,7 +133,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -166,13 +166,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 1 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 953.0,
+			"peak_mb": 847.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 9242
+				"reduce": 9242.0
 			},
-			"search_s": 1143.8,
-			"searched": "search",
+			"search_s": 275.90000000000003,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		},
@@ -192,10 +192,10 @@
 					}
 				},
 				{
-					"cost": 41112,
+					"cost": 41112.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004050000000000001,
+					"picture": 0.00405,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.409474
@@ -204,8 +204,8 @@
 			"checked_at": 8,
 			"colour": {
 				"judge": "each part's share held to keep 1's at the band",
-				"tolerance": 0.029400000000000003,
-				"worst": 0.016900000000000002
+				"tolerance": 0.0294,
+				"worst": 0.0169
 			},
 			"drawn": {
 				"below_failing_keep_1": true,
@@ -227,7 +227,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping fuzz 0.031, stitch 0.031, each kept piece covering 1.00x)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -456,10 +456,10 @@
 				"REDUCE to its error cap 0.125x the band's (0.409 kept) held at 41112, dearer than the 9996 taken",
 				"REDUCE to 0.490, carried from rung 1 held at 58546, dearer than the 9996 taken"
 			],
-			"peak_mb": 898.0,
+			"peak_mb": 818.0,
 			"route": "kit",
-			"search_s": 2623.9,
-			"searched": "search",
+			"search_s": 1249.8000000000002,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		},
@@ -489,12 +489,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 3,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 12
 				}
 			],
 			"checked_at": 8,
@@ -520,8 +520,8 @@
 			],
 			"peak_mb": 858.0,
 			"route": "impostor",
-			"search_s": 147.20000000000002,
-			"searched": "search",
+			"search_s": 56.6,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -529,7 +529,7 @@
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "d592d5efdedc2888f387ba54c832c028b018d661493efa94402779b625ac64b2"
 	}
 }

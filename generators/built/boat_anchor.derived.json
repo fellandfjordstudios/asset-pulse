@@ -38,11 +38,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 7,
+				"candidates": 1,
 				"trace": "built__boat-anchor#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 31,
+				"candidates": 1,
 				"trace": "built__boat-anchor#2.trace.jsonl"
 			},
 			"3": {
@@ -67,11 +67,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 12178,
+					"cost": 12178.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004770000000000001,
-					"px_over": 14,
+					"picture": 0.00477,
+					"px_over": 14.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -85,7 +85,7 @@
 					"value": 0.911546
 				}
 			],
-			"cap": 0.0009259259259259261,
+			"cap": 0.00092592592592592,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -102,7 +102,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.912 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -131,13 +131,13 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00149 m",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 440.0,
+			"peak_mb": 427.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 9
+				"reduce": 9.0
 			},
-			"search_s": 246.5,
-			"searched": "search",
+			"search_s": 78.10000000000001,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -147,20 +147,20 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 259,
+					"px_over": 259.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 5996,
+					"cost": 5996.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00636,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -175,9 +175,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.0018518518518518521,
+				"cap": 0.00185185185185185,
 				"chain": "error",
-				"cost": 14686
+				"cost": 14686.0
 			},
 			"chains": {
 				"error": "lost"
@@ -194,7 +194,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -344,13 +344,13 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.125x the band's (0.912 kept), carried from rung 1 held at 20116, dearer than the 10804 taken"
 			],
-			"peak_mb": 269.0,
+			"peak_mb": 427.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 9
+				"reduce": 9.0
 			},
-			"search_s": 815.6,
-			"searched": "search",
+			"search_s": 463.6,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -380,10 +380,10 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
 					"value": 12
 				}
@@ -409,17 +409,17 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 269.0,
+			"peak_mb": 427.0,
 			"route": "impostor",
-			"search_s": 51.800000000000004,
-			"searched": "search",
+			"search_s": 31.3,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 12
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "081a42c479813fdd68c26c5bf7930353c0a75e4c08cd1b783c50bf411066b05e"
 	}
 }

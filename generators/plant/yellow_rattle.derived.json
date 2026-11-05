@@ -136,11 +136,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 3,
+				"candidates": 0,
 				"trace": "plant__yellow-rattle#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 5,
+				"candidates": 1,
 				"trace": "plant__yellow-rattle#2.trace.jsonl"
 			}
 		}
@@ -158,11 +158,11 @@
 			"budget": 11216,
 			"candidates": [
 				{
-					"cost": 1776,
+					"cost": 1776.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.7
 				},
@@ -183,18 +183,19 @@
 			"measured": {
 				"cost": 2376,
 				"coverage_rel": 0.0,
-				"floor": 0.0,
+				"floor": 0.00398,
 				"part_shift": {},
 				"picture": 0.0
 			},
+			"measured_of": 1,
 			"not_taken": [
 				"REDUCE from rung 0: none holds at 0.0026 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0148 against 0.0130 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0026",
 				"THIN: plant/yellow-rattle does not declare `reads_density`"
 			],
-			"peak_mb": 296.0,
+			"peak_mb": 270.0,
 			"route": "rung0",
-			"search_s": 23.5,
-			"searched": "search",
+			"search_s": 22.700000000000003,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.002559238078251863
@@ -229,7 +230,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.700",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -247,20 +248,20 @@
 				"picture": 0.00398
 			},
 			"measured_of": 1,
-			"peak_mb": 268.0,
+			"peak_mb": 272.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 33
+				"reduce": 33.0
 			},
-			"search_s": 53.300000000000004,
-			"searched": "search",
+			"search_s": 21.700000000000003,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"children": "44d547a090d1d6db02065966cef135208db19691ed7a8cc5e612ff513d82197b",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "3040c132a5ea498691511ad1f6e0bdcbdbc3c02dee5054af05bfa3fc9571e540"
 	}
 }

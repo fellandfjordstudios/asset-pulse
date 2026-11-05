@@ -38,11 +38,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 13,
+				"candidates": 0,
 				"trace": "built__wall-bunk#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 38,
+				"candidates": 0,
 				"trace": "built__wall-bunk#2.trace.jsonl"
 			},
 			"3": {
@@ -76,10 +76,10 @@
 					}
 				},
 				{
-					"cost": 4213,
+					"cost": 4213.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004350000000000001,
+					"picture": 0.00435,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
@@ -101,7 +101,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping stitch 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -129,10 +129,10 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping stitch 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.700 held at 4213, dearer than the 3572 taken"
 			],
-			"peak_mb": 525.0,
+			"peak_mb": 306.0,
 			"route": "kit",
-			"search_s": 475.5,
-			"searched": "search",
+			"search_s": 97.80000000000001,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		},
@@ -140,16 +140,16 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 1492,
+					"cost": 2333,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004350000000000001,
@@ -160,10 +160,10 @@
 					}
 				},
 				{
-					"cost": 1001,
+					"cost": 1001.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004350000000000001,
+					"picture": 0.00435,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.05764800999999997
@@ -185,7 +185,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping stitch 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -334,10 +334,10 @@
 				"REDUCE (every piece) to 0.058 held at 1001, cheaper than the 2333 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"KIT (its own build at the rung's pixel, keeping stitch 0.031), carried from rung 1 held at 3572, dearer than the 2333 taken"
 			],
-			"peak_mb": 261.0,
+			"peak_mb": 259.0,
 			"route": "kit",
-			"search_s": 526.5,
-			"searched": "search",
+			"search_s": 263.3,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
 		},
@@ -367,12 +367,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 22,
+					"px_over": null,
 					"route": "impostor",
-					"value": 6
+					"value": 8
 				}
 			],
 			"checked_at": 4,
@@ -396,10 +396,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 261.0,
+			"peak_mb": 259.0,
 			"route": "impostor",
-			"search_s": 13.100000000000001,
-			"searched": "search",
+			"search_s": 6.4,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -407,7 +407,7 @@
 		}
 	},
 	"source": {
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
 		"generator": "97c7380a77c90d2ec24b570a1414377cd73ae2575c9ed723962f6105ae45d69a"
 	}
 }
