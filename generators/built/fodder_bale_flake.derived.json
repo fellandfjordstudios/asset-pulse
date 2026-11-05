@@ -49,6 +49,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -63,11 +67,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 9,
-		"sampled": 9,
-		"sets": 9
+		"old_key_sets": 10,
+		"sampled": 10,
+		"sets": 10
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -95,6 +100,7 @@
 			"budget": 10349,
 			"budget_reason": "the cheapest derivation that holds the picture costs 16504, 1.59x rung 1's budget 10349: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -124,7 +130,7 @@
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 9,
+			"checked_at": 10,
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
@@ -151,13 +157,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.14: 7166 pixel(s) differ at the drawn size at {} seed 314 (worst 0.64)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'fodder' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 336.0,
+			"peak_mb": 346.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 2,
 				"reduce": 1
 			},
-			"search_s": 755.8000000000001,
+			"search_s": 1562.0,
 			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -187,7 +193,7 @@
 					"value": 0.24009999999999992
 				}
 			],
-			"checked_at": 9,
+			"checked_at": 10,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -195,7 +201,7 @@
 				"fibre": 0.08235429999999996
 			},
 			"material_transfer": {
-				"checked_at": 9,
+				"checked_at": 10,
 				"checks": [
 					{
 						"holds": true,
@@ -412,6 +418,30 @@
 							0.002086743712425232,
 							0.00041222386062145233
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.4437258243560791,
+							0.3714916706085205,
+							0.1651071012020111
+						],
+						"mean_before": [
+							0.4437258243560791,
+							0.3714916706085205,
+							0.1651071012020111
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.002768993377685547,
+							0.0019400715827941895,
+							0.00038336776196956635
+						],
+						"variance_before": [
+							0.002768993377685547,
+							0.0019400715827941895,
+							0.00038336776196956635
+						]
 					}
 				],
 				"holds": true
@@ -440,9 +470,9 @@
 				"CARRIED from rung 1, REDUCE (every piece) to 0.240, carried from rung 1: none holds at 0.0141 -- the finest tried (1.000) fails at {\"thickness_m\":0.12} seed 314: the picture changes at the drawn size: 70 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.00520 m; coverage changes -0.1366 against 0.0718 allowed (a one-pixel shrink all round); part 'fodder' changes its share of the picture by -0.0752 against 0.0718 allowed (its colour's share of the subject)",
 				"BUDGET: the cheapest derivation that holds the picture costs 15410 (5.96x), over rung 2's budget 2587 x 1.5 = 3880 (made, 0.37 m)"
 			],
-			"peak_mb": 329.0,
+			"peak_mb": 338.0,
 			"route": "kit",
-			"search_s": 451.0,
+			"search_s": 1054.1000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
@@ -450,7 +480,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "f58beb7d7ce57f49094b1e14ed7b59ab0b1b221330589b319cb993df19280960"
 	}
 }

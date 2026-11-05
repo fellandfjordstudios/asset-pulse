@@ -7,6 +7,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -14,11 +18,12 @@
 	"keyed_on": {
 		"moves": [
 			"probe",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 2,
-		"sampled": 2,
-		"sets": 2
+		"old_key_sets": 3,
+		"sampled": 3,
+		"sets": 3
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -45,6 +50,7 @@
 		"1": {
 			"budget": 21573,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -71,7 +77,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 2,
+			"checked_at": 3,
 			"drawn": {
 				"excess": 0.4375,
 				"judge": "drawn",
@@ -104,11 +110,11 @@
 				"part_shift": {
 					"brass": 0.00042,
 					"drawer_front": 0.00025,
-					"gold": -0.00337,
+					"gold": -0.0034100000000000003,
 					"iron": 0.0007300000000000001,
 					"paint": 0.00152,
 					"wood": 0.00042,
-					"worn_edge": -5e-05
+					"worn_edge": 0.00014000000000000001
 				},
 				"picture": 0.00412
 			},
@@ -119,12 +125,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'paint' is 14 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 287.0,
+			"peak_mb": 306.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 35.1,
+			"search_s": 102.7,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
@@ -163,7 +169,7 @@
 					"value": 32
 				}
 			],
-			"checked_at": 2,
+			"checked_at": 3,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.45220000000000005,
@@ -184,9 +190,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 287.0,
+			"peak_mb": 306.0,
 			"route": "impostor",
-			"search_s": 79.0,
+			"search_s": 164.3,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -194,7 +200,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "a9bab44a4c2a0625cf2740720795ed6808826641b41f4564eb416f75a31916f8"
 	}
 }

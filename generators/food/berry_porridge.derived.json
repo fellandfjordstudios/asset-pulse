@@ -31,6 +31,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -42,11 +46,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 6,
-		"sampled": 6,
-		"sets": 6
+		"old_key_sets": 7,
+		"sampled": 7,
+		"sets": 7
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -91,9 +96,9 @@
 					"value": 1.0
 				}
 			],
-			"checked_at": 6,
+			"checked_at": 7,
 			"drawn": {
-				"excess": 0.375,
+				"excess": 0.4375,
 				"gap": 3.0380000000000003,
 				"judge": "drawn",
 				"pixel_m": 0.001297
@@ -118,9 +123,9 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED (its parts at their own rungs, joined) held at 23507, dearer than the 7845 taken"
 			],
-			"peak_mb": 307.0,
+			"peak_mb": 319.0,
 			"route": "kit",
-			"search_s": 232.20000000000002,
+			"search_s": 499.40000000000003,
 			"searched": "search",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -128,7 +133,7 @@
 	},
 	"source": {
 		"children": "13f6c10dc395859f90849c24c9564ecf9978655d866b116acd1f8e96102eec9c",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "ef366bc1b424f41f0fd3466920c91b40c853bf3394c43477801a993a02bf860c"
 	}
 }

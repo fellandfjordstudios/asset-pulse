@@ -19,6 +19,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -28,11 +32,12 @@
 			"probe",
 			"shape",
 			"shape",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 4,
-		"sampled": 4,
-		"sets": 2
+		"old_key_sets": 5,
+		"sampled": 5,
+		"sets": 3
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -85,9 +90,9 @@
 					"value": 0.7
 				}
 			],
-			"checked_at": 4,
+			"checked_at": 5,
 			"drawn": {
-				"excess": 0.3125,
+				"excess": 0.375,
 				"gap": 0.069,
 				"judge": "drawn",
 				"pixel_m": 0.0037329999999999998
@@ -129,9 +134,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping stitch 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.700 held at 4213, dearer than the 3572 taken"
 			],
-			"peak_mb": 306.0,
+			"peak_mb": 310.0,
 			"route": "kit",
-			"search_s": 97.80000000000001,
+			"search_s": 236.3,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
@@ -169,7 +174,7 @@
 					"value": 0.05764800999999997
 				}
 			],
-			"checked_at": 4,
+			"checked_at": 5,
 			"drawn": {
 				"excess": 0.25,
 				"gap": 0.193,
@@ -199,7 +204,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 4,
+				"checked_at": 5,
 				"checks": [
 					{
 						"holds": true,
@@ -296,6 +301,30 @@
 							0.005352873355150223,
 							0.0027572379913181067
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.13223236799240112,
+							0.08210133016109467,
+							0.04837527498602867
+						],
+						"mean_before": [
+							0.13223236799240112,
+							0.08210133016109467,
+							0.04837527498602867
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.007003510370850563,
+							0.005357623565942049,
+							0.0027579586021602154
+						],
+						"variance_before": [
+							0.007003510370850563,
+							0.005357623565942049,
+							0.0027579586021602154
+						]
 					}
 				],
 				"holds": true
@@ -334,9 +363,9 @@
 				"REDUCE (every piece) to 0.058 held at 1001, cheaper than the 2333 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"KIT (its own build at the rung's pixel, keeping stitch 0.031), carried from rung 1 held at 3572, dearer than the 2333 taken"
 			],
-			"peak_mb": 259.0,
+			"peak_mb": 263.0,
 			"route": "kit",
-			"search_s": 263.3,
+			"search_s": 663.7,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
@@ -375,7 +404,7 @@
 					"value": 8
 				}
 			],
-			"checked_at": 4,
+			"checked_at": 5,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.49400000000000005,
@@ -396,9 +425,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 259.0,
+			"peak_mb": 263.0,
 			"route": "impostor",
-			"search_s": 6.4,
+			"search_s": 14.100000000000001,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -407,7 +436,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "97c7380a77c90d2ec24b570a1414377cd73ae2575c9ed723962f6105ae45d69a"
 	}
 }

@@ -87,7 +87,7 @@
 	},
 	"replay": {
 		"1": "37ce7fe7b87bd4bde8676a821328d76dd5165417ebef37468abf570cf2e54932",
-		"2": "3090bbd26dfae688155aa95def169a9c86a3bf18a7f77b8ba0ec9223d2ece44b",
+		"2": "521d6f3b606705294e2d3018a213efcd2010ab3d5a66256aad5dab659b31c11c",
 		"3": "0708ec751e653cbd48e95a3f75d7a6049fb24a9e83e699be7b2ac2b73480ae0d"
 	},
 	"rungs": {
@@ -158,9 +158,9 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 552.0,
+			"peak_mb": 554.0,
 			"route": "merged",
-			"search_s": 307.6,
+			"search_s": 626.5,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -414,7 +414,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 15876,
 				"coverage_rel": -0.00805,
@@ -456,9 +455,9 @@
 				"MERGED (its parts at their own rungs, joined) held at 43546, dearer than the 15876 taken",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 43546, dearer than the 15876 taken"
 			],
-			"peak_mb": 588.0,
+			"peak_mb": 589.0,
 			"route": "kit",
-			"search_s": 1550.9,
+			"search_s": 1787.0,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -518,9 +517,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 588.0,
+			"peak_mb": 589.0,
 			"route": "impostor",
-			"search_s": 234.8,
+			"search_s": 476.20000000000005,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -529,7 +528,7 @@
 	},
 	"source": {
 		"children": "b9261c1d417ec26346f06238cfa2dfd0f8205ab5c72be5cdfb8a03ba12747331",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "e7f5dd46263ed4eca2c0737b37ec07d2d89ba65a01742183edd59a0f9d7389c8"
 	}
 }

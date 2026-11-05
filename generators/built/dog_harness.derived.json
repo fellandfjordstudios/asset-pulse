@@ -43,6 +43,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -56,11 +60,12 @@
 			"shape",
 			"shape",
 			"shape",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 8,
-		"sampled": 8,
-		"sets": 3
+		"old_key_sets": 9,
+		"sampled": 9,
+		"sets": 4
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -92,6 +97,7 @@
 		"1": {
 			"budget": 39117,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -121,7 +127,7 @@
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 8,
+			"checked_at": 9,
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
@@ -166,12 +172,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 1 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 847.0,
+			"peak_mb": 905.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9242.0
 			},
-			"search_s": 275.90000000000003,
+			"search_s": 617.9000000000001,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
@@ -201,7 +207,7 @@
 					"value": 0.409474
 				}
 			],
-			"checked_at": 8,
+			"checked_at": 9,
 			"colour": {
 				"judge": "each part's share held to keep 1's at the band",
 				"tolerance": 0.0294,
@@ -241,7 +247,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 8,
+				"checked_at": 9,
 				"checks": [
 					{
 						"holds": true,
@@ -434,6 +440,30 @@
 							0.005882498808205128,
 							0.0019965190440416336
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.17213433980941772,
+							0.12261159718036652,
+							0.06887256354093552
+						],
+						"mean_before": [
+							0.17213433980941772,
+							0.12261159718036652,
+							0.06887256354093552
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.007863158360123634,
+							0.00587784219533205,
+							0.0019950345158576965
+						],
+						"variance_before": [
+							0.007863158360123634,
+							0.00587784219533205,
+							0.0019950345158576965
+						]
 					}
 				],
 				"holds": true
@@ -456,9 +486,9 @@
 				"REDUCE to its error cap 0.125x the band's (0.409 kept) held at 41112, dearer than the 9996 taken",
 				"REDUCE to 0.490, carried from rung 1 held at 58546, dearer than the 9996 taken"
 			],
-			"peak_mb": 818.0,
+			"peak_mb": 876.0,
 			"route": "kit",
-			"search_s": 1249.8000000000002,
+			"search_s": 2891.1000000000004,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -497,7 +527,7 @@
 					"value": 12
 				}
 			],
-			"checked_at": 8,
+			"checked_at": 9,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.46680000000000005,
@@ -518,9 +548,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 858.0,
+			"peak_mb": 931.0,
 			"route": "impostor",
-			"search_s": 56.6,
+			"search_s": 121.0,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -529,7 +559,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "d592d5efdedc2888f387ba54c832c028b018d661493efa94402779b625ac64b2"
 	}
 }

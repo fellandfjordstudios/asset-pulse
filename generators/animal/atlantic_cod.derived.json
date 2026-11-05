@@ -117,9 +117,9 @@
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 310.0,
+			"peak_mb": 313.0,
 			"route": "kit",
-			"search_s": 78.5,
+			"search_s": 159.20000000000002,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
@@ -305,16 +305,16 @@
 				"KIT (its own build at 2 of the band's pixels) held at 3248, dearer than the 2674 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 9796, dearer than the 2674 taken"
 			],
-			"peak_mb": 269.0,
+			"peak_mb": 272.0,
 			"route": "kit",
-			"search_s": 126.80000000000001,
+			"search_s": 260.7,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "bd8e4c004398eba759b76b8d0c4f9cf77a18f494862f24f488edabeaa9f7ca2e"
 	}
 }

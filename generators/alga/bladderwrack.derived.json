@@ -79,6 +79,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -98,11 +102,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 14,
-		"sampled": 14,
-		"sets": 14
+		"old_key_sets": 15,
+		"sampled": 15,
+		"sets": 15
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -129,6 +134,7 @@
 		"1": {
 			"budget": 22975,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -149,7 +155,7 @@
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 14,
+			"checked_at": 15,
 			"drawn": {
 				"excess": 0.375,
 				"judge": "drawn",
@@ -179,12 +185,12 @@
 				"picture": 0.00398
 			},
 			"measured_of": 1,
-			"peak_mb": 464.0,
+			"peak_mb": 485.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 32.0
 			},
-			"search_s": 43.6,
+			"search_s": 99.30000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -192,6 +198,7 @@
 		"2": {
 			"budget": 5743,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -212,7 +219,7 @@
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 14,
+			"checked_at": 15,
 			"drawn": {
 				"excess": 0.3125,
 				"judge": "drawn",
@@ -242,19 +249,19 @@
 				"picture": 0.00444
 			},
 			"measured_of": 1,
-			"peak_mb": 464.0,
+			"peak_mb": 485.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 32.0
 			},
-			"search_s": 12.5,
+			"search_s": 28.400000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "4760864bd328a064f9596d4366d8b9e0362dea0519c58f803f763f80d5c22e25"
 	}
 }

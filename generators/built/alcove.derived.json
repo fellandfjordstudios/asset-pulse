@@ -101,6 +101,7 @@
 		"1": {
 			"budget": 39117,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -156,7 +157,7 @@
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 64.3,
+			"search_s": 129.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -164,6 +165,7 @@
 		"2": {
 			"budget": 9779,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -219,7 +221,7 @@
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 14.100000000000001,
+			"search_s": 28.200000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -281,7 +283,7 @@
 			],
 			"peak_mb": 555.0,
 			"route": "impostor",
-			"search_s": 10.4,
+			"search_s": 20.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -289,7 +291,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "52005c89e185db1498668b10d93361d728f2a1260b69755325b9ce32f47ff571"
 	}
 }

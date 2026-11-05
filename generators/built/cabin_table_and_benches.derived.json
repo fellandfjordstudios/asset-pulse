@@ -7,6 +7,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -14,11 +18,12 @@
 	"keyed_on": {
 		"moves": [
 			"probe",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 2,
-		"sampled": 2,
-		"sets": 2
+		"old_key_sets": 3,
+		"sampled": 3,
+		"sets": 3
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -69,7 +74,7 @@
 					"value": 0.521335
 				}
 			],
-			"checked_at": 2,
+			"checked_at": 3,
 			"drawn": {
 				"excess": 0.4375,
 				"judge": "drawn",
@@ -109,9 +114,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to its error cap 0.5x the band's (0.521 kept) held at 3812, dearer than the 3764 taken"
 			],
-			"peak_mb": 331.0,
+			"peak_mb": 335.0,
 			"route": "kit",
-			"search_s": 41.1,
+			"search_s": 130.4,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -147,7 +152,7 @@
 					"value": 0.369256
 				}
 			],
-			"checked_at": 2,
+			"checked_at": 3,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -174,7 +179,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 2,
+				"checked_at": 3,
 				"checks": [
 					{
 						"holds": true,
@@ -223,6 +228,30 @@
 							0.00012206286191940308,
 							7.053464651107788e-05
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.40423306822776794,
+							0.29769167304039,
+							0.19710303843021393
+						],
+						"mean_before": [
+							0.40423306822776794,
+							0.29769167304039,
+							0.19710303843021393
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0001878887414932251,
+							0.00012213736772537231,
+							7.057562470436096e-05
+						],
+						"variance_before": [
+							0.0001878887414932251,
+							0.00012213736772537231,
+							7.057562470436096e-05
+						]
 					}
 				],
 				"holds": true
@@ -260,9 +289,9 @@
 				"REDUCE to its error cap 0.5x the band's (0.369 kept) held at 2700, dearer than the 2660 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 3764, dearer than the 2660 taken"
 			],
-			"peak_mb": 265.0,
+			"peak_mb": 269.0,
 			"route": "kit",
-			"search_s": 218.10000000000002,
+			"search_s": 673.4000000000001,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
@@ -301,7 +330,7 @@
 					"value": 12
 				}
 			],
-			"checked_at": 2,
+			"checked_at": 3,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.4889,
@@ -322,9 +351,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 265.0,
+			"peak_mb": 269.0,
 			"route": "impostor",
-			"search_s": 8.1,
+			"search_s": 19.3,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -333,7 +362,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "819f1db09cbe1f45cb466174ac1cbbef1a15c7f05358d71325d63dd56cab6f7c"
 	}
 }

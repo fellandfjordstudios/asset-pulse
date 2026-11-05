@@ -127,6 +127,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -154,11 +158,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 22,
-		"sampled": 22,
-		"sets": 22
+		"old_key_sets": 23,
+		"sampled": 23,
+		"sets": 23
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -204,7 +209,7 @@
 					"value": 0.494981
 				}
 			],
-			"checked_at": 22,
+			"checked_at": 23,
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
@@ -243,9 +248,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to its error cap 0.5x the band's (0.495 kept) held at 5326, cheaper than the 10644 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 385.0,
+			"peak_mb": 390.0,
 			"route": "kit",
-			"search_s": 223.10000000000002,
+			"search_s": 466.70000000000005,
 			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9
@@ -253,6 +258,7 @@
 		"2": {
 			"budget": 4228,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -282,7 +288,7 @@
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 22,
+			"checked_at": 23,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -308,7 +314,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 22,
+				"checked_at": 23,
 				"checks": [
 					{
 						"holds": true,
@@ -837,6 +843,30 @@
 							0.036828044801950455,
 							0.03778613358736038
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.21362106502056122,
+							0.1926393061876297,
+							0.16909347474575043
+						],
+						"mean_before": [
+							0.21362106502056122,
+							0.1926393061876297,
+							0.16909347474575043
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.03715265169739723,
+							0.035660043358802795,
+							0.03653383255004883
+						],
+						"variance_before": [
+							0.03715265169739723,
+							0.035660043358802795,
+							0.03653383255004883
+						]
 					}
 				],
 				"holds": true
@@ -856,19 +886,19 @@
 				"KIT (its own build at 2 of the band's pixels) held at 10620, dearer than the 5268 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 10644, dearer than the 5268 taken"
 			],
-			"peak_mb": 396.0,
+			"peak_mb": 402.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 1335.6000000000001,
+			"search_s": 3038.1000000000004,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "54b3ce43fc7e0f0081eab47c5852de6139a7320def8b90f0faad1ebc496ca3c2"
 	}
 }

@@ -61,6 +61,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -77,11 +81,12 @@
 			"shape",
 			"shape",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 11,
-		"sampled": 11,
-		"sets": 5
+		"old_key_sets": 12,
+		"sampled": 12,
+		"sets": 6
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -103,6 +108,7 @@
 		"1": {
 			"budget": 4220,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -129,7 +135,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 11,
+			"checked_at": 12,
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
@@ -172,19 +178,19 @@
 				"REDUCE from rung 0 at {\"strip_count\":10} seed 314: element 0's part 'strip' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 457.0,
+			"peak_mb": 477.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 39.0,
+			"search_s": 82.60000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "1461fbba535b7c61d347d2d3feea41a8042174b78b3ce10d9ad6d61d0daea2d4"
 	}
 }

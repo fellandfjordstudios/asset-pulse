@@ -91,6 +91,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -112,11 +116,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 16,
-		"sampled": 16,
-		"sets": 16
+		"old_key_sets": 17,
+		"sampled": 17,
+		"sets": 17
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -143,6 +148,7 @@
 		"1": {
 			"budget": 39117,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -172,7 +178,7 @@
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 16,
+			"checked_at": 17,
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
@@ -213,12 +219,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 24 pixel(s) differ at the drawn size at {} seed 314 (worst 0.97)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1071.0,
+			"peak_mb": 1121.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 151.5,
+			"search_s": 318.8,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -245,7 +251,7 @@
 					"value": 0.16
 				}
 			],
-			"checked_at": 16,
+			"checked_at": 17,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -272,7 +278,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 16,
+				"checked_at": 17,
 				"checks": [
 					{
 						"holds": true,
@@ -657,6 +663,30 @@
 							4.404783248901367e-05,
 							4.933588206768036e-05
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.26756250858306885,
+							0.1871301531791687,
+							0.11956696212291718
+						],
+						"mean_before": [
+							0.26756250858306885,
+							0.1871301531791687,
+							0.11956696212291718
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							2.16066837310791e-05,
+							4.3373554944992065e-05,
+							4.857964813709259e-05
+						],
+						"variance_before": [
+							2.16066837310791e-05,
+							4.3373554944992065e-05,
+							4.857964813709259e-05
+						]
 					}
 				],
 				"holds": true
@@ -678,16 +708,16 @@
 				"CARRIED from rung 1, REDUCE to 0.240, carried from rung 1: candidate emits 1 opposing duplicate faces",
 				"REDUCE to its error cap 0.0625x the band's (0.160 kept) held at 784, dearer than the 628 taken"
 			],
-			"peak_mb": 1042.0,
+			"peak_mb": 1089.0,
 			"route": "kit",
-			"search_s": 90.10000000000001,
+			"search_s": 202.8,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "e6da475d58189b62b60d909a80b0042f8598d14832021b06ee4880cc0c888d80"
 	}
 }

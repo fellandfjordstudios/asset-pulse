@@ -61,6 +61,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -77,11 +81,12 @@
 			"structural",
 			"structural",
 			"shape",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 11,
-		"sampled": 11,
-		"sets": 10
+		"old_key_sets": 12,
+		"sampled": 12,
+		"sets": 11
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -122,7 +127,7 @@
 					"value": 0.24009999999999992
 				}
 			],
-			"checked_at": 11,
+			"checked_at": 12,
 			"drawn": {
 				"excess": 0.3125,
 				"judge": "drawn",
@@ -162,16 +167,16 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.240 held at 1512, cheaper than the 3812 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 274.0,
+			"peak_mb": 278.0,
 			"route": "kit",
-			"search_s": 50.400000000000006,
+			"search_s": 113.4,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "7bb1a4e2a082361990891c45bd8dbee38348269aaae81ab4381c9b65eb9e45b2"
 	}
 }

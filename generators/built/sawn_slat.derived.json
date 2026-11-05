@@ -67,6 +67,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -84,11 +88,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 12,
-		"sampled": 12,
-		"sets": 12
+		"old_key_sets": 13,
+		"sampled": 13,
+		"sets": 13
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -120,6 +125,7 @@
 		"1": {
 			"budget": 39117,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -146,7 +152,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 12,
+			"checked_at": 13,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -173,11 +179,11 @@
 			},
 			"measured": {
 				"cost": 40,
-				"coverage_rel": 0.009720000000000001,
+				"coverage_rel": 0.01139,
 				"floor": 0.01089,
 				"part_shift": {
-					"end_grain": -8e-05,
-					"wood": 8e-05
+					"end_grain": -0.00014000000000000001,
+					"wood": 0.00014000000000000001
 				},
 				"picture": 0.004
 			},
@@ -186,12 +192,12 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.02} seed 314: the picture changes at the drawn size: 23499 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00005 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 557.0,
+			"peak_mb": 583.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 36.800000000000004,
+			"search_s": 82.10000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -199,6 +205,7 @@
 		"2": {
 			"budget": 9779,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -230,7 +237,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 12,
+			"checked_at": 13,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -256,7 +263,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 12,
+				"checked_at": 13,
 				"checks": [
 					{
 						"holds": true,
@@ -545,6 +552,30 @@
 							3.8929283618927e-05,
 							2.1900981664657593e-05
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3836948275566101,
+							0.2553509771823883,
+							0.1670636385679245
+						],
+						"mean_before": [
+							0.3836948275566101,
+							0.2553509771823883,
+							0.1670636385679245
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							6.785988807678223e-05,
+							3.890693187713623e-05,
+							2.1884217858314514e-05
+						],
+						"variance_before": [
+							6.785988807678223e-05,
+							3.890693187713623e-05,
+							2.1884217858314514e-05
+						]
 					}
 				],
 				"holds": true
@@ -552,7 +583,7 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 40,
-				"coverage_rel": 0.009720000000000001,
+				"coverage_rel": 0.01139,
 				"floor": 0.01089,
 				"part_shift": {},
 				"picture": 0.004
@@ -564,12 +595,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.25x the band's (0.526 kept), carried from rung 1 held at 40, the same cost as the route taken, found first"
 			],
-			"peak_mb": 557.0,
+			"peak_mb": 583.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 12.5,
+			"search_s": 26.8,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -577,6 +608,7 @@
 		"3": {
 			"budget": 2444,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -608,7 +640,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 12,
+			"checked_at": 13,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -631,7 +663,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 12,
+				"checked_at": 13,
 				"checks": [
 					{
 						"holds": true,
@@ -920,6 +952,30 @@
 							3.8929283618927e-05,
 							2.1900981664657593e-05
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3836948275566101,
+							0.2553509771823883,
+							0.1670636385679245
+						],
+						"mean_before": [
+							0.3836948275566101,
+							0.2553509771823883,
+							0.1670636385679245
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							6.785988807678223e-05,
+							3.890693187713623e-05,
+							2.1884217858314514e-05
+						],
+						"variance_before": [
+							6.785988807678223e-05,
+							3.890693187713623e-05,
+							2.1884217858314514e-05
+						]
 					}
 				],
 				"holds": true
@@ -927,7 +983,7 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 40,
-				"coverage_rel": 0.009720000000000001,
+				"coverage_rel": 0.01139,
 				"floor": 0.01089,
 				"part_shift": {},
 				"picture": 0.004
@@ -939,19 +995,19 @@
 				"REDUCE to its error cap 0.0625x the band's (0.526 kept), carried from rung 1 held at 40, the same cost as the route taken, found first",
 				"REDUCE to its error cap 0.0625x the band's (0.526 kept), carried from rung 2 held at 40, the same cost as the route taken, found first"
 			],
-			"peak_mb": 557.0,
+			"peak_mb": 583.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 10.100000000000001,
+			"search_s": 21.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "e18a6712b70dc269d35dd6741f37744b33c804942f7794aa6b0f269ec614ce1e"
 	}
 }

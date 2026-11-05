@@ -211,6 +211,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -252,11 +256,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 36,
-		"sampled": 36,
-		"sets": 36
+		"old_key_sets": 37,
+		"sampled": 37,
+		"sets": 37
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -283,6 +288,7 @@
 		"1": {
 			"budget": 39117,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -309,7 +315,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 36,
+			"checked_at": 37,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -355,12 +361,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 10's part 'rope' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1292.0,
+			"peak_mb": 1321.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 365.70000000000005,
+			"search_s": 743.6,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -368,6 +374,7 @@
 		"2": {
 			"budget": 9779,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -395,7 +402,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 36,
+			"checked_at": 37,
 			"drawn": {
 				"excess": 0.1875,
 				"judge": "drawn",
@@ -406,7 +413,7 @@
 			"fraction": 0.8648309999999999,
 			"from_rung": 0,
 			"material_transfer": {
-				"checked_at": 36,
+				"checked_at": 37,
 				"checks": [
 					{
 						"holds": true,
@@ -1271,6 +1278,30 @@
 							0.0009807306341826916,
 							0.00043278862722218037
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.14060655236244202,
+							0.08733675628900528,
+							0.06023385375738144
+						],
+						"mean_before": [
+							0.14060655236244202,
+							0.08733675628900528,
+							0.06023385375738144
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0033467039465904236,
+							0.0009814556688070297,
+							0.00043309759348630905
+						],
+						"variance_before": [
+							0.0033467039465904236,
+							0.0009814556688070297,
+							0.00043309759348630905
+						]
 					}
 				],
 				"holds": true
@@ -1293,19 +1324,19 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"mast_height_m\":4.0} seed 314: coverage changes -0.0227 against 0.0227 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)"
 			],
-			"peak_mb": 1333.0,
+			"peak_mb": 1363.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 1160.6000000000001,
+			"search_s": 2606.8,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "f45298db3917a11f566d322d00535cea6e8ddfd3870031bc314634dc0eabc3b1"
 	}
 }

@@ -7,6 +7,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -14,11 +18,12 @@
 	"keyed_on": {
 		"moves": [
 			"probe",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 2,
-		"sampled": 2,
-		"sets": 2
+		"old_key_sets": 3,
+		"sampled": 3,
+		"sets": 3
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -43,13 +48,14 @@
 	},
 	"replay": {
 		"1": "5d371b69dd286fe3b6d7c0ded015e1a7e25520444a5d1dfd7bef299cf629febf",
-		"2": "aadee3122ea7c5b750f4f4a8b01a4d738a54cf0161c80acd050a592f74ee1bac",
+		"2": "219fef377a8f9247526b1fab246d62ed97b24dfa99c80bb29f8061176d340f87",
 		"3": "1513f59785baad70868089ce3b1123ece0781eb4214dc5d3f05660b089f3d153"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -81,7 +87,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 2,
+			"checked_at": 3,
 			"drawn": {
 				"excess": 0.1875,
 				"judge": "drawn",
@@ -127,12 +133,12 @@
 				"CHILD: no welded child has a coarser rung at slot 1: {\"built/nansen-cooker-cup\":0,\"built/nansen-cooker-vessel\":0}",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 332.0,
+			"peak_mb": 366.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 43.0
 			},
-			"search_s": 46.800000000000004,
+			"search_s": 134.70000000000002,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -174,7 +180,7 @@
 					"value": 0.301325
 				}
 			],
-			"checked_at": 2,
+			"checked_at": 3,
 			"drawn": {
 				"excess": 0.25,
 				"gap": 0.417,
@@ -208,7 +214,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 2,
+				"checked_at": 3,
 				"checks": [
 					{
 						"holds": true,
@@ -257,10 +263,35 @@
 							0.01592916250228882,
 							0.028742104768753052
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.6968438625335693,
+							0.6899425387382507,
+							0.6738091707229614
+						],
+						"mean_before": [
+							0.6968438625335693,
+							0.6899425387382507,
+							0.6738091707229614
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.010873675346374512,
+							0.015928655862808228,
+							0.028741806745529175
+						],
+						"variance_before": [
+							0.010873675346374512,
+							0.015928655862808228,
+							0.028741806745529175
+						]
 					}
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 5986,
 				"coverage_rel": -0.014230000000000001,
@@ -295,9 +326,9 @@
 				"REDUCE, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.031, support 0.031, fitting 0.031, vessel 0.031, cup 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to its error cap 0.125x the band's (0.301 kept), carried from rung 1 held at 7870, dearer than the 5986 taken"
 			],
-			"peak_mb": 332.0,
+			"peak_mb": 366.0,
 			"route": "kit",
-			"search_s": 12.600000000000001,
+			"search_s": 217.70000000000002,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -336,7 +367,7 @@
 					"value": 12
 				}
 			],
-			"checked_at": 2,
+			"checked_at": 3,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.5,
@@ -357,9 +388,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 332.0,
+			"peak_mb": 366.0,
 			"route": "impostor",
-			"search_s": 8.4,
+			"search_s": 21.900000000000002,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -369,7 +400,7 @@
 	},
 	"source": {
 		"children": "0ac0b8cbabe068d2117cd90b516b25f1fa3ecf786eb823d6ea468d33d9c67034",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "951eeaa17ab7abe6eb6ebd778e0bb58bca0b8afa107ee49784f83dcbe2540675"
 	}
 }

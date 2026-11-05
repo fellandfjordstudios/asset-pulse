@@ -89,6 +89,7 @@
 		"1": {
 			"budget": 10149,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -145,12 +146,12 @@
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 303.0,
+			"peak_mb": 304.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 28.3,
+			"search_s": 56.1,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -158,6 +159,7 @@
 		"2": {
 			"budget": 2537,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -217,19 +219,19 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"CARRIED from rung 1, REDUCE to 0.240, carried from rung 1: none holds at 0.0145 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00518 m; coverage changes -0.1667 against 0.0727 allowed (a one-pixel shrink all round)"
 			],
-			"peak_mb": 303.0,
+			"peak_mb": 304.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 7.800000000000001,
+			"search_s": 15.100000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "68f92aac2b05a01bed120292aa45884a10121e211ac90c29808ed421e051541a"
 	}
 }

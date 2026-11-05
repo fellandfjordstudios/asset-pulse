@@ -130,9 +130,9 @@
 				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 1 across 5 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping nail 0.082)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 317.0,
+			"peak_mb": 318.0,
 			"route": "kit",
-			"search_s": 101.10000000000001,
+			"search_s": 221.0,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -374,10 +374,10 @@
 				"KIT (its own build at the rung's pixel, keeping nail 0.031) held at 1380, dearer than the 884 taken",
 				"KIT (its own build at the rung's pixel, keeping nail 0.082), carried from rung 1 held at 2098, dearer than the 884 taken"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 269.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 78.2,
+			"search_s": 171.60000000000002,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -385,7 +385,7 @@
 	},
 	"source": {
 		"children": "a0cc6c73eae06bb4205fefe304a78b845b2c6cf4610e2677b5948679b15196d0",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "d928f95127b4f1bd59527e15f2e464fe264eef7d60eefd3497a54fd7e0f9f488"
 	}
 }

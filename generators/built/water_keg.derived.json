@@ -43,6 +43,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -56,11 +60,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 8,
-		"sampled": 8,
-		"sets": 8
+		"old_key_sets": 9,
+		"sampled": 9,
+		"sets": 9
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -87,6 +92,7 @@
 		"1": {
 			"budget": 11490,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -113,7 +119,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 8,
+			"checked_at": 9,
 			"drawn": {
 				"excess": 0.1875,
 				"judge": "drawn",
@@ -161,12 +167,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'stave' is 22 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 358.0,
+			"peak_mb": 375.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 47.0
 			},
-			"search_s": 193.0,
+			"search_s": 423.5,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
@@ -205,7 +211,7 @@
 					"value": 16
 				}
 			],
-			"checked_at": 8,
+			"checked_at": 9,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.47340000000000004,
@@ -226,9 +232,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 360.0,
+			"peak_mb": 376.0,
 			"route": "impostor",
-			"search_s": 130.4,
+			"search_s": 275.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -236,7 +242,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "de348d2344c615af46a81d8530db01e877c998580b87c6cfe6b47aad0b956759"
 	}
 }

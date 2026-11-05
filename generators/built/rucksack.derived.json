@@ -82,6 +82,7 @@
 		"1": {
 			"budget": 16504,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -151,12 +152,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 206 pixel(s) differ at the drawn size at {} seed 314 (worst 0.88)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 357.0,
+			"peak_mb": 359.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 10.0
 			},
-			"search_s": 66.8,
+			"search_s": 134.0,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -164,6 +165,7 @@
 		"2": {
 			"budget": 4126,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -410,19 +412,19 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.4762x the band's (0.859 kept), carried from rung 1 held at 1822, dearer than the 1808 taken"
 			],
-			"peak_mb": 440.0,
+			"peak_mb": 441.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 10.0
 			},
-			"search_s": 103.60000000000001,
+			"search_s": 214.4,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "c4d9dab94da387ceb1e6181297e42736a37b66697d0e5a4f117395ffa5a13a83"
 	}
 }

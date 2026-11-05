@@ -24,6 +24,12 @@
 				"extent_m": 1.8
 			},
 			"seed": 315
+		},
+		{
+			"params": {
+				"extent_m": 1.8
+			},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -33,11 +39,12 @@
 			"probe",
 			"shape",
 			"shape",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 4,
-		"sampled": 4,
-		"sets": 2
+		"old_key_sets": 5,
+		"sampled": 5,
+		"sets": 3
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -94,7 +101,7 @@
 					"value": 1.0
 				}
 			],
-			"checked_at": 4,
+			"checked_at": 5,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -115,9 +122,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: built/marker-buoy does not declare `reads_density`"
 			],
-			"peak_mb": 271.0,
+			"peak_mb": 276.0,
 			"route": "rung0",
-			"search_s": 18.7,
+			"search_s": 48.800000000000004,
 			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9,
@@ -157,7 +164,7 @@
 					"value": 12
 				}
 			],
-			"checked_at": 4,
+			"checked_at": 5,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.47900000000000004,
@@ -178,9 +185,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 271.0,
+			"peak_mb": 276.0,
 			"route": "impostor",
-			"search_s": 21.5,
+			"search_s": 50.2,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -189,7 +196,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "b4f0dace19abbd5ed3b569027f689960ce9093dfeb7ec46b6c74c99098c21f98"
 	}
 }

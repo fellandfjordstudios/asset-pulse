@@ -97,6 +97,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -119,11 +123,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 17,
-		"sampled": 17,
-		"sets": 17
+		"old_key_sets": 18,
+		"sampled": 18,
+		"sets": 18
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -169,9 +174,9 @@
 					"value": 0.6922459999999999
 				}
 			],
-			"checked_at": 17,
+			"checked_at": 18,
 			"drawn": {
-				"excess": 0.25,
+				"excess": 0.375,
 				"judge": "drawn",
 				"pixel_m": 0.008303
 			},
@@ -208,9 +213,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to its error cap 1.0x the band's (0.692 kept) held at 1714, dearer than the 1592 taken"
 			],
-			"peak_mb": 349.0,
+			"peak_mb": 353.0,
 			"route": "kit",
-			"search_s": 137.70000000000002,
+			"search_s": 295.1,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -239,7 +244,7 @@
 					"value": 0.239903
 				}
 			],
-			"checked_at": 17,
+			"checked_at": 18,
 			"drawn": {
 				"excess": 0.4375,
 				"gap": 0.031,
@@ -269,7 +274,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 17,
+				"checked_at": 18,
 				"checks": [
 					{
 						"holds": true,
@@ -678,6 +683,30 @@
 							0.006557035259902477,
 							0.005485758185386658
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.11699432134628296,
+							0.10920698940753937,
+							0.09132993221282959
+						],
+						"mean_before": [
+							0.11699432134628296,
+							0.10920698940753937,
+							0.09132993221282959
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0068620843812823296,
+							0.006547078490257263,
+							0.00548978615552187
+						],
+						"variance_before": [
+							0.0068620843812823296,
+							0.006547078490257263,
+							0.00548978615552187
+						]
 					}
 				],
 				"holds": true
@@ -698,17 +727,17 @@
 				"REDUCE to its error cap 0.5x the band's (0.240 kept) held at 594, dearer than the 356 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 1592, dearer than the 356 taken"
 			],
-			"peak_mb": 281.0,
+			"peak_mb": 286.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 57.800000000000004,
+			"search_s": 127.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "0271bc55112f6961e1bd7075badfa21b52fcb9c751d976dc6db9f9c710b03306"
 	}
 }

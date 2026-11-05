@@ -91,6 +91,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -112,11 +116,12 @@
 			"structural",
 			"structural",
 			"shape",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 16,
-		"sampled": 16,
-		"sets": 15
+		"old_key_sets": 17,
+		"sampled": 17,
+		"sets": 16
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -157,7 +162,7 @@
 					"value": 1.0
 				}
 			],
-			"checked_at": 16,
+			"checked_at": 17,
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
@@ -206,9 +211,9 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 909.0,
+			"peak_mb": 945.0,
 			"route": "merged",
-			"search_s": 653.3000000000001,
+			"search_s": 1409.0,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -216,7 +221,7 @@
 	},
 	"source": {
 		"children": "58f6b8a6d09a911af71ae5b69b216d5917409913db3eac58fb4cb18a0f8388ce",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "8664bb28b87955a8d608d6838c8ca48fd0f1d876a6cd6ecec2def62ba2b62177"
 	}
 }

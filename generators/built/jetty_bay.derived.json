@@ -73,6 +73,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -91,11 +95,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 13,
-		"sampled": 13,
-		"sets": 13
+		"old_key_sets": 14,
+		"sampled": 14,
+		"sets": 14
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -143,7 +148,7 @@
 					"value": 0.3429999999999999
 				}
 			],
-			"checked_at": 13,
+			"checked_at": 14,
 			"drawn": {
 				"excess": 0.5,
 				"gap": 0.028,
@@ -186,9 +191,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping nail 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.343 held at 908, dearer than the 656 taken"
 			],
-			"peak_mb": 355.0,
+			"peak_mb": 356.0,
 			"route": "kit",
-			"search_s": 153.0,
+			"search_s": 321.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 2
@@ -217,7 +222,7 @@
 					"value": 0.55774
 				}
 			],
-			"checked_at": 13,
+			"checked_at": 14,
 			"drawn": {
 				"excess": 0.25,
 				"gap": 0.094,
@@ -262,17 +267,17 @@
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.558 kept) held at 908, dearer than the 416 taken",
 				"KIT (its own build at the rung's pixel, keeping nail 0.031), carried from rung 1 held at 656, dearer than the 416 taken"
 			],
-			"peak_mb": 271.0,
+			"peak_mb": 275.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 32.300000000000004,
+			"search_s": 70.3,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "48ceaf9d3f08462fb7986cfabb0bb48fede5993ba11327b7d13dca9bc1baabd3"
 	}
 }

@@ -19,6 +19,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -28,11 +32,12 @@
 			"probe",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 4,
-		"sampled": 4,
-		"sets": 4
+		"old_key_sets": 5,
+		"sampled": 5,
+		"sets": 5
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -83,7 +88,7 @@
 					"value": 0.16806999999999994
 				}
 			],
-			"checked_at": 4,
+			"checked_at": 5,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -122,9 +127,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.168 held at 444, cheaper than the 1174 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 248.0,
+			"peak_mb": 250.0,
 			"route": "kit",
-			"search_s": 11.5,
+			"search_s": 29.1,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -151,7 +156,7 @@
 					"value": 0.05764800999999997
 				}
 			],
-			"checked_at": 4,
+			"checked_at": 5,
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
@@ -192,9 +197,9 @@
 				"REDUCE to 0.058 held at 120, cheaper than the 536 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 1174, dearer than the 536 taken"
 			],
-			"peak_mb": 246.0,
+			"peak_mb": 250.0,
 			"route": "kit",
-			"search_s": 3.8000000000000003,
+			"search_s": 9.8,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -221,7 +226,7 @@
 					"value": 0.024952
 				}
 			],
-			"checked_at": 4,
+			"checked_at": 5,
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
@@ -259,16 +264,16 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 1174, dearer than the 348 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 536, dearer than the 348 taken"
 			],
-			"peak_mb": 246.0,
+			"peak_mb": 250.0,
 			"route": "kit",
-			"search_s": 2.8000000000000003,
+			"search_s": 7.2,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "50ca0b4043fb32c3c11448d0184ffc1e64f13e12f97aab35e7ebac8a4104674e"
 	}
 }

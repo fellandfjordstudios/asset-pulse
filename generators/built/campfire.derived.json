@@ -165,6 +165,14 @@
 				"split_fraction": 0.6
 			},
 			"seed": 315
+		},
+		{
+			"params": {
+				"alight": 1,
+				"burnt_fraction": 0.28,
+				"split_fraction": 0.6
+			},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -189,11 +197,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 19,
-		"sampled": 19,
-		"sets": 19
+		"old_key_sets": 20,
+		"sampled": 20,
+		"sets": 20
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -230,6 +239,7 @@
 			"budget": 39117,
 			"budget_reason": "the cheapest derivation that holds the picture costs 61038, 1.56x rung 1's budget 39117: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -256,7 +266,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 19,
+			"checked_at": 20,
 			"drawn": {
 				"excess": 0.4375,
 				"judge": "drawn",
@@ -286,12 +296,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.02: 20778 pixel(s) differ at the drawn size at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314 (worst 0.56)",
 				"REDUCE from rung 0 at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: element 0's part 'bark' is 85 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)"
 			],
-			"peak_mb": 1076.0,
+			"peak_mb": 1104.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 10
 			},
-			"search_s": 2920.2000000000003,
+			"search_s": 6222.1,
 			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
@@ -319,13 +329,13 @@
 					"value": 0.43124
 				}
 			],
-			"checked_at": 19,
+			"checked_at": 20,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
 			"material_transfer": {
-				"checked_at": 19,
+				"checked_at": 20,
 				"checks": [
 					{
 						"holds": true,
@@ -782,6 +792,30 @@
 							0.02319605089724064,
 							0.014794602990150452
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.21429026126861572,
+							0.1563638299703598,
+							0.11848313361406326
+						],
+						"mean_before": [
+							0.21429026126861572,
+							0.1563638299703598,
+							0.11848313361406326
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.03438008949160576,
+							0.020749550312757492,
+							0.013230797834694386
+						],
+						"variance_before": [
+							0.03438008949160576,
+							0.020749550312757492,
+							0.013230797834694386
+						]
 					}
 				],
 				"holds": true
@@ -812,9 +846,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"BUDGET: the cheapest derivation that holds the picture costs 50186 (5.13x), over rung 2's budget 9779 x 1.5 = 14668 (made, 1.25 m)"
 			],
-			"peak_mb": 1078.0,
+			"peak_mb": 1116.0,
 			"route": "kit",
-			"search_s": 2019.8000000000002,
+			"search_s": 4505.9000000000005,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1,
@@ -854,7 +888,7 @@
 					"value": 24
 				}
 			],
-			"checked_at": 19,
+			"checked_at": 20,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.49010000000000004,
@@ -875,9 +909,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 1046.0,
+			"peak_mb": 1086.0,
 			"route": "impostor",
-			"search_s": 361.70000000000005,
+			"search_s": 723.7,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -886,7 +920,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "52d812f7a4de1d690a3f5a5922a14f4ebc37c59e7b87bacc6b69bd96e2ccffdd"
 	}
 }

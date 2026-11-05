@@ -121,6 +121,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -147,11 +151,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 21,
-		"sampled": 21,
-		"sets": 21
+		"old_key_sets": 22,
+		"sampled": 22,
+		"sets": 22
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -197,7 +202,7 @@
 					"value": 0.7
 				}
 			],
-			"checked_at": 21,
+			"checked_at": 22,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -236,9 +241,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.700 held at 618, cheaper than the 634 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 365.0,
+			"peak_mb": 366.0,
 			"route": "kit",
-			"search_s": 262.6,
+			"search_s": 559.8000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -265,7 +270,7 @@
 					"value": 0.828418
 				}
 			],
-			"checked_at": 21,
+			"checked_at": 22,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -292,7 +297,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 21,
+				"checked_at": 22,
 				"checks": [
 					{
 						"holds": true,
@@ -797,6 +802,30 @@
 							0.05691149830818176,
 							0.05397060513496399
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.6933669447898865,
+							0.6941572427749634,
+							0.6964048147201538
+						],
+						"mean_before": [
+							0.6933669447898865,
+							0.6941572427749634,
+							0.6964048147201538
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.05796414613723755,
+							0.05691149830818176,
+							0.05397060513496399
+						],
+						"variance_before": [
+							0.05796414613723755,
+							0.05691149830818176,
+							0.05397060513496399
+						]
 					}
 				],
 				"holds": true
@@ -817,16 +846,16 @@
 				"REDUCE to its error cap 0.25x the band's (0.828 kept) held at 618, dearer than the 458 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 634, dearer than the 458 taken"
 			],
-			"peak_mb": 289.0,
+			"peak_mb": 292.0,
 			"route": "kit",
-			"search_s": 117.0,
+			"search_s": 247.60000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "fa5ba0a94019029fc94af20753feeff129e22dbcbbcdb52690b7b2b724709a2d"
 	}
 }

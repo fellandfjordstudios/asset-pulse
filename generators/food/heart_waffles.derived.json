@@ -7,6 +7,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -14,17 +18,18 @@
 	"keyed_on": {
 		"moves": [
 			"probe",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 2,
-		"sampled": 2,
-		"sets": 2
+		"old_key_sets": 3,
+		"sampled": 3,
+		"sets": 3
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 9,
+				"candidates": 12,
 				"trace": "food__heart-waffles#1.trace.jsonl"
 			}
 		}
@@ -33,21 +38,19 @@
 		"params": {},
 		"seed": 314
 	},
-	"replay": {
-		"1": "dc670e08ca488bb002cfdfa0a5b9ec196fbc449cb019aa6027dba0d7ae5800fc"
-	},
 	"rungs": {
 		"1": {
 			"budget": 2860,
 			"budget_reason": "the cheapest derivation that holds the picture costs 10682, 3.73x rung 1's budget 2860: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 148376,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00421,
+					"picture": 0.004410000000000001,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
@@ -62,10 +65,15 @@
 					"value": 0.01384128720099999
 				}
 			],
+			"chain_beaten": {
+				"cap": 0.003423127313395663,
+				"chain": "error",
+				"cost": 13288
+			},
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 2,
+			"checked_at": 3,
 			"drawn": {
 				"excess": 0.4375,
 				"judge": "drawn",
@@ -91,19 +99,19 @@
 				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 148376, dearer than the 10682 taken"
 			],
-			"peak_mb": 429.0,
+			"peak_mb": 457.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 8
 			},
-			"search_s": 256.0,
+			"search_s": 700.6,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "2bf60bb9b05c449b41353b0560e18fcef8588e350f53a5a440fb08d24192a7c1"
 	}
 }

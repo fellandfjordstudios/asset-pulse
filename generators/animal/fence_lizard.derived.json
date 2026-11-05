@@ -187,6 +187,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -224,11 +228,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 32,
-		"sampled": 32,
-		"sets": 32
+		"old_key_sets": 33,
+		"sampled": 33,
+		"sets": 33
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -271,7 +276,7 @@
 					"value": 0.855725
 				}
 			],
-			"checked_at": 32,
+			"checked_at": 33,
 			"colour": {
 				"judge": "each part's share held to keep 1's at the band",
 				"tolerance": 0.0166,
@@ -323,16 +328,16 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping scale 0.240, each kept piece covering 1.00x)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.856 kept) held at 10000, dearer than the 3704 taken"
 			],
-			"peak_mb": 400.0,
+			"peak_mb": 407.0,
 			"route": "kit",
-			"search_s": 119.0,
+			"search_s": 244.5,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "69fd4d39b86a1c0da4f4f1dd6d5ded7619d917b47fab64d2312cc7159551459b"
 	}
 }

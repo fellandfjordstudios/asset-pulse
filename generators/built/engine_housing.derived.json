@@ -74,12 +74,13 @@
 	"replay": {
 		"1": "b34f2c2bd3ca9ab638d54baa94f4cb9e9d928cba66a4fff67d5b2c55f53ef426",
 		"2": "833ef17bd899d24696397f538fb4f65d328a8cc1883e02cea7b9ccd51b15be45",
-		"3": "fc9dbee02cc20f600971c7ac0b0e24735f7ce674ce2940c0255d454b331dd0ed"
+		"3": "8121a9b0d865e042dacd58c9163e6fe55b16c248a0aa8a17e9a708c6840bf0bb"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -162,12 +163,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 147 pixel(s) differ at the drawn size at {} seed 314 (worst 0.72)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 518.0,
+			"peak_mb": 522.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 160.0
 			},
-			"search_s": 190.70000000000002,
+			"search_s": 389.1,
 			"searched": "recheck",
 			"surfaces": 16,
 			"surfaces_ceiling": 16
@@ -175,6 +176,7 @@
 		"2": {
 			"budget": 9779,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -399,12 +401,12 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.125x the band's (0.760 kept), carried from rung 1 held at 6202, dearer than the 3366 taken"
 			],
-			"peak_mb": 518.0,
+			"peak_mb": 522.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 160.0
 			},
-			"search_s": 231.10000000000002,
+			"search_s": 511.40000000000003,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
@@ -609,6 +611,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 1806,
 				"coverage_rel": -0.004030000000000001,
@@ -626,16 +629,16 @@
 				"REDUCE to its error cap 0.0313x the band's (0.760 kept), carried from rung 1 held at 6202, dearer than the 1806 taken",
 				"REDUCE to its error cap 0.0625x the band's (0.413 kept), carried from rung 2 held at 3366, dearer than the 1806 taken"
 			],
-			"peak_mb": 518.0,
+			"peak_mb": 522.0,
 			"route": "kit",
-			"search_s": 23.8,
+			"search_s": 244.70000000000002,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "85cbd64e5edca75f08c5655beb091248083e5f550c00a9f882e2145f1b4c1607"
 	}
 }

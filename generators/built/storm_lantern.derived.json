@@ -62,12 +62,13 @@
 	},
 	"replay": {
 		"1": "2debc76dfe6138a2a53ae85493fd3d68fe2b15e6810e6e3a527a200357fb4093",
-		"2": "0001f89ab206db1918c75338c3ffcb377cfda58a1da30539dd4b30f3f26bc617"
+		"2": "00772b57bd1b8928c1ec53bd45a3be974f3838fc201150d62426d1fd32afcc29"
 	},
 	"rungs": {
 		"1": {
 			"budget": 8700,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -141,12 +142,12 @@
 				"KIT: none holds at 0.0029 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00097 m",
 				"REDUCE from rung 0 at {} seed 314: element 11's part 'fount' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)"
 			],
-			"peak_mb": 349.0,
+			"peak_mb": 350.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 16.0
 			},
-			"search_s": 63.0,
+			"search_s": 126.5,
 			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -310,7 +311,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 4002,
 				"coverage_rel": -0.012950000000000001,
@@ -338,16 +338,16 @@
 				"REDUCE (every piece) to 0.700 held at 6074, dearer than the 4002 taken",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.920 kept), carried from rung 1 held at 8748, dearer than the 4002 taken"
 			],
-			"peak_mb": 355.0,
+			"peak_mb": 358.0,
 			"route": "kit",
-			"search_s": 256.0,
+			"search_s": 220.70000000000002,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "c3d136bcdef974743cccb554b25325f8842f5b41270d6a7f3c50b3bb574d32e9"
 	}
 }
