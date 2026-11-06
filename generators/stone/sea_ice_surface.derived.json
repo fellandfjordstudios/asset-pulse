@@ -150,6 +150,12 @@
 				"tile_m": 4.0
 			},
 			"seed": 315
+		},
+		{
+			"params": {
+				"tile_m": 4.0
+			},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -177,21 +183,22 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 22,
-		"sampled": 22,
-		"sets": 22
+		"old_key_sets": 23,
+		"sampled": 23,
+		"sets": 23
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 1,
 				"trace": "stone__sea-ice-surface#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 25,
+				"candidates": 0,
 				"trace": "stone__sea-ice-surface#2.trace.jsonl"
 			}
 		}
@@ -210,14 +217,15 @@
 		"1": {
 			"budget": 42673,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 32754,
+					"cost": 32754.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00508,
-					"px_over": 88,
+					"px_over": 88.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -231,7 +239,7 @@
 					"value": 0.05764800999999997
 				}
 			],
-			"checked_at": 22,
+			"checked_at": 23,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -244,7 +252,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.058)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -274,13 +282,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1681, cover 1.12: 55824 pixel(s) differ at the drawn size at {\"tile_m\":4.0} seed 314 (worst 0.73)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"peak_mb": 1309.0,
+			"peak_mb": 1224.0,
 			"route": "merged",
 			"routes": {
-				"reduce": 6
+				"reduce": 6.0
 			},
-			"search_s": 3795.9,
-			"searched": "search",
+			"search_s": 1918.1000000000001,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		},
@@ -299,7 +307,7 @@
 					}
 				},
 				{
-					"cost": 12538,
+					"cost": 12538.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00816,
@@ -308,7 +316,7 @@
 					"value": 0.05764800999999997
 				}
 			],
-			"checked_at": 22,
+			"checked_at": 23,
 			"drawn": {
 				"excess": 0.5,
 				"gap": 0.333,
@@ -324,7 +332,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping frost_flower 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -335,7 +343,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 22,
+				"checked_at": 23,
 				"checks": [
 					{
 						"holds": true,
@@ -864,6 +872,30 @@
 							0.040520936250686646,
 							0.04047131538391113
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.4912026524543762,
+							0.5743020176887512,
+							0.6082974672317505
+						],
+						"mean_before": [
+							0.4912026524543762,
+							0.5743020176887512,
+							0.6082974672317505
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.055780261754989624,
+							0.04134184122085571,
+							0.04119521379470825
+						],
+						"variance_before": [
+							0.055780261754989624,
+							0.04134184122085571,
+							0.04119521379470825
+						]
 					}
 				],
 				"holds": true
@@ -883,18 +915,18 @@
 				"CARRIED from rung 1, MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.058), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {\"ice_stage\":0,\"tile_m\":4.0} seed 314: the picture changes at the drawn size: 10 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.73), one pixel 0.03656 m",
 				"KIT (its own build at the rung's pixel, keeping frost_flower 0.031) held at 10458, dearer than the 4992 taken"
 			],
-			"peak_mb": 806.0,
+			"peak_mb": 1254.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 1685.0,
-			"searched": "search",
+			"search_s": 1570.7,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"children": "9a06641a1055c6c26f720d2ac3d6e1f1b58d3591cb0a21c1d5dcafb3bc076e76",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "022134fd34a7b4b499a710895da1d882761f24344e6623979cb125f1d17e425c"
 	}
 }

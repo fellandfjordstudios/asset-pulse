@@ -139,6 +139,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -168,21 +172,22 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 24,
-		"sampled": 24,
-		"sets": 24
+		"old_key_sets": 25,
+		"sampled": 25,
+		"sets": 25
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": -1,
+				"candidates": 20,
 				"trace": "plant__birch#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 45,
+				"candidates": 2,
 				"trace": "plant__birch#2.trace.jsonl"
 			},
 			"3": {
@@ -205,6 +210,7 @@
 			"budget": 42673,
 			"budget_reason": "the cheapest derivation that holds the picture costs 122364, 2.87x rung 1's budget 42673: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -233,15 +239,6 @@
 					"px_over": 97,
 					"route": "substitute",
 					"value": 1.0
-				},
-				{
-					"cost": 35044,
-					"holds": false,
-					"judge": "crown",
-					"picture": -1.0,
-					"px_over": 5621,
-					"route": "thin",
-					"value": 0.7
 				}
 			],
 			"cap": 0.00011574074074074075,
@@ -249,7 +246,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 24,
+			"checked_at": 25,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -275,17 +272,17 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00741 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1681, cover 2.44: 39166 pixel(s) differ at the drawn size at {} seed 314 (worst 0.62)",
 				"CHILD: rung 0 carries a skin or a channel the child route does not splice",
-				"THIN (the crown's judge): none holds by the crown's judge -- the finest tried (0.700) fails at {} seed 314: the crown's judge refuses its envelope, leaves",
+				"THIN: skipped by the prior -- judged 3 times for crown subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form crown --band 1)",
 				"SUBSTITUTE (crown photos, found clusters): none holds by the crown's judge -- the finest tried (1.000) fails at {} seed 314: the crown's judge refuses its envelope, leaves",
 				"SUBSTITUTE (crown photos, tagged clusters): none holds by the crown's judge -- the finest tried (1.000) fails at {} seed 314: the crown's judge refuses its envelope, leaves"
 			],
-			"peak_mb": 7217.0,
+			"peak_mb": 8818.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 7057,
 				"reduce": 920
 			},
-			"search_s": 9478.6,
+			"search_s": 9800.0,
 			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -295,58 +292,58 @@
 			"budget": 10668,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 9,
+					"px_over": 9.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 43542,
+					"cost": 43542.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.028280000000000003,
+					"picture": 0.02828,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
 				},
 				{
-					"cost": 122364,
+					"cost": 122364.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.009290000000000001,
+					"picture": 0.00929,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.909126
 				},
 				{
-					"cost": 16844,
+					"cost": 16844.0,
 					"holds": false,
 					"judge": "crown",
 					"picture": -1.0,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "substitute",
 					"value": 1.0
 				},
 				{
-					"cost": 34894,
+					"cost": 15858,
 					"holds": false,
-					"judge": "crown",
-					"picture": -1.0,
-					"px_over": 15,
+					"judge": "drawn",
+					"picture": 0.22707000000000002,
+					"px_over": null,
 					"route": "thin",
-					"value": 0.7
+					"value": 0.01977326742999998
 				}
 			],
-			"checked_at": 24,
-			"density": 0.019773267429999988,
+			"checked_at": 25,
+			"density": 0.01977326742999998,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"material_transfer": {
-				"checked_at": 24,
+				"checked_at": 25,
 				"checks": [
 					{
 						"holds": true,
@@ -923,6 +920,30 @@
 							0.008440583944320679,
 							0.007956277579069138
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.2521604001522064,
+							0.2277471274137497,
+							0.036974385380744934
+						],
+						"mean_before": [
+							0.2521604001522064,
+							0.2277471274137497,
+							0.036974385380744934
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.006402194499969482,
+							0.0074521154165267944,
+							0.006959784775972366
+						],
+						"variance_before": [
+							0.006402194499969482,
+							0.0074521154165267944,
+							0.006959784775972366
+						]
 					}
 				],
 				"holds": true
@@ -971,10 +992,10 @@
 				"SUBSTITUTE (crown photos, tagged clusters): none holds by the crown's judge -- the finest tried (1.000) fails at {} seed 314: the crown's judge refuses its leaves",
 				"BUDGET: the cheapest derivation that holds the picture costs 43542 (4.08x), over rung 2's budget 10668 x 1.5 = 16002 (tree, 4.00 m)"
 			],
-			"peak_mb": 2755.0,
+			"peak_mb": 7107.0,
 			"route": "thin",
-			"search_s": 6243.0,
-			"searched": "search",
+			"search_s": 3841.3,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408
@@ -1005,15 +1026,15 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 12
 				}
 			],
-			"checked_at": 24,
+			"checked_at": 25,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.4844,
@@ -1034,10 +1055,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 2736.0,
+			"peak_mb": 6357.0,
 			"route": "impostor",
-			"search_s": 318.5,
-			"searched": "search",
+			"search_s": 356.6,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -1046,7 +1067,7 @@
 	},
 	"source": {
 		"children": "9039f9b6350915c11200c85ffe0786a6871025c892110edd87b4eafeffae6109",
-		"deriver": "c3cb2850fbd96d6f4923048674d30de28d03fa56272209c561861cd2018442e3",
+		"deriver": "9d58e2b19623f8e732c5f1ac2eea2a09befdeb63342532299d517a0af10853b6",
 		"generator": "60aba6750a73985a7cc551523acfd10db9abd41d6b0a9593f0b8c2c41784a4d0"
 	}
 }

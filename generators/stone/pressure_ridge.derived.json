@@ -67,6 +67,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -84,25 +88,26 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 12,
-		"sampled": 12,
-		"sets": 12
+		"old_key_sets": 13,
+		"sampled": 13,
+		"sets": 13
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 20,
+				"candidates": -1,
 				"trace": "stone__pressure-ridge#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 11,
+				"candidates": -1,
 				"trace": "stone__pressure-ridge#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 19,
+				"candidates": 0,
 				"trace": "stone__pressure-ridge#3.trace.jsonl"
 			}
 		}
@@ -120,14 +125,15 @@
 		"1": {
 			"budget": 42673,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 9380,
+					"cost": 9380.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004200000000000001,
-					"px_over": 1,
+					"picture": 0.0042,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -138,30 +144,30 @@
 					"picture": 0.004410000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.11764899999999995
+					"value": 0.11764899999999996
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.001851851851851852,
+				"cap": 0.00185185185185185,
 				"chain": "error",
-				"cost": 14054
+				"cost": 14054.0
 			},
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 12,
+			"checked_at": 13,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
 				"pixel_m": 0.016888
 			},
 			"error": 0.001851851851851852,
-			"fraction": 0.11764899999999995,
+			"fraction": 0.11764899999999996,
 			"from_rung": 0,
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.118",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -188,13 +194,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.07: 16528 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
 				"CHILD: span 'stone/sea-ice-block r0 db5ef61c' is 76 triangles and its child rebuilt is 828: not a placed copy"
 			],
-			"peak_mb": 687.0,
+			"peak_mb": 690.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 510
+				"reduce": 510.0
 			},
-			"search_s": 2258.9,
-			"searched": "search",
+			"search_s": 452.40000000000003,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -211,16 +217,16 @@
 					"value": {}
 				},
 				{
-					"cost": 13986,
+					"cost": 13986.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00468,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.11764899999999995
+					"value": 0.11764899999999996
 				}
 			],
-			"checked_at": 12,
+			"checked_at": 13,
 			"drawn": {
 				"excess": 0.4375,
 				"judge": "drawn",
@@ -233,7 +239,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -244,7 +250,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 12,
+				"checked_at": 13,
 				"checks": [
 					{
 						"holds": true,
@@ -533,6 +539,30 @@
 							0.03704184293746948,
 							0.03671884536743164
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.46743327379226685,
+							0.5684537291526794,
+							0.6052291393280029
+						],
+						"mean_before": [
+							0.46743327379226685,
+							0.5684537291526794,
+							0.6052291393280029
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.049940839409828186,
+							0.034403085708618164,
+							0.03401032090187073
+						],
+						"variance_before": [
+							0.049940839409828186,
+							0.034403085708618164,
+							0.03401032090187073
+						]
 					}
 				],
 				"holds": true
@@ -542,11 +572,7 @@
 				"cost": 3604,
 				"coverage_rel": -0.01805,
 				"floor": 0.00521,
-				"part_shift": {
-					"block_face": -0.00415,
-					"ice": -0.035440000000000006,
-					"snow": 0.0378
-				},
+				"part_shift": {},
 				"picture": 0.0053100000000000005
 			},
 			"measured_of": 3,
@@ -556,11 +582,11 @@
 				"KIT (its own build at the rung's pixel) held at 6056, dearer than the 3604 taken",
 				"REDUCE to 0.118, carried from rung 1 held at 13986, dearer than the 3604 taken"
 			],
-			"peak_mb": 380.0,
+			"peak_mb": 690.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 1155.6000000000001,
-			"searched": "search",
+			"search_s": 440.90000000000003,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -577,16 +603,16 @@
 					"value": {}
 				},
 				{
-					"cost": 13986,
+					"cost": 13986.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00468,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.11764899999999995
+					"value": 0.11764899999999996
 				}
 			],
-			"checked_at": 12,
+			"checked_at": 13,
 			"drawn": {
 				"excess": 0.0625,
 				"judge": "drawn",
@@ -599,7 +625,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -610,7 +636,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 12,
+				"checked_at": 13,
 				"checks": [
 					{
 						"holds": true,
@@ -899,6 +925,30 @@
 							0.03704184293746948,
 							0.03671884536743164
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.46743327379226685,
+							0.5684537291526794,
+							0.6052291393280029
+						],
+						"mean_before": [
+							0.46743327379226685,
+							0.5684537291526794,
+							0.6052291393280029
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.049940839409828186,
+							0.034403085708618164,
+							0.03401032090187073
+						],
+						"variance_before": [
+							0.049940839409828186,
+							0.034403085708618164,
+							0.03401032090187073
+						]
 					}
 				],
 				"holds": true
@@ -908,11 +958,7 @@
 				"cost": 3604,
 				"coverage_rel": -0.01805,
 				"floor": 0.00521,
-				"part_shift": {
-					"block_face": -0.00415,
-					"ice": -0.035440000000000006,
-					"snow": 0.0378
-				},
+				"part_shift": {},
 				"picture": 0.0053100000000000005
 			},
 			"measured_of": 3,
@@ -924,17 +970,17 @@
 				"REDUCE to 0.118, carried from rung 1 held at 13986, dearer than the 3604 taken",
 				"KIT (its own build at 2 of the band's pixels), carried from rung 2 held at 3604, the same cost as the route taken, found first"
 			],
-			"peak_mb": 315.0,
+			"peak_mb": 273.0,
 			"route": "kit",
-			"search_s": 771.4000000000001,
-			"searched": "search",
+			"search_s": 204.0,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"children": "a79e32b334d43dac50aec562b1654f528bb5f4966089aeebb1c944dec0423ff4",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "f43eba0c040fc54ff1f532bc1ed133ab8540c8fb1816d19380357d8d8bb44baa"
 	}
 }

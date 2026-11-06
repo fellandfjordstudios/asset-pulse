@@ -283,6 +283,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -336,21 +340,22 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 48,
-		"sampled": 48,
-		"sets": 48
+		"old_key_sets": 49,
+		"sampled": 49,
+		"sets": 49
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 32,
+				"candidates": -1,
 				"trace": "plant__rowan#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 52,
+				"candidates": -1,
 				"trace": "plant__rowan#2.trace.jsonl"
 			},
 			"3": {
@@ -374,25 +379,30 @@
 			"budget": 42673,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 32561,
+					"px_over": 32561.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 63328,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.00867,
-					"px_over": 700,
+					"picture": 0.016980000000000002,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
+					"value": {
+						"branchlet": 0.03125,
+						"corymb": 0.7,
+						"pome": 0.03125,
+						"shoot": 0.03125
+					}
 				},
 				{
-					"cost": 182608,
+					"cost": 182608.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0088,
@@ -401,16 +411,16 @@
 					"value": 0.985945
 				},
 				{
-					"cost": 166892,
+					"cost": 166892.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.014220000000000002,
-					"px_over": 4874,
+					"picture": 0.01422,
+					"px_over": 4874.0,
 					"route": "thin",
 					"value": 0.7
 				}
 			],
-			"checked_at": 48,
+			"checked_at": 49,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -457,10 +467,10 @@
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 4874 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00662 m; coverage changes +0.0297 against 0.0237 allowed (a one-pixel shrink all round)",
 				"BUDGET: the cheapest derivation that holds the picture costs 182608 (4.28x), over rung 1's budget 42673 x 1.5 = 64009 (tree, 3.57 m)"
 			],
-			"peak_mb": 2784.0,
+			"peak_mb": 1673.0,
 			"route": "kit",
-			"search_s": 10135.2,
-			"searched": "search",
+			"search_s": 862.4000000000001,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"tolerance": 0.0018518518518518517
@@ -470,43 +480,49 @@
 			"budget": 10668,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 50,
+					"px_over": 50.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 81710,
+					"cost": 10184,
 					"holds": false,
 					"judge": "drawn",
-					"picture": -1.0,
-					"px_over": 66,
+					"picture": 0.08176000000000001,
+					"px_over": null,
 					"route": "kit",
-					"value": 0.7
+					"value": {
+						"branchlet": 0.16806999999999994,
+						"corymb": 0.16806999999999994,
+						"leaf": 0.16806999999999994,
+						"pome": 0.16806999999999994,
+						"shoot": 0.16806999999999994
+					}
 				},
 				{
-					"cost": 145504,
+					"cost": 145504.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.005030000000000001,
+					"picture": 0.00503,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
 				},
 				{
-					"cost": 147838,
+					"cost": 147838.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.01438,
-					"px_over": 8,
+					"px_over": 8.0,
 					"route": "thin",
 					"value": 0.7
 				}
 			],
-			"checked_at": 48,
+			"checked_at": 49,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -518,7 +534,7 @@
 				"shoot": 0.16806999999999994
 			},
 			"material_transfer": {
-				"checked_at": 48,
+				"checked_at": 49,
 				"checks": [
 					{
 						"holds": true,
@@ -1671,6 +1687,30 @@
 							0.0005063600838184357,
 							0.0016069919802248478
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.18494915962219238,
+							0.20709975063800812,
+							0.06893772631883621
+						],
+						"mean_before": [
+							0.18494915962219238,
+							0.20709975063800812,
+							0.06893772631883621
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00452302023768425,
+							0.0006459690630435944,
+							0.0013555288314819336
+						],
+						"variance_before": [
+							0.00452302023768425,
+							0.0006459690630435944,
+							0.0013555288314819336
+						]
 					}
 				],
 				"holds": true
@@ -1721,10 +1761,10 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping shoot 0.031, pome 0.031, branchlet 0.031, corymb 0.700), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.02648 m; part 'bark' changes its share of the picture by -0.0472 against 0.0456 allowed (its colour's share of the subject)",
 				"BUDGET: the cheapest derivation that holds the picture costs 145504 (13.64x), over rung 2's budget 10668 x 1.5 = 16002 (tree, 3.57 m)"
 			],
-			"peak_mb": 1618.0,
+			"peak_mb": 1674.0,
 			"route": "kit",
-			"search_s": 3460.8,
-			"searched": "search",
+			"search_s": 278.8,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407407
@@ -1755,15 +1795,15 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 24
 				}
 			],
-			"checked_at": 48,
+			"checked_at": 49,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.43970000000000004,
@@ -1784,10 +1824,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 2245.0,
+			"peak_mb": 2586.0,
 			"route": "impostor",
-			"search_s": 1433.7,
-			"searched": "search",
+			"search_s": 2908.1000000000004,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 24
@@ -1795,7 +1835,7 @@
 	},
 	"source": {
 		"children": "547da4324417fb21bae68f1a9b6a7534bcb6a948fb3c2786a15287f36c6edb3f",
-		"deriver": "c3cb2850fbd96d6f4923048674d30de28d03fa56272209c561861cd2018442e3",
+		"deriver": "9d58e2b19623f8e732c5f1ac2eea2a09befdeb63342532299d517a0af10853b6",
 		"generator": "44cd04a916e62aa292a5a3930a4602ddd2e9c4290ad21cefcd06012c5b07d94a"
 	}
 }
