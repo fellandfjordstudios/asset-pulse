@@ -103,6 +103,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -126,11 +130,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 18,
-		"sampled": 18,
-		"sets": 18
+		"old_key_sets": 19,
+		"sampled": 19,
+		"sets": 19
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -180,7 +185,7 @@
 					"value": 1.0
 				}
 			],
-			"checked_at": 18,
+			"checked_at": 19,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -199,9 +204,9 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/grass-tuft does not declare `reads_density`"
 			],
-			"peak_mb": 276.0,
+			"peak_mb": 279.0,
 			"route": "rung0",
-			"search_s": 20.0,
+			"search_s": 20.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -209,7 +214,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "dc296a7e37aeddc119cf835aac9dfabd099b71fd5e02bbe057ea1f998d15c1d5"
 	}
 }

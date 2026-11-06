@@ -52,6 +52,7 @@
 		"1": {
 			"budget": 39117,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -135,12 +136,12 @@
 				"MERGED, THIN: not searched -- the look past the first that held (CHILD (its welded children at their own rungs {\"built/skis-pole\":0,\"built/skis-ski\":1})) is 1 route(s)",
 				"CHILD (its welded children at their own rungs {\"built/skis-pole\":0,\"built/skis-ski\":1}) held at 4564, dearer than the 4550 taken"
 			],
-			"peak_mb": 310.0,
+			"peak_mb": 312.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 14.5,
+			"search_s": 14.8,
 			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9
@@ -148,6 +149,7 @@
 		"2": {
 			"budget": 9779,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -313,12 +315,12 @@
 				"THIN: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0463 against 0.0450 allowed (a one-pixel shrink all round)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.276 kept), carried from rung 1 held at 4550, dearer than the 3966 taken"
 			],
-			"peak_mb": 309.0,
+			"peak_mb": 312.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 93.7,
+			"search_s": 94.10000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -378,7 +380,7 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 309.0,
+			"peak_mb": 312.0,
 			"route": "impostor",
 			"search_s": 15.600000000000001,
 			"searched": "recheck",
@@ -390,7 +392,7 @@
 	},
 	"source": {
 		"children": "c7f57c8e0efa776274a86eed013517e0fd1e0769d447cbe2fd447d6cc04288a6",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "90570db34a3aae8490f0271fb745f5cb9f923afa2875eaeedca33a50cb3fbbda"
 	}
 }

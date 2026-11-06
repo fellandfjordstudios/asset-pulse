@@ -109,6 +109,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -133,11 +137,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 19,
-		"sampled": 19,
-		"sets": 19
+		"old_key_sets": 20,
+		"sampled": 20,
+		"sets": 20
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -159,6 +164,7 @@
 		"1": {
 			"budget": 42673,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -190,7 +196,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 19,
+			"checked_at": 20,
 			"drawn": {
 				"excess": 0.0625,
 				"judge": "drawn",
@@ -228,12 +234,12 @@
 			"not_taken": [
 				"CHILD (its welded children at their own rungs {\"plant/bucked-log\":1}) held at 86964, dearer than the 4696 taken"
 			],
-			"peak_mb": 896.0,
+			"peak_mb": 990.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 16.0
 			},
-			"search_s": 866.0,
+			"search_s": 576.9,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -241,7 +247,7 @@
 	},
 	"source": {
 		"children": "a7af0f4756375caf5456d8c0457f2c98910998e44339f5c3f74e23bb8e906e07",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "12de98991158a8800e83e82c012a873605609ebfcb60999d5937689d25eeeb0c"
 	}
 }

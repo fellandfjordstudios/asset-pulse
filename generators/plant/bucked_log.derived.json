@@ -223,6 +223,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -266,11 +270,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 38,
-		"sampled": 38,
-		"sets": 38
+		"old_key_sets": 39,
+		"sampled": 39,
+		"sets": 39
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -292,6 +297,7 @@
 		"1": {
 			"budget": 42673,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -314,7 +320,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 38,
+			"checked_at": 39,
 			"drawn": {
 				"excess": 0.125,
 				"judge": "drawn",
@@ -355,19 +361,19 @@
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1768.0,
+			"peak_mb": 1812.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 4.0
 			},
-			"search_s": 803.5,
+			"search_s": 779.0,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "13703e0ef9ae1391b96ac4d387817c64e8a661ba3a7cfc3a4f4e0db5616bc5d9"
 	}
 }

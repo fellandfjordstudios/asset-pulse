@@ -49,6 +49,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -63,11 +67,12 @@
 			"shape",
 			"shape",
 			"shape",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 9,
-		"sampled": 9,
-		"sets": 2
+		"old_key_sets": 10,
+		"sampled": 10,
+		"sets": 3
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -89,6 +94,7 @@
 		"1": {
 			"budget": 2760,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -104,7 +110,7 @@
 					"cost": 2208,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004030000000000001,
+					"picture": 0.004070000000000001,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.48999999999999994
@@ -118,7 +124,7 @@
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 9,
+			"checked_at": 10,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -146,31 +152,31 @@
 			"measured": {
 				"cost": 2208,
 				"coverage_rel": -0.00479,
-				"floor": 0.004030000000000001,
+				"floor": 0.004070000000000001,
 				"part_shift": {
 					"browned_crust": 0.00038,
 					"pale_dough": -0.00038
 				},
-				"picture": 0.004030000000000001
+				"picture": 0.004070000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"KIT: none holds at 0.0072 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.78), one pixel 0.00136 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 274.0,
+			"peak_mb": 279.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 38.800000000000004,
+			"search_s": 40.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "25ada0e0081b9b3579d8464c0650fdcbdf0b825bbaf8a46945434c05c55df105"
 	}
 }

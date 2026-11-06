@@ -19,6 +19,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -28,11 +32,12 @@
 			"probe",
 			"shape",
 			"shape",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 4,
-		"sampled": 4,
-		"sets": 2
+		"old_key_sets": 5,
+		"sampled": 5,
+		"sets": 3
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -42,7 +47,7 @@
 				"trace": "food__pickled-herring#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 9,
+				"candidates": 12,
 				"trace": "food__pickled-herring#2.trace.jsonl"
 			}
 		}
@@ -52,14 +57,14 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "3f0037c48dcc3c99e77ecbc129f7068ae3b6050330c62dde30cdccfb587f1259",
-		"2": "6bffa47334a1753e77dd1e12b9a027282ae27154c285e517f1ef25de8d370d8d"
+		"1": "cd4fd80216e5560bd5aea17065390c76be55620f3b5b85061a0e4957f95e2dc6",
+		"2": "730f2bced728f5f8f0bffb80c2abf516b55f067ad28f29a86fe009a5bf249fb9"
 	},
 	"rungs": {
 		"1": {
 			"budget": 11733,
-			"budget_reason": "the cheapest derivation that holds the picture costs 20058, 1.71x rung 1's budget 11733: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -72,67 +77,85 @@
 					"value": 1.0
 				},
 				{
-					"cost": 20058,
+					"cost": 13350,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004030000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.44429199999999996
+					"value": 0.295707
 				}
 			],
-			"cap": 0.0008452937590053959,
+			"cap": 0.0016905875180107917,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 4,
+			"checked_at": 5,
 			"drawn": {
-				"excess": 0.25,
+				"excess": 0.5,
 				"judge": "drawn",
 				"pixel_m": 0.001297
 			},
 			"error": 0.0033811750360215834,
-			"fraction": 0.44429199999999996,
+			"fraction": 0.295707,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE to its error cap 0.5x the band's (0.296 kept)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"merged",
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
+			},
 			"measured": {
-				"cost": 20058,
-				"coverage_rel": -2e-05,
+				"cost": 13350,
+				"coverage_rel": 0.0005200000000000001,
 				"floor": 0.004030000000000001,
 				"part_shift": {
-					"bay": 6.000000000000001e-05,
-					"brine": 0.00059,
-					"flesh": 0.00030000000000000003,
-					"glass": 0.0007700000000000001,
-					"metal": 0.00018,
-					"onion": -0.00126,
-					"onion_skin": -0.0014900000000000002,
-					"porcelain": 0.00037000000000000005,
-					"seal": 4e-05,
-					"skin": 0.00036,
-					"spice": 3.0000000000000004e-05
+					"bay": 0.00018,
+					"brine": 0.0017800000000000001,
+					"flesh": 0.0011500000000000002,
+					"glass": 0.0024500000000000004,
+					"metal": 0.00067,
+					"onion": -0.00285,
+					"onion_skin": -0.004580000000000001,
+					"porcelain": 0.00024000000000000003,
+					"seal": -2e-05,
+					"skin": 0.00116,
+					"spice": -0.00048000000000000007
 				},
 				"picture": 0.004030000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
-				"KIT: none holds at 0.0034 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00130 m"
+				"KIT: none holds at 0.0034 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00130 m",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 305.0,
+			"peak_mb": 319.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 100
 			},
-			"search_s": 358.5,
+			"search_s": 434.3,
 			"searched": "search",
 			"surfaces": 11,
 			"surfaces_ceiling": 11
 		},
 		"2": {
-			"above_tolerance": true,
 			"budget": 2933,
+			"budget_reason": "the cheapest derivation that holds the picture costs 7524, 2.57x rung 2's budget 2933: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -145,126 +168,155 @@
 					"value": 1.0
 				},
 				{
-					"cost": 18900,
+					"cost": 7524,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004030000000000001,
+					"picture": 0.03586,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.942267
+					"value": 0.563596
 				}
 			],
-			"cap": 0.0008452937590053959,
+			"cap": 0.0033811750360215834,
 			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 9146,
+				"fraction": 0.7
+			},
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 4,
+			"checked_at": 5,
 			"drawn": {
-				"excess": 0.125,
+				"excess": 0.5,
 				"judge": "drawn",
 				"pixel_m": 0.005187
 			},
 			"error": 0.013524700144086334,
-			"fraction": 0.942267,
+			"fraction": 0.563596,
 			"from_rung": 1,
 			"material_transfer": {
-				"checked_at": 4,
+				"checked_at": 5,
 				"checks": [
 					{
 						"holds": true,
 						"mean_after": [
-							0.5950189232826233,
-							0.5956562757492065,
-							0.5569754838943481
+							0.5926381945610046,
+							0.596135675907135,
+							0.5569202303886414
 						],
 						"mean_before": [
-							0.5950189232826233,
-							0.5956562757492065,
-							0.5569754838943481
+							0.5926381945610046,
+							0.596135675907135,
+							0.5569202303886414
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.10815143585205078,
-							0.11808773875236511,
-							0.1131976842880249
+							0.11063015460968018,
+							0.11866408586502075,
+							0.1144888699054718
 						],
 						"variance_before": [
-							0.10815143585205078,
-							0.11808773875236511,
-							0.1131976842880249
+							0.11063015460968018,
+							0.11866408586502075,
+							0.1144888699054718
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.5950189828872681,
-							0.5956633687019348,
-							0.5569830536842346
+							0.5925137400627136,
+							0.5960556268692017,
+							0.5568189024925232
 						],
 						"mean_before": [
-							0.5950189828872681,
-							0.5956633687019348,
-							0.5569830536842346
+							0.5925137400627136,
+							0.5960556268692017,
+							0.5568189024925232
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.10814395546913147,
-							0.11807167530059814,
-							0.11317986249923706
+							0.11068636178970337,
+							0.11872819066047668,
+							0.11456140875816345
 						],
 						"variance_before": [
-							0.10814395546913147,
-							0.11807167530059814,
-							0.11317986249923706
+							0.11068636178970337,
+							0.11872819066047668,
+							0.11456140875816345
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.5949909090995789,
-							0.5956626534461975,
-							0.5569649934768677
+							0.5927229523658752,
+							0.5962416529655457,
+							0.556967556476593
 						],
 						"mean_before": [
-							0.5949909090995789,
-							0.5956626534461975,
-							0.5569649934768677
+							0.5927229523658752,
+							0.5962416529655457,
+							0.556967556476593
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.10817483067512512,
-							0.11805826425552368,
-							0.11321699619293213
+							0.11063095927238464,
+							0.11868461966514587,
+							0.11451524496078491
 						],
 						"variance_before": [
-							0.10817483067512512,
-							0.11805826425552368,
-							0.11321699619293213
+							0.11063095927238464,
+							0.11868461966514587,
+							0.11451524496078491
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.5949755311012268,
-							0.5956135392189026,
-							0.5569328665733337
+							0.5925124287605286,
+							0.5960049629211426,
+							0.5567923188209534
 						],
 						"mean_before": [
-							0.5949755311012268,
-							0.5956135392189026,
-							0.5569328665733337
+							0.5925124287605286,
+							0.5960049629211426,
+							0.5567923188209534
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.1081494390964508,
-							0.11807811260223389,
-							0.113186776638031
+							0.11061456799507141,
+							0.11863058805465698,
+							0.11444512009620667
 						],
 						"variance_before": [
-							0.1081494390964508,
-							0.11807811260223389,
-							0.113186776638031
+							0.11061456799507141,
+							0.11863058805465698,
+							0.11444512009620667
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.5926369428634644,
+							0.5961166620254517,
+							0.5568832755088806
+						],
+						"mean_before": [
+							0.5926369428634644,
+							0.5961166620254517,
+							0.5568832755088806
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.11059620976448059,
+							0.11862063407897949,
+							0.11444491147994995
+						],
+						"variance_before": [
+							0.11059620976448059,
+							0.11862063407897949,
+							0.11444491147994995
 						]
 					}
 				],
@@ -272,52 +324,44 @@
 			},
 			"materials": "merged",
 			"measured": {
-				"cost": 18900,
-				"coverage_rel": -2e-05,
+				"cost": 7524,
+				"coverage_rel": -0.011370000000000002,
 				"floor": 0.004030000000000001,
 				"part_shift": {
-					"bay": 6.000000000000001e-05,
-					"brine": 0.00068,
-					"flesh": 0.00030000000000000003,
-					"glass": 0.00088,
-					"metal": 0.00022,
-					"onion": -0.00142,
-					"onion_skin": -0.0016500000000000002,
-					"porcelain": 0.00042,
-					"seal": 4e-05,
-					"skin": 0.00039000000000000005,
-					"spice": 3.0000000000000004e-05
+					"bay": 0.0014800000000000002,
+					"brine": 0.01627,
+					"flesh": 0.011890000000000001,
+					"glass": 0.019190000000000002,
+					"metal": -0.0022900000000000004,
+					"onion": -0.00336,
+					"onion_skin": -0.01726,
+					"porcelain": -0.029450000000000004,
+					"seal": -0.00551,
+					"skin": 0.0119,
+					"spice": -0.00238
 				},
-				"picture": 0.004030000000000001
+				"picture": 0.03586
 			},
-			"miss": {
-				"cost_of_ceiling": 6.443914081145585,
-				"judge": "drawn",
-				"picture_over": 0.29797333449659624,
-				"px_over": null,
-				"route": "reduce",
-				"tier": 2
-			},
+			"measured_of": 2,
 			"not_taken": [
 				"IMPOSTOR: the subject has a part seen through (plans/073 step 3); an opaque atlas would hide what shows through it",
 				"KIT: none holds at 0.0135 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0358 against 0.0348 a derivation may change (its error read as a change of size)",
 				"KIT at 2 pixels: none holds at 0.0135 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 9 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00519 m; coverage changes -0.0821 against 0.0690 allowed (a one-pixel shrink all round)",
-				"BUDGET: the cheapest derivation that holds the picture costs 18900 (6.44x), over rung 2's budget 2933 x 1.5 = 4399 (made, 0.38 m)"
+				"REDUCE to its error cap 0.125x the band's (0.296 kept), carried from rung 1 held at 13350, dearer than the 7524 taken"
 			],
-			"peak_mb": 302.0,
+			"peak_mb": 317.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 100
 			},
-			"search_s": 473.6,
+			"search_s": 307.40000000000003,
 			"searched": "search",
 			"surfaces": 6,
-			"surfaces_ceiling": 1,
-			"tolerance": 0.013524700144086334
+			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "7931a854fb19ed33c0212dd418fd7dc3b5b3cd84870f4e45063f04efe0a727e3"
 	}
 }

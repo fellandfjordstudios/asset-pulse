@@ -240,9 +240,9 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.082, frame 0.031)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 361.0,
+			"peak_mb": 363.0,
 			"route": "kit",
-			"search_s": 388.90000000000003,
+			"search_s": 374.8,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 9
@@ -866,10 +866,10 @@
 				"KIT (its own build at the rung's pixel, keeping frame 0.031, rivet 0.031) held at 3109, dearer than the 1573 taken",
 				"KIT (its own build at the rung's pixel, keeping rivet 0.082, frame 0.031), carried from rung 1 held at 5360, dearer than the 1573 taken"
 			],
-			"peak_mb": 369.0,
+			"peak_mb": 371.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 3014.1000000000004,
+			"search_s": 3001.4,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -877,7 +877,7 @@
 	},
 	"source": {
 		"children": "36f4930940b3c8c6a1d171f354f6d01accbbee71bdd2d4565f6ad1b9b431bfa7",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "caac353d1fa1ffb8c1a489d748153d11694d2954418bbd2d378dde05cc3d7740"
 	}
 }

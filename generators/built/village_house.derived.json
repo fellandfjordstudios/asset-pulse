@@ -169,6 +169,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -203,21 +207,22 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 29,
-		"sampled": 29,
-		"sets": 27
+		"old_key_sets": 30,
+		"sampled": 30,
+		"sets": 28
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 14,
+				"candidates": 1,
 				"trace": "built__village-house#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 8,
+				"candidates": 0,
 				"trace": "built__village-house#2.trace.jsonl"
 			},
 			"3": {
@@ -240,11 +245,11 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 8286,
+					"cost": 8286.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": -1.0,
-					"px_over": 35,
+					"px_over": 35.0,
 					"route": "kit",
 					"value": 0.3429999999999999
 				},
@@ -258,7 +263,7 @@
 					"value": 1.0
 				}
 			],
-			"checked_at": 29,
+			"checked_at": 30,
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
@@ -270,7 +275,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -310,10 +315,10 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1482.0,
+			"peak_mb": 1440.0,
 			"route": "merged",
-			"search_s": 2543.0,
-			"searched": "search",
+			"search_s": 1972.8000000000002,
+			"searched": "recheck",
 			"surfaces": 12,
 			"surfaces_ceiling": 12
 		},
@@ -330,7 +335,7 @@
 					"value": {}
 				},
 				{
-					"cost": 23974,
+					"cost": 23974.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
@@ -339,7 +344,7 @@
 					"value": 1.0
 				}
 			],
-			"checked_at": 29,
+			"checked_at": 30,
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
@@ -352,7 +357,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -366,7 +371,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 29,
+				"checked_at": 30,
 				"checks": [
 					{
 						"holds": true,
@@ -1063,6 +1068,30 @@
 							0.0819912850856781,
 							0.08746057748794556
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3896636664867401,
+							0.3799685835838318,
+							0.3628465533256531
+						],
+						"mean_before": [
+							0.3896636664867401,
+							0.3799685835838318,
+							0.3628465533256531
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.07952158153057098,
+							0.0819912850856781,
+							0.08746057748794556
+						],
+						"variance_before": [
+							0.07952158153057098,
+							0.0819912850856781,
+							0.08746057748794556
+						]
 					}
 				],
 				"holds": true
@@ -1072,20 +1101,7 @@
 				"cost": 5824,
 				"coverage_rel": 0.00142,
 				"floor": 0.0051,
-				"part_shift": {
-					"board": -0.00044,
-					"chimney": -1e-05,
-					"foundation": 0.00198,
-					"frame": 0.00093,
-					"gable": -0.0008600000000000001,
-					"glass": -8e-05,
-					"iron": -0.00036,
-					"nail": 0.0,
-					"opening": -2e-05,
-					"roof": -0.00042,
-					"rust": -3.0000000000000004e-05,
-					"wall": -0.0012200000000000002
-				},
+				"part_shift": {},
 				"picture": 0.0051
 			},
 			"measured_of": 3,
@@ -1096,11 +1112,11 @@
 				"KIT (its own build at the rung's pixel, keeping stone 0.490) held at 6636, dearer than the 5824 taken",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 23974, dearer than the 5824 taken"
 			],
-			"peak_mb": 791.0,
+			"peak_mb": 1465.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 2040.9,
-			"searched": "search",
+			"search_s": 1418.1000000000001,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		},
@@ -1130,15 +1146,15 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 4,
+					"px_over": null,
 					"route": "impostor",
-					"value": 6
+					"value": 12
 				}
 			],
-			"checked_at": 29,
+			"checked_at": 30,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.2177,
@@ -1159,10 +1175,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 791.0,
+			"peak_mb": 1540.0,
 			"route": "impostor",
-			"search_s": 218.4,
-			"searched": "search",
+			"search_s": 228.8,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -1170,8 +1186,8 @@
 		}
 	},
 	"source": {
-		"children": "fb8ef4261609f39482e64d2e7af7643e81f759ace67ffc05adfa770832ad92d9",
-		"deriver": "48ba9cbd699d78298e124eaddc5b86783c7a1dd09e8133185932241747d91cd8",
+		"children": "75358241ffd909f56249a838b0cc878bad3b15b04c3672106d5f57a03205aafc",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "61a29a0d7f0d15b2742afef70a80952639d45589dc3d7ccfda176d4e514755f1"
 	}
 }

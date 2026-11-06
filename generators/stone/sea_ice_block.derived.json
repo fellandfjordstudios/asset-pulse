@@ -55,6 +55,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -70,11 +74,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 10,
-		"sampled": 10,
-		"sets": 10
+		"old_key_sets": 11,
+		"sampled": 11,
+		"sets": 11
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -101,6 +106,7 @@
 		"1": {
 			"budget": 42673,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -130,7 +136,7 @@
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 10,
+			"checked_at": 11,
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
@@ -167,12 +173,12 @@
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00056 m"
 			],
-			"peak_mb": 543.0,
+			"peak_mb": 569.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 105.7,
+			"search_s": 100.4,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -199,7 +205,7 @@
 					"value": 0.7
 				}
 			],
-			"checked_at": 10,
+			"checked_at": 11,
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
@@ -223,7 +229,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 10,
+				"checked_at": 11,
 				"checks": [
 					{
 						"holds": true,
@@ -464,6 +470,30 @@
 							0.02824348211288452,
 							0.02848660945892334
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.4081806242465973,
+							0.5340308547019958,
+							0.5742813348770142
+						],
+						"mean_before": [
+							0.4081806242465973,
+							0.5340308547019958,
+							0.5742813348770142
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.03625696897506714,
+							0.02614179253578186,
+							0.026364564895629883
+						],
+						"variance_before": [
+							0.03625696897506714,
+							0.02614179253578186,
+							0.026364564895629883
+						]
 					}
 				],
 				"holds": true
@@ -482,16 +512,16 @@
 				"REDUCE to 0.700 held at 656, dearer than the 196 taken",
 				"REDUCE to 0.700, carried from rung 1 held at 656, dearer than the 196 taken"
 			],
-			"peak_mb": 543.0,
+			"peak_mb": 569.0,
 			"route": "kit",
-			"search_s": 22.5,
+			"search_s": 24.200000000000003,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "6689ba61e850370fe2e031b13297e266f24bdf20fa639e0d687f48c6f0ec920f"
 	}
 }

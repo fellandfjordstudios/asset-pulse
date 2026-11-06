@@ -79,6 +79,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -98,11 +102,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 14,
-		"sampled": 14,
-		"sets": 14
+		"old_key_sets": 15,
+		"sampled": 15,
+		"sets": 15
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -148,7 +153,7 @@
 					"value": 0.179245
 				}
 			],
-			"checked_at": 14,
+			"checked_at": 15,
 			"drawn": {
 				"excess": 0.4375,
 				"judge": "drawn",
@@ -183,9 +188,9 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to its error cap 0.125x the band's (0.179 kept) held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 356.0,
+			"peak_mb": 358.0,
 			"route": "kit",
-			"search_s": 124.7,
+			"search_s": 137.0,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -212,7 +217,7 @@
 					"value": 0.179245
 				}
 			],
-			"checked_at": 14,
+			"checked_at": 15,
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
@@ -249,16 +254,16 @@
 				"REDUCE to its error cap 0.0625x the band's (0.179 kept) held at 228, the same cost as the route taken, found first",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 316.0,
+			"peak_mb": 320.0,
 			"route": "kit",
-			"search_s": 27.200000000000003,
+			"search_s": 31.200000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "95c7e49fde0c685a2f753b5cea5d6e031753a304066740b4a5edd0a4cce5e83e"
 	}
 }

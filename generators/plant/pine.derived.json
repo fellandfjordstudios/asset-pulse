@@ -340,6 +340,18 @@
 				"whorls": 3
 			},
 			"seed": 315
+		},
+		{
+			"params": {
+				"branches_per_whorl": 2,
+				"branchlets_per_limb": 1,
+				"crown_duty_cycle": 0.2,
+				"height_m": 3.0,
+				"tuft_over_crown": 0.05,
+				"twigs_per_branchlet": 1,
+				"whorls": 3
+			},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -372,11 +384,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 27,
-		"sampled": 27,
-		"sets": 27
+		"old_key_sets": 28,
+		"sampled": 28,
+		"sets": 28
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -406,6 +419,7 @@
 		"1": {
 			"budget": 42673,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -437,7 +451,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 27,
+			"checked_at": 28,
 			"drawn": {
 				"excess": 0.375,
 				"judge": "drawn",
@@ -482,13 +496,13 @@
 				"CROWN: (c) a crown with no clusters: 2 of 2 placed foliage elements carry no cluster -- a commission defect of plant/pine, not a rung to hand-build (decisions/D-derive-3)",
 				"REDUCE from rung 0 at {\"branches_per_whorl\":2,\"branchlets_per_limb\":1,\"crown_duty_cycle\":0.2,\"height_m\":3.0,\"tuft_over_crown\":0.05,\"twigs_per_branchlet\":1,\"whorls\":40} seed 314: element 0's part 'bark' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 959.0,
+			"peak_mb": 1016.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 2.0,
 				"reduce": 4.0
 			},
-			"search_s": 1780.5,
+			"search_s": 1763.4,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -496,7 +510,7 @@
 	},
 	"source": {
 		"children": "b687b0c7d062d5d63ae55842226cdba83467df6aa58552f29f2c847dd3c4f151",
-		"deriver": "c3cb2850fbd96d6f4923048674d30de28d03fa56272209c561861cd2018442e3",
+		"deriver": "9d58e2b19623f8e732c5f1ac2eea2a09befdeb63342532299d517a0af10853b6",
 		"generator": "cd7bf0748cd09412cf21ce2bf7e8160f4d72e603e01345d8658edfee991c9d0f"
 	}
 }

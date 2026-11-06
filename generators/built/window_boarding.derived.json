@@ -155,11 +155,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 16,
 				"trace": "built__window-boarding#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 14,
 				"trace": "built__window-boarding#2.trace.jsonl"
 			}
 		}
@@ -180,11 +180,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 550.0,
+					"cost": 550,
 					"holds": false,
 					"judge": "drawn",
 					"picture": -1.0,
-					"px_over": 2.0,
+					"px_over": 2,
 					"route": "kit",
 					"value": 0.48999999999999994
 				},
@@ -214,7 +214,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.490",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -243,15 +243,15 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00248 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 2 pixel(s) differ at the drawn size at {} seed 314 (worst 0.64)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'board' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
-				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 916.0,
+			"peak_mb": 954.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 3.0
+				"reduce": 3
 			},
-			"search_s": 302.5,
-			"searched": "recheck",
+			"search_s": 349.3,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -259,22 +259,22 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 574,
+					"cost": 470,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00502,
+					"picture": 0.007970000000000001,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
 				},
 				{
-					"cost": 438.0,
+					"cost": 454,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00531,
+					"picture": 0.007970000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.55443
+					"value": 0.774744
 				}
 			],
 			"checked_at": 21,
@@ -290,7 +290,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -298,9 +298,6 @@
 					"impostor",
 					"merged",
 					"thin"
-				],
-				"skipped_by_prior": [
-					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -818,28 +815,32 @@
 				"cost": 574,
 				"coverage_rel": 0.0006600000000000001,
 				"floor": 0.00502,
-				"part_shift": {},
+				"part_shift": {
+					"board": 0.00587,
+					"nail": -5e-05,
+					"rust": -0.00587
+				},
 				"picture": 0.00502
 			},
 			"measured_of": 3,
 			"not_taken": [
+				"REDUCE from rung 1, the derived band above at {} seed 314: element 0's part 'board' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'board' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
-				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
-				"MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels)) is 1 route(s)",
+				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels)) is 1 route(s)",
 				"CARRIED from rung 1, REDUCE (every piece) to 0.490, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {\"opening_w_m\":2.4} seed 314: the picture changes at the drawn size: 228 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.91), one pixel 0.01902 m; coverage changes -0.0987 against 0.0481 allowed (a one-pixel shrink all round)",
 				"KIT (its own build at 2 of the band's pixels) held at 470, cheaper than the 574 taken, but a replay of rung 0: KIT is within budget and builds directly",
-				"REDUCE (every piece) to its error cap 0.25x the band's (0.554 kept) held at 438, cheaper than the 574 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"REDUCE (every piece) to its error cap 0.125x the band's (0.775 kept) held at 454, cheaper than the 574 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 916.0,
+			"peak_mb": 954.0,
 			"route": "kit",
-			"search_s": 195.10000000000002,
-			"searched": "recheck",
+			"search_s": 195.8,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
-		"generator": "5cdc0e18252c1120c2523d50f6755a117880706dd5d3b6395aad6b1288b9138a"
+		"generator": "3f377e06698864bbe5c4c03104586dbb33154156001b9c5f0df84209a74d9921"
 	}
 }

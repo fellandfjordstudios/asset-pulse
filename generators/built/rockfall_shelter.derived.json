@@ -361,6 +361,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -427,17 +431,18 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 61,
-		"sampled": 61,
-		"sets": 61
+		"old_key_sets": 62,
+		"sampled": 62,
+		"sets": 62
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 7,
 				"trace": "built__rockfall-shelter#1.trace.jsonl"
 			}
 		}
@@ -453,6 +458,7 @@
 		"1": {
 			"budget": 39117,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -463,14 +469,23 @@
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.608533
+				},
+				{
+					"cost": 2162,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.004690000000000001,
+					"px_over": 24,
+					"route": "thin",
+					"value": 0.7
 				}
 			],
-			"cap": 0.00092592592592592,
+			"cap": 0.0009259259259259261,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 61,
+			"checked_at": 62,
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
@@ -483,7 +498,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.609 kept)",
-				"looked": 0.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -491,9 +506,6 @@
 					"merged",
 					"thin",
 					"impostor"
-				],
-				"skipped_by_prior": [
-					"THIN"
 				]
 			},
 			"measured": {
@@ -514,21 +526,21 @@
 			"measured_of": 1,
 			"not_taken": [
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'roof' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
-				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {\"bays\":1} seed 314: the picture changes at the drawn size: 24 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00459 m"
 			],
-			"peak_mb": 2046.0,
+			"peak_mb": 2187.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 7.0
+				"reduce": 7
 			},
-			"search_s": 1297.7,
-			"searched": "recheck",
+			"search_s": 2874.7000000000003,
+			"searched": "search",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
-		"generator": "482445b734e7722225559533e139e0ca93b739e1afeea7c39295e41050040364"
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"generator": "5349d539507f9f93154559af6329db7e14da00de64a66f0c8f7cfe63dc5f0a65"
 	}
 }

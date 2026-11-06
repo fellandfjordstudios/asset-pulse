@@ -259,6 +259,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -308,11 +312,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 44,
-		"sampled": 44,
-		"sets": 44
+		"old_key_sets": 45,
+		"sampled": 45,
+		"sets": 45
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -358,7 +363,7 @@
 					"value": 1.0
 				}
 			],
-			"checked_at": 44,
+			"checked_at": 45,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -374,9 +379,9 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"strip_thickness_ratio\":1.0} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00408 m; the error ladder: none holds at 0.0019",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 549.0,
+			"peak_mb": 555.0,
 			"route": "rung0",
-			"search_s": 217.9,
+			"search_s": 218.8,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
@@ -385,6 +390,7 @@
 		"2": {
 			"budget": 10668,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -407,7 +413,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 44,
+			"checked_at": 45,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -433,7 +439,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 44,
+				"checked_at": 45,
 				"checks": [
 					{
 						"holds": true,
@@ -1490,6 +1496,30 @@
 							0.02322612702846527,
 							0.024289533495903015
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3258739113807678,
+							0.35336026549339294,
+							0.37770876288414
+						],
+						"mean_before": [
+							0.3258739113807678,
+							0.35336026549339294,
+							0.37770876288414
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.019840218126773834,
+							0.023748263716697693,
+							0.0249507874250412
+						],
+						"variance_before": [
+							0.019840218126773834,
+							0.023748263716697693,
+							0.0249507874250412
+						]
 					}
 				],
 				"holds": true
@@ -1506,19 +1536,19 @@
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)"
 			],
-			"peak_mb": 614.0,
+			"peak_mb": 620.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 15.0
 			},
-			"search_s": 1076.2,
+			"search_s": 1130.2,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "7e65865c58ca5b39b5baa21b1a555dc0d43cdf0ee314add0e07057953d45e3c9"
 	}
 }

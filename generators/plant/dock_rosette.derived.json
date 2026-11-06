@@ -187,6 +187,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -224,11 +228,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 32,
-		"sampled": 32,
-		"sets": 32
+		"old_key_sets": 33,
+		"sampled": 33,
+		"sets": 33
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -250,6 +255,7 @@
 		"1": {
 			"budget": 21336,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -272,7 +278,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 32,
+			"checked_at": 33,
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
@@ -315,20 +321,20 @@
 				"REDUCE from rung 0 at {} seed 314: element 16's part 'stalk' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
 				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1412.0,
+			"peak_mb": 1448.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 16.0,
 				"reduce": 22.0
 			},
-			"search_s": 782.2,
+			"search_s": 768.1,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "104b6371287c6fa1c6cae6701dc1e21a040ceeb5311f44fa6458bf4fb255128d"
 	}
 }

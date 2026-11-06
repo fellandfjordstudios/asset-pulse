@@ -211,6 +211,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -252,11 +256,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 36,
-		"sampled": 36,
-		"sets": 36
+		"old_key_sets": 37,
+		"sampled": 37,
+		"sets": 37
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -316,7 +321,7 @@
 					"value": 1.0
 				}
 			],
-			"checked_at": 36,
+			"checked_at": 37,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -336,9 +341,9 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 335.0,
+			"peak_mb": 340.0,
 			"route": "rung0",
-			"search_s": 42.7,
+			"search_s": 44.1,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
@@ -375,12 +380,12 @@
 					"value": 1.0
 				}
 			],
-			"checked_at": 36,
+			"checked_at": 37,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"material_transfer": {
-				"checked_at": 36,
+				"checked_at": 37,
 				"checks": [
 					{
 						"holds": true,
@@ -1245,6 +1250,30 @@
 							0.0014011207967996597,
 							0.06012481078505516
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.2478894293308258,
+							0.14282092452049255,
+							0.1862500160932541
+						],
+						"mean_before": [
+							0.2478894293308258,
+							0.14282092452049255,
+							0.1862500160932541
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.05721244961023331,
+							0.0013658925890922546,
+							0.05873945355415344
+						],
+						"variance_before": [
+							0.05721244961023331,
+							0.0013658925890922546,
+							0.05873945355415344
+						]
 					}
 				],
 				"holds": true
@@ -1268,9 +1297,9 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 338.0,
+			"peak_mb": 343.0,
 			"route": "rung0",
-			"search_s": 28.400000000000002,
+			"search_s": 29.200000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -1299,13 +1328,13 @@
 					"value": 0.7
 				}
 			],
-			"checked_at": 36,
+			"checked_at": 37,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {},
 			"material_transfer": {
-				"checked_at": 36,
+				"checked_at": 37,
 				"checks": [
 					{
 						"holds": true,
@@ -2169,6 +2198,30 @@
 							0.059110864996910095,
 							0.0014180559664964676,
 							0.06085610389709473
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.2499416321516037,
+							0.1425001472234726,
+							0.18835675716400146
+						],
+						"mean_before": [
+							0.2499416321516037,
+							0.1425001472234726,
+							0.18835675716400146
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.05790797993540764,
+							0.0013829730451107025,
+							0.05947813764214516
+						],
+						"variance_before": [
+							0.05790797993540764,
+							0.0013829730451107025,
+							0.05947813764214516
 						]
 					}
 				],
@@ -2200,9 +2253,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0296 -- the finest tried (0.700) fails at {\"leaves\":2} seed 314: coverage changes -0.1074 against 0.0661 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0296",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 339.0,
+			"peak_mb": 343.0,
 			"route": "kit",
-			"search_s": 31.6,
+			"search_s": 31.400000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -2210,7 +2263,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "e4c29908894e1a50e526cede488ac7841dd7882e91c930f3cfcd93bb6b84d485"
 	}
 }

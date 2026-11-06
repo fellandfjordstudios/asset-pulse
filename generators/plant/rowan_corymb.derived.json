@@ -79,6 +79,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -98,11 +102,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 14,
-		"sampled": 14,
-		"sets": 14
+		"old_key_sets": 15,
+		"sampled": 15,
+		"sets": 15
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -135,6 +140,7 @@
 			"above_tolerance": true,
 			"budget": 2259,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -156,7 +162,7 @@
 					"value": 0.7
 				}
 			],
-			"checked_at": 14,
+			"checked_at": 15,
 			"drawn": {
 				"excess": 0.625,
 				"judge": "drawn",
@@ -189,14 +195,15 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.14: 246 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'ray' is 80 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE (every piece) from rung 0: none holds at 0.0057 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 10 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00078 m; the error ladder: none holds at 0.0057",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/rowan-corymb does not declare `reads_density`"
 			],
-			"peak_mb": 287.0,
+			"peak_mb": 291.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 71
 			},
-			"search_s": 124.0,
+			"search_s": 150.8,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -206,6 +213,7 @@
 			"above_tolerance": true,
 			"budget": 564,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -235,7 +243,7 @@
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 14,
+			"checked_at": 15,
 			"descent": "from rung 0: the band above did not hold -- REDUCE from rung 1, the derived band above at {} seed 314: element 0's part 'ray' is 80 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 			"drawn": {
 				"excess": 0.375,
@@ -247,7 +255,7 @@
 			"fraction": 0.7,
 			"from_rung": 0,
 			"material_transfer": {
-				"checked_at": 14,
+				"checked_at": 15,
 				"checks": [
 					{
 						"holds": true,
@@ -583,6 +591,30 @@
 							0.00177803635597229,
 							0.00015164539217948914,
 							5.3050462156534195e-06
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.6243312358856201,
+							0.049393389374017715,
+							0.045988354831933975
+						],
+						"mean_before": [
+							0.6243312358856201,
+							0.049393389374017715,
+							0.045988354831933975
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.00178605318069458,
+							0.0001517005730420351,
+							5.289912223815918e-06
+						],
+						"variance_before": [
+							0.00178605318069458,
+							0.0001517005730420351,
+							5.289912223815918e-06
 						]
 					}
 				],
@@ -616,12 +648,12 @@
 				"REDUCE (every piece) from rung 1, the derived band above: none holds at 0.0229 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.1105 against 0.1051 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0229",
 				"BUDGET: the cheapest derivation that holds the picture costs 3322 (5.89x), over rung 2's budget 564 x 1.5 = 846 (flower, 0.14 m)"
 			],
-			"peak_mb": 287.0,
+			"peak_mb": 292.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 71
 			},
-			"search_s": 191.20000000000002,
+			"search_s": 221.4,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -631,14 +663,15 @@
 			"above_tolerance": true,
 			"budget": 141,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 206,
+					"cost": 860,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.26177,
-					"px_over": 1,
+					"picture": 0.03175,
+					"px_over": 0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -655,7 +688,7 @@
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 14,
+			"checked_at": 15,
 			"drawn": {
 				"excess": 0.3125,
 				"judge": "drawn",
@@ -666,7 +699,7 @@
 			"fraction": 0.7,
 			"from_rung": 2,
 			"material_transfer": {
-				"checked_at": 14,
+				"checked_at": 15,
 				"checks": [
 					{
 						"holds": true,
@@ -1003,6 +1036,30 @@
 							0.0001501808874309063,
 							5.246372893452644e-06
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.6269189119338989,
+							0.04863949865102768,
+							0.04584752395749092
+						],
+						"mean_before": [
+							0.6269189119338989,
+							0.04863949865102768,
+							0.04584752395749092
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.0017654895782470703,
+							0.0001503550447523594,
+							5.236128345131874e-06
+						],
+						"variance_before": [
+							0.0017654895782470703,
+							0.0001503550447523594,
+							5.236128345131874e-06
+						]
 					}
 				],
 				"holds": true
@@ -1026,20 +1083,20 @@
 				"tier": 2
 			},
 			"not_taken": [
-				"KIT: none holds at 0.0917 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.73), one pixel 0.01250 m",
+				"KIT: none holds at 0.0917 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.2207 against 0.1823 a derivation may change (its error read as a change of size)",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 1 pixel(s) differ at the drawn size at {\"fruits\":160} seed 314 (worst 0.52)",
-				"KIT at 4 pixels: none holds at 0.0917 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.73), one pixel 0.01250 m",
+				"KIT at 4 pixels: none holds at 0.0917 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.2207 against 0.1823 a derivation may change (its error read as a change of size)",
 				"KIT at 4 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 1 pixel(s) differ at the drawn size at {\"fruits\":160} seed 314 (worst 0.52)",
 				"REDUCE from rung 2, the derived band above at {} seed 314: element 0's part 'ray' is 80 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'ray' is 80 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"BUDGET: the cheapest derivation that holds the picture costs 2286 (16.21x), over rung 3's budget 141 x 1.5 = 211 (flower, 0.14 m)"
 			],
-			"peak_mb": 300.0,
+			"peak_mb": 305.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 71
 			},
-			"search_s": 147.3,
+			"search_s": 170.60000000000002,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -1047,7 +1104,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "e7bb34f7861f3f3fb428d4fe315b367503b65b404805bdafe1a1b3be03a0cc5d"
 	}
 }

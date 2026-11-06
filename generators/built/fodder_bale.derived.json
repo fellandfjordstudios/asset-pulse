@@ -43,6 +43,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -56,11 +60,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 8,
-		"sampled": 8,
-		"sets": 8
+		"old_key_sets": 9,
+		"sampled": 9,
+		"sets": 9
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -124,7 +129,7 @@
 					"value": 0.16806999999999994
 				}
 			],
-			"checked_at": 8,
+			"checked_at": 9,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -156,9 +161,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"BUDGET: the cheapest derivation that holds the picture costs 235584 (6.02x), over rung 1's budget 39117 x 1.5 = 58675 (made, 0.86 m)"
 			],
-			"peak_mb": 481.0,
+			"peak_mb": 496.0,
 			"route": "kit",
-			"search_s": 103.10000000000001,
+			"search_s": 117.30000000000001,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
@@ -205,13 +210,13 @@
 					"value": 0.01977326742999998
 				}
 			],
-			"checked_at": 8,
+			"checked_at": 9,
 			"density": 0.01977326742999998,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"material_transfer": {
-				"checked_at": 8,
+				"checked_at": 9,
 				"checks": [
 					{
 						"holds": true,
@@ -404,6 +409,30 @@
 							0.000157967209815979,
 							3.384798765182495e-05
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.44446423649787903,
+							0.37211495637893677,
+							0.16537663340568542
+						],
+						"mean_before": [
+							0.44446423649787903,
+							0.37211495637893677,
+							0.16537663340568542
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.000239640474319458,
+							0.00016616284847259521,
+							3.5565346479415894e-05
+						],
+						"variance_before": [
+							0.000239640474319458,
+							0.00016616284847259521,
+							3.5565346479415894e-05
+						]
 					}
 				],
 				"holds": true
@@ -452,9 +481,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping blade 0.031, fibre 0.168), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: part 'fodder' changes its share of the picture by +0.0700 against 0.0473 allowed (its colour's share of the subject); part 'stalk_pale' changes its share of the picture by -0.0803 against 0.0473 allowed (its colour's share of the subject); part 'stalk_dark' changes its share of the picture by -0.0518 against 0.0473 allowed (its colour's share of the subject)",
 				"BUDGET: the cheapest derivation that holds the picture costs 224608 (22.97x), over rung 2's budget 9779 x 1.5 = 14668 (made, 0.86 m)"
 			],
-			"peak_mb": 504.0,
+			"peak_mb": 524.0,
 			"route": "thin",
-			"search_s": 887.6,
+			"search_s": 923.1,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 1,
@@ -494,10 +523,10 @@
 					"value": 8
 				}
 			],
-			"checked_at": 8,
+			"checked_at": 9,
 			"draw_calls": 1,
 			"drawn": {
-				"excess": 0.4919,
+				"excess": 0.49460000000000004,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
@@ -515,9 +544,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 611.0,
+			"peak_mb": 649.0,
 			"route": "impostor",
-			"search_s": 282.2,
+			"search_s": 320.6,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -527,7 +556,7 @@
 	},
 	"source": {
 		"children": "56b39f70e77b2f128d86165ba22a145495f75997ab6fb318283e31b8059c97e0",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "544d4bce26780c054724aa44fd24c2e5d6211ec20f3547efe7ba45879d7bfc67"
 	}
 }

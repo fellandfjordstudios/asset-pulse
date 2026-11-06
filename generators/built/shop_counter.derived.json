@@ -49,6 +49,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -63,11 +67,12 @@
 			"shape",
 			"shape",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 9,
-		"sampled": 9,
-		"sets": 3
+		"old_key_sets": 10,
+		"sampled": 10,
+		"sets": 4
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -99,7 +104,7 @@
 					"value": {}
 				}
 			],
-			"checked_at": 9,
+			"checked_at": 10,
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
@@ -124,7 +129,7 @@
 			},
 			"measured": {
 				"cost": 3256,
-				"coverage_rel": -0.00031,
+				"coverage_rel": -0.00033000000000000005,
 				"floor": 0.0041400000000000005,
 				"part_shift": {},
 				"picture": 0.0041400000000000005
@@ -135,9 +140,9 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 317.0,
+			"peak_mb": 321.0,
 			"route": "kit",
-			"search_s": 179.20000000000002,
+			"search_s": 201.10000000000002,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -145,7 +150,7 @@
 	},
 	"source": {
 		"children": "e3826732e1d5920df59760b5a4b77ff98b34cb02d383eb344d14537ff5ef1138",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "d66147cec03ed46fa6d08eb31c2f67f62195062adbb26027b222fe0b559a0c38"
 	}
 }

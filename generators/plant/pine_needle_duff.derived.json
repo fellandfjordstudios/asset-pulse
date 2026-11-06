@@ -73,6 +73,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -91,11 +95,12 @@
 			"shape",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 13,
-		"sampled": 13,
-		"sets": 7
+		"old_key_sets": 14,
+		"sampled": 14,
+		"sets": 8
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -139,7 +144,7 @@
 					"value": 64.0
 				}
 			],
-			"checked_at": 13,
+			"checked_at": 14,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -180,9 +185,9 @@
 				"REDUCE from rung 0: nothing to try; the error ladder: nothing to try",
 				"THIN: plant/pine-needle-duff does not declare `reads_density`"
 			],
-			"peak_mb": 561.0,
+			"peak_mb": 578.0,
 			"route": "kit",
-			"search_s": 82.60000000000001,
+			"search_s": 86.7,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
@@ -190,7 +195,7 @@
 		}
 	},
 	"source": {
-		"deriver": "d6ee7e8ccc0687242024e4f5a28c8206317451627ad8efb6c5fecf609acba66e",
+		"deriver": "848e8ccc9c14094943b2760a3b81100706e6073e292a6a052737ddc64e37e7c3",
 		"generator": "88d617b2a1d61415b913413e25fa0dea8cd3e62c763dd339ad61e70d3b0f9543"
 	}
 }

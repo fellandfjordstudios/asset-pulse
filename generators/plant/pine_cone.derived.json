@@ -91,6 +91,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -112,11 +116,12 @@
 			"shape",
 			"shape",
 			"shape",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 16,
-		"sampled": 16,
-		"sets": 8
+		"old_key_sets": 17,
+		"sampled": 17,
+		"sets": 9
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -163,7 +168,7 @@
 					"value": 0.7
 				}
 			],
-			"checked_at": 16,
+			"checked_at": 17,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -191,9 +196,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"cones\":150} seed 314: coverage changes -0.0192 against 0.0118 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0019",
 				"THIN: plant/pine-cone does not declare `reads_density`"
 			],
-			"peak_mb": 464.0,
+			"peak_mb": 473.0,
 			"route": "kit",
-			"search_s": 91.0,
+			"search_s": 94.60000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -225,7 +230,7 @@
 					"value": 0.7
 				}
 			],
-			"checked_at": 16,
+			"checked_at": 17,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -234,7 +239,7 @@
 				"scale": 0.48999999999999994
 			},
 			"material_transfer": {
-				"checked_at": 16,
+				"checked_at": 17,
 				"checks": [
 					{
 						"holds": true,
@@ -619,6 +624,30 @@
 							0.0001560002565383911,
 							0.0002296632155776024
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.33907386660575867,
+							0.1640770584344864,
+							0.08020764589309692
+						],
+						"mean_before": [
+							0.33907386660575867,
+							0.1640770584344864,
+							0.08020764589309692
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							2.2232532501220703e-05,
+							0.00014740973711013794,
+							0.0002163490280508995
+						],
+						"variance_before": [
+							2.2232532501220703e-05,
+							0.00014740973711013794,
+							0.0002163490280508995
+						]
 					}
 				],
 				"holds": true
@@ -649,9 +678,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0345 against 0.0230 a derivation may change (its error read as a change of size)",
 				"BUDGET: the cheapest derivation that holds the picture costs 66094 (6.20x), over rung 2's budget 10668 x 1.5 = 16002 (rock, 8.10 m)"
 			],
-			"peak_mb": 466.0,
+			"peak_mb": 477.0,
 			"route": "kit",
-			"search_s": 670.2,
+			"search_s": 695.3000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -659,7 +688,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "d081bc68ae3a21a34345b0b72a959dde39abffecc64d2e76579d9db6ac748d26"
 	}
 }

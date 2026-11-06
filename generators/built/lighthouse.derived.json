@@ -37,6 +37,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -49,11 +53,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 7,
-		"sampled": 7,
-		"sets": 7
+		"old_key_sets": 8,
+		"sampled": 8,
+		"sets": 8
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -97,7 +102,7 @@
 					}
 				}
 			],
-			"checked_at": 7,
+			"checked_at": 8,
 			"drawn": {
 				"excess": 0.5,
 				"gap": 0.474,
@@ -140,9 +145,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.240)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 334.0,
+			"peak_mb": 339.0,
 			"route": "kit",
-			"search_s": 109.80000000000001,
+			"search_s": 119.5,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -173,7 +178,7 @@
 					}
 				}
 			],
-			"checked_at": 7,
+			"checked_at": 8,
 			"drawn": {
 				"excess": 0.5,
 				"gap": 0.116,
@@ -205,7 +210,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 7,
+				"checked_at": 8,
 				"checks": [
 					{
 						"holds": true,
@@ -374,6 +379,30 @@
 							0.09253992140293121,
 							0.09426480531692505
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.3943893015384674,
+							0.35548603534698486,
+							0.34913015365600586
+						],
+						"mean_before": [
+							0.3943893015384674,
+							0.35548603534698486,
+							0.34913015365600586
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.07981427013874054,
+							0.09236863255500793,
+							0.09414920955896378
+						],
+						"variance_before": [
+							0.07981427013874054,
+							0.09236863255500793,
+							0.09414920955896378
+						]
 					}
 				],
 				"holds": true
@@ -412,10 +441,10 @@
 				"KIT (its own build at the rung's pixel, keeping post 0.168, block 0.700, rivet 0.031) held at 1553, dearer than the 1423 taken",
 				"KIT (its own build at the rung's pixel, keeping rivet 0.240), carried from rung 1 held at 8741, dearer than the 1423 taken"
 			],
-			"peak_mb": 294.0,
+			"peak_mb": 298.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 60.2,
+			"search_s": 68.3,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -454,7 +483,7 @@
 					"value": 12
 				}
 			],
-			"checked_at": 7,
+			"checked_at": 8,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.3395,
@@ -475,9 +504,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 294.0,
+			"peak_mb": 299.0,
 			"route": "impostor",
-			"search_s": 38.0,
+			"search_s": 38.800000000000004,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -487,7 +516,7 @@
 	},
 	"source": {
 		"children": "63865d8cdffb5a170f2980ce9c8a72840943ff3a85183485d09c0b8b8c065b60",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "a4bae2b93390263a329f84bae0f2b0d0f4ae331031d17ac1f6c0d28bd15a4f81"
 	}
 }

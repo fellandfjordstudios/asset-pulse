@@ -49,6 +49,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -63,11 +67,12 @@
 			"shape",
 			"shape",
 			"shape",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 9,
-		"sampled": 9,
-		"sets": 2
+		"old_key_sets": 10,
+		"sampled": 10,
+		"sets": 3
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -99,6 +104,7 @@
 		"1": {
 			"budget": 39117,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -128,7 +134,7 @@
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 9,
+			"checked_at": 10,
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
@@ -173,12 +179,12 @@
 				"CHILD: span 'food/twist-bread-coil r0 f448dd6d' is 2680 triangles and its child rebuilt is 3260: not a placed copy",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 453.0,
+			"peak_mb": 477.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 49.0,
+			"search_s": 54.7,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -186,6 +192,7 @@
 		"2": {
 			"budget": 9779,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -226,7 +233,7 @@
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 9,
+			"checked_at": 10,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
@@ -252,7 +259,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 9,
+				"checked_at": 10,
 				"checks": [
 					{
 						"holds": true,
@@ -469,6 +476,30 @@
 							0.006429821252822876,
 							0.00037694908678531647
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.5705857276916504,
+							0.4160451889038086,
+							0.16342328488826752
+						],
+						"mean_before": [
+							0.5705857276916504,
+							0.4160451889038086,
+							0.16342328488826752
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.009202122688293457,
+							0.006663605570793152,
+							0.00039607100188732147
+						],
+						"variance_before": [
+							0.009202122688293457,
+							0.006663605570793152,
+							0.00039607100188732147
+						]
 					}
 				],
 				"holds": true
@@ -507,12 +538,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"CARRIED from rung 1, REDUCE to 0.343, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 11 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00593 m; coverage changes -0.1105 against 0.0450 allowed (a one-pixel shrink all round)"
 			],
-			"peak_mb": 453.0,
+			"peak_mb": 477.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 289.6,
+			"search_s": 331.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -551,7 +582,7 @@
 					"value": 12
 				}
 			],
-			"checked_at": 9,
+			"checked_at": 10,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.34390000000000004,
@@ -572,9 +603,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 453.0,
+			"peak_mb": 477.0,
 			"route": "impostor",
-			"search_s": 2.4000000000000004,
+			"search_s": 2.5,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -584,7 +615,7 @@
 	},
 	"source": {
 		"children": "25f39b7f8d39b5d81abfa748fa52f402aff73bd47af7278ea31176ceb22a011e",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "b017f23dda3f7d5a2b03a9e03087dad6787e74c6d85b02c6c818d01106e05472"
 	}
 }

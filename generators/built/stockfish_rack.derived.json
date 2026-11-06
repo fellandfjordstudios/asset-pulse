@@ -61,6 +61,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -77,21 +81,22 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 11,
-		"sampled": 11,
-		"sets": 11
+		"old_key_sets": 12,
+		"sampled": 12,
+		"sets": 12
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 17,
 				"trace": "built__stockfish-rack#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 38,
 				"trace": "built__stockfish-rack#2.trace.jsonl"
 			},
 			"3": {
@@ -113,14 +118,15 @@
 		"1": {
 			"budget": 39117,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 15158.0,
+					"cost": 15158,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00478,
-					"px_over": 1.0,
+					"px_over": 1,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -134,7 +140,7 @@
 					"value": 0.48999999999999994
 				}
 			],
-			"checked_at": 11,
+			"checked_at": 12,
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
@@ -147,7 +153,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -155,6 +161,9 @@
 					"merged",
 					"thin",
 					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -169,18 +178,19 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 10 times for solid subjects at band 1 across 10 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"leg_diameter_m\":0.2} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.73), one pixel 0.01170 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.00: 34 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
-				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 632.0,
+			"peak_mb": 728.0,
 			"route": "merged",
 			"routes": {
-				"reduce": 2.0
+				"reduce": 2
 			},
-			"search_s": 387.0,
-			"searched": "recheck",
+			"search_s": 813.9000000000001,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -188,13 +198,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 197.0,
+					"px_over": 96,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
 					"cost": 2332,
@@ -204,21 +214,30 @@
 					"px_over": null,
 					"route": "kit",
 					"value": {
-						"knot": 0.11764899999999996,
+						"knot": 0.11764899999999995,
 						"peg": 0.7
 					}
 				},
 				{
-					"cost": 13476.0,
+					"cost": 13476,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00478,
 					"px_over": null,
 					"route": "merged",
 					"value": 0.48999999999999994
+				},
+				{
+					"cost": 9944,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00478,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.7
 				}
 			],
-			"checked_at": 11,
+			"checked_at": 12,
 			"drawn": {
 				"excess": 0.5,
 				"gap": 0.627,
@@ -229,13 +248,13 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {
-				"knot": 0.11764899999999996,
+				"knot": 0.11764899999999995,
 				"peg": 0.7
 			},
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping knot 0.118, peg 0.700)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -246,7 +265,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 11,
+				"checked_at": 12,
 				"checks": [
 					{
 						"holds": true,
@@ -511,6 +530,30 @@
 							4.226714372634888e-05,
 							4.745367914438248e-05
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.26759105920791626,
+							0.18717004358768463,
+							0.11960939317941666
+						],
+						"mean_before": [
+							0.26759105920791626,
+							0.18717004358768463,
+							0.11960939317941666
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							2.2426247596740723e-05,
+							4.539266228675842e-05,
+							5.081482231616974e-05
+						],
+						"variance_before": [
+							2.2426247596740723e-05,
+							4.539266228675842e-05,
+							5.081482231616974e-05
+						]
 					}
 				],
 				"holds": true
@@ -523,36 +566,38 @@
 				"part_shift": {},
 				"picture": 0.007970000000000001
 			},
-			"measured_of": 3,
+			"measured_of": 4,
 			"not_taken": [
-				"IMPOSTOR at 6x6 frames (atlas 0.6 MB) from rung 0 at 8x its pixel: 1805 pixel(s) differ at {} seed 314 (worst 1.00)",
-				"IMPOSTOR at 8x8 frames (atlas 1.0 MB) from rung 0 at 8x its pixel: 2318 pixel(s) differ at {} seed 314 (worst 0.84)",
-				"IMPOSTOR at 12x12 frames (atlas 2.4 MB) from rung 0 at 8x its pixel: 1322 pixel(s) differ at {} seed 314 (worst 0.81)",
-				"IMPOSTOR at 16x16 frames (atlas 4.2 MB) from rung 0 at 8x its pixel: 774 pixel(s) differ at {} seed 314 (worst 0.68)",
-				"IMPOSTOR at 6x6 frames (atlas 0.6 MB) from rung 0 at 4x its pixel: 1805 pixel(s) differ at {} seed 314 (worst 1.00)",
-				"IMPOSTOR at 8x8 frames (atlas 1.0 MB) from rung 0 at 4x its pixel: 2318 pixel(s) differ at {} seed 314 (worst 0.84)",
-				"IMPOSTOR at 12x12 frames (atlas 2.4 MB) from rung 0 at 4x its pixel: 1322 pixel(s) differ at {} seed 314 (worst 0.81)",
-				"IMPOSTOR at 16x16 frames (atlas 4.2 MB) from rung 0 at 4x its pixel: 774 pixel(s) differ at {} seed 314 (worst 0.68)",
-				"IMPOSTOR at 6x6 frames (atlas 0.6 MB) from rung 0: 1805 pixel(s) differ at {} seed 314 (worst 1.00)",
-				"IMPOSTOR at 8x8 frames (atlas 1.0 MB) from rung 0: 2318 pixel(s) differ at {} seed 314 (worst 0.84)",
-				"IMPOSTOR at 12x12 frames (atlas 2.4 MB) from rung 0: 1322 pixel(s) differ at {} seed 314 (worst 0.81)",
-				"IMPOSTOR at 16x16 frames (atlas 4.2 MB) from rung 0: 774 pixel(s) differ at {} seed 314 (worst 0.68)",
-				"IMPOSTOR at 24x24 frames (atlas 9.4 MB) from rung 0 at 8x its pixel: 417 pixel(s) differ at {} seed 314 (worst 0.62)",
-				"IMPOSTOR at 24x24 frames (atlas 9.4 MB) from rung 0 at 4x its pixel: 417 pixel(s) differ at {} seed 314 (worst 0.62)",
-				"IMPOSTOR at 24x24 frames (atlas 9.4 MB) from rung 0: 417 pixel(s) differ at {} seed 314 (worst 0.62)",
-				"IMPOSTOR at 32x32 frames (atlas 16.8 MB) from rung 0 at 8x its pixel: 197 pixel(s) differ at {} seed 314 (worst 0.67)",
-				"IMPOSTOR at 32x32 frames (atlas 16.8 MB) from rung 0 at 4x its pixel: 197 pixel(s) differ at {} seed 314 (worst 0.67)",
-				"IMPOSTOR at 32x32 frames (atlas 16.8 MB) from rung 0: 197 pixel(s) differ at {} seed 314 (worst 0.67)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 8x its pixel: 1406 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 8x its pixel: 1880 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 8x its pixel: 1123 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 8x its pixel: 682 pixel(s) differ at {} seed 314 (worst 0.69)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 4x its pixel: 1406 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 4x its pixel: 1880 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 4x its pixel: 1123 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 4x its pixel: 682 pixel(s) differ at {} seed 314 (worst 0.69)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 1406 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 1880 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 1123 pixel(s) differ at {} seed 314 (worst 0.78)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 682 pixel(s) differ at {} seed 314 (worst 0.69)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 8x its pixel: 257 pixel(s) differ at {} seed 314 (worst 0.65)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 4x its pixel: 257 pixel(s) differ at {} seed 314 (worst 0.65)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 257 pixel(s) differ at {} seed 314 (worst 0.65)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 8x its pixel: 96 pixel(s) differ at {} seed 314 (worst 0.56)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 4x its pixel: 96 pixel(s) differ at {} seed 314 (worst 0.56)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 96 pixel(s) differ at {} seed 314 (worst 0.56)",
 				"KIT at 2 pixels: none holds at 0.0056 -- the finest tried (1.000) fails at {\"bay_m\":1.5} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.01948 m",
+				"REDUCE from rung 1, the derived band above at {} seed 314: part 'wood' is 201 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping knot 0.118, peg 0.700)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at 2 of the band's pixels, keeping knot 0.343, peg 0.343) held at 2844, dearer than the 2332 taken",
+				"REDUCE (every piece) to 0.700 held at 9944, dearer than the 2332 taken",
 				"MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490), carried from rung 1 held at 13476, dearer than the 2332 taken"
 			],
-			"peak_mb": 637.0,
+			"peak_mb": 828.0,
 			"route": "kit",
-			"search_s": 261.5,
-			"searched": "recheck",
+			"search_s": 977.8000000000001,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -582,15 +627,15 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 1,
 					"route": "impostor",
-					"value": 24
+					"value": 8
 				}
 			],
-			"checked_at": 11,
+			"checked_at": 12,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.47750000000000004,
@@ -611,10 +656,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 714.0,
+			"peak_mb": 801.0,
 			"route": "impostor",
-			"search_s": 379.3,
-			"searched": "recheck",
+			"search_s": 368.40000000000003,
+			"searched": "search",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -623,7 +668,7 @@
 	},
 	"source": {
 		"children": "2129ea740a69356f7f8c63e19e1ff49b6174ad94273d78ba5bc0f35d65f1ce4b",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
-		"generator": "1536a4d9f2428255ef2fa34c8051b4f2eb0b18b3f98360da468990e22c5432cb"
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"generator": "e6975f2a0eab575cf32486dcc2b6a8abfd1090eb26501ad6165b78b797227684"
 	}
 }

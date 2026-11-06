@@ -19,6 +19,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -28,17 +32,18 @@
 			"probe",
 			"shape",
 			"shape",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 4,
-		"sampled": 4,
-		"sets": 2
+		"old_key_sets": 5,
+		"sampled": 5,
+		"sets": 3
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 18,
+				"candidates": 21,
 				"trace": "food__klippfisk#1.trace.jsonl"
 			},
 			"2": {
@@ -52,14 +57,14 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "77f175c88fbd23c886fbb581f399be85de214cbaf491a9790adefde179c0e40c",
+		"1": "a5108a888765f5cd4a8de661ad4febc2384ac2452152cd7048484479e98a315b",
 		"2": "785920d66b769cd7da77d7fe231c309e198309452d68854e04a391e5018b334e"
 	},
 	"rungs": {
 		"1": {
 			"budget": 19945,
-			"budget_reason": "the cheapest derivation that holds the picture costs 37064, 1.86x rung 1's budget 19945: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -72,37 +77,60 @@
 					"value": 1.0
 				},
 				{
-					"cost": 37064,
+					"cost": 15002,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004070000000000001,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.7
+					"value": 0.281368
 				}
 			],
-			"chains": {
-				"error": "lost"
+			"cap": 0.0006483403131571386,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 26110,
+				"fraction": 0.48999999999999994
 			},
-			"checked_at": 4,
+			"chains": {
+				"error": "kept"
+			},
+			"checked_at": 5,
 			"drawn": {
-				"excess": 0.0,
+				"excess": 0.25,
 				"judge": "drawn",
 				"pixel_m": 0.001297
 			},
 			"error": 0.0025933612526285546,
 			"every_piece": true,
-			"fraction": 0.7,
+			"fraction": 0.281368,
 			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.281 kept)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"merged",
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
+			},
 			"measured": {
-				"cost": 37064,
-				"coverage_rel": 3.0000000000000004e-05,
+				"cost": 15002,
+				"coverage_rel": -0.00022,
 				"floor": 0.004070000000000001,
 				"part_shift": {
-					"flesh": 0.00041000000000000005,
-					"salt": -0.0008600000000000001,
-					"skin": 0.00044,
-					"tail": 6.000000000000001e-05
+					"flesh": 0.00427,
+					"salt": -0.0006500000000000001,
+					"skin": -0.004070000000000001,
+					"tail": 0.00028000000000000003
 				},
 				"picture": 0.004070000000000001
 			},
@@ -111,14 +139,15 @@
 				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0026 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 4 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.70), one pixel 0.00130 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.1176, cover 2.92: 86353 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
-				"REDUCE from rung 0 at {} seed 314: element 0's part 'flesh' is 46 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)"
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'flesh' is 46 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 355.0,
+			"peak_mb": 370.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 173
 			},
-			"search_s": 285.6,
+			"search_s": 329.5,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -157,7 +186,7 @@
 					"value": 32
 				}
 			],
-			"checked_at": 4,
+			"checked_at": 5,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.42650000000000005,
@@ -178,9 +207,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 355.0,
+			"peak_mb": 370.0,
 			"route": "impostor",
-			"search_s": 120.7,
+			"search_s": 119.0,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -189,7 +218,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "590d8519c5a66b4ffa72eec91948be45e7acbe67d665cd0fa0e42ee5df3d2da5"
 	}
 }

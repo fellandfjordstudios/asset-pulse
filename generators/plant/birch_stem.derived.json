@@ -61,6 +61,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -77,11 +81,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 11,
-		"sampled": 11,
-		"sets": 11
+		"old_key_sets": 12,
+		"sampled": 12,
+		"sets": 12
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -122,7 +127,7 @@
 					"value": 0.7
 				}
 			],
-			"checked_at": 11,
+			"checked_at": 12,
 			"drawn": {
 				"excess": 0.0625,
 				"judge": "drawn",
@@ -161,16 +166,16 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 303.0,
+			"peak_mb": 307.0,
 			"route": "kit",
-			"search_s": 36.6,
+			"search_s": 37.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "cbcfe2aaf5e6a62fe83069814dc18e5c101586cd56450c7f8d847d2b7e77ecb3"
 	}
 }

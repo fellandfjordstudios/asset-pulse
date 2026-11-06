@@ -103,6 +103,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -126,11 +130,12 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 18,
-		"sampled": 18,
-		"sets": 18
+		"old_key_sets": 19,
+		"sampled": 19,
+		"sets": 19
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
@@ -176,7 +181,7 @@
 					"value": 1.0
 				}
 			],
-			"checked_at": 18,
+			"checked_at": 19,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -192,9 +197,9 @@
 				"REDUCE from rung 0: none holds at 0.0026 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0148 against 0.0130 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0026",
 				"THIN: plant/yellow-rattle does not declare `reads_density`"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 274.0,
 			"route": "rung0",
-			"search_s": 22.700000000000003,
+			"search_s": 23.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -203,6 +208,7 @@
 		"2": {
 			"budget": 2804,
 			"cancel_across": true,
+			"cancel_near": true,
 			"cancel_opposed": true,
 			"candidates": [
 				{
@@ -218,7 +224,7 @@
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 18,
+			"checked_at": 19,
 			"drawn": {
 				"excess": 0.4375,
 				"judge": "drawn",
@@ -248,12 +254,12 @@
 				"picture": 0.00398
 			},
 			"measured_of": 1,
-			"peak_mb": 272.0,
+			"peak_mb": 276.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 33.0
 			},
-			"search_s": 21.700000000000003,
+			"search_s": 22.900000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -261,7 +267,7 @@
 	},
 	"source": {
 		"children": "44d547a090d1d6db02065966cef135208db19691ed7a8cc5e612ff513d82197b",
-		"deriver": "cc574b651c84d04dcd0a4eeb9d9a22227bdb18ad890f639e6c43499d90c2339b",
+		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
 		"generator": "3040c132a5ea498691511ad1f6e0bdcbdbc3c02dee5054af05bfa3fc9571e540"
 	}
 }

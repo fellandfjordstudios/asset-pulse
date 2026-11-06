@@ -85,6 +85,10 @@
 		{
 			"params": {},
 			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
 	"effort": "full",
@@ -105,21 +109,22 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 15,
-		"sampled": 15,
-		"sets": 13
+		"old_key_sets": 16,
+		"sampled": 16,
+		"sets": 14
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 41,
+				"candidates": 0,
 				"trace": "plant__birch-leaf-litter#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 54,
+				"candidates": 2,
 				"trace": "plant__birch-leaf-litter#2.trace.jsonl"
 			},
 			"3": {
@@ -146,22 +151,25 @@
 					"cost": 16976,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.015940000000000003,
-					"px_over": 22570,
+					"picture": 0.20055,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
+					"value": {
+						"debris": 0.7,
+						"vein": 0.7
+					}
 				},
 				{
-					"cost": 918,
+					"cost": 918.0,
 					"holds": false,
 					"judge": "field",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "substitute",
-					"value": 459
+					"value": 459.0
 				}
 			],
-			"checked_at": 15,
+			"checked_at": 16,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -171,7 +179,7 @@
 					0.2439,
 					0.14400000000000002
 				],
-				"band": 1,
+				"band": 1.0,
 				"coverage": 0.9118,
 				"luminance_sd": 0.14700000000000002,
 				"texel_m": 0.001969
@@ -204,10 +212,10 @@
 				"REDUCE (every piece) from rung 0: nothing to try; the error ladder: nothing to try",
 				"THIN: plant/birch-leaf-litter does not declare `reads_density`"
 			],
-			"peak_mb": 1059.0,
+			"peak_mb": 396.0,
 			"route": "kit",
-			"search_s": 1671.7,
-			"searched": "search",
+			"search_s": 85.9,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"tolerance": 0.0018518518518518517
@@ -217,25 +225,28 @@
 			"budget": 3556,
 			"candidates": [
 				{
-					"cost": 12784,
+					"cost": 5328,
 					"holds": false,
 					"judge": "drawn",
-					"picture": -1.0,
-					"px_over": 367,
+					"picture": 0.5086700000000001,
+					"px_over": null,
 					"route": "kit",
-					"value": 0.7
+					"value": {
+						"debris": 0.24009999999999992,
+						"vein": 0.24009999999999992
+					}
 				},
 				{
-					"cost": 230,
+					"cost": 230.0,
 					"holds": false,
 					"judge": "field",
 					"picture": -1.0,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "substitute",
-					"value": 115
+					"value": 115.0
 				}
 			],
-			"checked_at": 15,
+			"checked_at": 16,
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
@@ -245,17 +256,17 @@
 					0.2441,
 					0.1442
 				],
-				"band": 2,
+				"band": 2.0,
 				"coverage": 0.9092,
 				"luminance_sd": 0.1474,
-				"texel_m": 0.007873999999999999
+				"texel_m": 0.00787399999999999
 			},
 			"keep": {
 				"debris": 0.24009999999999992,
 				"vein": 0.24009999999999992
 			},
 			"material_transfer": {
-				"checked_at": 15,
+				"checked_at": 16,
 				"checks": [
 					{
 						"holds": true,
@@ -616,6 +627,30 @@
 							0.015119355171918869,
 							0.0051191821694374084
 						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.39670291543006897,
+							0.24126188457012177,
+							0.14312195777893066
+						],
+						"mean_before": [
+							0.39670291543006897,
+							0.24126188457012177,
+							0.14312195777893066
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.02588599920272827,
+							0.014061465859413147,
+							0.004798974841833115
+						],
+						"variance_before": [
+							0.02588599920272827,
+							0.014061465859413147,
+							0.004798974841833115
+						]
 					}
 				],
 				"holds": true
@@ -647,10 +682,10 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping debris 0.700, vein 0.700), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 330 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00787 m",
 				"THIN: plant/birch-leaf-litter does not declare `reads_density`"
 			],
-			"peak_mb": 376.0,
+			"peak_mb": 396.0,
 			"route": "kit",
-			"search_s": 844.7,
-			"searched": "search",
+			"search_s": 493.3,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407407
@@ -681,15 +716,15 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
 					"value": 16
 				}
 			],
-			"checked_at": 15,
+			"checked_at": 16,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.4728,
@@ -705,7 +740,7 @@
 					0.2419,
 					0.1429
 				],
-				"band": 3,
+				"band": 3.0,
 				"coverage": 0.8919,
 				"luminance_sd": 0.14930000000000002,
 				"texel_m": 0.031497
@@ -721,10 +756,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 484.0,
+			"peak_mb": 556.0,
 			"route": "impostor",
-			"search_s": 239.8,
-			"searched": "search",
+			"search_s": 208.5,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 16
@@ -732,7 +767,7 @@
 	},
 	"source": {
 		"children": "42b6cf29bf657c07e78a4a067db4b7cfdd1e939e65106df0f60d68f9c7a0aea1",
-		"deriver": "88ee514456488081f819de26f2504b414fa7fb7c98470606ab52112e1a066309",
+		"deriver": "848e8ccc9c14094943b2760a3b81100706e6073e292a6a052737ddc64e37e7c3",
 		"generator": "0ad64f06766eaf46ccfc26c141392ee204bf5cd9d7ab0b3428affa55c218b603"
 	}
 }
