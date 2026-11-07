@@ -170,9 +170,9 @@
 				"REDUCE (every piece) from rung 0: nothing to try; the error ladder: nothing to try",
 				"THIN: plant/fern does not declare `reads_density`"
 			],
-			"peak_mb": 261.0,
+			"peak_mb": 262.0,
 			"route": "rung0",
-			"search_s": 10.8,
+			"search_s": 20.0,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -255,9 +255,9 @@
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at 2 of the band's pixels) held at 754, the same cost as the route taken, found first"
 			],
-			"peak_mb": 264.0,
+			"peak_mb": 265.0,
 			"route": "kit",
-			"search_s": 12.0,
+			"search_s": 22.200000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -319,7 +319,7 @@
 			],
 			"peak_mb": 261.0,
 			"route": "impostor",
-			"search_s": 4.2,
+			"search_s": 7.5,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -328,7 +328,7 @@
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "1091b21db607a34f7aaeff5a6df925f12fe9a4a4a44962946ea3d8f548f89031"
 	}
 }

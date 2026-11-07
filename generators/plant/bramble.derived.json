@@ -134,7 +134,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 1,
 				"trace": "plant__bramble#1.trace.jsonl"
 			}
 		}
@@ -154,11 +154,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 3758,
+					"cost": 3758.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00941,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -172,7 +172,7 @@
 					"value": 0.745458
 				}
 			],
-			"cap": 0.00023148148148148146,
+			"cap": 0.00023148148148148,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -190,7 +190,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.745 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -222,20 +222,20 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'prickle' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 927.0,
+			"peak_mb": 890.0,
 			"route": "reduce",
 			"routes": {
-				"carry": 8,
-				"reduce": 16
+				"carry": 8.0,
+				"reduce": 16.0
 			},
-			"search_s": 2936.6000000000004,
-			"searched": "search",
+			"search_s": 3570.0,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "5961a687389dafbe16b4587fff46c28691bb009d48b134538320c6df530f219d"
 	}
 }

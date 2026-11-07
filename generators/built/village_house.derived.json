@@ -315,9 +315,9 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1440.0,
+			"peak_mb": 1444.0,
 			"route": "merged",
-			"search_s": 1972.8000000000002,
+			"search_s": 3690.5,
 			"searched": "recheck",
 			"surfaces": 12,
 			"surfaces_ceiling": 12
@@ -1112,10 +1112,10 @@
 				"KIT (its own build at the rung's pixel, keeping stone 0.490) held at 6636, dearer than the 5824 taken",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 23974, dearer than the 5824 taken"
 			],
-			"peak_mb": 1465.0,
+			"peak_mb": 1467.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 1418.1000000000001,
+			"search_s": 2711.2000000000003,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -1175,9 +1175,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 1540.0,
+			"peak_mb": 1541.0,
 			"route": "impostor",
-			"search_s": 228.8,
+			"search_s": 423.8,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -1187,7 +1187,7 @@
 	},
 	"source": {
 		"children": "75358241ffd909f56249a838b0cc878bad3b15b04c3672106d5f57a03205aafc",
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "61a29a0d7f0d15b2742afef70a80952639d45589dc3d7ccfda176d4e514755f1"
 	}
 }

@@ -43,11 +43,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 8,
+				"candidates": 1,
 				"trace": "food__pickled-herring#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 12,
+				"candidates": 13,
 				"trace": "food__pickled-herring#2.trace.jsonl"
 			}
 		}
@@ -68,11 +68,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 13620,
+					"cost": 13620.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004030000000000001,
-					"px_over": 5,
+					"picture": 0.00403,
+					"px_over": 5.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -86,7 +86,7 @@
 					"value": 0.295707
 				}
 			],
-			"cap": 0.0016905875180107917,
+			"cap": 0.00169058751801079,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -103,7 +103,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.296 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -141,13 +141,13 @@
 				"KIT: none holds at 0.0034 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00130 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 319.0,
+			"peak_mb": 314.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 100
+				"reduce": 100.0
 			},
-			"search_s": 434.3,
-			"searched": "search",
+			"search_s": 539.8000000000001,
+			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11
 		},
@@ -349,19 +349,19 @@
 				"KIT at 2 pixels: none holds at 0.0135 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 9 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00519 m; coverage changes -0.0821 against 0.0690 allowed (a one-pixel shrink all round)",
 				"REDUCE to its error cap 0.125x the band's (0.296 kept), carried from rung 1 held at 13350, dearer than the 7524 taken"
 			],
-			"peak_mb": 317.0,
+			"peak_mb": 315.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 100
 			},
-			"search_s": 307.40000000000003,
+			"search_s": 613.5,
 			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "7931a854fb19ed33c0212dd418fd7dc3b5b3cd84870f4e45063f04efe0a727e3"
 	}
 }

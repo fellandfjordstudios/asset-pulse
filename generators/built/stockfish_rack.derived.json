@@ -92,11 +92,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 1,
 				"trace": "built__stockfish-rack#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 38,
+				"candidates": 0,
 				"trace": "built__stockfish-rack#2.trace.jsonl"
 			},
 			"3": {
@@ -122,11 +122,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 15158,
+					"cost": 15158.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00478,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -153,7 +153,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -184,13 +184,13 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 728.0,
+			"peak_mb": 672.0,
 			"route": "merged",
 			"routes": {
-				"reduce": 2
+				"reduce": 2.0
 			},
-			"search_s": 813.9000000000001,
-			"searched": "search",
+			"search_s": 788.3000000000001,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -198,13 +198,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 96,
+					"px_over": 96.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 2332,
@@ -214,12 +214,12 @@
 					"px_over": null,
 					"route": "kit",
 					"value": {
-						"knot": 0.11764899999999995,
+						"knot": 0.11764899999999996,
 						"peg": 0.7
 					}
 				},
 				{
-					"cost": 13476,
+					"cost": 13476.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00478,
@@ -228,7 +228,7 @@
 					"value": 0.48999999999999994
 				},
 				{
-					"cost": 9944,
+					"cost": 9944.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00478,
@@ -248,13 +248,13 @@
 			"fraction": 1.0,
 			"from_rung": 0,
 			"keep": {
-				"knot": 0.11764899999999995,
+				"knot": 0.11764899999999996,
 				"peg": 0.7
 			},
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping knot 0.118, peg 0.700)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -594,10 +594,10 @@
 				"REDUCE (every piece) to 0.700 held at 9944, dearer than the 2332 taken",
 				"MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490), carried from rung 1 held at 13476, dearer than the 2332 taken"
 			],
-			"peak_mb": 828.0,
+			"peak_mb": 680.0,
 			"route": "kit",
-			"search_s": 977.8000000000001,
-			"searched": "search",
+			"search_s": 566.1,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -627,12 +627,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 24
 				}
 			],
 			"checked_at": 12,
@@ -656,10 +656,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 801.0,
+			"peak_mb": 763.0,
 			"route": "impostor",
-			"search_s": 368.40000000000003,
-			"searched": "search",
+			"search_s": 740.7,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -668,7 +668,7 @@
 	},
 	"source": {
 		"children": "2129ea740a69356f7f8c63e19e1ff49b6174ad94273d78ba5bc0f35d65f1ce4b",
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "e6975f2a0eab575cf32486dcc2b6a8abfd1090eb26501ad6165b78b797227684"
 	}
 }

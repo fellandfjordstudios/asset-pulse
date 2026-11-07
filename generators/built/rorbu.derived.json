@@ -391,9 +391,9 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 505.0,
+			"peak_mb": 506.0,
 			"route": "kit",
-			"search_s": 4005.6000000000004,
+			"search_s": 7794.8,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -1511,10 +1511,10 @@
 				"KIT (its own build at the rung's pixel) held at 8306, dearer than the 4024 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 17126, dearer than the 4024 taken"
 			],
-			"peak_mb": 576.0,
+			"peak_mb": 575.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 1847.2,
+			"search_s": 3639.1000000000004,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -1574,9 +1574,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 708.0,
+			"peak_mb": 709.0,
 			"route": "impostor",
-			"search_s": 439.8,
+			"search_s": 841.4000000000001,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -1586,7 +1586,7 @@
 	},
 	"source": {
 		"children": "fbd55520c594615d5eb77c65676084fd1f7c2e206ce4dfca6d0154aa097ec468",
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "ec508f0fb6bc45f7f684a75674576cc388ec3ad1d2bc2697cbb519f87635644f"
 	}
 }

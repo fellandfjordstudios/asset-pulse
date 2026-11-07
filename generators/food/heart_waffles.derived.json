@@ -38,6 +38,9 @@
 		"params": {},
 		"seed": 314
 	},
+	"replay": {
+		"1": "dc670e08ca488bb002cfdfa0a5b9ec196fbc449cb019aa6027dba0d7ae5800fc"
+	},
 	"rungs": {
 		"1": {
 			"budget": 2860,
@@ -97,21 +100,22 @@
 			"measured_of": 2,
 			"not_taken": [
 				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 148376, dearer than the 10682 taken"
 			],
-			"peak_mb": 457.0,
+			"peak_mb": 454.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 8
 			},
-			"search_s": 700.6,
+			"search_s": 556.8000000000001,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "2bf60bb9b05c449b41353b0560e18fcef8588e350f53a5a440fb08d24192a7c1"
 	}
 }

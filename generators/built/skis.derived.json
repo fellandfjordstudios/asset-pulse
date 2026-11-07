@@ -136,12 +136,12 @@
 				"MERGED, THIN: not searched -- the look past the first that held (CHILD (its welded children at their own rungs {\"built/skis-pole\":0,\"built/skis-ski\":1})) is 1 route(s)",
 				"CHILD (its welded children at their own rungs {\"built/skis-pole\":0,\"built/skis-ski\":1}) held at 4564, dearer than the 4550 taken"
 			],
-			"peak_mb": 312.0,
+			"peak_mb": 313.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 14.8,
+			"search_s": 27.200000000000003,
 			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9
@@ -315,12 +315,12 @@
 				"THIN: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0463 against 0.0450 allowed (a one-pixel shrink all round)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.276 kept), carried from rung 1 held at 4550, dearer than the 3966 taken"
 			],
-			"peak_mb": 312.0,
+			"peak_mb": 313.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 94.10000000000001,
+			"search_s": 191.5,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -380,9 +380,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 312.0,
+			"peak_mb": 313.0,
 			"route": "impostor",
-			"search_s": 15.600000000000001,
+			"search_s": 31.400000000000002,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -392,7 +392,7 @@
 	},
 	"source": {
 		"children": "c7f57c8e0efa776274a86eed013517e0fd1e0769d447cbe2fd447d6cc04288a6",
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "90570db34a3aae8490f0271fb745f5cb9f923afa2875eaeedca33a50cb3fbbda"
 	}
 }

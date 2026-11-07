@@ -149,12 +149,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.05: 184 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"peak_mb": 306.0,
+			"peak_mb": 309.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 11.0
 			},
-			"search_s": 56.800000000000004,
+			"search_s": 110.80000000000001,
 			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11
@@ -214,9 +214,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 323.0,
+			"peak_mb": 325.0,
 			"route": "impostor",
-			"search_s": 62.900000000000006,
+			"search_s": 121.4,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -226,7 +226,7 @@
 	},
 	"source": {
 		"children": "cb51b65ba592095c36c8501bc984d0e0bccea378f3cf5f302896c11c5fde48db",
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "94a4e3a5796cd4aa0dfdb54a5255384b89659a59aa6e558ca81d5652efdbe97b"
 	}
 }
