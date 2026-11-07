@@ -227,12 +227,12 @@
 				"KIT: none holds at 0.0040 -- the finest tried (1.000) fails at {\"span_m\":2.0} seed 314: the picture changes at the drawn size: 2732 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.88), one pixel 0.00803 m; coverage changes -0.0502 against 0.0369 allowed (a one-pixel shrink all round)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 383.0,
+			"peak_mb": 384.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 6.0
 			},
-			"search_s": 62.800000000000004,
+			"search_s": 62.1,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -735,7 +735,7 @@
 			"routes": {
 				"reduce": 6.0
 			},
-			"search_s": 72.4,
+			"search_s": 63.5,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -795,9 +795,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 410.0,
+			"peak_mb": 411.0,
 			"route": "impostor",
-			"search_s": 11.700000000000001,
+			"search_s": 11.200000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -805,7 +805,7 @@
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "b4603c0f85aafc9b8d7c7ef2bf89c1fa91fc1f2c9eff261cb310ecafb7bc6c05"
 	}
 }

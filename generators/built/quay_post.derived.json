@@ -197,7 +197,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 18,
 				"trace": "built__quay-post#1.trace.jsonl"
 			}
 		}
@@ -231,6 +231,15 @@
 					"px_over": 5,
 					"route": "reduce",
 					"value": 0.7
+				},
+				{
+					"cost": 57016,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.14864000000000002,
+					"px_over": null,
+					"route": "thin",
+					"value": 0.24009999999999992
 				}
 			],
 			"checked_at": 27,
@@ -272,11 +281,11 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.00: 12158 pixel(s) differ at the drawn size at {} seed 314 (worst 0.78)",
 				"REDUCE from rung 0 at {} seed 314: element 30000's part 'wrack' is 31 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 89 more groups)",
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00177 m; the error ladder: none holds at 0.0019",
-				"THIN: built/quay-post does not declare `reads_density`"
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1104.0,
+			"peak_mb": 1089.0,
 			"route": "kit",
-			"search_s": 2632.1000000000004,
+			"search_s": 2311.7000000000003,
 			"searched": "search",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
@@ -284,7 +293,7 @@
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
-		"generator": "3a545c4bacac92fc9a242db523f0c630ee127c97d2b5e3b2d30051a85ba8da97"
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"generator": "749c43955e23d216767b7ec2c53b10d5a4bd107417c404b350c4dd14ee3a39ab"
 	}
 }

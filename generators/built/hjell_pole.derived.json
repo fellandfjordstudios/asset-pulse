@@ -219,12 +219,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 24 pixel(s) differ at the drawn size at {} seed 314 (worst 0.97)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1121.0,
+			"peak_mb": 1124.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 318.8,
+			"search_s": 309.20000000000005,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -708,16 +708,16 @@
 				"CARRIED from rung 1, REDUCE to 0.240, carried from rung 1: candidate emits 1 opposing duplicate faces",
 				"REDUCE to its error cap 0.0625x the band's (0.160 kept) held at 784, dearer than the 628 taken"
 			],
-			"peak_mb": 1089.0,
+			"peak_mb": 1092.0,
 			"route": "kit",
-			"search_s": 202.8,
+			"search_s": 170.3,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "e6da475d58189b62b60d909a80b0042f8598d14832021b06ee4880cc0c888d80"
 	}
 }

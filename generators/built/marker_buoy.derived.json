@@ -122,9 +122,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: built/marker-buoy does not declare `reads_density`"
 			],
-			"peak_mb": 276.0,
+			"peak_mb": 277.0,
 			"route": "rung0",
-			"search_s": 48.800000000000004,
+			"search_s": 42.300000000000004,
 			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9,
@@ -185,9 +185,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 276.0,
+			"peak_mb": 277.0,
 			"route": "impostor",
-			"search_s": 50.2,
+			"search_s": 42.7,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -196,7 +196,7 @@
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "b4f0dace19abbd5ed3b569027f689960ce9093dfeb7ec46b6c74c99098c21f98"
 	}
 }

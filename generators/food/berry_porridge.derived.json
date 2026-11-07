@@ -121,19 +121,20 @@
 			"not_taken": [
 				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED (its parts at their own rungs, joined) held at 23507, dearer than the 7845 taken"
 			],
-			"peak_mb": 319.0,
+			"peak_mb": 321.0,
 			"route": "kit",
-			"search_s": 499.40000000000003,
+			"search_s": 469.70000000000005,
 			"searched": "search",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
 		}
 	},
 	"source": {
-		"children": "13f6c10dc395859f90849c24c9564ecf9978655d866b116acd1f8e96102eec9c",
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"children": "fb61b1c4f98bd2009c8b93b89b3f2d7a418f4cb81cc74da4a1f97ceaa5f8843c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "ef366bc1b424f41f0fd3466920c91b40c853bf3394c43477801a993a02bf860c"
 	}
 }

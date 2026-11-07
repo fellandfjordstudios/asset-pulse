@@ -195,9 +195,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to 0.700 held at 582, cheaper than the 622 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 323.0,
+			"peak_mb": 324.0,
 			"route": "kit",
-			"search_s": 239.4,
+			"search_s": 229.20000000000002,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -609,9 +609,9 @@
 				"REDUCE (every piece) to its error cap 0.5x the band's (0.678 kept) held at 422, cheaper than the 622 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 622, the same cost as the route taken, found first"
 			],
-			"peak_mb": 323.0,
+			"peak_mb": 324.0,
 			"route": "kit",
-			"search_s": 118.80000000000001,
+			"search_s": 103.7,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -1020,16 +1020,16 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 622, dearer than the 218 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 622, dearer than the 218 taken"
 			],
-			"peak_mb": 323.0,
+			"peak_mb": 324.0,
 			"route": "kit",
-			"search_s": 66.3,
+			"search_s": 58.7,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "b4e212213612f9b911f79b07adc40a93a7136c80f3e8d7143891177d34fcea79"
 	}
 }

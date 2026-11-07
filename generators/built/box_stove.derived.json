@@ -67,7 +67,7 @@
 	"replay": {
 		"1": "ca09b4f53399371cada66cc10929d0d7c487d6925859c7fd6486a27fe610799c",
 		"2": "e3e1258e07111ec4b94fac87a69d4e02e910b5ef4dea416cd4d5c74bc939639e",
-		"3": "818aeaba55542a60a6fbf7c663201dcc93957af6d82063aa668d7e4e9fe6218d"
+		"3": "b90e69773c71079eee518b8d6fac168cf2980d9813cff5b96def37247de0d844"
 	},
 	"rungs": {
 		"1": {
@@ -133,9 +133,9 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastener 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to its error cap 0.125x the band's (0.985 kept) held at 6334, dearer than the 2666 taken"
 			],
-			"peak_mb": 320.0,
+			"peak_mb": 321.0,
 			"route": "kit",
-			"search_s": 175.5,
+			"search_s": 169.60000000000002,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -340,12 +340,12 @@
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 2 pixel(s) differ at the drawn size at {} seed 314 (worst 1.00)",
 				"KIT (its own build at the rung's pixel, keeping fastener 0.031), carried from rung 1 held at 2666, dearer than the 1840 taken"
 			],
-			"peak_mb": 265.0,
+			"peak_mb": 266.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 47.0
 			},
-			"search_s": 218.70000000000002,
+			"search_s": 189.5,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
@@ -526,6 +526,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 1206,
 				"coverage_rel": -0.009080000000000001,
@@ -544,16 +545,16 @@
 				"KIT (its own build at the rung's pixel, keeping fastener 0.031), carried from rung 1 held at 2666, dearer than the 1206 taken",
 				"REDUCE to 0.700, carried from rung 2 held at 1830, dearer than the 1206 taken"
 			],
-			"peak_mb": 265.0,
+			"peak_mb": 267.0,
 			"route": "kit",
-			"search_s": 26.1,
+			"search_s": 110.7,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "704a563a449a3eeda0888aa524dbfa0a9f9667a82d1f329565fcf7e44b627c93"
 	}
 }

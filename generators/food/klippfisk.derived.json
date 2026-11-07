@@ -43,7 +43,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 21,
+				"candidates": 1,
 				"trace": "food__klippfisk#1.trace.jsonl"
 			},
 			"2": {
@@ -68,11 +68,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 21532,
+					"cost": 21532.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004070000000000001,
-					"px_over": 4,
+					"picture": 0.00407,
+					"px_over": 4.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -86,11 +86,11 @@
 					"value": 0.281368
 				}
 			],
-			"cap": 0.0006483403131571386,
+			"cap": 0.00064834031315713,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 26110,
+				"cost": 26110.0,
 				"fraction": 0.48999999999999994
 			},
 			"chains": {
@@ -109,7 +109,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.281 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -145,10 +145,10 @@
 			"peak_mb": 370.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 173
+				"reduce": 173.0
 			},
-			"search_s": 329.5,
-			"searched": "search",
+			"search_s": 183.4,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		},
@@ -209,7 +209,7 @@
 			],
 			"peak_mb": 370.0,
 			"route": "impostor",
-			"search_s": 119.0,
+			"search_s": 217.70000000000002,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -218,7 +218,7 @@
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "590d8519c5a66b4ffa72eec91948be45e7acbe67d665cd0fa0e42ee5df3d2da5"
 	}
 }

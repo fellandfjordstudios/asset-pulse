@@ -228,9 +228,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.992 kept) held at 3220, dearer than the 1700 taken"
 			],
-			"peak_mb": 356.0,
+			"peak_mb": 358.0,
 			"route": "kit",
-			"search_s": 671.9000000000001,
+			"search_s": 637.7,
 			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -774,17 +774,17 @@
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.584 kept) held at 1896, dearer than the 1478 taken",
 				"KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700), carried from rung 1 held at 1700, dearer than the 1478 taken"
 			],
-			"peak_mb": 292.0,
+			"peak_mb": 294.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 1462.7,
+			"search_s": 1230.5,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "b1da9acf4da66bc359aea571838625c0d2d4ada9b7f724f22f40e5b8cac287a7"
 	}
 }

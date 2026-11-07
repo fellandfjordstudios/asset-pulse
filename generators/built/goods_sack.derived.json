@@ -146,12 +146,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 3's part 'cloth' is 112 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 1 across 5 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 465.0,
+			"peak_mb": 466.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 185.4,
+			"search_s": 180.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -382,12 +382,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.953 kept), carried from rung 1 held at 7434, dearer than the 4160 taken"
 			],
-			"peak_mb": 465.0,
+			"peak_mb": 466.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 306.6,
+			"search_s": 281.8,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -618,19 +618,19 @@
 				"REDUCE (every piece) to its error cap 0.0078x the band's (0.953 kept), carried from rung 1 held at 7434, dearer than the 208 taken",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.533 kept), carried from rung 2 held at 4160, dearer than the 208 taken"
 			],
-			"peak_mb": 465.0,
+			"peak_mb": 466.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 37.0,
+			"search_s": 32.300000000000004,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "2c4b76031dac402c66146e4f5bcef1b84cc608cd9662d6165de456a6a21de932"
 	}
 }

@@ -141,9 +141,9 @@
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: animal/arctic-char does not declare `reads_density`"
 			],
-			"peak_mb": 318.0,
+			"peak_mb": 319.0,
 			"route": "rung0",
-			"search_s": 102.9,
+			"search_s": 96.9,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
@@ -466,19 +466,19 @@
 				"REDUCE from rung 0 at {\"cooked\":1} seed 314: element 0's part 'body' is 123 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)"
 			],
-			"peak_mb": 345.0,
+			"peak_mb": 346.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 26.0
 			},
-			"search_s": 664.8000000000001,
+			"search_s": 576.9,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "318b58c4c4777ca6ec90edf9529842b413d65dd16f4d815eb18ae314b1959572"
 	}
 }

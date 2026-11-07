@@ -1,0 +1,216 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.4
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.5
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"guard_fitted": 1
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
+		}
+	],
+	"effort": "full",
+	"id": "built/hand-axe",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"structural",
+			"seed",
+			"seed"
+		],
+		"old_key_sets": 6,
+		"sampled": 6,
+		"sets": 4
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 10,
+				"trace": "built__hand-axe#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 15,
+				"trace": "built__hand-axe#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "e0298dde09db34c4e007f5a80f71a8fa4fbc8bf3398bf6b99853ef18e3312e2b",
+		"2": "0bcb6936281e204481de67d75619e7e29819a713870f4b7d085c5bfc9fbdb8a3"
+	},
+	"rungs": {
+		"1": {
+			"budget": 15429,
+			"candidates": [
+				{
+					"cost": 9168,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 2150,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.152742
+				}
+			],
+			"checked_at": 6,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.001267
+			},
+			"error": 0.0028815125029206163,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"merged",
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
+			},
+			"measured": {
+				"cost": 9168,
+				"coverage_rel": -0.0034400000000000003,
+				"floor": 0.00398,
+				"part_shift": {
+					"brass": 1e-05,
+					"edge": -0.00037000000000000005,
+					"leather": -0.00036,
+					"steel": -0.00393,
+					"stitch": 2e-05,
+					"wood": 0.0048200000000000005
+				},
+				"picture": 0.00398
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"REDUCE from rung 0 at {} seed 314: element 4's part 'stitch' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"REDUCE (every piece) to its error cap 0.5x the band's (0.153 kept) held at 2150, cheaper than the 9168 taken, but a replay of rung 0: KIT is within budget and builds directly"
+			],
+			"peak_mb": 333.0,
+			"route": "kit",
+			"search_s": 169.0,
+			"searched": "search",
+			"surfaces": 6,
+			"surfaces_ceiling": 6
+		},
+		"2": {
+			"atlas_bytes": 37748736,
+			"atlas_profiles": {
+				"native-desktop": {
+					"budget_mb": 2048.0,
+					"compressed_mb": 9.44,
+					"refused": false,
+					"rgba8_mb": 37.75
+				},
+				"native-mobile": {
+					"budget_mb": 256.0,
+					"compressed_mb": 9.44,
+					"refused": false,
+					"rgba8_mb": 37.75
+				},
+				"web": {
+					"budget_mb": 256.0,
+					"compressed_mb": 9.44,
+					"refused": false,
+					"rgba8_mb": 37.75
+				}
+			},
+			"budget": 3857,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": true,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": null,
+					"route": "impostor",
+					"value": 24
+				}
+			],
+			"checked_at": 6,
+			"draw_calls": 1,
+			"drawn": {
+				"excess": 0.4405,
+				"judge": "drawn",
+				"why": "an impostor is judged at the drawn size, its frames blended"
+			},
+			"error": 0.011526050011682465,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 2,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {},
+				"picture": -1.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
+			],
+			"peak_mb": 333.0,
+			"route": "impostor",
+			"search_s": 64.10000000000001,
+			"searched": "recheck",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tiles": 24
+		}
+	},
+	"source": {
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"generator": "8544d246462c31117cf55224809a37f440b65054b529e292ffa8b24ec2836c04"
+	}
+}

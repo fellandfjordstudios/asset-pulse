@@ -1,0 +1,192 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"diameter_m": 0.23
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"diameter_m": 0.28
+			},
+			"seed": 314
+		}
+	],
+	"effort": "full",
+	"id": "built/cast-iron-pot",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural"
+		],
+		"old_key_sets": 3,
+		"sampled": 3,
+		"sets": 3
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 0,
+				"trace": "built__cast-iron-pot#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 13,
+				"trace": "built__cast-iron-pot#2.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "4552b2d0383f3d82c15a884f47a13c2fcf98d5a867267c96ca2caa86bd3a4753",
+		"2": "c1c6ecfc53bfd65c9b7b5db0f24d29209814f80028045edc0781d36b7ba1f7b1"
+	},
+	"rungs": {
+		"1": {
+			"budget": 10173,
+			"candidates": [
+				{
+					"cost": 4184,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.004090000000000001,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 1474.0,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00409,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.202974
+				}
+			],
+			"checked_at": 3,
+			"drawn": {
+				"excess": 0.1875,
+				"judge": "drawn",
+				"pixel_m": 0.001297
+			},
+			"error": 0.0036341945804772343,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"keep": {},
+			"look_past": {
+				"beaten": true,
+				"first": "KIT (its own build at the rung's pixel)",
+				"looked": 1.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"merged",
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
+			},
+			"measured": {
+				"cost": 4184,
+				"coverage_rel": -0.0014600000000000001,
+				"floor": 0.004090000000000001,
+				"part_shift": {},
+				"picture": 0.004090000000000001
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"IMPOSTOR: skipped by the prior -- judged 8 times for solid subjects at band 1 across 8 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
+				"REDUCE to its error cap 1.0x the band's (0.203 kept) held at 1474, cheaper than the 4184 taken, but a replay of rung 0: KIT is within budget and builds directly"
+			],
+			"peak_mb": 265.0,
+			"route": "kit",
+			"search_s": 56.300000000000004,
+			"searched": "recheck",
+			"surfaces": 5,
+			"surfaces_ceiling": 5
+		},
+		"2": {
+			"atlas_bytes": 37748736,
+			"atlas_profiles": {
+				"native-desktop": {
+					"budget_mb": 2048.0,
+					"compressed_mb": 9.44,
+					"refused": false,
+					"rgba8_mb": 37.75
+				},
+				"native-mobile": {
+					"budget_mb": 256.0,
+					"compressed_mb": 9.44,
+					"refused": false,
+					"rgba8_mb": 37.75
+				},
+				"web": {
+					"budget_mb": 256.0,
+					"compressed_mb": 9.44,
+					"refused": false,
+					"rgba8_mb": 37.75
+				}
+			},
+			"budget": 2543,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": true,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": null,
+					"route": "impostor",
+					"value": 24
+				}
+			],
+			"checked_at": 3,
+			"draw_calls": 1,
+			"drawn": {
+				"excess": 0.42900000000000005,
+				"judge": "drawn",
+				"why": "an impostor is judged at the drawn size, its frames blended"
+			},
+			"error": 0.014536778321908937,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"measured": {
+				"cost": 2,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {},
+				"picture": -1.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
+			],
+			"peak_mb": 252.0,
+			"route": "impostor",
+			"search_s": 61.400000000000006,
+			"searched": "recheck",
+			"source_pixel_scale": 8.0,
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tiles": 24
+		}
+	},
+	"source": {
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"generator": "4b6e6a7007078b8107b5f9242a6f7047cbfa799d5da437a6816e2e3f07f4ca3d"
+	}
+}

@@ -442,7 +442,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 7,
+				"candidates": 1,
 				"trace": "built__rockfall-shelter#1.trace.jsonl"
 			}
 		}
@@ -471,16 +471,16 @@
 					"value": 0.608533
 				},
 				{
-					"cost": 2162,
+					"cost": 2162.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004690000000000001,
-					"px_over": 24,
+					"picture": 0.00469,
+					"px_over": 24.0,
 					"route": "thin",
 					"value": 0.7
 				}
 			],
-			"cap": 0.0009259259259259261,
+			"cap": 0.00092592592592592,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -498,7 +498,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.609 kept)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -528,19 +528,19 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'roof' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {\"bays\":1} seed 314: the picture changes at the drawn size: 24 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00459 m"
 			],
-			"peak_mb": 2187.0,
+			"peak_mb": 2079.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 7
+				"reduce": 7.0
 			},
-			"search_s": 2874.7000000000003,
-			"searched": "search",
+			"search_s": 2492.5,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "5349d539507f9f93154559af6329db7e14da00de64a66f0c8f7cfe63dc5f0a65"
 	}
 }

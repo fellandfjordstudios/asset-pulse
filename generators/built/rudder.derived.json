@@ -118,9 +118,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to 0.240 held at 290, cheaper than the 672 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 302.0,
+			"peak_mb": 303.0,
 			"route": "kit",
-			"search_s": 36.5,
+			"search_s": 36.2,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -294,9 +294,9 @@
 				"REDUCE to its error cap 0.25x the band's (0.300 kept) held at 290, cheaper than the 436 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 672, dearer than the 436 taken"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 246.0,
 			"route": "kit",
-			"search_s": 49.1,
+			"search_s": 41.6,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -356,9 +356,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 246.0,
 			"route": "impostor",
-			"search_s": 8.0,
+			"search_s": 7.5,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -367,7 +367,7 @@
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "3634c6f01d4c437828ea77ded59ce48581e8f6dd07f64c83bf0e22e1a27b8710"
 	}
 }
