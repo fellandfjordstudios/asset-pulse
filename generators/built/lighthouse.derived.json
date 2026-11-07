@@ -64,11 +64,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 12,
 				"trace": "built__lighthouse#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 42,
 				"trace": "built__lighthouse#2.trace.jsonl"
 			},
 			"3": {
@@ -105,7 +105,7 @@
 			"checked_at": 8,
 			"drawn": {
 				"excess": 0.5,
-				"gap": 0.474,
+				"gap": 0.47400000000000003,
 				"judge": "drawn",
 				"pixel_m": 0.024413999999999998
 			},
@@ -118,7 +118,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping rivet 0.240)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -140,15 +140,15 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 14 times for solid subjects at band 1 across 14 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"CHILD: span 'built/lighthouse-lantern r0 6d5e6eb2' is 502 triangles and its child rebuilt is 1040: not a placed copy",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.240)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 342.0,
+			"peak_mb": 718.0,
 			"route": "kit",
-			"search_s": 231.10000000000002,
-			"searched": "recheck",
+			"search_s": 680.0,
+			"searched": "search",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		},
@@ -156,13 +156,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 2.0,
+					"px_over": 2,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
 					"cost": 1423,
@@ -196,7 +196,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping post 0.168, block 0.700, rivet 0.031)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -204,9 +204,6 @@
 					"impostor",
 					"merged",
 					"thin"
-				],
-				"skipped_by_prior": [
-					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -436,16 +433,15 @@
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0 at 4x its pixel: 4 pixel(s) differ at {} seed 314 (worst 0.52)",
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0: 2 pixel(s) differ at {} seed 314 (worst 0.50)",
 				"CHILD: span 'built/lighthouse-lantern r0 6d5e6eb2' is 502 triangles and its child rebuilt is 1040: not a placed copy",
-				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
-				"REDUCE, MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping post 0.168, block 0.700, rivet 0.031)) is 1 route(s), and the one looked at did not improve on it",
+				"REDUCE, MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping post 0.168, block 0.700, rivet 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel, keeping post 0.168, block 0.700, rivet 0.031) held at 1553, dearer than the 1423 taken",
 				"KIT (its own build at the rung's pixel, keeping rivet 0.240), carried from rung 1 held at 8741, dearer than the 1423 taken"
 			],
-			"peak_mb": 301.0,
+			"peak_mb": 505.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 136.1,
-			"searched": "recheck",
+			"search_s": 613.9,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -475,12 +471,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 1,
 					"route": "impostor",
-					"value": 12
+					"value": 6
 				}
 			],
 			"checked_at": 8,
@@ -504,10 +500,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 301.0,
+			"peak_mb": 505.0,
 			"route": "impostor",
-			"search_s": 75.7,
-			"searched": "recheck",
+			"search_s": 80.80000000000001,
+			"searched": "search",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -517,6 +513,6 @@
 	"source": {
 		"children": "63865d8cdffb5a170f2980ce9c8a72840943ff3a85183485d09c0b8b8c065b60",
 		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
-		"generator": "a4bae2b93390263a329f84bae0f2b0d0f4ae331031d17ac1f6c0d28bd15a4f81"
+		"generator": "f788cbfe5b6537eed7921faa7ffe5bd23149ae112de309fd0901171e9f904800"
 	}
 }

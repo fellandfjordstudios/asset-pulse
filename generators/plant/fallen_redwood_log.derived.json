@@ -309,7 +309,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "plant__fallen-redwood-log#1.trace.jsonl"
 			}
 		}
@@ -338,11 +338,11 @@
 					"value": 0.129243
 				}
 			],
-			"cap": 0.0009259259259259259,
+			"cap": 0.00092592592592592,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 75088,
+				"cost": 75088.0,
 				"fraction": 0.48999999999999994
 			},
 			"chains": {
@@ -361,7 +361,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.129 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -390,19 +390,19 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'bark' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 2314.0,
+			"peak_mb": 1165.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5
+				"reduce": 5.0
 			},
-			"search_s": 3803.9,
-			"searched": "search",
+			"search_s": 86.10000000000001,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "bc667f5767c0477e02ba4583c55e5e751128d7a2cce406e3872e075497976df7"
 	}
 }

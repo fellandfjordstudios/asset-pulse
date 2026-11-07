@@ -179,12 +179,12 @@
 				"CHILD: span 'food/twist-bread-coil r0 f448dd6d' is 2680 triangles and its child rebuilt is 3260: not a placed copy",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 477.0,
+			"peak_mb": 479.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 54.7,
+			"search_s": 100.9,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -538,12 +538,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"CARRIED from rung 1, REDUCE to 0.343, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 11 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00593 m; coverage changes -0.1105 against 0.0450 allowed (a one-pixel shrink all round)"
 			],
-			"peak_mb": 477.0,
+			"peak_mb": 479.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 331.5,
+			"search_s": 644.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -603,9 +603,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 477.0,
+			"peak_mb": 479.0,
 			"route": "impostor",
-			"search_s": 2.5,
+			"search_s": 4.7,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -615,7 +615,7 @@
 	},
 	"source": {
 		"children": "25f39b7f8d39b5d81abfa748fa52f402aff73bd47af7278ea31176ceb22a011e",
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "b017f23dda3f7d5a2b03a9e03087dad6787e74c6d85b02c6c818d01106e05472"
 	}
 }

@@ -124,7 +124,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 14,
+				"candidates": 1,
 				"trace": "built__supply-depot#1.trace.jsonl"
 			}
 		}
@@ -134,18 +134,18 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "d6a6f040ef6f533997362fe56784d96dd0fe648e809d16de24f1ba5e4764758d"
+		"1": "309ca7b23d7b1533483978e7982a1eedf7451d60ba4a365b46b23b2428c9b8c2"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 36089,
+					"cost": 36089.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00411,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -171,7 +171,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -188,21 +188,7 @@
 				"cost": 42685,
 				"coverage_rel": -0.00141,
 				"floor": 0.004710000000000001,
-				"part_shift": {
-					"bundle": 7.000000000000001e-05,
-					"bundle_ink": 2e-05,
-					"bundle_seam": 3.0000000000000004e-05,
-					"cover": 0.0007700000000000001,
-					"flag": 3.0000000000000004e-05,
-					"lashing": 4e-05,
-					"paint": -0.00035000000000000005,
-					"paraffin": 5e-05,
-					"pole": 2e-05,
-					"stone": -0.0005200000000000001,
-					"stopper": 0.0,
-					"tinplate": 0.0,
-					"washer": 0.0
-				},
+				"part_shift": {},
 				"picture": 0.004710000000000001
 			},
 			"measured_of": 1,
@@ -213,17 +199,17 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 968.0,
+			"peak_mb": 809.0,
 			"route": "merged",
-			"search_s": 1036.8,
-			"searched": "search",
-			"surfaces": 19,
+			"search_s": 1543.3000000000002,
+			"searched": "recheck",
+			"surfaces": 18,
 			"surfaces_ceiling": 23
 		}
 	},
 	"source": {
-		"children": "cf117311fc7e9c35aba4914f54cf517cd32b3255cfa565df8764d7a02e4a8d0a",
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"children": "25fbac4b1571e043489b3dbc4214e1e94cdfb7e5ddf9558f160e8192214d3b23",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "35414458b39619c427f5f0d16e89f7c97be65b463e1809e86748aa1f1931fc3c"
 	}
 }

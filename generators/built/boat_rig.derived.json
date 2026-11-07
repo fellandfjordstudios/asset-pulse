@@ -267,11 +267,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 17,
 				"trace": "built__boat-rig#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 30,
 				"trace": "built__boat-rig#2.trace.jsonl"
 			}
 		}
@@ -292,11 +292,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4704.0,
+					"cost": 4704,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.04795,
-					"px_over": 0.0,
+					"picture": 0.047950000000000007,
+					"px_over": 0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -310,7 +310,7 @@
 					"value": 0.8648309999999999
 				}
 			],
-			"cap": 0.00011574074074074,
+			"cap": 0.00011574074074074073,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -328,7 +328,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.865 kept)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -359,15 +359,15 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"mast_height_m\":4.0} seed 314: coverage changes -0.0274 against 0.0232 allowed (a one-pixel shrink all round); part 'fittings' changes its share of the picture by -0.0235 against 0.0232 allowed (its colour's share of the subject)",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.43: 135 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
 				"REDUCE from rung 0 at {} seed 314: element 10's part 'rope' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
-				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1323.0,
+			"peak_mb": 1353.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 22.0
+				"reduce": 22
 			},
-			"search_s": 707.1,
-			"searched": "recheck",
+			"search_s": 881.9000000000001,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -378,11 +378,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2716.0,
+					"cost": 2716,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.04183,
-					"px_over": 0.0,
+					"picture": 0.041830000000000006,
+					"px_over": 0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -394,9 +394,18 @@
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.8648309999999999
+				},
+				{
+					"cost": 2956,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.047950000000000007,
+					"px_over": 0,
+					"route": "thin",
+					"value": 0.7
 				}
 			],
-			"cap": 0.00011574074074074,
+			"cap": 0.00011574074074074073,
 			"carried_from": 1,
 			"chain": "error",
 			"chains": {
@@ -1311,7 +1320,13 @@
 				"cost": 5464,
 				"coverage_rel": -0.00284,
 				"floor": 0.00432,
-				"part_shift": {},
+				"part_shift": {
+					"fall": 4e-05,
+					"fittings": 0.00041000000000000005,
+					"iron": 1e-05,
+					"rope": 0.0011300000000000001,
+					"spar": -0.00151
+				},
 				"picture": 0.55117
 			},
 			"measured_of": 1,
@@ -1320,23 +1335,25 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 4 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"mast_height_m\":4.0} seed 314: coverage changes -0.0459 against 0.0450 allowed (a one-pixel shrink all round)",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 4 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
+				"REDUCE from rung 1, the derived band above at {} seed 314: element 10's part 'rope' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
 				"REDUCE from rung 0 at {} seed 314: element 10's part 'rope' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
+				"REDUCE (every piece) from rung 1, the derived band above: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0277 against 0.0227 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"mast_height_m\":4.0} seed 314: coverage changes -0.0227 against 0.0227 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
-				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)"
+				"THIN: none holds at 0.0074 -- the finest tried (0.700) fails at {\"mast_height_m\":4.0} seed 314: coverage changes -0.0394 against 0.0227 a derivation may change (its error read as a change of size)"
 			],
-			"peak_mb": 1365.0,
+			"peak_mb": 1364.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 22.0
+				"reduce": 22
 			},
-			"search_s": 2074.5,
-			"searched": "recheck",
+			"search_s": 2702.6000000000004,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
-		"generator": "f45298db3917a11f566d322d00535cea6e8ddfd3870031bc314634dc0eabc3b1"
+		"generator": "45ee221d643cbe66a772221c8d3fa3d64f03f351fe439756de66a2f2b6ddfcee"
 	}
 }

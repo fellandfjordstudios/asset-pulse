@@ -127,7 +127,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 16,
+				"candidates": 0,
 				"trace": "plant__fireweed-clump#1.trace.jsonl"
 			},
 			"2": {
@@ -158,11 +158,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 29072,
+					"cost": 29072.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.015510000000000001,
-					"px_over": 1,
+					"picture": 0.01551,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -170,8 +170,8 @@
 					"cost": 24082,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.011600000000000001,
-					"px_over": 7,
+					"picture": 0.020020000000000003,
+					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -182,26 +182,23 @@
 				"judge": "drawn",
 				"pixel_m": 0.002745
 			},
-			"error": 0.0018518518518518521,
+			"error": 0.00185185185185185,
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
 			"measured": {
 				"cost": 24082,
-				"coverage_rel": -0.02176,
-				"floor": 0.0044,
-				"part_shift": {
-					"leaf": 0.01076,
-					"petal": -0.00553,
-					"stem": -0.0053100000000000005
-				},
-				"picture": 0.011600000000000001
+				"coverage_rel": -0.02672,
+				"floor": 0.005,
+				"part_shift": {},
+				"picture": 0.020020000000000003
 			},
+			"measured_of": 1,
 			"miss": {
 				"cost_of_ceiling": 1.1287026621672291,
 				"judge": "drawn",
-				"picture_over": 6.263999999999999,
-				"px_over": 7,
+				"picture_over": 10.8108,
+				"px_over": 7.0,
 				"route": "reduce",
 				"tier": 3
 			},
@@ -214,13 +211,13 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/fireweed-clump does not declare `reads_density`"
 			],
-			"peak_mb": 433.0,
+			"peak_mb": 373.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 42
+				"reduce": 42.0
 			},
-			"search_s": 308.0,
-			"searched": "search",
+			"search_s": 150.6,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"tolerance": 0.0018518518518518521
@@ -705,52 +702,53 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'petal' is 98 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 41 more groups)",
 				"REDUCE (every piece) from rung 1, the derived band above: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.1046 against 0.0467 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0074",
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"patch_radius_m\":0.05} seed 314: coverage changes -0.0267 against 0.0232 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"CARRIED from rung 1, REDUCE (every piece) to 0.700, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {\"patch_radius_m\":0.05} seed 314: coverage changes -0.0267 against 0.0232 a derivation may change (its error read as a change of size)",
 				"THIN: plant/fireweed-clump does not declare `reads_density`"
 			],
-			"peak_mb": 431.0,
+			"peak_mb": 412.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 42
 			},
-			"search_s": 490.6,
+			"search_s": 945.6,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.0074074074074074086
 		},
 		"3": {
-			"atlas_bytes": 12845056,
+			"atlas_bytes": 16777216,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
-					"compressed_mb": 3.21,
+					"compressed_mb": 4.19,
 					"refused": false,
-					"rgba8_mb": 12.85
+					"rgba8_mb": 16.78
 				},
 				"native-mobile": {
 					"budget_mb": 256.0,
-					"compressed_mb": 3.21,
+					"compressed_mb": 4.19,
 					"refused": false,
-					"rgba8_mb": 12.85
+					"rgba8_mb": 16.78
 				},
 				"web": {
 					"budget_mb": 256.0,
-					"compressed_mb": 3.21,
+					"compressed_mb": 4.19,
 					"refused": false,
-					"rgba8_mb": 12.85
+					"rgba8_mb": 16.78
 				}
 			},
 			"budget": 1333,
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 16
 				}
 			],
 			"checked_at": 17,
@@ -774,10 +772,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 431.0,
+			"peak_mb": 403.0,
 			"route": "impostor",
-			"search_s": 104.4,
-			"searched": "search",
+			"search_s": 187.4,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -786,7 +784,7 @@
 	},
 	"source": {
 		"children": "0f155e6598819bd396f2c8ddeccc7d2a6f9fadfc5886533fffd390ded6616c26",
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "3f337bc696858db6863e5e0701da91816155ee0d4847cfcc63cb7cb4171174b9"
 	}
 }

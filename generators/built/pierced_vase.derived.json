@@ -96,7 +96,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 19,
 				"trace": "built__pierced-vase#1.trace.jsonl"
 			}
 		}
@@ -116,11 +116,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 12650.0,
+					"cost": 12650,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00411,
-					"px_over": 38.0,
+					"px_over": 38,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -135,9 +135,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.00064834031315713,
+				"cap": 0.0006483403131571386,
 				"chain": "error",
-				"cost": 29419.0
+				"cost": 29419
 			},
 			"chains": {
 				"error": "lost"
@@ -155,7 +155,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.700",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -182,19 +182,19 @@
 				"REDUCE from rung 0 at {} seed 314: part 'body' is 345 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 470.0,
+			"peak_mb": 484.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 1.0
+				"reduce": 1
 			},
-			"search_s": 512.6,
-			"searched": "recheck",
+			"search_s": 1141.3,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
 		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
-		"generator": "4054739b90de1cf5faf4f05a18db656eab09fab6d8d7e93db1f275e90d94935c"
+		"generator": "e0f94970b25489cc5055ec78b34940c05da97f0780f337b9d1518e926d3113b6"
 	}
 }

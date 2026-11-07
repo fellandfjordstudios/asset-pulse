@@ -212,9 +212,9 @@
 				"REDUCE (every piece) from rung 0: nothing to try; the error ladder: nothing to try",
 				"THIN: plant/birch-leaf-litter does not declare `reads_density`"
 			],
-			"peak_mb": 396.0,
+			"peak_mb": 397.0,
 			"route": "kit",
-			"search_s": 85.9,
+			"search_s": 163.5,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -682,9 +682,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping debris 0.700, vein 0.700), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 330 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00787 m",
 				"THIN: plant/birch-leaf-litter does not declare `reads_density`"
 			],
-			"peak_mb": 396.0,
+			"peak_mb": 397.0,
 			"route": "kit",
-			"search_s": 493.3,
+			"search_s": 959.9000000000001,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -758,7 +758,7 @@
 			],
 			"peak_mb": 556.0,
 			"route": "impostor",
-			"search_s": 208.5,
+			"search_s": 392.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -767,7 +767,7 @@
 	},
 	"source": {
 		"children": "42b6cf29bf657c07e78a4a067db4b7cfdd1e939e65106df0f60d68f9c7a0aea1",
-		"deriver": "848e8ccc9c14094943b2760a3b81100706e6073e292a6a052737ddc64e37e7c3",
+		"deriver": "e5c197e41cd912718c2d52b8b2a171e98883ffad6b258da294a89ce3d9e4bd6f",
 		"generator": "0ad64f06766eaf46ccfc26c141392ee204bf5cd9d7ab0b3428affa55c218b603"
 	}
 }

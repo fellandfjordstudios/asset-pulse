@@ -78,7 +78,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": -1,
 				"trace": "plant__heather#1.trace.jsonl"
 			},
 			"2": {
@@ -153,9 +153,9 @@
 				"REDUCE from rung 0 at {} seed 314: part 'litter' is 60 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 279 more groups)",
 				"BUDGET: the cheapest derivation that holds the picture costs 353426 (7.36x), over rung 1's budget 48007 x 1.5 = 72010 (shrub, 1.01 m)"
 			],
-			"peak_mb": 727.0,
+			"peak_mb": 744.0,
 			"route": "kit",
-			"search_s": 239.9,
+			"search_s": 467.1,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -496,9 +496,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping leaf 0.031, flower 0.343), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 163 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00751 m; part 'shoot' changes its share of the picture by +0.0989 against 0.0450 allowed (its colour's share of the subject); part 'floret' changes its share of the picture by -0.1155 against 0.0450 allowed (its colour's share of the subject)",
 				"THIN: plant/heather does not declare `reads_density`"
 			],
-			"peak_mb": 728.0,
+			"peak_mb": 710.0,
 			"route": "kit",
-			"search_s": 1427.9,
+			"search_s": 1058.2,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -506,7 +506,7 @@
 		}
 	},
 	"source": {
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "d0e0325deff1cf29e01f8955b944981fcf2beeefdd35384bcd80491899772ac9"
 	}
 }
