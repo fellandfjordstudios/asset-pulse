@@ -127,11 +127,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": -1,
+				"candidates": 1,
 				"trace": "stone__litter-stones#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 56,
+				"candidates": 7,
 				"trace": "stone__litter-stones#2.trace.jsonl"
 			}
 		}
@@ -161,7 +161,7 @@
 					"value": 0.29368299999999997
 				}
 			],
-			"cap": 0.0002314814814814815,
+			"cap": 0.00023148148148148,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -178,10 +178,10 @@
 			"ground": {
 				"albedo_linear": [
 					0.27590000000000003,
-					0.24580000000000002,
-					0.20140000000000002
+					0.2458,
+					0.2014
 				],
-				"band": 1,
+				"band": 1.0,
 				"coverage": 0.0585,
 				"luminance_sd": 0.0585,
 				"texel_m": 0.001883
@@ -189,7 +189,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.125x the band's (0.294 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"substitute",
 					"kit",
@@ -219,13 +219,13 @@
 				"SUBSTITUTE: skipped by the prior -- judged 3 times for field subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form field --band 1)",
 				"KIT: skipped by the prior -- judged 3 times for field subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form field --band 1)"
 			],
-			"peak_mb": 1667.0,
+			"peak_mb": 1495.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 610
+				"reduce": 610.0
 			},
-			"search_s": 699.6,
-			"searched": "search",
+			"search_s": 657.7,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		},
@@ -237,15 +237,6 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 14476,
-					"holds": false,
-					"judge": "drawn",
-					"picture": 0.01174,
-					"px_over": 0,
-					"route": "kit",
-					"value": 1.0
-				},
-				{
 					"cost": 48772,
 					"holds": true,
 					"judge": "drawn",
@@ -253,18 +244,9 @@
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.29368299999999997
-				},
-				{
-					"cost": 296,
-					"holds": false,
-					"judge": "field",
-					"picture": -1.0,
-					"px_over": 1,
-					"route": "substitute",
-					"value": 148
 				}
 			],
-			"cap": 0.0002314814814814815,
+			"cap": 0.00023148148148148,
 			"carried_from": 1,
 			"chain": "error",
 			"chains": {
@@ -724,21 +706,18 @@
 				"tier": 2
 			},
 			"not_taken": [
-				"SUBSTITUTE (cards): none holds by the field's judge; the last tried, 592 card(s) in 4 sets from 0 picture(s) a set, slabs 1/128 of the extent apart, at {} seed 314: colour, spread, edges apart { \"coverage\": 0.0747, \"colour\": 2.462, \"spread\": 0.2031, \"edges\": 0.2273 }, the tolerance { \"coverage\": 0.1, \"colour\": 2.3, \"spread\": 0.1, \"edges\": 0.1 }",
-				"KIT: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes +0.0723 against 0.0500 allowed (a one-pixel shrink all round); part 'fracture' changes its share of the picture by +0.0717 against 0.0500 allowed (its colour's share of the subject); part 'skin' changes its share of the picture by -0.0717 against 0.0500 allowed (its colour's share of the subject)",
-				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: candidate emits 3 opposing duplicate faces",
-				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes +0.0723 against 0.0500 allowed (a one-pixel shrink all round); part 'fracture' changes its share of the picture by +0.0717 against 0.0500 allowed (its colour's share of the subject); part 'skin' changes its share of the picture by -0.0717 against 0.0500 allowed (its colour's share of the subject)",
-				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: candidate emits 3 opposing duplicate faces",
+				"SUBSTITUTE: skipped by the prior -- judged 3 times for field subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form field --band 2)",
+				"KIT: skipped by the prior -- judged 3 times for field subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form field --band 2)",
 				"REDUCE from rung 1, the derived band above: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0343 against 0.0252 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
 				"REDUCE from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"roundness\":0.05} seed 314: coverage changes -0.0317 against 0.0252 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
 				"BUDGET: the cheapest derivation that holds the picture costs 48772 (4.57x), over rung 2's budget 10668 x 1.5 = 16002 (rock, 1.02 m)"
 			],
-			"peak_mb": 1192.0,
+			"peak_mb": 1666.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 610
+				"reduce": 610.0
 			},
-			"search_s": 2478.0,
+			"search_s": 3393.2000000000003,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -747,7 +726,7 @@
 	},
 	"source": {
 		"children": "a4223aec1decb21a16b04a588cef4c1663e8ca1264f265edbfc80301937752f1",
-		"deriver": "848e8ccc9c14094943b2760a3b81100706e6073e292a6a052737ddc64e37e7c3",
+		"deriver": "e5c197e41cd912718c2d52b8b2a171e98883ffad6b258da294a89ce3d9e4bd6f",
 		"generator": "9928090ca5e34948bef56dcda0ca9faceadf9683c081e28e3b424df622687cc4"
 	}
 }

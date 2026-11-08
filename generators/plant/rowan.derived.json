@@ -351,11 +351,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": -1,
+				"candidates": 0,
 				"trace": "plant__rowan#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": -1,
+				"candidates": 2,
 				"trace": "plant__rowan#2.trace.jsonl"
 			},
 			"3": {
@@ -467,9 +467,9 @@
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 4874 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00662 m; coverage changes +0.0297 against 0.0237 allowed (a one-pixel shrink all round)",
 				"BUDGET: the cheapest derivation that holds the picture costs 182608 (4.28x), over rung 1's budget 42673 x 1.5 = 64009 (tree, 3.57 m)"
 			],
-			"peak_mb": 1673.0,
+			"peak_mb": 1671.0,
 			"route": "kit",
-			"search_s": 862.4000000000001,
+			"search_s": 1103.7,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
@@ -1761,9 +1761,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping shoot 0.031, pome 0.031, branchlet 0.031, corymb 0.700), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.02648 m; part 'bark' changes its share of the picture by -0.0472 against 0.0456 allowed (its colour's share of the subject)",
 				"BUDGET: the cheapest derivation that holds the picture costs 145504 (13.64x), over rung 2's budget 10668 x 1.5 = 16002 (tree, 3.57 m)"
 			],
-			"peak_mb": 1674.0,
+			"peak_mb": 1672.0,
 			"route": "kit",
-			"search_s": 278.8,
+			"search_s": 358.6,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
@@ -1824,9 +1824,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 2586.0,
+			"peak_mb": 2604.0,
 			"route": "impostor",
-			"search_s": 2908.1000000000004,
+			"search_s": 2403.2000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -1834,8 +1834,8 @@
 		}
 	},
 	"source": {
-		"children": "547da4324417fb21bae68f1a9b6a7534bcb6a948fb3c2786a15287f36c6edb3f",
-		"deriver": "9d58e2b19623f8e732c5f1ac2eea2a09befdeb63342532299d517a0af10853b6",
+		"children": "f1c8429e2e368897853965e9c8c0c6be92cda8e0626d674d6eb6174db8495b78",
+		"deriver": "fee55f65ef7437f9ad90ca5176b6cf96385c537bf414aa362c815ceffb680dbe",
 		"generator": "44cd04a916e62aa292a5a3930a4602ddd2e9c4290ad21cefcd06012c5b07d94a"
 	}
 }

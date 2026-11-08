@@ -99,11 +99,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": -1,
+				"candidates": 1,
 				"trace": "stone__pressure-ridge#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": -1,
+				"candidates": 0,
 				"trace": "stone__pressure-ridge#2.trace.jsonl"
 			},
 			"3": {
@@ -194,12 +194,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.07: 16528 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
 				"CHILD: span 'stone/sea-ice-block r0 db5ef61c' is 76 triangles and its child rebuilt is 828: not a placed copy"
 			],
-			"peak_mb": 690.0,
+			"peak_mb": 692.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 510.0
 			},
-			"search_s": 452.40000000000003,
+			"search_s": 593.3000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -582,10 +582,10 @@
 				"KIT (its own build at the rung's pixel) held at 6056, dearer than the 3604 taken",
 				"REDUCE to 0.118, carried from rung 1 held at 13986, dearer than the 3604 taken"
 			],
-			"peak_mb": 690.0,
+			"peak_mb": 692.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 440.90000000000003,
+			"search_s": 553.2,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -970,9 +970,9 @@
 				"REDUCE to 0.118, carried from rung 1 held at 13986, dearer than the 3604 taken",
 				"KIT (its own build at 2 of the band's pixels), carried from rung 2 held at 3604, the same cost as the route taken, found first"
 			],
-			"peak_mb": 273.0,
+			"peak_mb": 692.0,
 			"route": "kit",
-			"search_s": 204.0,
+			"search_s": 495.6,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -980,7 +980,7 @@
 	},
 	"source": {
 		"children": "a79e32b334d43dac50aec562b1654f528bb5f4966089aeebb1c944dec0423ff4",
-		"deriver": "0e35c1dcce0afc53583fbbde90faa85acf9e022ecf454c936ea94d452645501c",
+		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "f43eba0c040fc54ff1f532bc1ed133ab8540c8fb1816d19380357d8d8bb44baa"
 	}
 }

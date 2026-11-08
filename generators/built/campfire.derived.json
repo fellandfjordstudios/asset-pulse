@@ -208,7 +208,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": -1,
+				"candidates": 17,
 				"trace": "built__campfire#1.trace.jsonl"
 			},
 			"2": {
@@ -297,12 +297,12 @@
 				"REDUCE from rung 0 at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: element 0's part 'bark' is 85 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1114.0,
+			"peak_mb": 1115.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 10
 			},
-			"search_s": 4582.9000000000005,
+			"search_s": 3547.1000000000004,
 			"searched": "search",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
@@ -857,14 +857,15 @@
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.00: 1772 pixel(s) differ at the drawn size at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314 (worst 0.53)",
 				"REDUCE from rung 1, the derived band above at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: element 0's part 'bark' is 85 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
 				"REDUCE from rung 0 at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: element 0's part 'bark' is 85 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.524 kept), carried from rung 1 held at 61038, dearer than the 36252 taken"
 			],
-			"peak_mb": 663.0,
+			"peak_mb": 1216.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 10
 			},
-			"search_s": 6935.6,
+			"search_s": 7036.8,
 			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
@@ -924,9 +925,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 626.0,
+			"peak_mb": 1168.0,
 			"route": "impostor",
-			"search_s": 722.8000000000001,
+			"search_s": 332.20000000000005,
 			"searched": "search",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -936,6 +937,6 @@
 	},
 	"source": {
 		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
-		"generator": "ad858b4b6e60f43ed5794b44862b3af2ae19ab8a13cba7fb96dfe77386fafb33"
+		"generator": "3ca22412e90796ef02fea566f2af506f9cd914bd3a477bec3d7b91f5a3664107"
 	}
 }

@@ -496,13 +496,13 @@
 				"CROWN: (c) a crown with no clusters: 2 of 2 placed foliage elements carry no cluster -- a commission defect of plant/pine, not a rung to hand-build (decisions/D-derive-3)",
 				"REDUCE from rung 0 at {\"branches_per_whorl\":2,\"branchlets_per_limb\":1,\"crown_duty_cycle\":0.2,\"height_m\":3.0,\"tuft_over_crown\":0.05,\"twigs_per_branchlet\":1,\"whorls\":40} seed 314: element 0's part 'bark' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 1016.0,
+			"peak_mb": 1018.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 2.0,
 				"reduce": 4.0
 			},
-			"search_s": 1763.4,
+			"search_s": 2337.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -510,7 +510,7 @@
 	},
 	"source": {
 		"children": "b687b0c7d062d5d63ae55842226cdba83467df6aa58552f29f2c847dd3c4f151",
-		"deriver": "9d58e2b19623f8e732c5f1ac2eea2a09befdeb63342532299d517a0af10853b6",
+		"deriver": "fee55f65ef7437f9ad90ca5176b6cf96385c537bf414aa362c815ceffb680dbe",
 		"generator": "cd7bf0748cd09412cf21ce2bf7e8160f4d72e603e01345d8658edfee991c9d0f"
 	}
 }

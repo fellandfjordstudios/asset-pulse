@@ -293,9 +293,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"set\":0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00529 m; the error ladder: none holds at 0.0019",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {\"set\":0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00529 m"
 			],
-			"peak_mb": 328.0,
+			"peak_mb": 329.0,
 			"route": "rung0",
-			"search_s": 89.7,
+			"search_s": 64.2,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -1098,14 +1098,14 @@
 			"peak_mb": 335.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 959.3000000000001,
+			"search_s": 595.9,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"children": "5308e7059cb9bbfecf66faa6f199dcd7c7a9cb26accf8a9c0c832a8244b6b6cd",
+		"children": "881c810958d9899ab8c25562fc118bacd82de12fbc0470615ed31dc2cfec417d",
 		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
 		"generator": "5fdf8fd4b295cb62ae1141a5fb3d04fde1be58558274380d6fcad9eb2dd55c6e"
 	}
