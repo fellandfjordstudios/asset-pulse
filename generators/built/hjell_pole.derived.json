@@ -224,7 +224,7 @@
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 309.20000000000005,
+			"search_s": 324.70000000000005,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -708,16 +708,16 @@
 				"CARRIED from rung 1, REDUCE to 0.240, carried from rung 1: candidate emits 1 opposing duplicate faces",
 				"REDUCE to its error cap 0.0625x the band's (0.160 kept) held at 784, dearer than the 628 taken"
 			],
-			"peak_mb": 1092.0,
+			"peak_mb": 1093.0,
 			"route": "kit",
-			"search_s": 170.3,
+			"search_s": 223.70000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "e6da475d58189b62b60d909a80b0042f8598d14832021b06ee4880cc0c888d80"
 	}
 }

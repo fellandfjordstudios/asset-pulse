@@ -277,12 +277,12 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.75), one pixel 0.00397 m",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1360.0,
+			"peak_mb": 1354.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 12.0
 			},
-			"search_s": 1569.5,
+			"search_s": 1687.7,
 			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -960,16 +960,16 @@
 				"REDUCE to 0.343 held at 10942, dearer than the 5774 taken",
 				"REDUCE to its error cap 0.0313x the band's (0.381 kept), carried from rung 1 held at 12032, dearer than the 5774 taken"
 			],
-			"peak_mb": 1360.0,
+			"peak_mb": 1354.0,
 			"route": "kit",
-			"search_s": 3311.5,
+			"search_s": 4267.0,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "428b5d9f9bbc3e0c6e8da60832a47e1c9ff019e34476917d99756ee91546665c"
 	}
 }

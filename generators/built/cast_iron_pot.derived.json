@@ -115,7 +115,7 @@
 			],
 			"peak_mb": 265.0,
 			"route": "kit",
-			"search_s": 56.300000000000004,
+			"search_s": 60.900000000000006,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -175,9 +175,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 252.0,
+			"peak_mb": 253.0,
 			"route": "impostor",
-			"search_s": 61.400000000000006,
+			"search_s": 69.8,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -186,7 +186,7 @@
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "4b6e6a7007078b8107b5f9242a6f7047cbfa799d5da437a6816e2e3f07f4ca3d"
 	}
 }

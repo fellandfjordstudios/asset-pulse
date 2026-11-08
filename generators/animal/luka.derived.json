@@ -54,11 +54,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 0,
 				"trace": "animal__luka#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 32,
+				"candidates": 1,
 				"trace": "animal__luka#2.trace.jsonl"
 			},
 			"3": {
@@ -86,16 +86,16 @@
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 30,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
+					"value": {}
 				},
 				{
-					"cost": 48462,
+					"cost": 48462.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 12,
+					"px_over": 12.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -129,10 +129,10 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: animal/luka does not declare `reads_density`"
 			],
-			"peak_mb": 891.0,
+			"peak_mb": 890.0,
 			"route": "kit",
-			"search_s": 182.60000000000002,
-			"searched": "search",
+			"search_s": 77.30000000000001,
+			"searched": "recheck",
 			"surfaces": 18,
 			"surfaces_ceiling": 18,
 			"tolerance": 0.001851851851851852
@@ -144,16 +144,16 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 49,
+					"px_over": 49.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 18908,
+					"cost": 18908.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -168,14 +168,14 @@
 					"picture": 0.00572,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.18334699999999998
+					"value": 0.183347
 				}
 			],
-			"cap": 0.003703703703703704,
+			"cap": 0.0037037037037037,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 4876,
+				"cost": 4876.0,
 				"fraction": 0.24009999999999992
 			},
 			"chains": {
@@ -189,12 +189,12 @@
 			},
 			"error": 0.007407407407407408,
 			"every_piece": true,
-			"fraction": 0.18334699999999998,
+			"fraction": 0.183347,
 			"from_rung": 1,
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.183 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -359,26 +359,7 @@
 				"cost": 3642,
 				"coverage_rel": -0.0114,
 				"floor": 0.00398,
-				"part_shift": {
-					"claw": -0.0011,
-					"coat": -0.01658,
-					"ear": 0.0009100000000000001,
-					"face": -0.00206,
-					"feather": 0.019100000000000002,
-					"iris": -3.0000000000000004e-05,
-					"lid": 0.00033000000000000005,
-					"lip": 0.00513,
-					"mouth": -0.00071,
-					"nose": 0.0012100000000000001,
-					"pad": -0.00028000000000000003,
-					"pupil": 0.0,
-					"ruff": 0.007940000000000001,
-					"sclera": -0.0009500000000000001,
-					"short": -0.00352,
-					"teeth": -0.00651,
-					"toe": -0.00063,
-					"tongue": -0.0027500000000000003
-				},
+				"part_shift": {},
 				"picture": 0.00572
 			},
 			"measured_of": 4,
@@ -407,13 +388,13 @@
 				"KIT (its own build at 2 of the band's pixels) held at 18908, dearer than the 3642 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 19864, dearer than the 3642 taken"
 			],
-			"peak_mb": 906.0,
+			"peak_mb": 897.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 18
+				"reduce": 18.0
 			},
-			"search_s": 814.7,
-			"searched": "search",
+			"search_s": 494.40000000000003,
+			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 1
 		},
@@ -443,12 +424,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 2,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 12
 				}
 			],
 			"checked_at": 6,
@@ -472,10 +453,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 914.0,
+			"peak_mb": 900.0,
 			"route": "impostor",
-			"search_s": 50.400000000000006,
-			"searched": "search",
+			"search_s": 56.900000000000006,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -483,7 +464,7 @@
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "7efe87391ed0989ed7ebd651035956b64e049fefd2cdb9131e6dcc3878d8447b"
 	}
 }

@@ -271,16 +271,16 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to its error cap 0.25x the band's (0.273 kept) held at 1874, cheaper than the 3806 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 357.0,
+			"peak_mb": 359.0,
 			"route": "kit",
-			"search_s": 250.0,
+			"search_s": 276.1,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "bf0b06df03c025f7cc09a5d3bc4391cfec387ffc001ccb8b9988e86dc7359178"
 	}
 }

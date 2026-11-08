@@ -126,19 +126,19 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 6914, dearer than the 3526 taken"
 			],
-			"peak_mb": 265.0,
+			"peak_mb": 267.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 39.2,
+			"search_s": 43.300000000000004,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "f8d33f47c37afd82b47ae9937afff8b4331847cc1d383722c7570fd2672d683c"
 	}
 }

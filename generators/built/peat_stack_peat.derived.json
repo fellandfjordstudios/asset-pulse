@@ -1,0 +1,147 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.27
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"length_m": 0.33
+			},
+			"seed": 314
+		},
+		{
+			"params": {},
+			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
+		}
+	],
+	"effort": "full",
+	"id": "built/peat-stack-peat",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"shape",
+			"shape",
+			"seed",
+			"seed"
+		],
+		"old_key_sets": 5,
+		"sampled": 5,
+		"sets": 3
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 1,
+				"trace": "built__peat-stack-peat#1.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "1c3fa5599ba6cda21aeff5badbd44aa1c84df1c568c0da955f159edfadeffb8e"
+	},
+	"rungs": {
+		"1": {
+			"budget": 7807,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 39418.0,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00409,
+					"px_over": null,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 9288,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.004090000000000001,
+					"px_over": null,
+					"route": "reduce",
+					"value": 0.24009999999999992
+				}
+			],
+			"chain_beaten": {
+				"cap": 0.00108056718859523,
+				"chain": "error",
+				"cost": 9310.0
+			},
+			"chains": {
+				"error": "lost"
+			},
+			"checked_at": 5,
+			"drawn": {
+				"excess": 0.5,
+				"judge": "drawn",
+				"pixel_m": 0.0013059999999999999
+			},
+			"error": 0.004322268754380925,
+			"every_piece": true,
+			"fraction": 0.24009999999999992,
+			"from_rung": 0,
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to 0.240",
+				"looked": 0.0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"merged",
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
+			},
+			"measured": {
+				"cost": 9288,
+				"coverage_rel": -0.00099,
+				"floor": 0.004090000000000001,
+				"part_shift": {},
+				"picture": 0.004090000000000001
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"IMPOSTOR: skipped by the prior -- judged 8 times for solid subjects at band 1 across 8 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"REDUCE from rung 0 at {} seed 314: element 0's part 'peat' is 101 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"KIT (its own build at the rung's pixel) held at 39418, dearer than the 9288 taken"
+			],
+			"peak_mb": 323.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 1.0
+			},
+			"search_s": 129.0,
+			"searched": "recheck",
+			"surfaces": 1,
+			"surfaces_ceiling": 1
+		}
+	},
+	"source": {
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"generator": "ac04100a8fd056d0d25385cb0adb0a979e38f4bd54844526ab9002bc0a0799a8"
+	}
+}

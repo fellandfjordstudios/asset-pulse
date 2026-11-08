@@ -47,11 +47,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "animal__dog#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 31,
+				"candidates": 1,
 				"trace": "animal__dog#2.trace.jsonl"
 			},
 			"3": {
@@ -77,11 +77,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 19894,
+					"cost": 19894.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -95,11 +95,11 @@
 					"value": 0.309191
 				}
 			],
-			"cap": 0.00046296296296296303,
+			"cap": 0.00046296296296296,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 23740,
+				"cost": 23740.0,
 				"fraction": 0.3429999999999999
 			},
 			"chains": {
@@ -118,7 +118,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.309 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -164,13 +164,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'feather' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 956.0,
+			"peak_mb": 979.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 18
+				"reduce": 18.0
 			},
-			"search_s": 700.6,
-			"searched": "search",
+			"search_s": 294.6,
+			"searched": "recheck",
 			"surfaces": 18,
 			"surfaces_ceiling": 18
 		},
@@ -181,16 +181,16 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 33,
+					"px_over": 33.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 18938,
+					"cost": 18938.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -208,11 +208,11 @@
 					"value": 0.31462999999999997
 				}
 			],
-			"cap": 0.0037037037037037043,
+			"cap": 0.0037037037037037,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 7802,
+				"cost": 7802.0,
 				"fraction": 0.3429999999999999
 			},
 			"chains": {
@@ -231,7 +231,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.315 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -372,26 +372,7 @@
 				"cost": 6740,
 				"coverage_rel": -0.008150000000000001,
 				"floor": 0.00398,
-				"part_shift": {
-					"claw": -0.00108,
-					"coat": 0.0038300000000000005,
-					"ear": -0.0004900000000000001,
-					"face": -0.0008700000000000001,
-					"feather": 0.0024200000000000003,
-					"iris": 1e-05,
-					"lid": -7.000000000000001e-05,
-					"lip": -0.0018800000000000002,
-					"mouth": 0.00014000000000000001,
-					"nose": -3.0000000000000004e-05,
-					"pad": 0.00039000000000000005,
-					"pupil": 0.0,
-					"ruff": 0.0012000000000000001,
-					"sclera": -0.0007800000000000001,
-					"short": 0.00236,
-					"teeth": -0.0037800000000000004,
-					"toe": 0.00022,
-					"tongue": -0.00033000000000000005
-				},
+				"part_shift": {},
 				"picture": 0.005090000000000001
 			},
 			"measured_of": 4,
@@ -420,13 +401,13 @@
 				"KIT (its own build at 2 of the band's pixels) held at 18938, dearer than the 6740 taken",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.309 kept), carried from rung 1 held at 21422, dearer than the 6740 taken"
 			],
-			"peak_mb": 1218.0,
+			"peak_mb": 1199.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 18
+				"reduce": 18.0
 			},
-			"search_s": 1087.3,
-			"searched": "search",
+			"search_s": 802.9000000000001,
+			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 1
 		},
@@ -456,12 +437,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 2,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 12
 				}
 			],
 			"checked_at": 5,
@@ -485,10 +466,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 1187.0,
+			"peak_mb": 1178.0,
 			"route": "impostor",
-			"search_s": 46.1,
-			"searched": "search",
+			"search_s": 52.900000000000006,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -496,7 +477,7 @@
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "cdfe5d24dc9db3593027c2b12ff0b94da58b38f0ad6da644e0dbf423a8a90364"
 	}
 }

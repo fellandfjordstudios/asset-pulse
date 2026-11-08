@@ -267,11 +267,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 1,
 				"trace": "built__boat-rig#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 30,
+				"candidates": 1,
 				"trace": "built__boat-rig#2.trace.jsonl"
 			}
 		}
@@ -292,11 +292,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4704,
+					"cost": 4704.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.047950000000000007,
-					"px_over": 0,
+					"picture": 0.04795,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -310,7 +310,7 @@
 					"value": 0.8648309999999999
 				}
 			],
-			"cap": 0.00011574074074074073,
+			"cap": 0.00011574074074074,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -328,7 +328,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.865 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -361,13 +361,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 10's part 'rope' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1353.0,
+			"peak_mb": 1322.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 22
+				"reduce": 22.0
 			},
-			"search_s": 881.9000000000001,
-			"searched": "search",
+			"search_s": 746.5,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -378,11 +378,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2716,
+					"cost": 2716.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.041830000000000006,
-					"px_over": 0,
+					"picture": 0.04183,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -396,16 +396,16 @@
 					"value": 0.8648309999999999
 				},
 				{
-					"cost": 2956,
+					"cost": 2956.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.047950000000000007,
-					"px_over": 0,
+					"picture": 0.04795,
+					"px_over": 0.0,
 					"route": "thin",
 					"value": 0.7
 				}
 			],
-			"cap": 0.00011574074074074073,
+			"cap": 0.00011574074074074,
 			"carried_from": 1,
 			"chain": "error",
 			"chains": {
@@ -1320,13 +1320,7 @@
 				"cost": 5464,
 				"coverage_rel": -0.00284,
 				"floor": 0.00432,
-				"part_shift": {
-					"fall": 4e-05,
-					"fittings": 0.00041000000000000005,
-					"iron": 1e-05,
-					"rope": 0.0011300000000000001,
-					"spar": -0.00151
-				},
+				"part_shift": {},
 				"picture": 0.55117
 			},
 			"measured_of": 1,
@@ -1341,19 +1335,19 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"mast_height_m\":4.0} seed 314: coverage changes -0.0227 against 0.0227 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
 				"THIN: none holds at 0.0074 -- the finest tried (0.700) fails at {\"mast_height_m\":4.0} seed 314: coverage changes -0.0394 against 0.0227 a derivation may change (its error read as a change of size)"
 			],
-			"peak_mb": 1364.0,
+			"peak_mb": 1365.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 22
+				"reduce": 22.0
 			},
-			"search_s": 2702.6000000000004,
-			"searched": "search",
+			"search_s": 2856.2000000000003,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "45ee221d643cbe66a772221c8d3fa3d64f03f351fe439756de66a2f2b6ddfcee"
 	}
 }

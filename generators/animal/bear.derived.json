@@ -159,7 +159,7 @@
 			"routes": {
 				"reduce": 17.0
 			},
-			"search_s": 212.70000000000002,
+			"search_s": 238.60000000000002,
 			"searched": "recheck",
 			"surfaces": 17,
 			"surfaces_ceiling": 17
@@ -367,12 +367,12 @@
 				"KIT (its own build at 2 of the band's pixels) held at 16668, dearer than the 5788 taken",
 				"REDUCE (every piece) to 0.343, carried from rung 1 held at 21764, dearer than the 5788 taken"
 			],
-			"peak_mb": 1444.0,
+			"peak_mb": 1442.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 17.0
 			},
-			"search_s": 115.5,
+			"search_s": 137.0,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 1
@@ -432,9 +432,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 1444.0,
+			"peak_mb": 1426.0,
 			"route": "impostor",
-			"search_s": 30.0,
+			"search_s": 35.0,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -443,7 +443,7 @@
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "57aaa2d747323ee4695f4fdfb0abcb9c0e165c3f87cb61e503ada9988e1087fb"
 	}
 }

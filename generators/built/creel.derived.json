@@ -211,9 +211,9 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 945.0,
+			"peak_mb": 947.0,
 			"route": "merged",
-			"search_s": 1324.6000000000001,
+			"search_s": 1441.2,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -221,7 +221,7 @@
 	},
 	"source": {
 		"children": "58f6b8a6d09a911af71ae5b69b216d5917409913db3eac58fb4cb18a0f8388ce",
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "8664bb28b87955a8d608d6838c8ca48fd0f1d876a6cd6ecec2def62ba2b62177"
 	}
 }

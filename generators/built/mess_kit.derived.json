@@ -115,7 +115,7 @@
 			],
 			"peak_mb": 268.0,
 			"route": "merged",
-			"search_s": 21.5,
+			"search_s": 22.1,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -247,6 +247,7 @@
 				"KIT at 2 pixels: none holds at 0.0150 -- the finest tried (1.000) fails at {} seed 314: part 'abrasion' changes its share of the picture by -0.0777 against 0.0745 allowed (its colour's share of the subject)",
 				"REDUCE from rung 1, the derived band above at {} seed 314: part 'wire' is 15 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"MERGED (its parts at their own rungs, joined) held at 2550, dearer than the 2352 taken",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 2550, dearer than the 2352 taken"
 			],
@@ -255,7 +256,7 @@
 			"routes": {
 				"reduce": 8
 			},
-			"search_s": 75.0,
+			"search_s": 90.5,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -263,7 +264,7 @@
 	},
 	"source": {
 		"children": "e1e75fee5272afeb8dfd242829efb7a5b96bac908d0305e097f446093248cdc5",
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "1433980d5f920b0f4bf302874dd9693ee4fdb5e9a48bd35161cb7c5ec208f02c"
 	}
 }
