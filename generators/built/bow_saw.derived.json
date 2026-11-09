@@ -33,11 +33,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__bow-saw#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 27,
 				"trace": "built__bow-saw#2.trace.jsonl"
 			},
 			"3": {
@@ -51,13 +51,16 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "a7a9f4b183c1562030fa6ff3bd0fc653b926c697ab5926106d324ef4daf3e087",
-		"2": "1209fd01e098f746001d408331c3ecb698c209b94173042e5a2aae16a928e148",
+		"1": "623a60b797c450e53a5d13f46a012eedcaca233711f41a1b5a1c8096c7677307",
+		"2": "f4f3594c48559d783d18f9326d950c3977cc9e54f1d3984fffe7a973bf82d597",
 		"3": "175c06fbd78db0a0f8c0158c5f9b7aa0fe4c829e88b58aa75489e2f6f7681d1c"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 1144,
@@ -69,7 +72,7 @@
 					"value": {}
 				},
 				{
-					"cost": 1048.0,
+					"cost": 1048,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00393,
@@ -78,20 +81,24 @@
 					"value": 0.6186539999999999
 				}
 			],
+			"cap": 0.000925925925925926,
+			"chain": "error",
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 3,
 			"drawn": {
-				"excess": 0.1875,
+				"excess": 0.125,
 				"judge": "drawn",
 				"pixel_m": 0.0013809999999999998
 			},
 			"error": 0.001851851851851852,
-			"fraction": 1.0,
+			"fraction": 0.6186539999999999,
 			"from_rung": 0,
-			"keep": {},
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -105,23 +112,30 @@
 				]
 			},
 			"measured": {
-				"cost": 1144,
-				"coverage_rel": 0.0058000000000000005,
+				"cost": 1048,
+				"coverage_rel": -0.005710000000000001,
 				"floor": 0.00398,
-				"part_shift": {},
-				"picture": 0.00398
+				"part_shift": {
+					"blade": -0.0036600000000000005,
+					"hardware": 0.0006000000000000001,
+					"paint": 0.00302
+				},
+				"picture": 0.00393
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 8 times for solid subjects at band 1 across 8 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE to its error cap 0.5x the band's (0.619 kept) held at 1048, cheaper than the 1144 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"KIT (its own build at the rung's pixel) held at 1144, dearer than the 1048 taken"
 			],
-			"peak_mb": 290.0,
-			"route": "kit",
-			"search_s": 46.7,
-			"searched": "recheck",
+			"peak_mb": 346.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 3
+			},
+			"search_s": 134.5,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -129,36 +143,36 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 22.0,
+					"px_over": 22,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
-					"cost": 1090,
+					"cost": 1018,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00398,
+					"picture": 0.006960000000000001,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
 				},
 				{
-					"cost": 932.0,
+					"cost": 1040,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00398,
+					"picture": 0.00393,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.814685
+					"value": 0.992366
 				}
 			],
 			"checked_at": 3,
 			"drawn": {
-				"excess": 0.0625,
+				"excess": 0.125,
 				"judge": "drawn",
 				"pixel_m": 0.005523999999999999
 			},
@@ -167,9 +181,9 @@
 			"from_rung": 0,
 			"keep": {},
 			"look_past": {
-				"beaten": true,
+				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -188,73 +202,73 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.6604968309402466,
-							0.39563024044036865,
-							0.30462855100631714
+							0.66045081615448,
+							0.3958452343940735,
+							0.30490902066230774
 						],
 						"mean_before": [
-							0.6604968309402466,
-							0.39563024044036865,
-							0.30462855100631714
+							0.66045081615448,
+							0.3958452343940735,
+							0.30490902066230774
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0018585622310638428,
-							0.03995253145694733,
-							0.06802669912576675
+							0.0018585026264190674,
+							0.03996342420578003,
+							0.06804529577493668
 						],
 						"variance_before": [
-							0.0018585622310638428,
-							0.03995253145694733,
-							0.06802669912576675
+							0.0018585026264190674,
+							0.03996342420578003,
+							0.06804529577493668
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.6605169177055359,
-							0.3955315947532654,
-							0.3045101463794708
+							0.6609303951263428,
+							0.3936138451099396,
+							0.30200740694999695
 						],
 						"mean_before": [
-							0.6605169177055359,
-							0.3955315947532654,
-							0.3045101463794708
+							0.6609303951263428,
+							0.3936138451099396,
+							0.30200740694999695
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0018554627895355225,
-							0.03995317220687866,
-							0.0680154338479042
+							0.0018508434295654297,
+							0.03985138237476349,
+							0.0678429901599884
 						],
 						"variance_before": [
-							0.0018554627895355225,
-							0.03995317220687866,
-							0.0680154338479042
+							0.0018508434295654297,
+							0.03985138237476349,
+							0.0678429901599884
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.6604949235916138,
-							0.3956339955329895,
-							0.3046278655529022
+							0.6604491472244263,
+							0.3958490192890167,
+							0.30490830540657043
 						],
 						"mean_before": [
-							0.6604949235916138,
-							0.3956339955329895,
-							0.3046278655529022
+							0.6604491472244263,
+							0.3958490192890167,
+							0.30490830540657043
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0018620789051055908,
-							0.039951398968696594,
-							0.06802613288164139
+							0.0018612444400787354,
+							0.03996223211288452,
+							0.06804467737674713
 						],
 						"variance_before": [
-							0.0018620789051055908,
-							0.039951398968696594,
-							0.06802613288164139
+							0.0018612444400787354,
+							0.03996223211288452,
+							0.06804467737674713
 						]
 					}
 				],
@@ -262,11 +276,15 @@
 			},
 			"materials": "merged",
 			"measured": {
-				"cost": 1090,
-				"coverage_rel": 0.00269,
+				"cost": 1018,
+				"coverage_rel": 0.0006900000000000001,
 				"floor": 0.00398,
-				"part_shift": {},
-				"picture": 0.00398
+				"part_shift": {
+					"blade": 0.005370000000000001,
+					"hardware": -0.00914,
+					"paint": -0.004410000000000001
+				},
+				"picture": 0.006960000000000001
 			},
 			"measured_of": 4,
 			"not_taken": [
@@ -288,16 +306,17 @@
 				"IMPOSTOR at 32x32 frames (atlas 26.2 MB) from rung 0 at 8x its pixel: 29 pixel(s) differ at {} seed 314 (worst 0.52)",
 				"IMPOSTOR at 32x32 frames (atlas 26.2 MB) from rung 0 at 4x its pixel: 24 pixel(s) differ at {} seed 314 (worst 0.56)",
 				"IMPOSTOR at 32x32 frames (atlas 26.2 MB) from rung 0: 22 pixel(s) differ at {} seed 314 (worst 0.56)",
-				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
-				"MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels)) is 1 route(s)",
-				"KIT (its own build at 2 of the band's pixels) held at 1018, cheaper than the 1090 taken, but a replay of rung 0: KIT is within budget and builds directly",
-				"REDUCE to its error cap 0.125x the band's (0.815 kept) held at 932, cheaper than the 1090 taken, but a replay of rung 0: KIT is within budget and builds directly",
-				"KIT (its own build at the rung's pixel), carried from rung 1 held at 1144, dearer than the 1090 taken"
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels)) is 1 route(s), and the one looked at did not improve on it",
+				"KIT (its own build at the rung's pixel) held at 1090, dearer than the 1018 taken",
+				"REDUCE to its error cap 0.125x the band's (0.992 kept) held at 1040, dearer than the 1018 taken",
+				"REDUCE to its error cap 0.125x the band's (0.619 kept), carried from rung 1 held at 1048, dearer than the 1018 taken"
 			],
-			"peak_mb": 247.0,
+			"peak_mb": 346.0,
+			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 73.9,
-			"searched": "recheck",
+			"search_s": 146.70000000000002,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -356,9 +375,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 247.0,
+			"peak_mb": 346.0,
 			"route": "impostor",
-			"search_s": 8.6,
+			"search_s": 8.4,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -367,7 +386,7 @@
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
 		"generator": "67b467bc82440471852bb37972e4ab488c0719a4a3190a61a50bb50eb0c4b9c5"
 	}
 }

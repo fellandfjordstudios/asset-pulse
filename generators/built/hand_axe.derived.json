@@ -64,12 +64,15 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "e0298dde09db34c4e007f5a80f71a8fa4fbc8bf3398bf6b99853ef18e3312e2b",
+		"1": "d6b582bc74f839ea7de630122c19e83eb6d4f22026468350687b1ea6fb639952",
 		"2": "0bcb6936281e204481de67d75619e7e29819a713870f4b7d085c5bfc9fbdb8a3"
 	},
 	"rungs": {
 		"1": {
 			"budget": 15429,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 9168,
@@ -90,16 +93,26 @@
 					"value": 0.152742
 				}
 			],
+			"cap": 0.0014407562514603082,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 6910,
+				"fraction": 0.48999999999999994
+			},
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 6,
 			"drawn": {
-				"excess": 0.5,
+				"excess": 0.125,
 				"judge": "drawn",
 				"pixel_m": 0.001267
 			},
 			"error": 0.0028815125029206163,
-			"fraction": 1.0,
+			"every_piece": true,
+			"fraction": 0.152742,
 			"from_rung": 0,
-			"keep": {},
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -117,16 +130,16 @@
 				]
 			},
 			"measured": {
-				"cost": 9168,
-				"coverage_rel": -0.0034400000000000003,
+				"cost": 2150,
+				"coverage_rel": -0.0017200000000000002,
 				"floor": 0.00398,
 				"part_shift": {
 					"brass": 1e-05,
-					"edge": -0.00037000000000000005,
+					"edge": 3.0000000000000004e-05,
 					"leather": -0.00036,
-					"steel": -0.00393,
-					"stitch": 2e-05,
-					"wood": 0.0048200000000000005
+					"steel": 0.0008600000000000001,
+					"stitch": -0.0029700000000000004,
+					"wood": 0.00251
 				},
 				"picture": 0.00398
 			},
@@ -136,13 +149,16 @@
 				"REDUCE from rung 0 at {} seed 314: element 4's part 'stitch' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE (every piece) to its error cap 0.5x the band's (0.153 kept) held at 2150, cheaper than the 9168 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"KIT (its own build at the rung's pixel) held at 9168, dearer than the 2150 taken"
 			],
-			"peak_mb": 333.0,
-			"route": "kit",
-			"search_s": 191.9,
+			"peak_mb": 335.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 6
+			},
+			"search_s": 181.5,
 			"searched": "search",
-			"surfaces": 6,
+			"surfaces": 5,
 			"surfaces_ceiling": 6
 		},
 		"2": {
@@ -200,9 +216,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 333.0,
+			"peak_mb": 337.0,
 			"route": "impostor",
-			"search_s": 75.5,
+			"search_s": 75.10000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -210,7 +226,7 @@
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
 		"generator": "8544d246462c31117cf55224809a37f440b65054b529e292ffa8b24ec2836c04"
 	}
 }

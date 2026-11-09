@@ -164,12 +164,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'feather' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 979.0,
+			"peak_mb": 709.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 294.6,
+			"search_s": 282.40000000000003,
 			"searched": "recheck",
 			"surfaces": 18,
 			"surfaces_ceiling": 18
@@ -401,12 +401,12 @@
 				"KIT (its own build at 2 of the band's pixels) held at 18938, dearer than the 6740 taken",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.309 kept), carried from rung 1 held at 21422, dearer than the 6740 taken"
 			],
-			"peak_mb": 1199.0,
+			"peak_mb": 788.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 802.9000000000001,
+			"search_s": 747.4000000000001,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 1
@@ -466,9 +466,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 1178.0,
+			"peak_mb": 788.0,
 			"route": "impostor",
-			"search_s": 52.900000000000006,
+			"search_s": 51.1,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -477,7 +477,7 @@
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
 		"generator": "cdfe5d24dc9db3593027c2b12ff0b94da58b38f0ad6da644e0dbf423a8a90364"
 	}
 }

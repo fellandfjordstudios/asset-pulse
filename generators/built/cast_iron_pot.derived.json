@@ -33,7 +33,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 10,
 				"trace": "built__cast-iron-pot#1.trace.jsonl"
 			},
 			"2": {
@@ -47,12 +47,15 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "4552b2d0383f3d82c15a884f47a13c2fcf98d5a867267c96ca2caa86bd3a4753",
+		"1": "feed9d7812e618ea87a51826738e803305ad01ee31c62c744539667994c2380b",
 		"2": "c1c6ecfc53bfd65c9b7b5db0f24d29209814f80028045edc0781d36b7ba1f7b1"
 	},
 	"rungs": {
 		"1": {
 			"budget": 10173,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 4184,
@@ -64,29 +67,38 @@
 					"value": {}
 				},
 				{
-					"cost": 1474.0,
+					"cost": 1474,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00409,
+					"picture": 0.004090000000000001,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.202974
 				}
 			],
+			"cap": 0.0036341945804772343,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 2482,
+				"fraction": 0.3429999999999999
+			},
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 3,
 			"drawn": {
-				"excess": 0.1875,
+				"excess": 0.25,
 				"judge": "drawn",
-				"pixel_m": 0.001297
+				"pixel_m": 0.0012979999999999999
 			},
 			"error": 0.0036341945804772343,
-			"fraction": 1.0,
+			"fraction": 0.202974,
 			"from_rung": 0,
-			"keep": {},
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -100,23 +112,32 @@
 				]
 			},
 			"measured": {
-				"cost": 4184,
-				"coverage_rel": -0.0014600000000000001,
+				"cost": 1474,
+				"coverage_rel": -0.005900000000000001,
 				"floor": 0.004090000000000001,
-				"part_shift": {},
+				"part_shift": {
+					"body": 0.00578,
+					"feet": -0.00045000000000000004,
+					"hardware": -0.00248,
+					"lid": -0.0006000000000000001,
+					"rim": -0.004900000000000001
+				},
 				"picture": 0.004090000000000001
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 8 times for solid subjects at band 1 across 8 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE to its error cap 1.0x the band's (0.203 kept) held at 1474, cheaper than the 4184 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"KIT (its own build at the rung's pixel) held at 4184, dearer than the 1474 taken"
 			],
-			"peak_mb": 265.0,
-			"route": "kit",
-			"search_s": 60.900000000000006,
-			"searched": "recheck",
+			"peak_mb": 281.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 10
+			},
+			"search_s": 207.8,
+			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -175,9 +196,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 253.0,
+			"peak_mb": 281.0,
 			"route": "impostor",
-			"search_s": 69.8,
+			"search_s": 64.9,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -186,7 +207,7 @@
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
 		"generator": "4b6e6a7007078b8107b5f9242a6f7047cbfa799d5da437a6816e2e3f07f4ca3d"
 	}
 }

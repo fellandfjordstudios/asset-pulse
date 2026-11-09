@@ -75,11 +75,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "animal__brown-trout#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 13,
+				"candidates": 14,
 				"trace": "animal__brown-trout#2.trace.jsonl"
 			}
 		}
@@ -100,11 +100,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 22242,
+					"cost": 22242.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -118,11 +118,11 @@
 					"value": 0.145195
 				}
 			],
-			"cap": 0.00046310022368367047,
+			"cap": 0.00046310022368367,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 18326,
+				"cost": 18326.0,
 				"fraction": 0.7
 			},
 			"chains": {
@@ -140,7 +140,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.125x the band's (0.145 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -192,13 +192,13 @@
 				"KIT: none holds at 0.0037 -- the finest tried (1.000) fails at {\"girth_ratio\":0.4} seed 314: part 'ventral_skin' changes its share of the picture by -0.0461 against 0.0305 allowed (its colour's share of the subject)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 426.0,
+			"peak_mb": 434.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 132
+				"reduce": 132.0
 			},
-			"search_s": 362.90000000000003,
-			"searched": "search",
+			"search_s": 191.5,
+			"searched": "recheck",
 			"surfaces": 25,
 			"surfaces_ceiling": 25
 		},
@@ -522,21 +522,21 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"KIT (its own build at the rung's pixel) held at 20232, dearer than the 2276 taken",
 				"KIT (its own build at 2 of the band's pixels) held at 20458, dearer than the 2276 taken",
-				"REDUCE to its error cap 0.0313x the band's (0.145 kept), carried from rung 1 held at 3780, dearer than the 2276 taken"
+				"REDUCE to its error cap 0.0312x the band's (0.145 kept), carried from rung 1 held at 3780, dearer than the 2276 taken"
 			],
-			"peak_mb": 432.0,
+			"peak_mb": 435.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 99
 			},
-			"search_s": 5629.0,
+			"search_s": 6270.4000000000005,
 			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
 		"generator": "c8451edb551bcc0445899d478b5dfc01cef8bc6cb7aae9c5fe6466c575e4fe16"
 	}
 }

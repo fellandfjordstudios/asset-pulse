@@ -61,11 +61,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 6,
 				"trace": "built__fodder-bale-binding#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 12,
 				"trace": "built__fodder-bale-binding#2.trace.jsonl"
 			}
 		}
@@ -75,12 +75,15 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "3d2679c11aabfafe600e60672cef2ea7da4606969a55e946b31bb9f68a80e346",
-		"2": "3d2679c11aabfafe600e60672cef2ea7da4606969a55e946b31bb9f68a80e346"
+		"1": "24f768eb353e4a9b921089c9581aad0df4980036922b22b420c592e4356c4407",
+		"2": "34666945858baa3c78462a4061c8df865c4a3cf4709bcb8bc74f5cb39da3719b"
 	},
 	"rungs": {
 		"1": {
 			"budget": 16354,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 2332,
@@ -92,29 +95,33 @@
 					"value": {}
 				},
 				{
-					"cost": 2222.0,
+					"cost": 2222,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00463,
+					"picture": 0.0046300000000000004,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.95283
 				}
 			],
+			"cap": 0.00017753020623141803,
+			"chain": "error",
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 7,
 			"drawn": {
-				"excess": 0.0,
+				"excess": 0.25,
 				"judge": "drawn",
-				"pixel_m": 0.001297
+				"pixel_m": 0.001286
 			},
 			"error": 0.0028404832997026884,
-			"fraction": 1.0,
+			"fraction": 0.95283,
 			"from_rung": 0,
-			"keep": {},
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -128,27 +135,33 @@
 				]
 			},
 			"measured": {
-				"cost": 2332,
-				"coverage_rel": 0.0,
+				"cost": 2222,
+				"coverage_rel": 0.0014800000000000002,
 				"floor": 0.0046300000000000004,
 				"part_shift": {},
-				"picture": 0.0
+				"picture": 0.0046300000000000004
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 1 across 5 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE to its error cap 0.0625x the band's (0.953 kept) held at 2222, cheaper than the 2332 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"KIT (its own build at the rung's pixel) held at 2332, dearer than the 2222 taken"
 			],
-			"peak_mb": 283.0,
-			"route": "kit",
-			"search_s": 47.400000000000006,
-			"searched": "recheck",
+			"peak_mb": 356.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 1
+			},
+			"search_s": 88.0,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
 		"2": {
 			"budget": 4088,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 2332,
@@ -160,29 +173,38 @@
 					"value": {}
 				},
 				{
-					"cost": 798.0,
+					"cost": 1046,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.11228,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.3429999999999999
+					"value": 0.47074699999999997
 				}
 			],
+			"cap": 0.0007101208249256721,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 1088,
+				"fraction": 0.48999999999999994
+			},
+			"chains": {
+				"error": "kept"
+			},
 			"checked_at": 7,
 			"drawn": {
-				"excess": 0.0,
+				"excess": 0.25,
 				"judge": "drawn",
-				"pixel_m": 0.005187
+				"pixel_m": 0.005144
 			},
 			"error": 0.011361933198810754,
-			"fraction": 1.0,
-			"from_rung": 0,
-			"keep": {},
+			"fraction": 0.47074699999999997,
+			"from_rung": 1,
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -196,30 +218,33 @@
 				]
 			},
 			"measured": {
-				"cost": 2332,
-				"coverage_rel": 0.0,
+				"cost": 1046,
+				"coverage_rel": 0.01527,
 				"floor": 0.0046300000000000004,
 				"part_shift": {},
-				"picture": 0.0
+				"picture": 0.11228
 			},
 			"measured_of": 4,
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"KIT (its own build at 2 of the band's pixels) held at 2332, the same cost as the route taken, found first",
-				"REDUCE to 0.343 held at 798, cheaper than the 2332 taken, but a replay of rung 0: KIT is within budget and builds directly",
-				"KIT (its own build at the rung's pixel), carried from rung 1 held at 2332, the same cost as the route taken, found first"
+				"KIT (its own build at the rung's pixel) held at 2332, dearer than the 1046 taken",
+				"KIT (its own build at 2 of the band's pixels) held at 2332, dearer than the 1046 taken",
+				"REDUCE to its error cap 0.0156x the band's (0.953 kept), carried from rung 1 held at 2222, dearer than the 1046 taken"
 			],
-			"peak_mb": 280.0,
-			"route": "kit",
-			"search_s": 13.700000000000001,
-			"searched": "recheck",
+			"peak_mb": 356.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 1
+			},
+			"search_s": 69.9,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
 		"generator": "671fa3c935d3a76f267032bdc839a120157930284a11e84f2e077044b76d0d4e"
 	}
 }

@@ -50,11 +50,14 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "54e0dfb5b8adc76d45630f17efc8d66cf55e4ab1f211a6a9fab068a720bc012d"
+		"1": "296fdaeb1230d1c778a714dd525ed8c59affddc8987a535a0bee5443ae3fd890"
 	},
 	"rungs": {
 		"1": {
 			"budget": 6990,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 404,
@@ -75,16 +78,23 @@
 					"value": 0.48999999999999994
 				}
 			],
+			"chain_beaten": {
+				"cap": 0.002,
+				"chain": "error",
+				"cost": 424
+			},
+			"chains": {
+				"error": "lost"
+			},
 			"checked_at": 4,
 			"drawn": {
-				"excess": 0.375,
+				"excess": 0.5,
 				"judge": "drawn",
 				"pixel_m": 0.001184
 			},
 			"error": 0.004,
-			"fraction": 1.0,
+			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"keep": {},
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -102,34 +112,37 @@
 				]
 			},
 			"measured": {
-				"cost": 404,
-				"coverage_rel": -0.00419,
+				"cost": 344,
+				"coverage_rel": -0.0069500000000000004,
 				"floor": 0.00495,
 				"part_shift": {
-					"paint": -0.0008600000000000001,
-					"paraffin": 0.00072,
-					"stopper": 5e-05,
-					"tinplate": 6.000000000000001e-05,
-					"washer": 2e-05
+					"paint": -0.0011,
+					"paraffin": 0.0012200000000000002,
+					"stopper": -0.00014000000000000001,
+					"tinplate": -0.00013000000000000002,
+					"washer": -0.00023
 				},
-				"picture": 0.00495
+				"picture": 0.0051600000000000005
 			},
 			"measured_of": 2,
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE to 0.490 held at 344, cheaper than the 404 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"KIT (its own build at the rung's pixel) held at 404, dearer than the 344 taken"
 			],
-			"peak_mb": 283.0,
-			"route": "kit",
-			"search_s": 106.80000000000001,
+			"peak_mb": 286.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 7
+			},
+			"search_s": 99.80000000000001,
 			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
 		"generator": "71dad717166b8daad5dbb7c9bc2745843385f82f88414fb9eea80855a88c5e90"
 	}
 }
