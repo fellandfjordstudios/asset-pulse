@@ -142,7 +142,7 @@
 			],
 			"peak_mb": 323.0,
 			"route": "kit",
-			"search_s": 373.6,
+			"search_s": 308.8,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -150,7 +150,7 @@
 	},
 	"source": {
 		"children": "e3826732e1d5920df59760b5a4b77ff98b34cb02d383eb344d14537ff5ef1138",
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "d66147cec03ed46fa6d08eb31c2f67f62195062adbb26027b222fe0b559a0c38"
 	}
 }

@@ -173,12 +173,12 @@
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00056 m"
 			],
-			"peak_mb": 570.0,
+			"peak_mb": 571.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 227.0,
+			"search_s": 204.10000000000002,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -512,16 +512,16 @@
 				"REDUCE to 0.700 held at 656, dearer than the 196 taken",
 				"REDUCE to 0.700, carried from rung 1 held at 656, dearer than the 196 taken"
 			],
-			"peak_mb": 570.0,
+			"peak_mb": 571.0,
 			"route": "kit",
-			"search_s": 62.5,
+			"search_s": 68.10000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "6689ba61e850370fe2e031b13297e266f24bdf20fa639e0d687f48c6f0ec920f"
 	}
 }

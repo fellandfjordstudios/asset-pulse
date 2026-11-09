@@ -381,7 +381,7 @@
 			],
 			"peak_mb": 557.0,
 			"route": "rung0",
-			"search_s": 433.3,
+			"search_s": 362.40000000000003,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
@@ -1536,19 +1536,19 @@
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)"
 			],
-			"peak_mb": 622.0,
+			"peak_mb": 623.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 15.0
 			},
-			"search_s": 2206.9,
+			"search_s": 2005.4,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "7e65865c58ca5b39b5baa21b1a555dc0d43cdf0ee314add0e07057953d45e3c9"
 	}
 }

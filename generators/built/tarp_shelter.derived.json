@@ -232,7 +232,7 @@
 			"routes": {
 				"reduce": 6.0
 			},
-			"search_s": 62.1,
+			"search_s": 51.2,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -730,12 +730,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.0675x the band's (0.503 kept), carried from rung 1 held at 200, dearer than the 150 taken"
 			],
-			"peak_mb": 409.0,
+			"peak_mb": 411.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 6.0
 			},
-			"search_s": 63.5,
+			"search_s": 68.60000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -797,7 +797,7 @@
 			],
 			"peak_mb": 411.0,
 			"route": "impostor",
-			"search_s": 11.200000000000001,
+			"search_s": 10.600000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -805,7 +805,7 @@
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "b4603c0f85aafc9b8d7c7ef2bf89c1fa91fc1f2c9eff261cb310ecafb7bc6c05"
 	}
 }

@@ -113,7 +113,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": -1,
+				"candidates": 0,
 				"trace": "plant__pine-stem#1.trace.jsonl"
 			},
 			"2": {
@@ -188,9 +188,9 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to its error cap 0.125x the band's (0.179 kept) held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 359.0,
+			"peak_mb": 360.0,
 			"route": "kit",
-			"search_s": 262.8,
+			"search_s": 212.0,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -254,16 +254,16 @@
 				"REDUCE to its error cap 0.0625x the band's (0.179 kept) held at 228, the same cost as the route taken, found first",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 241.0,
+			"peak_mb": 323.0,
 			"route": "kit",
-			"search_s": 7.7,
+			"search_s": 47.800000000000004,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "95c7e49fde0c685a2f753b5cea5d6e031753a304066740b4a5edd0a4cce5e83e"
 	}
 }

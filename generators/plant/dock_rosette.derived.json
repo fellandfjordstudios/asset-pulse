@@ -321,20 +321,20 @@
 				"REDUCE from rung 0 at {} seed 314: element 16's part 'stalk' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
 				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1448.0,
+			"peak_mb": 1447.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 16.0,
 				"reduce": 22.0
 			},
-			"search_s": 1561.1000000000001,
+			"search_s": 1329.7,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "104b6371287c6fa1c6cae6701dc1e21a040ceeb5311f44fa6458bf4fb255128d"
 	}
 }

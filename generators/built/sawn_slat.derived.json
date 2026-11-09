@@ -192,12 +192,12 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.02} seed 314: the picture changes at the drawn size: 23499 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00005 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 584.0,
+			"peak_mb": 585.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 82.4,
+			"search_s": 65.7,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -595,12 +595,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.25x the band's (0.526 kept), carried from rung 1 held at 40, the same cost as the route taken, found first"
 			],
-			"peak_mb": 584.0,
+			"peak_mb": 585.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 24.900000000000002,
+			"search_s": 23.3,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -995,19 +995,19 @@
 				"REDUCE to its error cap 0.0625x the band's (0.526 kept), carried from rung 1 held at 40, the same cost as the route taken, found first",
 				"REDUCE to its error cap 0.0625x the band's (0.526 kept), carried from rung 2 held at 40, the same cost as the route taken, found first"
 			],
-			"peak_mb": 584.0,
+			"peak_mb": 585.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 19.8,
+			"search_s": 17.8,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "e18a6712b70dc269d35dd6741f37744b33c804942f7794aa6b0f269ec614ce1e"
 	}
 }

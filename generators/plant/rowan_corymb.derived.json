@@ -113,7 +113,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": -1,
+				"candidates": 16,
 				"trace": "plant__rowan-corymb#1.trace.jsonl"
 			},
 			"2": {
@@ -198,12 +198,12 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/rowan-corymb does not declare `reads_density`"
 			],
-			"peak_mb": 293.0,
+			"peak_mb": 294.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 71
 			},
-			"search_s": 243.4,
+			"search_s": 231.3,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -649,12 +649,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"BUDGET: the cheapest derivation that holds the picture costs 3322 (5.89x), over rung 2's budget 564 x 1.5 = 846 (flower, 0.14 m)"
 			],
-			"peak_mb": 285.0,
+			"peak_mb": 298.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 71
 			},
-			"search_s": 409.1,
+			"search_s": 344.20000000000005,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -1092,12 +1092,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'ray' is 80 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"BUDGET: the cheapest derivation that holds the picture costs 2286 (16.21x), over rung 3's budget 141 x 1.5 = 211 (flower, 0.14 m)"
 			],
-			"peak_mb": 298.0,
+			"peak_mb": 311.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 71
 			},
-			"search_s": 287.0,
+			"search_s": 245.0,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -1105,7 +1105,7 @@
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "c0aad19922a58b604b1d279ecfcc1c143cd643f39b92911554e0eb1e612b6b2c"
 	}
 }

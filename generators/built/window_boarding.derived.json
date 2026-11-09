@@ -245,12 +245,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'board' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 917.0,
+			"peak_mb": 918.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 294.6,
+			"search_s": 242.70000000000002,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -827,16 +827,16 @@
 				"KIT (its own build at 2 of the band's pixels) held at 470, cheaper than the 574 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.775 kept) held at 454, cheaper than the 574 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 917.0,
+			"peak_mb": 918.0,
 			"route": "kit",
-			"search_s": 167.8,
+			"search_s": 179.9,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "3f377e06698864bbe5c4c03104586dbb33154156001b9c5f0df84209a74d9921"
 	}
 }

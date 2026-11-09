@@ -144,12 +144,12 @@
 				"KIT: none holds at 0.0036 -- the finest tried (1.000) fails at {\"height_m\":0.2} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.81), one pixel 0.00072 m",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 297.0,
+			"peak_mb": 298.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 47.7,
+			"search_s": 41.0,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -368,16 +368,16 @@
 				"REDUCE to 0.343 held at 756, cheaper than the 988 taken, but a replay of rung 0: KIT is within budget and builds directly",
 				"REDUCE to its error cap 0.125x the band's (0.871 kept), carried from rung 1 held at 1634, dearer than the 988 taken"
 			],
-			"peak_mb": 297.0,
+			"peak_mb": 298.0,
 			"route": "kit",
-			"search_s": 32.4,
+			"search_s": 34.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "1f397f74bfb152bdccb2605f0669ded383143afb944c5409edba00d2fa37e885"
 	}
 }

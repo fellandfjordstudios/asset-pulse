@@ -171,7 +171,7 @@
 			"routes": {
 				"reduce": 43.0
 			},
-			"search_s": 99.2,
+			"search_s": 83.0,
 			"searched": "recheck",
 			"surfaces": 43,
 			"surfaces_ceiling": 43
@@ -353,7 +353,7 @@
 			],
 			"peak_mb": 355.0,
 			"route": "kit",
-			"search_s": 170.9,
+			"search_s": 149.8,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -415,7 +415,7 @@
 			],
 			"peak_mb": 355.0,
 			"route": "impostor",
-			"search_s": 21.3,
+			"search_s": 16.900000000000002,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -425,7 +425,7 @@
 	},
 	"source": {
 		"children": "ef8410c8f039f2289cff0c19d0e6c49f36a05a81f77ee98a4ba48247df1f053e",
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "28c7c654997e8e51956ac49e2328c92443208228220cb7e91ba4a172ce5ab6ef"
 	}
 }

@@ -244,7 +244,7 @@
 			],
 			"peak_mb": 479.0,
 			"route": "kit",
-			"search_s": 922.6,
+			"search_s": 836.6,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -828,16 +828,16 @@
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.417 kept) held at 1904, dearer than the 238 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 376, dearer than the 238 taken"
 			],
-			"peak_mb": 352.0,
+			"peak_mb": 353.0,
 			"route": "kit",
-			"search_s": 126.0,
+			"search_s": 114.60000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "99dfa9755a1267e1d4859406ddb2370e94cd91042653ff09da687ba5c34b9de3"
 	}
 }

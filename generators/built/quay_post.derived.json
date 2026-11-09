@@ -283,9 +283,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00177 m; the error ladder: none holds at 0.0019",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1089.0,
+			"peak_mb": 1079.0,
 			"route": "kit",
-			"search_s": 2311.7000000000003,
+			"search_s": 2409.7000000000003,
 			"searched": "search",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
@@ -293,7 +293,7 @@
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "749c43955e23d216767b7ec2c53b10d5a4bd107417c404b350c4dd14ee3a39ab"
 	}
 }

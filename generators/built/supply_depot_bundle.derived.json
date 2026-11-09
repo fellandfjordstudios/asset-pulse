@@ -59,8 +59,8 @@
 	},
 	"replay": {
 		"1": "ce19e5fee09f103a49ad64b2030fab350994969dc083927cad7affa101ff8d35",
-		"2": "ed0d35e590fa6e3ca69f7488053a429cc986f325ca9324c391cf943da014aa4b",
-		"3": "abb018f145dddd6288594fa78ef9051366b39839680387d81ff6bc1067af5ee5"
+		"2": "48dafdc633ad226e7c4ba268ba88ec279a9de9692a505db77ab7f2ca5adc2fbe",
+		"3": "5fb5a225e1207416f2f9bf87a473e3abc75e988a614c2b1367b175435b83ebb3"
 	},
 	"rungs": {
 		"1": {
@@ -125,9 +125,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE (every piece) to its error cap 0.5x the band's (0.123 kept) held at 3836, cheaper than the 24258 taken, but a replay of rung 0: KIT is within budget and builds directly"
 			],
-			"peak_mb": 330.0,
+			"peak_mb": 331.0,
 			"route": "kit",
-			"search_s": 222.8,
+			"search_s": 196.10000000000002,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -282,7 +282,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 9546,
 				"coverage_rel": -0.0011500000000000002,
@@ -301,7 +300,7 @@
 			],
 			"peak_mb": 268.0,
 			"route": "kit",
-			"search_s": 2002.4,
+			"search_s": 2243.4,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -453,7 +452,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 168,
 				"coverage_rel": -0.06411,
@@ -473,14 +471,14 @@
 			"peak_mb": 268.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 29.1,
+			"search_s": 23.1,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "a8fbdece5c32905afe7a8dbccbf31b3299a96155d20c621688fd7b1bca857a57"
 	}
 }

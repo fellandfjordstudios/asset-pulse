@@ -119,12 +119,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 3's part 'binding_iron' is 28 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 275.0,
+			"peak_mb": 276.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 7.300000000000001,
+			"search_s": 6.2,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 7
@@ -236,19 +236,19 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.187 kept), carried from rung 1 held at 1366, dearer than the 806 taken"
 			],
-			"peak_mb": 275.0,
+			"peak_mb": 276.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 22.900000000000002,
+			"search_s": 24.900000000000002,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "124abfbab26836b8d7cf0c0c3c2fae152584f575acc17b46bf6e95b1bd346965"
 	}
 }

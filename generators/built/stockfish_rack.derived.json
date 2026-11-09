@@ -184,12 +184,12 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 672.0,
+			"peak_mb": 674.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 788.3000000000001,
+			"search_s": 665.0,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -594,9 +594,9 @@
 				"REDUCE (every piece) to 0.700 held at 9944, dearer than the 2332 taken",
 				"MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490), carried from rung 1 held at 13476, dearer than the 2332 taken"
 			],
-			"peak_mb": 680.0,
+			"peak_mb": 681.0,
 			"route": "kit",
-			"search_s": 566.1,
+			"search_s": 508.8,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -656,9 +656,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 763.0,
+			"peak_mb": 762.0,
 			"route": "impostor",
-			"search_s": 740.7,
+			"search_s": 638.1,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -668,7 +668,7 @@
 	},
 	"source": {
 		"children": "2129ea740a69356f7f8c63e19e1ff49b6174ad94273d78ba5bc0f35d65f1ce4b",
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "e6975f2a0eab575cf32486dcc2b6a8abfd1090eb26501ad6165b78b797227684"
 	}
 }

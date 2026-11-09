@@ -528,19 +528,19 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'roof' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {\"bays\":1} seed 314: the picture changes at the drawn size: 24 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00459 m"
 			],
-			"peak_mb": 2079.0,
+			"peak_mb": 1936.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 2492.5,
+			"search_s": 1984.5,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "5349d539507f9f93154559af6329db7e14da00de64a66f0c8f7cfe63dc5f0a65"
 	}
 }

@@ -62,7 +62,7 @@
 	},
 	"replay": {
 		"1": "2debc76dfe6138a2a53ae85493fd3d68fe2b15e6810e6e3a527a200357fb4093",
-		"2": "0001f89ab206db1918c75338c3ffcb377cfda58a1da30539dd4b30f3f26bc617"
+		"2": "00772b57bd1b8928c1ec53bd45a3be974f3838fc201150d62426d1fd32afcc29"
 	},
 	"rungs": {
 		"1": {
@@ -147,7 +147,7 @@
 			"routes": {
 				"reduce": 16.0
 			},
-			"search_s": 121.80000000000001,
+			"search_s": 107.4,
 			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -311,7 +311,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 4002,
 				"coverage_rel": -0.012950000000000001,
@@ -336,19 +335,20 @@
 				"KIT at 2 pixels: none holds at 0.0118 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 13 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00389 m",
 				"REDUCE from rung 1, the derived band above at {} seed 314: element 11's part 'fount' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"REDUCE from rung 0 at {} seed 314: element 11's part 'fount' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to 0.700 held at 6074, dearer than the 4002 taken",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.920 kept), carried from rung 1 held at 8748, dearer than the 4002 taken"
 			],
 			"peak_mb": 360.0,
 			"route": "kit",
-			"search_s": 471.1,
+			"search_s": 199.70000000000002,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
 		"generator": "c3d136bcdef974743cccb554b25325f8842f5b41270d6a7f3c50b3bb574d32e9"
 	}
 }
