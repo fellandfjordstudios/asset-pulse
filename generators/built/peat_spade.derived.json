@@ -47,7 +47,7 @@
 				"trace": "built__peat-spade#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 35,
+				"candidates": 38,
 				"trace": "built__peat-spade#2.trace.jsonl"
 			},
 			"3": {
@@ -61,13 +61,16 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "e9c10dafe066eeda43db8628738b387cada734e4d8daba111240b88d9af0f3e5",
-		"2": "0c829b7316d9ada08fd7ede42c1f5edcfb22016dc2161274f245fe4305245d3a",
+		"1": "dc16aaddb79886e57d3b8127b71b49a330f97a5de9baa3a6c173e9c59c61e530",
+		"2": "1a20b919702d4a2ccba2112d1a1432e5605a233faa82e287b06cad9a0e4dfcc4",
 		"3": "9d458b0dce12c18edeff5ccf58a8dbc3331c5dd2329b97409b883a32c97b8e08"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 17844,
@@ -90,27 +93,22 @@
 					"value": 0.6047399999999999
 				}
 			],
-			"checked_at": 5,
-			"colour": {
-				"judge": "each part's share held to keep 1's at the band",
-				"tolerance": 0.0074,
-				"worst": 0.0
+			"cap": 0.0002314814814814815,
+			"chain": "error",
+			"chains": {
+				"error": "kept"
 			},
+			"checked_at": 5,
 			"drawn": {
-				"below_failing_keep_1": true,
-				"excess": 0.375,
+				"excess": 0.125,
 				"judge": "drawn",
 				"pixel_m": 0.002225
 			},
 			"error": 0.001851851851851852,
-			"fraction": 1.0,
+			"every_piece": true,
+			"fraction": 0.6047399999999999,
 			"from_rung": 0,
-			"keep": {
-				"debris": 0.48999999999999994
-			},
-			"keep_cover": {
-				"debris": 1.0
-			},
+			"judged": "30150859fc916bce734abe3396de2c9209f26c5269c0cfe88e4758822a9eaf4d",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x)",
@@ -128,10 +126,16 @@
 				]
 			},
 			"measured": {
-				"cost": 17844,
-				"coverage_rel": -0.018240000000000003,
+				"cost": 11432,
+				"coverage_rel": 0.00044,
 				"floor": 0.00398,
-				"part_shift": {},
+				"part_shift": {
+					"grip": -3.0000000000000004e-05,
+					"iron": 0.00011,
+					"peat": -8e-05,
+					"shaft": -0.00011,
+					"socket": 5e-05
+				},
 				"picture": 0.00398
 			},
 			"measured_of": 2,
@@ -141,11 +145,14 @@
 				"REDUCE from rung 0 at {} seed 314: element 4's part 'peat' is 39 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x)) is 1 route(s)",
-				"REDUCE (every piece) to its error cap 0.125x the band's (0.605 kept) held at 11432, cheaper than the 17844 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x) held at 17844, dearer than the 11432 taken"
 			],
-			"peak_mb": 453.0,
-			"route": "kit",
-			"search_s": 373.40000000000003,
+			"peak_mb": 457.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 5
+			},
+			"search_s": 378.1,
 			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -177,17 +184,22 @@
 					}
 				},
 				{
-					"cost": 3506,
+					"cost": 2314,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.196481
+					"value": 0.20241399999999998
 				}
 			],
-			"cap": 0.000925925925925926,
+			"cap": 0.001851851851851852,
 			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 7930,
+				"fraction": 0.7
+			},
 			"chains": {
 				"error": "kept"
 			},
@@ -199,11 +211,12 @@
 			},
 			"error": 0.007407407407407408,
 			"every_piece": true,
-			"fraction": 0.196481,
+			"fraction": 0.20241399999999998,
 			"from_rung": 1,
+			"judged": "a6ac48780be27f0549f4553dc5d4911a227ab181fb92513f10246223cfea5f19",
 			"look_past": {
 				"beaten": false,
-				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.196 kept)",
+				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.202 kept)",
 				"looked": 0,
 				"order": [
 					"kit",
@@ -223,121 +236,121 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.11344055086374283,
-							0.08886256068944931,
-							0.06538785994052887
+							0.11365190148353577,
+							0.08898001164197922,
+							0.06543485075235367
 						],
 						"mean_before": [
-							0.11344055086374283,
-							0.08886256068944931,
-							0.06538785994052887
+							0.11365190148353577,
+							0.08898001164197922,
+							0.06543485075235367
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0024322373792529106,
-							0.0020112600177526474,
-							0.001827748492360115
+							0.002415885217487812,
+							0.002000723034143448,
+							0.0018233316950500011
 						],
 						"variance_before": [
-							0.0024322373792529106,
-							0.0020112600177526474,
-							0.001827748492360115
+							0.002415885217487812,
+							0.002000723034143448,
+							0.0018233316950500011
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.11637309193611145,
-							0.09188364446163177,
-							0.06811974942684174
+							0.11656588315963745,
+							0.09200656414031982,
+							0.06818690896034241
 						],
 						"mean_before": [
-							0.11637309193611145,
-							0.09188364446163177,
-							0.06811974942684174
+							0.11656588315963745,
+							0.09200656414031982,
+							0.06818690896034241
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.002568025141954422,
-							0.002232016995549202,
-							0.0020553572103381157
+							0.0025519337505102158,
+							0.002222183160483837,
+							0.0020513893105089664
 						],
 						"variance_before": [
-							0.002568025141954422,
-							0.002232016995549202,
-							0.0020553572103381157
+							0.0025519337505102158,
+							0.002222183160483837,
+							0.0020513893105089664
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.11486998945474625,
-							0.09059727936983109,
-							0.06706447154283524
+							0.11510564386844635,
+							0.09074504673480988,
+							0.06714234501123428
 						],
 						"mean_before": [
-							0.11486998945474625,
-							0.09059727936983109,
-							0.06706447154283524
+							0.11510564386844635,
+							0.09074504673480988,
+							0.06714234501123428
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0025048498064279556,
-							0.00214220117777586,
-							0.0019686692394316196
+							0.0024862540885806084,
+							0.0021305950358510017,
+							0.0019640065729618073
 						],
 						"variance_before": [
-							0.0025048498064279556,
-							0.00214220117777586,
-							0.0019686692394316196
+							0.0024862540885806084,
+							0.0021305950358510017,
+							0.0019640065729618073
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.11351071298122406,
-							0.08891835063695908,
-							0.06542939692735672
+							0.11364693194627762,
+							0.08897611498832703,
+							0.06543191522359848
 						],
 						"mean_before": [
-							0.11351071298122406,
-							0.08891835063695908,
-							0.06542939692735672
+							0.11364693194627762,
+							0.08897611498832703,
+							0.06543191522359848
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.002427571453154087,
-							0.0020087240263819695,
-							0.001826852560043335
+							0.0024161934852600098,
+							0.002000906504690647,
+							0.0018234164454042912
 						],
 						"variance_before": [
-							0.002427571453154087,
-							0.0020087240263819695,
-							0.001826852560043335
+							0.0024161934852600098,
+							0.002000906504690647,
+							0.0018234164454042912
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.11344704777002335,
-							0.08886799961328506,
-							0.06539212912321091
+							0.11362604796886444,
+							0.08895938843488693,
+							0.06541967391967773
 						],
 						"mean_before": [
-							0.11344704777002335,
-							0.08886799961328506,
-							0.06539212912321091
+							0.11362604796886444,
+							0.08895938843488693,
+							0.06541967391967773
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.002431846223771572,
-							0.0020110178738832474,
-							0.0018276665359735489
+							0.0024175746366381645,
+							0.0020016860216856003,
+							0.0018236381001770496
 						],
 						"variance_before": [
-							0.002431846223771572,
-							0.0020110178738832474,
-							0.0018276665359735489
+							0.0024175746366381645,
+							0.0020016860216856003,
+							0.0018236381001770496
 						]
 					}
 				],
@@ -345,15 +358,15 @@
 			},
 			"materials": "merged",
 			"measured": {
-				"cost": 3506,
-				"coverage_rel": -0.02068,
+				"cost": 2314,
+				"coverage_rel": -0.021820000000000003,
 				"floor": 0.00398,
 				"part_shift": {
-					"grip": 0.001,
-					"iron": 0.00587,
-					"peat": 0.0029700000000000004,
-					"shaft": -0.012020000000000001,
-					"socket": 0.0011500000000000002
+					"grip": 0.0010500000000000002,
+					"iron": 0.0048000000000000004,
+					"peat": 0.0030800000000000003,
+					"shaft": -0.01034,
+					"socket": 0.0008200000000000001
 				},
 				"picture": 0.00398
 			},
@@ -377,19 +390,19 @@
 				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 8x its pixel: 11 pixel(s) differ at {} seed 314 (worst 0.58)",
 				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 4x its pixel: 11 pixel(s) differ at {} seed 314 (worst 0.58)",
 				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 9 pixel(s) differ at {} seed 314 (worst 0.58)",
-				"REDUCE from rung 1, the derived band above at {} seed 314: element 4's part 'peat' is 24 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"REDUCE from rung 1, the derived band above at {} seed 314: element 4's part 'peat' is 39 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE from rung 0 at {} seed 314: element 4's part 'peat' is 39 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
-				"KIT (its own build at the rung's pixel, keeping debris 0.040) held at 16922, dearer than the 3506 taken",
-				"KIT (its own build at 2 of the band's pixels, keeping debris 0.040) held at 17287, dearer than the 3506 taken",
-				"KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x), carried from rung 1 held at 17844, dearer than the 3506 taken"
+				"KIT (its own build at the rung's pixel, keeping debris 0.040) held at 16922, dearer than the 2314 taken",
+				"KIT (its own build at 2 of the band's pixels, keeping debris 0.040) held at 17287, dearer than the 2314 taken",
+				"REDUCE (every piece) to its error cap 0.0313x the band's (0.605 kept), carried from rung 1 held at 11432, dearer than the 2314 taken"
 			],
-			"peak_mb": 413.0,
+			"peak_mb": 419.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5
 			},
-			"search_s": 848.7,
+			"search_s": 698.7,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -420,10 +433,10 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 2,
+					"px_over": null,
 					"route": "impostor",
 					"value": 12
 				}
@@ -438,6 +451,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "79bd26abb6cb3cf3324f81e71fc0555293132a8d13d07a46ce9ce1c251187f5a",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -449,10 +463,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 413.0,
+			"peak_mb": 419.0,
 			"route": "impostor",
-			"search_s": 50.5,
-			"searched": "search",
+			"search_s": 51.6,
+			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -460,7 +474,7 @@
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "0c7a7ae31435f6aac8af71cb3024741b967e75e71e2906db1c57c4fc429992f6"
 	}
 }

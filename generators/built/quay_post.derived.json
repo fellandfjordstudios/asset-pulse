@@ -197,7 +197,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 18,
+				"candidates": 0,
 				"trace": "built__quay-post#1.trace.jsonl"
 			}
 		}
@@ -218,22 +218,22 @@
 					"cost": 100670,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.0043300000000000005,
-					"px_over": 13,
+					"picture": 0.0045000000000000005,
+					"px_over": null,
 					"route": "kit",
-					"value": 1.0
+					"value": {}
 				},
 				{
-					"cost": 119815,
+					"cost": 119815.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.0043300000000000005,
-					"px_over": 5,
+					"picture": 0.00433,
+					"px_over": 5.0,
 					"route": "reduce",
 					"value": 0.7
 				},
 				{
-					"cost": 57016,
+					"cost": 57016.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.14864000000000002,
@@ -248,30 +248,24 @@
 				"judge": "drawn",
 				"pixel_m": 0.001772
 			},
-			"error": 0.001851851851851852,
+			"error": 0.00185185185185185,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "f5947472ea646a7205a560737360829b3470118af338d4f272f0858474e6b91d",
 			"keep": {},
 			"measured": {
 				"cost": 100670,
-				"coverage_rel": -0.00237,
-				"floor": 0.0043300000000000005,
-				"part_shift": {
-					"barnacle": -0.0030700000000000002,
-					"foot": 0.0016400000000000002,
-					"head": 0.0005600000000000001,
-					"mussel": 0.00012000000000000002,
-					"rope": -0.00395,
-					"tarred_wood": 0.0027300000000000002,
-					"wrack": 0.0017300000000000002
-				},
-				"picture": 0.0043300000000000005
+				"coverage_rel": -0.004710000000000001,
+				"floor": 0.0045000000000000005,
+				"part_shift": {},
+				"picture": 0.0045000000000000005
 			},
+			"measured_of": 1,
 			"miss": {
 				"cost_of_ceiling": 2.5735613671805098,
 				"judge": "drawn",
-				"picture_over": 2.3382,
-				"px_over": 13,
+				"picture_over": 2.43,
+				"px_over": 13.0,
 				"route": "kit",
 				"tier": 3
 			},
@@ -283,17 +277,17 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00177 m; the error ladder: none holds at 0.0019",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1079.0,
+			"peak_mb": 810.0,
 			"route": "kit",
-			"search_s": 2409.7000000000003,
-			"searched": "search",
+			"search_s": 852.3000000000001,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"tolerance": 0.001851851851851852
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "749c43955e23d216767b7ec2c53b10d5a4bd107417c404b350c4dd14ee3a39ab"
 	}
 }

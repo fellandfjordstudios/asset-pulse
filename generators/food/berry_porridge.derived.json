@@ -57,7 +57,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 18,
+				"candidates": 0,
 				"trace": "food__berry-porridge#1.trace.jsonl"
 			}
 		}
@@ -87,7 +87,7 @@
 					}
 				},
 				{
-					"cost": 23507,
+					"cost": 23507.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
@@ -106,6 +106,7 @@
 			"error": 0.006174669649115607,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "1b9df73aff69785124fc9360851bd46c2881e5ef84b881acd7f52ec11e6de6da",
 			"keep": {
 				"drupelet": 0.3429999999999999,
 				"oat_flake": 0.03125
@@ -124,17 +125,17 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED (its parts at their own rungs, joined) held at 23507, dearer than the 7845 taken"
 			],
-			"peak_mb": 323.0,
+			"peak_mb": 282.0,
 			"route": "kit",
-			"search_s": 426.6,
-			"searched": "search",
+			"search_s": 99.60000000000001,
+			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
 		}
 	},
 	"source": {
 		"children": "fb61b1c4f98bd2009c8b93b89b3f2d7a418f4cb81cc74da4a1f97ceaa5f8843c",
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "ef366bc1b424f41f0fd3466920c91b40c853bf3394c43477801a993a02bf860c"
 	}
 }

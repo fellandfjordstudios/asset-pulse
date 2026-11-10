@@ -187,6 +187,7 @@
 			"every_piece": true,
 			"fraction": 0.745458,
 			"from_rung": 0,
+			"judged": "6676c569f9d0ac8c87e6b015298fc9fb8ce4f80d1cf5798bdb403112b1c581ed",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.745 kept)",
@@ -222,20 +223,20 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'prickle' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 891.0,
+			"peak_mb": 893.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 8.0,
 				"reduce": 16.0
 			},
-			"search_s": 3019.9,
+			"search_s": 3500.4,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "5961a687389dafbe16b4587fff46c28691bb009d48b134538320c6df530f219d"
 	}
 }

@@ -68,11 +68,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": -1,
 				"trace": "built__motor-sledge#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 29,
+				"candidates": 0,
 				"trace": "built__motor-sledge#2.trace.jsonl"
 			},
 			"3": {
@@ -87,7 +87,7 @@
 	},
 	"replay": {
 		"1": "37ce7fe7b87bd4bde8676a821328d76dd5165417ebef37468abf570cf2e54932",
-		"2": "521d6f3b606705294e2d3018a213efcd2010ab3d5a66256aad5dab659b31c11c",
+		"2": "3090bbd26dfae688155aa95def169a9c86a3bf18a7f77b8ba0ec9223d2ece44b",
 		"3": "0708ec751e653cbd48e95a3f75d7a6049fb24a9e83e699be7b2ac2b73480ae0d"
 	},
 	"rungs": {
@@ -122,6 +122,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "5334506bd1972bdd23e94af7062f55cd1cc9852447dd68f589453906a10a02aa",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
@@ -158,9 +159,9 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 556.0,
+			"peak_mb": 559.0,
 			"route": "merged",
-			"search_s": 620.7,
+			"search_s": 632.8000000000001,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -170,13 +171,13 @@
 			"budget_reason": "the cheapest derivation that holds the picture costs 15876, 1.62x rung 2's budget 9779: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 3,
+					"px_over": 3.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 15876,
@@ -188,7 +189,7 @@
 					"value": {}
 				},
 				{
-					"cost": 43546,
+					"cost": 43546.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
@@ -197,10 +198,10 @@
 					"value": 1.0
 				},
 				{
-					"cost": 23108,
+					"cost": 23108.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004690000000000001,
+					"picture": 0.00469,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.5306569999999999
@@ -215,6 +216,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "f99e8c0cd5e2c8022b46ec18d7bffad3ef3e853f207d3206b687090112fe2ec8",
 			"keep": {},
 			"material_transfer": {
 				"checked_at": 8,
@@ -414,18 +416,12 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 15876,
 				"coverage_rel": -0.00805,
 				"floor": 0.004690000000000001,
-				"part_shift": {
-					"canvas": 0.0027900000000000004,
-					"cowl": 0.0008,
-					"engine": -0.00039000000000000005,
-					"iron": 0.0018300000000000002,
-					"track": -0.00512,
-					"wood": 0.0034600000000000004
-				},
+				"part_shift": {},
 				"picture": 0.005600000000000001
 			},
 			"measured_of": 4,
@@ -456,10 +452,10 @@
 				"MERGED (its parts at their own rungs, joined) held at 43546, dearer than the 15876 taken",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 43546, dearer than the 15876 taken"
 			],
-			"peak_mb": 592.0,
+			"peak_mb": 256.0,
 			"route": "kit",
-			"search_s": 1880.3000000000002,
-			"searched": "search",
+			"search_s": 245.70000000000002,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -507,6 +503,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "70373219596aec3594515c19e6aeddbb9412a35e38bbef8354352aec790958bb",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -518,9 +515,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 592.0,
+			"peak_mb": 278.0,
 			"route": "impostor",
-			"search_s": 505.8,
+			"search_s": 514.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -529,7 +526,7 @@
 	},
 	"source": {
 		"children": "b9261c1d417ec26346f06238cfa2dfd0f8205ab5c72be5cdfb8a03ba12747331",
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "e7f5dd46263ed4eca2c0737b37ec07d2d89ba65a01742183edd59a0f9d7389c8"
 	}
 }

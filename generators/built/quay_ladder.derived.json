@@ -96,7 +96,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 8,
 				"trace": "built__quay-ladder#1.trace.jsonl"
 			},
 			"2": {
@@ -110,12 +110,15 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "9efe6bfe251d208ea53296e4711496087e3bfb97fc78245ba3fa067a0f915c02",
+		"1": "d14e0f13fe5d877536d7d1c31ab8267fcd7605a70190a78376332b90f7bac76f",
 		"2": "0820d90acba7c6d5b79edc06c8bc0844ce21cb04dbcfc73af16dfc8cec7127cf"
 	},
 	"rungs": {
 		"1": {
 			"budget": 39117,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 340,
@@ -127,7 +130,7 @@
 					"value": {}
 				},
 				{
-					"cost": 296.0,
+					"cost": 296,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00434,
@@ -136,20 +139,24 @@
 					"value": 0.7
 				}
 			],
+			"chains": {
+				"error": "lost"
+			},
 			"checked_at": 12,
 			"drawn": {
-				"excess": 0.125,
+				"excess": 0.25,
 				"judge": "drawn",
 				"pixel_m": 0.007221999999999999
 			},
 			"error": 0.0018518518518518517,
-			"fraction": 1.0,
+			"every_piece": true,
+			"fraction": 0.7,
 			"from_rung": 0,
-			"keep": {},
+			"judged": "d9cb19b7cc941e5480b76a4f1008512452cb633f3d281269959bcb6710e9d0b6",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -163,10 +170,14 @@
 				]
 			},
 			"measured": {
-				"cost": 340,
-				"coverage_rel": 0.00158,
+				"cost": 296,
+				"coverage_rel": -0.00687,
 				"floor": 0.00472,
-				"part_shift": {},
+				"part_shift": {
+					"iron": -0.00034,
+					"tide_growth": 0.00075,
+					"timber": -0.00021
+				},
 				"picture": 0.00434
 			},
 			"measured_of": 2,
@@ -174,12 +185,15 @@
 				"REDUCE from rung 0 at {\"height_m\":9.0} seed 314: element 2000's part 'iron' is 16 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE (every piece) to 0.700 held at 296, cheaper than the 340 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"KIT (its own build at the rung's pixel) held at 340, dearer than the 296 taken"
 			],
-			"peak_mb": 307.0,
-			"route": "kit",
-			"search_s": 102.5,
-			"searched": "recheck",
+			"peak_mb": 636.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 14
+			},
+			"search_s": 178.60000000000002,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -214,6 +228,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "2ebd58a69a929096837c29cac6a188344aa70a965bde3aa6c032d47db0c3daca",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -542,16 +557,16 @@
 				"REDUCE (every piece) to 0.700 held at 296, dearer than the 236 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 340, dearer than the 236 taken"
 			],
-			"peak_mb": 265.0,
+			"peak_mb": 569.0,
 			"route": "kit",
-			"search_s": 62.6,
+			"search_s": 62.300000000000004,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "4953392381444985ce5abce5f318ef27c9dbcdb39dd3b0d114017371aa9cd7df"
 	}
 }

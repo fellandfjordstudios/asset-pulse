@@ -91,6 +91,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
+			"judged": "40be6b6088a146ea8cc9c9f17ddb26ef8cbac5c859f2b89f6a039f3349f10c58",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.700)",
@@ -166,12 +167,12 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 355.0,
+			"peak_mb": 358.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 43.0
 			},
-			"search_s": 83.0,
+			"search_s": 100.30000000000001,
 			"searched": "recheck",
 			"surfaces": 43,
 			"surfaces_ceiling": 43
@@ -219,6 +220,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "8564c1227523d0cf16d1044dddb619105d523c1c00119b78eec34c592751359a",
 			"keep": {
 				"bolt": 0.03125
 			},
@@ -351,9 +353,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping bolt 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.700), carried from rung 1 held at 3888, dearer than the 2044 taken"
 			],
-			"peak_mb": 355.0,
+			"peak_mb": 358.0,
 			"route": "kit",
-			"search_s": 149.8,
+			"search_s": 173.0,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -402,6 +404,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "c2df6e77b15f34ecf66d0fdfa543b96bd47bf6702cde76156333846b3b70b889",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -413,9 +416,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 355.0,
+			"peak_mb": 358.0,
 			"route": "impostor",
-			"search_s": 16.900000000000002,
+			"search_s": 20.5,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -425,7 +428,7 @@
 	},
 	"source": {
 		"children": "ef8410c8f039f2289cff0c19d0e6c49f36a05a81f77ee98a4ba48247df1f053e",
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "28c7c654997e8e51956ac49e2328c92443208228220cb7e91ba4a172ce5ab6ef"
 	}
 }

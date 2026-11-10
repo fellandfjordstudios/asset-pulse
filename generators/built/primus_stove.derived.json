@@ -89,6 +89,7 @@
 			"every_piece": true,
 			"fraction": 0.16806999999999994,
 			"from_rung": 0,
+			"judged": "020bfee9d1099533ec2a48f7c0931ff8f0b06ae4a8ee8e5bcbce6c002f137681",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.168",
@@ -126,19 +127,19 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 6914, dearer than the 3526 taken"
 			],
-			"peak_mb": 267.0,
+			"peak_mb": 270.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 43.300000000000004,
+			"search_s": 46.0,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "f8d33f47c37afd82b47ae9937afff8b4331847cc1d383722c7570fd2672d683c"
 	}
 }

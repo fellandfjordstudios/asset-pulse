@@ -133,6 +133,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "9f70b5ca34a3dedf1c5b9b09fd8bb6e6c61a8f1da0d9500a5907805f8f36fcf4",
 			"keep": {
 				"blade": 0.03125,
 				"fibre": 0.16806999999999994
@@ -161,9 +162,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"BUDGET: the cheapest derivation that holds the picture costs 235584 (6.02x), over rung 1's budget 39117 x 1.5 = 58675 (made, 0.86 m)"
 			],
-			"peak_mb": 497.0,
+			"peak_mb": 501.0,
 			"route": "kit",
-			"search_s": 204.9,
+			"search_s": 243.8,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
@@ -215,6 +216,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "bb5e45f117985caf7ccb30d06b77ed062a56eeef215b30d38e29c6b6b21da92d",
 			"material_transfer": {
 				"checked_at": 9,
 				"checks": [
@@ -481,9 +483,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping blade 0.031, fibre 0.168), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: part 'fodder' changes its share of the picture by +0.0700 against 0.0473 allowed (its colour's share of the subject); part 'stalk_pale' changes its share of the picture by -0.0803 against 0.0473 allowed (its colour's share of the subject); part 'stalk_dark' changes its share of the picture by -0.0518 against 0.0473 allowed (its colour's share of the subject)",
 				"BUDGET: the cheapest derivation that holds the picture costs 224608 (22.97x), over rung 2's budget 9779 x 1.5 = 14668 (made, 0.86 m)"
 			],
-			"peak_mb": 523.0,
+			"peak_mb": 527.0,
 			"route": "thin",
-			"search_s": 1663.6000000000001,
+			"search_s": 1925.2,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 1,
@@ -533,6 +535,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "0e43d5e5ae7d8e5c0fb54850ba007ff97f4626d7b298aff14e892ab26cd3938e",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -544,9 +547,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 643.0,
+			"peak_mb": 645.0,
 			"route": "impostor",
-			"search_s": 528.8000000000001,
+			"search_s": 638.7,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -556,7 +559,7 @@
 	},
 	"source": {
 		"children": "56b39f70e77b2f128d86165ba22a145495f75997ab6fb318283e31b8059c97e0",
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "544d4bce26780c054724aa44fd24c2e5d6211ec20f3547efe7ba45879d7bfc67"
 	}
 }

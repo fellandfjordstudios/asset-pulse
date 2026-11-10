@@ -161,6 +161,7 @@
 			"error": 0.0018518518518518521,
 			"fraction": 0.526316,
 			"from_rung": 0,
+			"judged": "67799304d6bbf13f926a1d4e5d08e280e42e6530da2515c0f1a309d848981074",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 1.0x the band's (0.526 kept)",
@@ -192,12 +193,12 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.02} seed 314: the picture changes at the drawn size: 23499 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00005 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 585.0,
+			"peak_mb": 587.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 65.7,
+			"search_s": 83.10000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -246,6 +247,7 @@
 			"error": 0.0074074074074074086,
 			"fraction": 0.526316,
 			"from_rung": 0,
+			"judged": "4e16a69a070ecab62f7fdd17992103d97d07cc39cd9bdc75dc98e4d6291a3032",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.25x the band's (0.526 kept)",
@@ -595,12 +597,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.25x the band's (0.526 kept), carried from rung 1 held at 40, the same cost as the route taken, found first"
 			],
-			"peak_mb": 585.0,
+			"peak_mb": 587.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 23.3,
+			"search_s": 27.400000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -649,6 +651,7 @@
 			"error": 0.029629629629629634,
 			"fraction": 0.526316,
 			"from_rung": 0,
+			"judged": "183171702aad1d14cd64e907aa535f9318978547a32494c810368b65f77e978c",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.0625x the band's (0.526 kept)",
@@ -995,19 +998,19 @@
 				"REDUCE to its error cap 0.0625x the band's (0.526 kept), carried from rung 1 held at 40, the same cost as the route taken, found first",
 				"REDUCE to its error cap 0.0625x the band's (0.526 kept), carried from rung 2 held at 40, the same cost as the route taken, found first"
 			],
-			"peak_mb": 585.0,
+			"peak_mb": 587.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 17.8,
+			"search_s": 22.400000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "e18a6712b70dc269d35dd6741f37744b33c804942f7794aa6b0f269ec614ce1e"
 	}
 }

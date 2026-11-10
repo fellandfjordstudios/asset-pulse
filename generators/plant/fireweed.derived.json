@@ -325,6 +325,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "4fc022b89dfd1826456c4bce90c5f5c7e0048857e1859d0e1f4ad19baf747422",
 			"measured": {
 				"cost": 2452,
 				"coverage_rel": 0.0,
@@ -341,9 +342,9 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 340.0,
+			"peak_mb": 343.0,
 			"route": "rung0",
-			"search_s": 66.3,
+			"search_s": 85.80000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
@@ -384,6 +385,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "a9315883783b6a8ee880ca87667164c88cd93a24cae8cc3f33066400971a68d6",
 			"material_transfer": {
 				"checked_at": 37,
 				"checks": [
@@ -1297,9 +1299,9 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 344.0,
+			"peak_mb": 346.0,
 			"route": "rung0",
-			"search_s": 44.800000000000004,
+			"search_s": 54.7,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -1332,6 +1334,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "ef01b88ce8b3ad48bd99d08b2bb7bb54b6aa60cc4b390f3f5c28df05f5205938",
 			"keep": {},
 			"material_transfer": {
 				"checked_at": 37,
@@ -2253,9 +2256,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0296 -- the finest tried (0.700) fails at {\"leaves\":2} seed 314: coverage changes -0.1074 against 0.0661 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0296",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 344.0,
+			"peak_mb": 347.0,
 			"route": "kit",
-			"search_s": 48.400000000000006,
+			"search_s": 57.2,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -2263,7 +2266,7 @@
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "e4c29908894e1a50e526cede488ac7841dd7882e91c930f3cfcd93bb6b84d485"
 	}
 }

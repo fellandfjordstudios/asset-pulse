@@ -85,7 +85,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": -1,
+				"candidates": 1,
 				"trace": "built__provision-crate#1.trace.jsonl"
 			},
 			"2": {
@@ -143,6 +143,7 @@
 			"every_piece": true,
 			"fraction": 0.7549049999999999,
 			"from_rung": 0,
+			"judged": "5de98546d4216779dfa67f5e4e48ca1536ae9d591607b17fb447207cc127fbc4",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.755 kept)",
@@ -185,12 +186,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'end_grain' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 4 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 516.0,
+			"peak_mb": 519.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 11.0
 			},
-			"search_s": 258.8,
+			"search_s": 262.8,
 			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11
@@ -229,6 +230,7 @@
 			"error": 0.010373445010514218,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "71125abb8874879b8536277568f2160c3a74809a7890439a604db069adbb7024",
 			"keep": {
 				"nail": 0.24009999999999992
 			},
@@ -532,17 +534,17 @@
 				"REDUCE (every piece) to 0.700 held at 3244, dearer than the 1413 taken",
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.755 kept), carried from rung 1 held at 4386, dearer than the 1413 taken"
 			],
-			"peak_mb": 254.0,
+			"peak_mb": 519.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 100.2,
+			"search_s": 268.1,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "59861e216836c4d2819e982eef37fb46fc78b6fd9234192c190b3230a3ae3e42"
 	}
 }

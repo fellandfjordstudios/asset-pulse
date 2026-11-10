@@ -119,6 +119,7 @@
 			"error": 0.0036321586171268274,
 			"fraction": 0.24009999999999992,
 			"from_rung": 0,
+			"judged": "a8032909037ab9a63a6c2e598c88f9b1713798a72ddccd7c0983c77fc2b2f417",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.240",
@@ -146,12 +147,12 @@
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 307.0,
+			"peak_mb": 310.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 44.5,
+			"search_s": 56.2,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -191,6 +192,7 @@
 			"error": 0.01452863446850731,
 			"fraction": 0.190323,
 			"from_rung": 0,
+			"judged": "ce1abc6909786f97814d27f35347dd27e14f1aa20c1a74d31222b7a2005cb14d",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 1.0x the band's (0.190 kept)",
@@ -219,19 +221,19 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"CARRIED from rung 1, REDUCE to 0.240, carried from rung 1: none holds at 0.0145 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 1.00), one pixel 0.00518 m; coverage changes -0.1667 against 0.0727 allowed (a one-pixel shrink all round)"
 			],
-			"peak_mb": 307.0,
+			"peak_mb": 310.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 12.700000000000001,
+			"search_s": 15.600000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "68f92aac2b05a01bed120292aa45884a10121e211ac90c29808ed421e051541a"
 	}
 }

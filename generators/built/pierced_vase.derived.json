@@ -152,6 +152,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
+			"judged": "beacaa948a062d8aa1a6ded8424885b1404eddd5cb4a56c4a1e3e80d8ef40e1d",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.700",
@@ -182,19 +183,19 @@
 				"REDUCE from rung 0 at {} seed 314: part 'body' is 345 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 475.0,
+			"peak_mb": 478.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 1.0
 			},
-			"search_s": 568.7,
+			"search_s": 585.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "e0f94970b25489cc5055ec78b34940c05da97f0780f337b9d1518e926d3113b6"
 	}
 }

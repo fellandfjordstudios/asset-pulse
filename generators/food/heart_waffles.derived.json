@@ -29,7 +29,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 12,
+				"candidates": 1,
 				"trace": "food__heart-waffles#1.trace.jsonl"
 			}
 		}
@@ -50,10 +50,10 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 148376,
+					"cost": 148376.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004410000000000001,
+					"picture": 0.00441,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
@@ -69,9 +69,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.003423127313395663,
+				"cap": 0.00342312731339566,
 				"chain": "error",
-				"cost": 13288
+				"cost": 13288.0
 			},
 			"chains": {
 				"error": "lost"
@@ -85,6 +85,7 @@
 			"error": 0.006846254626791326,
 			"fraction": 0.01384128720099999,
 			"from_rung": 0,
+			"judged": "2a94a3837693c577a9c8793eb302e47ea9a4d310b367caf07b663ab797567de7",
 			"measured": {
 				"cost": 10682,
 				"coverage_rel": -0.01727,
@@ -103,19 +104,19 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 148376, dearer than the 10682 taken"
 			],
-			"peak_mb": 468.0,
+			"peak_mb": 457.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 8
+				"reduce": 8.0
 			},
-			"search_s": 621.9000000000001,
-			"searched": "search",
+			"search_s": 334.70000000000005,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "2bf60bb9b05c449b41353b0560e18fcef8588e350f53a5a440fb08d24192a7c1"
 	}
 }

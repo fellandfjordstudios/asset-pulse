@@ -51,7 +51,7 @@
 				"trace": "built__storm-lantern#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 13,
+				"candidates": 0,
 				"trace": "built__storm-lantern#2.trace.jsonl"
 			}
 		}
@@ -62,7 +62,7 @@
 	},
 	"replay": {
 		"1": "2debc76dfe6138a2a53ae85493fd3d68fe2b15e6810e6e3a527a200357fb4093",
-		"2": "00772b57bd1b8928c1ec53bd45a3be974f3838fc201150d62426d1fd32afcc29"
+		"2": "0001f89ab206db1918c75338c3ffcb377cfda58a1da30539dd4b30f3f26bc617"
 	},
 	"rungs": {
 		"1": {
@@ -105,6 +105,7 @@
 			"every_piece": true,
 			"fraction": 0.91968,
 			"from_rung": 0,
+			"judged": "0f9f5d7b243fee89bd80828bc208e34cd8791bc2b3fa1cdad44b6e6b31e23cb8",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.920 kept)",
@@ -142,12 +143,12 @@
 				"KIT: none holds at 0.0029 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00097 m",
 				"REDUCE from rung 0 at {} seed 314: element 11's part 'fount' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)"
 			],
-			"peak_mb": 352.0,
+			"peak_mb": 356.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 16.0
 			},
-			"search_s": 107.4,
+			"search_s": 131.20000000000002,
 			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -166,7 +167,7 @@
 					"value": {}
 				},
 				{
-					"cost": 6074,
+					"cost": 6074.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00799,
@@ -177,13 +178,14 @@
 			],
 			"checked_at": 5,
 			"drawn": {
-				"excess": 0.5,
+				"excess": 0.375,
 				"judge": "drawn",
-				"pixel_m": 0.0038929999999999998
+				"pixel_m": 0.005187
 			},
 			"error": 0.011788005693766156,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "5d608a2c8910a90e0e5805ca3e6008653bbd3354899af56b87903cb9a15b3d04",
 			"keep": {},
 			"material_transfer": {
 				"checked_at": 5,
@@ -311,22 +313,12 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 4002,
 				"coverage_rel": -0.012950000000000001,
 				"floor": 0.0041400000000000005,
-				"part_shift": {
-					"bail": 0.00032,
-					"brass": -0.00151,
-					"flame": -2e-05,
-					"fount": 0.00017,
-					"globe": -0.00067,
-					"guard": 0.0007400000000000001,
-					"hood": -0.0008,
-					"seam": 0.00093,
-					"tubes": 0.0018200000000000002,
-					"wick": -5e-05
-				},
+				"part_shift": {},
 				"picture": 0.0055000000000000005
 			},
 			"measured_of": 3,
@@ -339,16 +331,16 @@
 				"REDUCE (every piece) to 0.700 held at 6074, dearer than the 4002 taken",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.920 kept), carried from rung 1 held at 8748, dearer than the 4002 taken"
 			],
-			"peak_mb": 360.0,
+			"peak_mb": 356.0,
 			"route": "kit",
-			"search_s": 199.70000000000002,
-			"searched": "search",
+			"search_s": 404.0,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "c3d136bcdef974743cccb554b25325f8842f5b41270d6a7f3c50b3bb574d32e9"
 	}
 }

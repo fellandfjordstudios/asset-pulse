@@ -47,7 +47,7 @@
 				"trace": "food__pickled-herring#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 13,
+				"candidates": 1,
 				"trace": "food__pickled-herring#2.trace.jsonl"
 			}
 		}
@@ -100,6 +100,7 @@
 			"error": 0.0033811750360215834,
 			"fraction": 0.295707,
 			"from_rung": 0,
+			"judged": "d0b42d54d39b8c832bebb6eed6e055277537518ed860c179dc2598e272f81a6a",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.296 kept)",
@@ -141,12 +142,12 @@
 				"KIT: none holds at 0.0034 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00130 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 315.0,
+			"peak_mb": 318.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 100.0
 			},
-			"search_s": 430.6,
+			"search_s": 553.9,
 			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11
@@ -159,11 +160,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 9855,
+					"cost": 9855.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.009300000000000001,
-					"px_over": 0,
+					"picture": 0.0093,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -177,11 +178,11 @@
 					"value": 0.563596
 				}
 			],
-			"cap": 0.0033811750360215834,
+			"cap": 0.00338117503602158,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 9146,
+				"cost": 9146.0,
 				"fraction": 0.7
 			},
 			"chains": {
@@ -196,6 +197,7 @@
 			"error": 0.013524700144086334,
 			"fraction": 0.563596,
 			"from_rung": 1,
+			"judged": "82bc6e8a13321d0c46ebb42c0b14f44e8500336f0174cc00c466e4d6591ef2ef",
 			"material_transfer": {
 				"checked_at": 5,
 				"checks": [
@@ -327,19 +329,7 @@
 				"cost": 7524,
 				"coverage_rel": -0.011370000000000002,
 				"floor": 0.004030000000000001,
-				"part_shift": {
-					"bay": 0.0014800000000000002,
-					"brine": 0.01627,
-					"flesh": 0.011890000000000001,
-					"glass": 0.019190000000000002,
-					"metal": -0.0022900000000000004,
-					"onion": -0.00336,
-					"onion_skin": -0.01726,
-					"porcelain": -0.029450000000000004,
-					"seal": -0.00551,
-					"skin": 0.0119,
-					"spice": -0.00238
-				},
+				"part_shift": {},
 				"picture": 0.03586
 			},
 			"measured_of": 2,
@@ -350,19 +340,19 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.125x the band's (0.296 kept), carried from rung 1 held at 13350, dearer than the 7524 taken"
 			],
-			"peak_mb": 317.0,
+			"peak_mb": 326.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 100
+				"reduce": 100.0
 			},
-			"search_s": 577.3000000000001,
-			"searched": "search",
+			"search_s": 503.1,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "7931a854fb19ed33c0212dd418fd7dc3b5b3cd84870f4e45063f04efe0a727e3"
 	}
 }

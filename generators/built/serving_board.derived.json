@@ -19,7 +19,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 8,
 				"trace": "built__serving-board#1.trace.jsonl"
 			}
 		}
@@ -29,11 +29,14 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "89f55ad8a0253e49cfea91567a904710b83a5f375bac6393591f3d3f2ba79ecb"
+		"1": "1ecf47900c660282215b9f07b945f7476d626e6409661e629b60fb1cef40e057"
 	},
 	"rungs": {
 		"1": {
 			"budget": 8169,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 256,
@@ -45,7 +48,7 @@
 					"value": {}
 				},
 				{
-					"cost": 202.0,
+					"cost": 202,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00406,
@@ -54,20 +57,28 @@
 					"value": 0.48999999999999994
 				}
 			],
+			"chain_beaten": {
+				"cap": 0.004052126957232116,
+				"chain": "error",
+				"cost": 202
+			},
+			"chains": {
+				"error": "lost"
+			},
 			"checked_at": 1,
 			"drawn": {
-				"excess": 0.25,
+				"excess": 0.0,
 				"judge": "drawn",
 				"pixel_m": 0.001297
 			},
 			"error": 0.004052126957232116,
-			"fraction": 1.0,
+			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"keep": {},
+			"judged": "bce9aea491a7a396c3cc1a0c57c45374553e45d686e4b7d79135ae0bfb327d1f",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -81,28 +92,34 @@
 				]
 			},
 			"measured": {
-				"cost": 256,
-				"coverage_rel": -0.0027,
+				"cost": 202,
+				"coverage_rel": -0.00725,
 				"floor": 0.00406,
-				"part_shift": {},
+				"part_shift": {
+					"board": -0.00035000000000000005,
+					"end_grain": 0.00035000000000000005
+				},
 				"picture": 0.00406
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE to 0.490 held at 202, cheaper than the 256 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"KIT (its own build at the rung's pixel) held at 256, dearer than the 202 taken"
 			],
-			"peak_mb": 248.0,
-			"route": "kit",
-			"search_s": 3.7,
-			"searched": "recheck",
+			"peak_mb": 254.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 2
+			},
+			"search_s": 18.400000000000002,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "856128cd78f28defbc10b92bbb3b2787727383e2e4acb4bf9d3f86cb5c04fb8d"
 	}
 }

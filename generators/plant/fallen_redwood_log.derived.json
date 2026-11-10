@@ -358,6 +358,7 @@
 			"every_piece": true,
 			"fraction": 0.129243,
 			"from_rung": 0,
+			"judged": "5cd85180f3267f7730f041dc2ea20ed7dc1fb8fc2681e4f0f2d776ec76ec1528",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.129 kept)",
@@ -390,19 +391,19 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'bark' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 2230.0,
+			"peak_mb": 2220.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 2095.8,
+			"search_s": 2621.6000000000004,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "bc667f5767c0477e02ba4583c55e5e751128d7a2cce406e3872e075497976df7"
 	}
 }

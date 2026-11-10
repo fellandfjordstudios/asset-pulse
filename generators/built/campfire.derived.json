@@ -212,7 +212,7 @@
 				"trace": "built__campfire#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 31,
+				"candidates": 1,
 				"trace": "built__campfire#2.trace.jsonl"
 			},
 			"3": {
@@ -243,11 +243,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 20271,
+					"cost": 20271.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00413,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -261,7 +261,7 @@
 					"value": 0.52449
 				}
 			],
-			"cap": 0.0002314814814814815,
+			"cap": 0.00023148148148148,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -276,6 +276,7 @@
 			"every_piece": true,
 			"fraction": 0.52449,
 			"from_rung": 0,
+			"judged": "31dc55aeff65776cd4e75b92c713d07c22f5448b307ed121c9f1a902f8d735d7",
 			"measured": {
 				"cost": 61038,
 				"coverage_rel": -0.0011500000000000002,
@@ -297,13 +298,13 @@
 				"REDUCE from rung 0 at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: element 0's part 'bark' is 85 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1107.0,
+			"peak_mb": 1057.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 10
+				"reduce": 10.0
 			},
-			"search_s": 6244.700000000001,
-			"searched": "search",
+			"search_s": 3239.7000000000003,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		},
@@ -315,11 +316,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 9031,
+					"cost": 9031.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00515,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -333,7 +334,7 @@
 					"value": 0.5939249999999999
 				}
 			],
-			"cap": 0.000925925925925926,
+			"cap": 0.00092592592592592,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -348,6 +349,7 @@
 			"every_piece": true,
 			"fraction": 0.5939249999999999,
 			"from_rung": 1,
+			"judged": "39d4f88f78620eec2cb1035edaf3faee44b1473d92b3fb625d2eb1af97759757",
 			"material_transfer": {
 				"checked_at": 20,
 				"checks": [
@@ -839,14 +841,7 @@
 				"cost": 36252,
 				"coverage_rel": -0.014810000000000002,
 				"floor": 0.00417,
-				"part_shift": {
-					"ash": 0.010050000000000002,
-					"bark": 0.00267,
-					"char": -0.00595,
-					"ember": 0.0002,
-					"tinder": -0.005180000000000001,
-					"wood": 0.0019500000000000001
-				},
+				"part_shift": {},
 				"picture": 0.01349
 			},
 			"measured_of": 2,
@@ -860,13 +855,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.524 kept), carried from rung 1 held at 61038, dearer than the 36252 taken"
 			],
-			"peak_mb": 669.0,
+			"peak_mb": 530.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 10
+				"reduce": 10.0
 			},
-			"search_s": 12581.5,
-			"searched": "search",
+			"search_s": 10207.6,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		},
@@ -914,6 +909,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "4a2a73d059c21dba20b7aa6eed9c03a9ef3cfce6d8d38de59010a98656b5e4fc",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -925,9 +921,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 627.0,
+			"peak_mb": 525.0,
 			"route": "impostor",
-			"search_s": 639.5,
+			"search_s": 1010.1,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -936,7 +932,7 @@
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "3ca22412e90796ef02fea566f2af506f9cd914bd3a477bec3d7b91f5a3664107"
 	}
 }

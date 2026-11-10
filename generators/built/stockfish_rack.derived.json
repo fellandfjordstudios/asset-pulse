@@ -150,6 +150,7 @@
 			"every_piece": true,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
+			"judged": "8ba3563e107240d6c4c50413551a92458caf30f6bb78cf10be70a9cdf1378e96",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490)",
@@ -184,12 +185,12 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 674.0,
+			"peak_mb": 676.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 665.0,
+			"search_s": 782.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -247,6 +248,7 @@
 			"error": 0.0056,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "8fc569b5b0c2f62ada3887a219db137b02ad427e271927c87f9547d68fb22e49",
 			"keep": {
 				"knot": 0.11764899999999996,
 				"peg": 0.7
@@ -594,9 +596,9 @@
 				"REDUCE (every piece) to 0.700 held at 9944, dearer than the 2332 taken",
 				"MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490), carried from rung 1 held at 13476, dearer than the 2332 taken"
 			],
-			"peak_mb": 681.0,
+			"peak_mb": 685.0,
 			"route": "kit",
-			"search_s": 508.8,
+			"search_s": 581.2,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -645,6 +647,7 @@
 			"error": 0.012,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "a6414698fd27efb47543137c4e024140a7b8bcc41f1db66b398cc2609af99f37",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -656,9 +659,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 762.0,
+			"peak_mb": 765.0,
 			"route": "impostor",
-			"search_s": 638.1,
+			"search_s": 752.8000000000001,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -668,7 +671,7 @@
 	},
 	"source": {
 		"children": "2129ea740a69356f7f8c63e19e1ff49b6174ad94273d78ba5bc0f35d65f1ce4b",
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "e6975f2a0eab575cf32486dcc2b6a8abfd1090eb26501ad6165b78b797227684"
 	}
 }
