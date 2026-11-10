@@ -143,6 +143,7 @@
 			"error": 0.0018518518518518517,
 			"fraction": 0.3429999999999999,
 			"from_rung": 0,
+			"judged": "2ed47312a4a2899c53f3cf8977064a282eb728cab9077482aa6eacc904125fb0",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.343",
@@ -179,12 +180,12 @@
 				"CHILD: span 'food/twist-bread-coil r0 f448dd6d' is 2680 triangles and its child rebuilt is 3260: not a placed copy",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 479.0,
+			"peak_mb": 483.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 100.9,
+			"search_s": 50.2,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -242,6 +243,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 0.6904589999999999,
 			"from_rung": 0,
+			"judged": "e74727b89142e12a19a5fd604fbb594d1db1cd54db8beaf47d392aa8b1d5ba34",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.25x the band's (0.690 kept)",
@@ -538,12 +540,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"CARRIED from rung 1, REDUCE to 0.343, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 11 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00593 m; coverage changes -0.1105 against 0.0450 allowed (a one-pixel shrink all round)"
 			],
-			"peak_mb": 479.0,
+			"peak_mb": 483.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 644.6,
+			"search_s": 318.90000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -592,6 +594,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "67c4dda1107975d311706f07fa5aed9029a1577215b88a4679144e572f696438",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -603,9 +606,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 479.0,
+			"peak_mb": 483.0,
 			"route": "impostor",
-			"search_s": 4.7,
+			"search_s": 2.5,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -615,7 +618,7 @@
 	},
 	"source": {
 		"children": "25f39b7f8d39b5d81abfa748fa52f402aff73bd47af7278ea31176ceb22a011e",
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "b017f23dda3f7d5a2b03a9e03087dad6787e74c6d85b02c6c818d01106e05472"
 	}
 }

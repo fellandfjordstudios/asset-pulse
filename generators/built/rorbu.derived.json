@@ -316,11 +316,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 2,
+				"candidates": 0,
 				"trace": "built__rorbu#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 12,
+				"candidates": 0,
 				"trace": "built__rorbu#2.trace.jsonl"
 			},
 			"3": {
@@ -361,11 +361,12 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "45cdcc5fd41acfb97488c5e9cab24cfb75429301bf3688d535e2059720c5cb67",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -382,16 +383,7 @@
 				"cost": 17126,
 				"coverage_rel": 0.00045000000000000004,
 				"floor": 0.004900000000000001,
-				"part_shift": {
-					"frame": -0.0036500000000000005,
-					"glass": 0.00011,
-					"interior": 0.0011400000000000002,
-					"iron": -0.00033000000000000005,
-					"roof": 0.00068,
-					"timber": 0.0006500000000000001,
-					"trim": 0.00021,
-					"wall": 0.00099
-				},
+				"part_shift": {},
 				"picture": 0.004900000000000001
 			},
 			"measured_of": 1,
@@ -400,10 +392,10 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 1637.0,
+			"peak_mb": 505.0,
 			"route": "kit",
-			"search_s": 7771.1,
-			"searched": "search",
+			"search_s": 3889.2000000000003,
+			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
 		},
@@ -420,10 +412,10 @@
 					"value": {}
 				},
 				{
-					"cost": 13828,
+					"cost": 13828.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004900000000000001,
+					"picture": 0.0049,
 					"px_over": null,
 					"route": "reduce",
 					"value": 0.807427
@@ -438,11 +430,12 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "3d3e184e44f446ca8d7d02aef9a5128dab1e9f9f40825b5104d084329eacd247",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -1522,16 +1515,7 @@
 				"cost": 4024,
 				"coverage_rel": -0.0032900000000000004,
 				"floor": 0.004900000000000001,
-				"part_shift": {
-					"frame": -0.007770000000000001,
-					"glass": 0.00045000000000000004,
-					"interior": 0.0046500000000000005,
-					"iron": -0.00042,
-					"roof": 0.00233,
-					"timber": 0.0022400000000000002,
-					"trim": -0.00462,
-					"wall": 0.0024300000000000003
-				},
+				"part_shift": {},
 				"picture": 0.004900000000000001
 			},
 			"measured_of": 4,
@@ -1544,11 +1528,11 @@
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.807 kept) held at 13828, dearer than the 4024 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 17126, dearer than the 4024 taken"
 			],
-			"peak_mb": 1844.0,
+			"peak_mb": 575.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 8626.1,
-			"searched": "search",
+			"search_s": 1821.1000000000001,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -1578,12 +1562,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 16
 				}
 			],
 			"checked_at": 44,
@@ -1596,6 +1580,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "936794d8122baa2a83a32069eab24e2b1bf157cdd7d7f23a4be9763972f54f3a",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -1607,10 +1592,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 1882.0,
+			"peak_mb": 707.0,
 			"route": "impostor",
-			"search_s": 528.1,
-			"searched": "search",
+			"search_s": 438.5,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -1619,7 +1604,7 @@
 	},
 	"source": {
 		"children": "fbd55520c594615d5eb77c65676084fd1f7c2e206ce4dfca6d0154aa097ec468",
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "2ff9a24f749bbd029b6e1839f5665fe044a20a2a2d78b55d6b79d56d6000dc8e"
 	}
 }

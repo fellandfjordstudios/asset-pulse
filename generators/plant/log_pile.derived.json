@@ -205,6 +205,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 0.053999,
 			"from_rung": 0,
+			"judged": "805e137e84a9b8d55c7e5b1760c38a0e8c17281d3b74c0e26a60de480100479c",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.054 kept)",
@@ -234,12 +235,12 @@
 			"not_taken": [
 				"CHILD (its welded children at their own rungs {\"plant/bucked-log\":1}) held at 86964, dearer than the 4696 taken"
 			],
-			"peak_mb": 990.0,
+			"peak_mb": 993.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 16.0
 			},
-			"search_s": 1051.2,
+			"search_s": 546.3000000000001,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -247,7 +248,7 @@
 	},
 	"source": {
 		"children": "a7af0f4756375caf5456d8c0457f2c98910998e44339f5c3f74e23bb8e906e07",
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "12de98991158a8800e83e82c012a873605609ebfcb60999d5937689d25eeeb0c"
 	}
 }

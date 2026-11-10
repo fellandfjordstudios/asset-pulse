@@ -110,6 +110,7 @@
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 0,
+			"judged": "fa7c11ead3b13ca8844d43b992a638af9b5c53066bc600ea0f322f52e0f72f4a",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.240)",
@@ -149,12 +150,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.05: 184 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
 			],
-			"peak_mb": 309.0,
+			"peak_mb": 310.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 11.0
 			},
-			"search_s": 110.80000000000001,
+			"search_s": 59.0,
 			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11
@@ -203,6 +204,7 @@
 			"error": 0.016208507828928465,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "faf14e7ab159d63af13eb6820020440e457713478457cfd8f99ff6120eea538a",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -214,9 +216,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 325.0,
+			"peak_mb": 330.0,
 			"route": "impostor",
-			"search_s": 121.4,
+			"search_s": 65.10000000000001,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -226,7 +228,7 @@
 	},
 	"source": {
 		"children": "cb51b65ba592095c36c8501bc984d0e0bccea378f3cf5f302896c11c5fde48db",
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "94a4e3a5796cd4aa0dfdb54a5255384b89659a59aa6e558ca81d5652efdbe97b"
 	}
 }

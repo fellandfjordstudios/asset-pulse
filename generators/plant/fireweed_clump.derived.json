@@ -131,7 +131,7 @@
 				"trace": "plant__fireweed-clump#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 32,
+				"candidates": 2,
 				"trace": "plant__fireweed-clump#2.trace.jsonl"
 			},
 			"3": {
@@ -186,6 +186,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
+			"judged": "3828a3637375631446ec0e52a9d2c5f0d0042aa1572305bbe3f77665a32341a5",
 			"measured": {
 				"cost": 24082,
 				"coverage_rel": -0.02672,
@@ -211,12 +212,12 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/fireweed-clump does not declare `reads_density`"
 			],
-			"peak_mb": 373.0,
+			"peak_mb": 375.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 42.0
 			},
-			"search_s": 150.6,
+			"search_s": 81.9,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
@@ -230,11 +231,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 20900,
+					"cost": 20900.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.04426,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -243,7 +244,7 @@
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.020020000000000003,
-					"px_over": 0,
+					"px_over": null,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -254,10 +255,11 @@
 				"judge": "drawn",
 				"pixel_m": 0.010979
 			},
-			"error": 0.0074074074074074086,
+			"error": 0.0074074074074074,
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
+			"judged": "9a00d21dc40d38d99c61e4b58a77e133112307784de51d211a8193b07be83e9e",
 			"material_transfer": {
 				"checked_at": 17,
 				"checks": [
@@ -677,18 +679,15 @@
 				"cost": 24082,
 				"coverage_rel": -0.02672,
 				"floor": 0.005,
-				"part_shift": {
-					"leaf": 0.013300000000000001,
-					"petal": -0.00736,
-					"stem": -0.005960000000000001
-				},
+				"part_shift": {},
 				"picture": 0.020020000000000003
 			},
+			"measured_of": 1,
 			"miss": {
 				"cost_of_ceiling": 4.514810648668917,
 				"judge": "drawn",
 				"picture_over": 2.7027,
-				"px_over": 0,
+				"px_over": 0.0,
 				"route": "reduce",
 				"tier": 3
 			},
@@ -706,13 +705,13 @@
 				"CARRIED from rung 1, REDUCE (every piece) to 0.700, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {\"patch_radius_m\":0.05} seed 314: coverage changes -0.0267 against 0.0232 a derivation may change (its error read as a change of size)",
 				"THIN: plant/fireweed-clump does not declare `reads_density`"
 			],
-			"peak_mb": 412.0,
+			"peak_mb": 403.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 42
+				"reduce": 42.0
 			},
-			"search_s": 945.6,
-			"searched": "search",
+			"search_s": 125.4,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.0074074074074074086
@@ -761,6 +760,7 @@
 			"error": 0.029629629629629634,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "62454a60d91212077b108e9560870a6f9c36214ce9596b51f90e01b8b11abd92",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -772,9 +772,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 403.0,
+			"peak_mb": 418.0,
 			"route": "impostor",
-			"search_s": 187.4,
+			"search_s": 103.0,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -784,7 +784,7 @@
 	},
 	"source": {
 		"children": "0f155e6598819bd396f2c8ddeccc7d2a6f9fadfc5886533fffd390ded6616c26",
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "3f337bc696858db6863e5e0701da91816155ee0d4847cfcc63cb7cb4171174b9"
 	}
 }

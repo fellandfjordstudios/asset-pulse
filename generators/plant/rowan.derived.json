@@ -424,6 +424,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "b0dd6296b280638ac481dac17c75bca8d69ea8ee3da59e5bf704f04c9856837f",
 			"keep": {
 				"branchlet": 0.03125,
 				"corymb": 0.7,
@@ -467,9 +468,9 @@
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 4874 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00662 m; coverage changes +0.0297 against 0.0237 allowed (a one-pixel shrink all round)",
 				"BUDGET: the cheapest derivation that holds the picture costs 182608 (4.28x), over rung 1's budget 42673 x 1.5 = 64009 (tree, 3.57 m)"
 			],
-			"peak_mb": 1671.0,
+			"peak_mb": 1678.0,
 			"route": "kit",
-			"search_s": 1103.7,
+			"search_s": 828.8000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
@@ -526,6 +527,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "08468f4337fac132b05f43fbf44a589a03132f09570838bde06cafb3f4032594",
 			"keep": {
 				"branchlet": 0.16806999999999994,
 				"corymb": 0.16806999999999994,
@@ -1761,9 +1763,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping shoot 0.031, pome 0.031, branchlet 0.031, corymb 0.700), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.02648 m; part 'bark' changes its share of the picture by -0.0472 against 0.0456 allowed (its colour's share of the subject)",
 				"BUDGET: the cheapest derivation that holds the picture costs 145504 (13.64x), over rung 2's budget 10668 x 1.5 = 16002 (tree, 3.57 m)"
 			],
-			"peak_mb": 1672.0,
+			"peak_mb": 1680.0,
 			"route": "kit",
-			"search_s": 358.6,
+			"search_s": 264.6,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
@@ -1813,6 +1815,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "6a1812d78139fa5d2029c109e80032ff1b96e3272efec59ba4c6587afcc1beb9",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -1824,9 +1827,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 2604.0,
+			"peak_mb": 2609.0,
 			"route": "impostor",
-			"search_s": 2403.2000000000003,
+			"search_s": 1098.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -1835,7 +1838,7 @@
 	},
 	"source": {
 		"children": "f1c8429e2e368897853965e9c8c0c6be92cda8e0626d674d6eb6174db8495b78",
-		"deriver": "fee55f65ef7437f9ad90ca5176b6cf96385c537bf414aa362c815ceffb680dbe",
+		"deriver": "be8490ce6a1737161f808fe6a7e79f34e9550ed7303ce043b0a0e2e25a1a4420",
 		"generator": "44cd04a916e62aa292a5a3930a4602ddd2e9c4290ad21cefcd06012c5b07d94a"
 	}
 }

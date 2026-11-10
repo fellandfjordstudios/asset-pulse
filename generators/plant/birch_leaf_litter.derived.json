@@ -184,6 +184,7 @@
 				"luminance_sd": 0.14700000000000002,
 				"texel_m": 0.001969
 			},
+			"judged": "928bb2f85ac9cdbfb4766376d6e51d49604f6f13f84c56598b2ea0fc1d2fe11d",
 			"keep": {
 				"debris": 0.7,
 				"vein": 0.7
@@ -212,9 +213,9 @@
 				"REDUCE (every piece) from rung 0: nothing to try; the error ladder: nothing to try",
 				"THIN: plant/birch-leaf-litter does not declare `reads_density`"
 			],
-			"peak_mb": 397.0,
+			"peak_mb": 400.0,
 			"route": "kit",
-			"search_s": 163.5,
+			"search_s": 89.10000000000001,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -261,6 +262,7 @@
 				"luminance_sd": 0.1474,
 				"texel_m": 0.00787399999999999
 			},
+			"judged": "8f945bf52b4905f51919c0d14eaab19f0b730c1cace1b4c70b4de8adda3acc3b",
 			"keep": {
 				"debris": 0.24009999999999992,
 				"vein": 0.24009999999999992
@@ -682,9 +684,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping debris 0.700, vein 0.700), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 330 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00787 m",
 				"THIN: plant/birch-leaf-litter does not declare `reads_density`"
 			],
-			"peak_mb": 397.0,
+			"peak_mb": 408.0,
 			"route": "kit",
-			"search_s": 959.9000000000001,
+			"search_s": 476.0,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -745,6 +747,7 @@
 				"luminance_sd": 0.14930000000000002,
 				"texel_m": 0.031497
 			},
+			"judged": "03b736a360a9925fc6b4657974e5f33eee301fc67c3caa5cf424c49d5d4a46d1",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -756,9 +759,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 556.0,
+			"peak_mb": 561.0,
 			"route": "impostor",
-			"search_s": 392.6,
+			"search_s": 207.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -767,7 +770,7 @@
 	},
 	"source": {
 		"children": "42b6cf29bf657c07e78a4a067db4b7cfdd1e939e65106df0f60d68f9c7a0aea1",
-		"deriver": "e5c197e41cd912718c2d52b8b2a171e98883ffad6b258da294a89ce3d9e4bd6f",
+		"deriver": "3eaecc0597031d0a7c1f2bc87355da0a11f1dedc2ba6c2eb1fff25bc8f1b36ee",
 		"generator": "0ad64f06766eaf46ccfc26c141392ee204bf5cd9d7ab0b3428affa55c218b603"
 	}
 }

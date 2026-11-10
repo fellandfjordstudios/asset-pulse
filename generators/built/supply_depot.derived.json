@@ -2,97 +2,97 @@
 	"checked_at": [
 		{
 			"params": {},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"crates": 0
+				"crates": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"crates": 24
+				"crates": 24.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"tins": 0
+				"tins": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"tins": 16
+				"tins": 16.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"bales": 0
+				"bales": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"bales": 12
+				"bales": 12.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"stones": 4
+				"stones": 4.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"stones": 16
+				"stones": 16.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"cover": 0
+				"cover": 0.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"cover": 2
+				"cover": 2.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
-				"tins_on_top": 1
+				"tins_on_top": 1.0
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"pole_height_m": 1.5
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"pole_height_m": 3.5
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"flag_size_m": 0.3
 			},
-			"seed": 314
+			"seed": 314.0
 		},
 		{
 			"params": {
 				"flag_size_m": 0.6
 			},
-			"seed": 314
+			"seed": 314.0
 		}
 	],
 	"effort": "full",
@@ -116,29 +116,29 @@
 			"structural",
 			"structural"
 		],
-		"old_key_sets": 16,
-		"sampled": 16,
-		"sets": 16
+		"old_key_sets": 16.0,
+		"sampled": 16.0,
+		"sets": 16.0
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 1.0,
 				"trace": "built__supply-depot#1.trace.jsonl"
 			}
 		}
 	},
 	"probe": {
 		"params": {},
-		"seed": 314
+		"seed": 314.0
 	},
 	"replay": {
 		"1": "309ca7b23d7b1533483978e7982a1eedf7451d60ba4a365b46b23b2428c9b8c2"
 	},
 	"rungs": {
 		"1": {
-			"budget": 39117,
+			"budget": 39117.0,
 			"candidates": [
 				{
 					"cost": 36089.0,
@@ -150,24 +150,24 @@
 					"value": 1.0
 				},
 				{
-					"cost": 42685,
+					"cost": 42685.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004710000000000001,
+					"picture": 0.00471,
 					"px_over": null,
 					"route": "merged",
 					"value": 1.0
 				}
 			],
-			"checked_at": 16,
+			"checked_at": 16.0,
 			"drawn": {
 				"excess": 0.25,
 				"judge": "drawn",
 				"pixel_m": 0.005554
 			},
-			"error": 0.001851851851851852,
+			"error": 0.00185185185185185,
 			"fraction": 1.0,
-			"from_rung": 0,
+			"from_rung": 0.0,
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
@@ -185,13 +185,13 @@
 				]
 			},
 			"measured": {
-				"cost": 42685,
+				"cost": 42685.0,
 				"coverage_rel": -0.00141,
-				"floor": 0.004710000000000001,
+				"floor": 0.00471,
 				"part_shift": {},
-				"picture": 0.004710000000000001
+				"picture": 0.00471
 			},
-			"measured_of": 1,
+			"measured_of": 1.0,
 			"not_taken": [
 				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.64), one pixel 0.00555 m",
@@ -203,8 +203,8 @@
 			"route": "merged",
 			"search_s": 1543.3000000000002,
 			"searched": "recheck",
-			"surfaces": 18,
-			"surfaces_ceiling": 23
+			"surfaces": 18.0,
+			"surfaces_ceiling": 23.0
 		}
 	},
 	"source": {

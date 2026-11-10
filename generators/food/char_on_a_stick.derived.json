@@ -97,6 +97,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
+			"judged": "a9cd97d933b9d76659ee7cf59882461fafa49a5a858d999a7f2a02d6682275b9",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.700",
@@ -140,12 +141,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'body' is 48 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 363.0,
+			"peak_mb": 368.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 12.0
 			},
-			"search_s": 118.2,
+			"search_s": 58.5,
 			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -204,6 +205,7 @@
 			"every_piece": true,
 			"fraction": 0.312957,
 			"from_rung": 0,
+			"judged": "cfb9e8cad65a9328da174d30924ee3ee903d58dea4c6ba7a2fd2b702ef8ddd19",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.313 kept)",
@@ -359,12 +361,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to 0.700, carried from rung 1 held at 10034, dearer than the 4536 taken"
 			],
-			"peak_mb": 363.0,
+			"peak_mb": 368.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 12.0
 			},
-			"search_s": 659.1,
+			"search_s": 328.40000000000003,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -413,6 +415,7 @@
 			"error": 0.02963841431575491,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "fdf123b833b187bf8e758b6f5cf8dfe4b758412dfd4c04fed090d1d08599022d",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -424,9 +427,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 363.0,
+			"peak_mb": 368.0,
 			"route": "impostor",
-			"search_s": 64.4,
+			"search_s": 29.700000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -435,7 +438,7 @@
 	},
 	"source": {
 		"children": "e84759d27aac5486384a9f1395e16b6338d9fc740dadcac020876305008e20cc",
-		"deriver": "ad3b7a05a1a0fe1423fcae972c467d08402e2a64c98e1c1c8f71468cf6725d6d",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "2a5c9bbfa88ec7909f295c4f9ba201ce25ce5b657d641179c2495318f7309f95"
 	}
 }
