@@ -169,7 +169,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "animal__mountain-hare#1.trace.jsonl"
 			},
 			"2": {
@@ -194,7 +194,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 10644,
+					"cost": 10644.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00411,
@@ -212,11 +212,11 @@
 					"value": 0.494981
 				}
 			],
-			"cap": 0.0011182137170699183,
+			"cap": 0.00111821371706991,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 5412,
+				"cost": 5412.0,
 				"fraction": 0.48999999999999994
 			},
 			"chains": {
@@ -231,10 +231,11 @@
 			"error": 0.0022364274341398365,
 			"fraction": 0.494981,
 			"from_rung": 0,
+			"judged": "5a7c89942d6f6cef0b7985cb49cdfa50520bdbd55289e9f98e24279b1c39f0f8",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -270,13 +271,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 10644, dearer than the 5326 taken"
 			],
-			"peak_mb": 796.0,
+			"peak_mb": 770.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 22
+				"reduce": 22.0
 			},
-			"search_s": 2126.3,
-			"searched": "search",
+			"search_s": 590.8000000000001,
+			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9
 		},
@@ -322,6 +323,7 @@
 			"error": 0.008945709736559346,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
+			"judged": "f68a8973d81f05359bdb87146881e8a41360ea77fce9c8f03ae6a2b48dd51079",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
@@ -911,19 +913,19 @@
 				"KIT (its own build at 2 of the band's pixels) held at 10620, dearer than the 5268 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 10644, dearer than the 5268 taken"
 			],
-			"peak_mb": 796.0,
+			"peak_mb": 772.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 3111.7000000000003,
+			"search_s": 3182.0,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "54b3ce43fc7e0f0081eab47c5852de6139a7320def8b90f0faad1ebc496ca3c2"
 	}
 }

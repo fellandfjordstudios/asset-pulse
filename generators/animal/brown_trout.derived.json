@@ -137,6 +137,7 @@
 			"error": 0.0037048017894693638,
 			"fraction": 0.145195,
 			"from_rung": 0,
+			"judged": "6ec59f2fd0d2a2f9d81d15e2b9d85f876d67b18e5eecac3e076c25ca0f125ad0",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.125x the band's (0.145 kept)",
@@ -197,7 +198,7 @@
 			"routes": {
 				"reduce": 132.0
 			},
-			"search_s": 191.5,
+			"search_s": 197.60000000000002,
 			"searched": "recheck",
 			"surfaces": 25,
 			"surfaces_ceiling": 25
@@ -244,6 +245,7 @@
 			"error": 0.014819207157877455,
 			"fraction": 0.08235429999999996,
 			"from_rung": 1,
+			"judged": "ea91389eb9e529a79f3582a0511787dae9e66546d22e69885c9d1a44f4d53f0e",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.082",
@@ -524,19 +526,19 @@
 				"KIT (its own build at 2 of the band's pixels) held at 20458, dearer than the 2276 taken",
 				"REDUCE to its error cap 0.0312x the band's (0.145 kept), carried from rung 1 held at 3780, dearer than the 2276 taken"
 			],
-			"peak_mb": 435.0,
+			"peak_mb": 436.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 99
 			},
-			"search_s": 6270.4000000000005,
+			"search_s": 6419.8,
 			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "c8451edb551bcc0445899d478b5dfc01cef8bc6cb7aae9c5fe6466c575e4fe16"
 	}
 }

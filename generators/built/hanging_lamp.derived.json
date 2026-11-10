@@ -23,7 +23,7 @@
 				"trace": "built__hanging-lamp#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 27,
+				"candidates": 1,
 				"trace": "built__hanging-lamp#2.trace.jsonl"
 			}
 		}
@@ -77,6 +77,7 @@
 			"every_piece": true,
 			"fraction": 0.959936,
 			"from_rung": 0,
+			"judged": "65eb47b690348c1780ba14d51628c05e299648e848a9a1379fde3e2749a32f05",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.960 kept)",
@@ -116,12 +117,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 2's part 'brass' is 103 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 1 across 5 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 276.0,
+			"peak_mb": 278.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 20.0,
+			"search_s": 20.5,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
@@ -133,10 +134,10 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4248,
+					"cost": 4248.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0053100000000000005,
+					"picture": 0.00531,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
@@ -152,9 +153,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.0011231092038942558,
+				"cap": 0.00112310920389425,
 				"chain": "error",
-				"cost": 4740
+				"cost": 4740.0
 			},
 			"chains": {
 				"error": "lost"
@@ -169,10 +170,11 @@
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 1,
+			"judged": "67d16cdb2b5eab8702954456ddaada82605565ce47eac013b589d1d949717ed5",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -220,15 +222,7 @@
 				"cost": 1768,
 				"coverage_rel": -0.014300000000000002,
 				"floor": 0.00398,
-				"part_shift": {
-					"brass": 0.00266,
-					"chimney": -4e-05,
-					"enamel": 0.011330000000000002,
-					"iron": -0.009680000000000001,
-					"rim": -0.00453,
-					"wick": -0.0006600000000000001,
-					"wick_tip": -1e-05
-				},
+				"part_shift": {},
 				"picture": 0.01743
 			},
 			"measured_of": 3,
@@ -243,19 +237,19 @@
 				"KIT (its own build at the rung's pixel) held at 4248, dearer than the 1768 taken",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.960 kept), carried from rung 1 held at 8338, dearer than the 1768 taken"
 			],
-			"peak_mb": 276.0,
+			"peak_mb": 278.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 7
+				"reduce": 7.0
 			},
-			"search_s": 111.5,
-			"searched": "search",
+			"search_s": 39.1,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "5875623c213bf88fa3f74741bfcb93f42c42646d3a7a1f44ef073407902b4df4"
 	}
 }

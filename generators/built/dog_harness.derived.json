@@ -136,6 +136,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
+			"judged": "8d4d1826614c137d5112cd97020e1cb6bbe3f67bc798f2b7111629ac958e0511",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
@@ -172,12 +173,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 1 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 908.0,
+			"peak_mb": 909.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9242.0
 			},
-			"search_s": 631.2,
+			"search_s": 638.7,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
@@ -222,6 +223,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "3118d013d0a17c0a85ded8328f009a366e4a1415c7d2dd217064f6aab02982c2",
 			"keep": {
 				"fuzz": 0.03125,
 				"stitch": 0.03125
@@ -486,9 +488,9 @@
 				"REDUCE to its error cap 0.125x the band's (0.409 kept) held at 41112, dearer than the 9996 taken",
 				"REDUCE to 0.490, carried from rung 1 held at 58546, dearer than the 9996 taken"
 			],
-			"peak_mb": 879.0,
+			"peak_mb": 903.0,
 			"route": "kit",
-			"search_s": 2900.8,
+			"search_s": 3010.3,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -537,6 +539,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "f9f795ae83b8be3bf9c6996cb572217ce78ae5887d057d57960ac5c317ea5063",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -548,9 +551,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 935.0,
+			"peak_mb": 936.0,
 			"route": "impostor",
-			"search_s": 131.5,
+			"search_s": 132.8,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -559,7 +562,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "d592d5efdedc2888f387ba54c832c028b018d661493efa94402779b625ac64b2"
 	}
 }

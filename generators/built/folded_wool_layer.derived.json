@@ -71,7 +71,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 8,
+				"candidates": 1,
 				"trace": "built__folded-wool-layer#1.trace.jsonl"
 			}
 		}
@@ -91,7 +91,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 468,
+					"cost": 468.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00449,
@@ -112,7 +112,7 @@
 			"chain_beaten": {
 				"cap": 0.002,
 				"chain": "error",
-				"cost": 426
+				"cost": 426.0
 			},
 			"chains": {
 				"error": "lost"
@@ -126,10 +126,11 @@
 			"error": 0.004,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
+			"judged": "bbff257dd9dbb5fcacfebd0b24521731219fac2d35e68ca2fc14ba7979ab7d87",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -161,16 +162,16 @@
 			"peak_mb": 335.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 3
+				"reduce": 3.0
 			},
-			"search_s": 239.4,
-			"searched": "search",
+			"search_s": 63.0,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "36c731e7ff20f9a426bff67c5c09ab9674f414b0918367b3ce031d200508167f"
 	}
 }

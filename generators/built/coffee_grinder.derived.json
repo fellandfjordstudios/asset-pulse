@@ -87,6 +87,7 @@
 			"every_piece": true,
 			"fraction": 0.8198019999999999,
 			"from_rung": 0,
+			"judged": "8fa7babd9ab7bae407a968da17d163967b9d711cbce50e4ee5a38e186e06abce",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.820 kept)",
@@ -125,12 +126,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'paint' is 14 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 310.0,
+			"peak_mb": 312.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 102.2,
+			"search_s": 106.9,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
@@ -179,6 +180,7 @@
 			"error": 0.009974466356263671,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "407437f506c5ff97be35aa3d5bc6f211205b6d78c74dc4c30a70db22ff670c78",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -190,9 +192,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 310.0,
+			"peak_mb": 312.0,
 			"route": "impostor",
-			"search_s": 174.0,
+			"search_s": 166.70000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -200,7 +202,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "a9bab44a4c2a0625cf2740720795ed6808826641b41f4564eb416f75a31916f8"
 	}
 }

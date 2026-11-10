@@ -50,7 +50,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "built__hand-axe#1.trace.jsonl"
 			},
 			"2": {
@@ -75,7 +75,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 9168,
+					"cost": 9168.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -93,11 +93,11 @@
 					"value": 0.152742
 				}
 			],
-			"cap": 0.0014407562514603082,
+			"cap": 0.0014407562514603,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 6910,
+				"cost": 6910.0,
 				"fraction": 0.48999999999999994
 			},
 			"chains": {
@@ -113,10 +113,11 @@
 			"every_piece": true,
 			"fraction": 0.152742,
 			"from_rung": 0,
+			"judged": "aacfd46343a330bb8dd6e90714516b46ab635abbed948a51691ab1fd7a369f1f",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -151,13 +152,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 9168, dearer than the 2150 taken"
 			],
-			"peak_mb": 335.0,
+			"peak_mb": 332.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 6
+				"reduce": 6.0
 			},
-			"search_s": 181.5,
-			"searched": "search",
+			"search_s": 56.900000000000006,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 6
 		},
@@ -205,6 +206,7 @@
 			"error": 0.011526050011682465,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "f539fed4b4c298d0bebba420a08050c6c2670e10c30efad93e67e6b9982c2e3c",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -216,9 +218,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 337.0,
+			"peak_mb": 336.0,
 			"route": "impostor",
-			"search_s": 75.10000000000001,
+			"search_s": 76.3,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -226,7 +228,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "8544d246462c31117cf55224809a37f440b65054b529e292ffa8b24ec2836c04"
 	}
 }

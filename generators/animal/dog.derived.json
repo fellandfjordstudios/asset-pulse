@@ -115,6 +115,7 @@
 			"every_piece": true,
 			"fraction": 0.309191,
 			"from_rung": 0,
+			"judged": "93b64bbd5300c3ff2790c52338a6df408c5249f771648e69f374b12c313b32f7",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.309 kept)",
@@ -164,12 +165,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'feather' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 709.0,
+			"peak_mb": 712.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 282.40000000000003,
+			"search_s": 289.40000000000003,
 			"searched": "recheck",
 			"surfaces": 18,
 			"surfaces_ceiling": 18
@@ -228,6 +229,7 @@
 			"every_piece": true,
 			"fraction": 0.31462999999999997,
 			"from_rung": 1,
+			"judged": "13362a18a9619585085a543e562d5eacb567b52ecf92c5951ff04e84ebc0eb3b",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.315 kept)",
@@ -401,12 +403,12 @@
 				"KIT (its own build at 2 of the band's pixels) held at 18938, dearer than the 6740 taken",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.309 kept), carried from rung 1 held at 21422, dearer than the 6740 taken"
 			],
-			"peak_mb": 788.0,
+			"peak_mb": 790.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 747.4000000000001,
+			"search_s": 766.7,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 1
@@ -455,6 +457,7 @@
 			"error": 0.029629629629629634,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "91e7b7803c20040f8a77632d638216b39edd896ed13838d14f9cd259933a7654",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -466,9 +469,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 788.0,
+			"peak_mb": 790.0,
 			"route": "impostor",
-			"search_s": 51.1,
+			"search_s": 52.900000000000006,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -477,7 +480,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "cdfe5d24dc9db3593027c2b12ff0b94da58b38f0ad6da644e0dbf423a8a90364"
 	}
 }

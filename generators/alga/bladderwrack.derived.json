@@ -164,6 +164,7 @@
 			"error": 0.0025375354722392903,
 			"fraction": 0.7,
 			"from_rung": 0,
+			"judged": "5003d6cf265229cc1fa214bb9fb131cd87bbb968b27a7d59604a28fda21d9620",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.700",
@@ -185,12 +186,12 @@
 				"picture": 0.00398
 			},
 			"measured_of": 1,
-			"peak_mb": 488.0,
+			"peak_mb": 489.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 32.0
 			},
-			"search_s": 99.60000000000001,
+			"search_s": 100.9,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -228,6 +229,7 @@
 			"error": 0.010150141888957161,
 			"fraction": 0.7,
 			"from_rung": 0,
+			"judged": "c2f50e32f4b6806c3229bba1c5b20be37d90b3a6ef2ec154754ccc05456b0576",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.700",
@@ -249,19 +251,19 @@
 				"picture": 0.00444
 			},
 			"measured_of": 1,
-			"peak_mb": 488.0,
+			"peak_mb": 489.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 32.0
 			},
-			"search_s": 28.400000000000002,
+			"search_s": 28.8,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "4760864bd328a064f9596d4366d8b9e0362dea0519c58f803f763f80d5c22e25"
 	}
 }

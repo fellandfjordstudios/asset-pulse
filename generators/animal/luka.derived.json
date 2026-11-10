@@ -104,6 +104,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "c962ad8088c58f736f76f65e1f2ce5194901e9bf23449bdc41a4863a671e83bc",
 			"keep": {},
 			"measured": {
 				"cost": 19864,
@@ -129,9 +130,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: animal/luka does not declare `reads_density`"
 			],
-			"peak_mb": 633.0,
+			"peak_mb": 634.0,
 			"route": "kit",
-			"search_s": 76.5,
+			"search_s": 74.5,
 			"searched": "recheck",
 			"surfaces": 18,
 			"surfaces_ceiling": 18,
@@ -191,6 +192,7 @@
 			"every_piece": true,
 			"fraction": 0.183347,
 			"from_rung": 1,
+			"judged": "5bbd88dc0669c8d3e7c788d407a34ff139d34e3337a43b788f51dcec764b41be",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.183 kept)",
@@ -388,12 +390,12 @@
 				"KIT (its own build at 2 of the band's pixels) held at 18908, dearer than the 3642 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 19864, dearer than the 3642 taken"
 			],
-			"peak_mb": 640.0,
+			"peak_mb": 642.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 447.0,
+			"search_s": 460.6,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 1
@@ -442,6 +444,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "809d0a76cbc3d57265be16487130bddeef18e022a891b80c1d58b4802e4f04e3",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -455,7 +458,7 @@
 			],
 			"peak_mb": 641.0,
 			"route": "impostor",
-			"search_s": 59.0,
+			"search_s": 58.0,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -464,7 +467,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "7efe87391ed0989ed7ebd651035956b64e049fefd2cdb9131e6dcc3878d8447b"
 	}
 }

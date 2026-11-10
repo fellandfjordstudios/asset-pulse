@@ -78,7 +78,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 9,
 				"trace": "built__oatcake-packet#1.trace.jsonl"
 			}
 		}
@@ -88,11 +88,14 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "a236e6b6e47389f5c505a665ad59875af708ec626596020fc981b813b6f97489"
+		"1": "87bd6029f0d6f726aa308e80b16c9145ac13f6c001138b1134d4f9ea15549f1f"
 	},
 	"rungs": {
 		"1": {
 			"budget": 1207,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
 			"candidates": [
 				{
 					"cost": 572,
@@ -104,7 +107,7 @@
 					"value": {}
 				},
 				{
-					"cost": 500.0,
+					"cost": 500,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
@@ -113,20 +116,29 @@
 					"value": 0.7
 				}
 			],
+			"chain_beaten": {
+				"cap": 0.000375,
+				"chain": "error",
+				"cost": 500
+			},
+			"chains": {
+				"error": "lost"
+			},
 			"checked_at": 10,
 			"drawn": {
 				"excess": 0.0,
 				"judge": "drawn",
-				"pixel_m": 0.001297
+				"pixel_m": 0.000185
 			},
 			"error": 0.0015,
-			"fraction": 1.0,
+			"every_piece": true,
+			"fraction": 0.7,
 			"from_rung": 0,
-			"keep": {},
+			"judged": "07f4e6d921ea65119b5acb901a7eeb01525bdb33415f9590f0192846fb525e24",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -140,10 +152,14 @@
 				]
 			},
 			"measured": {
-				"cost": 572,
+				"cost": 500,
 				"coverage_rel": 0.0,
 				"floor": 0.00436,
-				"part_shift": {},
+				"part_shift": {
+					"label": 0.0,
+					"oatcake": 0.0,
+					"seal": 0.0
+				},
 				"picture": 0.0
 			},
 			"measured_of": 2,
@@ -151,18 +167,21 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'oatcake' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
-				"REDUCE (every piece) to 0.700 held at 500, cheaper than the 572 taken, but a replay of rung 0: KIT is within budget and builds directly"
+				"KIT (its own build at the rung's pixel) held at 572, dearer than the 500 taken"
 			],
-			"peak_mb": 260.0,
-			"route": "kit",
-			"search_s": 67.2,
-			"searched": "recheck",
+			"peak_mb": 807.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 3
+			},
+			"search_s": 1105.8,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "3a7cc8068cc1e9523e1e0f3e802ff922a46d3971e573dbc5d640efd104fb4993",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "d0bc202eca12f4c39e8a6676d342098f4045de2aa7c5bd1b6c07603c5d854719"
 	}
 }

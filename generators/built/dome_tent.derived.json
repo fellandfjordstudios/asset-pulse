@@ -237,6 +237,7 @@
 			"error": 0.0018518518518518517,
 			"fraction": 0.380856,
 			"from_rung": 0,
+			"judged": "3444f635f62e2051836dcc91c3d481db43ecceeb43feec9fb39469857e036e30",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.125x the band's (0.381 kept)",
@@ -277,12 +278,12 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.75), one pixel 0.00397 m",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1358.0,
+			"peak_mb": 1352.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 12.0
 			},
-			"search_s": 1663.6000000000001,
+			"search_s": 1707.4,
 			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -327,6 +328,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "3e0053585e7c5f767f147d34b053f3b6bc6462f40bdb47bd971b4688f3ea358c",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -960,16 +962,16 @@
 				"REDUCE to 0.343 held at 10942, dearer than the 5774 taken",
 				"REDUCE to its error cap 0.0313x the band's (0.381 kept), carried from rung 1 held at 12032, dearer than the 5774 taken"
 			],
-			"peak_mb": 1358.0,
+			"peak_mb": 1359.0,
 			"route": "kit",
-			"search_s": 4068.5,
+			"search_s": 4182.6,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "428b5d9f9bbc3e0c6e8da60832a47e1c9ff019e34476917d99756ee91546665c"
 	}
 }

@@ -105,6 +105,7 @@
 			"error": 0.0018518518518518521,
 			"fraction": 0.911546,
 			"from_rung": 0,
+			"judged": "ee0cbccb686847f1937a24bcf419d1abfe04ac970bf916d1c63ce9a31b235740",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.912 kept)",
@@ -142,7 +143,7 @@
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 203.10000000000002,
+			"search_s": 209.8,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -198,6 +199,7 @@
 			"error": 0.0074074074074074086,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
+			"judged": "1a1a5c67ee59b8d30d35c8adc00fc5b8955e193067914102b0348cde9f84fe45",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
@@ -375,12 +377,12 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.125x the band's (0.912 kept), carried from rung 1 held at 20116, dearer than the 10804 taken"
 			],
-			"peak_mb": 471.0,
+			"peak_mb": 472.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 1292.6000000000001,
+			"search_s": 1319.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -429,6 +431,7 @@
 			"error": 0.029629629629629634,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "4e85142c7424d37ab9abc51b15cb2b7fdedaf6a9af794b85b960b893ab226eb9",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -440,9 +443,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 471.0,
+			"peak_mb": 472.0,
 			"route": "impostor",
-			"search_s": 70.0,
+			"search_s": 70.2,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -450,7 +453,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "081a42c479813fdd68c26c5bf7930353c0a75e4c08cd1b783c50bf411066b05e"
 	}
 }

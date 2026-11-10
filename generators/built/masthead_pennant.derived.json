@@ -105,6 +105,7 @@
 			"error": 0.0018518518518518517,
 			"fraction": 0.699278,
 			"from_rung": 0,
+			"judged": "43549747452d3bee6f4e37a056290f56716ebc6583bf08c5a8fa15f15cd3d16d",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.699 kept)",
@@ -141,13 +142,13 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 8 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 388.0,
+			"peak_mb": 390.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 1.0,
 				"reduce": 4.0
 			},
-			"search_s": 46.300000000000004,
+			"search_s": 48.300000000000004,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -195,6 +196,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "883ce08e6252d734fe9b9b8e8a9134361d682f9e97f88e72832915ff33630c56",
 			"keep": {
 				"stitch": 0.03125
 			},
@@ -375,9 +377,9 @@
 				"REDUCE to its error cap 0.25x the band's (0.445 kept) held at 861, dearer than the 453 taken",
 				"REDUCE to its error cap 0.125x the band's (0.699 kept), carried from rung 1 held at 1249, dearer than the 453 taken"
 			],
-			"peak_mb": 388.0,
+			"peak_mb": 390.0,
 			"route": "kit",
-			"search_s": 39.0,
+			"search_s": 40.6,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -426,6 +428,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "37a844ce7186ccb84f2426fb402b0486c0d9c1fa54f32823aef7ff095c4f9a14",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -437,9 +440,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 388.0,
+			"peak_mb": 390.0,
 			"route": "impostor",
-			"search_s": 13.3,
+			"search_s": 14.8,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -448,7 +451,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "b4fdf59156fd6b501a7f24e8bbade63074df3232da520fd1a8a36e79eea0d0fc"
 	}
 }

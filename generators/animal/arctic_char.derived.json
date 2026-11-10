@@ -126,6 +126,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "5a9d8b507a2bdc64d653b14811e75f65de3bba9ceb4c0a33ee2e91f78be3c666",
 			"measured": {
 				"cost": 13400,
 				"coverage_rel": 0.0,
@@ -141,9 +142,9 @@
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: animal/arctic-char does not declare `reads_density`"
 			],
-			"peak_mb": 322.0,
+			"peak_mb": 321.0,
 			"route": "rung0",
-			"search_s": 103.10000000000001,
+			"search_s": 105.7,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
@@ -189,6 +190,7 @@
 			"every_piece": true,
 			"fraction": 0.092537,
 			"from_rung": 0,
+			"judged": "c77d0764b60c3452e1c33d8dd00d891edaf2fe7042093526f0d6880aa347edc7",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.093 kept)",
@@ -471,14 +473,14 @@
 			"routes": {
 				"reduce": 26.0
 			},
-			"search_s": 673.0,
+			"search_s": 686.4000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "318b58c4c4777ca6ec90edf9529842b413d65dd16f4d815eb18ae314b1959572"
 	}
 }

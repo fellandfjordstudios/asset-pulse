@@ -54,7 +54,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "animal__atlantic-herring#1.trace.jsonl"
 			}
 		}
@@ -74,7 +74,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2598,
+					"cost": 2598.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -93,9 +93,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.0005065158696540145,
+				"cap": 0.00050651586965401,
 				"chain": "error",
-				"cost": 1766
+				"cost": 1766.0
 			},
 			"chains": {
 				"error": "lost"
@@ -110,10 +110,11 @@
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 0,
+			"judged": "6002c0150ecff5aeffe2bcaea2a179b087ffeee3f1da8d8bc5afc86ad71c2485",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -147,19 +148,19 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 2598, dearer than the 1396 taken"
 			],
-			"peak_mb": 286.0,
+			"peak_mb": 283.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 19
+				"reduce": 19.0
 			},
-			"search_s": 157.5,
-			"searched": "search",
+			"search_s": 55.400000000000006,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "eb1df50c81d9e2cd3639d9f04758ee96e01af02c7ccd1bcae32af5ecb25ac262"
 	}
 }

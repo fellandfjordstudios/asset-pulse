@@ -51,7 +51,7 @@
 				"trace": "built__lighthouse-lantern#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 11,
+				"candidates": 1,
 				"trace": "built__lighthouse-lantern#2.trace.jsonl"
 			},
 			"3": {
@@ -101,6 +101,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "eae7cff23f6c9e8f88008d28231a51bbd770b078f7e8ca9f2de22a055b23edd7",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -132,9 +133,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.700 held at 798, dearer than the 770 taken"
 			],
-			"peak_mb": 306.0,
+			"peak_mb": 308.0,
 			"route": "kit",
-			"search_s": 83.5,
+			"search_s": 85.4,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -146,7 +147,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 377,
+					"cost": 377.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00423,
@@ -165,9 +166,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.007407407407407408,
+				"cap": 0.0074074074074074,
 				"chain": "error",
-				"cost": 362
+				"cost": 362.0
 			},
 			"chains": {
 				"error": "lost"
@@ -182,10 +183,11 @@
 			"every_piece": true,
 			"fraction": 0.3429999999999999,
 			"from_rung": 1,
+			"judged": "07b60c5750f6157e2743177ebcf125dd0a567e1fb860fdbe265458c706e57e90",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -329,10 +331,7 @@
 				"cost": 362,
 				"coverage_rel": 0.0032800000000000004,
 				"floor": 0.00423,
-				"part_shift": {
-					"lantern_glass": -0.00055,
-					"red_iron": 0.00055
-				},
+				"part_shift": {},
 				"picture": 0.00846
 			},
 			"measured_of": 4,
@@ -345,13 +344,13 @@
 				"KIT (its own build at 2 of the band's pixels) held at 377, dearer than the 362 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 770, dearer than the 362 taken"
 			],
-			"peak_mb": 262.0,
+			"peak_mb": 264.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 2
+				"reduce": 2.0
 			},
-			"search_s": 141.1,
-			"searched": "search",
+			"search_s": 42.2,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -386,6 +385,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "9cafddca0bde35b4398053470d843259de4aefac3046c01b4086000b7ee97b13",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -543,17 +543,17 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 770, dearer than the 255 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 502, dearer than the 255 taken"
 			],
-			"peak_mb": 262.0,
+			"peak_mb": 264.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 27.1,
+			"search_s": 27.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "f3f01a37a875a72db6eff3a046178512eb0aa142a02698e721de6b4e8a38a2ce"
 	}
 }

@@ -40,7 +40,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 9,
+				"candidates": 1,
 				"trace": "built__paraffin-tin#1.trace.jsonl"
 			}
 		}
@@ -60,7 +60,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 404,
+					"cost": 404.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00495,
@@ -81,7 +81,7 @@
 			"chain_beaten": {
 				"cap": 0.002,
 				"chain": "error",
-				"cost": 424
+				"cost": 424.0
 			},
 			"chains": {
 				"error": "lost"
@@ -95,10 +95,11 @@
 			"error": 0.004,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
+			"judged": "ba8803d512fcbfbd27eb316817b11c678e4740ee734f5e8e26154b8659e2596d",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -130,19 +131,19 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 404, dearer than the 344 taken"
 			],
-			"peak_mb": 286.0,
+			"peak_mb": 285.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 7
+				"reduce": 7.0
 			},
-			"search_s": 99.80000000000001,
-			"searched": "search",
+			"search_s": 25.3,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "71dad717166b8daad5dbb7c9bc2745843385f82f88414fb9eea80855a88c5e90"
 	}
 }

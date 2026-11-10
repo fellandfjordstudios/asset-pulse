@@ -61,7 +61,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 1,
 				"trace": "built__fodder-bale-binding#1.trace.jsonl"
 			},
 			"2": {
@@ -86,7 +86,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2332,
+					"cost": 2332.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
@@ -104,7 +104,7 @@
 					"value": 0.95283
 				}
 			],
-			"cap": 0.00017753020623141803,
+			"cap": 0.00017753020623141,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -118,10 +118,11 @@
 			"error": 0.0028404832997026884,
 			"fraction": 0.95283,
 			"from_rung": 0,
+			"judged": "08bacab07a5e168b31c63737b3b65be5148c538024c7ad9a771b3e7b0634a3af",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -147,13 +148,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 2332, dearer than the 2222 taken"
 			],
-			"peak_mb": 356.0,
+			"peak_mb": 350.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 1
+				"reduce": 1.0
 			},
-			"search_s": 88.0,
-			"searched": "search",
+			"search_s": 44.1,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -201,6 +202,7 @@
 			"error": 0.011361933198810754,
 			"fraction": 0.47074699999999997,
 			"from_rung": 1,
+			"judged": "67f7b84daf0e79e1841bee54ab7bb0dae14896a742482aeb3b630e62d12293c0",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -232,19 +234,19 @@
 				"KIT (its own build at 2 of the band's pixels) held at 2332, dearer than the 1046 taken",
 				"REDUCE to its error cap 0.0156x the band's (0.953 kept), carried from rung 1 held at 2222, dearer than the 1046 taken"
 			],
-			"peak_mb": 356.0,
+			"peak_mb": 350.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 1
 			},
-			"search_s": 69.9,
+			"search_s": 72.5,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "671fa3c935d3a76f267032bdc839a120157930284a11e84f2e077044b76d0d4e"
 	}
 }

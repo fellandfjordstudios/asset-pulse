@@ -37,7 +37,7 @@
 				"trace": "built__fishing-rod#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 26,
+				"candidates": 0,
 				"trace": "built__fishing-rod#2.trace.jsonl"
 			},
 			"3": {
@@ -87,6 +87,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "f9434c0dc43e6aff09bbf9ac0d2c4528231308d93c245780cc77214f784eb8b7",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -119,9 +120,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 306.0,
+			"peak_mb": 307.0,
 			"route": "kit",
-			"search_s": 41.6,
+			"search_s": 43.800000000000004,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
@@ -131,13 +132,13 @@
 			"budget_reason": "the cheapest derivation that holds the picture costs 17882, 1.83x rung 2's budget 9779: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
 					"cost": 17882,
@@ -149,11 +150,11 @@
 					"value": {}
 				},
 				{
-					"cost": 12476,
+					"cost": 12476.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.01992,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -168,6 +169,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "f352a2aa95d123b6a8487d6200dd63170452c21957312b202cde0ff79ec052a4",
 			"keep": {},
 			"material_transfer": {
 				"checked_at": 3,
@@ -283,10 +285,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"length_m\":2.1} seed 314: coverage changes -0.0257 against 0.0227 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)"
 			],
-			"peak_mb": 273.0,
+			"peak_mb": 266.0,
 			"route": "kit",
-			"search_s": 411.70000000000005,
-			"searched": "search",
+			"search_s": 292.6,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -334,6 +336,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "5830e25468be7abf8744a10c199a0d59bc1aa32e837662689b360e692d5d5634",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -345,9 +348,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 273.0,
+			"peak_mb": 266.0,
 			"route": "impostor",
-			"search_s": 14.4,
+			"search_s": 14.5,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -356,7 +359,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "09795d42aad94c19825bf90a62e4355ce26d266039f9348aeed4722869cf5024"
 	}
 }

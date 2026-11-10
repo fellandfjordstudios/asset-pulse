@@ -92,7 +92,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "built__mooring-ring#1.trace.jsonl"
 			}
 		}
@@ -112,10 +112,10 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 3812,
+					"cost": 3812.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004030000000000001,
+					"picture": 0.00403,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
@@ -131,9 +131,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.002600643056488444,
+				"cap": 0.00260064305648844,
 				"chain": "error",
-				"cost": 1790
+				"cost": 1790.0
 			},
 			"chains": {
 				"error": "lost"
@@ -148,10 +148,11 @@
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 0,
+			"judged": "ccb1d78fdf8bb5fe2ca237eaf622cd890a395d8d9f2d377f098c0b3b61950a14",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -185,16 +186,16 @@
 			"peak_mb": 318.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 4
+				"reduce": 4.0
 			},
-			"search_s": 411.5,
-			"searched": "search",
+			"search_s": 106.60000000000001,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "7bb1a4e2a082361990891c45bd8dbee38348269aaae81ab4381c9b65eb9e45b2"
 	}
 }

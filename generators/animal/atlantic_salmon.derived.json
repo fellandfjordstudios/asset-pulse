@@ -75,15 +75,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "animal__atlantic-salmon#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 10,
+				"candidates": 11,
 				"trace": "animal__atlantic-salmon#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 14,
+				"candidates": 15,
 				"trace": "animal__atlantic-salmon#3.trace.jsonl"
 			}
 		}
@@ -105,11 +105,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 22660,
+					"cost": 22660.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -123,11 +123,11 @@
 					"value": 0.12464
 				}
 			],
-			"cap": 0.000925925925925926,
+			"cap": 0.00092592592592592,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 16981,
+				"cost": 16981.0,
 				"fraction": 0.48999999999999994
 			},
 			"chains": {
@@ -143,10 +143,11 @@
 			"every_piece": true,
 			"fraction": 0.12464,
 			"from_rung": 0,
+			"judged": "f5f09d3a2a51c50cd7a34f0ec65f12f3bd77ac3a645a3c8d6fe583fecc18d99b",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.125 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -194,13 +195,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 15's part 'fin_edge' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 6 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 570.0,
+			"peak_mb": 553.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 46
+				"reduce": 46.0
 			},
-			"search_s": 774.9000000000001,
-			"searched": "search",
+			"search_s": 326.5,
+			"searched": "recheck",
 			"surfaces": 20,
 			"surfaces_ceiling": 20
 		},
@@ -244,6 +245,7 @@
 			"every_piece": true,
 			"fraction": 0.6987399999999999,
 			"from_rung": 1,
+			"judged": "8f86f97613f6a15487170c958d8e390292cc592d1356c6329ee44dd29775fcc8",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.699 kept)",
@@ -521,12 +523,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.125 kept), carried from rung 1 held at 4365, dearer than the 3050 taken"
 			],
-			"peak_mb": 570.0,
+			"peak_mb": 554.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 41
 			},
-			"search_s": 3261.2000000000003,
+			"search_s": 3363.9,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
@@ -572,6 +574,7 @@
 			"every_piece": true,
 			"fraction": 0.6987399999999999,
 			"from_rung": 1,
+			"judged": "debc18edcaf5863390e727a0659caa711f91a902bb913472b18bd299a91071c6",
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -845,21 +848,21 @@
 				"KIT (its own build at the rung's pixel) held at 3881, dearer than the 3050 taken",
 				"KIT (its own build at 4 of the band's pixels) held at 4741, dearer than the 3050 taken",
 				"REDUCE (every piece) to 0.343 held at 11761, dearer than the 3050 taken",
-				"REDUCE (every piece) to its error cap 0.0313x the band's (0.125 kept), carried from rung 1 held at 4365, dearer than the 3050 taken"
+				"REDUCE (every piece) to its error cap 0.0312x the band's (0.125 kept), carried from rung 1 held at 4365, dearer than the 3050 taken"
 			],
-			"peak_mb": 570.0,
+			"peak_mb": 566.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 41
 			},
-			"search_s": 3618.7000000000003,
+			"search_s": 3744.5,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "6e25d5801505e5d9122df2212c29761cb9cd087a834584fe74f8813ea576ecfb"
 	}
 }

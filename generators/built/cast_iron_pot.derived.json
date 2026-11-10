@@ -33,7 +33,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "built__cast-iron-pot#1.trace.jsonl"
 			},
 			"2": {
@@ -58,10 +58,10 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4184,
+					"cost": 4184.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004090000000000001,
+					"picture": 0.00409,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
@@ -76,11 +76,11 @@
 					"value": 0.202974
 				}
 			],
-			"cap": 0.0036341945804772343,
+			"cap": 0.00363419458047723,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 2482,
+				"cost": 2482.0,
 				"fraction": 0.3429999999999999
 			},
 			"chains": {
@@ -95,10 +95,11 @@
 			"error": 0.0036341945804772343,
 			"fraction": 0.202974,
 			"from_rung": 0,
+			"judged": "800776b9f6a25c143b973dec576377ed7b10c57b8d9686dc29894f1ef753ef80",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -131,13 +132,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 4184, dearer than the 1474 taken"
 			],
-			"peak_mb": 281.0,
+			"peak_mb": 279.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 10
+				"reduce": 10.0
 			},
-			"search_s": 207.8,
-			"searched": "search",
+			"search_s": 54.0,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -185,6 +186,7 @@
 			"error": 0.014536778321908937,
 			"fraction": 1.0,
 			"from_rung": 0,
+			"judged": "b9ed166a7368fa0ba89297e2541abb19cb55a1c13e090b62dcfc3dc7d3419e23",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -196,9 +198,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 281.0,
+			"peak_mb": 279.0,
 			"route": "impostor",
-			"search_s": 64.9,
+			"search_s": 73.4,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -207,7 +209,7 @@
 		}
 	},
 	"source": {
-		"deriver": "fb35fa8723060360ebc37cb48bd6507482aeb603321335481396a5a9329ce346",
+		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
 		"generator": "4b6e6a7007078b8107b5f9242a6f7047cbfa799d5da437a6816e2e3f07f4ca3d"
 	}
 }
