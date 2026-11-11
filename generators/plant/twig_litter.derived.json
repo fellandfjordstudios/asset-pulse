@@ -169,7 +169,7 @@
 				"luminance_sd": 0.0491,
 				"texel_m": 0.002105
 			},
-			"judged": "b7c5d6c0060facd8ecdacb59f389150990df94c497b9ea0d2326a53ef96c854b",
+			"judged": "55fdef33771d068ba83ae8da3aa42b435c2cb249f13d5e87d8d5cc627a7caf1b",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.25x the band's (0.999 kept)",
@@ -202,13 +202,13 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"density_per_m2\":300.0} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00211 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.43: 28088 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)"
 			],
-			"peak_mb": 767.0,
+			"peak_mb": 768.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 157.0,
 				"reduce": 86.0
 			},
-			"search_s": 244.3,
+			"search_s": 118.5,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -272,7 +272,7 @@
 				"luminance_sd": 0.0488,
 				"texel_m": 0.00842
 			},
-			"judged": "44a32ddfdc2a416f179396dcb0e88bef1f16130d5cea325939816f37ea20076e",
+			"judged": "e3cc4a9ed020011ee9a950131b9fd0adea509d2b5837bbe3f842183e512f8407",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.0625x the band's (0.999 kept)",
@@ -598,20 +598,20 @@
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.2401, cover 2.04: 2527 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
 				"REDUCE to its error cap 0.0625x the band's (0.999 kept), carried from rung 1 held at 3778, the same cost as the route taken, found first"
 			],
-			"peak_mb": 767.0,
+			"peak_mb": 768.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 157.0,
 				"reduce": 86.0
 			},
-			"search_s": 408.0,
+			"search_s": 210.70000000000002,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "3eaecc0597031d0a7c1f2bc87355da0a11f1dedc2ba6c2eb1fff25bc8f1b36ee",
+		"deriver": "80137915bd36d0509017a68b17a365d3d2580a76ac8bea933883fe5202719a03",
 		"generator": "7ca85362b6179843df09fe2cec1fbca4b33b06581b1990e6e113062afa720123"
 	}
 }

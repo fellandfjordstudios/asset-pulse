@@ -43,11 +43,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "built__peat-spade#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 38,
+				"candidates": 1,
 				"trace": "built__peat-spade#2.trace.jsonl"
 			},
 			"3": {
@@ -73,7 +73,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 17844,
+					"cost": 17844.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
@@ -93,7 +93,7 @@
 					"value": 0.6047399999999999
 				}
 			],
-			"cap": 0.0002314814814814815,
+			"cap": 0.00023148148148148,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -108,11 +108,11 @@
 			"every_piece": true,
 			"fraction": 0.6047399999999999,
 			"from_rung": 0,
-			"judged": "30150859fc916bce734abe3396de2c9209f26c5269c0cfe88e4758822a9eaf4d",
+			"judged": "584866a78321f19483de37cc54ad7effa7a3c20bcec8727803d01b5ddcf1b755",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -147,13 +147,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x) held at 17844, dearer than the 11432 taken"
 			],
-			"peak_mb": 457.0,
+			"peak_mb": 407.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5
+				"reduce": 5.0
 			},
-			"search_s": 378.1,
-			"searched": "search",
+			"search_s": 49.6,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		},
@@ -164,19 +164,19 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 9,
+					"px_over": 9.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 16922,
+					"cost": 16922.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.013280000000000002,
+					"picture": 0.01328,
 					"px_over": null,
 					"route": "kit",
 					"value": {
@@ -190,14 +190,14 @@
 					"picture": 0.00398,
 					"px_over": null,
 					"route": "reduce",
-					"value": 0.20241399999999998
+					"value": 0.202414
 				}
 			],
-			"cap": 0.001851851851851852,
+			"cap": 0.00185185185185185,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 7930,
+				"cost": 7930.0,
 				"fraction": 0.7
 			},
 			"chains": {
@@ -211,13 +211,13 @@
 			},
 			"error": 0.007407407407407408,
 			"every_piece": true,
-			"fraction": 0.20241399999999998,
+			"fraction": 0.202414,
 			"from_rung": 1,
-			"judged": "a6ac48780be27f0549f4553dc5d4911a227ab181fb92513f10246223cfea5f19",
+			"judged": "3590993ac2ad8fc45553c7f8c39cf2cdd8e215e6a6d78c9370914c025831ddbe",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.202 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -361,13 +361,7 @@
 				"cost": 2314,
 				"coverage_rel": -0.021820000000000003,
 				"floor": 0.00398,
-				"part_shift": {
-					"grip": 0.0010500000000000002,
-					"iron": 0.0048000000000000004,
-					"peat": 0.0030800000000000003,
-					"shaft": -0.01034,
-					"socket": 0.0008200000000000001
-				},
+				"part_shift": {},
 				"picture": 0.00398
 			},
 			"measured_of": 4,
@@ -397,13 +391,13 @@
 				"KIT (its own build at 2 of the band's pixels, keeping debris 0.040) held at 17287, dearer than the 2314 taken",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.605 kept), carried from rung 1 held at 11432, dearer than the 2314 taken"
 			],
-			"peak_mb": 419.0,
+			"peak_mb": 407.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5
+				"reduce": 5.0
 			},
-			"search_s": 698.7,
-			"searched": "search",
+			"search_s": 205.10000000000002,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -451,7 +445,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "79bd26abb6cb3cf3324f81e71fc0555293132a8d13d07a46ce9ce1c251187f5a",
+			"judged": "e6d682f1655cfe7f30bb1bf805723a6f029d2310de24a9595f7e77572bd47ebd",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -463,9 +457,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 419.0,
+			"peak_mb": 407.0,
 			"route": "impostor",
-			"search_s": 51.6,
+			"search_s": 27.900000000000002,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -474,7 +468,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "0c7a7ae31435f6aac8af71cb3024741b967e75e71e2906db1c57c4fc429992f6"
 	}
 }

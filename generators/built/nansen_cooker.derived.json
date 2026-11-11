@@ -48,7 +48,7 @@
 	},
 	"replay": {
 		"1": "5d371b69dd286fe3b6d7c0ded015e1a7e25520444a5d1dfd7bef299cf629febf",
-		"2": "219fef377a8f9247526b1fab246d62ed97b24dfa99c80bb29f8061176d340f87",
+		"2": "aadee3122ea7c5b750f4f4a8b01a4d738a54cf0161c80acd050a592f74ee1bac",
 		"3": "1513f59785baad70868089ce3b1123ece0781eb4214dc5d3f05660b089f3d153"
 	},
 	"rungs": {
@@ -96,7 +96,7 @@
 			"error": 0.0018518518518518517,
 			"fraction": 0.301325,
 			"from_rung": 0,
-			"judged": "c90a4f67963af624446bb82a0246ef166be6501ae3a17f2aa56034d5376aab50",
+			"judged": "9f75b7b019bf4910f007a4455387c9d28e6f5338ecde56277cc91ff774eb8911",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.301 kept)",
@@ -134,12 +134,12 @@
 				"CHILD: no welded child has a coarser rung at slot 1: {\"built/nansen-cooker-cup\":0,\"built/nansen-cooker-vessel\":0}",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 370.0,
+			"peak_mb": 371.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 43.0
 			},
-			"search_s": 146.9,
+			"search_s": 72.2,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -191,7 +191,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d8d9c7b268cf46a761c979016ae921f375c962de7545856286898eab4a750264",
+			"judged": "42ee56c48bfc4a23603294098afcff4fb6723b1dd94e5bcad8d5e3463a85de6a",
 			"keep": {
 				"cup": 0.03125,
 				"fitting": 0.03125,
@@ -293,7 +293,6 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 5986,
 				"coverage_rel": -0.014230000000000001,
@@ -330,7 +329,7 @@
 			],
 			"peak_mb": 371.0,
 			"route": "kit",
-			"search_s": 227.4,
+			"search_s": 21.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -379,7 +378,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d0682376a8fcb7390efc2a6897e192ea7a1c766a417dd31ad139797b939528e1",
+			"judged": "d0e708de815bae28ae541e862b4a89057687e762b62618575a97ef0a2005b59d",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -393,7 +392,7 @@
 			],
 			"peak_mb": 371.0,
 			"route": "impostor",
-			"search_s": 22.3,
+			"search_s": 12.100000000000001,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -403,7 +402,7 @@
 	},
 	"source": {
 		"children": "0ac0b8cbabe068d2117cd90b516b25f1fa3ecf786eb823d6ea468d33d9c67034",
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "951eeaa17ab7abe6eb6ebd778e0bb58bca0b8afa107ee49784f83dcbe2540675"
 	}
 }

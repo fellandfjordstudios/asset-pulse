@@ -192,7 +192,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "a248d188d122d79af193330c2555206eee961fbfbb74ef666c851bd57a0a9345",
+			"judged": "178fc7059c0ca36c694978cf63a68d841cae6a01cc4397d8b17ffefe6479e81a",
 			"keep": {
 				"batten": 0.7,
 				"fastening": 0.03125,
@@ -229,9 +229,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.992 kept) held at 3220, dearer than the 1700 taken"
 			],
-			"peak_mb": 361.0,
+			"peak_mb": 362.0,
 			"route": "kit",
-			"search_s": 691.7,
+			"search_s": 336.40000000000003,
 			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10
@@ -281,7 +281,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "2a54f047c9ca16c0aae92cd9f970aa915fc671a2676fc05f8fe163f9ce66628c",
+			"judged": "56f77dfedcc70dea71c2bed8357c1416c4410a92faf48bd2c0cba0f117ab4503",
 			"keep": {
 				"batten": 0.03125,
 				"fastening": 0.03125,
@@ -779,14 +779,14 @@
 			"peak_mb": 297.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 1489.5,
+			"search_s": 718.2,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "b1da9acf4da66bc359aea571838625c0d2d4ada9b7f724f22f40e5b8cac287a7"
 	}
 }

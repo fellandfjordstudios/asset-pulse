@@ -145,7 +145,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "5199b97baef1da8b5b544096eeb19fab69061a1640f5b0c7b1b8c1a9657aa2ac",
+			"judged": "1e3459d1b0e616f2b8384537943ca2199cf2ef1bc8a1fc6bf2f204e31499b78c",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.700",
@@ -174,12 +174,12 @@
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00056 m"
 			],
-			"peak_mb": 573.0,
+			"peak_mb": 574.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 259.40000000000003,
+			"search_s": 125.10000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -215,7 +215,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "baf4bdaa52276b58a21b9449c91634d79b89da848a748f6cdade08f8e97e1567",
+			"judged": "a488080f4782053568c58b79447f2698283b216572936f9907f7d5e840a08114",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -516,14 +516,14 @@
 			],
 			"peak_mb": 574.0,
 			"route": "kit",
-			"search_s": 80.9,
+			"search_s": 36.800000000000004,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "6689ba61e850370fe2e031b13297e266f24bdf20fa639e0d687f48c6f0ec920f"
 	}
 }

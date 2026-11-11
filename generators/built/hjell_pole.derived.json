@@ -187,7 +187,7 @@
 			"error": 0.0012,
 			"fraction": 0.24009999999999992,
 			"from_rung": 0,
-			"judged": "0bee9594870acf2e0ae78ae9bfc719084aa9764028da0a7077ec55b0674c865a",
+			"judged": "20647787a75b16255b4ea85eebd7b6c561f54e5507270d2553a3c1d2eae57d31",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.240",
@@ -220,12 +220,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 24 pixel(s) differ at the drawn size at {} seed 314 (worst 0.97)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1127.0,
+			"peak_mb": 1128.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 330.20000000000005,
+			"search_s": 159.4,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -261,7 +261,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "06b5948aa1c5839816e116e8c3b6ea1e68dbfaeb8c642bd4eb5dc24a8ca023cd",
+			"judged": "6bd789747868cf8ad4c3f958f1614b2f520f7b6a78103ef95ede4ae49defc12f",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -712,14 +712,14 @@
 			],
 			"peak_mb": 1096.0,
 			"route": "kit",
-			"search_s": 213.20000000000002,
+			"search_s": 99.0,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "e6da475d58189b62b60d909a80b0042f8598d14832021b06ee4880cc0c888d80"
 	}
 }

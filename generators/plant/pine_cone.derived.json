@@ -172,7 +172,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "5b1801dbfd03c29e0158a9b73b5e4bb591cc7d706b79e03d9209e47629e9670f",
+			"judged": "34ad59adaafc1f8a836d5d4ff6780357cab97fbee3dd8c5d19bdb1ca3718dfb6",
 			"keep": {},
 			"measured": {
 				"cost": 39130,
@@ -197,9 +197,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"cones\":150} seed 314: coverage changes -0.0192 against 0.0118 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0019",
 				"THIN: plant/pine-cone does not declare `reads_density`"
 			],
-			"peak_mb": 476.0,
+			"peak_mb": 486.0,
 			"route": "kit",
-			"search_s": 182.8,
+			"search_s": 109.2,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -235,7 +235,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f4f710cb1d67867fdf03fa7dee374f951b5272edcbfe3d2e094599ede041f480",
+			"judged": "15644cc34f3f50546eee7dd4a37cc5a092b0fb83b97bd86e0e379de282f403fb",
 			"keep": {
 				"debris": 0.48999999999999994,
 				"scale": 0.48999999999999994
@@ -680,9 +680,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0345 against 0.0230 a derivation may change (its error read as a change of size)",
 				"BUDGET: the cheapest derivation that holds the picture costs 66094 (6.20x), over rung 2's budget 10668 x 1.5 = 16002 (rock, 8.10 m)"
 			],
-			"peak_mb": 487.0,
+			"peak_mb": 517.0,
 			"route": "kit",
-			"search_s": 1512.6000000000001,
+			"search_s": 686.2,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -690,7 +690,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "d081bc68ae3a21a34345b0b72a959dde39abffecc64d2e76579d9db6ac748d26"
 	}
 }

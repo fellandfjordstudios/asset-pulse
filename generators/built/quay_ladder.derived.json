@@ -96,7 +96,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 8,
+				"candidates": 1,
 				"trace": "built__quay-ladder#1.trace.jsonl"
 			},
 			"2": {
@@ -121,7 +121,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 340,
+					"cost": 340.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00434,
@@ -152,11 +152,11 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "d9cb19b7cc941e5480b76a4f1008512452cb633f3d281269959bcb6710e9d0b6",
+			"judged": "69d6511013446baa77576b45c17736a269b8f260f498ebb240fdf272dc14fdba",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -187,13 +187,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 340, dearer than the 296 taken"
 			],
-			"peak_mb": 636.0,
+			"peak_mb": 547.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 14
+				"reduce": 14.0
 			},
-			"search_s": 178.60000000000002,
-			"searched": "search",
+			"search_s": 49.7,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		},
@@ -228,7 +228,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "2ebd58a69a929096837c29cac6a188344aa70a965bde3aa6c032d47db0c3daca",
+			"judged": "af6c48b2a2c4852e4681b234bad499c8a8b05467b5fd881ff63abe3143faa0a1",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -557,16 +557,16 @@
 				"REDUCE (every piece) to 0.700 held at 296, dearer than the 236 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 340, dearer than the 236 taken"
 			],
-			"peak_mb": 569.0,
+			"peak_mb": 547.0,
 			"route": "kit",
-			"search_s": 62.300000000000004,
+			"search_s": 30.700000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "4953392381444985ce5abce5f318ef27c9dbcdb39dd3b0d114017371aa9cd7df"
 	}
 }

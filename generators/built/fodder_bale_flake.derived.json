@@ -140,7 +140,7 @@
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 0,
-			"judged": "fadca8e143b3b63d386b450d5015498a834b23794f71f1c65d129df29a73a728",
+			"judged": "58ef92524d2bfb5e11391ee22aa1fac2412c2170fa8dfed6a9ab1ed488b692f9",
 			"measured": {
 				"cost": 16504,
 				"coverage_rel": -0.007110000000000001,
@@ -159,13 +159,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'fodder' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 338.0,
+			"peak_mb": 339.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 2.0,
 				"reduce": 1.0
 			},
-			"search_s": 339.70000000000005,
+			"search_s": 159.10000000000002,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -199,7 +199,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f3572e2f119a8772ec7dfbff2e52e3287a4a6209aadbfae408a8b2f365fd71ec",
+			"judged": "540a2feab0ec79e88ce913efdf1e6b4f79326bf7298eac2b9a4907ed8d82f8c3",
 			"keep": {
 				"fibre": 0.08235429999999996
 			},
@@ -473,9 +473,9 @@
 				"CARRIED from rung 1, REDUCE (every piece) to 0.240, carried from rung 1: none holds at 0.0141 -- the finest tried (1.000) fails at {\"thickness_m\":0.12} seed 314: the picture changes at the drawn size: 70 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.00520 m; coverage changes -0.1366 against 0.0718 allowed (a one-pixel shrink all round); part 'fodder' changes its share of the picture by -0.0752 against 0.0718 allowed (its colour's share of the subject)",
 				"BUDGET: the cheapest derivation that holds the picture costs 15410 (5.96x), over rung 2's budget 2587 x 1.5 = 3880 (made, 0.37 m)"
 			],
-			"peak_mb": 345.0,
+			"peak_mb": 347.0,
 			"route": "kit",
-			"search_s": 1113.1000000000001,
+			"search_s": 501.8,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
@@ -483,7 +483,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "f58beb7d7ce57f49094b1e14ed7b59ab0b1b221330589b319cb993df19280960"
 	}
 }

@@ -159,7 +159,7 @@
 				"luminance_sd": 0.1127,
 				"texel_m": 0.001852
 			},
-			"judged": "72c9682325d61b1c07dac4c93eb9e629ebc55c4bf8e8cf5eae2f9ce041f2cceb",
+			"judged": "71e4a8a08830797b85e1cd2b3e816bebbe6e19c26a08f727f2d2273a409ec773",
 			"keep": {
 				"debris": 0.11764899999999996
 			},
@@ -186,9 +186,9 @@
 				"REDUCE from rung 0: nothing to try; the error ladder: nothing to try",
 				"THIN: plant/pine-needle-duff does not declare `reads_density`"
 			],
-			"peak_mb": 584.0,
+			"peak_mb": 583.0,
 			"route": "kit",
-			"search_s": 171.5,
+			"search_s": 95.2,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
@@ -196,7 +196,7 @@
 		}
 	},
 	"source": {
-		"deriver": "3eaecc0597031d0a7c1f2bc87355da0a11f1dedc2ba6c2eb1fff25bc8f1b36ee",
+		"deriver": "80137915bd36d0509017a68b17a365d3d2580a76ac8bea933883fe5202719a03",
 		"generator": "88d617b2a1d61415b913413e25fa0dea8cd3e62c763dd339ad61e70d3b0f9543"
 	}
 }

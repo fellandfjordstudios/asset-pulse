@@ -95,7 +95,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 0.6186539999999999,
 			"from_rung": 0,
-			"judged": "61d9c2a0b3065833d4f839274de22b62aa4e926ffb6024d0b52078ff4fbd1069",
+			"judged": "c9711032a0b8e1a3dd2634f3a77bf439bb23740ddbfb5f8ef645d98362045c9c",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -130,12 +130,12 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 1144, dearer than the 1048 taken"
 			],
-			"peak_mb": 338.0,
+			"peak_mb": 339.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 49.7,
+			"search_s": 24.6,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -180,7 +180,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "8e60a673ee621d54878faedc9080c88c1334f7763c3f94988085a6aebcf41309",
+			"judged": "508fd96cacd0be4e6236d5d90dde0824a48e18f89e115fff88269942aed94cc8",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -310,10 +310,10 @@
 				"REDUCE to its error cap 0.125x the band's (0.992 kept) held at 1040, dearer than the 1018 taken",
 				"REDUCE to its error cap 0.125x the band's (0.619 kept), carried from rung 1 held at 1048, dearer than the 1018 taken"
 			],
-			"peak_mb": 338.0,
+			"peak_mb": 339.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 65.9,
+			"search_s": 29.700000000000003,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -362,7 +362,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d3c32dd74d0ac8d4447cf297d7d3353537af5b65299edd56071bcb0cd1951928",
+			"judged": "923c18da2333832346f621460b43427f96dc0c1876ff637369eddc2fdea4e433",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -374,9 +374,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 338.0,
+			"peak_mb": 339.0,
 			"route": "impostor",
-			"search_s": 9.0,
+			"search_s": 4.5,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -385,7 +385,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "67b467bc82440471852bb37972e4ab488c0719a4a3190a61a50bb50eb0c4b9c5"
 	}
 }

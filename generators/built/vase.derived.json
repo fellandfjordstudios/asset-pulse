@@ -58,7 +58,7 @@
 				"trace": "built__vase#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 13,
+				"candidates": 1,
 				"trace": "built__vase#2.trace.jsonl"
 			}
 		}
@@ -111,7 +111,7 @@
 			"error": 0.0036018906286507703,
 			"fraction": 0.8710019999999999,
 			"from_rung": 0,
-			"judged": "b89bebbc3a62421507ad2ffaa749026e8c669f570a4abf75bcfa86243cf14667",
+			"judged": "ddbeba2b8add88730a7fffe8f727372d075aed83b5602e64de91f49c8892c498",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.871 kept)",
@@ -150,7 +150,7 @@
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 50.5,
+			"search_s": 25.700000000000003,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -162,7 +162,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 760,
+					"cost": 760.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.01793,
@@ -181,9 +181,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.014407562514603081,
+				"cap": 0.01440756251460308,
 				"chain": "error",
-				"cost": 656
+				"cost": 656.0
 			},
 			"chains": {
 				"error": "lost"
@@ -197,11 +197,11 @@
 			"error": 0.014407562514603081,
 			"fraction": 0.16806999999999994,
 			"from_rung": 1,
-			"judged": "a0f07612e910a825df85d99c3adff6f19125c9480bee290303def5ca8337919d",
+			"judged": "85047b91eafd3d4eacef508ac7332c9bc26b5a3f350f05c44323718cdc69ea29",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -369,12 +369,7 @@
 				"cost": 654,
 				"coverage_rel": -0.024,
 				"floor": 0.00404,
-				"part_shift": {
-					"bouquet": 0.0018200000000000002,
-					"glaze": -0.00206,
-					"leaf_band": 0.00268,
-					"trim": -0.00271
-				},
+				"part_shift": {},
 				"picture": 0.01391
 			},
 			"measured_of": 4,
@@ -388,16 +383,16 @@
 			"peak_mb": 301.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 9
+				"reduce": 9.0
 			},
-			"search_s": 127.9,
-			"searched": "search",
+			"search_s": 15.200000000000001,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "1f397f74bfb152bdccb2605f0669ded383143afb944c5409edba00d2fa37e885"
 	}
 }

@@ -77,7 +77,7 @@
 			"every_piece": true,
 			"fraction": 0.959936,
 			"from_rung": 0,
-			"judged": "65eb47b690348c1780ba14d51628c05e299648e848a9a1379fde3e2749a32f05",
+			"judged": "faa118fa52dd01261a0146b95bcd38f89ade6adfdc25b2830a15c8ad2893459b",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.960 kept)",
@@ -117,12 +117,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 2's part 'brass' is 103 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 1 across 5 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 278.0,
+			"peak_mb": 279.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 20.5,
+			"search_s": 10.200000000000001,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
@@ -170,7 +170,7 @@
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 1,
-			"judged": "67d16cdb2b5eab8702954456ddaada82605565ce47eac013b589d1d949717ed5",
+			"judged": "ec1bf66389c43ac9ba280e495100e48b9e9e9098e380d871be221ee0532df3d1",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -237,19 +237,19 @@
 				"KIT (its own build at the rung's pixel) held at 4248, dearer than the 1768 taken",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.960 kept), carried from rung 1 held at 8338, dearer than the 1768 taken"
 			],
-			"peak_mb": 278.0,
+			"peak_mb": 279.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 39.1,
+			"search_s": 18.5,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "5875623c213bf88fa3f74741bfcb93f42c42646d3a7a1f44ef073407902b4df4"
 	}
 }

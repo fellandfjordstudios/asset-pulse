@@ -159,7 +159,7 @@
 				"trace": "built__window-boarding#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 14,
+				"candidates": 1,
 				"trace": "built__window-boarding#2.trace.jsonl"
 			}
 		}
@@ -211,7 +211,7 @@
 			"every_piece": true,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "7c288e11be935adba5da56632452e57307817929d0cffd67713e56202235d6ef",
+			"judged": "660383b39541cc663d99ef0224e35aecbc7172417262f86d49345a85da9ab42a",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.490",
@@ -246,12 +246,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'board' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 921.0,
+			"peak_mb": 922.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 306.8,
+			"search_s": 153.70000000000002,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
@@ -263,10 +263,10 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 470,
+					"cost": 470.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.007970000000000001,
+					"picture": 0.00797,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
@@ -281,7 +281,7 @@
 					"value": 0.774744
 				}
 			],
-			"cap": 0.0009259259259259259,
+			"cap": 0.00092592592592592,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -296,11 +296,11 @@
 			"every_piece": true,
 			"fraction": 0.774744,
 			"from_rung": 1,
-			"judged": "b233025046f00427385ff8a4d25e37aac79ea1cd7f414e97dec4c00b5d0949f7",
+			"judged": "33f22f43b04c71d0fab69e64ba71e50e5d2fc3d42661adea0db1b3c15ffa2135",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -828,11 +828,7 @@
 				"cost": 454,
 				"coverage_rel": 0.00015000000000000001,
 				"floor": 0.00502,
-				"part_shift": {
-					"board": 0.0015300000000000001,
-					"nail": -0.0015400000000000001,
-					"rust": 1e-05
-				},
+				"part_shift": {},
 				"picture": 0.007970000000000001
 			},
 			"measured_of": 3,
@@ -845,19 +841,19 @@
 				"KIT (its own build at the rung's pixel) held at 574, dearer than the 454 taken",
 				"KIT (its own build at 2 of the band's pixels) held at 470, dearer than the 454 taken"
 			],
-			"peak_mb": 942.0,
+			"peak_mb": 928.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 3
+				"reduce": 3.0
 			},
-			"search_s": 525.6,
-			"searched": "search",
+			"search_s": 167.20000000000002,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "3f377e06698864bbe5c4c03104586dbb33154156001b9c5f0df84209a74d9921"
 	}
 }

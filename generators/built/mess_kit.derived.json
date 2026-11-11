@@ -75,7 +75,7 @@
 			"error": 0.0037476318679603394,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "e5e52f6c4f264b21ae54d65bcb608c43c7137687762a68ec885c7d81aa304a80",
+			"judged": "ea90ea7de0e45ab88f71504aadfa1c869eece4262c7339a8c4a6066d8ea6b7ae",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
@@ -114,9 +114,9 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 272.0,
 			"route": "merged",
-			"search_s": 24.0,
+			"search_s": 11.200000000000001,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -170,7 +170,7 @@
 			"every_piece": true,
 			"fraction": 0.922353,
 			"from_rung": 1,
-			"judged": "97c1a2f5e2fca71821ee9b40523b1eb3b1df9061709fd9b03e9840d4a651ed4d",
+			"judged": "246d0eeccfcc043a8ec91f63761c90df9841cf9b4710f9370be8402640b5ec90",
 			"material_transfer": {
 				"checked_at": 2,
 				"checks": [
@@ -252,12 +252,12 @@
 				"MERGED (its parts at their own rungs, joined) held at 2550, dearer than the 2352 taken",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 2550, dearer than the 2352 taken"
 			],
-			"peak_mb": 271.0,
+			"peak_mb": 272.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 8
 			},
-			"search_s": 84.2,
+			"search_s": 37.5,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -265,7 +265,7 @@
 	},
 	"source": {
 		"children": "e1e75fee5272afeb8dfd242829efb7a5b96bac908d0305e097f446093248cdc5",
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "1433980d5f920b0f4bf302874dd9693ee4fdb5e9a48bd35161cb7c5ec208f02c"
 	}
 }

@@ -43,7 +43,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 10,
+				"candidates": 1,
 				"trace": "built__supply-depot-ballast#1.trace.jsonl"
 			},
 			"2": {
@@ -73,10 +73,10 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1174,
+					"cost": 1174.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0053100000000000005,
+					"picture": 0.00531,
 					"px_over": null,
 					"route": "kit",
 					"value": {}
@@ -92,9 +92,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.005186722505257109,
+				"cap": 0.0051867225052571,
 				"chain": "error",
-				"cost": 448
+				"cost": 448.0
 			},
 			"chains": {
 				"error": "lost"
@@ -108,11 +108,11 @@
 			"error": 0.005186722505257109,
 			"fraction": 0.16806999999999994,
 			"from_rung": 0,
-			"judged": "1644d441fe6f67b65262f8602e2ad8083b88ceb1fec7a2d7ccc806baa244f490",
+			"judged": "13ef6903b984998b9e21e7613422d371eabee911e113af3f6f54662392914989",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -138,13 +138,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 1174, dearer than the 444 taken"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 269.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 1
+				"reduce": 1.0
 			},
-			"search_s": 117.30000000000001,
-			"searched": "search",
+			"search_s": 14.700000000000001,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -190,7 +190,7 @@
 			"error": 0.020746890021028436,
 			"fraction": 0.3429999999999999,
 			"from_rung": 1,
-			"judged": "20418156ee6e9d230ba40d24126e89c8152c0b12cec6654685ace34766b27c0c",
+			"judged": "1f4514927f8a7eb5627832e949661f0fccd34a1525d809a981a0ddb006885334",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -227,7 +227,7 @@
 			"routes": {
 				"reduce": 1
 			},
-			"search_s": 52.6,
+			"search_s": 27.1,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -274,7 +274,7 @@
 			"error": 0.08298756008411375,
 			"fraction": 0.24009999999999992,
 			"from_rung": 2,
-			"judged": "c896daddd4fe2b606a57abf9c26a4161218e3706ca55e5b461a11bf8dbf71ec3",
+			"judged": "ed409db8c1dab775c31db2eeb872335ed8ad3fe83b2259b38bd76093947871d4",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -308,14 +308,14 @@
 			"routes": {
 				"reduce": 1
 			},
-			"search_s": 59.900000000000006,
+			"search_s": 30.8,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "50ca0b4043fb32c3c11448d0184ffc1e64f13e12f97aab35e7ebac8a4104674e"
 	}
 }

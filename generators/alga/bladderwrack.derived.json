@@ -164,7 +164,7 @@
 			"error": 0.0025375354722392903,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "5003d6cf265229cc1fa214bb9fb131cd87bbb968b27a7d59604a28fda21d9620",
+			"judged": "3cbf7d15bebb7f3b3e9c261bd95a57a6cc73b62ef4dd9fba2eceb2b96dfdf2c0",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.700",
@@ -186,12 +186,12 @@
 				"picture": 0.00398
 			},
 			"measured_of": 1,
-			"peak_mb": 489.0,
+			"peak_mb": 491.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 32.0
 			},
-			"search_s": 100.9,
+			"search_s": 50.400000000000006,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -229,7 +229,7 @@
 			"error": 0.010150141888957161,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "c2f50e32f4b6806c3229bba1c5b20be37d90b3a6ef2ec154754ccc05456b0576",
+			"judged": "6bd7c7e4c9afc9d8df64e7347079adcfd519e6fc5835161fc4fdbfa73228c598",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.700",
@@ -251,19 +251,19 @@
 				"picture": 0.00444
 			},
 			"measured_of": 1,
-			"peak_mb": 489.0,
+			"peak_mb": 491.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 32.0
 			},
-			"search_s": 28.8,
+			"search_s": 15.200000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "4760864bd328a064f9596d4366d8b9e0362dea0519c58f803f763f80d5c22e25"
 	}
 }

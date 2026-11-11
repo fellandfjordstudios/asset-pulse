@@ -204,7 +204,7 @@
 			"error": 0.003242357311563454,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "37926cc2a02edae80d91ddd18dc59b3a57d5c134bd1732b7a1cefea82cfd5868",
+			"judged": "2ab089937fb117de3aca4bfe66dcdbd51c160add3ef242ed0526a0397455daa8",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -232,9 +232,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0032 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 21 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00078 m; coverage changes -0.1911 against 0.0289 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0032",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 309.0,
+			"peak_mb": 310.0,
 			"route": "kit",
-			"search_s": 246.8,
+			"search_s": 123.80000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -270,7 +270,7 @@
 			"error": 0.012969429246253815,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "683aedc5b758dab4a494796126f02107a5a9825c902935fd402cf1faed7b34c7",
+			"judged": "6859ab0c031686a46c545137649efc6ba680a5e670a65acd778cc51c47e56ec1",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -302,14 +302,14 @@
 			],
 			"peak_mb": 304.0,
 			"route": "kit",
-			"search_s": 66.9,
+			"search_s": 33.300000000000004,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "68b179ce55b4db6fa7c1d243686a8bfc64d375db06d740cb11937f9408842d99"
 	}
 }

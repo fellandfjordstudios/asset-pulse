@@ -47,7 +47,7 @@
 				"trace": "built__wall-bunk#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 38,
+				"candidates": 1,
 				"trace": "built__wall-bunk#2.trace.jsonl"
 			},
 			"3": {
@@ -100,7 +100,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "554b4af78c6b34708b4868922815ee92ddd50a57d913365115d0ee388f89849e",
+			"judged": "a76b80bfb6629ceee610be09a9c0ac51eba730d989779b329dff5557d5405c83",
 			"keep": {
 				"stitch": 0.03125
 			},
@@ -135,9 +135,9 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping stitch 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.700 held at 4213, dearer than the 3572 taken"
 			],
-			"peak_mb": 314.0,
+			"peak_mb": 316.0,
 			"route": "kit",
-			"search_s": 241.5,
+			"search_s": 116.80000000000001,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6
@@ -149,19 +149,19 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 1492,
+					"cost": 1492.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.004350000000000001,
+					"picture": 0.00435,
 					"px_over": null,
 					"route": "kit",
 					"value": {
@@ -179,9 +179,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.003703703703703704,
+				"cap": 0.0037037037037037,
 				"chain": "error",
-				"cost": 838
+				"cost": 838.0
 			},
 			"chains": {
 				"error": "lost"
@@ -196,11 +196,11 @@
 			"every_piece": true,
 			"fraction": 0.08235429999999996,
 			"from_rung": 1,
-			"judged": "87f90e89edbd36505c9a60c09d073e031846022926ec70a52631a6bec1944726",
+			"judged": "e9be51e5977ec9fb569e6e6926259cd067fce58f1909b5c4f3a7a9597dd2ea54",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping stitch 0.031)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -344,14 +344,7 @@
 				"cost": 470,
 				"coverage_rel": -0.007030000000000001,
 				"floor": 0.004350000000000001,
-				"part_shift": {
-					"blanket": -0.00265,
-					"seam": -0.008230000000000001,
-					"thread": -0.00015000000000000001,
-					"ticking": 0.0008600000000000001,
-					"wood_x": 0.00982,
-					"wood_z": 0.0017000000000000001
-				},
+				"part_shift": {},
 				"picture": 0.004350000000000001
 			},
 			"measured_of": 4,
@@ -382,13 +375,13 @@
 				"KIT (its own build at 2 of the band's pixels, keeping stitch 0.031) held at 1492, dearer than the 470 taken",
 				"KIT (its own build at the rung's pixel, keeping stitch 0.031), carried from rung 1 held at 3572, dearer than the 470 taken"
 			],
-			"peak_mb": 278.0,
+			"peak_mb": 269.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 27
+				"reduce": 27.0
 			},
-			"search_s": 713.1,
-			"searched": "search",
+			"search_s": 51.800000000000004,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		},
@@ -436,7 +429,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "24cba58a23bf7b6b2f1ec367cdf036508f404b84cff4ca189f90be444af74cc7",
+			"judged": "c7989ad72d0c9b5241328548938c96f0bcd6720ee822f381ce7c8c9b71b67361",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -448,9 +441,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 278.0,
+			"peak_mb": 269.0,
 			"route": "impostor",
-			"search_s": 14.600000000000001,
+			"search_s": 8.3,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -459,7 +452,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "97c7380a77c90d2ec24b570a1414377cd73ae2575c9ed723962f6105ae45d69a"
 	}
 }

@@ -143,7 +143,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "ea9e2fb8f51abc6026b154e5be00d8bca44de8ded3ccee465a42116c30697038",
+			"judged": "9c8240a5abd16a071f911812d2df49934aafaf43bf86c23f445c4c97792393ea",
 			"measured": {
 				"cost": 790,
 				"coverage_rel": 0.0,
@@ -173,7 +173,7 @@
 			],
 			"peak_mb": 266.0,
 			"route": "rung0",
-			"search_s": 20.5,
+			"search_s": 10.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -210,7 +210,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d925bea28d7ad5c0fe3152be5b06e6fe23b68d1ae88e4b5a92adc8709651f3b1",
+			"judged": "4039e0feaf916a3b542430b0fa2baf80beca06e101931aef3828549682cd8409",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -259,7 +259,7 @@
 			],
 			"peak_mb": 269.0,
 			"route": "kit",
-			"search_s": 22.400000000000002,
+			"search_s": 11.4,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -308,7 +308,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "0a8f1a7dffeacf476ec78d1609eb6145a5636b403ef682f391d42e31d3e6e39c",
+			"judged": "e0a65beed17480191dc95a1c5d0eafc2389d5a03f7be5035f78c4bfbd29a5a8b",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -322,7 +322,7 @@
 			],
 			"peak_mb": 270.0,
 			"route": "impostor",
-			"search_s": 8.1,
+			"search_s": 4.1000000000000005,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -331,7 +331,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "1091b21db607a34f7aaeff5a6df925f12fe9a4a4a44962946ea3d8f548f89031"
 	}
 }

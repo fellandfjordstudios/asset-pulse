@@ -61,11 +61,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 11,
+				"candidates": 1,
 				"trace": "animal__reindeer#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 32,
+				"candidates": 1,
 				"trace": "animal__reindeer#2.trace.jsonl"
 			},
 			"3": {
@@ -91,11 +91,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 24628,
+					"cost": 24628.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.015860000000000003,
-					"px_over": 4546,
+					"picture": 0.01586,
+					"px_over": 4546.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -109,11 +109,11 @@
 					"value": 0.288153
 				}
 			],
-			"cap": 0.000462962962962963,
+			"cap": 0.00046296296296296,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 32864,
+				"cost": 32864.0,
 				"fraction": 0.48999999999999994
 			},
 			"chains": {
@@ -129,11 +129,11 @@
 			"every_piece": true,
 			"fraction": 0.288153,
 			"from_rung": 0,
-			"judged": "805dd1270db31cfa9c7b8c5d729af98664becfa69a5113f1b8cf3bdc6e70cab1",
+			"judged": "1d86ce819c5ac6ec642d4787b58f0f64bf61fa541d90a12e3414e445ba4b3c60",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.288 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -190,13 +190,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'claw' is 16 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1705.0,
+			"peak_mb": 1727.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 31
+				"reduce": 31.0
 			},
-			"search_s": 1070.3,
-			"searched": "search",
+			"search_s": 302.1,
+			"searched": "recheck",
 			"surfaces": 29,
 			"surfaces_ceiling": 29
 		},
@@ -207,20 +207,20 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 230,
+					"px_over": 230.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 20868,
+					"cost": 20868.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.015860000000000003,
-					"px_over": 76,
+					"picture": 0.01586,
+					"px_over": 76.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -235,9 +235,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.001851851851851852,
+				"cap": 0.00185185185185185,
 				"chain": "error",
-				"cost": 7828
+				"cost": 7828.0
 			},
 			"chains": {
 				"error": "lost"
@@ -252,11 +252,11 @@
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 1,
-			"judged": "d7567b9e1e5356629842ec68b47c00517ee048cb082ea652e7e835914e9bc2ae",
+			"judged": "4e166960df55224aa84e8d6ec555c20d99d26013f0ceb973125c0c220f2327b4",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.240",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -448,37 +448,7 @@
 				"cost": 6116,
 				"coverage_rel": -0.01616,
 				"floor": 0.0048200000000000005,
-				"part_shift": {
-					"antler": -0.00269,
-					"back": 0.0008600000000000001,
-					"band": 0.0009800000000000002,
-					"cheek": 0.0006500000000000001,
-					"claw": -0.0022500000000000003,
-					"coat": 0.0035,
-					"dental_pad": -0.00043000000000000004,
-					"ear": -0.00063,
-					"eyering": 2e-05,
-					"feather": 0.00063,
-					"iris": -2e-05,
-					"leg": 0.0009600000000000001,
-					"lid": -0.00035000000000000005,
-					"lip": -0.00046,
-					"mane": 0.00045000000000000004,
-					"mouth": -5e-05,
-					"muzzle": -0.00063,
-					"nose": 1e-05,
-					"nostril": 1e-05,
-					"pupil": 0.0,
-					"ruff": 0.0008600000000000001,
-					"rump": 0.00051,
-					"sclera": -0.00036,
-					"short": -0.0009500000000000001,
-					"shoulder": 0.00051,
-					"teeth": -0.00136,
-					"thigh": -0.00023,
-					"toe": 0.00047000000000000004,
-					"tongue": -0.0005700000000000001
-				},
+				"part_shift": {},
 				"picture": 0.0055000000000000005
 			},
 			"measured_of": 2,
@@ -508,13 +478,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.288 kept), carried from rung 1 held at 19312, dearer than the 6116 taken"
 			],
-			"peak_mb": 2276.0,
+			"peak_mb": 1992.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 31
+				"reduce": 31.0
 			},
-			"search_s": 1648.7,
-			"searched": "search",
+			"search_s": 628.9000000000001,
+			"searched": "recheck",
 			"surfaces": 18,
 			"surfaces_ceiling": 1
 		},
@@ -544,12 +514,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 6
+					"value": 16
 				}
 			],
 			"checked_at": 7,
@@ -562,7 +532,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "b81a5d9e1520bd6a35aa74da19b8d498a3f4bae9a86d259d784f9ce81093f6f8",
+			"judged": "82f924d02a4270c642d34782005b31f246e7135e6f7bcfe59dba48c4e330b129",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -574,10 +544,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 2276.0,
+			"peak_mb": 1992.0,
 			"route": "impostor",
-			"search_s": 79.0,
-			"searched": "search",
+			"search_s": 72.5,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -585,7 +555,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "41d268be0440e15e1277dd7be4ba7ae56a5bf7dcbf4b94f06373bebabf6d4b42"
 	}
 }

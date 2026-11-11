@@ -325,7 +325,7 @@
 			"every_piece": true,
 			"fraction": 0.8648309999999999,
 			"from_rung": 0,
-			"judged": "7ce4b5c5b60a3cba38e26f02222edd4137c15e71d7fd4a24474f2fa095ec4d6c",
+			"judged": "7749d36b5f49f940b8e4920c678efea4e72e182e176db9a0e59dceae7fa0931b",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.865 kept)",
@@ -367,7 +367,7 @@
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 769.1,
+			"search_s": 374.8,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -422,7 +422,7 @@
 			"every_piece": true,
 			"fraction": 0.8648309999999999,
 			"from_rung": 0,
-			"judged": "51a410a5d8c4b1377b78357fb3289ecf08037b3fd9b0491c13414e12e3e7dacc",
+			"judged": "9f5d6fd304d59a4e2e6cec6ca0f2374eee88a436a6ec73a131358d5d89b729b1",
 			"material_transfer": {
 				"checked_at": 37,
 				"checks": [
@@ -1342,14 +1342,14 @@
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 2685.2000000000003,
+			"search_s": 1201.2,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "45ee221d643cbe66a772221c8d3fa3d64f03f351fe439756de66a2f2b6ddfcee"
 	}
 }

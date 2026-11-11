@@ -105,7 +105,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "b4e9d3adbc6b9d497108f0f37a218c66056f7d3a4aeada952df6d7529602f1d0",
+			"judged": "e5b2ca64e6eee8a0bca9bb4700b88e66d3894fb0e9d4c4fdac294ac5588ee17b",
 			"measured": {
 				"cost": 31258,
 				"coverage_rel": 0.0,
@@ -123,9 +123,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: built/marker-buoy does not declare `reads_density`"
 			],
-			"peak_mb": 279.0,
+			"peak_mb": 280.0,
 			"route": "rung0",
-			"search_s": 45.900000000000006,
+			"search_s": 26.400000000000002,
 			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9,
@@ -175,7 +175,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "48bf83d85cccde1daaa3d50eb2f54eb6f6a920886ec413478c3e53b019793753",
+			"judged": "d2daba39a632cb6409b80c0191c08f17762d25bff9e517d5c5a506e3f51ac5b9",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -189,7 +189,7 @@
 			],
 			"peak_mb": 282.0,
 			"route": "impostor",
-			"search_s": 51.5,
+			"search_s": 25.3,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -198,7 +198,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "b4f0dace19abbd5ed3b569027f689960ce9093dfeb7ec46b6c74c99098c21f98"
 	}
 }

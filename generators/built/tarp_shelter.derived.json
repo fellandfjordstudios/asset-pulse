@@ -193,7 +193,7 @@
 			"error": 0.004,
 			"fraction": 0.502513,
 			"from_rung": 0,
-			"judged": "a613aa04ddbde75ff50c00e33991bd8f12c45815fd8ac5e65015a35e200b04e6",
+			"judged": "4daa4c0fee27fd0419a74c0ac5ca6c03230190859e0c2028c8326dd656cb27be",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.125x the band's (0.503 kept)",
@@ -233,7 +233,7 @@
 			"routes": {
 				"reduce": 6.0
 			},
-			"search_s": 63.5,
+			"search_s": 34.2,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -280,7 +280,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 0.3429999999999999,
 			"from_rung": 0,
-			"judged": "7c018cc6f605c98e25940d6360e505c4de0888c2cb98eb1730ce4d7dd67257b6",
+			"judged": "9c9ff961d3611a559be70a1f8398852d02eba17eb9bfadd14c699e565e7af1dc",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.343",
@@ -737,7 +737,7 @@
 			"routes": {
 				"reduce": 6.0
 			},
-			"search_s": 75.2,
+			"search_s": 38.2,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -786,7 +786,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "a065ee1c7dfc48bfa35a3e19213ed5986973d8987daefce7dd9f60ea62467423",
+			"judged": "e3bbfd36522125bb3a0cd6ce2e346e34f3fb6f55a682404ba86ed96ef31c8831",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -800,7 +800,7 @@
 			],
 			"peak_mb": 414.0,
 			"route": "impostor",
-			"search_s": 12.600000000000001,
+			"search_s": 6.800000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -808,7 +808,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "b4603c0f85aafc9b8d7c7ef2bf89c1fa91fc1f2c9eff261cb310ecafb7bc6c05"
 	}
 }

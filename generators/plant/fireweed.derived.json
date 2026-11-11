@@ -325,7 +325,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "4fc022b89dfd1826456c4bce90c5f5c7e0048857e1859d0e1f4ad19baf747422",
+			"judged": "e600334efbcc33b85d423900141ed06d87f8655bf9b64115792067e95f79e374",
 			"measured": {
 				"cost": 2452,
 				"coverage_rel": 0.0,
@@ -342,9 +342,9 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 343.0,
+			"peak_mb": 344.0,
 			"route": "rung0",
-			"search_s": 85.80000000000001,
+			"search_s": 44.6,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
@@ -385,7 +385,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "a9315883783b6a8ee880ca87667164c88cd93a24cae8cc3f33066400971a68d6",
+			"judged": "6c92712908bb1f7402a287aafe8ea19c576278f171a838526fcfb682de99ec09",
 			"material_transfer": {
 				"checked_at": 37,
 				"checks": [
@@ -1299,9 +1299,9 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"THIN: plant/fireweed does not declare `reads_density`"
 			],
-			"peak_mb": 346.0,
+			"peak_mb": 347.0,
 			"route": "rung0",
-			"search_s": 54.7,
+			"search_s": 30.200000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -1334,7 +1334,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "ef01b88ce8b3ad48bd99d08b2bb7bb54b6aa60cc4b390f3f5c28df05f5205938",
+			"judged": "9bebf0924418b6f61fa5d7c1a9c3bcfda4415d914e5e6a9866c077e2e10200cc",
 			"keep": {},
 			"material_transfer": {
 				"checked_at": 37,
@@ -2258,7 +2258,7 @@
 			],
 			"peak_mb": 347.0,
 			"route": "kit",
-			"search_s": 57.2,
+			"search_s": 33.1,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -2266,7 +2266,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "e4c29908894e1a50e526cede488ac7841dd7882e91c930f3cfcd93bb6b84d485"
 	}
 }

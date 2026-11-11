@@ -117,11 +117,11 @@
 				"trace": "plant__rowan-corymb#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 2,
+				"candidates": 1,
 				"trace": "plant__rowan-corymb#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 4,
+				"candidates": 1,
 				"trace": "plant__rowan-corymb#3.trace.jsonl"
 			}
 		}
@@ -172,7 +172,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "1ede63f8a1e92d3bd694cf6af319073241049b6687a66a2881eb7db6b03564e8",
+			"judged": "2badbeb8bbec1c631efdeb3e7b4552a1e017aea49cd1ae344d7300f8f94c5527",
 			"measured": {
 				"cost": 3436,
 				"coverage_rel": -0.04243,
@@ -202,7 +202,7 @@
 			"routes": {
 				"reduce": 71.0
 			},
-			"search_s": 73.8,
+			"search_s": 36.7,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -244,7 +244,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "2abbde9fdfaed8a65893f6b311b8d0e06e79cc7baa43b2e05fc0156da4ad26ec",
+			"judged": "9f10f0377198d67c91bb09073f7966ffe89e1047127c0e6170572ea0243aebea",
 			"material_transfer": {
 				"checked_at": 15,
 				"checks": [
@@ -630,7 +630,7 @@
 			"routes": {
 				"reduce": 71.0
 			},
-			"search_s": 113.30000000000001,
+			"search_s": 35.800000000000004,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -671,7 +671,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "887300176f3b2730b1a3152aea952c5dc9edce739dadb86b8a90edb49d4191b8",
+			"judged": "44780da9935824e0bf8d1f8e9b0e08daa2ad364f926b7811faa8c3e1ee985e30",
 			"material_transfer": {
 				"checked_at": 15,
 				"checks": [
@@ -1057,14 +1057,14 @@
 			"routes": {
 				"reduce": 71.0
 			},
-			"search_s": 132.0,
+			"search_s": 28.400000000000002,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "c0aad19922a58b604b1d279ecfcc1c143cd643f39b92911554e0eb1e612b6b2c"
 	}
 }

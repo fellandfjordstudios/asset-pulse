@@ -98,7 +98,7 @@
 			"every_piece": true,
 			"fraction": 0.276495,
 			"from_rung": 0,
-			"judged": "6c6a75e83c2ad7e04e7c1d43562e5f74a28e8b64cb6cb5dcddb91155ba0074b9",
+			"judged": "a715946a9fe5e2c973aa8655fa01a79aefa85df1dc7df1ff4498e793c1cffee6",
 			"look_past": {
 				"beaten": true,
 				"first": "CHILD (its welded children at their own rungs {\"built/skis-pole\":0,\"built/skis-ski\":1})",
@@ -137,12 +137,12 @@
 				"MERGED, THIN: not searched -- the look past the first that held (CHILD (its welded children at their own rungs {\"built/skis-pole\":0,\"built/skis-ski\":1})) is 1 route(s)",
 				"CHILD (its welded children at their own rungs {\"built/skis-pole\":0,\"built/skis-ski\":1}) held at 4564, dearer than the 4550 taken"
 			],
-			"peak_mb": 317.0,
+			"peak_mb": 318.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 14.0,
+			"search_s": 14.5,
 			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9
@@ -214,7 +214,7 @@
 			"every_piece": true,
 			"fraction": 0.241006,
 			"from_rung": 0,
-			"judged": "0159ff5f5d0d20d901ed67c21296c30a12476f511d7ae3eb54b0c22a33d9242d",
+			"judged": "ad07383fb3ea1fa8083935d953cda4e653f9e738d90f5166024b222a76751b28",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.241 kept)",
@@ -322,7 +322,7 @@
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 91.30000000000001,
+			"search_s": 89.30000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -371,7 +371,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "0a123153e30e9eb5b56700abfaa7e82a7b6f8190dd2ec4c4f0dfdf244b0ae816",
+			"judged": "7a1ce66148d38fd85919f702a6c26a34e0deb7d2decb0101c412fc1158725666",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -385,7 +385,7 @@
 			],
 			"peak_mb": 317.0,
 			"route": "impostor",
-			"search_s": 15.0,
+			"search_s": 15.100000000000001,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -395,7 +395,7 @@
 	},
 	"source": {
 		"children": "c7f57c8e0efa776274a86eed013517e0fd1e0769d447cbe2fd447d6cc04288a6",
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "90570db34a3aae8490f0271fb745f5cb9f923afa2875eaeedca33a50cb3fbbda"
 	}
 }

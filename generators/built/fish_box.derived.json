@@ -97,7 +97,7 @@
 			"error": 0.001994893271252734,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "6d36a9cd0f5a7de1ba8e4bf513a7a7645eeaf4fceaa09a4e8f6658f83cb95c08",
+			"judged": "4ccbd57a2ec8a85c80f45f08af8596b41f00dec953623e376dc297b9672ac335",
 			"keep": {
 				"nail": 0.08235429999999996
 			},
@@ -131,9 +131,9 @@
 				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 1 across 5 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping nail 0.082)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 323.0,
+			"peak_mb": 324.0,
 			"route": "kit",
-			"search_s": 218.3,
+			"search_s": 103.4,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
@@ -172,7 +172,7 @@
 			"error": 0.007979573085010936,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "2220061ac06ef744b45ecd5f26ba3c4472239867076452d928d3c8a4fc7ac778",
+			"judged": "78eef444dfc0bea7560e8c7752d0d74a603af18d74a5e7003da46964a90c105d",
 			"keep": {
 				"nail": 0.03125
 			},
@@ -379,7 +379,7 @@
 			"peak_mb": 274.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 173.10000000000002,
+			"search_s": 82.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -387,7 +387,7 @@
 	},
 	"source": {
 		"children": "a0cc6c73eae06bb4205fefe304a78b845b2c6cf4610e2677b5948679b15196d0",
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "d928f95127b4f1bd59527e15f2e464fe264eef7d60eefd3497a54fd7e0f9f488"
 	}
 }

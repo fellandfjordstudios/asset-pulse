@@ -277,7 +277,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "5a06760483ccc678b56e9a87fa99c346373e283d5ea9f16314f4ae0242b51f54",
+			"judged": "c23d4efa7382aeb71c610aff0aa1d57c9ef965927f154814aeef34219952a81a",
 			"measured": {
 				"cost": 3946,
 				"coverage_rel": 0.0,
@@ -296,7 +296,7 @@
 			],
 			"peak_mb": 332.0,
 			"route": "rung0",
-			"search_s": 91.80000000000001,
+			"search_s": 50.800000000000004,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -345,7 +345,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "6b8d1855c82e45fdcca101f02396431eb83acf66d27fe89665247acc48384ee2",
+			"judged": "5c65f5acae0910a62390dd13eb2750e270abb0021f444b92198344642be47eb8",
 			"keep": {
 				"fitting": 0.03125
 			},
@@ -1100,7 +1100,7 @@
 			"peak_mb": 337.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 991.5,
+			"search_s": 459.8,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
@@ -1108,7 +1108,7 @@
 	},
 	"source": {
 		"children": "881c810958d9899ab8c25562fc118bacd82de12fbc0470615ed31dc2cfec417d",
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "5fdf8fd4b295cb62ae1141a5fb3d04fde1be58558274380d6fcad9eb2dd55c6e"
 	}
 }

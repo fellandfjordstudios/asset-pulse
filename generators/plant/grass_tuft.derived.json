@@ -189,7 +189,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "4a5e9318fff0b59adbc3c542d01b66da35f8dd32a50decc2cef9fccaae78ae69",
+			"judged": "da4c1688f20b4988370800b5b207092a4375254379525b0fe6b057fdddcef2a8",
 			"measured": {
 				"cost": 738,
 				"coverage_rel": 0.0,
@@ -205,9 +205,9 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/grass-tuft does not declare `reads_density`"
 			],
-			"peak_mb": 285.0,
+			"peak_mb": 286.0,
 			"route": "rung0",
-			"search_s": 39.300000000000004,
+			"search_s": 20.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -215,7 +215,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "dc296a7e37aeddc119cf835aac9dfabd099b71fd5e02bbe057ea1f998d15c1d5"
 	}
 }

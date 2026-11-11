@@ -91,7 +91,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "40be6b6088a146ea8cc9c9f17ddb26ef8cbac5c859f2b89f6a039f3349f10c58",
+			"judged": "25d767b4549f9726adba7dc19fce3606c32d19eacaf4dac71ed0aca8ba14bad0",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.700)",
@@ -172,7 +172,7 @@
 			"routes": {
 				"reduce": 43.0
 			},
-			"search_s": 100.30000000000001,
+			"search_s": 51.900000000000006,
 			"searched": "recheck",
 			"surfaces": 43,
 			"surfaces_ceiling": 43
@@ -220,7 +220,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "8564c1227523d0cf16d1044dddb619105d523c1c00119b78eec34c592751359a",
+			"judged": "f857899d8d423a5e9465ef3e2403b7658ec132c8b56ee1a96f1b94f385a31e1e",
 			"keep": {
 				"bolt": 0.03125
 			},
@@ -355,7 +355,7 @@
 			],
 			"peak_mb": 358.0,
 			"route": "kit",
-			"search_s": 173.0,
+			"search_s": 90.80000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -404,7 +404,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "c2df6e77b15f34ecf66d0fdfa543b96bd47bf6702cde76156333846b3b70b889",
+			"judged": "fa4ae2612e07f776ee7e9c1c803a7a1a40962a67029368e8b90d674fa25bd436",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -418,7 +418,7 @@
 			],
 			"peak_mb": 358.0,
 			"route": "impostor",
-			"search_s": 20.5,
+			"search_s": 11.4,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -428,7 +428,7 @@
 	},
 	"source": {
 		"children": "ef8410c8f039f2289cff0c19d0e6c49f36a05a81f77ee98a4ba48247df1f053e",
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "28c7c654997e8e51956ac49e2328c92443208228220cb7e91ba4a172ce5ab6ef"
 	}
 }

@@ -148,7 +148,7 @@
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 0,
-			"judged": "ccb1d78fdf8bb5fe2ca237eaf622cd890a395d8d9f2d377f098c0b3b61950a14",
+			"judged": "025c150d900244447aff02bc8c1c2a0f915b8b4c66f59db92bcc8c986e9706b6",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -188,14 +188,14 @@
 			"routes": {
 				"reduce": 4.0
 			},
-			"search_s": 106.60000000000001,
+			"search_s": 51.0,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "7bb1a4e2a082361990891c45bd8dbee38348269aaae81ab4381c9b65eb9e45b2"
 	}
 }

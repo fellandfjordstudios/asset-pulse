@@ -82,7 +82,7 @@
 			"every_piece": true,
 			"fraction": 0.186816,
 			"from_rung": 0,
-			"judged": "8779fca408ec0142d25230a960938b4c831ea6b9a8ed432bd8beca6b7399b78d",
+			"judged": "eff3ed9184974ce181db3486607c47d8bfd4fea5cefbe112fd7927098add5a52",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.187 kept)",
@@ -125,7 +125,7 @@
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 7.4,
+			"search_s": 4.2,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 7
@@ -175,7 +175,7 @@
 			"every_piece": true,
 			"fraction": 0.11023,
 			"from_rung": 0,
-			"judged": "731efc2bd7cffe1ad860f5a3a8309b4f8cf4df9f876fc0e59d18e77d7f49031a",
+			"judged": "0c4d7caa92ef5bed849a9e0ae192092284577ad1628060f4aba5668d5e4592ce",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.110 kept)",
@@ -243,14 +243,14 @@
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 28.1,
+			"search_s": 14.100000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "124abfbab26836b8d7cf0c0c3c2fae152584f575acc17b46bf6e95b1bd346965"
 	}
 }

@@ -112,7 +112,7 @@
 			"error": 0.0018518518518518521,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "229215db59e1409309903f94f70078cbfc823a28cde9e4e4b763cf3fe0a7d20d",
+			"judged": "ff64e59741332bd8a69a75aaafcfcf6fb4ec5366e5426a2ee928665a6025cc36",
 			"keep": {
 				"rivet": 0.24009999999999992
 			},
@@ -146,9 +146,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.240)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 344.0,
+			"peak_mb": 346.0,
 			"route": "kit",
-			"search_s": 244.70000000000002,
+			"search_s": 125.60000000000001,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -189,7 +189,7 @@
 			"error": 0.0074074074074074086,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "6a0e8e24e5e7144fb5a670da73c6b8e8db31c64075722511be0914d9f2c42c03",
+			"judged": "314b75ad08633d9555cd7b44e966c8a0d29acaf75a2ce2cfa56b295a89c26c5a",
 			"keep": {
 				"block": 0.7,
 				"post": 0.16806999999999994,
@@ -439,10 +439,10 @@
 				"KIT (its own build at the rung's pixel, keeping post 0.168, block 0.700, rivet 0.031) held at 1553, dearer than the 1423 taken",
 				"KIT (its own build at the rung's pixel, keeping rivet 0.240), carried from rung 1 held at 8741, dearer than the 1423 taken"
 			],
-			"peak_mb": 308.0,
+			"peak_mb": 310.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 142.4,
+			"search_s": 74.0,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -491,7 +491,7 @@
 			"error": 0.029629629629629634,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "880ca11a97a8ecce34fec872432d0fbff701f1277b6a1e8aaec2cba0683a77e9",
+			"judged": "e3d04fd8ef3f98249cfa55d11070a5759b0265b247eabf6e5f8b3aa94748038e",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -503,9 +503,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 308.0,
+			"peak_mb": 310.0,
 			"route": "impostor",
-			"search_s": 81.30000000000001,
+			"search_s": 42.800000000000004,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
@@ -515,7 +515,7 @@
 	},
 	"source": {
 		"children": "63865d8cdffb5a170f2980ce9c8a72840943ff3a85183485d09c0b8b8c065b60",
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "f788cbfe5b6537eed7921faa7ffe5bd23149ae112de309fd0901171e9f904800"
 	}
 }

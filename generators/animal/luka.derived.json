@@ -104,7 +104,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "c962ad8088c58f736f76f65e1f2ce5194901e9bf23449bdc41a4863a671e83bc",
+			"judged": "165a45142966ed9f4b23d459f127fbf0415c337328c355565a0e18b204efef5b",
 			"keep": {},
 			"measured": {
 				"cost": 19864,
@@ -130,9 +130,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: animal/luka does not declare `reads_density`"
 			],
-			"peak_mb": 634.0,
+			"peak_mb": 635.0,
 			"route": "kit",
-			"search_s": 74.5,
+			"search_s": 57.0,
 			"searched": "recheck",
 			"surfaces": 18,
 			"surfaces_ceiling": 18,
@@ -192,7 +192,7 @@
 			"every_piece": true,
 			"fraction": 0.183347,
 			"from_rung": 1,
-			"judged": "5bbd88dc0669c8d3e7c788d407a34ff139d34e3337a43b788f51dcec764b41be",
+			"judged": "1447ac8be6217487ed35715d78b4950d92dc09bf465eefeaaae62a565a78daee",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.183 kept)",
@@ -395,7 +395,7 @@
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 460.6,
+			"search_s": 247.5,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 1
@@ -444,7 +444,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "809d0a76cbc3d57265be16487130bddeef18e022a891b80c1d58b4802e4f04e3",
+			"judged": "5633ed5d75349bc71e2bc220d6647faedbb205fc0102c6182949f7ab3e184bce",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -456,9 +456,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 641.0,
+			"peak_mb": 642.0,
 			"route": "impostor",
-			"search_s": 58.0,
+			"search_s": 44.0,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -467,7 +467,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "7efe87391ed0989ed7ebd651035956b64e049fefd2cdb9131e6dcc3878d8447b"
 	}
 }

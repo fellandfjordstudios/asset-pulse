@@ -113,7 +113,7 @@
 			"every_piece": true,
 			"fraction": 0.952588,
 			"from_rung": 0,
-			"judged": "f590d418a6809390ddcc96fb24825bf67859cae2d373ec21a460b8e969836e3d",
+			"judged": "c24395e400ada2eca6710097ce930bb0903f1f47f6284b18aabab6a8bcd3f9a9",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.953 kept)",
@@ -152,7 +152,7 @@
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 200.0,
+			"search_s": 93.4,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -197,7 +197,7 @@
 			"every_piece": true,
 			"fraction": 0.53306,
 			"from_rung": 0,
-			"judged": "2501d657c550c4fd86d5674f427ba1457be6237c1ce987065d62610a823e296a",
+			"judged": "9b5468843551de0a1fc55c91e7f9cbb9fb10be5cf2d355ec508243025a7fcfd3",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.533 kept)",
@@ -389,7 +389,7 @@
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 367.0,
+			"search_s": 167.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -437,7 +437,7 @@
 			"every_piece": true,
 			"fraction": 0.04035360699999998,
 			"from_rung": 0,
-			"judged": "a063a846ac60fff9dcf7aa6bb87406ddd3b32e781a9c7d8db938f148f6a5db4f",
+			"judged": "38c15d5ab3cf812dffe44bac80ec21c966311527f318f424136d1b9450287938",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.040",
@@ -626,14 +626,14 @@
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 40.1,
+			"search_s": 20.900000000000002,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "2c4b76031dac402c66146e4f5bcef1b84cc608cd9662d6165de456a6a21de932"
 	}
 }

@@ -367,7 +367,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "6a11e4aea1a0ed8a6ecf52d9d830cf899a10de7041414ee900259eb5b0f66b27",
+			"judged": "e217535b0359dfd48708fb20b6171a11ded0bffd0d1ff54b0b7a3942cbbb54fd",
 			"measured": {
 				"cost": 34176,
 				"coverage_rel": 0.0,
@@ -380,9 +380,9 @@
 				"REDUCE from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"strip_thickness_ratio\":1.0} seed 314: the picture changes at the drawn size: 3 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.67), one pixel 0.00408 m; the error ladder: none holds at 0.0019",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 560.0,
+			"peak_mb": 561.0,
 			"route": "rung0",
-			"search_s": 447.90000000000003,
+			"search_s": 249.20000000000002,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
@@ -423,7 +423,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 0.3125,
 			"from_rung": 0,
-			"judged": "667a4be57da16e0009896893377155ac21c42622f6a3f1e906be293bb8a9a911",
+			"judged": "dd2d8c98299e4ce56de2b28f1a943e7ac4f5d45400ed639cc4ea470bff2a13b8",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.0625x the band's (0.312 kept)",
@@ -1543,14 +1543,14 @@
 			"routes": {
 				"reduce": 15.0
 			},
-			"search_s": 2265.0,
+			"search_s": 1097.2,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "7e65865c58ca5b39b5baa21b1a555dc0d43cdf0ee314add0e07057953d45e3c9"
 	}
 }

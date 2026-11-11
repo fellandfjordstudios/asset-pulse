@@ -101,7 +101,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "eae7cff23f6c9e8f88008d28231a51bbd770b078f7e8ca9f2de22a055b23edd7",
+			"judged": "bdfa86c3adb632ab26741901b262872f3bc60e18beac8cd1326161521d1920c6",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -135,7 +135,7 @@
 			],
 			"peak_mb": 308.0,
 			"route": "kit",
-			"search_s": 85.4,
+			"search_s": 40.900000000000006,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -183,7 +183,7 @@
 			"every_piece": true,
 			"fraction": 0.3429999999999999,
 			"from_rung": 1,
-			"judged": "07b60c5750f6157e2743177ebcf125dd0a567e1fb860fdbe265458c706e57e90",
+			"judged": "939f142050445f82b92ffc2e43b7a79072363ada043703b32ecfc979227b55a6",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
@@ -349,7 +349,7 @@
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 42.2,
+			"search_s": 20.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -385,7 +385,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "9cafddca0bde35b4398053470d843259de4aefac3046c01b4086000b7ee97b13",
+			"judged": "2826152c8c58f788f1662450eca2e14fb1248ed19200a4f7eb97b2d1a21a10b6",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -546,14 +546,14 @@
 			"peak_mb": 264.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 27.5,
+			"search_s": 13.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "f3f01a37a875a72db6eff3a046178512eb0aa142a02698e721de6b4e8a38a2ce"
 	}
 }

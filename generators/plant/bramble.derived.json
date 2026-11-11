@@ -187,7 +187,7 @@
 			"every_piece": true,
 			"fraction": 0.745458,
 			"from_rung": 0,
-			"judged": "6676c569f9d0ac8c87e6b015298fc9fb8ce4f80d1cf5798bdb403112b1c581ed",
+			"judged": "1c46451597ecc92f927bf25dfb066020926974630c46dec41b9b1ea40ece1455",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.745 kept)",
@@ -229,14 +229,14 @@
 				"carry": 8.0,
 				"reduce": 16.0
 			},
-			"search_s": 3500.4,
+			"search_s": 1717.0,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "5961a687389dafbe16b4587fff46c28691bb009d48b134538320c6df530f219d"
 	}
 }

@@ -110,11 +110,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 6,
+				"candidates": 1,
 				"trace": "built__timber-door#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 11,
+				"candidates": 1,
 				"trace": "built__timber-door#2.trace.jsonl"
 			},
 			"3": {
@@ -140,7 +140,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 622,
+					"cost": 622.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
@@ -159,9 +159,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.001851851851851852,
+				"cap": 0.00185185185185185,
 				"chain": "error",
-				"cost": 582
+				"cost": 582.0
 			},
 			"chains": {
 				"error": "lost"
@@ -176,11 +176,11 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "8fe7649ed06ca0486e714101464c6652ca9bae99622624f84ef7d95e53424de1",
+			"judged": "f41f51ec0ec03e3a17ad7024571833a018f9c1baaf9970a86b82fe2f1a3c6faa",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -212,13 +212,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 622, dearer than the 582 taken"
 			],
-			"peak_mb": 713.0,
+			"peak_mb": 686.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 9
+				"reduce": 9.0
 			},
-			"search_s": 585.6,
-			"searched": "search",
+			"search_s": 119.60000000000001,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
 		},
@@ -229,7 +229,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 622,
+					"cost": 622.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
@@ -247,7 +247,7 @@
 					"value": 0.678457
 				}
 			],
-			"cap": 0.003703703703703704,
+			"cap": 0.0037037037037037,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -263,11 +263,11 @@
 			"every_piece": true,
 			"fraction": 0.678457,
 			"from_rung": 0,
-			"judged": "85599a9e98a03e425eef37bdb4e80618bbbb15cc98df9319f24be7b96276cce4",
+			"judged": "94151cafe698af48d076dc253a654b4503de90905784903a3cc675768203d0d5",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -627,12 +627,7 @@
 				"cost": 422,
 				"coverage_rel": -0.0054800000000000005,
 				"floor": 0.0051600000000000005,
-				"part_shift": {
-					"frame": 0.00144,
-					"glass": 0.00092,
-					"iron": -0.0035800000000000003,
-					"opening": 0.00193
-				},
+				"part_shift": {},
 				"picture": 0.00498
 			},
 			"measured_of": 2,
@@ -646,13 +641,13 @@
 				"CARRIED from rung 1, REDUCE (every piece) to 0.700, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.01837 m",
 				"KIT (its own build at the rung's pixel) held at 622, dearer than the 422 taken"
 			],
-			"peak_mb": 713.0,
+			"peak_mb": 686.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 9
+				"reduce": 9.0
 			},
-			"search_s": 261.7,
-			"searched": "search",
+			"search_s": 57.300000000000004,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		},
@@ -687,7 +682,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d432aa239e689b822f9b0b09667c1a3aa6d7e918768f24e778332ed93c15b62c",
+			"judged": "43bc2e7adf85ae177d53692caf014ad2568676d1e6c52c0fc8ba115e28af4f36",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -1061,16 +1056,16 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 622, dearer than the 218 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 622, dearer than the 218 taken"
 			],
-			"peak_mb": 713.0,
+			"peak_mb": 686.0,
 			"route": "kit",
-			"search_s": 68.3,
+			"search_s": 35.2,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "b4e212213612f9b911f79b07adc40a93a7136c80f3e8d7143891177d34fcea79"
 	}
 }

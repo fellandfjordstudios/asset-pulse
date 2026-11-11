@@ -126,7 +126,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "c0afc60c4b64e13b5eb59b9bd7c50b0135694beec22167163354992efb7d5a2f",
+			"judged": "3f4bb7d5fce491e281f01cc75767c0ef128c8eddb2a245711079b51cdf28717f",
 			"keep": {
 				"flower": 0.3429999999999999,
 				"leaf": 0.03125
@@ -154,9 +154,9 @@
 				"REDUCE from rung 0 at {} seed 314: part 'litter' is 60 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 279 more groups)",
 				"BUDGET: the cheapest derivation that holds the picture costs 353426 (7.36x), over rung 1's budget 48007 x 1.5 = 72010 (shrub, 1.01 m)"
 			],
-			"peak_mb": 744.0,
+			"peak_mb": 773.0,
 			"route": "kit",
-			"search_s": 488.90000000000003,
+			"search_s": 271.8,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -202,7 +202,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "cab10705d0aa081e8e6a93124ac4b42748fdadf03733501ec96c116ffd52f530",
+			"judged": "db8bdf77eeae73fac59f6d6fbd84c87eb62befc7ddf46c1ecf6c1047a4e6c669",
 			"keep": {
 				"flower": 0.03125,
 				"leaf": 0.03125,
@@ -498,9 +498,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping leaf 0.031, flower 0.343), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 163 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00751 m; part 'shoot' changes its share of the picture by +0.0989 against 0.0450 allowed (its colour's share of the subject); part 'floret' changes its share of the picture by -0.1155 against 0.0450 allowed (its colour's share of the subject)",
 				"THIN: plant/heather does not declare `reads_density`"
 			],
-			"peak_mb": 744.0,
+			"peak_mb": 778.0,
 			"route": "kit",
-			"search_s": 2961.4,
+			"search_s": 1364.1000000000001,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -508,7 +508,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "d0e0325deff1cf29e01f8955b944981fcf2beeefdd35384bcd80491899772ac9"
 	}
 }

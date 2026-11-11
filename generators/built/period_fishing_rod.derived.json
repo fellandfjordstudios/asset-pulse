@@ -87,7 +87,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "4ad01d62483bc8c771a60369b6b9eb0437f48b18817eb4430e661d8b0c6e5891",
+			"judged": "989ad17dc125fe600da0b165a0e277637af66ad49b5071920bfa7df8a7eb1afa",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -120,9 +120,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 309.0,
+			"peak_mb": 308.0,
 			"route": "kit",
-			"search_s": 50.300000000000004,
+			"search_s": 27.3,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
@@ -169,7 +169,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "48c930dfe49152fd3dec8bf315d807c269cb719afdb0baef41444b5b4c3a91f8",
+			"judged": "6a2d0ea2be64ad82e0f84e00f2590a5c62ce14780b28de2e4aea569e4e5643d8",
 			"keep": {},
 			"material_transfer": {
 				"checked_at": 3,
@@ -287,7 +287,7 @@
 			],
 			"peak_mb": 267.0,
 			"route": "kit",
-			"search_s": 838.1,
+			"search_s": 393.20000000000005,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -336,7 +336,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "ea8995d16fda1347d47d6a5b7354e83b0440060bf2dd545904a10a54d7221f15",
+			"judged": "f81062095c3fa58acfdcd3d74be936633d98d82ab9d5b3d8903248c941231ef7",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -348,9 +348,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 268.0,
 			"route": "impostor",
-			"search_s": 30.900000000000002,
+			"search_s": 16.5,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -359,7 +359,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "f54ac403d2aea72323a48c2ad34acddd7b1a0b29e6c1ae6c422873fb426f45a6"
 	}
 }

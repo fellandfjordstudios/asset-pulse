@@ -100,7 +100,7 @@
 			"error": 0.0033811750360215834,
 			"fraction": 0.295707,
 			"from_rung": 0,
-			"judged": "d0b42d54d39b8c832bebb6eed6e055277537518ed860c179dc2598e272f81a6a",
+			"judged": "81037509078d6b48b46cd6b55bd6d69fc3a0f3d95e4e118960d77b8021fb1a99",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.296 kept)",
@@ -142,12 +142,12 @@
 				"KIT: none holds at 0.0034 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00130 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 318.0,
+			"peak_mb": 319.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 100.0
 			},
-			"search_s": 553.9,
+			"search_s": 280.5,
 			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11
@@ -197,7 +197,7 @@
 			"error": 0.013524700144086334,
 			"fraction": 0.563596,
 			"from_rung": 1,
-			"judged": "82bc6e8a13321d0c46ebb42c0b14f44e8500336f0174cc00c466e4d6591ef2ef",
+			"judged": "2dfbf86a5e1f93dbab4edd30519a8642b7fc3924baeee746115db9609114421f",
 			"material_transfer": {
 				"checked_at": 5,
 				"checks": [
@@ -340,19 +340,19 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.125x the band's (0.296 kept), carried from rung 1 held at 13350, dearer than the 7524 taken"
 			],
-			"peak_mb": 326.0,
+			"peak_mb": 327.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 100.0
 			},
-			"search_s": 503.1,
+			"search_s": 247.70000000000002,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "7931a854fb19ed33c0212dd418fd7dc3b5b3cd84870f4e45063f04efe0a727e3"
 	}
 }

@@ -67,7 +67,7 @@
 	"replay": {
 		"1": "ca09b4f53399371cada66cc10929d0d7c487d6925859c7fd6486a27fe610799c",
 		"2": "e3e1258e07111ec4b94fac87a69d4e02e910b5ef4dea416cd4d5c74bc939639e",
-		"3": "818aeaba55542a60a6fbf7c663201dcc93957af6d82063aa668d7e4e9fe6218d"
+		"3": "b90e69773c71079eee518b8d6fac168cf2980d9813cff5b96def37247de0d844"
 	},
 	"rungs": {
 		"1": {
@@ -104,7 +104,7 @@
 			"error": 0.0018518518518518515,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "9b8890819ea37f281b87de5ae4bf69f2c72bf9e35834bf3886190df54cfd3edf",
+			"judged": "98f26cfa2618f278a0bfd2fc3df5aab0505bf7778e48c7358bc1d49a517b83c7",
 			"keep": {
 				"fastener": 0.03125
 			},
@@ -134,9 +134,9 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastener 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to its error cap 0.125x the band's (0.985 kept) held at 6334, dearer than the 2666 taken"
 			],
-			"peak_mb": 324.0,
+			"peak_mb": 325.0,
 			"route": "kit",
-			"search_s": 181.8,
+			"search_s": 88.0,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8
@@ -185,7 +185,7 @@
 			"error": 0.007407407407407406,
 			"fraction": 0.7,
 			"from_rung": 1,
-			"judged": "1fe477403e2d9c287da48fd64664c786e710bc286b779223ee5a2fcc52582113",
+			"judged": "e6b2424ed8f934b970e5cc4214150af135c4e22ee354116956c6ad5d58d72f8e",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.700",
@@ -347,7 +347,7 @@
 			"routes": {
 				"reduce": 47.0
 			},
-			"search_s": 228.5,
+			"search_s": 106.4,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
@@ -386,7 +386,7 @@
 			"error": 0.029629629629629624,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "3c1220b57bce58542a18e3f9ec515728db8a75fece01d73d0e0274d50c20d673",
+			"judged": "0fd22e7fdebd91608b84cca566d07befa16b8466409ae2d1408f871c4e6ddb9b",
 			"keep": {
 				"fastener": 0.03125
 			},
@@ -529,6 +529,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 1206,
 				"coverage_rel": -0.009080000000000001,
@@ -549,14 +550,14 @@
 			],
 			"peak_mb": 271.0,
 			"route": "kit",
-			"search_s": 25.3,
+			"search_s": 61.300000000000004,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "704a563a449a3eeda0888aa524dbfa0a9f9667a82d1f329565fcf7e44b627c93"
 	}
 }

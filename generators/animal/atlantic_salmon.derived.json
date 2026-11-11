@@ -143,7 +143,7 @@
 			"every_piece": true,
 			"fraction": 0.12464,
 			"from_rung": 0,
-			"judged": "f5f09d3a2a51c50cd7a34f0ec65f12f3bd77ac3a645a3c8d6fe583fecc18d99b",
+			"judged": "eb0ea74d6b88b1e764468c3b217119d2c1a8101a13c448bbc5e0a561e9b31ec6",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.125 kept)",
@@ -195,12 +195,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 15's part 'fin_edge' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 6 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 553.0,
+			"peak_mb": 555.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 46.0
 			},
-			"search_s": 326.5,
+			"search_s": 201.8,
 			"searched": "recheck",
 			"surfaces": 20,
 			"surfaces_ceiling": 20
@@ -245,7 +245,7 @@
 			"every_piece": true,
 			"fraction": 0.6987399999999999,
 			"from_rung": 1,
-			"judged": "8f86f97613f6a15487170c958d8e390292cc592d1356c6329ee44dd29775fcc8",
+			"judged": "4e5011b82ff5c825ff3d595b96f94fdc1d0a560108732deff2f0bee815edd943",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.699 kept)",
@@ -523,12 +523,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.125 kept), carried from rung 1 held at 4365, dearer than the 3050 taken"
 			],
-			"peak_mb": 554.0,
+			"peak_mb": 556.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 41
 			},
-			"search_s": 3363.9,
+			"search_s": 1889.2,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
@@ -574,7 +574,7 @@
 			"every_piece": true,
 			"fraction": 0.6987399999999999,
 			"from_rung": 1,
-			"judged": "debc18edcaf5863390e727a0659caa711f91a902bb913472b18bd299a91071c6",
+			"judged": "a4e5f5834f776a8766b6a15f89ec2fd2e99ff1bcfdfc5ddd227f14f6e54115c0",
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -850,19 +850,19 @@
 				"REDUCE (every piece) to 0.343 held at 11761, dearer than the 3050 taken",
 				"REDUCE (every piece) to its error cap 0.0312x the band's (0.125 kept), carried from rung 1 held at 4365, dearer than the 3050 taken"
 			],
-			"peak_mb": 566.0,
+			"peak_mb": 562.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 41
 			},
-			"search_s": 3744.5,
+			"search_s": 1984.4,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "6e25d5801505e5d9122df2212c29761cb9cd087a834584fe74f8813ea576ecfb"
 	}
 }

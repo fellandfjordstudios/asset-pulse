@@ -105,7 +105,7 @@
 			"error": 0.0018518518518518521,
 			"fraction": 0.911546,
 			"from_rung": 0,
-			"judged": "ee0cbccb686847f1937a24bcf419d1abfe04ac970bf916d1c63ce9a31b235740",
+			"judged": "07473e52b4067865b657ea8e555cc1ecafc9ffefa67be221e6d315ac12ea53d1",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.912 kept)",
@@ -143,7 +143,7 @@
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 209.8,
+			"search_s": 107.7,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
@@ -199,7 +199,7 @@
 			"error": 0.0074074074074074086,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "1a1a5c67ee59b8d30d35c8adc00fc5b8955e193067914102b0348cde9f84fe45",
+			"judged": "60e75cfdfad05e6c40e8e443fa256c9acd539cf3112475f09de9675dbf463b01",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
@@ -377,12 +377,12 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.125x the band's (0.912 kept), carried from rung 1 held at 20116, dearer than the 10804 taken"
 			],
-			"peak_mb": 472.0,
+			"peak_mb": 471.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 1319.5,
+			"search_s": 609.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -431,7 +431,7 @@
 			"error": 0.029629629629629634,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "4e85142c7424d37ab9abc51b15cb2b7fdedaf6a9af794b85b960b893ab226eb9",
+			"judged": "3467afdaf8fcececf139a9b291c33b5c38bb1d0b87166d09350279177e9cc775",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -443,9 +443,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 472.0,
+			"peak_mb": 471.0,
 			"route": "impostor",
-			"search_s": 70.2,
+			"search_s": 34.4,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -453,7 +453,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "081a42c479813fdd68c26c5bf7930353c0a75e4c08cd1b783c50bf411066b05e"
 	}
 }

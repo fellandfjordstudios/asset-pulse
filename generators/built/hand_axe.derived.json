@@ -113,7 +113,7 @@
 			"every_piece": true,
 			"fraction": 0.152742,
 			"from_rung": 0,
-			"judged": "aacfd46343a330bb8dd6e90714516b46ab635abbed948a51691ab1fd7a369f1f",
+			"judged": "74e1f9a40f0b7b223acc3fb8f22ea7ffc203d41bff2c467c235fc0bf68be4932",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -157,7 +157,7 @@
 			"routes": {
 				"reduce": 6.0
 			},
-			"search_s": 56.900000000000006,
+			"search_s": 29.400000000000002,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 6
@@ -206,7 +206,7 @@
 			"error": 0.011526050011682465,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f539fed4b4c298d0bebba420a08050c6c2670e10c30efad93e67e6b9982c2e3c",
+			"judged": "3b02732a841b91646473e7f8e7eba92d5104625c9ed567895d954f77cac8842b",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -218,9 +218,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 336.0,
+			"peak_mb": 337.0,
 			"route": "impostor",
-			"search_s": 76.3,
+			"search_s": 38.1,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -228,7 +228,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "8544d246462c31117cf55224809a37f440b65054b529e292ffa8b24ec2836c04"
 	}
 }

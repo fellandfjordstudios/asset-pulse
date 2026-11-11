@@ -88,7 +88,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "21be95de74ded90e15d7fdfaef73bdf895912841bce00078fc6e49082f483468",
+			"judged": "4365535751ae946362742ccaa96bc130a3a2b7484261b3d85347a5c733c498ed",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -122,7 +122,7 @@
 			],
 			"peak_mb": 332.0,
 			"route": "kit",
-			"search_s": 659.0,
+			"search_s": 353.90000000000003,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4
@@ -155,7 +155,7 @@
 			"every_piece": true,
 			"fraction": 0.062614,
 			"from_rung": 1,
-			"judged": "4097e733cc97f03999e8885617f347b4cb1134d82f41aacccec14d80be5f05a5",
+			"judged": "26dc5ae3c8048e03f0837640edde455fae451d662d1fc7a96e310623f357ea89",
 			"material_transfer": {
 				"checked_at": 5,
 				"checks": [
@@ -291,12 +291,12 @@
 				"picture": 0.0044800000000000005
 			},
 			"measured_of": 1,
-			"peak_mb": 342.0,
+			"peak_mb": 348.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 4.0
 			},
-			"search_s": 415.8,
+			"search_s": 212.20000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
@@ -345,7 +345,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "093cde3be472ca95d26095fb041586f932c9894d3471e7692d604d53a0fb63cc",
+			"judged": "4a59added97ba6e8e0797056618409fd232046f5d7ff36fab1ff4204f5ec3e7e",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -357,9 +357,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 316.0,
+			"peak_mb": 322.0,
 			"route": "impostor",
-			"search_s": 237.8,
+			"search_s": 132.9,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -369,7 +369,7 @@
 	},
 	"source": {
 		"children": "c370b113b95591cd6e32a5e55749af324bb91d481e1b0faaf644070517f4c84c",
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "3a2e29784912be6435c9aa812539755592ebb84ac336fb7899e912d7463bb25e"
 	}
 }

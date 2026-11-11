@@ -87,7 +87,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f9434c0dc43e6aff09bbf9ac0d2c4528231308d93c245780cc77214f784eb8b7",
+			"judged": "6478ac8e9a0af84693efd892c1525b0dcd123a1291d24e1aab4585068bfc9b1e",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -120,9 +120,9 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 307.0,
+			"peak_mb": 308.0,
 			"route": "kit",
-			"search_s": 43.800000000000004,
+			"search_s": 23.8,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7
@@ -169,7 +169,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f352a2aa95d123b6a8487d6200dd63170452c21957312b202cde0ff79ec052a4",
+			"judged": "adbcf03757509ceb759313fbd726377db2b65c2d1ab808ef7f451b3f8b9cc8b3",
 			"keep": {},
 			"material_transfer": {
 				"checked_at": 3,
@@ -285,9 +285,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"length_m\":2.1} seed 314: coverage changes -0.0257 against 0.0227 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)"
 			],
-			"peak_mb": 266.0,
+			"peak_mb": 267.0,
 			"route": "kit",
-			"search_s": 292.6,
+			"search_s": 129.4,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1
@@ -336,7 +336,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "5830e25468be7abf8744a10c199a0d59bc1aa32e837662689b360e692d5d5634",
+			"judged": "747d5f789f38746f78715f1a19fbc1016958cc8fd889ae15c113cdad23935c15",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -348,9 +348,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 266.0,
+			"peak_mb": 267.0,
 			"route": "impostor",
-			"search_s": 14.5,
+			"search_s": 7.1000000000000005,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -359,7 +359,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "09795d42aad94c19825bf90a62e4355ce26d266039f9348aeed4722869cf5024"
 	}
 }

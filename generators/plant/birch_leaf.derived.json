@@ -91,7 +91,7 @@
 			"error": 0.016781889037717136,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "5c92d576579c39552d69aa42e592ad6f81662108d47e826204970fe0a4e2e352",
+			"judged": "26744b26b31a45f6d59574144b0408e3836813d1c5fb6f8cbe79b3f22beb5b62",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -122,16 +122,16 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 247.0,
+			"peak_mb": 248.0,
 			"route": "kit",
-			"search_s": 7.1000000000000005,
+			"search_s": 3.7,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "93e65136bea3e4251cd5d447f4b06da5b5fed5f4cf0fdd893234b4276dcb0593"
 	}
 }

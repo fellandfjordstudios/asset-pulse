@@ -133,7 +133,7 @@
 			"error": 0.0072037812573015406,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "fad33eed99372f6774b43ef3c0a963438db014fab52f3824cc5b1dde0770a141",
+			"judged": "6c51e021e0b264d92acaa9ed8528d7fcd74e4cab8148c292ffc763d68e281034",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
@@ -170,14 +170,14 @@
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 81.2,
+			"search_s": 42.900000000000006,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "25ada0e0081b9b3579d8464c0650fdcbdf0b825bbaf8a46945434c05c55df105"
 	}
 }

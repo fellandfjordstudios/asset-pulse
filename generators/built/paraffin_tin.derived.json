@@ -95,7 +95,7 @@
 			"error": 0.004,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "ba8803d512fcbfbd27eb316817b11c678e4740ee734f5e8e26154b8659e2596d",
+			"judged": "6166d7755e718ea2f6dc849dabf5c12cb85208ba87174816d7baa1e6757a8728",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -131,19 +131,19 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 404, dearer than the 344 taken"
 			],
-			"peak_mb": 285.0,
+			"peak_mb": 284.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 25.3,
+			"search_s": 12.9,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5
 		}
 	},
 	"source": {
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
 		"generator": "71dad717166b8daad5dbb7c9bc2745843385f82f88414fb9eea80855a88c5e90"
 	}
 }
