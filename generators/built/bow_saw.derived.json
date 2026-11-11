@@ -19,6 +19,7 @@
 	],
 	"effort": "full",
 	"id": "built/bow-saw",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -76,7 +77,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00393,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.6186539999999999
 				}
@@ -89,13 +90,15 @@
 			"checked_at": 3,
 			"drawn": {
 				"excess": 0.125,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.0013809999999999998
 			},
 			"error": 0.001851851851851852,
 			"fraction": 0.6186539999999999,
 			"from_rung": 0,
-			"judged": "c9711032a0b8e1a3dd2634f3a77bf439bb23740ddbfb5f8ef645d98362045c9c",
+			"judged": "8f918e19afaa37e9a528340598ca8f14c482206967a25b3e2665b670a88104e2",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -130,15 +133,25 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 1144, dearer than the 1048 taken"
 			],
-			"peak_mb": 339.0,
+			"peak_mb": 340.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 24.6,
+			"search_s": 37.9,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 3
+			"surfaces_ceiling": 3,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.125
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -180,7 +193,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "508fd96cacd0be4e6236d5d90dde0824a48e18f89e115fff88269942aed94cc8",
+			"judged": "a8099f3545c7db3302db79e4054a0b1525f666d56603b240cff3b22f9f5aee93",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -310,13 +323,23 @@
 				"REDUCE to its error cap 0.125x the band's (0.992 kept) held at 1040, dearer than the 1018 taken",
 				"REDUCE to its error cap 0.125x the band's (0.619 kept), carried from rung 1 held at 1048, dearer than the 1018 taken"
 			],
-			"peak_mb": 339.0,
+			"peak_mb": 340.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 29.700000000000003,
+			"search_s": 42.300000000000004,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.3125
+			}
 		},
 		"3": {
 			"atlas_bytes": 3686400,
@@ -362,7 +385,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "923c18da2333832346f621460b43427f96dc0c1876ff637369eddc2fdea4e433",
+			"judged": "9a69c5946d44eb10e97ce47ba5d744f9ddef9d6e0843d85dde7c66a679cb424c",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -374,18 +397,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 339.0,
+			"peak_mb": 340.0,
 			"route": "impostor",
-			"search_s": 4.5,
+			"search_s": 6.5,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4635
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "67b467bc82440471852bb37972e4ab488c0719a4a3190a61a50bb50eb0c4b9c5"
 	}
 }

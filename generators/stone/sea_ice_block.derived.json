@@ -63,6 +63,7 @@
 	],
 	"effort": "full",
 	"id": "stone/sea-ice-block",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -123,7 +124,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -139,13 +140,15 @@
 			"checked_at": 11,
 			"drawn": {
 				"excess": 0.0,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.0012209999999999999
 			},
 			"error": 0.001851851851851852,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "1e3459d1b0e616f2b8384537943ca2199cf2ef1bc8a1fc6bf2f204e31499b78c",
+			"judged": "ea171df587164a89953b8547082f9f52cd6b6917c5042e12e36f2f230a04bde2",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.700",
@@ -174,15 +177,25 @@
 			"not_taken": [
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.15} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00056 m"
 			],
-			"peak_mb": 574.0,
+			"peak_mb": 575.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 125.10000000000001,
+			"search_s": 188.8,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 3
+			"surfaces_ceiling": 3,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 11,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0
+			}
 		},
 		"2": {
 			"budget": 10668,
@@ -215,7 +228,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "a488080f4782053568c58b79447f2698283b216572936f9907f7d5e840a08114",
+			"judged": "180344169fea4f7434c81097ff6f949a8aaa071fa7eb66fe009c43ea7095d87f",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -514,16 +527,26 @@
 				"REDUCE to 0.700 held at 656, dearer than the 196 taken",
 				"REDUCE to 0.700, carried from rung 1 held at 656, dearer than the 196 taken"
 			],
-			"peak_mb": 574.0,
+			"peak_mb": 575.0,
 			"route": "kit",
-			"search_s": 36.800000000000004,
+			"search_s": 58.1,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 11,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "6689ba61e850370fe2e031b13297e266f24bdf20fa639e0d687f48c6f0ec920f"
 	}
 }

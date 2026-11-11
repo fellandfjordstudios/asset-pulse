@@ -49,6 +49,7 @@
 	],
 	"effort": "full",
 	"id": "built/motor-sledge",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -87,7 +88,7 @@
 	},
 	"replay": {
 		"1": "37ce7fe7b87bd4bde8676a821328d76dd5165417ebef37468abf570cf2e54932",
-		"2": "521d6f3b606705294e2d3018a213efcd2010ab3d5a66256aad5dab659b31c11c",
+		"2": "3090bbd26dfae688155aa95def169a9c86a3bf18a7f77b8ba0ec9223d2ece44b",
 		"3": "0708ec751e653cbd48e95a3f75d7a6049fb24a9e83e699be7b2ac2b73480ae0d"
 	},
 	"rungs": {
@@ -108,7 +109,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": null,
+					"px_over": 0,
 					"route": "merged",
 					"value": 1.0
 				}
@@ -116,13 +117,15 @@
 			"checked_at": 8,
 			"drawn": {
 				"excess": 0.0,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.0056619999999999995
 			},
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "8e22690c4b14b735f5ce3ee65e3c0c6a703950c076e89b7d6d19d3a3cccdf645",
+			"judged": "1280bd9f26b1c0c77a83c237af96f9a5556bacb89c811e4ae94d0197441f301f",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
@@ -159,12 +162,22 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 559.0,
+			"peak_mb": 560.0,
 			"route": "merged",
-			"search_s": 310.70000000000005,
+			"search_s": 456.70000000000005,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 5
+			"surfaces_ceiling": 5,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 8,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -216,7 +229,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "eee4bf500be970ef2f53805b19cd36df685a9de9d9db1da323ef97aa74bbf9c0",
+			"judged": "d30d749bfd735938192976684bff881ee358017af801cb07da01dac580b566a5",
 			"keep": {},
 			"material_transfer": {
 				"checked_at": 8,
@@ -416,6 +429,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 15876,
 				"coverage_rel": -0.00805,
@@ -451,12 +465,22 @@
 				"MERGED (its parts at their own rungs, joined) held at 43546, dearer than the 15876 taken",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 43546, dearer than the 15876 taken"
 			],
-			"peak_mb": 559.0,
+			"peak_mb": 560.0,
 			"route": "kit",
-			"search_s": 373.3,
+			"search_s": 1480.8000000000002,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 8,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"3": {
 			"atlas_bytes": 37748736,
@@ -502,7 +526,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "887acaa39a6cc60f6e33569430e416a07ddc04ea1737a3c4b449befc3093f459",
+			"judged": "f6ae399a13398c7787196e1288ec92052b3b1cd93ddfe3712a23e89ca2a45390",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -514,18 +538,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 562.0,
+			"peak_mb": 563.0,
 			"route": "impostor",
-			"search_s": 249.5,
+			"search_s": 347.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 24
+			"tiles": 24,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 8,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4554
+			}
 		}
 	},
 	"source": {
 		"children": "b9261c1d417ec26346f06238cfa2dfd0f8205ab5c72be5cdfb8a03ba12747331",
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "e7f5dd46263ed4eca2c0737b37ec07d2d89ba65a01742183edd59a0f9d7389c8"
 	}
 }

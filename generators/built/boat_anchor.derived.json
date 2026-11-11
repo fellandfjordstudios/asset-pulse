@@ -27,6 +27,7 @@
 	],
 	"effort": "full",
 	"id": "built/boat-anchor",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -86,7 +87,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004770000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.911546
 				}
@@ -99,13 +100,15 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.4375,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001487
 			},
 			"error": 0.0018518518518518521,
 			"fraction": 0.911546,
 			"from_rung": 0,
-			"judged": "07473e52b4067865b657ea8e555cc1ecafc9ffefa67be221e6d315ac12ea53d1",
+			"judged": "8ffceed00fc33a9ff0f029ecf5cafadc700f30ced4ba74de94520a0dfa75ad36",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.912 kept)",
@@ -138,15 +141,25 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00149 m",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 471.0,
+			"peak_mb": 474.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 107.7,
+			"search_s": 151.3,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 2
+			"surfaces_ceiling": 2,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4375
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -177,7 +190,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.005920000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.48999999999999994
 				}
@@ -193,13 +206,15 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.375,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.005946
 			},
 			"error": 0.0074074074074074086,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "60e75cfdfad05e6c40e8e443fa256c9acd539cf3112475f09de9675dbf463b01",
+			"judged": "350820cb87f6a4fbe5ef881483dbef16e492ebf68e2e53c582f86380a8e97408",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
@@ -377,15 +392,25 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.125x the band's (0.912 kept), carried from rung 1 held at 20116, dearer than the 10804 taken"
 			],
-			"peak_mb": 471.0,
+			"peak_mb": 474.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 609.5,
+			"search_s": 805.4000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.375
+			}
 		},
 		"3": {
 			"atlas_bytes": 9437184,
@@ -431,7 +456,7 @@
 			"error": 0.029629629629629634,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "3467afdaf8fcececf139a9b291c33b5c38bb1d0b87166d09350279177e9cc775",
+			"judged": "6ea78da1635c4b66024bb885c3e5956191654f682b9a5a3b6c12b614e69df98b",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -443,17 +468,27 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 471.0,
+			"peak_mb": 474.0,
 			"route": "impostor",
-			"search_s": 34.4,
+			"search_s": 49.6,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4531
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "081a42c479813fdd68c26c5bf7930353c0a75e4c08cd1b783c50bf411066b05e"
 	}
 }

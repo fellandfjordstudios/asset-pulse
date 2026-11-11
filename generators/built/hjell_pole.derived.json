@@ -99,6 +99,7 @@
 	],
 	"effort": "full",
 	"id": "built/hjell-pole",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -165,7 +166,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0039900000000000005,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.24009999999999992
 				}
@@ -181,13 +182,15 @@
 			"checked_at": 17,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.003842
 			},
 			"error": 0.0012,
 			"fraction": 0.24009999999999992,
 			"from_rung": 0,
-			"judged": "20647787a75b16255b4ea85eebd7b6c561f54e5507270d2553a3c1d2eae57d31",
+			"judged": "703c38b4fbb4c9cc95fe8c8f8f3ebaebc20acb044374559e166e9c968ef0e75a",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.240",
@@ -225,10 +228,20 @@
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 159.4,
+			"search_s": 248.20000000000002,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 2
+			"surfaces_ceiling": 2,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 17,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -261,7 +274,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "6bd789747868cf8ad4c3f958f1614b2f520f7b6a78103ef95ede4ae49defc12f",
+			"judged": "a36c6a52a0caa028d31d49ed3879e73d84df0aecb08fa8c5d08635c2ae3389d5",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -712,14 +725,24 @@
 			],
 			"peak_mb": 1096.0,
 			"route": "kit",
-			"search_s": 99.0,
+			"search_s": 135.0,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 17,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "e6da475d58189b62b60d909a80b0042f8598d14832021b06ee4880cc0c888d80"
 	}
 }

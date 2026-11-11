@@ -69,6 +69,7 @@
 	],
 	"effort": "full",
 	"id": "built/dried-meat",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -125,7 +126,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004540000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.851695
 				}
@@ -138,14 +139,16 @@
 			"checked_at": 12,
 			"drawn": {
 				"excess": 0.0,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.00069
 			},
 			"error": 0.003,
 			"every_piece": true,
 			"fraction": 0.851695,
 			"from_rung": 0,
-			"judged": "69eb4bae3bdd97c2480cf8eb7bd571292cb33fc156e39d29fa3d7fc200f5eda6",
+			"judged": "e981ed27ce0f862d78be7a0677d33d3b5bbdaf5b3ec0843862ab0d65f73a6297",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.852 kept)",
@@ -179,19 +182,29 @@
 				"REDUCE from rung 0 at {\"strip_count\":10} seed 314: element 0's part 'strip' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 482.0,
+			"peak_mb": 483.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 39.400000000000006,
+			"search_s": 64.0,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 2
+			"surfaces_ceiling": 2,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 12,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "1461fbba535b7c61d347d2d3feea41a8042174b78b3ce10d9ad6d61d0daea2d4"
 	}
 }

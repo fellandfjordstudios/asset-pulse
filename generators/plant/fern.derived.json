@@ -63,6 +63,7 @@
 	],
 	"effort": "full",
 	"id": "plant/fern",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -143,7 +144,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "9c8240a5abd16a071f911812d2df49934aafaf43bf86c23f445c4c97792393ea",
+			"judged": "5bc21cadeeef91d852cc92095d6214dbf31374087e9930387e8e5d86c51eb4f0",
 			"measured": {
 				"cost": 790,
 				"coverage_rel": 0.0,
@@ -171,13 +172,23 @@
 				"REDUCE (every piece) from rung 0: nothing to try; the error ladder: nothing to try",
 				"THIN: plant/fern does not declare `reads_density`"
 			],
-			"peak_mb": 266.0,
+			"peak_mb": 267.0,
 			"route": "rung0",
-			"search_s": 10.5,
+			"search_s": 16.0,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tolerance": 0.001851851851851852
+			"tolerance": 0.001851851851851852,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 11,
+				"holds": true,
+				"judge": "source",
+				"over": 0,
+				"tolerance": 0.0,
+				"unit": "the source served",
+				"worst": 0.0
+			}
 		},
 		"2": {
 			"budget": 12001,
@@ -210,7 +221,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "4039e0feaf916a3b542430b0fa2baf80beca06e101931aef3828549682cd8409",
+			"judged": "fe143fd59eb7efeacf76d28c7af8b4ed788eae45cf2b83f3b28b6f47570320f8",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -259,10 +270,20 @@
 			],
 			"peak_mb": 269.0,
 			"route": "kit",
-			"search_s": 11.4,
+			"search_s": 17.5,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 11,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.3125
+			}
 		},
 		"3": {
 			"atlas_bytes": 1048576,
@@ -308,7 +329,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "e0a65beed17480191dc95a1c5d0eafc2389d5a03f7be5035f78c4bfbd29a5a8b",
+			"judged": "0fe32a1a7c324c4dc2ed4e4909b7f6da73c85df3e5c472b7357caf7615aea644",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -320,18 +341,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 271.0,
 			"route": "impostor",
-			"search_s": 4.1000000000000005,
+			"search_s": 6.0,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 8
+			"tiles": 8,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 11,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.39080000000000004
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "1091b21db607a34f7aaeff5a6df925f12fe9a4a4a44962946ea3d8f548f89031"
 	}
 }

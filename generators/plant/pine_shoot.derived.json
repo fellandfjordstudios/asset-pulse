@@ -123,6 +123,7 @@
 	],
 	"effort": "full",
 	"id": "plant/pine-shoot",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -204,7 +205,7 @@
 			"error": 0.003242357311563454,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "2ab089937fb117de3aca4bfe66dcdbd51c160add3ef242ed0526a0397455daa8",
+			"judged": "506c1d3abd646fba49b6f752178256a54f091e7897d0e776642dcd4b77f68e86",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -234,10 +235,20 @@
 			],
 			"peak_mb": 310.0,
 			"route": "kit",
-			"search_s": 123.80000000000001,
+			"search_s": 179.0,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 21,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0
+			}
 		},
 		"2": {
 			"budget": 1520,
@@ -270,7 +281,7 @@
 			"error": 0.012969429246253815,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "6859ab0c031686a46c545137649efc6ba680a5e670a65acd778cc51c47e56ec1",
+			"judged": "df9abe161858cfd91de24fbcd7c659bf2d97647ec27a9ef9daa10afced5304fd",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -302,14 +313,24 @@
 			],
 			"peak_mb": 304.0,
 			"route": "kit",
-			"search_s": 33.300000000000004,
+			"search_s": 48.0,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 21,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "68b179ce55b4db6fa7c1d243686a8bfc64d375db06d740cb11937f9408842d99"
 	}
 }

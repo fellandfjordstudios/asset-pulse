@@ -99,6 +99,7 @@
 	],
 	"effort": "full",
 	"id": "plant/pine-cone",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -172,7 +173,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "34ad59adaafc1f8a836d5d4ff6780357cab97fbee3dd8c5d19bdb1ca3718dfb6",
+			"judged": "9f0d55592a550eb821414dd7813986bfd545dd27cde93fbe14b1038b757165a9",
 			"keep": {},
 			"measured": {
 				"cost": 39130,
@@ -197,13 +198,23 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"cones\":150} seed 314: coverage changes -0.0192 against 0.0118 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0019",
 				"THIN: plant/pine-cone does not declare `reads_density`"
 			],
-			"peak_mb": 486.0,
+			"peak_mb": 488.0,
 			"route": "kit",
-			"search_s": 109.2,
+			"search_s": 151.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
-			"tolerance": 0.001851851851851852
+			"tolerance": 0.001851851851851852,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 17,
+				"holds": false,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.0,
+				"unit": "pixels over",
+				"worst": null
+			}
 		},
 		"2": {
 			"above_tolerance": true,
@@ -235,7 +246,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "15644cc34f3f50546eee7dd4a37cc5a092b0fb83b97bd86e0e379de282f403fb",
+			"judged": "1d621e376e9d6f3af03f1fb4615217acef9d2cd50967ccfadccab2bf592025a5",
 			"keep": {
 				"debris": 0.48999999999999994,
 				"scale": 0.48999999999999994
@@ -680,17 +691,27 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0345 against 0.0230 a derivation may change (its error read as a change of size)",
 				"BUDGET: the cheapest derivation that holds the picture costs 66094 (6.20x), over rung 2's budget 10668 x 1.5 = 16002 (rock, 8.10 m)"
 			],
-			"peak_mb": 517.0,
+			"peak_mb": 519.0,
 			"route": "kit",
-			"search_s": 686.2,
+			"search_s": 936.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tolerance": 0.007407407407407408
+			"tolerance": 0.007407407407407408,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 17,
+				"holds": false,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.0,
+				"unit": "pixels over",
+				"worst": null
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "d081bc68ae3a21a34345b0b72a959dde39abffecc64d2e76579d9db6ac748d26"
 	}
 }

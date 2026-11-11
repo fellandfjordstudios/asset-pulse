@@ -51,6 +51,7 @@
 	],
 	"effort": "full",
 	"id": "plant/rowan-leaf",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -92,7 +93,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.07547000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "kit",
 					"value": {}
 				}
@@ -100,13 +101,15 @@
 			"checked_at": 9,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.012447999999999999
 			},
 			"error": 0.07322431772127683,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "6e6552395591377ccd662723f86929203188639129184e9cd2e07dd124f8bd69",
+			"judged": "98b23fa29a54f3d4f8a1c2811826c8a47f7069ac67e1881cf7505952a75a4bd3",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -139,14 +142,24 @@
 			],
 			"peak_mb": 265.0,
 			"route": "kit",
-			"search_s": 20.400000000000002,
+			"search_s": 31.8,
 			"searched": "search",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "6145fffb3647b4683255d851f01967f30672237e2d8c16056aff33d6646f94c3"
 	}
 }

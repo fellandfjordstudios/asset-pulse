@@ -109,6 +109,7 @@
 	],
 	"effort": "full",
 	"id": "built/boat-cabin",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -192,7 +193,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "178fc7059c0ca36c694978cf63a68d841cae6a01cc4397d8b17ffefe6479e81a",
+			"judged": "088901e9d0e954f596b678b43439e134ad2c02eeef45849b75811c59c1c2a81a",
 			"keep": {
 				"batten": 0.7,
 				"fastening": 0.03125,
@@ -229,12 +230,22 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.992 kept) held at 3220, dearer than the 1700 taken"
 			],
-			"peak_mb": 362.0,
+			"peak_mb": 363.0,
 			"route": "kit",
-			"search_s": 336.40000000000003,
+			"search_s": 502.70000000000005,
 			"searched": "recheck",
 			"surfaces": 10,
-			"surfaces_ceiling": 10
+			"surfaces_ceiling": 10,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 18,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4219
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -281,7 +292,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "56f77dfedcc70dea71c2bed8357c1416c4410a92faf48bd2c0cba0f117ab4503",
+			"judged": "21e44c9dae0b0ef631682039270f7efbf3dd65a906ef8952e094a4651270be65",
 			"keep": {
 				"batten": 0.03125,
 				"fastening": 0.03125,
@@ -776,17 +787,27 @@
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.584 kept) held at 1896, dearer than the 1478 taken",
 				"KIT (its own build at the rung's pixel, keeping fastening 0.031, trim 0.031, batten 0.700), carried from rung 1 held at 1700, dearer than the 1478 taken"
 			],
-			"peak_mb": 297.0,
+			"peak_mb": 298.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 718.2,
+			"search_s": 994.3000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 18,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "b1da9acf4da66bc359aea571838625c0d2d4ada9b7f724f22f40e5b8cac287a7"
 	}
 }

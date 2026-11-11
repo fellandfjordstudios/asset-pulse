@@ -15,6 +15,7 @@
 	],
 	"effort": "full",
 	"id": "built/cabin-table-and-benches",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -83,7 +84,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "3f5277339747df64d093b1622295b1645f174d9501a8c4c63791b67cb2f0d19c",
+			"judged": "d9bb408aa556b6acec1a574e6c1a2f296e2e174834873c8f010e7247e8ec81a6",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -115,12 +116,22 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to its error cap 0.5x the band's (0.521 kept) held at 3812, dearer than the 3764 taken"
 			],
-			"peak_mb": 340.0,
+			"peak_mb": 342.0,
 			"route": "kit",
-			"search_s": 61.1,
+			"search_s": 95.2,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 5
+			"surfaces_ceiling": 5,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4375
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -162,7 +173,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "141f24f07fd4ebfcd0d7b6f80f0a1e7245f8b22223f2bbff08acc17f8a99b92a",
+			"judged": "ab9dda41b90a65baa171e85154dd9e8847b461b8cacd8d5f64862497c2d669a4",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -291,12 +302,22 @@
 				"REDUCE to its error cap 0.5x the band's (0.369 kept) held at 2700, dearer than the 2660 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 3764, dearer than the 2660 taken"
 			],
-			"peak_mb": 274.0,
+			"peak_mb": 276.0,
 			"route": "kit",
-			"search_s": 317.6,
+			"search_s": 433.3,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"3": {
 			"atlas_bytes": 9437184,
@@ -342,7 +363,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d6523e9c9ee2d0bb164ef2ec7df520e69f9d69c654128a5be2a4380428bc4d45",
+			"judged": "5e58d6135947b6903fe0478a0100119cf979dbcdd6b592f8d7d78be61d723e0b",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -354,18 +375,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 274.0,
+			"peak_mb": 276.0,
 			"route": "impostor",
-			"search_s": 9.1,
+			"search_s": 14.0,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4889
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "819f1db09cbe1f45cb466174ac1cbbef1a15c7f05358d71325d63dd56cab6f7c"
 	}
 }

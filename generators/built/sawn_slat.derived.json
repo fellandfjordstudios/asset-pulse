@@ -75,6 +75,7 @@
 	],
 	"effort": "full",
 	"id": "built/sawn-slat",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -142,7 +143,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.526316
 				}
@@ -155,13 +156,15 @@
 			"checked_at": 13,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001334
 			},
 			"error": 0.0018518518518518521,
 			"fraction": 0.526316,
 			"from_rung": 0,
-			"judged": "2159d78bf67ebd5a871262ffb1485732449f78d12750c03dc83c48e7df4f75cb",
+			"judged": "dd7ca286faf8018f11231e1bc5ba0b1d99d76509742a8def02c390c1c6e14be7",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 1.0x the band's (0.526 kept)",
@@ -198,10 +201,20 @@
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 40.0,
+			"search_s": 63.900000000000006,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 2
+			"surfaces_ceiling": 2,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 13,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -223,7 +236,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.526316
 				}
@@ -241,13 +254,15 @@
 			"checked_at": 13,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.005333999999999999
 			},
 			"error": 0.0074074074074074086,
 			"fraction": 0.526316,
 			"from_rung": 0,
-			"judged": "0cbfb10c46f9c7dee4ae3d8070642229dc728abac8615e9dbb2fa8c934eb91e0",
+			"judged": "e9651cf828e7dd93d6e77d2bfeac1b301de7b0d5e9137176876c7fed51f86e9a",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.25x the band's (0.526 kept)",
@@ -602,10 +617,20 @@
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 13.8,
+			"search_s": 19.700000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 13,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"3": {
 			"budget": 2444,
@@ -627,7 +652,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.526316
 				}
@@ -645,13 +670,15 @@
 			"checked_at": 13,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.021335999999999997
 			},
 			"error": 0.029629629629629634,
 			"fraction": 0.526316,
 			"from_rung": 0,
-			"judged": "2dbb4ccc65f9d26df5a26bdcb96683ae2af37bcfd87f883d648622d653257a1b",
+			"judged": "158e3ac04291e2d16bea2b8f7cdc569162d5a9ca22676dae5b8f42bcc033a71e",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.0625x the band's (0.526 kept)",
@@ -1003,14 +1030,24 @@
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 11.4,
+			"search_s": 15.9,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 13,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "e18a6712b70dc269d35dd6741f37744b33c804942f7794aa6b0f269ec614ce1e"
 	}
 }

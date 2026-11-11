@@ -31,6 +31,7 @@
 	],
 	"effort": "full",
 	"id": "plant/birch-leaf",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -91,7 +92,7 @@
 			"error": 0.016781889037717136,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "26744b26b31a45f6d59574144b0408e3836813d1c5fb6f8cbe79b3f22beb5b62",
+			"judged": "073b7d580940c7effed057aca696dca2756af88922fa61aad932302feabafbf8",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -122,16 +123,26 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 248.0,
+			"peak_mb": 249.0,
 			"route": "kit",
-			"search_s": 3.7,
+			"search_s": 5.5,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.125
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "93e65136bea3e4251cd5d447f4b06da5b5fed5f4cf0fdd893234b4276dcb0593"
 	}
 }

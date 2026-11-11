@@ -87,6 +87,7 @@
 	],
 	"effort": "full",
 	"id": "plant/pine-stem",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -162,7 +163,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d7cb50e174dd37d978026e371866033ffea695edeea182dff6b447c2275eaf4e",
+			"judged": "94a2d012ebd3cc11359238f8e9e6c142841a73469b9a3212564efa366b32d6ad",
 			"keep": {},
 			"look_past": {
 				"beaten": true,
@@ -189,12 +190,22 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to its error cap 0.125x the band's (0.179 kept) held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 364.0,
+			"peak_mb": 365.0,
 			"route": "kit",
-			"search_s": 125.9,
+			"search_s": 196.4,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 15,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4375
+			}
 		},
 		"2": {
 			"budget": 5334,
@@ -227,7 +238,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "68e34fddb2f56e60e7e145d5a5fe9ec59ca6bf0b00f65ab732665aebf382cea5",
+			"judged": "6ca80453c01b05901d1db2c17e6fca8bf8b39068f1465916940bd4553fa70444",
 			"keep": {},
 			"look_past": {
 				"beaten": true,
@@ -258,14 +269,24 @@
 			],
 			"peak_mb": 326.0,
 			"route": "kit",
-			"search_s": 28.900000000000002,
+			"search_s": 43.900000000000006,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 15,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "95c7e49fde0c685a2f753b5cea5d6e031753a304066740b4a5edd0a4cce5e83e"
 	}
 }

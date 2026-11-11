@@ -69,6 +69,7 @@
 	],
 	"effort": "full",
 	"id": "plant/twig-litter",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -130,7 +131,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.005200000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.998611
 				},
@@ -152,7 +153,9 @@
 			"checked_at": 12,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.002105
 			},
 			"error": 0.0018518518518518515,
@@ -169,7 +172,7 @@
 				"luminance_sd": 0.0491,
 				"texel_m": 0.002105
 			},
-			"judged": "55fdef33771d068ba83ae8da3aa42b435c2cb249f13d5e87d8d5cc627a7caf1b",
+			"judged": "09072f9490a739448170580e26aaeb6ded8dac5e83098b620a0271c1c7f9f9a5",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.25x the band's (0.999 kept)",
@@ -208,10 +211,20 @@
 				"carry": 157.0,
 				"reduce": 86.0
 			},
-			"search_s": 118.5,
+			"search_s": 181.5,
 			"searched": "recheck",
 			"surfaces": 4,
-			"surfaces_ceiling": 4
+			"surfaces_ceiling": 4,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 12,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"2": {
 			"budget": 3556,
@@ -233,7 +246,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.005200000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.998611
 				},
@@ -255,7 +268,9 @@
 			"checked_at": 12,
 			"drawn": {
 				"excess": 0.0625,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.00842
 			},
 			"error": 0.007407407407407406,
@@ -272,7 +287,7 @@
 				"luminance_sd": 0.0488,
 				"texel_m": 0.00842
 			},
-			"judged": "e3cc4a9ed020011ee9a950131b9fd0adea509d2b5837bbe3f842183e512f8407",
+			"judged": "b708190ada4863eff2cc01599b32355f5a7e8ec4502eb3cfdd524ff01ef60cf2",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.0625x the band's (0.999 kept)",
@@ -604,14 +619,24 @@
 				"carry": 157.0,
 				"reduce": 86.0
 			},
-			"search_s": 210.70000000000002,
+			"search_s": 308.3,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 12,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0625
+			}
 		}
 	},
 	"source": {
-		"deriver": "80137915bd36d0509017a68b17a365d3d2580a76ac8bea933883fe5202719a03",
+		"deriver": "c56528dc3bc7d7eda5a34d1aa23c2b2712627a16cf265e84991162d59b139fa5",
 		"generator": "7ca85362b6179843df09fe2cec1fbca4b33b06581b1990e6e113062afa720123"
 	}
 }

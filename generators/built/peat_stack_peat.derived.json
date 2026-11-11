@@ -27,6 +27,7 @@
 	],
 	"effort": "full",
 	"id": "built/peat-stack-peat",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -76,7 +77,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004090000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.24009999999999992
 				}
@@ -92,14 +93,16 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.0013059999999999999
 			},
 			"error": 0.004322268754380925,
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 0,
-			"judged": "4e2ea293b48fd2818d1ec3cb336af023d00d42771da7f10110307cc94f053305",
+			"judged": "785d6d8ca9ebc7c4749c849ba8ad6584170c01cca0466ab679b0aca81eab42b8",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.240",
@@ -135,14 +138,24 @@
 			"routes": {
 				"reduce": 1.0
 			},
-			"search_s": 70.2,
+			"search_s": 100.10000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "ac04100a8fd056d0d25385cb0adb0a979e38f4bd54844526ab9002bc0a0799a8"
 	}
 }

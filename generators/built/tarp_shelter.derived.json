@@ -103,6 +103,7 @@
 	],
 	"effort": "full",
 	"id": "built/tarp-shelter",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -174,7 +175,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.26363000000000003,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.502513
 				}
@@ -187,13 +188,15 @@
 			"checked_at": 17,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.016000999999999998
 			},
 			"error": 0.004,
 			"fraction": 0.502513,
 			"from_rung": 0,
-			"judged": "4daa4c0fee27fd0419a74c0ac5ca6c03230190859e0c2028c8326dd656cb27be",
+			"judged": "bafdc98d94553eaaa9e62ae562591751469935c9cffd108ec7b9650058ec6828",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.125x the band's (0.503 kept)",
@@ -233,10 +236,20 @@
 			"routes": {
 				"reduce": 6.0
 			},
-			"search_s": 34.2,
+			"search_s": 48.800000000000004,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 5
+			"surfaces_ceiling": 5,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 17,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -258,7 +271,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.13483,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.3429999999999999
 				}
@@ -274,13 +287,15 @@
 			"checked_at": 17,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.029630999999999998
 			},
 			"error": 0.007407407407407408,
 			"fraction": 0.3429999999999999,
 			"from_rung": 0,
-			"judged": "9c9ff961d3611a559be70a1f8398852d02eba17eb9bfadd14c699e565e7af1dc",
+			"judged": "f179099bf14163dc87325401184876bf8e0320fb78232f6f568459a1a9a395d9",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.343",
@@ -732,15 +747,25 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.0675x the band's (0.503 kept), carried from rung 1 held at 200, dearer than the 150 taken"
 			],
-			"peak_mb": 414.0,
+			"peak_mb": 415.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 6.0
 			},
-			"search_s": 38.2,
+			"search_s": 52.0,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 17,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"3": {
 			"atlas_bytes": 1327104,
@@ -786,7 +811,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "e3bbfd36522125bb3a0cd6ce2e346e34f3fb6f55a682404ba86ed96ef31c8831",
+			"judged": "2effbb68e55b5a8373f7fd00264aee99d52d90ded258b8f64a124b12ee74bb34",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -798,17 +823,27 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 414.0,
+			"peak_mb": 415.0,
 			"route": "impostor",
-			"search_s": 6.800000000000001,
+			"search_s": 9.4,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 17,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.39440000000000003
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "b4603c0f85aafc9b8d7c7ef2bf89c1fa91fc1f2c9eff261cb310ecafb7bc6c05"
 	}
 }

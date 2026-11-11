@@ -15,6 +15,7 @@
 	],
 	"effort": "full",
 	"id": "built/nansen-cooker",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -48,7 +49,7 @@
 	},
 	"replay": {
 		"1": "5d371b69dd286fe3b6d7c0ded015e1a7e25520444a5d1dfd7bef299cf629febf",
-		"2": "aadee3122ea7c5b750f4f4a8b01a4d738a54cf0161c80acd050a592f74ee1bac",
+		"2": "219fef377a8f9247526b1fab246d62ed97b24dfa99c80bb29f8061176d340f87",
 		"3": "1513f59785baad70868089ce3b1123ece0781eb4214dc5d3f05660b089f3d153"
 	},
 	"rungs": {
@@ -72,7 +73,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.301325
 				}
@@ -90,13 +91,15 @@
 			"checked_at": 3,
 			"drawn": {
 				"excess": 0.1875,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.0014739999999999998
 			},
 			"error": 0.0018518518518518517,
 			"fraction": 0.301325,
 			"from_rung": 0,
-			"judged": "9f75b7b019bf4910f007a4455387c9d28e6f5338ecde56277cc91ff774eb8911",
+			"judged": "77a1e05f4c84aa5bfd4c39fcc1d1d899c9f39ef241503f9543c1c5c12e776fdf",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.301 kept)",
@@ -134,15 +137,25 @@
 				"CHILD: no welded child has a coarser rung at slot 1: {\"built/nansen-cooker-cup\":0,\"built/nansen-cooker-vessel\":0}",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 371.0,
+			"peak_mb": 368.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 43.0
 			},
-			"search_s": 72.2,
+			"search_s": 107.2,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 5
+			"surfaces_ceiling": 5,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.1875
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -191,7 +204,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "42ee56c48bfc4a23603294098afcff4fb6723b1dd94e5bcad8d5e3463a85de6a",
+			"judged": "f74ec06a3e91d6e9598703ec849529c90dfc084e173bcefd30c38f015dd477e0",
 			"keep": {
 				"cup": 0.03125,
 				"fitting": 0.03125,
@@ -293,6 +306,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 5986,
 				"coverage_rel": -0.014230000000000001,
@@ -327,12 +341,22 @@
 				"REDUCE, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.031, support 0.031, fitting 0.031, vessel 0.031, cup 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to its error cap 0.125x the band's (0.301 kept), carried from rung 1 held at 7870, dearer than the 5986 taken"
 			],
-			"peak_mb": 371.0,
+			"peak_mb": 368.0,
 			"route": "kit",
-			"search_s": 21.5,
+			"search_s": 148.9,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"3": {
 			"atlas_bytes": 9437184,
@@ -378,7 +402,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d0e708de815bae28ae541e862b4a89057687e762b62618575a97ef0a2005b59d",
+			"judged": "a0a8735afc0d76db65251c4db47fd320ec26cba23dee1308cf22fad7e5c28d84",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -390,19 +414,29 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 371.0,
+			"peak_mb": 368.0,
 			"route": "impostor",
-			"search_s": 12.100000000000001,
+			"search_s": 17.400000000000002,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		}
 	},
 	"source": {
 		"children": "0ac0b8cbabe068d2117cd90b516b25f1fa3ecf786eb823d6ea468d33d9c67034",
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "951eeaa17ab7abe6eb6ebd778e0bb58bca0b8afa107ee49784f83dcbe2540675"
 	}
 }

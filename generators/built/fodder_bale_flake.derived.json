@@ -57,6 +57,7 @@
 	],
 	"effort": "full",
 	"id": "built/fodder-bale-flake",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -117,7 +118,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0041800000000000006,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.24009999999999992
 				}
@@ -133,14 +134,16 @@
 			"checked_at": 10,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001297
 			},
 			"error": 0.0035283826566374892,
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 0,
-			"judged": "58ef92524d2bfb5e11391ee22aa1fac2412c2170fa8dfed6a9ab1ed488b692f9",
+			"judged": "381f0ce35559c8c115577e8228e7143e67c58fdcfa2c981deea6a3bce12096bf",
 			"measured": {
 				"cost": 16504,
 				"coverage_rel": -0.007110000000000001,
@@ -159,16 +162,26 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'fodder' is 27 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 339.0,
+			"peak_mb": 340.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 2.0,
 				"reduce": 1.0
 			},
-			"search_s": 159.10000000000002,
+			"search_s": 225.5,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 3
+			"surfaces_ceiling": 3,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 10,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"2": {
 			"above_tolerance": true,
@@ -199,7 +212,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "540a2feab0ec79e88ce913efdf1e6b4f79326bf7298eac2b9a4907ed8d82f8c3",
+			"judged": "99ee68db1b5441e0618ba53b1f8d894e68743142e957506273df41032f7ec94a",
 			"keep": {
 				"fibre": 0.08235429999999996
 			},
@@ -473,17 +486,27 @@
 				"CARRIED from rung 1, REDUCE (every piece) to 0.240, carried from rung 1: none holds at 0.0141 -- the finest tried (1.000) fails at {\"thickness_m\":0.12} seed 314: the picture changes at the drawn size: 70 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.58), one pixel 0.00520 m; coverage changes -0.1366 against 0.0718 allowed (a one-pixel shrink all round); part 'fodder' changes its share of the picture by -0.0752 against 0.0718 allowed (its colour's share of the subject)",
 				"BUDGET: the cheapest derivation that holds the picture costs 15410 (5.96x), over rung 2's budget 2587 x 1.5 = 3880 (made, 0.37 m)"
 			],
-			"peak_mb": 347.0,
+			"peak_mb": 348.0,
 			"route": "kit",
-			"search_s": 501.8,
+			"search_s": 719.7,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
-			"tolerance": 0.014113530626549957
+			"tolerance": 0.014113530626549957,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 10,
+				"holds": false,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.0,
+				"unit": "pixels over",
+				"worst": null
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "f58beb7d7ce57f49094b1e14ed7b59ab0b1b221330589b319cb993df19280960"
 	}
 }

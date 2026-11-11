@@ -31,6 +31,7 @@
 	],
 	"effort": "full",
 	"id": "animal/atlantic-cod",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -87,7 +88,7 @@
 			"error": 0.0018518518518518517,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "45227aef3ceecb9cfffbafc4386a1043231390c90f3d5bc96fd86861742a3f9f",
+			"judged": "0614fdc1a08cfaf7097101b9c2eec85c656633691a8e035a992058cd6a84e5a8",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -118,12 +119,22 @@
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 318.0,
+			"peak_mb": 319.0,
 			"route": "kit",
-			"search_s": 97.2,
+			"search_s": 142.6,
 			"searched": "recheck",
 			"surfaces": 6,
-			"surfaces_ceiling": 6
+			"surfaces_ceiling": 6,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"2": {
 			"budget": 10668,
@@ -147,7 +158,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "ca5c34b8e9296f85afef9b117003c0ac45b66bd399d929ad48c3273981938fef",
+			"judged": "46cd727badeefd2ae78568748768697fd5aa1f26823d8545b7d5c5a78eef0d08",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -309,14 +320,24 @@
 			],
 			"peak_mb": 279.0,
 			"route": "kit",
-			"search_s": 144.1,
+			"search_s": 191.10000000000002,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "bd8e4c004398eba759b76b8d0c4f9cf77a18f494862f24f488edabeaa9f7ca2e"
 	}
 }

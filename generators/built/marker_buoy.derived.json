@@ -34,6 +34,7 @@
 	],
 	"effort": "full",
 	"id": "built/marker-buoy",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -105,7 +106,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "e5b2ca64e6eee8a0bca9bb4700b88e66d3894fb0e9d4c4fdac294ac5588ee17b",
+			"judged": "567c6a7709512f249725310d796d8c041c326dff8794c10c7d1dd5ec7def0a26",
 			"measured": {
 				"cost": 31258,
 				"coverage_rel": 0.0,
@@ -125,11 +126,21 @@
 			],
 			"peak_mb": 280.0,
 			"route": "rung0",
-			"search_s": 26.400000000000002,
+			"search_s": 39.0,
 			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9,
-			"tolerance": 0.0018518518518518517
+			"tolerance": 0.0018518518518518517,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "source",
+				"over": 0,
+				"tolerance": 0.0,
+				"unit": "the source served",
+				"worst": 0.0
+			}
 		},
 		"3": {
 			"atlas_bytes": 9437184,
@@ -175,7 +186,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d2daba39a632cb6409b80c0191c08f17762d25bff9e517d5c5a506e3f51ac5b9",
+			"judged": "26c4937b01c926049dde66f6633718ed5f2e82cc61bc0a576127d132e8984d4b",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -187,18 +198,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 282.0,
+			"peak_mb": 283.0,
 			"route": "impostor",
-			"search_s": 25.3,
+			"search_s": 37.5,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.47900000000000004
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "b4f0dace19abbd5ed3b569027f689960ce9093dfeb7ec46b6c74c99098c21f98"
 	}
 }

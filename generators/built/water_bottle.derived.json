@@ -31,6 +31,7 @@
 	],
 	"effort": "full",
 	"id": "built/water-bottle",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -94,7 +95,7 @@
 			"error": 0.005894002846883078,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "be61f7a3fa99b64b957fd94fbd42912cd99d81ff278721ab2a006c6a832a3143",
+			"judged": "67ee5ef6285537b6ecf40b45d48bfd07bf56a6e24e8617753f80b9c72f4b1842",
 			"keep": {
 				"cap_rib": 0.48999999999999994
 			},
@@ -128,16 +129,26 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping cap_rib 0.490)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 257.0,
+			"peak_mb": 258.0,
 			"route": "kit",
-			"search_s": 20.0,
+			"search_s": 30.900000000000002,
 			"searched": "recheck",
 			"surfaces": 4,
-			"surfaces_ceiling": 4
+			"surfaces_ceiling": 4,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "246d74d396717c4b6311dbab32f1c111b9897a6c41c2f7fc44867002700bddbc"
 	}
 }

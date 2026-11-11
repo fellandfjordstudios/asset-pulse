@@ -63,6 +63,7 @@
 	],
 	"effort": "full",
 	"id": "built/provision-crate",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -123,7 +124,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00495,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7549049999999999
 				}
@@ -136,14 +137,16 @@
 			"checked_at": 11,
 			"drawn": {
 				"excess": 0.375,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001312
 			},
 			"error": 0.0025933612526285546,
 			"every_piece": true,
 			"fraction": 0.7549049999999999,
 			"from_rung": 0,
-			"judged": "016d8082ac52138740fc45c7ee912d7a6fc2188865405a04d7e840ecc6a21d25",
+			"judged": "19c720606c8d3c996cd3dd2c6f76f908e31f7009e93036fb2040b4700230c720",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.755 kept)",
@@ -191,10 +194,20 @@
 			"routes": {
 				"reduce": 11.0
 			},
-			"search_s": 132.8,
+			"search_s": 195.20000000000002,
 			"searched": "recheck",
 			"surfaces": 11,
-			"surfaces_ceiling": 11
+			"surfaces_ceiling": 11,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 11,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.375
+			}
 		},
 		"2": {
 			"budget": 5106,
@@ -230,7 +243,7 @@
 			"error": 0.010373445010514218,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "5669b90cf5d22439518432e8f0b6b58319e6c072c52b54fede9574392828a2aa",
+			"judged": "b3e890923a4b4e3f43046610b520ef6b6e0f3f3ce48e9d51d1b0668349db7274",
 			"keep": {
 				"nail": 0.24009999999999992
 			},
@@ -537,14 +550,24 @@
 			"peak_mb": 519.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 131.5,
+			"search_s": 173.8,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 11,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.125
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "59861e216836c4d2819e982eef37fb46fc78b6fd9234192c190b3230a3ae3e42"
 	}
 }

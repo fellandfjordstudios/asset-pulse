@@ -105,6 +105,7 @@
 	],
 	"effort": "full",
 	"id": "built/jetty-support",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -183,7 +184,7 @@
 			"error": 0.0018518518518518517,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "830a81b3d5d3da825f62bdcda7921184c06710a8e49e7e8cc2b5ec6f0e0d8f23",
+			"judged": "bcb97c19f01f86d689a5f962be864991e5e13896473fb194ceb34e721b143e48",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -216,10 +217,20 @@
 			],
 			"peak_mb": 359.0,
 			"route": "kit",
-			"search_s": 148.3,
+			"search_s": 222.3,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 3
+			"surfaces_ceiling": 3,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 18,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.375
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -255,7 +266,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "1416ab3bac22ceb1dd7f0a794e2b521b90b7791b34a0446dc3fbd2b5875ee42e",
+			"judged": "dd32ccbae5e80075e5c0993ed8efdb58a1c020ef4280f1d550d1f5b097cadecd",
 			"keep": {
 				"bolt": 0.08235429999999996
 			},
@@ -732,14 +743,24 @@
 			"peak_mb": 292.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 60.400000000000006,
+			"search_s": 90.60000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 18,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4375
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "0271bc55112f6961e1bd7075badfa21b52fcb9c751d976dc6db9f9c710b03306"
 	}
 }

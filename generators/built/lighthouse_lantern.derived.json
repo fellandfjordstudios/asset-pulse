@@ -31,6 +31,7 @@
 	],
 	"effort": "full",
 	"id": "built/lighthouse-lantern",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -101,7 +102,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "bdfa86c3adb632ab26741901b262872f3bc60e18beac8cd1326161521d1920c6",
+			"judged": "89dfd91a10579104adeafe2eced00ec68ce0baaca6e621728da99feaa8cbb0c7",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -133,12 +134,22 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.700 held at 798, dearer than the 770 taken"
 			],
-			"peak_mb": 308.0,
+			"peak_mb": 310.0,
 			"route": "kit",
-			"search_s": 40.900000000000006,
+			"search_s": 63.5,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 2
+			"surfaces_ceiling": 2,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -160,7 +171,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00846,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.3429999999999999
 				}
@@ -176,14 +187,16 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.1875,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.025282
 			},
 			"error": 0.007407407407407408,
 			"every_piece": true,
 			"fraction": 0.3429999999999999,
 			"from_rung": 1,
-			"judged": "939f142050445f82b92ffc2e43b7a79072363ada043703b32ecfc979227b55a6",
+			"judged": "19f8bf2c5d144291d2d752ed16002f9f73ae306ecc2369983c2935395d9d15bc",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
@@ -344,15 +357,25 @@
 				"KIT (its own build at 2 of the band's pixels) held at 377, dearer than the 362 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 770, dearer than the 362 taken"
 			],
-			"peak_mb": 264.0,
+			"peak_mb": 266.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 20.6,
+			"search_s": 29.5,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.1875
+			}
 		},
 		"3": {
 			"budget": 2444,
@@ -385,7 +408,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "2826152c8c58f788f1662450eca2e14fb1248ed19200a4f7eb97b2d1a21a10b6",
+			"judged": "6da4f74615f04b9f70a43e9c1d04e08e63b8dafeb7f508ff6fa9108fd7d40357",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -543,17 +566,27 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 770, dearer than the 255 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 502, dearer than the 255 taken"
 			],
-			"peak_mb": 264.0,
+			"peak_mb": 266.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 13.5,
+			"search_s": 19.3,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "f3f01a37a875a72db6eff3a046178512eb0aa142a02698e721de6b4e8a38a2ce"
 	}
 }

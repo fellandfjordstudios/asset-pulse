@@ -19,6 +19,7 @@
 	],
 	"effort": "full",
 	"id": "built/primus-stove",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -66,7 +67,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0046300000000000004,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.16806999999999994
 				}
@@ -82,14 +83,16 @@
 			"checked_at": 3,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001315
 			},
 			"error": 0.005894002846883078,
 			"every_piece": true,
 			"fraction": 0.16806999999999994,
 			"from_rung": 0,
-			"judged": "6b40a9144657ac4d5f593e438e4d8fb4ffd5da2d7880f923482d5c86fe610dec",
+			"judged": "2f55ccfae23b527f0dda79e245f3ae43042661d031b0fd6949a3780f2b6a8863",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.168",
@@ -127,19 +130,29 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 6914, dearer than the 3526 taken"
 			],
-			"peak_mb": 269.0,
+			"peak_mb": 270.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 24.0,
+			"search_s": 33.5,
 			"searched": "recheck",
 			"surfaces": 6,
-			"surfaces_ceiling": 6
+			"surfaces_ceiling": 6,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "f8d33f47c37afd82b47ae9937afff8b4331847cc1d383722c7570fd2672d683c"
 	}
 }

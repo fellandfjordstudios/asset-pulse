@@ -27,6 +27,7 @@
 	],
 	"effort": "full",
 	"id": "built/peat-spade",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -88,7 +89,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.6047399999999999
 				}
@@ -101,14 +102,16 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.125,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.002225
 			},
 			"error": 0.001851851851851852,
 			"every_piece": true,
 			"fraction": 0.6047399999999999,
 			"from_rung": 0,
-			"judged": "584866a78321f19483de37cc54ad7effa7a3c20bcec8727803d01b5ddcf1b755",
+			"judged": "979b56d7afd3dee4c6beff1065a2d1e41fd3e94aafcfc20aaf36263709ceaa60",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x)",
@@ -147,15 +150,25 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x) held at 17844, dearer than the 11432 taken"
 			],
-			"peak_mb": 407.0,
+			"peak_mb": 408.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 49.6,
+			"search_s": 73.4,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 5
+			"surfaces_ceiling": 5,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.125
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -188,7 +201,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.202414
 				}
@@ -206,14 +219,16 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.0,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.008898999999999999
 			},
 			"error": 0.007407407407407408,
 			"every_piece": true,
 			"fraction": 0.202414,
 			"from_rung": 1,
-			"judged": "3590993ac2ad8fc45553c7f8c39cf2cdd8e215e6a6d78c9370914c025831ddbe",
+			"judged": "2275b57843a4b2b6f8b51d856bd850204831e38a10b3fab86a2d2ba8beb29299",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.202 kept)",
@@ -391,15 +406,25 @@
 				"KIT (its own build at 2 of the band's pixels, keeping debris 0.040) held at 17287, dearer than the 2314 taken",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.605 kept), carried from rung 1 held at 11432, dearer than the 2314 taken"
 			],
-			"peak_mb": 407.0,
+			"peak_mb": 408.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 205.10000000000002,
+			"search_s": 281.8,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0
+			}
 		},
 		"3": {
 			"atlas_bytes": 9437184,
@@ -445,7 +470,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "e6d682f1655cfe7f30bb1bf805723a6f029d2310de24a9595f7e77572bd47ebd",
+			"judged": "d405f7e05f43e5a90c58aff829eb3ce0238720b1fddf53e0daa92aa19e769d7a",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -457,18 +482,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 407.0,
+			"peak_mb": 408.0,
 			"route": "impostor",
-			"search_s": 27.900000000000002,
+			"search_s": 36.9,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4637
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "0c7a7ae31435f6aac8af71cb3024741b967e75e71e2906db1c57c4fc429992f6"
 	}
 }

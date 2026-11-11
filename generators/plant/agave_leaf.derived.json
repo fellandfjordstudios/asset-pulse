@@ -127,6 +127,7 @@
 	],
 	"effort": "full",
 	"id": "plant/agave-leaf",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -185,7 +186,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.005070000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "kit",
 					"value": {}
 				},
@@ -194,7 +195,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.005070000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.340945
 				}
@@ -202,13 +203,15 @@
 			"checked_at": 21,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.008404
 			},
 			"error": 0.0045,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "7ca5387b5dd10a5f93834543569611f7b1a2b84e4b3a29c7a5bb8afdc6765179",
+			"judged": "3b732f97c972006ba3fa279d35b32c39c2b7901f4e9b343c034f5194b0714a4f",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -245,10 +248,20 @@
 			],
 			"peak_mb": 482.0,
 			"route": "kit",
-			"search_s": 471.8,
+			"search_s": 681.7,
 			"searched": "search",
 			"surfaces": 2,
-			"surfaces_ceiling": 2
+			"surfaces_ceiling": 2,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 21,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"2": {
 			"budget": 12001,
@@ -284,7 +297,7 @@
 			"error": 0.012,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "03276a5786d85da772d5eda2a8b88537d0a1ae89271d9a8411af09f8283e8c02",
+			"judged": "a9a74ff9c5c81cbb741e53e1eed8ec5123744dc0a37498f3700ea6027cb36b15",
 			"keep": {
 				"tooth": 0.11764899999999996
 			},
@@ -830,16 +843,26 @@
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.417 kept) held at 1904, dearer than the 238 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 376, dearer than the 238 taken"
 			],
-			"peak_mb": 482.0,
+			"peak_mb": 356.0,
 			"route": "kit",
-			"search_s": 64.8,
+			"search_s": 93.80000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 21,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "99dfa9755a1267e1d4859406ddb2370e94cd91042653ff09da687ba5c34b9de3"
 	}
 }

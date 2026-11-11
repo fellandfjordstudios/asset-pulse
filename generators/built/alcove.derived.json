@@ -55,6 +55,7 @@
 	],
 	"effort": "full",
 	"id": "built/alcove",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -109,7 +110,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00459,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.11764899999999996
 				}
@@ -125,13 +126,15 @@
 			"checked_at": 9,
 			"drawn": {
 				"excess": 0.0625,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.002222
 			},
 			"error": 0.001851851851851852,
 			"fraction": 0.11764899999999996,
 			"from_rung": 0,
-			"judged": "0aa166005fbc922d00dd5a4bb3fe51cea46d10381e553aba0ff034853b1671e7",
+			"judged": "07a495f1e7988914098d4b74bd32d75b502f1906890b2d15cd8cf7e9d89647b8",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.118",
@@ -153,15 +156,25 @@
 				"picture": 0.00459
 			},
 			"measured_of": 1,
-			"peak_mb": 561.0,
+			"peak_mb": 563.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 70.3,
+			"search_s": 100.9,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0625
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -174,7 +187,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00459,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.11764899999999996
 				}
@@ -190,13 +203,15 @@
 			"checked_at": 9,
 			"drawn": {
 				"excess": 0.0,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.008889
 			},
 			"error": 0.007407407407407408,
 			"fraction": 0.11764899999999996,
 			"from_rung": 0,
-			"judged": "894e0486b8bd28d47996e30e552ed5d885786b3af51942dc0dc2c943a0850feb",
+			"judged": "a70beb4a79e696f4018c4b0356aeed1a7c2c4594cfe99d03ce9424b85ff5ce31",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.118",
@@ -218,15 +233,25 @@
 				"picture": 0.00459
 			},
 			"measured_of": 1,
-			"peak_mb": 561.0,
+			"peak_mb": 563.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 15.200000000000001,
+			"search_s": 21.700000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0
+			}
 		},
 		"3": {
 			"atlas_bytes": 2359296,
@@ -272,7 +297,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "2e5bed0915b49b2bce20f6055dcc5a81e1b6bf8b665f61f369479195202c3a42",
+			"judged": "4be117c6b8c7397dad96f1ebeced58f1905cd0631aad5fad359b6d8dca977d6a",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -284,17 +309,27 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 561.0,
+			"peak_mb": 563.0,
 			"route": "impostor",
-			"search_s": 11.5,
+			"search_s": 15.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 16
+			"tiles": 16,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.29710000000000003
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "52005c89e185db1498668b10d93361d728f2a1260b69755325b9ce32f47ff571"
 	}
 }

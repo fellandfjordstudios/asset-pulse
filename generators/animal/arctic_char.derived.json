@@ -61,6 +61,7 @@
 	],
 	"effort": "full",
 	"id": "animal/arctic-char",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -126,7 +127,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "1d30627dbb705694f8aa717fefd678df471133e364d22aea16bdaed3b54148ac",
+			"judged": "cb884adbbd782a5e9643098eb866a525c6e45f537d30d1d680e3bb618cb9b260",
 			"measured": {
 				"cost": 13400,
 				"coverage_rel": 0.0,
@@ -142,13 +143,23 @@
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: animal/arctic-char does not declare `reads_density`"
 			],
-			"peak_mb": 321.0,
+			"peak_mb": 323.0,
 			"route": "rung0",
-			"search_s": 73.7,
+			"search_s": 106.4,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
-			"tolerance": 0.002135508277856188
+			"tolerance": 0.002135508277856188,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 10,
+				"holds": true,
+				"judge": "source",
+				"over": 0,
+				"tolerance": 0.0,
+				"unit": "the source served",
+				"worst": 0.0
+			}
 		},
 		"2": {
 			"budget": 7951,
@@ -170,7 +181,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.092537
 				}
@@ -183,14 +194,16 @@
 			"checked_at": 10,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.005164
 			},
 			"error": 0.008542033111424752,
 			"every_piece": true,
 			"fraction": 0.092537,
 			"from_rung": 0,
-			"judged": "e0f46ba23d590ec16cf83f498ebfdd019687c5ee7300fa4c27cf7ecb34a11681",
+			"judged": "f3017f2b0aadf42c79cffa1ec14158d036e587f50dd302c280a565c30f6ba0b5",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.093 kept)",
@@ -468,19 +481,29 @@
 				"REDUCE from rung 0 at {\"cooked\":1} seed 314: element 0's part 'body' is 123 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)"
 			],
-			"peak_mb": 346.0,
+			"peak_mb": 347.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 26.0
 			},
-			"search_s": 368.3,
+			"search_s": 485.0,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 10,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "318b58c4c4777ca6ec90edf9529842b413d65dd16f4d815eb18ae314b1959572"
 	}
 }

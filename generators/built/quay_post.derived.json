@@ -159,6 +159,7 @@
 	],
 	"effort": "full",
 	"id": "built/quay-post",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -251,7 +252,7 @@
 			"error": 0.00185185185185185,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "418653aebb96a4297e33710662705b4dbdc2fcf920d0ea2b71508f69948876a2",
+			"judged": "5dc2f1643ca8b1303543480371de17f9e86868bf6d4c05b2dab36b363250762c",
 			"keep": {},
 			"measured": {
 				"cost": 100670,
@@ -277,17 +278,27 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00177 m; the error ladder: none holds at 0.0019",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 812.0,
+			"peak_mb": 808.0,
 			"route": "kit",
-			"search_s": 480.70000000000005,
+			"search_s": 688.4000000000001,
 			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
-			"tolerance": 0.001851851851851852
+			"tolerance": 0.001851851851851852,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 27,
+				"holds": false,
+				"judge": "drawn",
+				"over": 13.0,
+				"tolerance": 0.0,
+				"unit": "pixels over",
+				"worst": 13.0
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "749c43955e23d216767b7ec2c53b10d5a4bd107417c404b350c4dd14ee3a39ab"
 	}
 }

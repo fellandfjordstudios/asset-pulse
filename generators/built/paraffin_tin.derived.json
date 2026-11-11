@@ -25,6 +25,7 @@
 	],
 	"effort": "full",
 	"id": "built/paraffin-tin",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -73,7 +74,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0051600000000000005,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.48999999999999994
 				}
@@ -89,13 +90,15 @@
 			"checked_at": 4,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001184
 			},
 			"error": 0.004,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "6166d7755e718ea2f6dc849dabf5c12cb85208ba87174816d7baa1e6757a8728",
+			"judged": "07bc9eb65b1fe329ad59cdae6239b45fe77ecfac0af5e887f6b0b9b921e4f5a2",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -131,19 +134,29 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 404, dearer than the 344 taken"
 			],
-			"peak_mb": 284.0,
+			"peak_mb": 286.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 12.9,
+			"search_s": 18.7,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 5
+			"surfaces_ceiling": 5,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 4,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "71dad717166b8daad5dbb7c9bc2745843385f82f88414fb9eea80855a88c5e90"
 	}
 }

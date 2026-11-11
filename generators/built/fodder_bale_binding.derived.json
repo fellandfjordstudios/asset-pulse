@@ -43,6 +43,7 @@
 	],
 	"effort": "full",
 	"id": "built/fodder-bale-binding",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -99,7 +100,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0046300000000000004,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.95283
 				}
@@ -112,13 +113,15 @@
 			"checked_at": 7,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001286
 			},
 			"error": 0.0028404832997026884,
 			"fraction": 0.95283,
 			"from_rung": 0,
-			"judged": "24fb39b37e6d6377ec0c4a18e42a378111c3f7b4e56dbfd389e3d211e800489c",
+			"judged": "46aba163af54a76f2087dd766db3e7d4b0379521d33b14b1d61c7a9475d0620c",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -148,15 +151,25 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 2332, dearer than the 2222 taken"
 			],
-			"peak_mb": 351.0,
+			"peak_mb": 352.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 1.0
 			},
-			"search_s": 21.1,
+			"search_s": 32.7,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 7,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"2": {
 			"budget": 4088,
@@ -169,7 +182,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": null,
+					"px_over": 0,
 					"route": "kit",
 					"value": {}
 				},
@@ -178,7 +191,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.11228,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.47074699999999997
 				}
@@ -196,13 +209,15 @@
 			"checked_at": 7,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.005144
 			},
 			"error": 0.011361933198810754,
 			"fraction": 0.47074699999999997,
 			"from_rung": 1,
-			"judged": "63a196e21720afca1c67068a6b1668c5e8558b126208afe87e8a81d6c64809a7",
+			"judged": "3accd25cf9372347d602fdbfc0b2169efefdac21bce17ad324b6f8118061f777",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -234,19 +249,29 @@
 				"KIT (its own build at 2 of the band's pixels) held at 2332, dearer than the 1046 taken",
 				"REDUCE to its error cap 0.0156x the band's (0.953 kept), carried from rung 1 held at 2222, dearer than the 1046 taken"
 			],
-			"peak_mb": 351.0,
+			"peak_mb": 352.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 1
 			},
-			"search_s": 35.4,
+			"search_s": 53.5,
 			"searched": "search",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 7,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "671fa3c935d3a76f267032bdc839a120157930284a11e84f2e077044b76d0d4e"
 	}
 }

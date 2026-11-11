@@ -37,6 +37,7 @@
 	],
 	"effort": "full",
 	"id": "built/fish-box",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -97,7 +98,7 @@
 			"error": 0.001994893271252734,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "4ccbd57a2ec8a85c80f45f08af8596b41f00dec953623e376dc297b9672ac335",
+			"judged": "83fdbb1ebcf67f7afe310af3a25d4312732f626ece348b5527c14a41f521c54e",
 			"keep": {
 				"nail": 0.08235429999999996
 			},
@@ -133,10 +134,20 @@
 			],
 			"peak_mb": 324.0,
 			"route": "kit",
-			"search_s": 103.4,
+			"search_s": 160.5,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 5
+			"surfaces_ceiling": 5,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 6,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.3125
+			}
 		},
 		"2": {
 			"budget": 8520,
@@ -172,7 +183,7 @@
 			"error": 0.007979573085010936,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "78eef444dfc0bea7560e8c7752d0d74a603af18d74a5e7003da46964a90c105d",
+			"judged": "5352ccd1503e138e1c5e94e44a242a3c164b20dfb5687be69c1897a224aa5973",
 			"keep": {
 				"nail": 0.03125
 			},
@@ -376,18 +387,28 @@
 				"KIT (its own build at the rung's pixel, keeping nail 0.031) held at 1380, dearer than the 884 taken",
 				"KIT (its own build at the rung's pixel, keeping nail 0.082), carried from rung 1 held at 2098, dearer than the 884 taken"
 			],
-			"peak_mb": 274.0,
+			"peak_mb": 275.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 82.5,
+			"search_s": 116.4,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 6,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		}
 	},
 	"source": {
 		"children": "a0cc6c73eae06bb4205fefe304a78b845b2c6cf4610e2677b5948679b15196d0",
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "d928f95127b4f1bd59527e15f2e464fe264eef7d60eefd3497a54fd7e0f9f488"
 	}
 }

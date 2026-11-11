@@ -57,6 +57,7 @@
 	],
 	"effort": "full",
 	"id": "built/oatcake-packet",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -111,7 +112,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -127,14 +128,16 @@
 			"checked_at": 10,
 			"drawn": {
 				"excess": 0.0,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.000185
 			},
 			"error": 0.0015,
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "6cd4530db17ef0870476da7759cb1d0c984f863ce8e4a79f759dc8dc2bb1467b",
+			"judged": "af5999b1d35f98e4d58047b844aae4fe6df7a35917f30d074b56c411ffba10e6",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -169,19 +172,29 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 572, dearer than the 500 taken"
 			],
-			"peak_mb": 754.0,
+			"peak_mb": 756.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 169.4,
+			"search_s": 259.5,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 3
+			"surfaces_ceiling": 3,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 10,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "d0bc202eca12f4c39e8a6676d342098f4045de2aa7c5bd1b6c07603c5d854719"
 	}
 }

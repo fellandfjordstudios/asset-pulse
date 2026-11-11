@@ -7,6 +7,7 @@
 	],
 	"effort": "full",
 	"id": "built/hanging-lamp",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe"
@@ -57,7 +58,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00387,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.959936
 				}
@@ -70,14 +71,16 @@
 			"checked_at": 1,
 			"drawn": {
 				"excess": 0.3125,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001291
 			},
 			"error": 0.0022462184077885116,
 			"every_piece": true,
 			"fraction": 0.959936,
 			"from_rung": 0,
-			"judged": "faa118fa52dd01261a0146b95bcd38f89ade6adfdc25b2830a15c8ad2893459b",
+			"judged": "d476abb0137a61c60ad869d388e50adf4a31a07b7beb6db9a3fb9efdd8d40b9e",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.960 kept)",
@@ -122,10 +125,20 @@
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 10.200000000000001,
+			"search_s": 14.8,
 			"searched": "recheck",
 			"surfaces": 7,
-			"surfaces_ceiling": 7
+			"surfaces_ceiling": 7,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 1,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.3125
+			}
 		},
 		"2": {
 			"budget": 6592,
@@ -147,7 +160,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.01743,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.24009999999999992
 				}
@@ -163,14 +176,16 @@
 			"checked_at": 1,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.005166
 			},
 			"error": 0.008984873631154047,
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 1,
-			"judged": "ec1bf66389c43ac9ba280e495100e48b9e9e9098e380d871be221ee0532df3d1",
+			"judged": "fe3fa953165daa6a3ce746d111bd250d7d24de0d555f09bad2721a566a223314",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -242,14 +257,24 @@
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 18.5,
+			"search_s": 26.0,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 1,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "5875623c213bf88fa3f74741bfcb93f42c42646d3a7a1f44ef073407902b4df4"
 	}
 }

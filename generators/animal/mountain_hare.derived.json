@@ -135,6 +135,7 @@
 	],
 	"effort": "full",
 	"id": "animal/mountain-hare",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -207,7 +208,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0044800000000000005,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.494981
 				}
@@ -225,13 +226,15 @@
 			"checked_at": 23,
 			"drawn": {
 				"excess": 0.4844,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001011
 			},
 			"error": 0.0022364274341398365,
 			"fraction": 0.494981,
 			"from_rung": 0,
-			"judged": "b4907da283482402b614a409800d32002b3b696325fa31f5819a5aa413650345",
+			"judged": "252308c0a9b0f2f26767ad11a44d09e071d3a7940e33c20ffff7b38ad53995bf",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -271,15 +274,25 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 10644, dearer than the 5326 taken"
 			],
-			"peak_mb": 771.0,
+			"peak_mb": 773.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 315.5,
+			"search_s": 457.40000000000003,
 			"searched": "recheck",
 			"surfaces": 9,
-			"surfaces_ceiling": 9
+			"surfaces_ceiling": 9,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 23,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4844
+			}
 		},
 		"2": {
 			"budget": 4228,
@@ -301,7 +314,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0044800000000000005,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.48999999999999994
 				}
@@ -317,13 +330,15 @@
 			"checked_at": 23,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.004043
 			},
 			"error": 0.008945709736559346,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "0548c9fca38c571375e043e36631c952365a0954b959509a960794a84665ead8",
+			"judged": "2e4b9294e0418ed5d7a20c42c7807c2eb98aed3e16599a35bcb9adc815ea6db0",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
@@ -918,14 +933,24 @@
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 1547.7,
+			"search_s": 1989.5,
 			"searched": "recheck",
 			"surfaces": 7,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 23,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "54b3ce43fc7e0f0081eab47c5852de6139a7320def8b90f0faad1ebc496ca3c2"
 	}
 }

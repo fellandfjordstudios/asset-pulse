@@ -159,6 +159,7 @@
 	],
 	"effort": "full",
 	"id": "animal/banana-slug",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -230,7 +231,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.184387
 				}
@@ -248,13 +249,15 @@
 			"checked_at": 27,
 			"drawn": {
 				"excess": 0.3125,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.000781
 			},
 			"error": 0.004322268754380925,
 			"fraction": 0.184387,
 			"from_rung": 0,
-			"judged": "46967d34d4a7ac781d478d453760d37d4948620c33a19867f94a44abe6c70f8b",
+			"judged": "c6f5aec1a0d67acd47bd39fd9a210e6dc864cc7136fd9182056e42f0ebe5d3a8",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -295,14 +298,24 @@
 			"routes": {
 				"reduce": 8.0
 			},
-			"search_s": 134.9,
+			"search_s": 195.20000000000002,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 5
+			"surfaces_ceiling": 5,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 27,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.3125
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "bf0b06df03c025f7cc09a5d3bc4391cfec387ffc001ccb8b9988e86dc7359178"
 	}
 }

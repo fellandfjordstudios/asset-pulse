@@ -33,6 +33,7 @@
 	],
 	"effort": "full",
 	"id": "built/goods-sack",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -93,7 +94,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004600000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.952588
 				}
@@ -106,14 +107,16 @@
 			"checked_at": 6,
 			"drawn": {
 				"excess": 0.125,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.0015739999999999999
 			},
 			"error": 0.001851851851851852,
 			"every_piece": true,
 			"fraction": 0.952588,
 			"from_rung": 0,
-			"judged": "c24395e400ada2eca6710097ce930bb0903f1f47f6284b18aabab6a8bcd3f9a9",
+			"judged": "6fc68a7591c223af25713bf869c3a31bfdd73006c4bc74c5aea2c2697dd784ff",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.953 kept)",
@@ -147,15 +150,25 @@
 				"REDUCE from rung 0 at {} seed 314: element 3's part 'cloth' is 112 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 1 across 5 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 469.0,
+			"peak_mb": 470.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 93.4,
+			"search_s": 143.6,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 2
+			"surfaces_ceiling": 2,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 6,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.125
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -177,7 +190,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004600000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.53306
 				}
@@ -190,14 +203,16 @@
 			"checked_at": 6,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.0062959999999999995
 			},
 			"error": 0.007407407407407408,
 			"every_piece": true,
 			"fraction": 0.53306,
 			"from_rung": 0,
-			"judged": "9b5468843551de0a1fc55c91e7f9cbb9fb10be5cf2d355ec508243025a7fcfd3",
+			"judged": "579a2462415955c5b1eb9a3dc69e28fff53eb57f4dfd330d3399d2bb5de9cc3c",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.533 kept)",
@@ -384,15 +399,25 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.953 kept), carried from rung 1 held at 7434, dearer than the 4160 taken"
 			],
-			"peak_mb": 469.0,
+			"peak_mb": 470.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 167.5,
+			"search_s": 232.9,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 6,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"3": {
 			"budget": 2444,
@@ -414,7 +439,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.032990000000000005,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.04035360699999998
 				}
@@ -430,14 +455,16 @@
 			"checked_at": 6,
 			"drawn": {
 				"excess": 0.1875,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.025185
 			},
 			"error": 0.02962962962962963,
 			"every_piece": true,
 			"fraction": 0.04035360699999998,
 			"from_rung": 0,
-			"judged": "38c15d5ab3cf812dffe44bac80ec21c966311527f318f424136d1b9450287938",
+			"judged": "4741685dad56577436c04ea6109eb8328bdd7054d42db5662c9607af162f906f",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.040",
@@ -621,19 +648,29 @@
 				"REDUCE (every piece) to its error cap 0.0078x the band's (0.953 kept), carried from rung 1 held at 7434, dearer than the 208 taken",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.533 kept), carried from rung 2 held at 4160, dearer than the 208 taken"
 			],
-			"peak_mb": 469.0,
+			"peak_mb": 470.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 20.900000000000002,
+			"search_s": 28.5,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 6,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.1875
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "2c4b76031dac402c66146e4f5bcef1b84cc608cd9662d6165de456a6a21de932"
 	}
 }

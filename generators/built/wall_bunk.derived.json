@@ -27,6 +27,7 @@
 	],
 	"effort": "full",
 	"id": "built/wall-bunk",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -100,7 +101,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "a76b80bfb6629ceee610be09a9c0ac51eba730d989779b329dff5557d5405c83",
+			"judged": "10ca07bfd1f9636d0e0a6b938a56c1201b2d5c7bf5a61028eb6164f2f0fcb137",
 			"keep": {
 				"stitch": 0.03125
 			},
@@ -135,12 +136,22 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping stitch 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.700 held at 4213, dearer than the 3572 taken"
 			],
-			"peak_mb": 316.0,
+			"peak_mb": 317.0,
 			"route": "kit",
-			"search_s": 116.80000000000001,
+			"search_s": 181.5,
 			"searched": "recheck",
 			"surfaces": 6,
-			"surfaces_ceiling": 6
+			"surfaces_ceiling": 6,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.375
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -173,7 +184,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004350000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.08235429999999996
 				}
@@ -189,14 +200,16 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.014934
 			},
 			"error": 0.007407407407407408,
 			"every_piece": true,
 			"fraction": 0.08235429999999996,
 			"from_rung": 1,
-			"judged": "e9be51e5977ec9fb569e6e6926259cd067fce58f1909b5c4f3a7a9597dd2ea54",
+			"judged": "091dd98b4109c31c3532d58590a82dd98a7d0e75a3b2d0a39469b9b95249d798",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping stitch 0.031)",
@@ -375,15 +388,25 @@
 				"KIT (its own build at 2 of the band's pixels, keeping stitch 0.031) held at 1492, dearer than the 470 taken",
 				"KIT (its own build at the rung's pixel, keeping stitch 0.031), carried from rung 1 held at 3572, dearer than the 470 taken"
 			],
-			"peak_mb": 269.0,
+			"peak_mb": 270.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 27.0
 			},
-			"search_s": 51.800000000000004,
+			"search_s": 76.60000000000001,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"3": {
 			"atlas_bytes": 3211264,
@@ -429,7 +452,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "c7989ad72d0c9b5241328548938c96f0bcd6720ee822f381ce7c8c9b71b67361",
+			"judged": "fda82d2782e7a4d3bf89ec2b8a44c52f1dc218e7f0f552ff711878f8a96e7c91",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -441,18 +464,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 269.0,
+			"peak_mb": 270.0,
 			"route": "impostor",
-			"search_s": 8.3,
+			"search_s": 12.3,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 8
+			"tiles": 8,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.49400000000000005
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "97c7380a77c90d2ec24b570a1414377cd73ae2575c9ed723962f6105ae45d69a"
 	}
 }

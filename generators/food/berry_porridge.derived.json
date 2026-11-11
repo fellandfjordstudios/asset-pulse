@@ -39,6 +39,7 @@
 	],
 	"effort": "full",
 	"id": "food/berry-porridge",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -106,7 +107,7 @@
 			"error": 0.006174669649115607,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "59f947e6b365a06ff455d5b2fbc3cae4eb810faf7de60aaa1e6d545c41d1fa71",
+			"judged": "c0be18d5d3e148172252601077310dc9a8b5695af29bc9ebdcff478c6c78c780",
 			"keep": {
 				"drupelet": 0.3429999999999999,
 				"oat_flake": 0.03125
@@ -125,17 +126,27 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED (its parts at their own rungs, joined) held at 23507, dearer than the 7845 taken"
 			],
-			"peak_mb": 283.0,
+			"peak_mb": 284.0,
 			"route": "kit",
-			"search_s": 52.800000000000004,
+			"search_s": 76.7,
 			"searched": "recheck",
 			"surfaces": 10,
-			"surfaces_ceiling": 10
+			"surfaces_ceiling": 10,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 7,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4375
+			}
 		}
 	},
 	"source": {
 		"children": "fb61b1c4f98bd2009c8b93b89b3f2d7a418f4cb81cc74da4a1f97ceaa5f8843c",
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "ef366bc1b424f41f0fd3466920c91b40c853bf3394c43477801a993a02bf860c"
 	}
 }

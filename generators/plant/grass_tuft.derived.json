@@ -111,6 +111,7 @@
 	],
 	"effort": "full",
 	"id": "plant/grass-tuft",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -189,7 +190,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "da4c1688f20b4988370800b5b207092a4375254379525b0fe6b057fdddcef2a8",
+			"judged": "81c2a04482a4c297f734da664197a8317ce58d90b01e4997683d4972115aef07",
 			"measured": {
 				"cost": 738,
 				"coverage_rel": 0.0,
@@ -207,15 +208,25 @@
 			],
 			"peak_mb": 286.0,
 			"route": "rung0",
-			"search_s": 20.6,
+			"search_s": 30.200000000000003,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tolerance": 0.005019408876055267
+			"tolerance": 0.005019408876055267,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 19,
+				"holds": true,
+				"judge": "source",
+				"over": 0,
+				"tolerance": 0.0,
+				"unit": "the source served",
+				"worst": 0.0
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "dc296a7e37aeddc119cf835aac9dfabd099b71fd5e02bbe057ea1f998d15c1d5"
 	}
 }

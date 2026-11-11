@@ -31,6 +31,7 @@
 	],
 	"effort": "full",
 	"id": "built/storm-lantern",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -62,7 +63,7 @@
 	},
 	"replay": {
 		"1": "2debc76dfe6138a2a53ae85493fd3d68fe2b15e6810e6e3a527a200357fb4093",
-		"2": "00772b57bd1b8928c1ec53bd45a3be974f3838fc201150d62426d1fd32afcc29"
+		"2": "0001f89ab206db1918c75338c3ffcb377cfda58a1da30539dd4b30f3f26bc617"
 	},
 	"rungs": {
 		"1": {
@@ -85,7 +86,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0039900000000000005,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.91968
 				}
@@ -98,14 +99,16 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.0009729999999999999
 			},
 			"error": 0.002947001423441539,
 			"every_piece": true,
 			"fraction": 0.91968,
 			"from_rung": 0,
-			"judged": "9d616039f6e7047165e4bde63c60989ac731ea6ddc2f1abadd0a5b485ee109b9",
+			"judged": "16b336dc68cf9f6dd96d4233f585db13a1a150768b9a16cdf8c24f1eb826a780",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.920 kept)",
@@ -143,15 +146,25 @@
 				"KIT: none holds at 0.0029 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00097 m",
 				"REDUCE from rung 0 at {} seed 314: element 11's part 'fount' is 34 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)"
 			],
-			"peak_mb": 356.0,
+			"peak_mb": 358.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 16.0
 			},
-			"search_s": 67.2,
+			"search_s": 100.2,
 			"searched": "recheck",
 			"surfaces": 10,
-			"surfaces_ceiling": 10
+			"surfaces_ceiling": 10,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"2": {
 			"budget": 2175,
@@ -185,7 +198,7 @@
 			"error": 0.011788005693766156,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "76953c94cc99f7d392d565cd6f3c3654b0cf871ba7cd74e7cfeb910af014e4c4",
+			"judged": "0fe821cb2bd945f3807c9e15bcac2ce42ed7042fba14064a525133c0ab106b58",
 			"keep": {},
 			"material_transfer": {
 				"checked_at": 5,
@@ -313,6 +326,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 4002,
 				"coverage_rel": -0.012950000000000001,
@@ -330,16 +344,26 @@
 				"REDUCE (every piece) to 0.700 held at 6074, dearer than the 4002 taken",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.920 kept), carried from rung 1 held at 8748, dearer than the 4002 taken"
 			],
-			"peak_mb": 356.0,
+			"peak_mb": 358.0,
 			"route": "kit",
-			"search_s": 39.1,
+			"search_s": 264.6,
 			"searched": "recheck",
 			"surfaces": 4,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.375
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "c3d136bcdef974743cccb554b25325f8842f5b41270d6a7f3c50b3bb574d32e9"
 	}
 }

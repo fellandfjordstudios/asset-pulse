@@ -81,6 +81,7 @@
 	],
 	"effort": "full",
 	"id": "built/jetty-bay",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -158,7 +159,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "164a3097957f0d33d90703a7e590e6f10ec607b7720a95426c5432776300071c",
+			"judged": "8c956a8235c0953e5bb96533479c844d90b3b50032b03c8224cf889dbbeee12e",
 			"keep": {
 				"nail": 0.03125
 			},
@@ -194,10 +195,20 @@
 			],
 			"peak_mb": 362.0,
 			"route": "kit",
-			"search_s": 159.70000000000002,
+			"search_s": 249.0,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 2
+			"surfaces_ceiling": 2,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 14,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -233,7 +244,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "40351994b017241d29025f760460f3b09d2c71ce6c7742e97fbb7d5db9fcbb6c",
+			"judged": "b925860919e1bea56553addc11f9f4c05d4471ca57a3482205cb09dbeb5270c4",
 			"keep": {
 				"nail": 0.03125
 			},
@@ -269,17 +280,27 @@
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.558 kept) held at 908, dearer than the 416 taken",
 				"KIT (its own build at the rung's pixel, keeping nail 0.031), carried from rung 1 held at 656, dearer than the 416 taken"
 			],
-			"peak_mb": 281.0,
+			"peak_mb": 280.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 35.2,
+			"search_s": 51.900000000000006,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 14,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "48ceaf9d3f08462fb7986cfabb0bb48fede5993ba11327b7d13dca9bc1baabd3"
 	}
 }

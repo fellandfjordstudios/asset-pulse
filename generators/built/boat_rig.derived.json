@@ -219,6 +219,7 @@
 	],
 	"effort": "full",
 	"id": "built/boat-rig",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -305,7 +306,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.55117,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.8648309999999999
 				}
@@ -318,14 +319,16 @@
 			"checked_at": 37,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.014721999999999999
 			},
 			"error": 0.0018518518518518517,
 			"every_piece": true,
 			"fraction": 0.8648309999999999,
 			"from_rung": 0,
-			"judged": "7749d36b5f49f940b8e4920c678efea4e72e182e176db9a0e59dceae7fa0931b",
+			"judged": "0e58fcbd533cabd18e2f1dff68ccb893a1688e7b80914061c37aeae6ddd15a87",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.865 kept)",
@@ -362,15 +365,25 @@
 				"REDUCE from rung 0 at {} seed 314: element 10's part 'rope' is 13 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1325.0,
+			"peak_mb": 1326.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 374.8,
+			"search_s": 568.2,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 5
+			"surfaces_ceiling": 5,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 37,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -392,7 +405,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.55117,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.8648309999999999
 				},
@@ -415,14 +428,16 @@
 			"checked_at": 37,
 			"drawn": {
 				"excess": 0.1875,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.058889
 			},
 			"error": 0.007407407407407407,
 			"every_piece": true,
 			"fraction": 0.8648309999999999,
 			"from_rung": 0,
-			"judged": "9f5d6fd304d59a4e2e6cec6ca0f2374eee88a436a6ec73a131358d5d89b729b1",
+			"judged": "a28f065b8d18cc8388ddeba6c7e90628f12c1ec31a9864227e5a6c014e251f46",
 			"material_transfer": {
 				"checked_at": 37,
 				"checks": [
@@ -1342,14 +1357,24 @@
 			"routes": {
 				"reduce": 22.0
 			},
-			"search_s": 1201.2,
+			"search_s": 1683.4,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 37,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.1875
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "45ee221d643cbe66a772221c8d3fa3d64f03f351fe439756de66a2f2b6ddfcee"
 	}
 }

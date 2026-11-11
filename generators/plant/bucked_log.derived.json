@@ -231,6 +231,7 @@
 	],
 	"effort": "full",
 	"id": "plant/bucked-log",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -305,7 +306,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0048000000000000004,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.052058
 				}
@@ -323,13 +324,15 @@
 			"checked_at": 39,
 			"drawn": {
 				"excess": 0.125,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001607
 			},
 			"error": 0.0018518518518518517,
 			"fraction": 0.052058,
 			"from_rung": 0,
-			"judged": "dcef574ff4ab1bbe500e649f3123dcd20b3947e92f353f10f710a11e47267ae9",
+			"judged": "34d44202854b1e6e50b112a55e05c09be673435dc911213d8dd6e6f9408b54c1",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.052 kept)",
@@ -362,19 +365,29 @@
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1817.0,
+			"peak_mb": 1818.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 4.0
 			},
-			"search_s": 820.1,
+			"search_s": 1204.5,
 			"searched": "recheck",
 			"surfaces": 4,
-			"surfaces_ceiling": 4
+			"surfaces_ceiling": 4,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 39,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.125
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "13703e0ef9ae1391b96ac4d387817c64e8a661ba3a7cfc3a4f4e0db5616bc5d9"
 	}
 }

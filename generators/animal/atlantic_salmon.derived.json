@@ -55,6 +55,7 @@
 	],
 	"effort": "full",
 	"id": "animal/atlantic-salmon",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -118,7 +119,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.12464
 				}
@@ -136,14 +137,16 @@
 			"checked_at": 9,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001439
 			},
 			"error": 0.001851851851851852,
 			"every_piece": true,
 			"fraction": 0.12464,
 			"from_rung": 0,
-			"judged": "eb0ea74d6b88b1e764468c3b217119d2c1a8101a13c448bbc5e0a561e9b31ec6",
+			"judged": "35a2b3108cbc492352f9271128adf59a6ad8bef86cdfc8373a8f92cc5c979859",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.125 kept)",
@@ -200,10 +203,20 @@
 			"routes": {
 				"reduce": 46.0
 			},
-			"search_s": 201.8,
+			"search_s": 290.5,
 			"searched": "recheck",
 			"surfaces": 20,
-			"surfaces_ceiling": 20
+			"surfaces_ceiling": 20,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"2": {
 			"budget": 10668,
@@ -225,7 +238,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.6987399999999999
 				}
@@ -238,14 +251,16 @@
 			"checked_at": 9,
 			"drawn": {
 				"excess": 0.125,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.005755
 			},
 			"error": 0.007407407407407408,
 			"every_piece": true,
 			"fraction": 0.6987399999999999,
 			"from_rung": 1,
-			"judged": "4e5011b82ff5c825ff3d595b96f94fdc1d0a560108732deff2f0bee815edd943",
+			"judged": "7c23e0ebe60d26e7ce4df8899e51b3d39ef532e7be79ccb0f05c58411038f605",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.699 kept)",
@@ -523,15 +538,25 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.125 kept), carried from rung 1 held at 4365, dearer than the 3050 taken"
 			],
-			"peak_mb": 556.0,
+			"peak_mb": 557.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 41
 			},
-			"search_s": 1889.2,
+			"search_s": 2494.7000000000003,
 			"searched": "search",
 			"surfaces": 4,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.125
+			}
 		},
 		"3": {
 			"budget": 2667,
@@ -544,7 +569,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.006070000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "kit",
 					"value": {}
 				},
@@ -553,7 +578,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.6987399999999999
 				}
@@ -567,14 +592,16 @@
 			"checked_at": 9,
 			"drawn": {
 				"excess": 0.0,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.02302
 			},
 			"error": 0.02962962962962963,
 			"every_piece": true,
 			"fraction": 0.6987399999999999,
 			"from_rung": 1,
-			"judged": "a4e5f5834f776a8766b6a15f89ec2fd2e99ff1bcfdfc5ddd227f14f6e54115c0",
+			"judged": "44406eedc2be8c6cefcfd4d30573b750ba16aed33715c3eb127c32bb06bfda72",
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -855,14 +882,24 @@
 			"routes": {
 				"reduce": 41
 			},
-			"search_s": 1984.4,
+			"search_s": 2720.6000000000004,
 			"searched": "search",
 			"surfaces": 4,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.125
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "6e25d5801505e5d9122df2212c29761cb9cd087a834584fe74f8813ea576ecfb"
 	}
 }

@@ -81,6 +81,7 @@
 	],
 	"effort": "full",
 	"id": "plant/pine-needle-duff",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -159,7 +160,7 @@
 				"luminance_sd": 0.1127,
 				"texel_m": 0.001852
 			},
-			"judged": "71e4a8a08830797b85e1cd2b3e816bebbe6e19c26a08f727f2d2273a409ec773",
+			"judged": "ffa1b50c37b411d7df3055d35248056b626332b567194e2141729097eee632fb",
 			"keep": {
 				"debris": 0.11764899999999996
 			},
@@ -188,15 +189,25 @@
 			],
 			"peak_mb": 583.0,
 			"route": "kit",
-			"search_s": 95.2,
+			"search_s": 121.7,
 			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
-			"tolerance": 0.001851851851851852
+			"tolerance": 0.001851851851851852,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 14,
+				"holds": false,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.0,
+				"unit": "pixels over",
+				"worst": null
+			}
 		}
 	},
 	"source": {
-		"deriver": "80137915bd36d0509017a68b17a365d3d2580a76ac8bea933883fe5202719a03",
+		"deriver": "c56528dc3bc7d7eda5a34d1aa23c2b2712627a16cf265e84991162d59b139fa5",
 		"generator": "88d617b2a1d61415b913413e25fa0dea8cd3e62c763dd339ad61e70d3b0f9543"
 	}
 }

@@ -51,6 +51,7 @@
 	],
 	"effort": "full",
 	"id": "built/water-keg",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -109,7 +110,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004540000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.8150499999999999
 				}
@@ -122,14 +123,16 @@
 			"checked_at": 9,
 			"drawn": {
 				"excess": 0.1875,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.0012779999999999998
 			},
 			"error": 0.0033680016267903304,
 			"every_piece": true,
 			"fraction": 0.8150499999999999,
 			"from_rung": 0,
-			"judged": "377abb21840f5df04d0ead057453347b5d31ba74376f7353174a5e5eea26dee7",
+			"judged": "847915411a72e5f7b0addb105ba1ed1c298feb5e39c7de181a152ca644649699",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.815 kept)",
@@ -168,15 +171,25 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'stave' is 22 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 380.0,
+			"peak_mb": 381.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 47.0
 			},
-			"search_s": 210.20000000000002,
+			"search_s": 312.40000000000003,
 			"searched": "recheck",
 			"surfaces": 7,
-			"surfaces_ceiling": 7
+			"surfaces_ceiling": 7,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.1875
+			}
 		},
 		"2": {
 			"atlas_bytes": 16777216,
@@ -222,7 +235,7 @@
 			"error": 0.013472006507161322,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "2ba6754bb8d4c3b1fd537099940dbdf805d8631fd07cb6dc036be6574b8cae44",
+			"judged": "f3105d197e20a60ce444838584504bebaee5433d6c1aa015c25f6606d2890d6a",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -234,17 +247,27 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 383.0,
+			"peak_mb": 385.0,
 			"route": "impostor",
-			"search_s": 137.5,
+			"search_s": 196.3,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 16
+			"tiles": 16,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.47340000000000004
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "de348d2344c615af46a81d8530db01e877c998580b87c6cfe6b47aad0b956759"
 	}
 }

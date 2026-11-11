@@ -57,6 +57,7 @@
 	],
 	"effort": "full",
 	"id": "plant/heather",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -126,7 +127,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "3f4bb7d5fce491e281f01cc75767c0ef128c8eddb2a245711079b51cdf28717f",
+			"judged": "289dd2cd9920aed976bd59af23d644aa065b7586fe616375601ffee2c4e2a961",
 			"keep": {
 				"flower": 0.3429999999999999,
 				"leaf": 0.03125
@@ -154,13 +155,23 @@
 				"REDUCE from rung 0 at {} seed 314: part 'litter' is 60 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 279 more groups)",
 				"BUDGET: the cheapest derivation that holds the picture costs 353426 (7.36x), over rung 1's budget 48007 x 1.5 = 72010 (shrub, 1.01 m)"
 			],
-			"peak_mb": 773.0,
+			"peak_mb": 785.0,
 			"route": "kit",
-			"search_s": 271.8,
+			"search_s": 368.90000000000003,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
-			"tolerance": 0.001851851851851852
+			"tolerance": 0.001851851851851852,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 10,
+				"holds": false,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.0,
+				"unit": "pixels over",
+				"worst": null
+			}
 		},
 		"2": {
 			"above_tolerance": true,
@@ -202,7 +213,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "db8bdf77eeae73fac59f6d6fbd84c87eb62befc7ddf46c1ecf6c1047a4e6c669",
+			"judged": "78e279f11f1ca0647a292c7127682effeeaf5c1dedd1921845367a91ff19fd7d",
 			"keep": {
 				"flower": 0.03125,
 				"leaf": 0.03125,
@@ -498,17 +509,27 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping leaf 0.031, flower 0.343), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 163 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00751 m; part 'shoot' changes its share of the picture by +0.0989 against 0.0450 allowed (its colour's share of the subject); part 'floret' changes its share of the picture by -0.1155 against 0.0450 allowed (its colour's share of the subject)",
 				"THIN: plant/heather does not declare `reads_density`"
 			],
-			"peak_mb": 778.0,
+			"peak_mb": 796.0,
 			"route": "kit",
-			"search_s": 1364.1000000000001,
+			"search_s": 1910.3000000000002,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
-			"tolerance": 0.007407407407407408
+			"tolerance": 0.007407407407407408,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 10,
+				"holds": false,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.0,
+				"unit": "pixels over",
+				"worst": null
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "d0e0325deff1cf29e01f8955b944981fcf2beeefdd35384bcd80491899772ac9"
 	}
 }

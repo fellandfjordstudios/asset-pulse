@@ -19,6 +19,7 @@
 	],
 	"effort": "full",
 	"id": "built/period-fishing-rod",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -87,7 +88,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "989ad17dc125fe600da0b165a0e277637af66ad49b5071920bfa7df8a7eb1afa",
+			"judged": "d4df089e2595ea8b23f0bfa7243606c7cd7e6cbe15e7a9e3ee5e66d8dca0a186",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -120,12 +121,22 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 308.0,
+			"peak_mb": 310.0,
 			"route": "kit",
-			"search_s": 27.3,
+			"search_s": 39.900000000000006,
 			"searched": "recheck",
 			"surfaces": 7,
-			"surfaces_ceiling": 7
+			"surfaces_ceiling": 7,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.3125
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -169,7 +180,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "6a2d0ea2be64ad82e0f84e00f2590a5c62ce14780b28de2e4aea569e4e5643d8",
+			"judged": "aae1cc9a84f59c05293e060d578f3cf04a04c21aa456c34443a474a34b586027",
 			"keep": {},
 			"material_transfer": {
 				"checked_at": 3,
@@ -285,12 +296,22 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0234 against 0.0227 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)"
 			],
-			"peak_mb": 267.0,
+			"peak_mb": 268.0,
 			"route": "kit",
-			"search_s": 393.20000000000005,
+			"search_s": 527.8000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"3": {
 			"atlas_bytes": 16777216,
@@ -336,7 +357,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f81062095c3fa58acfdcd3d74be936633d98d82ab9d5b3d8903248c941231ef7",
+			"judged": "4896c4f01828b3f5e959b3953c36cc4f39d08ed62b8f98a94cf59f0a5146553a",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -348,18 +369,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 270.0,
 			"route": "impostor",
-			"search_s": 16.5,
+			"search_s": 24.8,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 16
+			"tiles": 16,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.451
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "f54ac403d2aea72323a48c2ad34acddd7b1a0b29e6c1ae6c422873fb426f45a6"
 	}
 }

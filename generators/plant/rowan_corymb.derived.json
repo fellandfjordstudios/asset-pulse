@@ -87,6 +87,7 @@
 	],
 	"effort": "full",
 	"id": "plant/rowan-corymb",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -172,7 +173,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "2badbeb8bbec1c631efdeb3e7b4552a1e017aea49cd1ae344d7300f8f94c5527",
+			"judged": "6de0500e64c49e9a0d62d3467826765d413e5f9d86f178bb93ee771f949c3146",
 			"measured": {
 				"cost": 3436,
 				"coverage_rel": -0.04243,
@@ -197,16 +198,26 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/rowan-corymb does not declare `reads_density`"
 			],
-			"peak_mb": 285.0,
+			"peak_mb": 286.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 71.0
 			},
-			"search_s": 36.7,
+			"search_s": 55.400000000000006,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
-			"tolerance": 0.005730491830698033
+			"tolerance": 0.005730491830698033,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 15,
+				"holds": false,
+				"judge": "drawn",
+				"over": 10.0,
+				"tolerance": 0.0,
+				"unit": "pixels over",
+				"worst": 10.0
+			}
 		},
 		"2": {
 			"budget": 564,
@@ -228,7 +239,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.007640000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -237,14 +248,16 @@
 			"checked_at": 15,
 			"drawn": {
 				"excess": 0.375,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.003126
 			},
 			"error": 0.02292196732279213,
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "9f10f0377198d67c91bb09073f7966ffe89e1047127c0e6170572ea0243aebea",
+			"judged": "be3064fa3bd163dc898052d277a1bb609cc98212cbb67c7bae461b41b8cc16be",
 			"material_transfer": {
 				"checked_at": 15,
 				"checks": [
@@ -625,15 +638,25 @@
 			"not_taken": [
 				"REDUCE (every piece) to 0.700, re-checked at 3322: the finer rung's offer holds this band, where it was a miss"
 			],
-			"peak_mb": 289.0,
+			"peak_mb": 290.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 71.0
 			},
-			"search_s": 35.800000000000004,
+			"search_s": 54.1,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 15,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.375
+			}
 		},
 		"3": {
 			"budget": 141,
@@ -655,7 +678,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.007640000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -664,14 +687,16 @@
 			"checked_at": 15,
 			"drawn": {
 				"excess": 0.125,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.012504999999999999
 			},
 			"error": 0.09168786929116853,
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "44780da9935824e0bf8d1f8e9b0e08daa2ad364f926b7811faa8c3e1ee985e30",
+			"judged": "bdef389c4292ed78a8797952f0ce32f145bd80ebc8c31d4b0e8f16da8251b473",
 			"material_transfer": {
 				"checked_at": 15,
 				"checks": [
@@ -1052,19 +1077,29 @@
 			"not_taken": [
 				"REDUCE (every piece) to 0.700, re-checked at 2286: the finer rung's offer holds this band, where it was a miss"
 			],
-			"peak_mb": 289.0,
+			"peak_mb": 290.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 71.0
 			},
-			"search_s": 28.400000000000002,
+			"search_s": 40.400000000000006,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 15,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.125
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "c0aad19922a58b604b1d279ecfcc1c143cd643f39b92911554e0eb1e612b6b2c"
 	}
 }

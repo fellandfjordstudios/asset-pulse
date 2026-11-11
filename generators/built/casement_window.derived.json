@@ -129,6 +129,7 @@
 	],
 	"effort": "full",
 	"id": "built/casement-window",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -200,7 +201,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0053,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -216,13 +217,15 @@
 			"checked_at": 22,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.002356
 			},
 			"error": 0.001851851851851852,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "be5cc1932a67363e124ced46f30d94ebea4e7635e3ae1d9e3d17b2941bb85b1a",
+			"judged": "dbb28e98b79605de799e8ff544e80180502ec674627441929f48412cc07f2aba",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -255,15 +258,25 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 634, dearer than the 618 taken"
 			],
-			"peak_mb": 1054.0,
+			"peak_mb": 1055.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 8.0
 			},
-			"search_s": 263.0,
+			"search_s": 420.40000000000003,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 2
+			"surfaces_ceiling": 2,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 22,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -296,7 +309,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "e0508749bf7304f7bfeb50c71897642413b7c2e192e94f848a0be5999a1d3b51",
+			"judged": "54eb5afac030da72ab386cca10a161d1d42629a8457673320b4db0a0aedd5471",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -864,16 +877,26 @@
 				"REDUCE to its error cap 0.25x the band's (0.828 kept) held at 618, dearer than the 458 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 634, dearer than the 458 taken"
 			],
-			"peak_mb": 1054.0,
+			"peak_mb": 1055.0,
 			"route": "kit",
-			"search_s": 117.0,
+			"search_s": 174.3,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 22,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "fa5ba0a94019029fc94af20753feeff129e22dbcbbcdb52690b7b2b724709a2d"
 	}
 }

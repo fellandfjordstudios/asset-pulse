@@ -27,6 +27,7 @@
 	],
 	"effort": "full",
 	"id": "built/masthead-pennant",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -86,7 +87,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.007970000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.699278
 				}
@@ -99,13 +100,15 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001535
 			},
 			"error": 0.0018518518518518517,
 			"fraction": 0.699278,
 			"from_rung": 0,
-			"judged": "fe72d3fd4bb8e3af20620698a8eee1aba67524a9973a41cea5f2e09a287a518b",
+			"judged": "ee603cca92eef4b4fd186f5c829694f45d66e84d79509f32e8bea5f66aef8b2a",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.699 kept)",
@@ -142,16 +145,26 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 8 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 390.0,
+			"peak_mb": 391.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 1.0,
 				"reduce": 4.0
 			},
-			"search_s": 26.1,
+			"search_s": 41.400000000000006,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 5
+			"surfaces_ceiling": 5,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -196,7 +209,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "56d73732f274998bb0311b988af88a915c953586ec1c0356945beb38e878de59",
+			"judged": "1d538d417369fec61c584196bdf704c5facadf4edf6592ef2b50fd05c42de391",
 			"keep": {
 				"stitch": 0.03125
 			},
@@ -377,12 +390,22 @@
 				"REDUCE to its error cap 0.25x the band's (0.445 kept) held at 861, dearer than the 453 taken",
 				"REDUCE to its error cap 0.125x the band's (0.699 kept), carried from rung 1 held at 1249, dearer than the 453 taken"
 			],
-			"peak_mb": 390.0,
+			"peak_mb": 391.0,
 			"route": "kit",
-			"search_s": 22.200000000000003,
+			"search_s": 34.2,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.375
+			}
 		},
 		"3": {
 			"atlas_bytes": 1327104,
@@ -428,7 +451,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "b99d00ee3e1b2ebfed13081a251abbc3266e3498ad50862a1e46e0176cd36e63",
+			"judged": "1ab09a6adc2bbc8826e479794a614a1ed4082b3fab0db46b818bcf3cbecf156c",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -440,18 +463,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 390.0,
+			"peak_mb": 391.0,
 			"route": "impostor",
-			"search_s": 9.9,
+			"search_s": 15.600000000000001,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.3733
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
 		"generator": "b4fdf59156fd6b501a7f24e8bbade63074df3232da520fd1a8a36e79eea0d0fc"
 	}
 }
