@@ -146,7 +146,7 @@
 				"trace": "plant__yellow-rattle#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "plant__yellow-rattle#2.trace.jsonl"
 			}
 		}
@@ -199,10 +199,10 @@
 				"REDUCE from rung 0: none holds at 0.0026 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0148 against 0.0130 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0026",
 				"THIN: plant/yellow-rattle does not declare `reads_density`"
 			],
-			"peak_mb": 280.0,
+			"peak_mb": 245.0,
 			"route": "rung0",
-			"search_s": 34.5,
-			"searched": "recheck",
+			"search_s": 1.2000000000000002,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.002559238078251863,
@@ -211,7 +211,7 @@
 				"configurations": 19,
 				"holds": true,
 				"judge": "source",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.0,
 				"unit": "the source served",
 				"worst": 0.0
@@ -228,7 +228,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -241,7 +241,7 @@
 				"excess": 0.4375,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.003119
 			},
 			"error": 0.010236952313007452,
@@ -269,13 +269,13 @@
 				"picture": 0.00398
 			},
 			"measured_of": 1,
-			"peak_mb": 283.0,
+			"peak_mb": 244.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 33.0
 			},
-			"search_s": 33.6,
-			"searched": "recheck",
+			"search_s": 1.3,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -283,7 +283,7 @@
 				"configurations": 19,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.4375
@@ -292,7 +292,7 @@
 	},
 	"source": {
 		"children": "44d547a090d1d6db02065966cef135208db19691ed7a8cc5e612ff513d82197b",
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "3040c132a5ea498691511ad1f6e0bdcbdbc3c02dee5054af05bfa3fc9571e540"
 	}
 }

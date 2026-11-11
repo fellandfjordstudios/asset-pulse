@@ -99,6 +99,7 @@
 	],
 	"effort": "full",
 	"id": "stone/litter-stones",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -131,7 +132,7 @@
 				"trace": "stone__litter-stones#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 7,
+				"candidates": 2,
 				"trace": "stone__litter-stones#2.trace.jsonl"
 			}
 		}
@@ -156,7 +157,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.014310000000000002,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.29368299999999997
 				}
@@ -169,7 +170,9 @@
 			"checked_at": 17,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001883
 			},
 			"error": 0.001851851851851852,
@@ -186,6 +189,7 @@
 				"luminance_sd": 0.0585,
 				"texel_m": 0.001883
 			},
+			"judged": "d6210ca8841d4925ecefb1a3d0d199c70a56ce03fb0aa9234151a85647a1b43b",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.125x the band's (0.294 kept)",
@@ -219,18 +223,27 @@
 				"SUBSTITUTE: skipped by the prior -- judged 3 times for field subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form field --band 1)",
 				"KIT: skipped by the prior -- judged 3 times for field subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form field --band 1)"
 			],
-			"peak_mb": 1495.0,
+			"peak_mb": 1505.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 610.0
 			},
-			"search_s": 657.7,
+			"search_s": 668.1,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 2
+			"surfaces_ceiling": 2,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 17,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"2": {
-			"above_tolerance": true,
 			"budget": 10668,
 			"cancel_across": true,
 			"cancel_near": true,
@@ -241,7 +254,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.014310000000000002,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.29368299999999997
 				}
@@ -255,23 +268,15 @@
 			"checked_at": 17,
 			"drawn": {
 				"excess": 0.3125,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.007533
 			},
 			"error": 0.007407407407407408,
 			"fraction": 0.29368299999999997,
 			"from_rung": 0,
-			"ground": {
-				"albedo_linear": [
-					0.276,
-					0.24580000000000002,
-					0.20140000000000002
-				],
-				"band": 2,
-				"coverage": 0.058300000000000005,
-				"luminance_sd": 0.0584,
-				"texel_m": 0.007533
-			},
+			"judged": "122d500dfe3da636a2458473b42c8a6784b20a1753f2f496f94fe452d661c935",
 			"material_transfer": {
 				"checked_at": 17,
 				"checks": [
@@ -697,36 +702,34 @@
 				},
 				"picture": 0.014310000000000002
 			},
-			"miss": {
-				"cost_of_ceiling": 4.57180352455943,
-				"judge": "drawn",
-				"picture_over": 1.93185,
-				"px_over": null,
-				"route": "reduce",
-				"tier": 2
-			},
+			"measured_of": 1,
 			"not_taken": [
-				"SUBSTITUTE: skipped by the prior -- judged 3 times for field subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form field --band 2)",
-				"KIT: skipped by the prior -- judged 3 times for field subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form field --band 2)",
-				"REDUCE from rung 1, the derived band above: none holds at 0.0074 -- the finest tried (0.700) fails at {} seed 314: coverage changes -0.0343 against 0.0252 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
-				"REDUCE from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"roundness\":0.05} seed 314: coverage changes -0.0317 against 0.0252 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
-				"BUDGET: the cheapest derivation that holds the picture costs 48772 (4.57x), over rung 2's budget 10668 x 1.5 = 16002 (rock, 1.02 m)"
+				"REDUCE to its error cap 0.0312x the band's (0.294 kept), carried from rung 1, re-checked at 48772: the finer rung's offer holds this band, where it was a miss"
 			],
-			"peak_mb": 1666.0,
+			"peak_mb": 1658.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 610.0
 			},
-			"search_s": 3393.2000000000003,
-			"searched": "search",
+			"search_s": 6807.3,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tolerance": 0.007407407407407408
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 17,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		}
 	},
 	"source": {
 		"children": "a4223aec1decb21a16b04a588cef4c1663e8ca1264f265edbfc80301937752f1",
-		"deriver": "e5c197e41cd912718c2d52b8b2a171e98883ffad6b258da294a89ce3d9e4bd6f",
+		"deriver": "f7e5a4a74bedfa18c61f1c6b76fb9d6323d5d9d0eaa71bb985917eb7a009e812",
 		"generator": "9928090ca5e34948bef56dcda0ca9faceadf9683c081e28e3b424df622687cc4"
 	}
 }

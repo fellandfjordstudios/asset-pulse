@@ -2,146 +2,152 @@
 	"checked_at": [
 		{
 			"params": {},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
-				"radius_m": 0.02999999999999999
+				"radius_m": 0.03
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"radius_m": 1.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"elongation": 0.35
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"elongation": 1.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"flatness": 0.25
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"flatness": 1.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"joint_dip_deg": 0.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"joint_dip_deg": 90.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"joint_spread_deg": 0.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"joint_spread_deg": 60.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
-				"joint_sets": 2.0
+				"joint_sets": 2
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
-				"joint_sets": 4.0
+				"joint_sets": 4
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
-				"planes": 4.0
+				"planes": 4
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
-				"planes": 24.0
+				"planes": 24
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"arris_rounding": 0.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"arris_rounding": 0.6
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"roughness_m": 0.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"roughness_m": 0.005
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"chip_depth_m": 0.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"chip_depth_m": 0.02
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"chip_width_m": 0.003
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
-				"chip_width_m": 0.05999999999999999
+				"chip_width_m": 0.06
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {},
-			"seed": 315.0
+			"seed": 315
+		},
+		{
+			"params": {},
+			"seed": 3
 		}
 	],
+	"effort": "full",
 	"id": "stone/quarry-block",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -167,51 +173,30 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 24.0,
-		"sampled": 24.0,
-		"sets": 24.0
+		"old_key_sets": 25,
+		"sampled": 25,
+		"sets": 25
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"2": {
+				"candidates": 0,
+				"trace": "stone__quarry-block#2.trace.jsonl"
+			}
+		}
 	},
 	"probe": {
 		"params": {},
-		"seed": 314.0
+		"seed": 314
 	},
-	"replay": {
-		"2": "9079071cea1d3c47831dbd5cee810df992091b2fca90e7e8eef86cfedb0a8880"
-	},
-	"rungs": {
-		"2": {
-			"budget": 4101.0,
-			"checked_at": 24.0,
-			"drawn": {
-				"excess": 0.0,
-				"judge": "drawn",
-				"pixel_m": 0.010293
-			},
-			"error": 0.02370782451131808,
-			"fraction": 1.0,
-			"from_rung": 0.0,
-			"keep": {},
-			"measured": {
-				"cost": 3932.0,
-				"coverage_rel": 0.01246,
-				"floor": 0.00527,
-				"part_shift": {},
-				"picture": 0.01198
-			},
-			"measured_of": 3.0,
-			"not_taken": [
-				"REDUCE to 0.010 held at 132, cheaper than the 3932 taken, but a replay of rung 0: KIT is within budget and builds directly",
-				"KIT (its own build at 2 of the band's pixels) held at 954, cheaper than the 3932 taken, but a replay of rung 0: KIT is within budget and builds directly"
-			],
-			"route": "kit",
-			"surfaces": 1.0,
-			"surfaces_ceiling": 1.0
-		}
-	},
+	"replay": {},
+	"rungs": {},
 	"source": {
-		"deriver": "7bafaa0f581735691893ae9ecb3b0cc5f1c7dc8c206aa31dd6d5efc8681d3af5",
-		"generator": "314781ab1dc977044979c936fade59d40140d8ba02aeac6ea7fc9d2c3363e27d"
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"generator": "57d93ccc0560fe339bcee1b773169c559b994faae89a7825cd40d6ca3869d091"
 	}
 }

@@ -34,7 +34,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__primus-stove#1.trace.jsonl"
 			}
 		}
@@ -67,7 +67,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0046300000000000004,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.16806999999999994
 				}
@@ -85,7 +85,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001315
 			},
 			"error": 0.005894002846883078,
@@ -112,16 +112,16 @@
 			"measured": {
 				"cost": 3526,
 				"coverage_rel": -0.01353,
-				"floor": 0.0046300000000000004,
+				"floor": 0.00463,
 				"part_shift": {
-					"brass": -0.0038300000000000005,
-					"burner": -0.0008500000000000001,
-					"knob": -0.0008700000000000001,
+					"brass": -0.00383,
+					"burner": -0.00085,
+					"knob": -0.00087,
 					"stamp": 4e-05,
-					"steel": -0.0039900000000000005,
+					"steel": -0.00399,
 					"tank": 0.00727
 				},
-				"picture": 0.0046300000000000004
+				"picture": 0.00463
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -130,13 +130,13 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 6914, dearer than the 3526 taken"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 259.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 33.5,
-			"searched": "recheck",
+			"search_s": 2.2,
+			"searched": "replay",
 			"surfaces": 6,
 			"surfaces_ceiling": 6,
 			"verdict": {
@@ -144,7 +144,7 @@
 				"configurations": 3,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -152,7 +152,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "f8d33f47c37afd82b47ae9937afff8b4331847cc1d383722c7570fd2672d683c"
 	}
 }

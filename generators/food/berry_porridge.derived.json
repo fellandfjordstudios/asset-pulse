@@ -115,9 +115,9 @@
 			"measured": {
 				"cost": 7845,
 				"coverage_rel": -0.00116,
-				"floor": 0.004710000000000001,
+				"floor": 0.00471,
 				"part_shift": {},
-				"picture": 0.004710000000000001
+				"picture": 0.00471
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -126,10 +126,10 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED (its parts at their own rungs, joined) held at 23507, dearer than the 7845 taken"
 			],
-			"peak_mb": 284.0,
+			"peak_mb": 276.0,
 			"route": "kit",
-			"search_s": 76.7,
-			"searched": "recheck",
+			"search_s": 4.3,
+			"searched": "replay",
 			"surfaces": 10,
 			"surfaces_ceiling": 10,
 			"verdict": {
@@ -146,7 +146,7 @@
 	},
 	"source": {
 		"children": "fb61b1c4f98bd2009c8b93b89b3f2d7a418f4cb81cc74da4a1f97ceaa5f8843c",
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "ef366bc1b424f41f0fd3466920c91b40c853bf3394c43477801a993a02bf860c"
 	}
 }

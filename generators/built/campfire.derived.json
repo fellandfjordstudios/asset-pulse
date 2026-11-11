@@ -177,6 +177,7 @@
 	],
 	"effort": "full",
 	"id": "built/campfire",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -256,7 +257,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00417,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.52449
 				}
@@ -269,14 +270,16 @@
 			"checked_at": 20,
 			"drawn": {
 				"excess": 0.4375,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.00231
 			},
 			"error": 0.001851851851851852,
 			"every_piece": true,
 			"fraction": 0.52449,
 			"from_rung": 0,
-			"judged": "06c8402e0241c89b4d0f12e0f11b5eb3c799aebe0f10ffcf196705f90f6b35c6",
+			"judged": "13cce297ce87a86adb09e3be8183c812ae8687cbd5db3297c059b7c7b58adf52",
 			"measured": {
 				"cost": 61038,
 				"coverage_rel": -0.0011500000000000002,
@@ -298,15 +301,25 @@
 				"REDUCE from rung 0 at {\"alight\":1,\"burnt_fraction\":0.28,\"split_fraction\":0.6} seed 314: element 0's part 'bark' is 85 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1059.0,
+			"peak_mb": 1057.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 10.0
 			},
-			"search_s": 1557.0,
+			"search_s": 2357.8,
 			"searched": "recheck",
 			"surfaces": 6,
-			"surfaces_ceiling": 6
+			"surfaces_ceiling": 6,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 20,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4375
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -329,7 +342,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.01349,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.5939249999999999
 				}
@@ -342,14 +355,16 @@
 			"checked_at": 20,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.00924
 			},
 			"error": 0.007407407407407408,
 			"every_piece": true,
 			"fraction": 0.5939249999999999,
 			"from_rung": 1,
-			"judged": "b5a1efa60b1056b247a1d10616d1ebadbee5977e6eaf6d20f22b808ae47f4a02",
+			"judged": "47e86e145afd40ff601c5f00f135840b2be3d9f68ee16ec9acaca7cec988ac36",
 			"material_transfer": {
 				"checked_at": 20,
 				"checks": [
@@ -855,15 +870,25 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.524 kept), carried from rung 1 held at 61038, dearer than the 36252 taken"
 			],
-			"peak_mb": 1153.0,
+			"peak_mb": 1158.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 10.0
 			},
-			"search_s": 7295.3,
+			"search_s": 7581.1,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 20,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"3": {
 			"atlas_bytes": 37748736,
@@ -909,7 +934,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "9eed524fcb710515c025806fdee7f34c8064e1c5d5ccad8b9c2f69f3f2ce2eb2",
+			"judged": "a578123df469b4c875d7ea0ca5239067e9f8a8ac7c3317b31cee3e2040d01666",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -921,18 +946,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 1112.0,
+			"peak_mb": 1113.0,
 			"route": "impostor",
-			"search_s": 399.40000000000003,
+			"search_s": 349.8,
 			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 24
+			"tiles": 24,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 20,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.49010000000000004
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "3ca22412e90796ef02fea566f2af506f9cd914bd3a477bec3d7b91f5a3664107"
 	}
 }

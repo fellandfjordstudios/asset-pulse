@@ -51,6 +51,7 @@
 	],
 	"effort": "full",
 	"id": "built/fodder-bale",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -133,7 +134,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "06d8b9308ed7d098b9cb2ed5553c0fe56d17fe5bb37dadb0fc4dc4aa6b98e2e6",
+			"judged": "243975c6a4926a2558966fa38a677eaf3e897027bf55ce3143a31982faf46545",
 			"keep": {
 				"blade": 0.03125,
 				"fibre": 0.16806999999999994
@@ -162,13 +163,23 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"BUDGET: the cheapest derivation that holds the picture costs 235584 (6.02x), over rung 1's budget 39117 x 1.5 = 58675 (made, 0.86 m)"
 			],
-			"peak_mb": 537.0,
+			"peak_mb": 533.0,
 			"route": "kit",
-			"search_s": 131.20000000000002,
+			"search_s": 186.70000000000002,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
-			"tolerance": 0.001851851851851852
+			"tolerance": 0.001851851851851852,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": false,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.0,
+				"unit": "pixels over",
+				"worst": null
+			}
 		},
 		"2": {
 			"above_tolerance": true,
@@ -216,7 +227,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "a49d1b883042566e2c2552ff140cc9460edba34d7682c36a4c970d3332d9331e",
+			"judged": "d92b0ab7edaf86395eee38ee87f806cc582c3131e4ab520822e31445fdec64f1",
 			"material_transfer": {
 				"checked_at": 9,
 				"checks": [
@@ -483,13 +494,23 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping blade 0.031, fibre 0.168), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: part 'fodder' changes its share of the picture by +0.0700 against 0.0473 allowed (its colour's share of the subject); part 'stalk_pale' changes its share of the picture by -0.0803 against 0.0473 allowed (its colour's share of the subject); part 'stalk_dark' changes its share of the picture by -0.0518 against 0.0473 allowed (its colour's share of the subject)",
 				"BUDGET: the cheapest derivation that holds the picture costs 224608 (22.97x), over rung 2's budget 9779 x 1.5 = 14668 (made, 0.86 m)"
 			],
-			"peak_mb": 546.0,
+			"peak_mb": 544.0,
 			"route": "thin",
-			"search_s": 940.6,
+			"search_s": 1287.9,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 1,
-			"tolerance": 0.007407407407407408
+			"tolerance": 0.007407407407407408,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": false,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.0,
+				"unit": "pixels over",
+				"worst": null
+			}
 		},
 		"3": {
 			"atlas_bytes": 4194304,
@@ -535,7 +556,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "191009ff77a4aca702fa791a891cff87d28e2df2f0df21b829cc5197c1db14d4",
+			"judged": "847dc177fd54b24dfc370e2379f709d6867f6a29b1d08652e005dc42981c3ebb",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -547,19 +568,29 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 654.0,
+			"peak_mb": 650.0,
 			"route": "impostor",
-			"search_s": 336.70000000000005,
+			"search_s": 448.40000000000003,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 8
+			"tiles": 8,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.49460000000000004
+			}
 		}
 	},
 	"source": {
 		"children": "56b39f70e77b2f128d86165ba22a145495f75997ab6fb318283e31b8059c97e0",
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "544d4bce26780c054724aa44fd24c2e5d6211ec20f3547efe7ba45879d7bfc67"
 	}
 }

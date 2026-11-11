@@ -111,7 +111,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__rorbu-panel#1.trace.jsonl"
 			},
 			"2": {
@@ -154,7 +154,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00404,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.8244269999999999
 				}
@@ -169,7 +169,7 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.00463
 			},
 			"error": 0.0018518518518518517,
@@ -210,13 +210,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 786, dearer than the 648 taken"
 			],
-			"peak_mb": 650.0,
+			"peak_mb": 245.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 133.6,
-			"searched": "recheck",
+			"search_s": 0.4,
+			"searched": "replay",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"verdict": {
@@ -224,7 +224,7 @@
 				"configurations": 14,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.0
@@ -281,7 +281,7 @@
 			},
 			"measured": {
 				"cost": 82,
-				"coverage_rel": -0.00024000000000000003,
+				"coverage_rel": -0.00024,
 				"floor": 0.00438,
 				"part_shift": {},
 				"picture": 0.00438
@@ -295,10 +295,10 @@
 				"REDUCE (every piece) to 0.700 held at 550, dearer than the 82 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 786, dearer than the 82 taken"
 			],
-			"peak_mb": 650.0,
+			"peak_mb": 243.0,
 			"route": "kit",
-			"search_s": 26.6,
-			"searched": "recheck",
+			"search_s": 0.2,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -374,11 +374,11 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 786, dearer than the 2 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 82, dearer than the 2 taken"
 			],
-			"peak_mb": 650.0,
+			"peak_mb": 243.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 11.4,
-			"searched": "recheck",
+			"search_s": 0.1,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -394,7 +394,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "7175aa0176aa663fc00ba4defdda819a9e743c41b759794f8dea90c7eccad29f"
 	}
 }

@@ -30,7 +30,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "food__heart-waffles#1.trace.jsonl"
 			}
 		}
@@ -64,7 +64,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.005790000000000001,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.01384128720099999
 				}
@@ -82,7 +82,7 @@
 				"excess": 0.4375,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0012959999999999998
 			},
 			"error": 0.006846254626791326,
@@ -92,14 +92,14 @@
 			"measured": {
 				"cost": 10682,
 				"coverage_rel": -0.01727,
-				"floor": 0.004410000000000001,
+				"floor": 0.00441,
 				"part_shift": {
 					"cream": -0.00134,
-					"crumb": -0.0016400000000000002,
-					"jam": -0.0025800000000000003,
-					"waffle": 0.0048200000000000005
+					"crumb": -0.00164,
+					"jam": -0.00258,
+					"waffle": 0.00482
 				},
-				"picture": 0.005790000000000001
+				"picture": 0.00579
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -107,13 +107,13 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 148376, dearer than the 10682 taken"
 			],
-			"peak_mb": 477.0,
+			"peak_mb": 455.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 8.0
 			},
-			"search_s": 361.3,
-			"searched": "recheck",
+			"search_s": 73.60000000000001,
+			"searched": "replay",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -121,7 +121,7 @@
 				"configurations": 3,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.4375
@@ -129,7 +129,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "2bf60bb9b05c449b41353b0560e18fcef8588e350f53a5a440fb08d24192a7c1"
 	}
 }

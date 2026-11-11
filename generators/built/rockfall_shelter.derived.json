@@ -443,7 +443,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__rockfall-shelter#1.trace.jsonl"
 			}
 		}
@@ -467,7 +467,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00493,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.608533
 				},
@@ -491,7 +491,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.011481
 			},
 			"error": 0.0018518518518518521,
@@ -514,15 +514,15 @@
 			},
 			"measured": {
 				"cost": 3908,
-				"coverage_rel": -0.004560000000000001,
+				"coverage_rel": -0.00456,
 				"floor": 0.00493,
 				"part_shift": {
 					"litter": -0.00221,
-					"panel": 0.0015300000000000001,
-					"panel_foot": 0.0006500000000000001,
+					"panel": 0.00153,
+					"panel_foot": 0.00065,
 					"roof": 0.00304,
 					"screen": 0.00544,
-					"timber": -0.008010000000000001,
+					"timber": -0.00801,
 					"timber_foot": -0.00071
 				},
 				"picture": 0.00493
@@ -532,13 +532,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'roof' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {\"bays\":1} seed 314: the picture changes at the drawn size: 24 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00459 m"
 			],
-			"peak_mb": 2083.0,
+			"peak_mb": 304.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 1983.2,
-			"searched": "recheck",
+			"search_s": 19.3,
+			"searched": "replay",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"verdict": {
@@ -546,7 +546,7 @@
 				"configurations": 62,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -554,7 +554,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "5349d539507f9f93154559af6329db7e14da00de64a66f0c8f7cfe63dc5f0a65"
 	}
 }

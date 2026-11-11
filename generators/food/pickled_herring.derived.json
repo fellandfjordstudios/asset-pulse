@@ -44,11 +44,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "food__pickled-herring#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "food__pickled-herring#2.trace.jsonl"
 			}
 		}
@@ -82,7 +82,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004030000000000001,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.295707
 				}
@@ -97,7 +97,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001297
 			},
 			"error": 0.0033811750360215834,
@@ -122,22 +122,22 @@
 			},
 			"measured": {
 				"cost": 13350,
-				"coverage_rel": 0.0005200000000000001,
-				"floor": 0.004030000000000001,
+				"coverage_rel": 0.00052,
+				"floor": 0.00403,
 				"part_shift": {
 					"bay": 0.00018,
-					"brine": 0.0017800000000000001,
-					"flesh": 0.0011500000000000002,
-					"glass": 0.0024500000000000004,
+					"brine": 0.00178,
+					"flesh": 0.00115,
+					"glass": 0.00245,
 					"metal": 0.00067,
 					"onion": -0.00285,
-					"onion_skin": -0.004580000000000001,
-					"porcelain": 0.00024000000000000003,
+					"onion_skin": -0.00458,
+					"porcelain": 0.00024,
 					"seal": -2e-05,
 					"skin": 0.00116,
-					"spice": -0.00048000000000000007
+					"spice": -0.00048
 				},
-				"picture": 0.004030000000000001
+				"picture": 0.00403
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -145,13 +145,13 @@
 				"KIT: none holds at 0.0034 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00130 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 318.0,
+			"peak_mb": 277.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 100.0
 			},
-			"search_s": 427.3,
-			"searched": "recheck",
+			"search_s": 10.3,
+			"searched": "replay",
 			"surfaces": 11,
 			"surfaces_ceiling": 11,
 			"verdict": {
@@ -159,7 +159,7 @@
 				"configurations": 5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -186,7 +186,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.03586,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.563596
 				}
@@ -206,7 +206,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.005187
 			},
 			"error": 0.013524700144086334,
@@ -214,7 +214,7 @@
 			"from_rung": 1,
 			"judged": "698f8fe1746ce12b108f0959328c26dfa74cd14e95af551e0aef1b090316ce40",
 			"material_transfer": {
-				"checked_at": 5,
+				"checked_at": 5.0,
 				"checks": [
 					{
 						"holds": true,
@@ -231,12 +231,12 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.11063015460968018,
-							0.11866408586502075,
+							0.11866408586502077,
 							0.1144888699054718
 						],
 						"variance_before": [
 							0.11063015460968018,
-							0.11866408586502075,
+							0.11866408586502077,
 							0.1144888699054718
 						]
 					},
@@ -254,14 +254,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.11068636178970337,
+							0.11068636178970336,
 							0.11872819066047668,
-							0.11456140875816345
+							0.11456140875816344
 						],
 						"variance_before": [
-							0.11068636178970337,
+							0.11068636178970336,
 							0.11872819066047668,
-							0.11456140875816345
+							0.11456140875816344
 						]
 					},
 					{
@@ -280,12 +280,12 @@
 						"variance_after": [
 							0.11063095927238464,
 							0.11868461966514587,
-							0.11451524496078491
+							0.11451524496078493
 						],
 						"variance_before": [
 							0.11063095927238464,
 							0.11868461966514587,
-							0.11451524496078491
+							0.11451524496078493
 						]
 					},
 					{
@@ -302,14 +302,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.11061456799507141,
+							0.1106145679950714,
 							0.11863058805465698,
-							0.11444512009620667
+							0.11444512009620668
 						],
 						"variance_before": [
-							0.11061456799507141,
+							0.1106145679950714,
 							0.11863058805465698,
-							0.11444512009620667
+							0.11444512009620668
 						]
 					},
 					{
@@ -326,14 +326,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.11059620976448059,
-							0.11862063407897949,
-							0.11444491147994995
+							0.1105962097644806,
+							0.11862063407897948,
+							0.11444491147994997
 						],
 						"variance_before": [
-							0.11059620976448059,
-							0.11862063407897949,
-							0.11444491147994995
+							0.1105962097644806,
+							0.11862063407897948,
+							0.11444491147994997
 						]
 					}
 				],
@@ -342,8 +342,8 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 7524,
-				"coverage_rel": -0.011370000000000002,
-				"floor": 0.004030000000000001,
+				"coverage_rel": -0.01137,
+				"floor": 0.00403,
 				"part_shift": {},
 				"picture": 0.03586
 			},
@@ -355,13 +355,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.125x the band's (0.296 kept), carried from rung 1 held at 13350, dearer than the 7524 taken"
 			],
-			"peak_mb": 326.0,
+			"peak_mb": 277.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 100.0
 			},
-			"search_s": 329.70000000000005,
-			"searched": "recheck",
+			"search_s": 10.9,
+			"searched": "replay",
 			"surfaces": 6,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -369,7 +369,7 @@
 				"configurations": 5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -377,7 +377,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "7931a854fb19ed33c0212dd418fd7dc3b5b3cd84870f4e45063f04efe0a727e3"
 	}
 }

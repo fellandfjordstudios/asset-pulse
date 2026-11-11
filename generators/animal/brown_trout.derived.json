@@ -55,6 +55,7 @@
 	],
 	"effort": "full",
 	"id": "animal/brown-trout",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -113,7 +114,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.145195
 				}
@@ -131,13 +132,15 @@
 			"checked_at": 9,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001302
 			},
 			"error": 0.0037048017894693638,
 			"fraction": 0.145195,
 			"from_rung": 0,
-			"judged": "40ac32d47c83e97d580cc6d76c420bf9084282096c42d1417b08085c03dbc158",
+			"judged": "993702d41bb4a4f9035ec50a22930bcf0f80d464dc1898dd072b0bef863b4eee",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.125x the band's (0.145 kept)",
@@ -193,15 +196,25 @@
 				"KIT: none holds at 0.0037 -- the finest tried (1.000) fails at {\"girth_ratio\":0.4} seed 314: part 'ventral_skin' changes its share of the picture by -0.0461 against 0.0305 allowed (its colour's share of the subject)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 441.0,
+			"peak_mb": 436.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 132.0
 			},
-			"search_s": 133.70000000000002,
+			"search_s": 189.3,
 			"searched": "recheck",
 			"surfaces": 25,
-			"surfaces_ceiling": 25
+			"surfaces_ceiling": 25,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"2": {
 			"budget": 2687,
@@ -214,7 +227,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00423,
-					"px_over": null,
+					"px_over": 0,
 					"route": "kit",
 					"value": {}
 				},
@@ -223,7 +236,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.01067,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.08235429999999996
 				}
@@ -239,13 +252,15 @@
 			"checked_at": 9,
 			"drawn": {
 				"excess": 0.3125,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.005208
 			},
 			"error": 0.014819207157877455,
 			"fraction": 0.08235429999999996,
 			"from_rung": 1,
-			"judged": "428c9301e903d971ff6622b57cb0eecc2fe5ee70b8ab17feedbc224f67b7eb14",
+			"judged": "4d5a344a80f0e9eddaacb0b5dab013c1a1c0c0f061e1c0519edf63b3a499177c",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.082",
@@ -526,19 +541,29 @@
 				"KIT (its own build at 2 of the band's pixels) held at 20458, dearer than the 2276 taken",
 				"REDUCE to its error cap 0.0312x the band's (0.145 kept), carried from rung 1 held at 3780, dearer than the 2276 taken"
 			],
-			"peak_mb": 443.0,
+			"peak_mb": 438.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 99
 			},
-			"search_s": 3332.5,
+			"search_s": 4520.7,
 			"searched": "search",
 			"surfaces": 5,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.3125
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "c8451edb551bcc0445899d478b5dfc01cef8bc6cb7aae9c5fe6466c575e4fe16"
 	}
 }

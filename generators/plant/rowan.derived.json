@@ -291,6 +291,7 @@
 	],
 	"effort": "full",
 	"id": "plant/rowan",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -424,7 +425,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "b0dd6296b280638ac481dac17c75bca8d69ea8ee3da59e5bf704f04c9856837f",
+			"judged": "3c8da3127abc89c0f2e63c838e4c505785674b29757b3a2a5a4038b15d6baaee",
 			"keep": {
 				"branchlet": 0.03125,
 				"corymb": 0.7,
@@ -468,13 +469,23 @@
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 4874 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00662 m; coverage changes +0.0297 against 0.0237 allowed (a one-pixel shrink all round)",
 				"BUDGET: the cheapest derivation that holds the picture costs 182608 (4.28x), over rung 1's budget 42673 x 1.5 = 64009 (tree, 3.57 m)"
 			],
-			"peak_mb": 1678.0,
+			"peak_mb": 1681.0,
 			"route": "kit",
-			"search_s": 828.8000000000001,
+			"search_s": 1287.6000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
-			"tolerance": 0.0018518518518518517
+			"tolerance": 0.0018518518518518517,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 49,
+				"holds": false,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.0,
+				"unit": "pixels over",
+				"worst": null
+			}
 		},
 		"2": {
 			"above_tolerance": true,
@@ -527,7 +538,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "08468f4337fac132b05f43fbf44a589a03132f09570838bde06cafb3f4032594",
+			"judged": "de68caf6b9042f91dbba9430c3c8fa4dfce00792e42c7b763e9298d07e103b4e",
 			"keep": {
 				"branchlet": 0.16806999999999994,
 				"corymb": 0.16806999999999994,
@@ -1763,13 +1774,23 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping shoot 0.031, pome 0.031, branchlet 0.031, corymb 0.700), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.02648 m; part 'bark' changes its share of the picture by -0.0472 against 0.0456 allowed (its colour's share of the subject)",
 				"BUDGET: the cheapest derivation that holds the picture costs 145504 (13.64x), over rung 2's budget 10668 x 1.5 = 16002 (tree, 3.57 m)"
 			],
-			"peak_mb": 1680.0,
+			"peak_mb": 1747.0,
 			"route": "kit",
-			"search_s": 264.6,
+			"search_s": 541.8000000000001,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
-			"tolerance": 0.007407407407407407
+			"tolerance": 0.007407407407407407,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 49,
+				"holds": false,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.0,
+				"unit": "pixels over",
+				"worst": null
+			}
 		},
 		"3": {
 			"atlas_bytes": 37748736,
@@ -1815,7 +1836,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "6a1812d78139fa5d2029c109e80032ff1b96e3272efec59ba4c6587afcc1beb9",
+			"judged": "f9796384a6610b264b54194982668791919e7c0e95156cdddd7477580e900954",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -1827,18 +1848,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 2609.0,
+			"peak_mb": 2617.0,
 			"route": "impostor",
-			"search_s": 1098.5,
+			"search_s": 2767.4,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 24
+			"tiles": 24,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 49,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.43970000000000004
+			}
 		}
 	},
 	"source": {
 		"children": "f1c8429e2e368897853965e9c8c0c6be92cda8e0626d674d6eb6174db8495b78",
-		"deriver": "be8490ce6a1737161f808fe6a7e79f34e9550ed7303ce043b0a0e2e25a1a4420",
+		"deriver": "5af2eef00da0d4314bbfd5a1b8fa3e49918b45d2e01626e76344475c95d04263",
 		"generator": "44cd04a916e62aa292a5a3930a4602ddd2e9c4290ad21cefcd06012c5b07d94a"
 	}
 }

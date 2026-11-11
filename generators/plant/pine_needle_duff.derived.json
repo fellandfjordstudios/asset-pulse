@@ -187,10 +187,10 @@
 				"REDUCE from rung 0: nothing to try; the error ladder: nothing to try",
 				"THIN: plant/pine-needle-duff does not declare `reads_density`"
 			],
-			"peak_mb": 583.0,
+			"peak_mb": 564.0,
 			"route": "kit",
-			"search_s": 121.7,
-			"searched": "recheck",
+			"search_s": 15.0,
+			"searched": "replay",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"tolerance": 0.001851851851851852,
@@ -207,7 +207,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c56528dc3bc7d7eda5a34d1aa23c2b2712627a16cf265e84991162d59b139fa5",
+		"deriver": "f7e5a4a74bedfa18c61f1c6b76fb9d6323d5d9d0eaa71bb985917eb7a009e812",
 		"generator": "88d617b2a1d61415b913413e25fa0dea8cd3e62c763dd339ad61e70d3b0f9543"
 	}
 }

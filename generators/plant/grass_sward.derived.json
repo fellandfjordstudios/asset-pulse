@@ -4,19 +4,19 @@
 			"params": {
 				"extent_m": 0.12
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"extent_m": 0.06
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"extent_m": 0.48
 			},
-			"seed": 314.0,
+			"seed": 314,
 			"short_of": {
 				"end": 8.0,
 				"param": "extent_m",
@@ -28,58 +28,66 @@
 				"extent_m": 0.12,
 				"spacing_m": 0.006
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"canopy_height_m": 0.02,
 				"extent_m": 0.12
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"canopy_height_m": 0.45,
 				"extent_m": 0.12
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"extent_m": 0.12,
 				"height_spread": 0.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"extent_m": 0.12,
 				"height_spread": 1.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"extent_m": 0.12,
 				"senescent_fraction": 0.0
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"extent_m": 0.12,
 				"senescent_fraction": 0.45
 			},
-			"seed": 314.0
+			"seed": 314
 		},
 		{
 			"params": {
 				"extent_m": 0.12
 			},
-			"seed": 315.0
+			"seed": 315
+		},
+		{
+			"params": {
+				"extent_m": 0.12
+			},
+			"seed": 3
 		}
 	],
+	"effort": "full",
 	"id": "plant/grass-sward",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -92,25 +100,26 @@
 			"structural",
 			"structural",
 			"structural",
+			"seed",
 			"seed"
 		],
-		"old_key_sets": 11.0,
-		"sampled": 11.0,
-		"sets": 11.0
+		"old_key_sets": 12,
+		"sampled": 12,
+		"sets": 12
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0.0,
+				"candidates": 14,
 				"trace": "plant__grass-sward#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0.0,
+				"candidates": 17,
 				"trace": "plant__grass-sward#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0.0,
+				"candidates": 1,
 				"trace": "plant__grass-sward#3.trace.jsonl"
 			}
 		}
@@ -119,129 +128,228 @@
 		"params": {
 			"extent_m": 0.12
 		},
-		"seed": 314.0
+		"seed": 314
 	},
 	"replay": {
-		"1": "cb2b9dcd8e61648092ef6e9a68eb3446bdaded2d406516de4c0181b498d8daac",
-		"2": "bf18b1fc58d7f043c2a086314a320207c6b27ff6e2d1648f129e878b367f7746",
-		"3": "c81845a561e82bd054ecc92dab859681700a8d267bf0c4f09509b5420d323c8e"
+		"1": "f7685d2f2ba1747871123cff3815d3571c7b00ccc80a68c45f4dbe5465ca6fcd",
+		"2": "365d132e541122c1043a00c48b6c15ba8173a2c9b1d6c118d50af63a6d0a2acf",
+		"3": "f818eccca965a9a978a4fc85ef6c14b50ed503da07c2bcf96f2265251877ce1e"
 	},
 	"rungs": {
 		"1": {
-			"above_tolerance": true,
-			"budget": 13108.0,
-			"checked_at": 11.0,
+			"budget": 13108,
+			"candidates": [
+				{
+					"cost": 9018,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.022250000000000002,
+					"px_over": 13,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 7352,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.26478,
+					"px_over": 5425,
+					"route": "reduce",
+					"value": 0.7
+				},
+				{
+					"cost": 12150,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.0,
+					"px_over": null,
+					"route": "rung0",
+					"value": 1.0
+				}
+			],
+			"checked_at": 12,
 			"error": -1.0,
 			"fraction": 1.0,
-			"from_rung": 0.0,
-			"keep": {},
+			"from_rung": 0,
+			"judged": "93a6c764ab3a8bce4481990064b50caecbbcc8e40bad69b12af3fc060ff233f0",
 			"measured": {
-				"cost": 9018.0,
-				"coverage_rel": 0.00424,
-				"floor": 0.00474,
+				"cost": 12150,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
 				"part_shift": {},
-				"picture": 0.06447
-			},
-			"measured_of": 2.0,
-			"miss": {
-				"cost_of_ceiling": 0.6879768080561489,
-				"judge": "drawn",
-				"picture_over": 28.174246810367222,
-				"px_over": null,
-				"route": "kit",
-				"tier": 1.0
+				"picture": 0.0
 			},
 			"not_taken": [
+				"KIT: none holds at 0.0023 -- the finest tried (1.000) fails at {\"extent_m\":0.12} seed 314: the picture changes at the drawn size: 13 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00071 m",
+				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.0824, cover 1.00: 24158 pixel(s) differ at the drawn size at {\"extent_m\":0.12} seed 314 (worst 0.52)",
 				"REDUCE from rung 0 at {\"extent_m\":0.12} seed 314: element 4's part 'body' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 15 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0023 -- the finest tried (0.700) fails at {\"extent_m\":0.12} seed 314: the picture moves 0.2269 of the extent against 0.0023 allowed (one pixel at the rung's near distance; raster floor 0.0044); coverage changes -0.2102 against 0.0264 allowed (a one-pixel shrink all round)",
-				"KIT: none holds at 0.0023 -- the finest tried (1.000) fails at {\"extent_m\":0.12} seed 314: the picture moves 0.0222 of the extent against 0.0023 allowed (one pixel at the rung's near distance; raster floor 0.0044)",
+				"REDUCE (every piece) from rung 0: none holds at 0.0023 -- the finest tried (0.700) fails at {\"extent_m\":0.12} seed 314: the picture changes at the drawn size: 5425 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00071 m; coverage changes -0.2233 against 0.0264 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0023",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/grass-sward does not declare `reads_density`"
 			],
-			"route": "kit",
-			"surfaces": 1.0,
-			"surfaces_ceiling": 1.0,
-			"tolerance": 0.0022882599287899
+			"peak_mb": 547.0,
+			"route": "rung0",
+			"search_s": 1097.8,
+			"searched": "search",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tolerance": 0.0022882599287899013,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 12,
+				"holds": true,
+				"judge": "source",
+				"over": 0,
+				"tolerance": 0.0,
+				"unit": "the source served",
+				"worst": 0.0
+			}
 		},
 		"2": {
-			"above_tolerance": true,
-			"budget": 3277.0,
-			"checked_at": 11.0,
-			"error": -1.0,
-			"fraction": 1.0,
-			"from_rung": 0.0,
-			"keep": {
-				"blade": 0.49,
-				"tuft": 0.49
+			"budget": 3277,
+			"candidates": [
+				{
+					"cost": 6774,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.05507000000000001,
+					"px_over": 0,
+					"route": "kit",
+					"value": {}
+				},
+				{
+					"cost": 7352,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.26478,
+					"px_over": 13,
+					"route": "reduce",
+					"value": 0.7
+				}
+			],
+			"checked_at": 12,
+			"drawn": {
+				"excess": 0.4375,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"pixel_m": 0.002852
 			},
+			"error": 0.009153039715159605,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"judged": "59f04f72f376d8f880a52062c57fe313cc5d0814b66ac0d4b18b1e5240f9a8dc",
+			"keep": {},
 			"measured": {
-				"cost": 2478.0,
-				"coverage_rel": 0.20471,
+				"cost": 6774,
+				"coverage_rel": 0.006300000000000001,
 				"floor": 0.00474,
 				"part_shift": {},
-				"picture": 0.33369000000000004
+				"picture": 0.05507000000000001
 			},
-			"measured_of": 2.0,
-			"miss": {
-				"cost_of_ceiling": 0.7561794324076899,
-				"judge": "drawn",
-				"picture_over": 36.45674119028788,
-				"px_over": null,
-				"route": "kit",
-				"tier": 1.0
-			},
+			"measured_of": 2,
 			"not_taken": [
 				"REDUCE from rung 0 at {\"extent_m\":0.12} seed 314: element 4's part 'body' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 15 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0046 -- the finest tried (0.700) fails at {\"extent_m\":0.12} seed 314: the picture moves 0.2269 of the extent against 0.0046 allowed (one pixel at the rung's near distance; raster floor 0.0044); coverage changes -0.2102 against 0.0354 allowed (a one-pixel shrink all round)",
-				"KIT: none holds at 0.0046 -- the finest tried (1.000) fails at {\"extent_m\":0.12} seed 314: the picture moves 0.1868 of the extent against 0.0046 allowed (one pixel at the rung's near distance; raster floor 0.0044); coverage changes +0.0564 against 0.0354 allowed (a one-pixel shrink all round)",
-				"THIN: plant/grass-sward does not declare `reads_density`"
+				"REDUCE (every piece) from rung 0: none holds at 0.0092 -- the finest tried (0.700) fails at {\"extent_m\":0.12} seed 314: the picture changes at the drawn size: 13 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00285 m; coverage changes -0.2233 against 0.0533 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0092",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"KIT (its own build at 2 of the band's pixels) held at 6774, the same cost as the route taken, found first"
 			],
+			"peak_mb": 547.0,
 			"route": "kit",
-			"surfaces": 1.0,
-			"surfaces_ceiling": 1.0,
-			"tolerance": 0.0091530397151596
+			"search_s": 847.1,
+			"searched": "search",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 12,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4375
+			}
 		},
 		"3": {
-			"above_tolerance": true,
-			"budget": 819.0,
-			"checked_at": 11.0,
-			"error": -1.0,
-			"fraction": 1.0,
-			"from_rung": 0.0,
-			"keep": {
-				"blade": 0.2401,
-				"tuft": 0.2401
+			"atlas_bytes": 147456,
+			"atlas_profiles": {
+				"native-desktop": {
+					"budget_mb": 2048.0,
+					"compressed_mb": 0.04,
+					"refused": false,
+					"rgba8_mb": 0.15
+				},
+				"native-mobile": {
+					"budget_mb": 256.0,
+					"compressed_mb": 0.04,
+					"refused": false,
+					"rgba8_mb": 0.15
+				},
+				"web": {
+					"budget_mb": 256.0,
+					"compressed_mb": 0.04,
+					"refused": false,
+					"rgba8_mb": 0.15
+				}
 			},
-			"measured": {
-				"cost": 616.0,
-				"coverage_rel": -0.48307000000000005,
-				"floor": 0.00474,
-				"part_shift": {},
-				"picture": 0.38718
-			},
-			"measured_of": 2.0,
-			"miss": {
-				"cost_of_ceiling": 0.7521367521367521,
-				"judge": "drawn",
-				"picture_over": 10.575175352914128,
-				"px_over": null,
-				"route": "kit",
-				"tier": 1.0
-			},
-			"not_taken": [
-				"REDUCE from rung 0 at {\"extent_m\":0.12} seed 314: element 4's part 'body' is 18 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 15 more groups)",
-				"REDUCE (every piece) from rung 0: none holds at 0.0092 -- the finest tried (0.700) fails at {\"extent_m\":0.12} seed 314: the picture moves 0.2269 of the extent against 0.0092 allowed (one pixel at the rung's near distance; raster floor 0.0044); coverage changes -0.2102 against 0.0533 allowed (a one-pixel shrink all round)",
-				"KIT: none holds at 0.0092 -- the finest tried (1.000) fails at {\"extent_m\":0.12} seed 314: the picture moves 0.3361 of the extent against 0.0092 allowed (one pixel at the rung's near distance; raster floor 0.0044); coverage changes -0.1077 against 0.0533 allowed (a one-pixel shrink all round)",
-				"THIN: plant/grass-sward does not declare `reads_density`"
+			"budget": 819,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": true,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": null,
+					"route": "impostor",
+					"value": 6
+				}
 			],
-			"route": "kit",
-			"surfaces": 1.0,
-			"surfaces_ceiling": 1.0,
-			"tolerance": 0.03661215886063842
+			"checked_at": 12,
+			"draw_calls": 1,
+			"drawn": {
+				"excess": 0.4837,
+				"judge": "drawn",
+				"why": "an impostor is judged at the drawn size, its frames blended"
+			},
+			"error": 0.03661215886063842,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"judged": "d77e4eba43fc605f1afaaed2046988ec7243317097e47a8c35148b7cbd931716",
+			"measured": {
+				"cost": 2,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {},
+				"picture": -1.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
+			],
+			"peak_mb": 547.0,
+			"route": "impostor",
+			"search_s": 99.10000000000001,
+			"searched": "search",
+			"source_pixel_scale": 32.0,
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tiles": 6,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 12,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4837
+			}
 		}
 	},
 	"source": {
-		"children": "e43d4e883ae5d459ec2959fbdfb5d3dc3b7af9a49b2fd4326921fbd277fe4a0f",
-		"deriver": "361c659aa24b3521ed4d71261797e7f41c8b26ea08f8bb236b0e9c7728ffc342",
-		"generator": "db05dea8174dcdfa1ea8a144f2b134420bf8583fc6e8e10ddbf45b2f80df8358"
+		"children": "b24116f0934e4d2e1d28e6013c38dfcde8ab27d77bfe479088d9c4d7c3432757",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"generator": "e2cf8453c7d9bd5e46c52a9567dfe83a93da45637a87ed5b13230c48586c53d9"
 	}
 }

@@ -30,11 +30,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__coffee-grinder#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 18,
+				"candidates": 0,
 				"trace": "built__coffee-grinder#2.trace.jsonl"
 			}
 		}
@@ -68,7 +68,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.8198019999999999
 				}
@@ -83,7 +83,7 @@
 				"excess": 0.4375,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001297
 			},
 			"error": 0.0024936165890659177,
@@ -109,16 +109,16 @@
 			},
 			"measured": {
 				"cost": 9108,
-				"coverage_rel": -0.00012000000000000002,
+				"coverage_rel": -0.00012,
 				"floor": 0.00412,
 				"part_shift": {
 					"brass": 0.00042,
 					"drawer_front": 0.00025,
-					"gold": -0.0034100000000000003,
-					"iron": 0.0007300000000000001,
+					"gold": -0.00341,
+					"iron": 0.00073,
 					"paint": 0.00152,
 					"wood": 0.00042,
-					"worn_edge": 0.00014000000000000001
+					"worn_edge": 0.00014
 				},
 				"picture": 0.00412
 			},
@@ -129,13 +129,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'paint' is 14 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 313.0,
+			"peak_mb": 251.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 76.80000000000001,
-			"searched": "recheck",
+			"search_s": 1.6,
+			"searched": "replay",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"verdict": {
@@ -143,14 +143,14 @@
 				"configurations": 3,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.4375
 			}
 		},
 		"2": {
-			"atlas_bytes": 67108864,
+			"atlas_bytes": 67108864.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -180,13 +180,13 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				}
 			],
 			"checked_at": 3,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
-				"excess": 0.45220000000000005,
+				"excess": 0.4522000000000001,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
@@ -205,13 +205,13 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 313.0,
+			"peak_mb": 251.0,
 			"route": "impostor",
-			"search_s": 119.2,
-			"searched": "recheck",
+			"search_s": 1.0,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 32,
+			"tiles": 32.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 3,
@@ -220,12 +220,12 @@
 				"over": null,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.45220000000000005
+				"worst": 0.4522000000000001
 			}
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "a9bab44a4c2a0625cf2740720795ed6808826641b41f4564eb416f75a31916f8"
 	}
 }

@@ -48,11 +48,11 @@
 				"trace": "built__wall-bunk#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__wall-bunk#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 2,
+				"candidates": 0,
 				"trace": "built__wall-bunk#3.trace.jsonl"
 			}
 		}
@@ -124,9 +124,9 @@
 			"measured": {
 				"cost": 3572,
 				"coverage_rel": -0.00029,
-				"floor": 0.004350000000000001,
+				"floor": 0.00435,
 				"part_shift": {},
-				"picture": 0.004350000000000001
+				"picture": 0.00435
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -136,10 +136,10 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping stitch 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to 0.700 held at 4213, dearer than the 3572 taken"
 			],
-			"peak_mb": 317.0,
+			"peak_mb": 247.0,
 			"route": "kit",
-			"search_s": 181.5,
-			"searched": "recheck",
+			"search_s": 1.9000000000000001,
+			"searched": "replay",
 			"surfaces": 6,
 			"surfaces_ceiling": 6,
 			"verdict": {
@@ -184,7 +184,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004350000000000001,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.08235429999999996
 				}
@@ -202,7 +202,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.014934
 			},
 			"error": 0.007407407407407408,
@@ -227,7 +227,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 5,
+				"checked_at": 5.0,
 				"checks": [
 					{
 						"holds": true,
@@ -243,14 +243,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.006952209398150444,
-							0.005321548320353031,
-							0.0027465333696454763
+							0.00695220939815044,
+							0.00532154832035303,
+							0.00274653336964547
 						],
 						"variance_before": [
-							0.006952209398150444,
-							0.005321548320353031,
-							0.0027465333696454763
+							0.00695220939815044,
+							0.00532154832035303,
+							0.00274653336964547
 						]
 					},
 					{
@@ -268,13 +268,13 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.00690559484064579,
-							0.005292425863444805,
-							0.0027332224417477846
+							0.0052924258634448,
+							0.00273322244174778
 						],
 						"variance_before": [
 							0.00690559484064579,
-							0.005292425863444805,
-							0.0027332224417477846
+							0.0052924258634448,
+							0.00273322244174778
 						]
 					},
 					{
@@ -291,14 +291,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.007011391222476959,
-							0.005358100403100252,
-							0.0027625723741948605
+							0.00701139122247695,
+							0.00535810040310025,
+							0.00276257237419486
 						],
 						"variance_before": [
-							0.007011391222476959,
-							0.005358100403100252,
-							0.0027625723741948605
+							0.00701139122247695,
+							0.00535810040310025,
+							0.00276257237419486
 						]
 					},
 					{
@@ -315,14 +315,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.006944114342331886,
-							0.005315085407346487,
-							0.0027452532667666674
+							0.00694411434233188,
+							0.00531508540734648,
+							0.00274525326676666
 						],
 						"variance_before": [
-							0.006944114342331886,
-							0.005315085407346487,
-							0.0027452532667666674
+							0.00694411434233188,
+							0.00531508540734648,
+							0.00274525326676666
 						]
 					},
 					{
@@ -330,23 +330,23 @@
 						"mean_after": [
 							0.1319601982831955,
 							0.08194195479154587,
-							0.048320967704057693
+							0.04832096770405769
 						],
 						"mean_before": [
 							0.1319601982831955,
 							0.08194195479154587,
-							0.048320967704057693
+							0.04832096770405769
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.006970606744289398,
-							0.005334090441465378,
-							0.002750727813690901
+							0.00697060674428939,
+							0.00533409044146537,
+							0.0027507278136909
 						],
 						"variance_before": [
-							0.006970606744289398,
-							0.005334090441465378,
-							0.002750727813690901
+							0.00697060674428939,
+							0.00533409044146537,
+							0.0027507278136909
 						]
 					}
 				],
@@ -355,10 +355,10 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 470,
-				"coverage_rel": -0.007030000000000001,
-				"floor": 0.004350000000000001,
+				"coverage_rel": -0.00703,
+				"floor": 0.00435,
 				"part_shift": {},
-				"picture": 0.004350000000000001
+				"picture": 0.00435
 			},
 			"measured_of": 4,
 			"not_taken": [
@@ -388,13 +388,13 @@
 				"KIT (its own build at 2 of the band's pixels, keeping stitch 0.031) held at 1492, dearer than the 470 taken",
 				"KIT (its own build at the rung's pixel, keeping stitch 0.031), carried from rung 1 held at 3572, dearer than the 470 taken"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 247.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 27.0
 			},
-			"search_s": 76.60000000000001,
-			"searched": "recheck",
+			"search_s": 2.7,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -402,14 +402,14 @@
 				"configurations": 5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
 			}
 		},
 		"3": {
-			"atlas_bytes": 3211264,
+			"atlas_bytes": 3211264.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -439,13 +439,13 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 8.0
 				}
 			],
 			"checked_at": 5,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
-				"excess": 0.49400000000000005,
+				"excess": 0.4940000000000001,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
@@ -464,14 +464,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 247.0,
 			"route": "impostor",
-			"search_s": 12.3,
-			"searched": "recheck",
+			"search_s": 1.5,
+			"searched": "replay",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 8,
+			"tiles": 8.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 5,
@@ -480,12 +480,12 @@
 				"over": null,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.49400000000000005
+				"worst": 0.4940000000000001
 			}
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "97c7380a77c90d2ec24b570a1414377cd73ae2575c9ed723962f6105ae45d69a"
 	}
 }

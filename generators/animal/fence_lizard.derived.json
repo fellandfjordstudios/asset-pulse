@@ -320,7 +320,7 @@
 				"coverage_rel": 0.01796,
 				"floor": 0.00398,
 				"part_shift": {},
-				"picture": 0.007970000000000001
+				"picture": 0.00797
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -330,10 +330,10 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping scale 0.240, each kept piece covering 1.00x)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.856 kept) held at 10000, dearer than the 3704 taken"
 			],
-			"peak_mb": 409.0,
+			"peak_mb": 337.0,
 			"route": "kit",
-			"search_s": 200.10000000000002,
-			"searched": "recheck",
+			"search_s": 18.3,
+			"searched": "replay",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"verdict": {
@@ -349,7 +349,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "69fd4d39b86a1c0da4f4f1dd6d5ded7619d917b47fab64d2312cc7159551459b"
 	}
 }

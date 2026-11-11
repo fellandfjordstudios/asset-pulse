@@ -249,23 +249,23 @@
 				"judge": "drawn",
 				"pixel_m": 0.001772
 			},
-			"error": 0.00185185185185185,
+			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"judged": "5dc2f1643ca8b1303543480371de17f9e86868bf6d4c05b2dab36b363250762c",
 			"keep": {},
 			"measured": {
 				"cost": 100670,
-				"coverage_rel": -0.004710000000000001,
-				"floor": 0.0045000000000000005,
+				"coverage_rel": -0.00471,
+				"floor": 0.0045,
 				"part_shift": {},
-				"picture": 0.0045000000000000005
+				"picture": 0.0045
 			},
 			"measured_of": 1,
 			"miss": {
 				"cost_of_ceiling": 2.5735613671805098,
 				"judge": "drawn",
-				"picture_over": 2.43,
+				"picture_over": 2.4299999999999997,
 				"px_over": 13.0,
 				"route": "kit",
 				"tier": 3
@@ -278,10 +278,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00177 m; the error ladder: none holds at 0.0019",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 808.0,
+			"peak_mb": 795.0,
 			"route": "kit",
-			"search_s": 688.4000000000001,
-			"searched": "recheck",
+			"search_s": 93.60000000000001,
+			"searched": "replay",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"tolerance": 0.001851851851851852,
@@ -298,7 +298,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "749c43955e23d216767b7ec2c53b10d5a4bd107417c404b350c4dd14ee3a39ab"
 	}
 }

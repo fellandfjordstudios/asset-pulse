@@ -127,7 +127,7 @@
 				"trace": "plant__moss-mat#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 3,
+				"candidates": 0,
 				"trace": "plant__moss-mat#3.trace.jsonl"
 			}
 		}
@@ -175,10 +175,10 @@
 				"REDUCE from rung 0 at {\"cover_fraction\":0.0,\"extent_m\":0.12} seed 314: rung 0 has no geometry to derive from",
 				"THIN: plant/moss-mat does not declare `reads_density`"
 			],
-			"peak_mb": 257.0,
+			"peak_mb": 244.0,
 			"route": "rung0",
-			"search_s": 15.100000000000001,
-			"searched": "recheck",
+			"search_s": 0.6000000000000001,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.001851851851851852,
@@ -187,7 +187,7 @@
 				"configurations": 13,
 				"holds": true,
 				"judge": "source",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.0,
 				"unit": "the source served",
 				"worst": 0.0
@@ -238,10 +238,10 @@
 				"REDUCE from rung 0 at {\"cover_fraction\":0.0,\"extent_m\":0.12} seed 314: rung 0 has no geometry to derive from",
 				"THIN: plant/moss-mat does not declare `reads_density`"
 			],
-			"peak_mb": 257.0,
+			"peak_mb": 243.0,
 			"route": "rung0",
-			"search_s": 9.0,
-			"searched": "recheck",
+			"search_s": 0.5,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.007407407407407408,
@@ -250,14 +250,14 @@
 				"configurations": 13,
 				"holds": true,
 				"judge": "source",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.0,
 				"unit": "the source served",
 				"worst": 0.0
 			}
 		},
 		"3": {
-			"atlas_bytes": 2359296,
+			"atlas_bytes": 2359296.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -287,11 +287,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 12.0
 				}
 			],
 			"checked_at": 13,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
 				"excess": 0.4136,
 				"judge": "drawn",
@@ -312,13 +312,13 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 258.0,
+			"peak_mb": 243.0,
 			"route": "impostor",
-			"search_s": 4.5,
-			"searched": "recheck",
+			"search_s": 0.5,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12,
+			"tiles": 12.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 13,
@@ -332,7 +332,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "3c21ac139b7caa92ed1955ebcbafbae12df17355eba2ffbec30c2773fbbb8f77"
 	}
 }

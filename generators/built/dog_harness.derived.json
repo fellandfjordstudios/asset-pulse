@@ -51,6 +51,7 @@
 	],
 	"effort": "full",
 	"id": "built/dog-harness",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -114,7 +115,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004050000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.48999999999999994
 				}
@@ -130,13 +131,15 @@
 			"checked_at": 9,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.0017729999999999998
 			},
 			"error": 0.001851851851851852,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "4e6f28e360aa15bb47276ff0064c6c6f7b1e79e548f1393d57db624aebb549fd",
+			"judged": "7a27615c0edf7eb49a942e56042c123238469b950c787805d7b3a677c221dec6",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
@@ -178,10 +181,20 @@
 			"routes": {
 				"reduce": 9242.0
 			},
-			"search_s": 386.70000000000005,
+			"search_s": 580.4,
 			"searched": "recheck",
 			"surfaces": 6,
-			"surfaces_ceiling": 6
+			"surfaces_ceiling": 6,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -223,7 +236,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "3fae3ac69d48063be32f0ad2af158cd5d3c4071adca606b5255bc710e52c3649",
+			"judged": "b5edd1abc9d62da9e42b5e6eb84262c8b19401367a3d7362bf7299aa6cac1f65",
 			"keep": {
 				"fuzz": 0.03125,
 				"stitch": 0.03125
@@ -488,12 +501,22 @@
 				"REDUCE to its error cap 0.125x the band's (0.409 kept) held at 41112, dearer than the 9996 taken",
 				"REDUCE to 0.490, carried from rung 1 held at 58546, dearer than the 9996 taken"
 			],
-			"peak_mb": 940.0,
+			"peak_mb": 943.0,
 			"route": "kit",
-			"search_s": 1430.2,
+			"search_s": 1972.8000000000002,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"3": {
 			"atlas_bytes": 9437184,
@@ -539,7 +562,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "0675d53a727d677ad439265903c671626d7bde109d0e9474d85515e65ad79e3c",
+			"judged": "1d3e218a991d5e715fe723d8aaa3f9ed69c436594195ad0b8967ccb4251e1d5a",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -551,18 +574,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 940.0,
+			"peak_mb": 943.0,
 			"route": "impostor",
-			"search_s": 78.9,
+			"search_s": 115.2,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 9,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.46680000000000005
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "d592d5efdedc2888f387ba54c832c028b018d661493efa94402779b625ac64b2"
 	}
 }

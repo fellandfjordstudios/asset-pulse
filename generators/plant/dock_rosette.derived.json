@@ -195,6 +195,7 @@
 	],
 	"effort": "full",
 	"id": "plant/dock-rosette",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -263,7 +264,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0125,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.662755
 				}
@@ -281,14 +282,16 @@
 			"checked_at": 33,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.000966
 			},
 			"error": 0.001851851851851852,
 			"every_piece": true,
 			"fraction": 0.662755,
 			"from_rung": 0,
-			"judged": "810a7585e23fde05e42eb8ddf4ff33d583fbd6519a18afdaf60c01b97cbc671d",
+			"judged": "601b7c585ef1987d931586f4570bf92a6b5db81afbdcf08f7311cb985962864b",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.663 kept)",
@@ -322,20 +325,30 @@
 				"REDUCE from rung 0 at {} seed 314: element 16's part 'stalk' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
 				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1452.0,
+			"peak_mb": 1455.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 16.0,
 				"reduce": 22.0
 			},
-			"search_s": 798.9000000000001,
+			"search_s": 1155.3,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 3
+			"surfaces_ceiling": 3,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 33,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		}
 	},
 	"source": {
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "104b6371287c6fa1c6cae6701dc1e21a040ceeb5311f44fa6458bf4fb255128d"
 	}
 }

@@ -62,7 +62,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__fodder-bale-binding#1.trace.jsonl"
 			},
 			"2": {
@@ -100,7 +100,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0046300000000000004,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.95283
 				}
@@ -115,7 +115,7 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001286
 			},
 			"error": 0.0028404832997026884,
@@ -140,10 +140,10 @@
 			},
 			"measured": {
 				"cost": 2222,
-				"coverage_rel": 0.0014800000000000002,
-				"floor": 0.0046300000000000004,
+				"coverage_rel": 0.00148,
+				"floor": 0.00463,
 				"part_shift": {},
-				"picture": 0.0046300000000000004
+				"picture": 0.00463
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -151,13 +151,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 2332, dearer than the 2222 taken"
 			],
-			"peak_mb": 352.0,
+			"peak_mb": 246.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 1.0
 			},
-			"search_s": 32.7,
-			"searched": "recheck",
+			"search_s": 0.6000000000000001,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -165,7 +165,7 @@
 				"configurations": 7,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.25
@@ -249,12 +249,12 @@
 				"KIT (its own build at 2 of the band's pixels) held at 2332, dearer than the 1046 taken",
 				"REDUCE to its error cap 0.0156x the band's (0.953 kept), carried from rung 1 held at 2222, dearer than the 1046 taken"
 			],
-			"peak_mb": 352.0,
+			"peak_mb": 263.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 1
 			},
-			"search_s": 53.5,
+			"search_s": 56.7,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -271,7 +271,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "671fa3c935d3a76f267032bdc839a120157930284a11e84f2e077044b76d0d4e"
 	}
 }

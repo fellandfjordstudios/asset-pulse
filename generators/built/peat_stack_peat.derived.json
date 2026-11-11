@@ -44,7 +44,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__peat-stack-peat#1.trace.jsonl"
 			}
 		}
@@ -77,7 +77,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004090000000000001,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.24009999999999992
 				}
@@ -95,7 +95,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0013059999999999999
 			},
 			"error": 0.004322268754380925,
@@ -122,9 +122,9 @@
 			"measured": {
 				"cost": 9288,
 				"coverage_rel": -0.00099,
-				"floor": 0.004090000000000001,
+				"floor": 0.00409,
 				"part_shift": {},
-				"picture": 0.004090000000000001
+				"picture": 0.00409
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -133,13 +133,13 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 39418, dearer than the 9288 taken"
 			],
-			"peak_mb": 326.0,
+			"peak_mb": 295.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 1.0
 			},
-			"search_s": 100.10000000000001,
-			"searched": "recheck",
+			"search_s": 10.4,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -147,7 +147,7 @@
 				"configurations": 5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -155,7 +155,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "ac04100a8fd056d0d25385cb0adb0a979e38f4bd54844526ab9002bc0a0799a8"
 	}
 }

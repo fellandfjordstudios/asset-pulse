@@ -34,7 +34,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__bow-saw#1.trace.jsonl"
 			},
 			"2": {
@@ -42,7 +42,7 @@
 				"trace": "built__bow-saw#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 7,
+				"candidates": 0,
 				"trace": "built__bow-saw#3.trace.jsonl"
 			}
 		}
@@ -77,7 +77,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00393,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.6186539999999999
 				}
@@ -92,7 +92,7 @@
 				"excess": 0.125,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0013809999999999998
 			},
 			"error": 0.001851851851851852,
@@ -117,11 +117,11 @@
 			},
 			"measured": {
 				"cost": 1048,
-				"coverage_rel": -0.005710000000000001,
+				"coverage_rel": -0.00571,
 				"floor": 0.00398,
 				"part_shift": {
-					"blade": -0.0036600000000000005,
-					"hardware": 0.0006000000000000001,
+					"blade": -0.00366,
+					"hardware": 0.0006,
 					"paint": 0.00302
 				},
 				"picture": 0.00393
@@ -133,13 +133,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 1144, dearer than the 1048 taken"
 			],
-			"peak_mb": 340.0,
+			"peak_mb": 245.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 37.9,
-			"searched": "recheck",
+			"search_s": 0.4,
+			"searched": "replay",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"verdict": {
@@ -147,7 +147,7 @@
 				"configurations": 3,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.125
@@ -212,7 +212,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 3,
+				"checked_at": 3.0,
 				"checks": [
 					{
 						"holds": true,
@@ -228,12 +228,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0018585026264190674,
+							0.00185850262641906,
 							0.03996342420578003,
 							0.06804529577493668
 						],
 						"variance_before": [
-							0.0018585026264190674,
+							0.00185850262641906,
 							0.03996342420578003,
 							0.06804529577493668
 						]
@@ -252,12 +252,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0018508434295654297,
+							0.00185084342956542,
 							0.03985138237476349,
 							0.0678429901599884
 						],
 						"variance_before": [
-							0.0018508434295654297,
+							0.00185084342956542,
 							0.03985138237476349,
 							0.0678429901599884
 						]
@@ -276,12 +276,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0018612444400787354,
+							0.00186124444007873,
 							0.03996223211288452,
 							0.06804467737674713
 						],
 						"variance_before": [
-							0.0018612444400787354,
+							0.00186124444007873,
 							0.03996223211288452,
 							0.06804467737674713
 						]
@@ -292,10 +292,10 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 1018,
-				"coverage_rel": 0.0006900000000000001,
+				"coverage_rel": 0.00069,
 				"floor": 0.00398,
 				"part_shift": {},
-				"picture": 0.006960000000000001
+				"picture": 0.00696
 			},
 			"measured_of": 4,
 			"not_taken": [
@@ -323,11 +323,11 @@
 				"REDUCE to its error cap 0.125x the band's (0.992 kept) held at 1040, dearer than the 1018 taken",
 				"REDUCE to its error cap 0.125x the band's (0.619 kept), carried from rung 1 held at 1048, dearer than the 1018 taken"
 			],
-			"peak_mb": 340.0,
+			"peak_mb": 243.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 42.300000000000004,
-			"searched": "recheck",
+			"search_s": 0.4,
+			"searched": "replay",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -342,7 +342,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 3686400,
+			"atlas_bytes": 3686400.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -372,11 +372,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 12.0
 				}
 			],
 			"checked_at": 3,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
 				"excess": 0.4635,
 				"judge": "drawn",
@@ -397,14 +397,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 340.0,
+			"peak_mb": 243.0,
 			"route": "impostor",
-			"search_s": 6.5,
-			"searched": "recheck",
+			"search_s": 0.2,
+			"searched": "replay",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12,
+			"tiles": 12.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 3,
@@ -418,7 +418,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "67b467bc82440471852bb37972e4ab488c0719a4a3190a61a50bb50eb0c4b9c5"
 	}
 }

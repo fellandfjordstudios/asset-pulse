@@ -30,7 +30,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__nansen-cooker#1.trace.jsonl"
 			},
 			"2": {
@@ -38,7 +38,7 @@
 				"trace": "built__nansen-cooker#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 3,
+				"candidates": 0,
 				"trace": "built__nansen-cooker#3.trace.jsonl"
 			}
 		}
@@ -73,7 +73,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.301325
 				}
@@ -93,7 +93,7 @@
 				"excess": 0.1875,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0014739999999999998
 			},
 			"error": 0.0018518518518518517,
@@ -137,13 +137,13 @@
 				"CHILD: no welded child has a coarser rung at slot 1: {\"built/nansen-cooker-cup\":0,\"built/nansen-cooker-vessel\":0}",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 368.0,
+			"peak_mb": 285.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 43.0
 			},
-			"search_s": 107.2,
-			"searched": "recheck",
+			"search_s": 6.300000000000001,
+			"searched": "replay",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -151,7 +151,7 @@
 				"configurations": 3,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.1875
@@ -229,7 +229,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 3,
+				"checked_at": 3.0,
 				"checks": [
 					{
 						"holds": true,
@@ -245,14 +245,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.010874539613723755,
-							0.015930384397506714,
-							0.028743386268615723
+							0.01087453961372375,
+							0.01593038439750671,
+							0.02874338626861572
 						],
 						"variance_before": [
-							0.010874539613723755,
-							0.015930384397506714,
-							0.028743386268615723
+							0.01087453961372375,
+							0.01593038439750671,
+							0.02874338626861572
 						]
 					},
 					{
@@ -269,14 +269,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.010874778032302856,
+							0.01087477803230285,
 							0.01592916250228882,
-							0.028742104768753052
+							0.02874210476875305
 						],
 						"variance_before": [
-							0.010874778032302856,
+							0.01087477803230285,
 							0.01592916250228882,
-							0.028742104768753052
+							0.02874210476875305
 						]
 					},
 					{
@@ -293,14 +293,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.010873675346374512,
-							0.015928655862808228,
-							0.028741806745529175
+							0.01087367534637451,
+							0.01592865586280822,
+							0.02874180674552917
 						],
 						"variance_before": [
-							0.010873675346374512,
-							0.015928655862808228,
-							0.028741806745529175
+							0.01087367534637451,
+							0.01592865586280822,
+							0.02874180674552917
 						]
 					}
 				],
@@ -309,7 +309,7 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 5986,
-				"coverage_rel": -0.014230000000000001,
+				"coverage_rel": -0.01423,
 				"floor": 0.00412,
 				"part_shift": {},
 				"picture": 0.00412
@@ -341,10 +341,10 @@
 				"REDUCE, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.031, support 0.031, fitting 0.031, vessel 0.031, cup 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE to its error cap 0.125x the band's (0.301 kept), carried from rung 1 held at 7870, dearer than the 5986 taken"
 			],
-			"peak_mb": 368.0,
+			"peak_mb": 285.0,
 			"route": "kit",
-			"search_s": 148.9,
-			"searched": "recheck",
+			"search_s": 3.1,
+			"searched": "replay",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -359,7 +359,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 9437184,
+			"atlas_bytes": 9437184.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -389,11 +389,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 12.0
 				}
 			],
 			"checked_at": 3,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
 				"excess": 0.5,
 				"judge": "drawn",
@@ -414,14 +414,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 368.0,
+			"peak_mb": 285.0,
 			"route": "impostor",
-			"search_s": 17.400000000000002,
-			"searched": "recheck",
+			"search_s": 2.5,
+			"searched": "replay",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12,
+			"tiles": 12.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 3,
@@ -436,7 +436,7 @@
 	},
 	"source": {
 		"children": "0ac0b8cbabe068d2117cd90b516b25f1fa3ecf786eb823d6ea468d33d9c67034",
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "951eeaa17ab7abe6eb6ebd778e0bb58bca0b8afa107ee49784f83dcbe2540675"
 	}
 }

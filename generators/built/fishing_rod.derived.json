@@ -42,7 +42,7 @@
 				"trace": "built__fishing-rod#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 3,
+				"candidates": 0,
 				"trace": "built__fishing-rod#3.trace.jsonl"
 			}
 		}
@@ -121,10 +121,10 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 309.0,
+			"peak_mb": 262.0,
 			"route": "kit",
-			"search_s": 34.6,
-			"searched": "recheck",
+			"search_s": 2.1,
+			"searched": "replay",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"verdict": {
@@ -183,7 +183,7 @@
 			"judged": "3406c3275a477439f640c0ececf592edfda2b819de9db554cf8e689b6a933f59",
 			"keep": {},
 			"material_transfer": {
-				"checked_at": 3,
+				"checked_at": 3.0,
 				"checks": [
 					{
 						"holds": true,
@@ -199,12 +199,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.038283634930849075,
+							0.03828363493084907,
 							0.03585918992757797,
 							0.03926130756735802
 						],
 						"variance_before": [
-							0.038283634930849075,
+							0.03828363493084907,
 							0.03585918992757797,
 							0.03926130756735802
 						]
@@ -212,12 +212,12 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.20311643183231354,
+							0.2031164318323135,
 							0.16999712586402893,
 							0.1348230242729187
 						],
 						"mean_before": [
-							0.20311643183231354,
+							0.2031164318323135,
 							0.16999712586402893,
 							0.1348230242729187
 						],
@@ -225,12 +225,12 @@
 						"variance_after": [
 							0.03912132978439331,
 							0.03668205440044403,
-							0.040402330458164215
+							0.04040233045816421
 						],
 						"variance_before": [
 							0.03912132978439331,
 							0.03668205440044403,
-							0.040402330458164215
+							0.04040233045816421
 						]
 					},
 					{
@@ -248,12 +248,12 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.03750116750597954,
-							0.035107895731925964,
+							0.03510789573192596,
 							0.03823123127222061
 						],
 						"variance_before": [
 							0.03750116750597954,
-							0.035107895731925964,
+							0.03510789573192596,
 							0.03823123127222061
 						]
 					}
@@ -296,10 +296,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"length_m\":2.1} seed 314: coverage changes -0.0257 against 0.0227 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 261.0,
 			"route": "kit",
-			"search_s": 180.0,
-			"searched": "recheck",
+			"search_s": 2.5,
+			"searched": "replay",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -314,7 +314,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 9437184,
+			"atlas_bytes": 9437184.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -344,13 +344,13 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 12.0
 				}
 			],
 			"checked_at": 3,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
-				"excess": 0.45640000000000003,
+				"excess": 0.4564,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
@@ -369,14 +369,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 268.0,
+			"peak_mb": 261.0,
 			"route": "impostor",
-			"search_s": 11.0,
-			"searched": "recheck",
+			"search_s": 1.1,
+			"searched": "replay",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12,
+			"tiles": 12.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 3,
@@ -385,12 +385,12 @@
 				"over": null,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.45640000000000003
+				"worst": 0.4564
 			}
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "09795d42aad94c19825bf90a62e4355ce26d266039f9348aeed4722869cf5024"
 	}
 }

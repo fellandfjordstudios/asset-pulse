@@ -119,10 +119,10 @@
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 319.0,
+			"peak_mb": 269.0,
 			"route": "kit",
-			"search_s": 142.6,
-			"searched": "recheck",
+			"search_s": 15.4,
+			"searched": "replay",
 			"surfaces": 6,
 			"surfaces_ceiling": 6,
 			"verdict": {
@@ -177,7 +177,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 5,
+				"checked_at": 5.0,
 				"checks": [
 					{
 						"holds": true,
@@ -193,12 +193,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.047814011573791504,
+							0.0478140115737915,
 							0.0559861958026886,
 							0.07053466886281967
 						],
 						"variance_before": [
-							0.047814011573791504,
+							0.0478140115737915,
 							0.0559861958026886,
 							0.07053466886281967
 						]
@@ -218,12 +218,12 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.04619104415178299,
-							0.054499365389347076,
+							0.05449936538934707,
 							0.06959240883588791
 						],
 						"variance_before": [
 							0.04619104415178299,
-							0.054499365389347076,
+							0.05449936538934707,
 							0.06959240883588791
 						]
 					},
@@ -241,13 +241,13 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.053503066301345825,
-							0.061211585998535156,
+							0.05350306630134582,
+							0.06121158599853515,
 							0.07403168827295303
 						],
 						"variance_before": [
-							0.053503066301345825,
-							0.061211585998535156,
+							0.05350306630134582,
+							0.06121158599853515,
 							0.07403168827295303
 						]
 					},
@@ -265,12 +265,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.046203821897506714,
+							0.04620382189750671,
 							0.05373582988977432,
 							0.06721250712871552
 						],
 						"variance_before": [
-							0.046203821897506714,
+							0.04620382189750671,
 							0.05373582988977432,
 							0.06721250712871552
 						]
@@ -305,7 +305,7 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 2674,
-				"coverage_rel": -0.0049900000000000005,
+				"coverage_rel": -0.00499,
 				"floor": 0.00398,
 				"part_shift": {},
 				"picture": 0.00398
@@ -318,10 +318,10 @@
 				"KIT (its own build at 2 of the band's pixels) held at 3248, dearer than the 2674 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 9796, dearer than the 2674 taken"
 			],
-			"peak_mb": 279.0,
+			"peak_mb": 269.0,
 			"route": "kit",
-			"search_s": 191.10000000000002,
-			"searched": "recheck",
+			"search_s": 6.5,
+			"searched": "replay",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -337,7 +337,7 @@
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "bd8e4c004398eba759b76b8d0c4f9cf77a18f494862f24f488edabeaa9f7ca2e"
 	}
 }

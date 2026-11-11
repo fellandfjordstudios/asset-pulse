@@ -55,7 +55,7 @@
 				"trace": "built__marker-buoy#1.trace.jsonl"
 			},
 			"3": {
-				"candidates": 7,
+				"candidates": 0,
 				"trace": "built__marker-buoy#3.trace.jsonl"
 			}
 		}
@@ -124,10 +124,10 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: built/marker-buoy does not declare `reads_density`"
 			],
-			"peak_mb": 280.0,
+			"peak_mb": 274.0,
 			"route": "rung0",
-			"search_s": 39.0,
-			"searched": "recheck",
+			"search_s": 6.2,
+			"searched": "replay",
 			"surfaces": 9,
 			"surfaces_ceiling": 9,
 			"tolerance": 0.0018518518518518517,
@@ -136,14 +136,14 @@
 				"configurations": 5,
 				"holds": true,
 				"judge": "source",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.0,
 				"unit": "the source served",
 				"worst": 0.0
 			}
 		},
 		"3": {
-			"atlas_bytes": 9437184,
+			"atlas_bytes": 9437184.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -173,13 +173,13 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 12.0
 				}
 			],
 			"checked_at": 5,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
-				"excess": 0.47900000000000004,
+				"excess": 0.479,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
@@ -198,14 +198,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 283.0,
+			"peak_mb": 274.0,
 			"route": "impostor",
-			"search_s": 37.5,
-			"searched": "recheck",
+			"search_s": 3.8000000000000003,
+			"searched": "replay",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12,
+			"tiles": 12.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 5,
@@ -214,12 +214,12 @@
 				"over": null,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.47900000000000004
+				"worst": 0.479
 			}
 		}
 	},
 	"source": {
-		"deriver": "c6af0ca25303ea9b172bd4dbf0bb9ccf71b9934d2dbf34fc824a4b30f062b497",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "b4f0dace19abbd5ed3b569027f689960ce9093dfeb7ec46b6c74c99098c21f98"
 	}
 }
