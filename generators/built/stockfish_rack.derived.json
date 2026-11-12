@@ -69,7 +69,7 @@
 	],
 	"effort": "full",
 	"id": "built/stockfish-rack",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -153,7 +153,7 @@
 			"every_piece": true,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "a1c138a67a462ce9ef6aa7ba7a3bc014640528b5046a75370ae868d4a21d91de",
+			"judged": "917b274cbfbe1c74e1ce1bca5ef665cdf538fb15d3c815e622dc1f78c183d394",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490)",
@@ -188,12 +188,12 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 678.0,
+			"peak_mb": 676.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 485.3,
+			"search_s": 412.0,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -202,7 +202,7 @@
 				"configurations": 12,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -261,7 +261,7 @@
 			"error": 0.0056,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "18433d571440d880674c79b50ed839ab95b1aafed66e586d09db252547ed1df4",
+			"judged": "63a6883d39b593e264127a4697f2d20af9831a97512a17005287d6bb88640f62",
 			"keep": {
 				"knot": 0.11764899999999996,
 				"peg": 0.7
@@ -609,9 +609,9 @@
 				"REDUCE (every piece) to 0.700 held at 9944, dearer than the 2332 taken",
 				"MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490), carried from rung 1 held at 13476, dearer than the 2332 taken"
 			],
-			"peak_mb": 696.0,
+			"peak_mb": 686.0,
 			"route": "kit",
-			"search_s": 336.20000000000005,
+			"search_s": 269.8,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -670,7 +670,7 @@
 			"error": 0.012,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "c70940c3bf99388381086cc244c3daccc7abc9c6b404c33df9cef5d80bdcfd69",
+			"judged": "48c664287f1207c48c0f71f739c7a611374b92629da8ad1fa6b4b5251e81315c",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -682,9 +682,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 767.0,
+			"peak_mb": 766.0,
 			"route": "impostor",
-			"search_s": 415.6,
+			"search_s": 366.3,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -698,13 +698,13 @@
 				"over": null,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.47750000000000004
+				"worst": 0.4775
 			}
 		}
 	},
 	"source": {
 		"children": "2129ea740a69356f7f8c63e19e1ff49b6174ad94273d78ba5bc0f35d65f1ce4b",
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "e6975f2a0eab575cf32486dcc2b6a8abfd1090eb26501ad6165b78b797227684"
 	}
 }

@@ -55,7 +55,7 @@
 	],
 	"effort": "full",
 	"id": "animal/brown-trout",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -140,7 +140,7 @@
 			"error": 0.0037048017894693638,
 			"fraction": 0.145195,
 			"from_rung": 0,
-			"judged": "993702d41bb4a4f9035ec50a22930bcf0f80d464dc1898dd072b0bef863b4eee",
+			"judged": "fcd5075a4f5a7ee6a12d53e8e67ac4aef17bb4a0c111d85e1e0d6ed8286b1b43",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.125x the band's (0.145 kept)",
@@ -201,7 +201,7 @@
 			"routes": {
 				"reduce": 132.0
 			},
-			"search_s": 189.3,
+			"search_s": 125.30000000000001,
 			"searched": "recheck",
 			"surfaces": 25,
 			"surfaces_ceiling": 25,
@@ -210,7 +210,7 @@
 				"configurations": 9,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.25
@@ -260,7 +260,7 @@
 			"error": 0.014819207157877455,
 			"fraction": 0.08235429999999996,
 			"from_rung": 1,
-			"judged": "4d5a344a80f0e9eddaacb0b5dab013c1a1c0c0f061e1c0519edf63b3a499177c",
+			"judged": "009fe15ea998509777433737cf2f6f3ee91e7f01cd880e375739bbcdfd77d595",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.082",
@@ -427,25 +427,25 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.22257763147354126,
-							0.15887945890426636,
-							0.06613199412822723
+							0.22258618474006653,
+							0.15888644754886627,
+							0.06613478809595108
 						],
 						"mean_before": [
-							0.22257763147354126,
-							0.15887945890426636,
-							0.06613199412822723
+							0.22258618474006653,
+							0.15888644754886627,
+							0.06613478809595108
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.003478892147541046,
-							0.001842457801103592,
-							0.00034289294853806496
+							0.0034790784120559692,
+							0.0018425136804580688,
+							0.00034290505573153496
 						],
 						"variance_before": [
-							0.003478892147541046,
-							0.001842457801103592,
-							0.00034289294853806496
+							0.0034790784120559692,
+							0.0018425136804580688,
+							0.00034290505573153496
 						]
 					},
 					{
@@ -507,7 +507,7 @@
 				"part_shift": {
 					"body": 0.0025700000000000002,
 					"body_aft": 0.00067,
-					"body_mid": 0.0031100000000000004,
+					"body_mid": 0.0031200000000000004,
 					"body_rear": 0.00102,
 					"cornea": 9e-05,
 					"dark": -0.00018,
@@ -546,7 +546,7 @@
 			"routes": {
 				"reduce": 99
 			},
-			"search_s": 4520.7,
+			"search_s": 3175.8,
 			"searched": "search",
 			"surfaces": 5,
 			"surfaces_ceiling": 1,
@@ -563,7 +563,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "c8451edb551bcc0445899d478b5dfc01cef8bc6cb7aae9c5fe6466c575e4fe16"
 	}
 }

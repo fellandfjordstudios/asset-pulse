@@ -15,7 +15,7 @@
 	],
 	"effort": "full",
 	"id": "food/heart-waffles",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -30,7 +30,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "food__heart-waffles#1.trace.jsonl"
 			}
 		}
@@ -64,7 +64,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.005790000000000001,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.01384128720099999
 				}
@@ -82,24 +82,24 @@
 				"excess": 0.4375,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.0012959999999999998
 			},
 			"error": 0.006846254626791326,
 			"fraction": 0.01384128720099999,
 			"from_rung": 0,
-			"judged": "d76f88ba1f117007e0f841ccbb88869a83f07db2e2a52d6073031236e491ba99",
+			"judged": "9fc4be4d3e802d8ca13d5116232a795901fe06bb0d656eb7d896bb5f76cf7157",
 			"measured": {
 				"cost": 10682,
 				"coverage_rel": -0.01727,
-				"floor": 0.00441,
+				"floor": 0.004410000000000001,
 				"part_shift": {
 					"cream": -0.00134,
-					"crumb": -0.00164,
-					"jam": -0.00258,
-					"waffle": 0.00482
+					"crumb": -0.0016400000000000002,
+					"jam": -0.0025800000000000003,
+					"waffle": 0.0048200000000000005
 				},
-				"picture": 0.00579
+				"picture": 0.005790000000000001
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -107,13 +107,13 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 148376, dearer than the 10682 taken"
 			],
-			"peak_mb": 455.0,
+			"peak_mb": 471.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 8.0
 			},
-			"search_s": 73.60000000000001,
-			"searched": "replay",
+			"search_s": 244.70000000000002,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -129,7 +129,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "2bf60bb9b05c449b41353b0560e18fcef8588e350f53a5a440fb08d24192a7c1"
 	}
 }

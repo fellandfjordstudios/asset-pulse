@@ -111,7 +111,7 @@
 	],
 	"effort": "full",
 	"id": "plant/grass-tuft",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -190,11 +190,11 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "81c2a04482a4c297f734da664197a8317ce58d90b01e4997683d4972115aef07",
+			"judged": "97c27821bc0def8d9ff7b01b2b86e4d2d94d45ca36c14ae4e75283a68329c8a4",
 			"measured": {
 				"cost": 738,
 				"coverage_rel": 0.0,
-				"floor": 0.00477,
+				"floor": 0.004770000000000001,
 				"part_shift": {},
 				"picture": 0.0
 			},
@@ -206,10 +206,10 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/grass-tuft does not declare `reads_density`"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 287.0,
 			"route": "rung0",
-			"search_s": 0.5,
-			"searched": "replay",
+			"search_s": 19.6,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.005019408876055267,
@@ -226,7 +226,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "dc296a7e37aeddc119cf835aac9dfabd099b71fd5e02bbe057ea1f998d15c1d5"
 	}
 }

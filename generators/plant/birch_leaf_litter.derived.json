@@ -93,7 +93,7 @@
 	],
 	"effort": "full",
 	"id": "plant/birch-leaf-litter",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -185,7 +185,7 @@
 				"luminance_sd": 0.14700000000000002,
 				"texel_m": 0.001969
 			},
-			"judged": "fedfa844d15f72b16122070b197e625b74ec59a08378a976e140858e9385f5cf",
+			"judged": "21d077398593060b30945ad35cb7b89a5278f6518de4f3e21af44b6617a2850b",
 			"keep": {
 				"debris": 0.7,
 				"vein": 0.7
@@ -216,7 +216,7 @@
 			],
 			"peak_mb": 401.0,
 			"route": "kit",
-			"search_s": 127.10000000000001,
+			"search_s": 86.0,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -273,7 +273,7 @@
 				"luminance_sd": 0.1474,
 				"texel_m": 0.00787399999999999
 			},
-			"judged": "c55b9f3ad47db57eb393e637c360e813da63f1d9d4dbb66fdf6f3f4169c4a030",
+			"judged": "7ee830468703be3e75f6a59628379749a2728feb196580dc684a9e2dd5340675",
 			"keep": {
 				"debris": 0.24009999999999992,
 				"vein": 0.24009999999999992
@@ -697,7 +697,7 @@
 			],
 			"peak_mb": 405.0,
 			"route": "kit",
-			"search_s": 644.0,
+			"search_s": 469.20000000000005,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -768,7 +768,7 @@
 				"luminance_sd": 0.14930000000000002,
 				"texel_m": 0.031497
 			},
-			"judged": "46a5800e496cd72801862b039977c6b32ecbf2374a4195bbc42817d7bbe1a55f",
+			"judged": "915b6008f69bb61bf47971120b94744eb2f6a29fd3b3f8cb97e1cc203b5ed1be",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -780,9 +780,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 562.0,
+			"peak_mb": 563.0,
 			"route": "impostor",
-			"search_s": 287.2,
+			"search_s": 198.4,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -801,7 +801,7 @@
 	},
 	"source": {
 		"children": "42b6cf29bf657c07e78a4a067db4b7cfdd1e939e65106df0f60d68f9c7a0aea1",
-		"deriver": "f7e5a4a74bedfa18c61f1c6b76fb9d6323d5d9d0eaa71bb985917eb7a009e812",
+		"deriver": "f4425d8a2b4392138deb115057b11c20ec184b84ca94d9d99c4183d0b3f9f318",
 		"generator": "0ad64f06766eaf46ccfc26c141392ee204bf5cd9d7ab0b3428affa55c218b603"
 	}
 }

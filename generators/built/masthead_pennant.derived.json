@@ -27,7 +27,7 @@
 	],
 	"effort": "full",
 	"id": "built/masthead-pennant",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -44,7 +44,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__masthead-pennant#1.trace.jsonl"
 			},
 			"2": {
@@ -52,7 +52,7 @@
 				"trace": "built__masthead-pennant#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__masthead-pennant#3.trace.jsonl"
 			}
 		}
@@ -87,7 +87,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.007970000000000001,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.699278
 				}
@@ -102,13 +102,13 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.001535
 			},
 			"error": 0.0018518518518518517,
 			"fraction": 0.699278,
 			"from_rung": 0,
-			"judged": "ee603cca92eef4b4fd186f5c829694f45d66e84d79509f32e8bea5f66aef8b2a",
+			"judged": "045a0b6b8b07bb0fe2a9211edeec615a0545b06bb359b2ee3b969c1d0961d3b5",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.699 kept)",
@@ -130,13 +130,13 @@
 				"coverage_rel": 0.0,
 				"floor": 0.00398,
 				"part_shift": {
-					"cloth": 0.00012,
+					"cloth": 0.00012000000000000002,
 					"hem": 0.0,
 					"pin": -0.00011,
 					"stitch": 0.0,
 					"ties": 0.0
 				},
-				"picture": 0.00797
+				"picture": 0.007970000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -145,14 +145,14 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 8 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 391.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 1.0,
 				"reduce": 4.0
 			},
-			"search_s": 6.1000000000000005,
-			"searched": "replay",
+			"search_s": 25.900000000000002,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -209,7 +209,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "1d538d417369fec61c584196bdf704c5facadf4edf6592ef2b50fd05c42de391",
+			"judged": "29a6286478b70a3b4e2f83f0d9c183fcb68815f5721c2de15d1e946c7579559f",
 			"keep": {
 				"stitch": 0.03125
 			},
@@ -230,7 +230,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 5.0,
+				"checked_at": 5,
 				"checks": [
 					{
 						"holds": true,
@@ -246,38 +246,38 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00771160423755645,
-							0.00158949196338653,
-							0.00043757213279604
+							0.0077116042375564575,
+							0.0015894919633865356,
+							0.0004375721327960491
 						],
 						"variance_before": [
-							0.00771160423755645,
-							0.00158949196338653,
-							0.00043757213279604
+							0.0077116042375564575,
+							0.0015894919633865356,
+							0.0004375721327960491
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.3780623376369476,
+							0.37806233763694763,
 							0.08579613268375397,
 							0.06939052790403366
 						],
 						"mean_before": [
-							0.3780623376369476,
+							0.37806233763694763,
 							0.08579613268375397,
 							0.06939052790403366
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00769974291324615,
-							0.00159045681357383,
-							0.00043742638081312
+							0.007699742913246155,
+							0.0015904568135738373,
+							0.0004374263808131218
 						],
 						"variance_before": [
-							0.00769974291324615,
-							0.00159045681357383,
-							0.00043742638081312
+							0.007699742913246155,
+							0.0015904568135738373,
+							0.0004374263808131218
 						]
 					},
 					{
@@ -294,14 +294,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00770695507526397,
-							0.00158968567848205,
-							0.00043751625344157
+							0.007706955075263977,
+							0.0015896856784820557,
+							0.0004375162534415722
 						],
 						"variance_before": [
-							0.00770695507526397,
-							0.00158968567848205,
-							0.00043751625344157
+							0.007706955075263977,
+							0.0015896856784820557,
+							0.0004375162534415722
 						]
 					},
 					{
@@ -318,14 +318,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00769652426242828,
-							0.00159318977966904,
-							0.00043792091310024
+							0.007696524262428284,
+							0.0015931897796690464,
+							0.0004379209131002426
 						],
 						"variance_before": [
-							0.00769652426242828,
-							0.00159318977966904,
-							0.00043792091310024
+							0.007696524262428284,
+							0.0015931897796690464,
+							0.0004379209131002426
 						]
 					},
 					{
@@ -342,14 +342,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00771610438823699,
-							0.00159183982759714,
-							0.00043785851448774
+							0.0077161043882369995,
+							0.0015918398275971413,
+							0.0004378585144877434
 						],
 						"variance_before": [
-							0.00771610438823699,
-							0.00159183982759714,
-							0.00043785851448774
+							0.0077161043882369995,
+							0.0015918398275971413,
+							0.0004378585144877434
 						]
 					}
 				],
@@ -358,7 +358,7 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 291,
-				"coverage_rel": -0.01798,
+				"coverage_rel": -0.017980000000000003,
 				"floor": 0.00398,
 				"part_shift": {},
 				"picture": 0.03984
@@ -390,10 +390,10 @@
 				"REDUCE to its error cap 0.25x the band's (0.445 kept) held at 861, dearer than the 453 taken",
 				"REDUCE to its error cap 0.125x the band's (0.699 kept), carried from rung 1 held at 1249, dearer than the 453 taken"
 			],
-			"peak_mb": 243.0,
+			"peak_mb": 391.0,
 			"route": "kit",
-			"search_s": 5.9,
-			"searched": "replay",
+			"search_s": 22.5,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -408,7 +408,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 1327104.0,
+			"atlas_bytes": 1327104,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -438,11 +438,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 12.0
+					"value": 12
 				}
 			],
 			"checked_at": 5,
-			"draw_calls": 1.0,
+			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.3733,
 				"judge": "drawn",
@@ -451,7 +451,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "1ab09a6adc2bbc8826e479794a614a1ed4082b3fab0db46b818bcf3cbecf156c",
+			"judged": "9b4a407e362e69877e393f0f52a7720e1c1da9b5546a7d0e4402b2b4b87c1840",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -463,14 +463,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 243.0,
+			"peak_mb": 391.0,
 			"route": "impostor",
-			"search_s": 5.6000000000000005,
-			"searched": "replay",
+			"search_s": 10.0,
+			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12.0,
+			"tiles": 12,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 5,
@@ -484,7 +484,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "b4fdf59156fd6b501a7f24e8bbade63074df3232da520fd1a8a36e79eea0d0fc"
 	}
 }

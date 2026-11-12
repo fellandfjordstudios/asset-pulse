@@ -27,7 +27,7 @@
 	],
 	"effort": "full",
 	"id": "food/klippfisk",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -44,11 +44,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "food__klippfisk#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 16,
 				"trace": "food__klippfisk#2.trace.jsonl"
 			}
 		}
@@ -82,7 +82,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004070000000000001,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.281368
 				}
@@ -102,14 +102,14 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.001297
 			},
 			"error": 0.0025933612526285546,
 			"every_piece": true,
 			"fraction": 0.281368,
 			"from_rung": 0,
-			"judged": "39ae7c9406d66a4d4605b2126ccd2575d616ef0cb96b383dad6417d27efdb1df",
+			"judged": "80a1c936eaa80851fcbda3e886e46501a3c083a4dc579b8e97f4e1944b4bfb2e",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.281 kept)",
@@ -129,14 +129,14 @@
 			"measured": {
 				"cost": 15002,
 				"coverage_rel": -0.00022,
-				"floor": 0.00407,
+				"floor": 0.004070000000000001,
 				"part_shift": {
 					"flesh": 0.00427,
-					"salt": -0.00065,
-					"skin": -0.00407,
-					"tail": 0.00028
+					"salt": -0.0006500000000000001,
+					"skin": -0.004070000000000001,
+					"tail": 0.00028000000000000003
 				},
-				"picture": 0.00407
+				"picture": 0.004070000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -146,13 +146,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'flesh' is 46 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 303.0,
+			"peak_mb": 377.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 173.0
 			},
-			"search_s": 26.400000000000002,
-			"searched": "replay",
+			"search_s": 116.80000000000001,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -167,7 +167,7 @@
 			}
 		},
 		"2": {
-			"atlas_bytes": 67108864.0,
+			"atlas_bytes": 67108864,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -197,20 +197,20 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				}
 			],
 			"checked_at": 5,
-			"draw_calls": 1.0,
+			"draw_calls": 1,
 			"drawn": {
-				"excess": 0.4265000000000001,
+				"excess": 0.42650000000000005,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
 			"error": 0.010373445010514218,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "58f64a30655cac99e02da1f6d926273260fe7504f90fc0173e4b6d26029e995d",
+			"judged": "61b090cd7b21c0e86bcf0ad3276c3f91476d48d7fd345abedd7153fad09facfe",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -222,14 +222,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 298.0,
+			"peak_mb": 379.0,
 			"route": "impostor",
-			"search_s": 7.2,
-			"searched": "replay",
+			"search_s": 121.4,
+			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 32.0,
+			"tiles": 32,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 5,
@@ -243,7 +243,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "590d8519c5a66b4ffa72eec91948be45e7acbe67d665cd0fa0e42ee5df3d2da5"
 	}
 }

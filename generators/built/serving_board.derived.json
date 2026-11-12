@@ -7,7 +7,7 @@
 	],
 	"effort": "full",
 	"id": "built/serving-board",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe"
@@ -20,7 +20,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__serving-board#1.trace.jsonl"
 			}
 		}
@@ -53,7 +53,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00406,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.48999999999999994
 				}
@@ -71,13 +71,13 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.001297
 			},
 			"error": 0.004052126957232116,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "2bcbc967db43cf131989c947eb04400b273a6951e56fa53c234295addcf6499a",
+			"judged": "f96bc3b2e1eabc2d4324352cb0ebb9047901ff2a456a6855246434e29ff35628",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -99,8 +99,8 @@
 				"coverage_rel": -0.00725,
 				"floor": 0.00406,
 				"part_shift": {
-					"board": -0.00035,
-					"end_grain": 0.00035
+					"board": -0.00035000000000000005,
+					"end_grain": 0.00035000000000000005
 				},
 				"picture": 0.00406
 			},
@@ -110,13 +110,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 256, dearer than the 202 taken"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 254.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 0.1,
-			"searched": "replay",
+			"search_s": 2.3000000000000003,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"verdict": {
@@ -132,7 +132,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "856128cd78f28defbc10b92bbb3b2787727383e2e4acb4bf9d3f86cb5c04fb8d"
 	}
 }

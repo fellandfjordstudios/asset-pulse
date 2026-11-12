@@ -19,7 +19,7 @@
 	],
 	"effort": "full",
 	"id": "built/quay-barrow",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -94,7 +94,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "bfdef02765c7bf03c42707e11f3271cd7d853464af70df9279ca1f21f9d4990f",
+			"judged": "8de9468d646fb616a962205e25cbb2b98c146fdcd874bc943005e3400ce6076b",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.700)",
@@ -175,7 +175,7 @@
 			"routes": {
 				"reduce": 43.0
 			},
-			"search_s": 58.1,
+			"search_s": 48.6,
 			"searched": "recheck",
 			"surfaces": 43,
 			"surfaces_ceiling": 43,
@@ -184,7 +184,7 @@
 				"configurations": 3,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.4375
@@ -233,7 +233,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "55df8e4f6d58302f79d00f920fd0ced6d5d5cf9cae180b50d97f33c0bd1e79dc",
+			"judged": "7d2ae9ce97a37ade0b9cfbe5c5e49e3e7753552b36794c71950a61b74cb3440c",
 			"keep": {
 				"bolt": 0.03125
 			},
@@ -368,7 +368,7 @@
 			],
 			"peak_mb": 359.0,
 			"route": "kit",
-			"search_s": 113.9,
+			"search_s": 86.80000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -427,7 +427,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f912c735ef3a60589cc7c0047e0b017cdb28f23afdea167a8fa6a64e4eeb90fa",
+			"judged": "c4c1ab3f4a17c1c7ad1236e780f28d0f2fc2dadecf7c98b1bb9684a966547b39",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -441,7 +441,7 @@
 			],
 			"peak_mb": 359.0,
 			"route": "impostor",
-			"search_s": 12.3,
+			"search_s": 10.700000000000001,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -461,7 +461,7 @@
 	},
 	"source": {
 		"children": "ef8410c8f039f2289cff0c19d0e6c49f36a05a81f77ee98a4ba48247df1f053e",
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "28c7c654997e8e51956ac49e2328c92443208228220cb7e91ba4a172ce5ab6ef"
 	}
 }

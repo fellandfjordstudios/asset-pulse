@@ -75,7 +75,7 @@
 	],
 	"effort": "full",
 	"id": "built/sawn-slat",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -100,15 +100,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__sawn-slat#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__sawn-slat#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__sawn-slat#3.trace.jsonl"
 			}
 		}
@@ -143,7 +143,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.526316
 				}
@@ -158,13 +158,13 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.001334
 			},
 			"error": 0.0018518518518518521,
 			"fraction": 0.526316,
 			"from_rung": 0,
-			"judged": "dd7ca286faf8018f11231e1bc5ba0b1d99d76509742a8def02c390c1c6e14be7",
+			"judged": "ba8829c3b71dab56627c6e015b33e7664e39f66be5b8bb49b7462c1e8b6dde8f",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 1.0x the band's (0.526 kept)",
@@ -186,8 +186,8 @@
 				"coverage_rel": 0.01139,
 				"floor": 0.01089,
 				"part_shift": {
-					"end_grain": -0.00014,
-					"wood": 0.00014
+					"end_grain": -0.00014000000000000001,
+					"wood": 0.00014000000000000001
 				},
 				"picture": 0.004
 			},
@@ -196,13 +196,13 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {\"length_m\":0.02} seed 314: the picture changes at the drawn size: 23499 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00005 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 589.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 0.4,
-			"searched": "replay",
+			"search_s": 40.6,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"verdict": {
@@ -236,7 +236,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.526316
 				}
@@ -256,13 +256,13 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.005333999999999999
 			},
 			"error": 0.0074074074074074086,
 			"fraction": 0.526316,
 			"from_rung": 0,
-			"judged": "e9651cf828e7dd93d6e77d2bfeac1b301de7b0d5e9137176876c7fed51f86e9a",
+			"judged": "30110c14848c3a1b087b5da3a612e0fba9c502785f4715725ab6b9be54212442",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.25x the band's (0.526 kept)",
@@ -280,7 +280,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 13.0,
+				"checked_at": 13,
 				"checks": [
 					{
 						"holds": true,
@@ -309,36 +309,36 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.4067168533802033,
+							0.40671685338020325,
 							0.27278968691825867,
 							0.1801469624042511
 						],
 						"mean_before": [
-							0.4067168533802033,
+							0.40671685338020325,
 							0.27278968691825867,
 							0.1801469624042511
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0015023797750473,
-							0.00086201727390289,
-							0.00048520416021347
+							0.0015023797750473022,
+							0.0008620172739028931,
+							0.00048520416021347046
 						],
 						"variance_before": [
-							0.0015023797750473,
-							0.00086201727390289,
-							0.00048520416021347
+							0.0015023797750473022,
+							0.0008620172739028931,
+							0.00048520416021347046
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.3833508491516114,
+							0.38335084915161133,
 							0.2550903856754303,
 							0.16686809062957764
 						],
 						"mean_before": [
-							0.3833508491516114,
+							0.38335084915161133,
 							0.2550903856754303,
 							0.16686809062957764
 						],
@@ -346,12 +346,12 @@
 						"variance_after": [
 							3.832578659057617e-05,
 							2.1986663341522217e-05,
-							1.237541437149048e-05
+							1.2375414371490479e-05
 						],
 						"variance_before": [
 							3.832578659057617e-05,
 							2.1986663341522217e-05,
-							1.237541437149048e-05
+							1.2375414371490479e-05
 						]
 					},
 					{
@@ -405,23 +405,23 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.3832369148731232,
+							0.38323691487312317,
 							0.25500401854515076,
 							0.16680334508419037
 						],
 						"mean_before": [
-							0.3832369148731232,
+							0.38323691487312317,
 							0.25500401854515076,
 							0.16680334508419037
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							2.8520822525024417e-05,
+							2.8520822525024414e-05,
 							1.6383826732635498e-05,
 							9.208917617797852e-06
 						],
 						"variance_before": [
-							2.8520822525024417e-05,
+							2.8520822525024414e-05,
 							1.6383826732635498e-05,
 							9.208917617797852e-06
 						]
@@ -440,12 +440,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00013518333435058,
+							0.00013518333435058594,
 							7.751584053039551e-05,
 							4.363246262073517e-05
 						],
 						"variance_before": [
-							0.00013518333435058,
+							0.00013518333435058594,
 							7.751584053039551e-05,
 							4.363246262073517e-05
 						]
@@ -490,12 +490,12 @@
 						"variance_after": [
 							6.961822509765625e-05,
 							3.994256258010864e-05,
-							2.248398959636688e-05
+							2.2483989596366882e-05
 						],
 						"variance_before": [
 							6.961822509765625e-05,
 							3.994256258010864e-05,
-							2.248398959636688e-05
+							2.2483989596366882e-05
 						]
 					},
 					{
@@ -586,12 +586,12 @@
 						"variance_after": [
 							6.785988807678223e-05,
 							3.890693187713623e-05,
-							2.188421785831451e-05
+							2.1884217858314514e-05
 						],
 						"variance_before": [
 							6.785988807678223e-05,
 							3.890693187713623e-05,
-							2.188421785831451e-05
+							2.1884217858314514e-05
 						]
 					}
 				],
@@ -612,13 +612,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.25x the band's (0.526 kept), carried from rung 1 held at 40, the same cost as the route taken, found first"
 			],
-			"peak_mb": 243.0,
+			"peak_mb": 589.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 0.6000000000000001,
-			"searched": "replay",
+			"search_s": 13.5,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -652,7 +652,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.526316
 				}
@@ -672,13 +672,13 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.021335999999999997
 			},
 			"error": 0.029629629629629634,
 			"fraction": 0.526316,
 			"from_rung": 0,
-			"judged": "158e3ac04291e2d16bea2b8f7cdc569162d5a9ca22676dae5b8f42bcc033a71e",
+			"judged": "91b0ac9152be88ba5987021ae7ecbb4318f482a1acc9d6dfabb4bf37958d183c",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.0625x the band's (0.526 kept)",
@@ -693,7 +693,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 13.0,
+				"checked_at": 13,
 				"checks": [
 					{
 						"holds": true,
@@ -722,36 +722,36 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.4067168533802033,
+							0.40671685338020325,
 							0.27278968691825867,
 							0.1801469624042511
 						],
 						"mean_before": [
-							0.4067168533802033,
+							0.40671685338020325,
 							0.27278968691825867,
 							0.1801469624042511
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0015023797750473,
-							0.00086201727390289,
-							0.00048520416021347
+							0.0015023797750473022,
+							0.0008620172739028931,
+							0.00048520416021347046
 						],
 						"variance_before": [
-							0.0015023797750473,
-							0.00086201727390289,
-							0.00048520416021347
+							0.0015023797750473022,
+							0.0008620172739028931,
+							0.00048520416021347046
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.3833508491516114,
+							0.38335084915161133,
 							0.2550903856754303,
 							0.16686809062957764
 						],
 						"mean_before": [
-							0.3833508491516114,
+							0.38335084915161133,
 							0.2550903856754303,
 							0.16686809062957764
 						],
@@ -759,12 +759,12 @@
 						"variance_after": [
 							3.832578659057617e-05,
 							2.1986663341522217e-05,
-							1.237541437149048e-05
+							1.2375414371490479e-05
 						],
 						"variance_before": [
 							3.832578659057617e-05,
 							2.1986663341522217e-05,
-							1.237541437149048e-05
+							1.2375414371490479e-05
 						]
 					},
 					{
@@ -818,23 +818,23 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.3832369148731232,
+							0.38323691487312317,
 							0.25500401854515076,
 							0.16680334508419037
 						],
 						"mean_before": [
-							0.3832369148731232,
+							0.38323691487312317,
 							0.25500401854515076,
 							0.16680334508419037
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							2.8520822525024417e-05,
+							2.8520822525024414e-05,
 							1.6383826732635498e-05,
 							9.208917617797852e-06
 						],
 						"variance_before": [
-							2.8520822525024417e-05,
+							2.8520822525024414e-05,
 							1.6383826732635498e-05,
 							9.208917617797852e-06
 						]
@@ -853,12 +853,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00013518333435058,
+							0.00013518333435058594,
 							7.751584053039551e-05,
 							4.363246262073517e-05
 						],
 						"variance_before": [
-							0.00013518333435058,
+							0.00013518333435058594,
 							7.751584053039551e-05,
 							4.363246262073517e-05
 						]
@@ -903,12 +903,12 @@
 						"variance_after": [
 							6.961822509765625e-05,
 							3.994256258010864e-05,
-							2.248398959636688e-05
+							2.2483989596366882e-05
 						],
 						"variance_before": [
 							6.961822509765625e-05,
 							3.994256258010864e-05,
-							2.248398959636688e-05
+							2.2483989596366882e-05
 						]
 					},
 					{
@@ -999,12 +999,12 @@
 						"variance_after": [
 							6.785988807678223e-05,
 							3.890693187713623e-05,
-							2.188421785831451e-05
+							2.1884217858314514e-05
 						],
 						"variance_before": [
 							6.785988807678223e-05,
 							3.890693187713623e-05,
-							2.188421785831451e-05
+							2.1884217858314514e-05
 						]
 					}
 				],
@@ -1025,13 +1025,13 @@
 				"REDUCE to its error cap 0.0625x the band's (0.526 kept), carried from rung 1 held at 40, the same cost as the route taken, found first",
 				"REDUCE to its error cap 0.0625x the band's (0.526 kept), carried from rung 2 held at 40, the same cost as the route taken, found first"
 			],
-			"peak_mb": 243.0,
+			"peak_mb": 589.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 0.6000000000000001,
-			"searched": "replay",
+			"search_s": 10.9,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -1047,7 +1047,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "e18a6712b70dc269d35dd6741f37744b33c804942f7794aa6b0f269ec614ce1e"
 	}
 }

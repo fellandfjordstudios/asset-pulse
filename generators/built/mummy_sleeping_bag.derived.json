@@ -103,7 +103,7 @@
 	],
 	"effort": "full",
 	"id": "built/mummy-sleeping-bag",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -132,7 +132,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__mummy-sleeping-bag#1.trace.jsonl"
 			}
 		}
@@ -156,7 +156,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.09182
 				}
@@ -176,13 +176,13 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.0038889999999999997
 			},
 			"error": 0.0018518518518518517,
 			"fraction": 0.09182,
 			"from_rung": 0,
-			"judged": "660523fc99ace58532b6978e8b95bedf941882866ea591a88951836111bd836f",
+			"judged": "4517c43e63b7258ba024230af751b635dd99bfa3be42079cd4c3430c96ce7851",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.092 kept)",
@@ -205,10 +205,10 @@
 				"floor": 0.00398,
 				"part_shift": {
 					"cord": 0.0,
-					"lining": -0.00083,
+					"lining": -0.0008300000000000001,
 					"shell": 0.00054,
 					"soiled": 0.00036,
-					"zip": -0.00061
+					"zip": -0.0006100000000000001
 				},
 				"picture": 0.00398
 			},
@@ -216,13 +216,13 @@
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 459.0,
+			"peak_mb": 754.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 39.2,
-			"searched": "replay",
+			"search_s": 355.90000000000003,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -238,7 +238,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "bcef9a1a28973b32598c7d95d6d715bd77562216f5cee8ee1e405d0511843529"
 	}
 }

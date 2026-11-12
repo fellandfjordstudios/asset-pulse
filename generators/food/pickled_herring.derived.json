@@ -27,7 +27,7 @@
 	],
 	"effort": "full",
 	"id": "food/pickled-herring",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -44,11 +44,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "food__pickled-herring#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "food__pickled-herring#2.trace.jsonl"
 			}
 		}
@@ -59,7 +59,7 @@
 	},
 	"replay": {
 		"1": "cd4fd80216e5560bd5aea17065390c76be55620f3b5b85061a0e4957f95e2dc6",
-		"2": "730f2bced728f5f8f0bffb80c2abf516b55f067ad28f29a86fe009a5bf249fb9"
+		"2": "85bf42c29addc82ec270e538fb1a57f21d9a52e9a61c92ceb20a3ffeaade86f9"
 	},
 	"rungs": {
 		"1": {
@@ -82,7 +82,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004030000000000001,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.295707
 				}
@@ -97,13 +97,13 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.001297
 			},
 			"error": 0.0033811750360215834,
 			"fraction": 0.295707,
 			"from_rung": 0,
-			"judged": "254c7ff3e3d45fe81f29d69c0da9360d2fe4807c333ea673e3260a4463e1e981",
+			"judged": "24831fd77913f7c05d7cfe0664d886d7060f353093edbc37a27182985590da84",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.296 kept)",
@@ -122,22 +122,22 @@
 			},
 			"measured": {
 				"cost": 13350,
-				"coverage_rel": 0.00052,
-				"floor": 0.00403,
+				"coverage_rel": 0.0005200000000000001,
+				"floor": 0.004030000000000001,
 				"part_shift": {
 					"bay": 0.00018,
-					"brine": 0.00178,
-					"flesh": 0.00115,
-					"glass": 0.00245,
+					"brine": 0.0017800000000000001,
+					"flesh": 0.0011500000000000002,
+					"glass": 0.0024500000000000004,
 					"metal": 0.00067,
 					"onion": -0.00285,
-					"onion_skin": -0.00458,
-					"porcelain": 0.00024,
+					"onion_skin": -0.004580000000000001,
+					"porcelain": 0.00024000000000000003,
 					"seal": -2e-05,
 					"skin": 0.00116,
-					"spice": -0.00048
+					"spice": -0.00048000000000000007
 				},
-				"picture": 0.00403
+				"picture": 0.004030000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -145,13 +145,13 @@
 				"KIT: none holds at 0.0034 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00130 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 277.0,
+			"peak_mb": 320.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 100.0
 			},
-			"search_s": 10.3,
-			"searched": "replay",
+			"search_s": 270.6,
+			"searched": "recheck",
 			"surfaces": 11,
 			"surfaces_ceiling": 11,
 			"verdict": {
@@ -182,11 +182,11 @@
 					"value": 1.0
 				},
 				{
-					"cost": 7524,
+					"cost": 7528,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.03586,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.563596
 				}
@@ -206,134 +206,134 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.005187
 			},
 			"error": 0.013524700144086334,
 			"fraction": 0.563596,
 			"from_rung": 1,
-			"judged": "698f8fe1746ce12b108f0959328c26dfa74cd14e95af551e0aef1b090316ce40",
+			"judged": "87045e78a2ebcd88eaa9eeb68c494444b9db0b9fd2fefa60775bb0a9abeaca43",
 			"material_transfer": {
-				"checked_at": 5.0,
+				"checked_at": 5,
 				"checks": [
 					{
 						"holds": true,
 						"mean_after": [
-							0.5926381945610046,
-							0.596135675907135,
-							0.5569202303886414
+							0.5925938487052917,
+							0.5960717797279358,
+							0.5568656325340271
 						],
 						"mean_before": [
-							0.5926381945610046,
-							0.596135675907135,
-							0.5569202303886414
+							0.5925938487052917,
+							0.5960717797279358,
+							0.5568656325340271
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.11063015460968018,
-							0.11866408586502077,
-							0.1144888699054718
+							0.1106322705745697,
+							0.11868280172348022,
+							0.11449846625328064
 						],
 						"variance_before": [
-							0.11063015460968018,
-							0.11866408586502077,
-							0.1144888699054718
+							0.1106322705745697,
+							0.11868280172348022,
+							0.11449846625328064
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.5925137400627136,
-							0.5960556268692017,
-							0.5568189024925232
+							0.592458963394165,
+							0.5959775447845459,
+							0.55675208568573
 						],
 						"mean_before": [
-							0.5925137400627136,
-							0.5960556268692017,
-							0.5568189024925232
+							0.592458963394165,
+							0.5959775447845459,
+							0.55675208568573
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.11068636178970336,
-							0.11872819066047668,
-							0.11456140875816344
+							0.11068925261497498,
+							0.1187501847743988,
+							0.11457350850105286
 						],
 						"variance_before": [
-							0.11068636178970336,
-							0.11872819066047668,
-							0.11456140875816344
+							0.11068925261497498,
+							0.1187501847743988,
+							0.11457350850105286
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.5927229523658752,
-							0.5962416529655457,
-							0.556967556476593
+							0.5926785469055176,
+							0.5961779356002808,
+							0.5569129586219788
 						],
 						"mean_before": [
-							0.5927229523658752,
-							0.5962416529655457,
-							0.556967556476593
+							0.5926785469055176,
+							0.5961779356002808,
+							0.5569129586219788
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.11063095927238464,
-							0.11868461966514587,
-							0.11451524496078493
+							0.11063283681869507,
+							0.11870187520980835,
+							0.11452516913414001
 						],
 						"variance_before": [
-							0.11063095927238464,
-							0.11868461966514587,
-							0.11451524496078493
+							0.11063283681869507,
+							0.11870187520980835,
+							0.11452516913414001
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.5925124287605286,
-							0.5960049629211426,
-							0.5567923188209534
+							0.5924681425094604,
+							0.5959411263465881,
+							0.5567378401756287
 						],
 						"mean_before": [
-							0.5925124287605286,
-							0.5960049629211426,
-							0.5567923188209534
+							0.5924681425094604,
+							0.5959411263465881,
+							0.5567378401756287
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.1106145679950714,
-							0.11863058805465698,
-							0.11444512009620668
+							0.11061662435531616,
+							0.11864924430847168,
+							0.11445459723472595
 						],
 						"variance_before": [
-							0.1106145679950714,
-							0.11863058805465698,
-							0.11444512009620668
+							0.11061662435531616,
+							0.11864924430847168,
+							0.11445459723472595
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.5926369428634644,
-							0.5961166620254517,
-							0.5568832755088806
+							0.5925925970077515,
+							0.5960528254508972,
+							0.5568287372589111
 						],
 						"mean_before": [
-							0.5926369428634644,
-							0.5961166620254517,
-							0.5568832755088806
+							0.5925925970077515,
+							0.5960528254508972,
+							0.5568287372589111
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.1105962097644806,
-							0.11862063407897948,
-							0.11444491147994997
+							0.11059832572937012,
+							0.11863929033279419,
+							0.1144544780254364
 						],
 						"variance_before": [
-							0.1105962097644806,
-							0.11862063407897948,
-							0.11444491147994997
+							0.11059832572937012,
+							0.11863929033279419,
+							0.1144544780254364
 						]
 					}
 				],
@@ -341,9 +341,9 @@
 			},
 			"materials": "merged",
 			"measured": {
-				"cost": 7524,
-				"coverage_rel": -0.01137,
-				"floor": 0.00403,
+				"cost": 7528,
+				"coverage_rel": -0.011370000000000002,
+				"floor": 0.004030000000000001,
 				"part_shift": {},
 				"picture": 0.03586
 			},
@@ -355,13 +355,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.125x the band's (0.296 kept), carried from rung 1 held at 13350, dearer than the 7524 taken"
 			],
-			"peak_mb": 277.0,
+			"peak_mb": 328.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 100.0
 			},
-			"search_s": 10.9,
-			"searched": "replay",
+			"search_s": 230.4,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -377,7 +377,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "7931a854fb19ed33c0212dd418fd7dc3b5b3cd84870f4e45063f04efe0a727e3"
 	}
 }

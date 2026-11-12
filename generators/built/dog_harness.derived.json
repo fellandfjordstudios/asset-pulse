@@ -51,7 +51,7 @@
 	],
 	"effort": "full",
 	"id": "built/dog-harness",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -139,7 +139,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "7a27615c0edf7eb49a942e56042c123238469b950c787805d7b3a677c221dec6",
+			"judged": "a5b5ae93b5ba50af7c12bc222ae7d72da87556e7a2034c4c44413d694e25766a",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
@@ -181,7 +181,7 @@
 			"routes": {
 				"reduce": 9242.0
 			},
-			"search_s": 580.4,
+			"search_s": 407.90000000000003,
 			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6,
@@ -190,7 +190,7 @@
 				"configurations": 9,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -236,7 +236,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "b5edd1abc9d62da9e42b5e6eb84262c8b19401367a3d7362bf7299aa6cac1f65",
+			"judged": "1587361afae25dbc18174530598a3880345eff9f4110bfa850a47603e737396d",
 			"keep": {
 				"fuzz": 0.03125,
 				"stitch": 0.03125
@@ -501,9 +501,9 @@
 				"REDUCE to its error cap 0.125x the band's (0.409 kept) held at 41112, dearer than the 9996 taken",
 				"REDUCE to 0.490, carried from rung 1 held at 58546, dearer than the 9996 taken"
 			],
-			"peak_mb": 943.0,
+			"peak_mb": 951.0,
 			"route": "kit",
-			"search_s": 1972.8000000000002,
+			"search_s": 1461.0,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
@@ -562,7 +562,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "1d3e218a991d5e715fe723d8aaa3f9ed69c436594195ad0b8967ccb4251e1d5a",
+			"judged": "d28478d0a8f7620cdd29b103237ba4deabbd70a4159ffbad8221110e9a4e50ca",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -574,9 +574,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 943.0,
+			"peak_mb": 951.0,
 			"route": "impostor",
-			"search_s": 115.2,
+			"search_s": 78.4,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -590,12 +590,12 @@
 				"over": null,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.46680000000000005
+				"worst": 0.4668000000000001
 			}
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "d592d5efdedc2888f387ba54c832c028b018d661493efa94402779b625ac64b2"
 	}
 }

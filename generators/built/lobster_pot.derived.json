@@ -97,7 +97,7 @@
 	],
 	"effort": "full",
 	"id": "built/lobster-pot",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -125,7 +125,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 14,
+				"candidates": 1,
 				"trace": "built__lobster-pot#1.trace.jsonl"
 			},
 			"2": {
@@ -150,11 +150,11 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 16720,
+					"cost": 16720.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004710000000000001,
-					"px_over": 135,
+					"picture": 0.00471,
+					"px_over": 135.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -179,11 +179,11 @@
 			"error": 0.0018518518518518521,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "ff9ccc4cc89016d0745f8b2ba4d39f94b13072e9d6713a1b6e54ce3b8e834d79",
+			"judged": "81454077158bdce863fee07a1b197c60b673f30c6a954b0714311883df21e0e7",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -218,10 +218,10 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1032.0,
+			"peak_mb": 942.0,
 			"route": "merged",
-			"search_s": 1216.4,
-			"searched": "search",
+			"search_s": 843.4000000000001,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6,
 			"verdict": {
@@ -229,7 +229,7 @@
 				"configurations": 16,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.25
@@ -238,7 +238,7 @@
 	},
 	"source": {
 		"children": "115a979f3fb3163968a2fd1ea0e8d561ad4a8270cae3a0f7e7d86f13384342b0",
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "d19607edad2ad3f5c7fbfcdda62a35d13ddf95fb909579a5ade9a32491d07cf2"
 	}
 }

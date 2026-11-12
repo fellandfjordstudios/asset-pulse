@@ -19,7 +19,7 @@
 	],
 	"effort": "full",
 	"id": "built/fishing-rod",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -42,7 +42,7 @@
 				"trace": "built__fishing-rod#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 3,
 				"trace": "built__fishing-rod#3.trace.jsonl"
 			}
 		}
@@ -88,7 +88,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f715f59252ccb0bb9ee93aa383fda957902163e3f59f039260304157d1ca9095",
+			"judged": "9f8fb671990c1a7540896e7721f36d483313acc467fad1bd97e1051dbb39e920",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -121,10 +121,10 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 262.0,
+			"peak_mb": 307.0,
 			"route": "kit",
-			"search_s": 2.1,
-			"searched": "replay",
+			"search_s": 22.400000000000002,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"verdict": {
@@ -180,10 +180,10 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "3406c3275a477439f640c0ececf592edfda2b819de9db554cf8e689b6a933f59",
+			"judged": "cd01271e1843b836230538ec0158aa3e1b5a8d774d7055c1a204e839fc7c82e5",
 			"keep": {},
 			"material_transfer": {
-				"checked_at": 3.0,
+				"checked_at": 3,
 				"checks": [
 					{
 						"holds": true,
@@ -199,12 +199,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.03828363493084907,
+							0.038283634930849075,
 							0.03585918992757797,
 							0.03926130756735802
 						],
 						"variance_before": [
-							0.03828363493084907,
+							0.038283634930849075,
 							0.03585918992757797,
 							0.03926130756735802
 						]
@@ -212,12 +212,12 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.2031164318323135,
+							0.20311643183231354,
 							0.16999712586402893,
 							0.1348230242729187
 						],
 						"mean_before": [
-							0.2031164318323135,
+							0.20311643183231354,
 							0.16999712586402893,
 							0.1348230242729187
 						],
@@ -225,12 +225,12 @@
 						"variance_after": [
 							0.03912132978439331,
 							0.03668205440044403,
-							0.04040233045816421
+							0.040402330458164215
 						],
 						"variance_before": [
 							0.03912132978439331,
 							0.03668205440044403,
-							0.04040233045816421
+							0.040402330458164215
 						]
 					},
 					{
@@ -248,12 +248,12 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.03750116750597954,
-							0.03510789573192596,
+							0.035107895731925964,
 							0.03823123127222061
 						],
 						"variance_before": [
 							0.03750116750597954,
-							0.03510789573192596,
+							0.035107895731925964,
 							0.03823123127222061
 						]
 					}
@@ -296,10 +296,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0074 -- the finest tried (0.700) fails at {\"length_m\":2.1} seed 314: coverage changes -0.0257 against 0.0227 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0074",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)"
 			],
-			"peak_mb": 261.0,
+			"peak_mb": 266.0,
 			"route": "kit",
-			"search_s": 2.5,
-			"searched": "replay",
+			"search_s": 126.30000000000001,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -314,7 +314,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 9437184.0,
+			"atlas_bytes": 9437184,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -344,20 +344,20 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 12.0
+					"value": 12
 				}
 			],
 			"checked_at": 3,
-			"draw_calls": 1.0,
+			"draw_calls": 1,
 			"drawn": {
-				"excess": 0.4564,
+				"excess": 0.45640000000000003,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "ffa453fcf2d6d2c2cef541bbf508c9c092e5ecc7c007b747c9b6484803119303",
+			"judged": "be0dcfb61956ec5d3320ec043ee87f0695dc7c84238ca2e01633c271c04ad821",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -369,14 +369,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 261.0,
+			"peak_mb": 266.0,
 			"route": "impostor",
-			"search_s": 1.1,
-			"searched": "replay",
+			"search_s": 7.0,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12.0,
+			"tiles": 12,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 3,
@@ -390,7 +390,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "09795d42aad94c19825bf90a62e4355ce26d266039f9348aeed4722869cf5024"
 	}
 }

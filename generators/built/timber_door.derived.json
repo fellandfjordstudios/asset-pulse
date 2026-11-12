@@ -85,7 +85,7 @@
 	],
 	"effort": "full",
 	"id": "built/timber-door",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -111,11 +111,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__timber-door#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__timber-door#2.trace.jsonl"
 			},
 			"3": {
@@ -154,7 +154,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0040100000000000005,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -172,14 +172,14 @@
 				"excess": 0.1875,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.004593
 			},
 			"error": 0.001851851851851852,
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "75ab7e5a8cf606a55f467372b6011255235f741bae91211fdf1fe4d640d10d7b",
+			"judged": "a325831715faafb7d3319bebac6c52f0a4eed9172868322bab6d4ccfae8cedcf",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -199,14 +199,14 @@
 			"measured": {
 				"cost": 582,
 				"coverage_rel": 0.0,
-				"floor": 0.00516,
+				"floor": 0.0051600000000000005,
 				"part_shift": {
 					"frame": 0.00025,
 					"glass": 8e-05,
-					"iron": -0.00066,
+					"iron": -0.0006600000000000001,
 					"opening": 0.00031
 				},
-				"picture": 0.00401
+				"picture": 0.0040100000000000005
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -215,13 +215,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 622, dearer than the 582 taken"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 687.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 0.5,
-			"searched": "replay",
+			"search_s": 116.9,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -255,7 +255,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00498,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.678457
 				}
@@ -271,14 +271,14 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.018369999999999997
 			},
 			"error": 0.007407407407407408,
 			"every_piece": true,
 			"fraction": 0.678457,
 			"from_rung": 0,
-			"judged": "8f665189c2394825e00749663df851a7df396b71d42645766fb3474339d79dac",
+			"judged": "a7eeb5f5b8faa5060ea70a7e8d5779706ca865aefd8e5cec414b78464fdcfd7c",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -296,7 +296,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 14.0,
+				"checked_at": 14,
 				"checks": [
 					{
 						"holds": true,
@@ -312,12 +312,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.12787634134292605,
+							0.12787634134292603,
 							0.12741634249687195,
 							0.12571248412132263
 						],
 						"variance_before": [
-							0.12787634134292605,
+							0.12787634134292603,
 							0.12741634249687195,
 							0.12571248412132263
 						]
@@ -386,12 +386,12 @@
 						"variance_after": [
 							0.12469860911369324,
 							0.124286949634552,
-							0.12271386384963988
+							0.12271386384963989
 						],
 						"variance_before": [
 							0.12469860911369324,
 							0.124286949634552,
-							0.12271386384963988
+							0.12271386384963989
 						]
 					},
 					{
@@ -456,14 +456,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.10083776712417604,
-							0.10093072056770323,
-							0.10074073076248168
+							0.10083776712417603,
+							0.10093072056770325,
+							0.10074073076248169
 						],
 						"variance_before": [
-							0.10083776712417604,
-							0.10093072056770323,
-							0.10074073076248168
+							0.10083776712417603,
+							0.10093072056770325,
+							0.10074073076248169
 						]
 					},
 					{
@@ -480,12 +480,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.09582158923149107,
+							0.09582158923149109,
 							0.0959051251411438,
 							0.09571582078933716
 						],
 						"variance_before": [
-							0.09582158923149107,
+							0.09582158923149109,
 							0.0959051251411438,
 							0.09571582078933716
 						]
@@ -504,14 +504,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.12439200282096864,
-							0.12399411201477052,
-							0.12246188521385191
+							0.12439200282096863,
+							0.12399411201477051,
+							0.12246188521385193
 						],
 						"variance_before": [
-							0.12439200282096864,
-							0.12399411201477052,
-							0.12246188521385191
+							0.12439200282096863,
+							0.12399411201477051,
+							0.12246188521385193
 						]
 					},
 					{
@@ -577,12 +577,12 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.11541587114334106,
-							0.11500105261802672,
+							0.11500105261802673,
 							0.11345720291137695
 						],
 						"variance_before": [
 							0.11541587114334106,
-							0.11500105261802672,
+							0.11500105261802673,
 							0.11345720291137695
 						]
 					},
@@ -601,12 +601,12 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.1296558678150177,
-							0.12918975949287417,
+							0.12918975949287415,
 							0.12746331095695496
 						],
 						"variance_before": [
 							0.1296558678150177,
-							0.12918975949287417,
+							0.12918975949287415,
 							0.12746331095695496
 						]
 					},
@@ -625,12 +625,12 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.1245417594909668,
-							0.12409335374832152,
+							0.12409335374832153,
 							0.12243178486824036
 						],
 						"variance_before": [
 							0.1245417594909668,
-							0.12409335374832152,
+							0.12409335374832153,
 							0.12243178486824036
 						]
 					}
@@ -640,8 +640,8 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 422,
-				"coverage_rel": -0.00548,
-				"floor": 0.00516,
+				"coverage_rel": -0.0054800000000000005,
+				"floor": 0.0051600000000000005,
 				"part_shift": {},
 				"picture": 0.00498
 			},
@@ -656,13 +656,13 @@
 				"CARRIED from rung 1, REDUCE (every piece) to 0.700, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.01837 m",
 				"KIT (its own build at the rung's pixel) held at 622, dearer than the 422 taken"
 			],
-			"peak_mb": 243.0,
+			"peak_mb": 687.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 2.1,
-			"searched": "replay",
+			"search_s": 59.5,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -707,7 +707,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "bbbfa231a173d710e91378c60a158ea0f9a9d054b913721c77861be781378991",
+			"judged": "4597b02fff44b55c31b40d40e909781c7f10972e5de9851d4be6a180dc8a35b4",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -723,7 +723,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 14.0,
+				"checked_at": 14,
 				"checks": [
 					{
 						"holds": true,
@@ -763,12 +763,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.119004487991333,
+							0.11900448799133301,
 							0.11852920055389404,
 							0.1168360710144043
 						],
 						"variance_before": [
-							0.119004487991333,
+							0.11900448799133301,
 							0.11852920055389404,
 							0.1168360710144043
 						]
@@ -787,12 +787,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.1412797570228577,
+							0.14127975702285767,
 							0.14076747000217438,
 							0.13889913260936737
 						],
 						"variance_before": [
-							0.1412797570228577,
+							0.14127975702285767,
 							0.14076747000217438,
 							0.13889913260936737
 						]
@@ -824,13 +824,13 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.497939258813858,
-							0.4985149204730987,
+							0.49793925881385803,
+							0.49851492047309875,
 							0.500607967376709
 						],
 						"mean_before": [
-							0.497939258813858,
-							0.4985149204730987,
+							0.49793925881385803,
+							0.49851492047309875,
 							0.500607967376709
 						],
 						"spatial_rms": 0.0,
@@ -884,13 +884,13 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.10269621014595032,
-							0.1027929186820984,
-							0.10260516405105592
+							0.10279291868209839,
+							0.10260516405105591
 						],
 						"variance_before": [
 							0.10269621014595032,
-							0.1027929186820984,
-							0.10260516405105592
+							0.10279291868209839,
+							0.10260516405105591
 						]
 					},
 					{
@@ -907,13 +907,13 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.1094810664653778,
-							0.10955774784088136,
+							0.10948106646537781,
+							0.10955774784088135,
 							0.10931271314620972
 						],
 						"variance_before": [
-							0.1094810664653778,
-							0.10955774784088136,
+							0.10948106646537781,
+							0.10955774784088135,
 							0.10931271314620972
 						]
 					},
@@ -1004,24 +1004,24 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.12228038907051086,
-							0.12180119752883913,
+							0.12180119752883911,
 							0.1200856864452362
 						],
 						"variance_before": [
 							0.12228038907051086,
-							0.12180119752883913,
+							0.12180119752883911,
 							0.1200856864452362
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.499920666217804,
+							0.49992066621780396,
 							0.5004841685295105,
 							0.5025416612625122
 						],
 						"mean_before": [
-							0.499920666217804,
+							0.49992066621780396,
 							0.5004841685295105,
 							0.5025416612625122
 						],
@@ -1067,10 +1067,10 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 218,
-				"coverage_rel": -0.01483,
-				"floor": 0.00516,
+				"coverage_rel": -0.014830000000000001,
+				"floor": 0.0051600000000000005,
 				"part_shift": {},
-				"picture": 0.0235
+				"picture": 0.023500000000000004
 			},
 			"measured_of": 5,
 			"not_taken": [
@@ -1081,10 +1081,10 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 622, dearer than the 218 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 622, dearer than the 218 taken"
 			],
-			"peak_mb": 243.0,
+			"peak_mb": 687.0,
 			"route": "kit",
-			"search_s": 2.0,
-			"searched": "replay",
+			"search_s": 35.1,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -1100,7 +1100,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "b4e212213612f9b911f79b07adc40a93a7136c80f3e8d7143891177d34fcea79"
 	}
 }

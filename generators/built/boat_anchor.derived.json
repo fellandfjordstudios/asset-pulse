@@ -27,7 +27,7 @@
 	],
 	"effort": "full",
 	"id": "built/boat-anchor",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -44,15 +44,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__boat-anchor#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__boat-anchor#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 11,
 				"trace": "built__boat-anchor#3.trace.jsonl"
 			}
 		}
@@ -87,7 +87,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004770000000000001,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.911546
 				}
@@ -102,13 +102,13 @@
 				"excess": 0.4375,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.001487
 			},
 			"error": 0.0018518518518518521,
 			"fraction": 0.911546,
 			"from_rung": 0,
-			"judged": "8ffceed00fc33a9ff0f029ecf5cafadc700f30ced4ba74de94520a0dfa75ad36",
+			"judged": "43e705211cf8ce32364f5b4e1d0344ba39136c3234aeb07bd0dccd8a68005d66",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.912 kept)",
@@ -127,13 +127,13 @@
 			},
 			"measured": {
 				"cost": 20116,
-				"coverage_rel": -0.00087,
-				"floor": 0.00477,
+				"coverage_rel": -0.0008700000000000001,
+				"floor": 0.004770000000000001,
 				"part_shift": {
-					"iron": -0.00039,
-					"rope": 0.00039
+					"iron": -0.00039000000000000005,
+					"rope": 0.00039000000000000005
 				},
-				"picture": 0.00477
+				"picture": 0.004770000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -141,13 +141,13 @@
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 14 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.94), one pixel 0.00149 m",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 267.0,
+			"peak_mb": 474.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 4.1000000000000005,
-			"searched": "replay",
+			"search_s": 98.5,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"verdict": {
@@ -190,7 +190,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.005920000000000001,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.48999999999999994
 				}
@@ -208,13 +208,13 @@
 				"excess": 0.375,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.005946
 			},
 			"error": 0.0074074074074074086,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "350820cb87f6a4fbe5ef881483dbef16e492ebf68e2e53c582f86380a8e97408",
+			"judged": "61c71c52a969b307b03070f89e280d5a082060c00c3bb1dbffeea18c4e7a4742",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
@@ -232,19 +232,19 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 5.0,
+				"checked_at": 5,
 				"checks": [
 					{
 						"holds": true,
 						"mean_after": [
-							0.01967610232532024,
-							0.01570573635399341,
-							0.01254532393068075
+							0.019676102325320244,
+							0.015705736353993416,
+							0.012545323930680752
 						],
 						"mean_before": [
-							0.01967610232532024,
-							0.01570573635399341,
-							0.01254532393068075
+							0.019676102325320244,
+							0.015705736353993416,
+							0.012545323930680752
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -261,62 +261,62 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.01967742852866649,
-							0.01570629701018333,
-							0.01254501566290855
+							0.019677428528666496,
+							0.015706297010183334,
+							0.012545015662908554
 						],
 						"mean_before": [
-							0.01967742852866649,
-							0.01570629701018333,
-							0.01254501566290855
+							0.019677428528666496,
+							0.015706297010183334,
+							0.012545015662908554
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							3.099892637692392e-05,
 							3.889115760102868e-06,
-							1.0618532542139293e-07
+							1.0618532542139292e-07
 						],
 						"variance_before": [
 							3.099892637692392e-05,
 							3.889115760102868e-06,
-							1.0618532542139293e-07
+							1.0618532542139292e-07
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.01967011019587516,
+							0.019670110195875168,
 							0.01570390723645687,
-							0.01254451926797628
+							0.012544519267976284
 						],
 						"mean_before": [
-							0.01967011019587516,
+							0.019670110195875168,
 							0.01570390723645687,
-							0.01254451926797628
+							0.012544519267976284
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							3.100649337284267e-05,
 							3.883760655298829e-06,
-							1.0563235264271499e-07
+							1.0563235264271498e-07
 						],
 						"variance_before": [
 							3.100649337284267e-05,
 							3.883760655298829e-06,
-							1.0563235264271499e-07
+							1.0563235264271498e-07
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.01967629417777061,
-							0.01570580899715423,
-							0.01254533883184194
+							0.019676294177770615,
+							0.015705808997154236,
+							0.012545338831841946
 						],
 						"mean_before": [
-							0.01967629417777061,
-							0.01570580899715423,
-							0.01254533883184194
+							0.019676294177770615,
+							0.015705808997154236,
+							0.012545338831841946
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -333,25 +333,25 @@
 					{
 						"holds": true,
 						"mean_after": [
-							0.01967621967196464,
-							0.01570578850805759,
-							0.01254534069448709
+							0.019676219671964645,
+							0.015705788508057594,
+							0.012545340694487095
 						],
 						"mean_before": [
-							0.01967621967196464,
-							0.01570578850805759,
-							0.01254534069448709
+							0.019676219671964645,
+							0.015705788508057594,
+							0.012545340694487095
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							3.100972389802337e-05,
 							3.898079739883542e-06,
-							9.629002306610347e-08
+							9.629002306610346e-08
 						],
 						"variance_before": [
 							3.100972389802337e-05,
 							3.898079739883542e-06,
-							9.629002306610347e-08
+							9.629002306610346e-08
 						]
 					}
 				],
@@ -360,12 +360,12 @@
 			"measured": {
 				"cost": 10804,
 				"coverage_rel": -0.01123,
-				"floor": 0.00477,
+				"floor": 0.004770000000000001,
 				"part_shift": {
-					"iron": 0.00086,
-					"rope": -0.00086
+					"iron": 0.0008600000000000001,
+					"rope": -0.0008600000000000001
 				},
-				"picture": 0.00592
+				"picture": 0.005920000000000001
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -392,13 +392,13 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 2 across 4 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE to its error cap 0.125x the band's (0.912 kept), carried from rung 1 held at 20116, dearer than the 10804 taken"
 			],
-			"peak_mb": 262.0,
+			"peak_mb": 474.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 3.2,
-			"searched": "replay",
+			"search_s": 575.0,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -413,7 +413,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 9437184.0,
+			"atlas_bytes": 9437184,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -443,11 +443,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 12.0
+					"value": 12
 				}
 			],
 			"checked_at": 5,
-			"draw_calls": 1.0,
+			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.4531,
 				"judge": "drawn",
@@ -456,7 +456,7 @@
 			"error": 0.029629629629629634,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "6ea78da1635c4b66024bb885c3e5956191654f682b9a5a3b6c12b614e69df98b",
+			"judged": "2b35c0898e39086a9e6752dfeab8967d25b39606fa0b633ec987f73cff0ad2a8",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -468,13 +468,13 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 262.0,
+			"peak_mb": 474.0,
 			"route": "impostor",
-			"search_s": 2.2,
-			"searched": "replay",
+			"search_s": 33.4,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12.0,
+			"tiles": 12,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 5,
@@ -488,7 +488,7 @@
 		}
 	},
 	"source": {
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "081a42c479813fdd68c26c5bf7930353c0a75e4c08cd1b783c50bf411066b05e"
 	}
 }

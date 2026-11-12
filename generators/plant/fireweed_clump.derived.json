@@ -99,7 +99,7 @@
 	],
 	"effort": "full",
 	"id": "plant/fireweed-clump",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -187,7 +187,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "16aa79468d816e32da639ac63a73d06826f0623e0ae05b8cf9f6c0e7708e5cba",
+			"judged": "09630de6451dabf6af64058ecd068205940e7966e1eb7e1a73041f200e94ff74",
 			"measured": {
 				"cost": 24082,
 				"coverage_rel": -0.02672,
@@ -213,12 +213,12 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: plant/fireweed-clump does not declare `reads_density`"
 			],
-			"peak_mb": 376.0,
+			"peak_mb": 377.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 42.0
 			},
-			"search_s": 141.4,
+			"search_s": 97.4,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
@@ -270,7 +270,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "e64c57be724912a5a3aa618bba8d7df193de327882c6ddb824179f3f2898b929",
+			"judged": "df7db4f9196356ea03160917111f29c164f8f203a6c1fd5716472418462d2197",
 			"material_transfer": {
 				"checked_at": 17,
 				"checks": [
@@ -716,12 +716,12 @@
 				"CARRIED from rung 1, REDUCE (every piece) to 0.700, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {\"patch_radius_m\":0.05} seed 314: coverage changes -0.0267 against 0.0232 a derivation may change (its error read as a change of size)",
 				"THIN: plant/fireweed-clump does not declare `reads_density`"
 			],
-			"peak_mb": 420.0,
+			"peak_mb": 421.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 42.0
 			},
-			"search_s": 221.8,
+			"search_s": 156.9,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -781,7 +781,7 @@
 			"error": 0.029629629629629634,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "41533146ff1b25d84ac081e31280d66b4015cfc7aa98f651e0ab0a94ba9c815c",
+			"judged": "ce68eab58b44c2f15af991a2acc76a5630177c29c55785fa650002f05d4820b2",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -795,7 +795,7 @@
 			],
 			"peak_mb": 417.0,
 			"route": "impostor",
-			"search_s": 169.9,
+			"search_s": 118.4,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -809,13 +809,13 @@
 				"over": null,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.48660000000000003
+				"worst": 0.4866
 			}
 		}
 	},
 	"source": {
 		"children": "0f155e6598819bd396f2c8ddeccc7d2a6f9fadfc5886533fffd390ded6616c26",
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "3f337bc696858db6863e5e0701da91816155ee0d4847cfcc63cb7cb4171174b9"
 	}
 }

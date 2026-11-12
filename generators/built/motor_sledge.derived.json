@@ -49,7 +49,7 @@
 	],
 	"effort": "full",
 	"id": "built/motor-sledge",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -69,7 +69,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__motor-sledge#1.trace.jsonl"
 			},
 			"2": {
@@ -77,7 +77,7 @@
 				"trace": "built__motor-sledge#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 15,
 				"trace": "built__motor-sledge#3.trace.jsonl"
 			}
 		}
@@ -88,7 +88,7 @@
 	},
 	"replay": {
 		"1": "37ce7fe7b87bd4bde8676a821328d76dd5165417ebef37468abf570cf2e54932",
-		"2": "3090bbd26dfae688155aa95def169a9c86a3bf18a7f77b8ba0ec9223d2ece44b",
+		"2": "521d6f3b606705294e2d3018a213efcd2010ab3d5a66256aad5dab659b31c11c",
 		"3": "0708ec751e653cbd48e95a3f75d7a6049fb24a9e83e699be7b2ac2b73480ae0d"
 	},
 	"rungs": {
@@ -109,7 +109,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "merged",
 					"value": 1.0
 				}
@@ -119,13 +119,13 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.0056619999999999995
 			},
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "1280bd9f26b1c0c77a83c237af96f9a5556bacb89c811e4ae94d0197441f301f",
+			"judged": "30b29674d68409ef0b793be82de478bc70dce49a9a2ee7f660a5b4d67c5cd708",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
@@ -145,7 +145,7 @@
 			"measured": {
 				"cost": 43546,
 				"coverage_rel": 0.0,
-				"floor": 0.00469,
+				"floor": 0.004690000000000001,
 				"part_shift": {
 					"cowl": 0.0,
 					"engine": 0.0,
@@ -162,10 +162,10 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 267.0,
+			"peak_mb": 559.0,
 			"route": "merged",
-			"search_s": 9.8,
-			"searched": "replay",
+			"search_s": 304.3,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -229,57 +229,57 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d30d749bfd735938192976684bff881ee358017af801cb07da01dac580b566a5",
+			"judged": "8c7cace467a54f175623ac43aa4f154deba7f616540ebb53dc6e51cecddf869c",
 			"keep": {},
 			"material_transfer": {
-				"checked_at": 8.0,
+				"checked_at": 8,
 				"checks": [
 					{
 						"holds": true,
 						"mean_after": [
 							0.236643448472023,
-							0.19651231169700625,
+							0.19651231169700623,
 							0.16491368412971497
 						],
 						"mean_before": [
 							0.236643448472023,
-							0.19651231169700625,
+							0.19651231169700623,
 							0.16491368412971497
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00926403701305389,
-							0.00945410877466201,
-							0.01153599098324775
+							0.009264037013053894,
+							0.009454108774662018,
+							0.011535990983247757
 						],
 						"variance_before": [
-							0.00926403701305389,
-							0.00945410877466201,
-							0.01153599098324775
+							0.009264037013053894,
+							0.009454108774662018,
+							0.011535990983247757
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.23548094928264615,
+							0.23548094928264618,
 							0.19574333727359772,
 							0.16422119736671448
 						],
 						"mean_before": [
-							0.23548094928264615,
+							0.23548094928264618,
 							0.19574333727359772,
 							0.16422119736671448
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00936909392476081,
-							0.00947531685233116,
-							0.0114990547299385
+							0.009369093924760818,
+							0.009475316852331161,
+							0.011499054729938507
 						],
 						"variance_before": [
-							0.00936909392476081,
-							0.00947531685233116,
-							0.0114990547299385
+							0.009369093924760818,
+							0.009475316852331161,
+							0.011499054729938507
 						]
 					},
 					{
@@ -297,13 +297,13 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.00907069444656372,
-							0.0094185434281826,
-							0.01160778291523456
+							0.009418543428182602,
+							0.011607782915234566
 						],
 						"variance_before": [
 							0.00907069444656372,
-							0.0094185434281826,
-							0.01160778291523456
+							0.009418543428182602,
+							0.011607782915234566
 						]
 					},
 					{
@@ -320,14 +320,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.01003201305866241,
-							0.00984338298439979,
-							0.0116191990673542
+							0.010032013058662415,
+							0.009843382984399796,
+							0.011619199067354202
 						],
 						"variance_before": [
-							0.01003201305866241,
-							0.00984338298439979,
-							0.0116191990673542
+							0.010032013058662415,
+							0.009843382984399796,
+							0.011619199067354202
 						]
 					},
 					{
@@ -345,61 +345,61 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.00862528383731842,
-							0.00913732126355171,
-							0.01146181114017963
+							0.009137321263551712,
+							0.011461811140179634
 						],
 						"variance_before": [
 							0.00862528383731842,
-							0.00913732126355171,
-							0.01146181114017963
+							0.009137321263551712,
+							0.011461811140179634
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.23657472431659696,
+							0.23657472431659698,
 							0.1972658485174179,
 							0.16616886854171753
 						],
 						"mean_before": [
-							0.23657472431659696,
+							0.23657472431659698,
 							0.1972658485174179,
 							0.16616886854171753
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.00938686728477478,
-							0.00960082188248634,
-							0.01169422827661037
+							0.009600821882486343,
+							0.011694228276610374
 						],
 						"variance_before": [
 							0.00938686728477478,
-							0.00960082188248634,
-							0.01169422827661037
+							0.009600821882486343,
+							0.011694228276610374
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.23697282373905185,
+							0.23697282373905182,
 							0.196633979678154,
 							0.16492527723312378
 						],
 						"mean_before": [
-							0.23697282373905185,
+							0.23697282373905182,
 							0.196633979678154,
 							0.16492527723312378
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00920770689845085,
-							0.00941460579633712,
-							0.0115110408514738
+							0.009207706898450851,
+							0.009414605796337128,
+							0.011511040851473808
 						],
 						"variance_before": [
-							0.00920770689845085,
-							0.00941460579633712,
-							0.0115110408514738
+							0.009207706898450851,
+							0.009414605796337128,
+							0.011511040851473808
 						]
 					},
 					{
@@ -407,35 +407,34 @@
 						"mean_after": [
 							0.2981961667537689,
 							0.24522627890110016,
-							0.19185137748718264
+							0.19185137748718262
 						],
 						"mean_before": [
 							0.2981961667537689,
 							0.24522627890110016,
-							0.19185137748718264
+							0.19185137748718262
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.02966596186161041,
-							0.02473942562937736,
+							0.029665961861610413,
+							0.024739425629377365,
 							0.01634933426976204
 						],
 						"variance_before": [
-							0.02966596186161041,
-							0.02473942562937736,
+							0.029665961861610413,
+							0.024739425629377365,
 							0.01634933426976204
 						]
 					}
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
 				"cost": 15876,
 				"coverage_rel": -0.00805,
-				"floor": 0.00469,
+				"floor": 0.004690000000000001,
 				"part_shift": {},
-				"picture": 0.0056
+				"picture": 0.005600000000000001
 			},
 			"measured_of": 4,
 			"not_taken": [
@@ -465,10 +464,10 @@
 				"MERGED (its parts at their own rungs, joined) held at 43546, dearer than the 15876 taken",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 43546, dearer than the 15876 taken"
 			],
-			"peak_mb": 253.0,
+			"peak_mb": 559.0,
 			"route": "kit",
-			"search_s": 9.200000000000001,
-			"searched": "replay",
+			"search_s": 371.8,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -483,7 +482,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 37748736.0,
+			"atlas_bytes": 37748736,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -513,11 +512,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 24.0
+					"value": 24
 				}
 			],
 			"checked_at": 8,
-			"draw_calls": 1.0,
+			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.4554,
 				"judge": "drawn",
@@ -526,7 +525,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f6ae399a13398c7787196e1288ec92052b3b1cd93ddfe3712a23e89ca2a45390",
+			"judged": "bfb8c3c3bd938b36922233600aa7dc38fcc8e6548aac4b2eaa32289de09c2125",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -538,13 +537,13 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 253.0,
+			"peak_mb": 563.0,
 			"route": "impostor",
-			"search_s": 3.8000000000000003,
-			"searched": "replay",
+			"search_s": 235.5,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 24.0,
+			"tiles": 24,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 8,
@@ -559,7 +558,7 @@
 	},
 	"source": {
 		"children": "b9261c1d417ec26346f06238cfa2dfd0f8205ab5c72be5cdfb8a03ba12747331",
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "e7f5dd46263ed4eca2c0737b37ec07d2d89ba65a01742183edd59a0f9d7389c8"
 	}
 }

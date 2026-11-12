@@ -21,7 +21,7 @@
 	],
 	"effort": "full",
 	"id": "food/char-on-a-stick",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -100,7 +100,7 @@
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "acd3ab0b0439c544e88d0e8f89f83df6ca0265cbcf8882aa67e6df98c3c87192",
+			"judged": "0adf27e02a9ab675c9a12ebfcf863dec954a9020ee46c8218f19792e2341a831",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.700",
@@ -144,12 +144,12 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'body' is 48 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 370.0,
+			"peak_mb": 368.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 12.0
 			},
-			"search_s": 74.0,
+			"search_s": 63.1,
 			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10,
@@ -158,7 +158,7 @@
 				"configurations": 4,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.125
@@ -220,7 +220,7 @@
 			"every_piece": true,
 			"fraction": 0.312957,
 			"from_rung": 0,
-			"judged": "c062c52e3207ac8da9c0133065a2966c35a07929add3995546a39716a8440455",
+			"judged": "70adde9246a02fe618494ab78851b9881b1d2d542d867d4dc0b04d2cd87ba044",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.313 kept)",
@@ -376,12 +376,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to 0.700, carried from rung 1 held at 10034, dearer than the 4536 taken"
 			],
-			"peak_mb": 370.0,
+			"peak_mb": 368.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 12.0
 			},
-			"search_s": 416.8,
+			"search_s": 328.3,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
@@ -390,7 +390,7 @@
 				"configurations": 4,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.0625
@@ -440,7 +440,7 @@
 			"error": 0.02963841431575491,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "fafe672405041157aa387191a85dfc6339a2fed7b214b254303543f1fa93d6fc",
+			"judged": "d688f23aa66eceef2ce18773dbf7ac28a3bef8a809d595aa18b99a019bdfd54a",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -452,9 +452,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 370.0,
+			"peak_mb": 368.0,
 			"route": "impostor",
-			"search_s": 44.300000000000004,
+			"search_s": 37.300000000000004,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -467,13 +467,13 @@
 				"over": null,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.45680000000000004
+				"worst": 0.4568
 			}
 		}
 	},
 	"source": {
 		"children": "e84759d27aac5486384a9f1395e16b6338d9fc740dadcac020876305008e20cc",
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
 		"generator": "2a5c9bbfa88ec7909f295c4f9ba201ce25ce5b657d641179c2495318f7309f95"
 	}
 }
