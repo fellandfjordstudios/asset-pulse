@@ -19,6 +19,7 @@
 	],
 	"effort": "full",
 	"id": "built/quay-barrow",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -76,7 +77,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0041,
-					"px_over": null,
+					"px_over": 0,
 					"route": "merged",
 					"value": 0.7
 				}
@@ -84,14 +85,16 @@
 			"checked_at": 3,
 			"drawn": {
 				"excess": 0.4375,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.005193
 			},
 			"error": 0.001851851851851852,
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "25d767b4549f9726adba7dc19fce3606c32d19eacaf4dac71ed0aca8ba14bad0",
+			"judged": "bfdef02765c7bf03c42707e11f3271cd7d853464af70df9279ca1f21f9d4990f",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.700)",
@@ -167,15 +170,25 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 358.0,
+			"peak_mb": 359.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 43.0
 			},
-			"search_s": 51.900000000000006,
+			"search_s": 58.1,
 			"searched": "recheck",
 			"surfaces": 43,
-			"surfaces_ceiling": 43
+			"surfaces_ceiling": 43,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4375
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -220,7 +233,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f857899d8d423a5e9465ef3e2403b7658ec132c8b56ee1a96f1b94f385a31e1e",
+			"judged": "55df8e4f6d58302f79d00f920fd0ced6d5d5cf9cae180b50d97f33c0bd1e79dc",
 			"keep": {
 				"bolt": 0.03125
 			},
@@ -353,12 +366,22 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping bolt 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.700), carried from rung 1 held at 3888, dearer than the 2044 taken"
 			],
-			"peak_mb": 358.0,
+			"peak_mb": 359.0,
 			"route": "kit",
-			"search_s": 90.80000000000001,
+			"search_s": 113.9,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"3": {
 			"atlas_bytes": 7225344,
@@ -404,7 +427,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "fa4ae2612e07f776ee7e9c1c803a7a1a40962a67029368e8b90d674fa25bd436",
+			"judged": "f912c735ef3a60589cc7c0047e0b017cdb28f23afdea167a8fa6a64e4eeb90fa",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -416,19 +439,29 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 358.0,
+			"peak_mb": 359.0,
 			"route": "impostor",
-			"search_s": 11.4,
+			"search_s": 12.3,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 3,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.3791
+			}
 		}
 	},
 	"source": {
 		"children": "ef8410c8f039f2289cff0c19d0e6c49f36a05a81f77ee98a4ba48247df1f053e",
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "28c7c654997e8e51956ac49e2328c92443208228220cb7e91ba4a172ce5ab6ef"
 	}
 }

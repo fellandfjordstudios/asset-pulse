@@ -356,6 +356,7 @@
 	],
 	"effort": "full",
 	"id": "plant/pine",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -436,7 +437,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004050000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.27452699999999997
 				}
@@ -454,14 +455,16 @@
 			"checked_at": 28,
 			"drawn": {
 				"excess": 0.375,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.006359999999999999
 			},
 			"error": 0.0018518518518518517,
 			"every_piece": true,
 			"fraction": 0.27452699999999997,
 			"from_rung": 0,
-			"judged": "7ad5ee9c63e41eec4ec380c0ac015c5f0d763c70c19c4bb11024ddbc5df0df0c",
+			"judged": "f06f1784adf2e389faf6d54d1d77bffffae4d14c4eebbadd20819a77f0c413d9",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.275 kept)",
@@ -497,21 +500,31 @@
 				"CROWN: (c) a crown with no clusters: 2 of 2 placed foliage elements carry no cluster -- a commission defect of plant/pine, not a rung to hand-build (decisions/D-derive-3)",
 				"REDUCE from rung 0 at {\"branches_per_whorl\":2,\"branchlets_per_limb\":1,\"crown_duty_cycle\":0.2,\"height_m\":3.0,\"tuft_over_crown\":0.05,\"twigs_per_branchlet\":1,\"whorls\":40} seed 314: element 0's part 'bark' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 1021.0,
+			"peak_mb": 1023.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 2.0,
 				"reduce": 4.0
 			},
-			"search_s": 1648.4,
+			"search_s": 1778.9,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 2
+			"surfaces_ceiling": 2,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 28,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.375
+			}
 		}
 	},
 	"source": {
 		"children": "b687b0c7d062d5d63ae55842226cdba83467df6aa58552f29f2c847dd3c4f151",
-		"deriver": "be8490ce6a1737161f808fe6a7e79f34e9550ed7303ce043b0a0e2e25a1a4420",
+		"deriver": "5af2eef00da0d4314bbfd5a1b8fa3e49918b45d2e01626e76344475c95d04263",
 		"generator": "cd7bf0748cd09412cf21ce2bf7e8160f4d72e603e01345d8658edfee991c9d0f"
 	}
 }

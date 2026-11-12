@@ -27,6 +27,7 @@
 	],
 	"effort": "full",
 	"id": "built/plank-footbridge",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -88,7 +89,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "4365535751ae946362742ccaa96bc130a3a2b7484261b3d85347a5c733c498ed",
+			"judged": "c144785377270d1ef5566c526e83665207d9083c01edfc1434a9a3ad8df8a449",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -120,12 +121,22 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 332.0,
+			"peak_mb": 334.0,
 			"route": "kit",
-			"search_s": 353.90000000000003,
+			"search_s": 387.1,
 			"searched": "recheck",
 			"surfaces": 4,
-			"surfaces_ceiling": 4
+			"surfaces_ceiling": 4,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.1875
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -138,7 +149,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0044800000000000005,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.062614
 				}
@@ -148,14 +159,16 @@
 			"checked_at": 5,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.02963
 			},
 			"error": 0.007407407407407408,
 			"every_piece": true,
 			"fraction": 0.062614,
 			"from_rung": 1,
-			"judged": "26dc5ae3c8048e03f0837640edde455fae451d662d1fc7a96e310623f357ea89",
+			"judged": "aba4c5b0503652efe601ee4cb6804d92aa41ea0b6a89e90d5b55edfa9cd69f7e",
 			"material_transfer": {
 				"checked_at": 5,
 				"checks": [
@@ -291,15 +304,25 @@
 				"picture": 0.0044800000000000005
 			},
 			"measured_of": 1,
-			"peak_mb": 348.0,
+			"peak_mb": 350.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 4.0
 			},
-			"search_s": 212.20000000000002,
+			"search_s": 256.3,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"3": {
 			"atlas_bytes": 9437184,
@@ -345,7 +368,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "4a59added97ba6e8e0797056618409fd232046f5d7ff36fab1ff4204f5ec3e7e",
+			"judged": "6c3082eaf79ffe75b95c19600ba36d134026723f7e3cb0691404cfe2bd809bef",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -357,19 +380,29 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 322.0,
+			"peak_mb": 324.0,
 			"route": "impostor",
-			"search_s": 132.9,
+			"search_s": 142.9,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 5,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.49420000000000003
+			}
 		}
 	},
 	"source": {
 		"children": "c370b113b95591cd6e32a5e55749af324bb91d481e1b0faaf644070517f4c84c",
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "3a2e29784912be6435c9aa812539755592ebb84ac336fb7899e912d7463bb25e"
 	}
 }

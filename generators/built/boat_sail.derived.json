@@ -175,6 +175,7 @@
 	],
 	"effort": "full",
 	"id": "built/boat-sail",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -277,7 +278,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "c23d4efa7382aeb71c610aff0aa1d57c9ef965927f154814aeef34219952a81a",
+			"judged": "6171416c9c0b926595e00405dfeb48a2b28abc2d490914dae0816917c2cdd80a",
 			"measured": {
 				"cost": 3946,
 				"coverage_rel": 0.0,
@@ -294,13 +295,23 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"set\":0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00529 m; the error ladder: none holds at 0.0019",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {\"set\":0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00529 m"
 			],
-			"peak_mb": 332.0,
+			"peak_mb": 333.0,
 			"route": "rung0",
-			"search_s": 50.800000000000004,
+			"search_s": 54.300000000000004,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
-			"tolerance": 0.001851851851851852
+			"tolerance": 0.001851851851851852,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 29,
+				"holds": true,
+				"judge": "source",
+				"over": 0,
+				"tolerance": 0.0,
+				"unit": "the source served",
+				"worst": 0.0
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -345,7 +356,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "5c65f5acae0910a62390dd13eb2750e270abb0021f444b92198344642be47eb8",
+			"judged": "74eabc2937b9344838b6e5dd5da2c705715835d63fb16320b80e053c1b66ead4",
 			"keep": {
 				"fitting": 0.03125
 			},
@@ -1097,18 +1108,28 @@
 				"KIT (its own build at the rung's pixel, keeping fitting 0.031) held at 2622, dearer than the 2464 taken",
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.636 kept) held at 2510, dearer than the 2464 taken"
 			],
-			"peak_mb": 337.0,
+			"peak_mb": 338.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 459.8,
+			"search_s": 565.0,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 29,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		}
 	},
 	"source": {
 		"children": "881c810958d9899ab8c25562fc118bacd82de12fbc0470615ed31dc2cfec417d",
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "5fdf8fd4b295cb62ae1141a5fb3d04fde1be58558274380d6fcad9eb2dd55c6e"
 	}
 }

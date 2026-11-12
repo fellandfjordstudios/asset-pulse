@@ -57,6 +57,7 @@
 	],
 	"effort": "full",
 	"id": "built/shop-counter",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -113,7 +114,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "51e39c6c80b6e4c503cc4759bbf077a767de680f33ee76e237c64fe380f57bec",
+			"judged": "a8f7de5321735ffef672fdc62256a0eb5541e915d37263b805ddc051eb559df7",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -141,17 +142,27 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 326.0,
+			"peak_mb": 327.0,
 			"route": "kit",
-			"search_s": 189.9,
+			"search_s": 215.10000000000002,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 5
+			"surfaces_ceiling": 5,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 10,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		}
 	},
 	"source": {
 		"children": "e3826732e1d5920df59760b5a4b77ff98b34cb02d383eb344d14537ff5ef1138",
-		"deriver": "22ee53e4f0fda35e1b41dc70e5c9269777af8d996a06778431a9adf9224bd713",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "d66147cec03ed46fa6d08eb31c2f67f62195062adbb26027b222fe0b559a0c38"
 	}
 }

@@ -69,6 +69,7 @@
 	],
 	"effort": "full",
 	"id": "built/stockfish-rack",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -135,7 +136,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00478,
-					"px_over": null,
+					"px_over": 0,
 					"route": "merged",
 					"value": 0.48999999999999994
 				}
@@ -143,14 +144,16 @@
 			"checked_at": 12,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.011512999999999999
 			},
 			"error": 0.0018518518518518521,
 			"every_piece": true,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "8ba3563e107240d6c4c50413551a92458caf30f6bb78cf10be70a9cdf1378e96",
+			"judged": "a1c138a67a462ce9ef6aa7ba7a3bc014640528b5046a75370ae868d4a21d91de",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490)",
@@ -185,15 +188,25 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 676.0,
+			"peak_mb": 678.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 782.5,
+			"search_s": 485.3,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 2
+			"surfaces_ceiling": 2,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 12,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -248,7 +261,7 @@
 			"error": 0.0056,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "8fc569b5b0c2f62ada3887a219db137b02ad427e271927c87f9547d68fb22e49",
+			"judged": "18433d571440d880674c79b50ed839ab95b1aafed66e586d09db252547ed1df4",
 			"keep": {
 				"knot": 0.11764899999999996,
 				"peg": 0.7
@@ -596,12 +609,22 @@
 				"REDUCE (every piece) to 0.700 held at 9944, dearer than the 2332 taken",
 				"MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490), carried from rung 1 held at 13476, dearer than the 2332 taken"
 			],
-			"peak_mb": 685.0,
+			"peak_mb": 696.0,
 			"route": "kit",
-			"search_s": 581.2,
+			"search_s": 336.20000000000005,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 12,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"3": {
 			"atlas_bytes": 37748736,
@@ -647,7 +670,7 @@
 			"error": 0.012,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "a6414698fd27efb47543137c4e024140a7b8bcc41f1db66b398cc2609af99f37",
+			"judged": "c70940c3bf99388381086cc244c3daccc7abc9c6b404c33df9cef5d80bdcfd69",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -659,19 +682,29 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 765.0,
+			"peak_mb": 767.0,
 			"route": "impostor",
-			"search_s": 752.8000000000001,
+			"search_s": 415.6,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 24
+			"tiles": 24,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 12,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.47750000000000004
+			}
 		}
 	},
 	"source": {
 		"children": "2129ea740a69356f7f8c63e19e1ff49b6174ad94273d78ba5bc0f35d65f1ce4b",
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "e6975f2a0eab575cf32486dcc2b6a8abfd1090eb26501ad6165b78b797227684"
 	}
 }

@@ -75,6 +75,7 @@
 	],
 	"effort": "full",
 	"id": "stone/pressure-ridge",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -142,7 +143,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004410000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.11764899999999996
 				}
@@ -158,13 +159,15 @@
 			"checked_at": 13,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.016888
 			},
 			"error": 0.001851851851851852,
 			"fraction": 0.11764899999999996,
 			"from_rung": 0,
-			"judged": "59b7a62fe488c7da8fe14fcd51cecacd40b7f7f29c2e0254bbf5360a6653817a",
+			"judged": "f7eb6ec216c9dc314c5d79ddd42714142f1bae4498a066c510154073d0d05cf2",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.118",
@@ -195,15 +198,25 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.07: 16528 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
 				"CHILD: span 'stone/sea-ice-block r0 db5ef61c' is 76 triangles and its child rebuilt is 828: not a placed copy"
 			],
-			"peak_mb": 696.0,
+			"peak_mb": 697.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 510.0
 			},
-			"search_s": 412.70000000000005,
+			"search_s": 469.90000000000003,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 3
+			"surfaces_ceiling": 3,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 13,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"2": {
 			"budget": 10668,
@@ -236,7 +249,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "c19c5d63e916009a44ccf232918f3264de75fca8c16d0bd9b867e554cb38ac8a",
+			"judged": "5a253d2c6594b2468b1a6f48bf1406a222ab5e022553966f57d1c2b060f48b70",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -584,13 +597,23 @@
 				"KIT (its own build at the rung's pixel) held at 6056, dearer than the 3604 taken",
 				"REDUCE to 0.118, carried from rung 1 held at 13986, dearer than the 3604 taken"
 			],
-			"peak_mb": 696.0,
+			"peak_mb": 697.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 432.1,
+			"search_s": 531.6,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 13,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4375
+			}
 		},
 		"3": {
 			"budget": 2667,
@@ -623,7 +646,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d377ff842a1c86f09175aafb6c417a5490cbe60f7b3c3a74cb7c7914f16b0c0e",
+			"judged": "2bbd02c2a4ef6713409fb04f5e56964349cb0369658ecd63ba88940b399a9001",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -973,17 +996,27 @@
 				"REDUCE to 0.118, carried from rung 1 held at 13986, dearer than the 3604 taken",
 				"KIT (its own build at 2 of the band's pixels), carried from rung 2 held at 3604, the same cost as the route taken, found first"
 			],
-			"peak_mb": 696.0,
+			"peak_mb": 697.0,
 			"route": "kit",
-			"search_s": 382.20000000000005,
+			"search_s": 477.1,
 			"searched": "recheck",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 13,
+				"holds": true,
+				"judge": "drawn",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.0625
+			}
 		}
 	},
 	"source": {
 		"children": "a79e32b334d43dac50aec562b1654f528bb5f4966089aeebb1c944dec0423ff4",
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "f43eba0c040fc54ff1f532bc1ed133ab8540c8fb1816d19380357d8d8bb44baa"
 	}
 }

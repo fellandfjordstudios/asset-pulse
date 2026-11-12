@@ -57,6 +57,7 @@
 	],
 	"effort": "full",
 	"id": "food/twist-bread",
+	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -121,7 +122,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.3429999999999999
 				}
@@ -137,13 +138,15 @@
 			"checked_at": 10,
 			"drawn": {
 				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.001482
 			},
 			"error": 0.0018518518518518517,
 			"fraction": 0.3429999999999999,
 			"from_rung": 0,
-			"judged": "2ed47312a4a2899c53f3cf8977064a282eb728cab9077482aa6eacc904125fb0",
+			"judged": "a93029b62c69e5c3ec96204f21019ac2b424e2c6f043d7493330c024377cd11a",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.343",
@@ -185,10 +188,20 @@
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 50.2,
+			"search_s": 58.5,
 			"searched": "recheck",
 			"surfaces": 5,
-			"surfaces_ceiling": 5
+			"surfaces_ceiling": 5,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 10,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"2": {
 			"budget": 9779,
@@ -219,7 +232,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.6904589999999999
 				}
@@ -237,13 +250,15 @@
 			"checked_at": 10,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.005927
 			},
 			"error": 0.007407407407407407,
 			"fraction": 0.6904589999999999,
 			"from_rung": 0,
-			"judged": "e74727b89142e12a19a5fd604fbb594d1db1cd54db8beaf47d392aa8b1d5ba34",
+			"judged": "aadd52fde0a444a17114dd394c4b9e54e4127ea7d003c4c88c7f62259d09ffe0",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.25x the band's (0.690 kept)",
@@ -545,10 +560,20 @@
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 318.90000000000003,
+			"search_s": 417.1,
 			"searched": "recheck",
 			"surfaces": 1,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 10,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"3": {
 			"atlas_bytes": 7225344,
@@ -594,7 +619,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "67c4dda1107975d311706f07fa5aed9029a1577215b88a4679144e572f696438",
+			"judged": "8f63b36d62e5c58812289f1ca3d4b83d7313468b7bda2ee9a618761e7e374351",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -608,17 +633,27 @@
 			],
 			"peak_mb": 483.0,
 			"route": "impostor",
-			"search_s": 2.5,
+			"search_s": 3.1,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 10,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.34390000000000004
+			}
 		}
 	},
 	"source": {
 		"children": "25f39b7f8d39b5d81abfa748fa52f402aff73bd47af7278ea31176ceb22a011e",
-		"deriver": "f9d647fbe1c8793307fd1de733b7de862c68cccf315eb004275b9ca532329abd",
+		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
 		"generator": "b017f23dda3f7d5a2b03a9e03087dad6787e74c6d85b02c6c818d01106e05472"
 	}
 }
