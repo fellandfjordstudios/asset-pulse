@@ -29,6 +29,12 @@
 			"seed": 314
 		},
 		{
+			"params": {
+				"portions_eaten": 12
+			},
+			"seed": 314
+		},
+		{
 			"params": {},
 			"seed": 315
 		},
@@ -39,7 +45,7 @@
 	],
 	"effort": "full",
 	"id": "food/brunost-flatbread",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -47,18 +53,19 @@
 			"shape",
 			"structural",
 			"structural",
+			"structural",
 			"seed",
 			"seed"
 		],
-		"old_key_sets": 7,
-		"sampled": 7,
-		"sets": 5
+		"old_key_sets": 8,
+		"sampled": 8,
+		"sets": 6
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 16,
 				"trace": "food__brunost-flatbread#1.trace.jsonl"
 			},
 			"2": {
@@ -83,11 +90,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 6688.0,
+					"cost": 6688,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00406,
-					"px_over": 6.0,
+					"px_over": 6,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -101,7 +108,7 @@
 					"value": 0.24009999999999992
 				}
 			],
-			"checked_at": 7,
+			"checked_at": 8,
 			"drawn": {
 				"excess": 0.5,
 				"holds": true,
@@ -113,11 +120,11 @@
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 0,
-			"judged": "940b4bf71568f83341ccb1c9e202298f15ad74c20c75102096be277c27ef237b",
+			"judged": "804c2ffa712b286938883b36d22256ed586ea20250cb2935d93d526b750a853e",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.240)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -125,6 +132,9 @@
 					"merged",
 					"thin",
 					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -135,10 +145,10 @@
 					"berry_skin_0": -0.0011200000000000001,
 					"berry_skin_1": -0.00141,
 					"berry_skin_2": -0.00102,
-					"board": -0.0014600000000000001,
-					"calyx": 6.000000000000001e-05,
-					"end_grain": 0.00025,
-					"flatbread": 0.00218,
+					"board": 0.005690000000000001,
+					"calyx": 9e-05,
+					"end_grain": 0.00071,
+					"flatbread": -0.00512,
 					"slice_0": 0.00031,
 					"slice_1": 0.00031,
 					"slice_2": 0.00031,
@@ -148,23 +158,24 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0041 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00130 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.4900, cover 1.05: 184 pixel(s) differ at the drawn size at {} seed 314 (worst 0.53)",
-				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)"
+				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 312.0,
+			"peak_mb": 335.0,
 			"route": "merged",
 			"routes": {
-				"reduce": 11.0
+				"reduce": 11
 			},
-			"search_s": 66.7,
-			"searched": "recheck",
+			"search_s": 320.8,
+			"searched": "search",
 			"surfaces": 11,
 			"surfaces_ceiling": 11,
 			"verdict": {
 				"code": "21abd2a992541eee",
-				"configurations": 7,
+				"configurations": 8,
 				"holds": true,
 				"judge": "drawn",
 				"over": 0,
@@ -199,15 +210,15 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 2,
 					"route": "impostor",
-					"value": 24
+					"value": 16
 				}
 			],
-			"checked_at": 7,
+			"checked_at": 8,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.3272,
@@ -217,7 +228,7 @@
 			"error": 0.016208507828928465,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "fc595263edcf36f930779660ddfd97d4a819ce37d02d40da7b17b0ae27b69e33",
+			"judged": "95d5464d48e65f6f2d966de32c4ebc1202dfa5cffeb326f807a2725013f98de3",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -229,17 +240,17 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 331.0,
+			"peak_mb": 343.0,
 			"route": "impostor",
-			"search_s": 71.8,
-			"searched": "recheck",
+			"search_s": 92.60000000000001,
+			"searched": "search",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 24,
 			"verdict": {
 				"code": "21abd2a992541eee",
-				"configurations": 7,
+				"configurations": 8,
 				"holds": true,
 				"judge": "impostor",
 				"over": null,
@@ -251,7 +262,7 @@
 	},
 	"source": {
 		"children": "cb51b65ba592095c36c8501bc984d0e0bccea378f3cf5f302896c11c5fde48db",
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
-		"generator": "94a4e3a5796cd4aa0dfdb54a5255384b89659a59aa6e558ca81d5652efdbe97b"
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"generator": "cca473c72347cc1ae929f3647c94f559e621a52e5331cf1e6db912d14a7efd00"
 	}
 }

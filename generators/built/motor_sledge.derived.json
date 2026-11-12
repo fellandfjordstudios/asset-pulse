@@ -69,7 +69,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__motor-sledge#1.trace.jsonl"
 			},
 			"2": {
@@ -77,7 +77,7 @@
 				"trace": "built__motor-sledge#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 15,
+				"candidates": 0,
 				"trace": "built__motor-sledge#3.trace.jsonl"
 			}
 		}
@@ -88,7 +88,7 @@
 	},
 	"replay": {
 		"1": "37ce7fe7b87bd4bde8676a821328d76dd5165417ebef37468abf570cf2e54932",
-		"2": "521d6f3b606705294e2d3018a213efcd2010ab3d5a66256aad5dab659b31c11c",
+		"2": "3090bbd26dfae688155aa95def169a9c86a3bf18a7f77b8ba0ec9223d2ece44b",
 		"3": "0708ec751e653cbd48e95a3f75d7a6049fb24a9e83e699be7b2ac2b73480ae0d"
 	},
 	"rungs": {
@@ -109,7 +109,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "merged",
 					"value": 1.0
 				}
@@ -119,7 +119,7 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0056619999999999995
 			},
 			"error": 0.001851851851851852,
@@ -145,7 +145,7 @@
 			"measured": {
 				"cost": 43546,
 				"coverage_rel": 0.0,
-				"floor": 0.004690000000000001,
+				"floor": 0.00469,
 				"part_shift": {
 					"cowl": 0.0,
 					"engine": 0.0,
@@ -162,10 +162,10 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 559.0,
+			"peak_mb": 269.0,
 			"route": "merged",
-			"search_s": 304.3,
-			"searched": "recheck",
+			"search_s": 9.4,
+			"searched": "replay",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -429,6 +429,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 15876,
 				"coverage_rel": -0.00805,
@@ -464,9 +465,9 @@
 				"MERGED (its parts at their own rungs, joined) held at 43546, dearer than the 15876 taken",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 43546, dearer than the 15876 taken"
 			],
-			"peak_mb": 559.0,
+			"peak_mb": 275.0,
 			"route": "kit",
-			"search_s": 371.8,
+			"search_s": 1464.4,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -482,7 +483,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 37748736,
+			"atlas_bytes": 37748736.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -512,11 +513,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 24
+					"value": 24.0
 				}
 			],
 			"checked_at": 8,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
 				"excess": 0.4554,
 				"judge": "drawn",
@@ -537,13 +538,13 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 563.0,
+			"peak_mb": 275.0,
 			"route": "impostor",
-			"search_s": 235.5,
-			"searched": "recheck",
+			"search_s": 3.6,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 24,
+			"tiles": 24.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 8,
@@ -558,7 +559,7 @@
 	},
 	"source": {
 		"children": "b9261c1d417ec26346f06238cfa2dfd0f8205ab5c72be5cdfb8a03ba12747331",
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "e7f5dd46263ed4eca2c0737b37ec07d2d89ba65a01742183edd59a0f9d7389c8"
 	}
 }

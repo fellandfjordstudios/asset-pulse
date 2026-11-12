@@ -261,7 +261,7 @@
 	],
 	"effort": "full",
 	"id": "built/rorbu",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -362,7 +362,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "cd71f9a03ec60ae6cb2f382e88abbb986c11e732d96e3d790eb8b54c49c320f0",
+			"judged": "b1103b52db1705cdfeac1f5931e034869889e0bf592e699991427c981791f233",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -395,7 +395,7 @@
 			],
 			"peak_mb": 507.0,
 			"route": "kit",
-			"search_s": 4248.5,
+			"search_s": 5817.8,
 			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
@@ -441,7 +441,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "65912dc42ffd299d912a8d83ab1bdc386e01aff023fb39159239b1d582e6776e",
+			"judged": "be1b5e32195da6c0ae15cc3f5b70f561467aa390284a350c9f9a43194c53059a",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -1542,7 +1542,7 @@
 			"peak_mb": 576.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 1793.3000000000002,
+			"search_s": 2535.6000000000004,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -1601,7 +1601,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "546078bd646505b3fe8743f5439e6a4ca15ccb3df98df620c18989f0058c7463",
+			"judged": "4415dbc897e42a8673c99ecba5cae584acf88286e1c020c0254136e1b4870593",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -1615,7 +1615,7 @@
 			],
 			"peak_mb": 708.0,
 			"route": "impostor",
-			"search_s": 351.40000000000003,
+			"search_s": 628.7,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -1629,13 +1629,13 @@
 				"over": null,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.47850000000000004
+				"worst": 0.4785
 			}
 		}
 	},
 	"source": {
 		"children": "fbd55520c594615d5eb77c65676084fd1f7c2e206ce4dfca6d0154aa097ec468",
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "2ff9a24f749bbd029b6e1839f5665fe044a20a2a2d78b55d6b79d56d6000dc8e"
 	}
 }

@@ -11,6 +11,12 @@
 			"seed": 314
 		},
 		{
+			"params": {
+				"flesh_eaten": 0.9
+			},
+			"seed": 314
+		},
+		{
 			"params": {},
 			"seed": 315
 		},
@@ -26,22 +32,23 @@
 		"moves": [
 			"probe",
 			"structural",
+			"structural",
 			"seed",
 			"seed"
 		],
-		"old_key_sets": 4,
-		"sampled": 4,
-		"sets": 4
+		"old_key_sets": 5,
+		"sampled": 5,
+		"sets": 5
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 20,
 				"trace": "food__char-on-a-stick#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 48,
 				"trace": "food__char-on-a-stick#2.trace.jsonl"
 			},
 			"3": {
@@ -55,8 +62,8 @@
 		"seed": 314
 	},
 	"replay": {
-		"1": "8756291eb6b6a6024ad7a2e824daef00758eeed7c079ff1e55a1bf96215787e8",
-		"2": "9741b196097ad21c733d53d064a89af70ff70c37d806a7dbe5773d5bd24815ed",
+		"1": "eddca0049ff1f24b581ffc8840ec01911d933e2430c488e1f29b1a4d0192eba9",
+		"2": "4d35db06f9c7c28c641af85d023ab1b07991a245bf4fc4033d2002f159746f2b",
 		"3": "4a0473cf9332ba25297878141efe64d00f9f61fe618fe7181463079366755420"
 	},
 	"rungs": {
@@ -67,30 +74,37 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4732.0,
+					"cost": 4732,
 					"holds": false,
 					"judge": "drawn",
 					"picture": -1.0,
-					"px_over": 370.0,
+					"px_over": 370,
 					"route": "kit",
 					"value": 0.7
 				},
 				{
-					"cost": 10038,
+					"cost": 3136,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00398,
+					"picture": 0.006880000000000001,
 					"px_over": 0,
 					"route": "reduce",
-					"value": 0.7
+					"value": 0.216365
 				}
 			],
-			"chains": {
-				"error": "lost"
+			"cap": 0.0009262004473673409,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 5002,
+				"fraction": 0.3429999999999999
 			},
-			"checked_at": 4,
+			"chains": {
+				"error": "kept"
+			},
+			"checked_at": 5,
 			"drawn": {
-				"excess": 0.125,
+				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
 				"over": 0,
@@ -98,13 +112,13 @@
 			},
 			"error": 0.0018524008947346819,
 			"every_piece": true,
-			"fraction": 0.7,
+			"fraction": 0.216365,
 			"from_rung": 0,
-			"judged": "0adf27e02a9ab675c9a12ebfcf863dec954a9020ee46c8218f19792e2341a831",
+			"judged": "e7a21bb32de9dcd3a2e4d6da4b9c81edbb77c6d9a0065965b7ccc24ae42f4a15",
 			"look_past": {
 				"beaten": false,
-				"first": "REDUCE (every piece) to 0.700",
-				"looked": 0.0,
+				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.216 kept)",
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -118,50 +132,50 @@
 				]
 			},
 			"measured": {
-				"cost": 10038,
-				"coverage_rel": -0.00045000000000000004,
+				"cost": 3136,
+				"coverage_rel": -0.005430000000000001,
 				"floor": 0.00398,
 				"part_shift": {
-					"birch": -0.00012000000000000002,
-					"body": 0.0001,
-					"dark": 0.0,
-					"dorsal_fin": 1e-05,
-					"eye": -0.00012000000000000002,
-					"fin": 2e-05,
-					"fin_edge": 1e-05,
-					"head": 0.0002,
-					"scorch": 1e-05,
-					"tail": 1e-05
+					"birch": -0.00199,
+					"body": 0.0013000000000000002,
+					"dark": 0.00117,
+					"dorsal_fin": 8e-05,
+					"eye": 1e-05,
+					"fin": 0.00030000000000000003,
+					"fin_edge": 0.0001,
+					"head": 0.00033000000000000005,
+					"scorch": 9e-05,
+					"tail": 0.00013000000000000002
 				},
-				"picture": 0.00398
+				"picture": 0.006880000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 8 times for solid subjects at band 1 across 8 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 375 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00130 m; coverage changes -0.0471 against 0.0232 allowed (a one-pixel shrink all round)",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 370 pixel(s) differ at the drawn size at {} seed 314 (worst 0.64)",
 				"CHILD: no welded child has a coarser rung at slot 1: {\"animal/arctic-char\":0}",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'body' is 48 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
-				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 368.0,
+			"peak_mb": 417.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 12.0
+				"reduce": 12
 			},
-			"search_s": 63.1,
-			"searched": "recheck",
+			"search_s": 369.6,
+			"searched": "search",
 			"surfaces": 10,
 			"surfaces_ceiling": 10,
 			"verdict": {
 				"code": "21abd2a992541eee",
-				"configurations": 4,
+				"configurations": 5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.125
+				"worst": 0.5
 			}
 		},
 		"2": {
@@ -171,46 +185,41 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 2.0,
+					"px_over": 2,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
-					"cost": 1901.0,
+					"cost": 1901,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.05498,
-					"px_over": 1.0,
+					"px_over": 1,
 					"route": "kit",
 					"value": 1.0
 				},
 				{
-					"cost": 4536,
+					"cost": 2380,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00398,
+					"picture": 0.02356,
 					"px_over": 0,
 					"route": "reduce",
-					"value": 0.312957
+					"value": 0.758929
 				}
 			],
-			"cap": 0.00046310022368367,
+			"cap": 0.0037048017894693638,
 			"chain": "error",
-			"chain_beaten": {
-				"chain": "fraction",
-				"cost": 10034.0,
-				"fraction": 0.7
-			},
 			"chains": {
 				"error": "kept"
 			},
-			"checked_at": 4,
+			"checked_at": 5,
 			"drawn": {
-				"excess": 0.0625,
+				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
 				"over": 0,
@@ -218,13 +227,13 @@
 			},
 			"error": 0.0074096035789387275,
 			"every_piece": true,
-			"fraction": 0.312957,
-			"from_rung": 0,
-			"judged": "70adde9246a02fe618494ab78851b9881b1d2d542d867d4dc0b04d2cd87ba044",
+			"fraction": 0.758929,
+			"from_rung": 1,
+			"judged": "89c5471bbcfb40e4a31f9f774277b4d77d8a4b9f8761b0de2b94236b028a6dab",
 			"look_past": {
 				"beaten": false,
-				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.313 kept)",
-				"looked": 0.0,
+				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.759 kept)",
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -238,102 +247,126 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 4,
+				"checked_at": 5,
 				"checks": [
 					{
 						"holds": true,
 						"mean_after": [
-							0.34557658433914185,
-							0.21833249926567078,
-							0.12470600754022598
+							0.3454292416572571,
+							0.21856896579265594,
+							0.12483961880207062
 						],
 						"mean_before": [
-							0.34557658433914185,
-							0.21833249926567078,
-							0.12470600754022598
+							0.3454292416572571,
+							0.21856896579265594,
+							0.12483961880207062
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.04228084534406662,
-							0.02060815319418907,
-							0.008896601386368275
+							0.042165607213974,
+							0.020670339465141296,
+							0.008906606584787369
 						],
 						"variance_before": [
-							0.04228084534406662,
-							0.02060815319418907,
-							0.008896601386368275
+							0.042165607213974,
+							0.020670339465141296,
+							0.008906606584787369
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.3482576012611389,
-							0.2214251309633255,
-							0.12679919600486755
+							0.3475196957588196,
+							0.22097526490688324,
+							0.12646861374378204
 						],
 						"mean_before": [
-							0.3482576012611389,
-							0.2214251309633255,
-							0.12679919600486755
+							0.3475196957588196,
+							0.22097526490688324,
+							0.12646861374378204
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.04205179959535599,
-							0.020871005952358246,
-							0.009025687351822853
+							0.041990406811237335,
+							0.020874876528978348,
+							0.009007375687360764
 						],
 						"variance_before": [
-							0.04205179959535599,
-							0.020871005952358246,
-							0.009025687351822853
+							0.041990406811237335,
+							0.020874876528978348,
+							0.009007375687360764
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.3456517457962036,
-							0.21832427382469177,
-							0.12469634413719177
+							0.2199043482542038,
+							0.15189750492572784,
+							0.08713171631097794
 						],
 						"mean_before": [
-							0.3456517457962036,
-							0.21832427382469177,
-							0.12469634413719177
+							0.2199043482542038,
+							0.15189750492572784,
+							0.08713171631097794
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.042289867997169495,
-							0.02059677615761757,
-							0.00889116246253252
+							0.04088791087269783,
+							0.02448849566280842,
+							0.009917025454342365
 						],
 						"variance_before": [
-							0.042289867997169495,
-							0.02059677615761757,
-							0.00889116246253252
+							0.04088791087269783,
+							0.02448849566280842,
+							0.009917025454342365
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.3456607758998871,
-							0.2183614820241928,
-							0.12472278624773026
+							0.3453329801559448,
+							0.2184780091047287,
+							0.1247788816690445
 						],
 						"mean_before": [
-							0.3456607758998871,
-							0.2183614820241928,
-							0.12472278624773026
+							0.3453329801559448,
+							0.2184780091047287,
+							0.1247788816690445
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.04228498041629791,
-							0.020603086799383163,
-							0.008894194848835468
+							0.04216998070478439,
+							0.020664554089307785,
+							0.008903738111257553
 						],
 						"variance_before": [
-							0.04228498041629791,
-							0.020603086799383163,
-							0.008894194848835468
+							0.04216998070478439,
+							0.020664554089307785,
+							0.008903738111257553
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.34533756971359253,
+							0.21839545667171478,
+							0.12471926212310791
+						],
+						"mean_before": [
+							0.34533756971359253,
+							0.21839545667171478,
+							0.12471926212310791
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.042184047400951385,
+							0.02064746618270874,
+							0.00889547448605299
+						],
+						"variance_before": [
+							0.042184047400951385,
+							0.02064746618270874,
+							0.00889547448605299
 						]
 					}
 				],
@@ -341,11 +374,22 @@
 			},
 			"materials": "merged",
 			"measured": {
-				"cost": 4536,
-				"coverage_rel": -0.0015500000000000002,
+				"cost": 2380,
+				"coverage_rel": -0.018740000000000003,
 				"floor": 0.00398,
-				"part_shift": {},
-				"picture": 0.00398
+				"part_shift": {
+					"birch": -0.0033200000000000005,
+					"body": 0.00481,
+					"dark": 0.00338,
+					"dorsal_fin": 0.00032,
+					"eye": -0.00047000000000000004,
+					"fin": 0.00111,
+					"fin_edge": 0.00030000000000000003,
+					"head": -0.00352,
+					"scorch": 0.00017,
+					"tail": 0.00046
+				},
+				"picture": 0.02356
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -372,28 +416,29 @@
 				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 9 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.61), one pixel 0.00519 m; coverage changes -0.1384 against 0.0451 allowed (a one-pixel shrink all round); part 'body' changes its share of the picture by +0.0579 against 0.0451 allowed (its colour's share of the subject); part 'birch' changes its share of the picture by -0.0751 against 0.0451 allowed (its colour's share of the subject)",
 				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.00: 10 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
 				"CHILD: span 'animal/arctic-char r0 94ed90d4' is 14246 triangles and its child rebuilt is 33566: not a placed copy",
+				"REDUCE from rung 1, the derived band above at {} seed 314: element 0's part 'body' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'body' is 48 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
-				"REDUCE (every piece) to 0.700, carried from rung 1 held at 10034, dearer than the 4536 taken"
+				"REDUCE (every piece) to its error cap 0.125x the band's (0.216 kept), carried from rung 1 held at 3136, dearer than the 2380 taken"
 			],
-			"peak_mb": 368.0,
+			"peak_mb": 443.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 12.0
+				"reduce": 12
 			},
-			"search_s": 328.3,
-			"searched": "recheck",
+			"search_s": 608.5,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
 			"verdict": {
 				"code": "21abd2a992541eee",
-				"configurations": 4,
+				"configurations": 5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.0625
+				"worst": 0.5
 			}
 		},
 		"3": {
@@ -422,15 +467,15 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": true,
+					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": null,
+					"px_over": 1,
 					"route": "impostor",
-					"value": 12
+					"value": 8
 				}
 			],
-			"checked_at": 4,
+			"checked_at": 5,
 			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.45680000000000004,
@@ -440,7 +485,7 @@
 			"error": 0.02963841431575491,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d688f23aa66eceef2ce18773dbf7ac28a3bef8a809d595aa18b99a019bdfd54a",
+			"judged": "56acb8e950b4ff58702f82567c58d1f3bba174ada6a6840954db218b261be015",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -452,28 +497,28 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 368.0,
+			"peak_mb": 417.0,
 			"route": "impostor",
-			"search_s": 37.300000000000004,
-			"searched": "recheck",
+			"search_s": 66.2,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 12,
 			"verdict": {
 				"code": "21abd2a992541eee",
-				"configurations": 4,
+				"configurations": 5,
 				"holds": true,
 				"judge": "impostor",
 				"over": null,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.4568
+				"worst": 0.45680000000000004
 			}
 		}
 	},
 	"source": {
 		"children": "e84759d27aac5486384a9f1395e16b6338d9fc740dadcac020876305008e20cc",
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
-		"generator": "2a5c9bbfa88ec7909f295c4f9ba201ce25ce5b657d641179c2495318f7309f95"
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"generator": "2f06d61d136673877b2334f8e8901bb73751eeb3579b7bbcbd6759512a3b78c0"
 	}
 }

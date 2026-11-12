@@ -51,15 +51,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__goods-sack#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__goods-sack#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__goods-sack#3.trace.jsonl"
 			}
 		}
@@ -94,7 +94,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004600000000000001,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.952588
 				}
@@ -109,7 +109,7 @@
 				"excess": 0.125,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0015739999999999999
 			},
 			"error": 0.001851851851851852,
@@ -136,12 +136,12 @@
 			"measured": {
 				"cost": 7434,
 				"coverage_rel": -0.0001,
-				"floor": 0.004600000000000001,
+				"floor": 0.0046,
 				"part_shift": {
 					"cloth": 0.0,
 					"cord": 0.0
 				},
-				"picture": 0.004600000000000001
+				"picture": 0.0046
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -150,13 +150,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 3's part 'cloth' is 112 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 1 across 5 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 471.0,
+			"peak_mb": 256.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 94.10000000000001,
-			"searched": "recheck",
+			"search_s": 2.7,
+			"searched": "replay",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"verdict": {
@@ -190,7 +190,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004600000000000001,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.53306
 				}
@@ -205,7 +205,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0062959999999999995
 			},
 			"error": 0.007407407407407408,
@@ -230,7 +230,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 6,
+				"checked_at": 6.0,
 				"checks": [
 					{
 						"holds": true,
@@ -246,13 +246,13 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0003717690706253052,
-							0.00017695128917694092,
+							0.0003717690706253,
+							0.00017695128917694,
 							7.701478898525238e-05
 						],
 						"variance_before": [
-							0.0003717690706253052,
-							0.00017695128917694092,
+							0.0003717690706253,
+							0.00017695128917694,
 							7.701478898525238e-05
 						]
 					},
@@ -270,13 +270,13 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.000371783971786499,
-							0.0001772269606590271,
+							0.00037178397178649,
+							0.00017722696065902,
 							7.704831659793854e-05
 						],
 						"variance_before": [
-							0.000371783971786499,
-							0.0001772269606590271,
+							0.00037178397178649,
+							0.00017722696065902,
 							7.704831659793854e-05
 						]
 					},
@@ -294,13 +294,13 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0004741102457046509,
-							0.00022574514150619507,
+							0.00047411024570465,
+							0.00022574514150619,
 							9.789317846298218e-05
 						],
 						"variance_before": [
-							0.0004741102457046509,
-							0.00022574514150619507,
+							0.00047411024570465,
+							0.00022574514150619,
 							9.789317846298218e-05
 						]
 					},
@@ -318,37 +318,37 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0005387067794799805,
-							0.0002565458416938782,
-							0.00011147931218147278
+							0.00053870677947998,
+							0.00025654584169387,
+							0.00011147931218147
 						],
 						"variance_before": [
-							0.0005387067794799805,
-							0.0002565458416938782,
-							0.00011147931218147278
+							0.00053870677947998,
+							0.00025654584169387,
+							0.00011147931218147
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.46836918592453003,
+							0.46836918592453,
 							0.28699105978012085,
 							0.16521260142326355
 						],
 						"mean_before": [
-							0.46836918592453003,
+							0.46836918592453,
 							0.28699105978012085,
 							0.16521260142326355
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0003716200590133667,
-							0.00017699599266052246,
+							0.00037162005901336,
+							0.00017699599266052,
 							7.692165672779083e-05
 						],
 						"variance_before": [
-							0.0003716200590133667,
-							0.00017699599266052246,
+							0.00037162005901336,
+							0.00017699599266052,
 							7.692165672779083e-05
 						]
 					},
@@ -366,13 +366,13 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00037254393100738525,
-							0.00017679482698440552,
+							0.00037254393100738,
+							0.0001767948269844,
 							7.693469524383545e-05
 						],
 						"variance_before": [
-							0.00037254393100738525,
-							0.00017679482698440552,
+							0.00037254393100738,
+							0.0001767948269844,
 							7.693469524383545e-05
 						]
 					}
@@ -382,12 +382,12 @@
 			"measured": {
 				"cost": 4160,
 				"coverage_rel": -0.00101,
-				"floor": 0.004600000000000001,
+				"floor": 0.0046,
 				"part_shift": {
 					"cloth": 0.00232,
 					"cord": -0.00232
 				},
-				"picture": 0.004600000000000001
+				"picture": 0.0046
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -399,13 +399,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.953 kept), carried from rung 1 held at 7434, dearer than the 4160 taken"
 			],
-			"peak_mb": 471.0,
+			"peak_mb": 256.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 137.6,
-			"searched": "recheck",
+			"search_s": 2.3000000000000003,
+			"searched": "replay",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -439,7 +439,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.032990000000000005,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.04035360699999998
 				}
@@ -457,7 +457,7 @@
 				"excess": 0.1875,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.025185
 			},
 			"error": 0.02962962962962963,
@@ -479,7 +479,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 6,
+				"checked_at": 6.0,
 				"checks": [
 					{
 						"holds": true,
@@ -497,12 +497,12 @@
 						"variance_after": [
 							8.732080459594727e-06,
 							4.172325134277344e-06,
-							1.8440186977386475e-06
+							1.8440186977386477e-06
 						],
 						"variance_before": [
 							8.732080459594727e-06,
 							4.172325134277344e-06,
-							1.8440186977386475e-06
+							1.8440186977386477e-06
 						]
 					},
 					{
@@ -543,12 +543,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							1.3127923011779785e-05,
+							1.3127923011779783e-05,
 							6.332993507385254e-06,
 							2.6710331439971924e-06
 						],
 						"variance_before": [
-							1.3127923011779785e-05,
+							1.3127923011779783e-05,
 							6.332993507385254e-06,
 							2.6710331439971924e-06
 						]
@@ -591,12 +591,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							1.1742115020751953e-05,
+							1.1742115020751951e-05,
 							5.62518835067749e-06,
 							2.4158507585525513e-06
 						],
 						"variance_before": [
-							1.1742115020751953e-05,
+							1.1742115020751951e-05,
 							5.62518835067749e-06,
 							2.4158507585525513e-06
 						]
@@ -630,13 +630,13 @@
 			},
 			"measured": {
 				"cost": 208,
-				"coverage_rel": -0.039150000000000004,
-				"floor": 0.004600000000000001,
+				"coverage_rel": -0.03915,
+				"floor": 0.0046,
 				"part_shift": {
-					"cloth": 0.013330000000000002,
-					"cord": -0.013330000000000002
+					"cloth": 0.01333,
+					"cord": -0.01333
 				},
-				"picture": 0.032990000000000005
+				"picture": 0.03299
 			},
 			"measured_of": 3,
 			"not_taken": [
@@ -648,13 +648,13 @@
 				"REDUCE (every piece) to its error cap 0.0078x the band's (0.953 kept), carried from rung 1 held at 7434, dearer than the 208 taken",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.533 kept), carried from rung 2 held at 4160, dearer than the 208 taken"
 			],
-			"peak_mb": 471.0,
+			"peak_mb": 256.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 19.6,
-			"searched": "recheck",
+			"search_s": 2.0,
+			"searched": "replay",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -670,7 +670,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "2c4b76031dac402c66146e4f5bcef1b84cc608cd9662d6165de456a6a21de932"
 	}
 }

@@ -93,7 +93,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__mooring-ring#1.trace.jsonl"
 			}
 		}
@@ -126,7 +126,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00572,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.24009999999999992
 				}
@@ -144,7 +144,7 @@
 				"excess": 0.4375,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0013109999999999999
 			},
 			"error": 0.005201286112976888,
@@ -170,11 +170,11 @@
 			},
 			"measured": {
 				"cost": 1512,
-				"coverage_rel": -0.0076500000000000005,
-				"floor": 0.004030000000000001,
+				"coverage_rel": -0.00765,
+				"floor": 0.00403,
 				"part_shift": {
 					"iron": -0.00419,
-					"setting": 0.0035800000000000003,
+					"setting": 0.00358,
 					"wear": 0.00136
 				},
 				"picture": 0.00572
@@ -186,13 +186,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 3812, dearer than the 1512 taken"
 			],
-			"peak_mb": 318.0,
+			"peak_mb": 255.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 4.0
 			},
-			"search_s": 50.1,
-			"searched": "recheck",
+			"search_s": 2.6,
+			"searched": "replay",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"verdict": {
@@ -208,7 +208,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "7bb1a4e2a082361990891c45bd8dbee38348269aaae81ab4381c9b65eb9e45b2"
 	}
 }

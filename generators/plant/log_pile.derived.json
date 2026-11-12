@@ -117,7 +117,7 @@
 	],
 	"effort": "full",
 	"id": "plant/log-pile",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -208,7 +208,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 0.053999,
 			"from_rung": 0,
-			"judged": "37732d533295fd0f5c1d40e4b83b7a2827f7f5ea0dc832822d466cb99588d33f",
+			"judged": "6a042b42367e8c94b4c83c68d6c857bbf6a55ec54f0a0abfa6ad67830467489a",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.5x the band's (0.054 kept)",
@@ -238,12 +238,12 @@
 			"not_taken": [
 				"CHILD (its welded children at their own rungs {\"plant/bucked-log\":1}) held at 86964, dearer than the 4696 taken"
 			],
-			"peak_mb": 1006.0,
+			"peak_mb": 998.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 16.0
 			},
-			"search_s": 654.0,
+			"search_s": 867.7,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -252,7 +252,7 @@
 				"configurations": 20,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.0625
@@ -261,7 +261,7 @@
 	},
 	"source": {
 		"children": "a7af0f4756375caf5456d8c0457f2c98910998e44339f5c3f74e23bb8e906e07",
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "12de98991158a8800e83e82c012a873605609ebfcb60999d5937689d25eeeb0c"
 	}
 }

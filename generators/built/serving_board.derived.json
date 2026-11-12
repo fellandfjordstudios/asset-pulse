@@ -20,7 +20,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__serving-board#1.trace.jsonl"
 			}
 		}
@@ -53,7 +53,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00406,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.48999999999999994
 				}
@@ -71,7 +71,7 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001297
 			},
 			"error": 0.004052126957232116,
@@ -99,8 +99,8 @@
 				"coverage_rel": -0.00725,
 				"floor": 0.00406,
 				"part_shift": {
-					"board": -0.00035000000000000005,
-					"end_grain": 0.00035000000000000005
+					"board": -0.00035,
+					"end_grain": 0.00035
 				},
 				"picture": 0.00406
 			},
@@ -110,13 +110,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 256, dearer than the 202 taken"
 			],
-			"peak_mb": 254.0,
+			"peak_mb": 246.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 2.3000000000000003,
-			"searched": "recheck",
+			"search_s": 0.1,
+			"searched": "replay",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"verdict": {
@@ -132,7 +132,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "856128cd78f28defbc10b92bbb3b2787727383e2e4acb4bf9d3f86cb5c04fb8d"
 	}
 }

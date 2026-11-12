@@ -41,11 +41,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__supply-depot-bundle#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__supply-depot-bundle#2.trace.jsonl"
 			},
 			"3": {
@@ -61,7 +61,7 @@
 	"replay": {
 		"1": "71360ce8906edb0fabce0c7c70b8cb745e0ec730aba339746849a10c4f88956e",
 		"2": "ee9023027d8ddb73e1000f583fe7d83501666dbb8fb9a12cec7c63f9647cd138",
-		"3": "5fb5a225e1207416f2f9bf87a473e3abc75e988a614c2b1367b175435b83ebb3"
+		"3": "abb018f145dddd6288594fa78ef9051366b39839680387d81ff6bc1067af5ee5"
 	},
 	"rungs": {
 		"1": {
@@ -84,7 +84,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0044,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.123233
 				}
@@ -104,7 +104,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001297
 			},
 			"error": 0.0019125083737223606,
@@ -130,7 +130,7 @@
 			},
 			"measured": {
 				"cost": 3836,
-				"coverage_rel": -0.0007300000000000001,
+				"coverage_rel": -0.00073,
 				"floor": 0.0044,
 				"part_shift": {
 					"bundle": -3.0000000000000004e-05,
@@ -146,13 +146,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 24258, dearer than the 3836 taken"
 			],
-			"peak_mb": 429.0,
+			"peak_mb": 296.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 94.10000000000001,
-			"searched": "recheck",
+			"search_s": 7.2,
+			"searched": "replay",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"verdict": {
@@ -186,7 +186,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0044,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.3429999999999999
 				}
@@ -204,7 +204,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.005187
 			},
 			"error": 0.0076500334948894425,
@@ -229,29 +229,29 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 4,
+				"checked_at": 4.0,
 				"checks": [
 					{
 						"holds": true,
 						"mean_after": [
 							0.04733915999531746,
 							0.03558943048119545,
-							0.015880392864346504
+							0.0158803928643465
 						],
 						"mean_before": [
 							0.04733915999531746,
 							0.03558943048119545,
-							0.015880392864346504
+							0.0158803928643465
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00016932864673435688,
-							0.00013278191909193993,
+							0.00016932864673435,
+							0.00013278191909193,
 							8.195746340788901e-05
 						],
 						"variance_before": [
-							0.00016932864673435688,
-							0.00013278191909193993,
+							0.00016932864673435,
+							0.00013278191909193,
 							8.195746340788901e-05
 						]
 					},
@@ -259,23 +259,23 @@
 						"holds": true,
 						"mean_after": [
 							0.0475773848593235,
-							0.035800348967313766,
+							0.03580034896731376,
 							0.01604548469185829
 						],
 						"mean_before": [
 							0.0475773848593235,
-							0.035800348967313766,
+							0.03580034896731376,
 							0.01604548469185829
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00018463609740138054,
-							0.00014481041580438614,
+							0.00018463609740138,
+							0.00014481041580438,
 							8.934288052842021e-05
 						],
 						"variance_before": [
-							0.00018463609740138054,
-							0.00014481041580438614,
+							0.00018463609740138,
+							0.00014481041580438,
 							8.934288052842021e-05
 						]
 					},
@@ -284,46 +284,46 @@
 						"mean_after": [
 							0.04689320549368858,
 							0.03519470989704132,
-							0.015571746975183487
+							0.01557174697518348
 						],
 						"mean_before": [
 							0.04689320549368858,
 							0.03519470989704132,
-							0.015571746975183487
+							0.01557174697518348
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00014040013775229454,
-							0.00011004868429154158,
+							0.00014040013775229,
+							0.00011004868429154,
 							6.799511902499944e-05
 						],
 						"variance_before": [
-							0.00014040013775229454,
-							0.00011004868429154158,
+							0.00014040013775229,
+							0.00011004868429154,
 							6.799511902499944e-05
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.047353729605674744,
+							0.04735372960567474,
 							0.03558998182415962,
-							0.015869854018092155
+							0.01586985401809215
 						],
 						"mean_before": [
-							0.047353729605674744,
+							0.04735372960567474,
 							0.03558998182415962,
-							0.015869854018092155
+							0.01586985401809215
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0001692629884928465,
-							0.00013290741480886936,
+							0.00016926298849284,
+							0.00013290741480886,
 							8.191802771762013e-05
 						],
 						"variance_before": [
-							0.0001692629884928465,
-							0.00013290741480886936,
+							0.00016926298849284,
+							0.00013290741480886,
 							8.191802771762013e-05
 						]
 					}
@@ -348,13 +348,13 @@
 				"KIT (its own build at 2 of the band's pixels) held at 6408, dearer than the 1374 taken",
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.123 kept), carried from rung 1 held at 3836, dearer than the 1374 taken"
 			],
-			"peak_mb": 429.0,
+			"peak_mb": 281.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 175.8,
-			"searched": "recheck",
+			"search_s": 7.1000000000000005,
+			"searched": "replay",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -516,6 +516,7 @@
 				],
 				"holds": true
 			},
+			"materials": "merged",
 			"measured": {
 				"cost": 168,
 				"coverage_rel": -0.06411,
@@ -532,10 +533,10 @@
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 24258, dearer than the 168 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 2 held at 9546, dearer than the 168 taken"
 			],
-			"peak_mb": 429.0,
+			"peak_mb": 281.0,
 			"pixel_scale": 4.0,
 			"route": "kit",
-			"search_s": 16.0,
+			"search_s": 39.5,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -552,7 +553,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "a8fbdece5c32905afe7a8dbccbf31b3299a96155d20c621688fd7b1bca857a57"
 	}
 }

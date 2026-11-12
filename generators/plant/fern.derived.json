@@ -94,7 +94,7 @@
 				"trace": "plant__fern#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 2,
+				"candidates": 0,
 				"trace": "plant__fern#3.trace.jsonl"
 			}
 		}
@@ -172,10 +172,10 @@
 				"REDUCE (every piece) from rung 0: nothing to try; the error ladder: nothing to try",
 				"THIN: plant/fern does not declare `reads_density`"
 			],
-			"peak_mb": 266.0,
+			"peak_mb": 245.0,
 			"route": "rung0",
-			"search_s": 10.3,
-			"searched": "recheck",
+			"search_s": 0.30000000000000004,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tolerance": 0.001851851851851852,
@@ -238,10 +238,10 @@
 			},
 			"measured": {
 				"cost": 754,
-				"coverage_rel": -0.0037600000000000003,
+				"coverage_rel": -0.00376,
 				"floor": 0.00432,
 				"part_shift": {},
-				"picture": 0.005090000000000001
+				"picture": 0.00509
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -268,10 +268,10 @@
 				"THIN, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at 2 of the band's pixels) held at 754, the same cost as the route taken, found first"
 			],
-			"peak_mb": 269.0,
+			"peak_mb": 244.0,
 			"route": "kit",
-			"search_s": 11.4,
-			"searched": "recheck",
+			"search_s": 0.30000000000000004,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -286,7 +286,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 1048576,
+			"atlas_bytes": 1048576.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -316,13 +316,13 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 8.0
 				}
 			],
 			"checked_at": 11,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
-				"excess": 0.39080000000000004,
+				"excess": 0.3908,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
@@ -341,14 +341,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 270.0,
+			"peak_mb": 244.0,
 			"route": "impostor",
-			"search_s": 4.0,
-			"searched": "recheck",
+			"search_s": 0.2,
+			"searched": "replay",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 8,
+			"tiles": 8.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 11,
@@ -362,7 +362,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "1091b21db607a34f7aaeff5a6df925f12fe9a4a4a44962946ea3d8f548f89031"
 	}
 }

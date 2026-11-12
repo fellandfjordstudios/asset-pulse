@@ -255,7 +255,7 @@
 	],
 	"effort": "full",
 	"id": "plant/birch-clump",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -379,7 +379,7 @@
 			"every_piece": true,
 			"fraction": 0.837967,
 			"from_rung": 0,
-			"judged": "7d34128df4c7ba7ffb9b9da38108f14e6a7e8588685497a7f76be681ed4a050a",
+			"judged": "f37591ebc5d00e312adc1065934bbbeeec06c61c2049f646186338aa335a4ace",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.0625x the band's (0.838 kept)",
@@ -417,13 +417,13 @@
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 455 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.91), one pixel 0.00558 m",
 				"MERGED: not searched -- the look past the first that held (REDUCE (every piece) to its error cap 0.0625x the band's (0.838 kept)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 1678.0,
+			"peak_mb": 1679.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 9.0,
 				"reduce": 9.0
 			},
-			"search_s": 1275.9,
+			"search_s": 1700.6000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -432,7 +432,7 @@
 				"configurations": 43,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.25
@@ -441,7 +441,7 @@
 	},
 	"source": {
 		"children": "a5a304d14a08f6c7273904771d0a8dcd6d369c58ba9ed231721d4fa210080a08",
-		"deriver": "5af2eef00da0d4314bbfd5a1b8fa3e49918b45d2e01626e76344475c95d04263",
+		"deriver": "2c30f812b6de1d9e7b97448d6973c9885f2710dc6676d314915357d9c597f490",
 		"generator": "e3a74cde783c0bf18675e69feaf54f37812d56e6bf46a560726b62d951810ce5"
 	}
 }

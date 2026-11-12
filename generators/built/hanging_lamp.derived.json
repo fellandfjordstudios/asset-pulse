@@ -20,11 +20,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 0,
 				"trace": "built__hanging-lamp#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 27,
+				"candidates": 0,
 				"trace": "built__hanging-lamp#2.trace.jsonl"
 			}
 		}
@@ -45,7 +45,7 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": -1,
+					"cost": -1.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": -1.0,
@@ -58,12 +58,12 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00387,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.959936
 				}
 			],
-			"cap": 0.0005615546019471279,
+			"cap": 0.00056155460194712,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -73,7 +73,7 @@
 				"excess": 0.3125,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001291
 			},
 			"error": 0.0022462184077885116,
@@ -84,7 +84,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.960 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -120,13 +120,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 2's part 'brass' is 103 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 283.0,
+			"peak_mb": 251.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 7
+				"reduce": 7.0
 			},
-			"search_s": 40.400000000000006,
-			"searched": "search",
+			"search_s": 0.5,
+			"searched": "replay",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"verdict": {
@@ -134,7 +134,7 @@
 				"configurations": 1,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.3125
@@ -147,11 +147,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4248,
+					"cost": 4248.0,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.0053100000000000005,
-					"px_over": 0,
+					"picture": 0.00531,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": {}
 				},
@@ -160,15 +160,15 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.01743,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.24009999999999992
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.0011231092038942558,
+				"cap": 0.00112310920389425,
 				"chain": "error",
-				"cost": 4740
+				"cost": 4740.0
 			},
 			"chains": {
 				"error": "lost"
@@ -178,7 +178,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.005166
 			},
 			"error": 0.008984873631154047,
@@ -189,7 +189,7 @@
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -203,7 +203,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 1,
+				"checked_at": 1.0,
 				"checks": [
 					{
 						"holds": true,
@@ -235,15 +235,15 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 1768,
-				"coverage_rel": -0.014300000000000002,
+				"coverage_rel": -0.0143,
 				"floor": 0.00398,
 				"part_shift": {
 					"brass": 0.00266,
 					"chimney": -4e-05,
-					"enamel": 0.011330000000000002,
-					"iron": -0.009680000000000001,
+					"enamel": 0.01133,
+					"iron": -0.00968,
 					"rim": -0.00453,
-					"wick": -0.0006600000000000001,
+					"wick": -0.00066,
 					"wick_tip": -1e-05
 				},
 				"picture": 0.01743
@@ -260,13 +260,13 @@
 				"KIT (its own build at the rung's pixel) held at 4248, dearer than the 1768 taken",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.960 kept), carried from rung 1 held at 8338, dearer than the 1768 taken"
 			],
-			"peak_mb": 283.0,
+			"peak_mb": 250.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 7
+				"reduce": 7.0
 			},
-			"search_s": 55.400000000000006,
-			"searched": "search",
+			"search_s": 0.5,
+			"searched": "replay",
 			"surfaces": 5,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -274,7 +274,7 @@
 				"configurations": 1,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -282,7 +282,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "00e47350ea0d6aee4c20ac6a53dfb0bd37d5c5cd4e76309ef66f4b26dac9e47e"
 	}
 }

@@ -1,0 +1,502 @@
+{
+	"checked_at": [
+		{
+			"params": {},
+			"seed": 314
+		},
+		{
+			"params": {
+				"body_length_m": 0.54
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"body_length_m": 0.67
+			},
+			"seed": 314
+		},
+		{
+			"params": {
+				"wings_spread": 1.0
+			},
+			"seed": 314
+		}
+	],
+	"effort": "full",
+	"id": "animal/herring-gull",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"keyed_on": {
+		"moves": [
+			"probe",
+			"structural",
+			"structural",
+			"structural"
+		],
+		"old_key_sets": 4,
+		"sampled": 4,
+		"sets": 4
+	},
+	"made_by": {
+		"tool": "tools/derive.sh",
+		"traces": {
+			"1": {
+				"candidates": 10,
+				"trace": "animal__herring-gull#1.trace.jsonl"
+			},
+			"2": {
+				"candidates": 30,
+				"trace": "animal__herring-gull#2.trace.jsonl"
+			},
+			"3": {
+				"candidates": 11,
+				"trace": "animal__herring-gull#3.trace.jsonl"
+			}
+		}
+	},
+	"probe": {
+		"params": {},
+		"seed": 314
+	},
+	"replay": {
+		"1": "3c7b3bd388cdf05e95c0b9bfae5d8b066825822197526fe2e536f9d92c267511",
+		"2": "18b788fa43bcdda91b6ee41b4dae956b3b733c28ff56bcf003680fdc62b2f307",
+		"3": "505aa7b086da87b04b4d4bc4aded170c2122fb472498ecfd40a1744b7898d68f"
+	},
+	"rungs": {
+		"1": {
+			"budget": 26407,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 10812,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.05768,
+					"px_over": 4464,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 14314,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": 0,
+					"route": "reduce",
+					"value": 0.289242
+				}
+			],
+			"cap": 0.0005915513806178271,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 18124,
+				"fraction": 0.3429999999999999
+			},
+			"chains": {
+				"error": "kept"
+			},
+			"checked_at": 4,
+			"drawn": {
+				"excess": 0.5,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"pixel_m": 0.001303
+			},
+			"error": 0.0023662055224713085,
+			"every_piece": true,
+			"fraction": 0.289242,
+			"from_rung": 0,
+			"judged": "1ac3293f6e5ac96b2839e76e016d8c463f297de2ca11131cf58391d87486898e",
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.289 kept)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"merged",
+					"thin",
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
+			},
+			"measured": {
+				"cost": 14314,
+				"coverage_rel": -0.00203,
+				"floor": 0.00398,
+				"part_shift": {
+					"bill": 2e-05,
+					"black": -0.00017,
+					"claw": -0.00134,
+					"eye": 0.0,
+					"gonys": 0.0,
+					"legs": 0.00017,
+					"mantle": -0.00033000000000000005,
+					"orbital": 0.0,
+					"pupil": 0.0,
+					"quill_black": 0.00014000000000000001,
+					"quill_grey": 0.00039000000000000005,
+					"quill_white": 0.00017,
+					"white": 0.0008600000000000001
+				},
+				"picture": 0.00398
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"IMPOSTOR: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"KIT: none holds at 0.0024 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 4464 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.55), one pixel 0.00130 m; coverage changes -0.0574 against 0.0252 allowed (a one-pixel shrink all round); part 'white' changes its share of the picture by +0.1415 against 0.0252 allowed (its colour's share of the subject); part 'mantle' changes its share of the picture by +0.0629 against 0.0252 allowed (its colour's share of the subject); part 'claw' changes its share of the picture by +0.0414 against 0.0252 allowed (its colour's share of the subject); part 'quill_white' changes its share of the picture by -0.0655 against 0.0252 allowed (its colour's share of the subject); part 'quill_grey' changes its share of the picture by -0.1537 against 0.0252 allowed (its colour's share of the subject); part 'quill_black' changes its share of the picture by -0.0510 against 0.0252 allowed (its colour's share of the subject)",
+				"REDUCE from rung 0 at {} seed 314: part 'claw' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+			],
+			"peak_mb": 391.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 13
+			},
+			"search_s": 328.1,
+			"searched": "search",
+			"surfaces": 13,
+			"surfaces_ceiling": 13,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 4,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
+		},
+		"2": {
+			"budget": 6601,
+			"cancel_across": true,
+			"cancel_near": true,
+			"cancel_opposed": true,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 22,
+					"route": "impostor",
+					"value": 32
+				},
+				{
+					"cost": 2712,
+					"holds": false,
+					"judge": "drawn",
+					"picture": 0.05768,
+					"px_over": 252,
+					"route": "kit",
+					"value": 1.0
+				},
+				{
+					"cost": 6482,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00523,
+					"px_over": 0,
+					"route": "reduce",
+					"value": 0.452843
+				}
+			],
+			"cap": 0.004732411044942617,
+			"chain": "error",
+			"chain_beaten": {
+				"chain": "fraction",
+				"cost": 10590,
+				"fraction": 0.7
+			},
+			"chains": {
+				"error": "kept"
+			},
+			"checked_at": 4,
+			"drawn": {
+				"excess": 0.375,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"pixel_m": 0.005213
+			},
+			"error": 0.009464822089885234,
+			"every_piece": true,
+			"fraction": 0.452843,
+			"from_rung": 1,
+			"judged": "a23f9e8024108a85882da6ef6bc441ca9e396eaebe1d2f4ecba2f23b8a23f986",
+			"look_past": {
+				"beaten": false,
+				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.453 kept)",
+				"looked": 0,
+				"order": [
+					"kit",
+					"child",
+					"reduce",
+					"impostor",
+					"merged",
+					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
+				]
+			},
+			"material_transfer": {
+				"checked_at": 4,
+				"checks": [
+					{
+						"holds": true,
+						"mean_after": [
+							0.5461513996124268,
+							0.5631145238876343,
+							0.581156849861145
+						],
+						"mean_before": [
+							0.5461513996124268,
+							0.5631145238876343,
+							0.581156849861145
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.07261881232261658,
+							0.0683804452419281,
+							0.06359636783599854
+						],
+						"variance_before": [
+							0.07261881232261658,
+							0.0683804452419281,
+							0.06359636783599854
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.5464102029800415,
+							0.5632336735725403,
+							0.5812804698944092
+						],
+						"mean_before": [
+							0.5464102029800415,
+							0.5632336735725403,
+							0.5812804698944092
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.07258197665214539,
+							0.06832152605056763,
+							0.06352487206459045
+						],
+						"variance_before": [
+							0.07258197665214539,
+							0.06832152605056763,
+							0.06352487206459045
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.5456255078315735,
+							0.5628092288970947,
+							0.581095278263092
+						],
+						"mean_before": [
+							0.5456255078315735,
+							0.5628092288970947,
+							0.581095278263092
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.07222265005111694,
+							0.06795987486839294,
+							0.06314060091972351
+						],
+						"variance_before": [
+							0.07222265005111694,
+							0.06795987486839294,
+							0.06314060091972351
+						]
+					},
+					{
+						"holds": true,
+						"mean_after": [
+							0.5802461504936218,
+							0.5991730690002441,
+							0.6151853799819946
+						],
+						"mean_before": [
+							0.5802461504936218,
+							0.5991730690002441,
+							0.6151853799819946
+						],
+						"spatial_rms": 0.0,
+						"variance_after": [
+							0.07153242826461792,
+							0.06699106097221375,
+							0.06087774038314819
+						],
+						"variance_before": [
+							0.07153242826461792,
+							0.06699106097221375,
+							0.06087774038314819
+						]
+					}
+				],
+				"holds": true
+			},
+			"materials": "merged",
+			"measured": {
+				"cost": 6482,
+				"coverage_rel": -0.02312,
+				"floor": 0.00398,
+				"part_shift": {
+					"bill": -0.00032,
+					"black": 0.00026000000000000003,
+					"claw": 0.00068,
+					"eye": 1e-05,
+					"gonys": -4e-05,
+					"legs": -0.00231,
+					"mantle": -0.00519,
+					"orbital": 1e-05,
+					"pupil": 0.0,
+					"quill_black": 0.00064,
+					"quill_grey": 0.00353,
+					"quill_white": 0.0007800000000000001,
+					"white": -0.005280000000000001
+				},
+				"picture": 0.00523
+			},
+			"measured_of": 2,
+			"not_taken": [
+				"IMPOSTOR at 6x6 frames (atlas 0.6 MB) from rung 0 at 8x its pixel: 908 pixel(s) differ at {} seed 314 (worst 0.92)",
+				"IMPOSTOR at 8x8 frames (atlas 1.0 MB) from rung 0 at 8x its pixel: 872 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 12x12 frames (atlas 2.4 MB) from rung 0 at 8x its pixel: 766 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 16x16 frames (atlas 4.2 MB) from rung 0 at 8x its pixel: 592 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 6x6 frames (atlas 0.6 MB) from rung 0 at 4x its pixel: 908 pixel(s) differ at {} seed 314 (worst 0.92)",
+				"IMPOSTOR at 8x8 frames (atlas 1.0 MB) from rung 0 at 4x its pixel: 872 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 12x12 frames (atlas 2.4 MB) from rung 0 at 4x its pixel: 766 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 16x16 frames (atlas 4.2 MB) from rung 0 at 4x its pixel: 592 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 6x6 frames (atlas 0.6 MB) from rung 0: 480 pixel(s) differ at {} seed 314 (worst 0.71)",
+				"IMPOSTOR at 8x8 frames (atlas 1.0 MB) from rung 0: 428 pixel(s) differ at {} seed 314 (worst 0.66)",
+				"IMPOSTOR at 12x12 frames (atlas 2.4 MB) from rung 0: 263 pixel(s) differ at {} seed 314 (worst 0.60)",
+				"IMPOSTOR at 16x16 frames (atlas 4.2 MB) from rung 0: 98 pixel(s) differ at {} seed 314 (worst 0.60)",
+				"IMPOSTOR at 24x24 frames (atlas 9.4 MB) from rung 0 at 8x its pixel: 585 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 24x24 frames (atlas 9.4 MB) from rung 0 at 4x its pixel: 585 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 24x24 frames (atlas 9.4 MB) from rung 0: 42 pixel(s) differ at {} seed 314 (worst 0.67)",
+				"IMPOSTOR at 32x32 frames (atlas 16.8 MB) from rung 0 at 8x its pixel: 576 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 32x32 frames (atlas 16.8 MB) from rung 0 at 4x its pixel: 576 pixel(s) differ at {} seed 314 (worst 0.89)",
+				"IMPOSTOR at 32x32 frames (atlas 16.8 MB) from rung 0: 22 pixel(s) differ at {} seed 314 (worst 0.57)",
+				"KIT: none holds at 0.0095 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 252 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00521 m; coverage changes -0.0692 against 0.0531 allowed (a one-pixel shrink all round); part 'white' changes its share of the picture by +0.1291 against 0.0531 allowed (its colour's share of the subject); part 'mantle' changes its share of the picture by +0.0795 against 0.0531 allowed (its colour's share of the subject); part 'claw' changes its share of the picture by +0.0634 against 0.0531 allowed (its colour's share of the subject); part 'quill_white' changes its share of the picture by -0.0655 against 0.0531 allowed (its colour's share of the subject); part 'quill_grey' changes its share of the picture by -0.1537 against 0.0531 allowed (its colour's share of the subject)",
+				"KIT at 2 pixels: none holds at 0.0095 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 252 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00521 m; coverage changes -0.0692 against 0.0531 allowed (a one-pixel shrink all round); part 'white' changes its share of the picture by +0.1291 against 0.0531 allowed (its colour's share of the subject); part 'mantle' changes its share of the picture by +0.0795 against 0.0531 allowed (its colour's share of the subject); part 'claw' changes its share of the picture by +0.0634 against 0.0531 allowed (its colour's share of the subject); part 'quill_white' changes its share of the picture by -0.0655 against 0.0531 allowed (its colour's share of the subject); part 'quill_grey' changes its share of the picture by -0.1537 against 0.0531 allowed (its colour's share of the subject)",
+				"REDUCE from rung 1, the derived band above at {} seed 314: part 'claw' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
+				"REDUCE from rung 0 at {} seed 314: part 'claw' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"REDUCE (every piece) to its error cap 0.0625x the band's (0.289 kept), carried from rung 1 held at 14314, dearer than the 6482 taken"
+			],
+			"peak_mb": 391.0,
+			"route": "reduce",
+			"routes": {
+				"reduce": 13
+			},
+			"search_s": 268.2,
+			"searched": "search",
+			"surfaces": 2,
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 4,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.375
+			}
+		},
+		"3": {
+			"atlas_bytes": 2359296,
+			"atlas_profiles": {
+				"native-desktop": {
+					"budget_mb": 2048.0,
+					"compressed_mb": 0.59,
+					"refused": false,
+					"rgba8_mb": 2.36
+				},
+				"native-mobile": {
+					"budget_mb": 256.0,
+					"compressed_mb": 0.59,
+					"refused": false,
+					"rgba8_mb": 2.36
+				},
+				"web": {
+					"budget_mb": 256.0,
+					"compressed_mb": 0.59,
+					"refused": false,
+					"rgba8_mb": 2.36
+				}
+			},
+			"budget": 1650,
+			"candidates": [
+				{
+					"cost": 2,
+					"holds": false,
+					"judge": "impostor",
+					"picture": -1.0,
+					"px_over": 1,
+					"route": "impostor",
+					"value": 6
+				}
+			],
+			"checked_at": 4,
+			"draw_calls": 1,
+			"drawn": {
+				"excess": 0.42750000000000005,
+				"judge": "drawn",
+				"why": "an impostor is judged at the drawn size, its frames blended"
+			},
+			"error": 0.03785928835954094,
+			"fraction": 1.0,
+			"from_rung": 0,
+			"judged": "5b4a4c0e409970948662f270cbab6be7d394f168d97ac8be744e5f6cfb423ad9",
+			"measured": {
+				"cost": 2,
+				"coverage_rel": 0.0,
+				"floor": 0.0,
+				"part_shift": {},
+				"picture": -1.0
+			},
+			"measured_of": 1,
+			"not_taken": [
+				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
+			],
+			"peak_mb": 394.0,
+			"route": "impostor",
+			"search_s": 86.9,
+			"searched": "search",
+			"surfaces": 1,
+			"surfaces_ceiling": 1,
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 4,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.42750000000000005
+			}
+		}
+	},
+	"source": {
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"generator": "bc17c0a531fcd08235eabdeb6e48c084d8dcf99ea533100d05f6b766950c0ca1"
+	}
+}

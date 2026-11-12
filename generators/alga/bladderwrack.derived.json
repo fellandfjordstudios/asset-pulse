@@ -114,11 +114,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "alga__bladderwrack#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "alga__bladderwrack#2.trace.jsonl"
 			}
 		}
@@ -143,7 +143,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -161,7 +161,7 @@
 				"excess": 0.375,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0012749999999999999
 			},
 			"error": 0.0025375354722392903,
@@ -189,13 +189,13 @@
 				"picture": 0.00398
 			},
 			"measured_of": 1,
-			"peak_mb": 492.0,
+			"peak_mb": 247.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 32.0
 			},
-			"search_s": 49.2,
-			"searched": "recheck",
+			"search_s": 0.8,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -220,7 +220,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00444,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -238,7 +238,7 @@
 				"excess": 0.3125,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0050999999999999995
 			},
 			"error": 0.010150141888957161,
@@ -266,13 +266,13 @@
 				"picture": 0.00444
 			},
 			"measured_of": 1,
-			"peak_mb": 492.0,
+			"peak_mb": 244.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 32.0
 			},
-			"search_s": 14.700000000000001,
-			"searched": "recheck",
+			"search_s": 0.7000000000000001,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -288,7 +288,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "4760864bd328a064f9596d4366d8b9e0362dea0519c58f803f763f80d5c22e25"
 	}
 }

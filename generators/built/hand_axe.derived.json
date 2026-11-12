@@ -51,11 +51,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__hand-axe#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 15,
+				"candidates": 0,
 				"trace": "built__hand-axe#2.trace.jsonl"
 			}
 		}
@@ -89,7 +89,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.152742
 				}
@@ -109,7 +109,7 @@
 				"excess": 0.125,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001267
 			},
 			"error": 0.0028815125029206163,
@@ -135,14 +135,14 @@
 			},
 			"measured": {
 				"cost": 2150,
-				"coverage_rel": -0.0017200000000000002,
+				"coverage_rel": -0.00172,
 				"floor": 0.00398,
 				"part_shift": {
 					"brass": 1e-05,
 					"edge": 3.0000000000000004e-05,
 					"leather": -0.00036,
-					"steel": 0.0008600000000000001,
-					"stitch": -0.0029700000000000004,
+					"steel": 0.00086,
+					"stitch": -0.00297,
 					"wood": 0.00251
 				},
 				"picture": 0.00398
@@ -155,13 +155,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 9168, dearer than the 2150 taken"
 			],
-			"peak_mb": 331.0,
+			"peak_mb": 266.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 6.0
 			},
-			"search_s": 28.5,
-			"searched": "recheck",
+			"search_s": 4.3,
+			"searched": "replay",
 			"surfaces": 5,
 			"surfaces_ceiling": 6,
 			"verdict": {
@@ -176,7 +176,7 @@
 			}
 		},
 		"2": {
-			"atlas_bytes": 37748736,
+			"atlas_bytes": 37748736.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -206,11 +206,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 24
+					"value": 24.0
 				}
 			],
 			"checked_at": 6,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
 				"excess": 0.4405,
 				"judge": "drawn",
@@ -231,13 +231,13 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 335.0,
+			"peak_mb": 265.0,
 			"route": "impostor",
-			"search_s": 36.2,
-			"searched": "recheck",
+			"search_s": 3.7,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 24,
+			"tiles": 24.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 6,
@@ -251,7 +251,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "8544d246462c31117cf55224809a37f440b65054b529e292ffa8b24ec2836c04"
 	}
 }

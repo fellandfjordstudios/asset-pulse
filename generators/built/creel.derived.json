@@ -128,7 +128,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__creel#1.trace.jsonl"
 			}
 		}
@@ -158,7 +158,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "merged",
 					"value": 1.0
 				}
@@ -168,7 +168,7 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001392
 			},
 			"error": 0.001851851851851852,
@@ -194,7 +194,7 @@
 			"measured": {
 				"cost": 27366,
 				"coverage_rel": 0.0,
-				"floor": 0.004900000000000001,
+				"floor": 0.0049,
 				"part_shift": {
 					"barnacle": 0.0,
 					"body": 0.0,
@@ -215,10 +215,10 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 953.0,
+			"peak_mb": 309.0,
 			"route": "merged",
-			"search_s": 699.5,
-			"searched": "recheck",
+			"search_s": 18.400000000000002,
+			"searched": "replay",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
 			"verdict": {
@@ -235,7 +235,7 @@
 	},
 	"source": {
 		"children": "58f6b8a6d09a911af71ae5b69b216d5917409913db3eac58fb4cb18a0f8388ce",
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "8664bb28b87955a8d608d6838c8ca48fd0f1d876a6cd6ecec2def62ba2b62177"
 	}
 }

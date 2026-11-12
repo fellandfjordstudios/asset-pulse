@@ -72,7 +72,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 2,
+				"candidates": 0,
 				"trace": "plant__rowan-leaf#1.trace.jsonl"
 			}
 		}
@@ -93,7 +93,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.07547000000000001,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": {}
 				}
@@ -103,7 +103,7 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.012447999999999999
 			},
 			"error": 0.07322431772127683,
@@ -114,7 +114,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1,
+				"looked": 1.0,
 				"order": [
 					"kit",
 					"child",
@@ -129,7 +129,7 @@
 			},
 			"measured": {
 				"cost": 8,
-				"coverage_rel": 0.014940000000000002,
+				"coverage_rel": 0.01494,
 				"floor": 0.00561,
 				"part_shift": {},
 				"picture": 0.07547000000000001
@@ -140,10 +140,10 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 265.0,
+			"peak_mb": 245.0,
 			"route": "kit",
-			"search_s": 20.900000000000002,
-			"searched": "search",
+			"search_s": 0.1,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -151,7 +151,7 @@
 				"configurations": 9,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.25
@@ -159,7 +159,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "6145fffb3647b4683255d851f01967f30672237e2d8c16056aff33d6646f94c3"
 	}
 }

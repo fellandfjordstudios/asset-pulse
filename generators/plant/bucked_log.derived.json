@@ -282,7 +282,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "plant__bucked-log#1.trace.jsonl"
 			}
 		}
@@ -306,7 +306,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0048000000000000004,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.052058
 				}
@@ -326,7 +326,7 @@
 				"excess": 0.125,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001607
 			},
 			"error": 0.0018518518518518517,
@@ -351,27 +351,27 @@
 			},
 			"measured": {
 				"cost": 1204,
-				"coverage_rel": -0.00035000000000000005,
-				"floor": 0.0048000000000000004,
+				"coverage_rel": -0.00035,
+				"floor": 0.0048,
 				"part_shift": {
-					"bark": -0.00014000000000000001,
+					"bark": -0.00014,
 					"heartwood": 5e-05,
 					"sapwood": -9e-05,
 					"weathered_wood": 0.00011
 				},
-				"picture": 0.0048000000000000004
+				"picture": 0.0048
 			},
 			"measured_of": 1,
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1818.0,
+			"peak_mb": 366.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 4.0
 			},
-			"search_s": 774.1,
-			"searched": "recheck",
+			"search_s": 31.1,
+			"searched": "replay",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -387,7 +387,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "13703e0ef9ae1391b96ac4d387817c64e8a661ba3a7cfc3a4f4e0db5616bc5d9"
 	}
 }

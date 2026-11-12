@@ -132,7 +132,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__mummy-sleeping-bag#1.trace.jsonl"
 			}
 		}
@@ -156,7 +156,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.09182
 				}
@@ -176,7 +176,7 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0038889999999999997
 			},
 			"error": 0.0018518518518518517,
@@ -205,10 +205,10 @@
 				"floor": 0.00398,
 				"part_shift": {
 					"cord": 0.0,
-					"lining": -0.0008300000000000001,
+					"lining": -0.00083,
 					"shell": 0.00054,
 					"soiled": 0.00036,
-					"zip": -0.0006100000000000001
+					"zip": -0.00061
 				},
 				"picture": 0.00398
 			},
@@ -216,13 +216,13 @@
 			"not_taken": [
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 754.0,
+			"peak_mb": 486.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 355.90000000000003,
-			"searched": "recheck",
+			"search_s": 39.0,
+			"searched": "replay",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -238,7 +238,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "bcef9a1a28973b32598c7d95d6d715bd77562216f5cee8ee1e405d0511843529"
 	}
 }

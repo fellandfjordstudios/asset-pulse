@@ -177,7 +177,7 @@
 	],
 	"effort": "full",
 	"id": "built/village-house",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -275,7 +275,7 @@
 			"error": 0.0018518518518518517,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "4a4f95255fd4d5b172ff016d508fa5eb2b4903d60a5d71103ade208fed8fa8fd",
+			"judged": "fa5508abd253a08db5b350f8f799fafb8d34b55e8ac418c964f6b3742b287cf6",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
@@ -319,9 +319,9 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1447.0,
+			"peak_mb": 1448.0,
 			"route": "merged",
-			"search_s": 2117.3,
+			"search_s": 2819.4,
 			"searched": "recheck",
 			"surfaces": 12,
 			"surfaces_ceiling": 12,
@@ -330,7 +330,7 @@
 				"configurations": 30,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.0
@@ -376,7 +376,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "377cb4657799da947795673d9a0f91f2e4048409a3bfa072d00b3fa508573780",
+			"judged": "a38b055c035e81a23568d8cbe6703910d0fa6a78af03951da06e673af340f345",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -1138,10 +1138,10 @@
 				"REDUCE (every piece) to 0.700 held at 15638, dearer than the 5824 taken",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 23974, dearer than the 5824 taken"
 			],
-			"peak_mb": 1471.0,
+			"peak_mb": 1473.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 1706.8000000000002,
+			"search_s": 1947.4,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
@@ -1200,7 +1200,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "fa74e6124d11b7436a0a803725f744d10336a7e1930b9abc424e2f901de08874",
+			"judged": "0ab25d7c9ea2106c848f44d2a1f894629015b92e2f40e9b01731306b6a975bd5",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -1212,9 +1212,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 1546.0,
+			"peak_mb": 1549.0,
 			"route": "impostor",
-			"search_s": 243.9,
+			"search_s": 322.5,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -1234,7 +1234,7 @@
 	},
 	"source": {
 		"children": "75358241ffd909f56249a838b0cc878bad3b15b04c3672106d5f57a03205aafc",
-		"deriver": "cabda500bd223bb7805871e20590dfd429b8a316331919e76a317f994b77e638",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "7cd411574f1b1ac99db71e3fc9acadbab540d3586889fdb79811fb97c5b3372b"
 	}
 }

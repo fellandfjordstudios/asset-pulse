@@ -233,10 +233,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0032 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 21 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00078 m; coverage changes -0.1911 against 0.0289 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0032",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 310.0,
+			"peak_mb": 246.0,
 			"route": "kit",
-			"search_s": 115.30000000000001,
-			"searched": "recheck",
+			"search_s": 0.6000000000000001,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -311,10 +311,10 @@
 				"KIT (its own build at 2 of the band's pixels) held at 646, the same cost as the route taken, found first",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 646, the same cost as the route taken, found first"
 			],
-			"peak_mb": 304.0,
+			"peak_mb": 244.0,
 			"route": "kit",
-			"search_s": 31.400000000000002,
-			"searched": "recheck",
+			"search_s": 0.5,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -330,7 +330,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "68b179ce55b4db6fa7c1d243686a8bfc64d375db06d740cb11937f9408842d99"
 	}
 }

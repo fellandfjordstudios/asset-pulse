@@ -47,6 +47,12 @@
 			"seed": 314
 		},
 		{
+			"params": {
+				"turns_eaten": 6.0
+			},
+			"seed": 314
+		},
+		{
 			"params": {},
 			"seed": 315
 		},
@@ -68,18 +74,19 @@
 			"shape",
 			"shape",
 			"shape",
+			"structural",
 			"seed",
 			"seed"
 		],
-		"old_key_sets": 10,
-		"sampled": 10,
-		"sets": 3
+		"old_key_sets": 11,
+		"sampled": 11,
+		"sets": 4
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 8,
 				"trace": "food__twist-bread-coil#1.trace.jsonl"
 			}
 		}
@@ -99,11 +106,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1778.0,
+					"cost": 1778,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00805,
-					"px_over": 7.0,
+					"px_over": 7,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -118,14 +125,14 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.00720378125730154,
+				"cap": 0.0072037812573015406,
 				"chain": "error",
-				"cost": 2208.0
+				"cost": 2208
 			},
 			"chains": {
 				"error": "lost"
 			},
-			"checked_at": 10,
+			"checked_at": 11,
 			"drawn": {
 				"excess": 0.25,
 				"holds": true,
@@ -136,11 +143,11 @@
 			"error": 0.0072037812573015406,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "3beefdb2ebce9ee72a8486481ee204673176f47483a0ba61323b3ab2c2b60151",
+			"judged": "0c2623a992105d53d9980d7937e8903d87936484a265498823eea47d237f8832",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -168,21 +175,21 @@
 				"KIT: none holds at 0.0072 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.78), one pixel 0.00136 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 288.0,
+			"peak_mb": 296.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 2.0
+				"reduce": 2
 			},
-			"search_s": 41.2,
-			"searched": "recheck",
+			"search_s": 160.5,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"verdict": {
 				"code": "21abd2a992541eee",
-				"configurations": 10,
+				"configurations": 11,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.25
@@ -190,7 +197,7 @@
 		}
 	},
 	"source": {
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
-		"generator": "25ada0e0081b9b3579d8464c0650fdcbdf0b825bbaf8a46945434c05c55df105"
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"generator": "bd08e24e5852a36831659046f81b8f7debcc2db39405e05d28dc5879f73544ef"
 	}
 }
