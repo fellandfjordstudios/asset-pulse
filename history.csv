@@ -42,3 +42,5 @@ date,pin,status,subjects,bands,covered_hand,covered_library,uncovered,fully_cove
 2026-11-10,1751b009c47a109efbd4bc386ff863433be88b94,ok,199,431,95,216,120,116,86,
 2026-11-11,b16ba2e0bf8171486cceb3d5cc828233eca1e112,ok,199,431,95,218,118,117,87,
 2026-11-11,b16ba2e0bf8171486cceb3d5cc828233eca1e112,failed:site,,,,,,,,
+2026-11-12,cdff1438e0a7fdc9c911bbedd93437b90957e70f,ok,203,440,95,218,127,117,87,
+2026-11-12,cdff1438e0a7fdc9c911bbedd93437b90957e70f,failed:site,,,,,,,,
