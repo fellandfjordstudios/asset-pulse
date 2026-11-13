@@ -73,7 +73,7 @@
 				"trace": "built__lighthouse#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 7,
+				"candidates": 0,
 				"trace": "built__lighthouse#3.trace.jsonl"
 			}
 		}
@@ -135,7 +135,7 @@
 			},
 			"measured": {
 				"cost": 8741,
-				"coverage_rel": 0.0011300000000000001,
+				"coverage_rel": 0.00113,
 				"floor": 0.00417,
 				"part_shift": {},
 				"picture": 0.00417
@@ -147,10 +147,10 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE, MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.240)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 345.0,
+			"peak_mb": 293.0,
 			"route": "kit",
-			"search_s": 115.7,
-			"searched": "recheck",
+			"search_s": 3.9000000000000004,
+			"searched": "replay",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
 			"verdict": {
@@ -220,7 +220,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 8,
+				"checked_at": 8.0,
 				"checks": [
 					{
 						"holds": true,
@@ -262,12 +262,12 @@
 						"variance_after": [
 							0.08106912672519684,
 							0.09333264827728271,
-							0.09516298025846481
+							0.0951629802584648
 						],
 						"variance_before": [
 							0.08106912672519684,
 							0.09333264827728271,
-							0.09516298025846481
+							0.0951629802584648
 						]
 					},
 					{
@@ -309,13 +309,13 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.07993429899215698,
-							0.09262479841709137,
-							0.09428945183753967
+							0.09262479841709136,
+							0.09428945183753969
 						],
 						"variance_before": [
 							0.07993429899215698,
-							0.09262479841709137,
-							0.09428945183753967
+							0.09262479841709136,
+							0.09428945183753969
 						]
 					},
 					{
@@ -381,13 +381,13 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.07985471189022064,
-							0.09253992140293121,
-							0.09426480531692505
+							0.0925399214029312,
+							0.09426480531692503
 						],
 						"variance_before": [
 							0.07985471189022064,
-							0.09253992140293121,
-							0.09426480531692505
+							0.0925399214029312,
+							0.09426480531692503
 						]
 					},
 					{
@@ -405,12 +405,12 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.07981427013874054,
-							0.09236863255500793,
+							0.09236863255500792,
 							0.09414920955896378
 						],
 						"variance_before": [
 							0.07981427013874054,
-							0.09236863255500793,
+							0.09236863255500792,
 							0.09414920955896378
 						]
 					}
@@ -450,11 +450,11 @@
 				"KIT (its own build at the rung's pixel, keeping post 0.168, block 0.700, rivet 0.031) held at 1553, dearer than the 1423 taken",
 				"KIT (its own build at the rung's pixel, keeping rivet 0.240), carried from rung 1 held at 8741, dearer than the 1423 taken"
 			],
-			"peak_mb": 309.0,
+			"peak_mb": 295.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 66.5,
-			"searched": "recheck",
+			"search_s": 5.2,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -469,7 +469,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 5308416,
+			"atlas_bytes": 5308416.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -499,11 +499,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 12.0
 				}
 			],
 			"checked_at": 8,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
 				"excess": 0.3395,
 				"judge": "drawn",
@@ -524,14 +524,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 309.0,
+			"peak_mb": 295.0,
 			"route": "impostor",
-			"search_s": 39.2,
-			"searched": "recheck",
+			"search_s": 3.1,
+			"searched": "replay",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12,
+			"tiles": 12.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 8,
@@ -545,8 +545,8 @@
 		}
 	},
 	"source": {
-		"children": "63865d8cdffb5a170f2980ce9c8a72840943ff3a85183485d09c0b8b8c065b60",
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"children": "2bc0f29065c1603d3ee49cda1773a28309b2d668e9f5f73404c6a7cf84c2231b",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "f788cbfe5b6537eed7921faa7ffe5bd23149ae112de309fd0901171e9f904800"
 	}
 }

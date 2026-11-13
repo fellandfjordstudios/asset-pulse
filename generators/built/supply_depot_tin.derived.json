@@ -41,7 +41,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__supply-depot-tin#1.trace.jsonl"
 			},
 			"2": {
@@ -84,7 +84,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0051600000000000005,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.48999999999999994
 				}
@@ -102,7 +102,7 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0013059999999999999
 			},
 			"error": 0.004410478463863529,
@@ -127,16 +127,16 @@
 			},
 			"measured": {
 				"cost": 344,
-				"coverage_rel": -0.0069500000000000004,
+				"coverage_rel": -0.00695,
 				"floor": 0.00495,
 				"part_shift": {
 					"paint": -0.0011,
-					"paraffin": 0.0012200000000000002,
-					"stopper": -0.00014000000000000001,
-					"tinplate": -0.00013000000000000002,
+					"paraffin": 0.00122,
+					"stopper": -0.00014,
+					"tinplate": -0.00013,
 					"washer": -0.00023
 				},
-				"picture": 0.0051600000000000005
+				"picture": 0.00516
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -144,13 +144,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 404, dearer than the 344 taken"
 			],
-			"peak_mb": 279.0,
+			"peak_mb": 248.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 11.0,
-			"searched": "recheck",
+			"search_s": 0.2,
+			"searched": "replay",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -349,12 +349,12 @@
 				"KIT (its own build at 2 of the band's pixels) held at 316, dearer than the 96 taken",
 				"REDUCE to 0.490, carried from rung 1 held at 236, dearer than the 96 taken"
 			],
-			"peak_mb": 279.0,
+			"peak_mb": 255.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7
 			},
-			"search_s": 31.0,
+			"search_s": 37.9,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -544,12 +544,12 @@
 				"KIT (its own build at 4 of the band's pixels) held at 312, dearer than the 74 taken",
 				"REDUCE to 0.490, carried from rung 1 held at 236, dearer than the 74 taken"
 			],
-			"peak_mb": 279.0,
+			"peak_mb": 255.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 6
 			},
-			"search_s": 22.3,
+			"search_s": 25.5,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -567,7 +567,7 @@
 	},
 	"source": {
 		"children": "ff23d772d94a773e7819d8c7c6f3e00a9231a7f5641294d8aee97ce51e8f3a1b",
-		"deriver": "a176cdfd105afb3524f3370f4a2ce2f297cb2bf69f2eac37280b698681a382b9",
+		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
 		"generator": "c68c4c3232908541d2f4484fb2f50e65f15ae2eea2a17ffcb0145346aa16ba8d"
 	}
 }

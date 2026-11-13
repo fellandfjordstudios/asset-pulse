@@ -147,6 +147,7 @@
 	],
 	"effort": "full",
 	"id": "plant/birch",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -187,7 +188,7 @@
 				"trace": "plant__birch#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 2,
+				"candidates": 45,
 				"trace": "plant__birch#2.trace.jsonl"
 			},
 			"3": {
@@ -202,7 +203,7 @@
 	},
 	"replay": {
 		"1": "7627edc7634163afc41fe3ff1a782c4592beda884438de1d9d9a5b740c417bc1",
-		"2": "1174495a1e53805576f95477d51830541f157bf483672d00baa8af75ad61d177",
+		"2": "8d36fad820ae662a87afde0385382ba2f75e5116ab10cc44c72e89939264592d",
 		"3": "b275041b68b6c21e28c199f3742043518bcfee3eafbd3569f88836d7ba735dab"
 	},
 	"rungs": {
@@ -227,7 +228,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.009290000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.909126
 				},
@@ -258,13 +259,15 @@
 			"checked_at": 25,
 			"drawn": {
 				"excess": 0.25,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.007408
 			},
 			"error": 0.001851851851851852,
 			"fraction": 0.909126,
 			"from_rung": 0,
-			"judged": "e9c9af12ecaf8c6a1e423456efc141e967e48b8a2dee566f249298e2e7f1f58b",
+			"judged": "fe3fe938605cabea3f9b5f3f4cf58cd53628351792e4795ffc7e35357dea3bfc",
 			"measured": {
 				"cost": 122364,
 				"coverage_rel": -0.010610000000000001,
@@ -286,38 +289,45 @@
 				"SUBSTITUTE (crown photos, found clusters): none holds by the crown's judge -- the finest tried (1.000) fails at {} seed 314: the crown's judge refuses its envelope, leaves",
 				"SUBSTITUTE (crown photos, tagged clusters): none holds by the crown's judge -- the finest tried (1.000) fails at {} seed 314: the crown's judge refuses its envelope, leaves"
 			],
-			"peak_mb": 1944.0,
+			"peak_mb": 1775.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 7057.0,
 				"reduce": 920.0
 			},
-			"search_s": 1799.9,
+			"search_s": 1685.9,
 			"searched": "recheck",
 			"surfaces": 3,
-			"surfaces_ceiling": 3
+			"surfaces_ceiling": 3,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 25,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.25
+			}
 		},
 		"2": {
 			"budget": 10668,
-			"cancel_across": true,
-			"cancel_near": true,
-			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 9.0,
+					"px_over": 9,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
-					"cost": 43542.0,
+					"cost": 43542,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.02828,
-					"px_over": null,
+					"picture": 0.028280000000000003,
+					"px_over": 0,
 					"route": "kit",
 					"value": {}
 				},
@@ -326,45 +336,42 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.009290000000000001,
-					"px_over": null,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.909126
 				},
 				{
-					"cost": 16844.0,
+					"cost": 30154,
 					"holds": false,
 					"judge": "crown",
 					"picture": -1.0,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "substitute",
 					"value": 1.0
 				},
 				{
-					"cost": 15858.0,
+					"cost": 34894,
 					"holds": false,
-					"judge": "drawn",
-					"picture": 0.22707,
-					"px_over": null,
+					"judge": "crown",
+					"picture": -1.0,
+					"px_over": 15,
 					"route": "thin",
-					"value": 0.01977326742999998
+					"value": 0.7
 				}
 			],
-			"cap": 0.00011574074074074,
-			"carried_from": 1,
-			"chain": "error",
-			"chains": {
-				"error": "kept"
-			},
 			"checked_at": 25,
 			"drawn": {
-				"excess": 0.1875,
+				"excess": 0.5,
+				"holds": true,
 				"judge": "drawn",
+				"over": 0,
 				"pixel_m": 0.029630999999999998
 			},
 			"error": 0.007407407407407408,
-			"fraction": 0.909126,
+			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "81d710b03a1d657905807e73f77c97cf6cdddcd1d35477bf766148e4f09cefdc",
+			"judged": "fbb1b85e1c7ef558835166b96e5fb42be7b1737af69783fbbb29383b3af0e490",
+			"keep": {},
 			"material_transfer": {
 				"checked_at": 25,
 				"checks": [
@@ -971,32 +978,64 @@
 				],
 				"holds": true
 			},
-			"materials": "merged",
 			"measured": {
-				"cost": 122364,
-				"coverage_rel": -0.010610000000000001,
+				"cost": 43542,
+				"coverage_rel": -0.01132,
 				"floor": 0.00411,
 				"part_shift": {
-					"bark": 0.0026000000000000003,
-					"leaf": 0.01033,
-					"wood": -0.01094
+					"bark": -0.020190000000000003,
+					"leaf": 0.00415,
+					"wood": 0.023710000000000002
 				},
-				"picture": 0.009290000000000001
+				"picture": 0.028280000000000003
 			},
-			"measured_of": 1,
+			"measured_of": 3,
 			"not_taken": [
-				"THIN to 0.020, re-checked at 15858: the finer rung's offer holds this band, where it was a miss"
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 8x its pixel: 858 pixel(s) differ at {} seed 314 (worst 0.67)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 8x its pixel: 816 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 8x its pixel: 239 pixel(s) differ at {} seed 314 (worst 0.56)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 8x its pixel: 194 pixel(s) differ at {} seed 314 (worst 0.80)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0 at 4x its pixel: 873 pixel(s) differ at {} seed 314 (worst 0.70)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0 at 4x its pixel: 814 pixel(s) differ at {} seed 314 (worst 0.75)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0 at 4x its pixel: 252 pixel(s) differ at {} seed 314 (worst 0.56)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0 at 4x its pixel: 194 pixel(s) differ at {} seed 314 (worst 0.80)",
+				"IMPOSTOR at 6x6 frames (atlas 2.4 MB) from rung 0: 885 pixel(s) differ at {} seed 314 (worst 0.57)",
+				"IMPOSTOR at 8x8 frames (atlas 4.2 MB) from rung 0: 812 pixel(s) differ at {} seed 314 (worst 0.80)",
+				"IMPOSTOR at 12x12 frames (atlas 9.4 MB) from rung 0: 242 pixel(s) differ at {} seed 314 (worst 0.56)",
+				"IMPOSTOR at 16x16 frames (atlas 16.8 MB) from rung 0: 191 pixel(s) differ at {} seed 314 (worst 0.80)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 8x its pixel: 36 pixel(s) differ at {} seed 314 (worst 0.55)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0 at 4x its pixel: 42 pixel(s) differ at {} seed 314 (worst 0.52)",
+				"IMPOSTOR at 24x24 frames (atlas 37.7 MB) from rung 0: 35 pixel(s) differ at {} seed 314 (worst 0.63)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 8x its pixel: 13 pixel(s) differ at {} seed 314 (worst 0.55)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0 at 4x its pixel: 9 pixel(s) differ at {} seed 314 (worst 0.55)",
+				"IMPOSTOR at 32x32 frames (atlas 67.1 MB) from rung 0: 11 pixel(s) differ at {} seed 314 (worst 0.54)",
+				"KIT at 2 pixels: none holds at 0.0074 -- the finest tried (1.000) fails at {\"height_m\":2.0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.01496 m",
+				"KIT at 2 pixels keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.7000, cover 1.20: 5 pixel(s) differ at the drawn size at {} seed 314 (worst 0.61)",
+				"CHILD: rung 0 carries a skin or a channel the child route does not splice",
+				"REDUCE from rung 1, the derived band above at {} seed 314: part 'wood' is 918 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
+				"THIN (the crown's judge): none holds by the crown's judge -- the finest tried (0.700) fails at {\"height_m\":2.0} seed 314: the crown's judge refuses its envelope",
+				"SUBSTITUTE (crown leaf cards): none holds by the crown's judge -- the finest tried (1.000) fails at {\"blade_length_m\":0.012} seed 314: the crown's judge refuses its leaves",
+				"SUBSTITUTE (crown photos, found clusters, the wood by level): none holds by the crown's judge -- the finest tried (1.000) fails at {\"height_m\":2.0} seed 314: the crown's judge refuses its leaves",
+				"SUBSTITUTE (crown photos, tagged clusters, the wood by level): none holds by the crown's judge -- the finest tried (1.000) fails at {} seed 314: the crown's judge refuses its leaves",
+				"REDUCE to 0.700 held at 123006, dearer than the 43542 taken",
+				"REDUCE to its error cap 0.0156x the band's (0.909 kept), carried from rung 1 held at 122364, dearer than the 43542 taken"
 			],
-			"peak_mb": 2140.0,
-			"route": "reduce",
-			"routes": {
-				"carry": 7057.0,
-				"reduce": 920.0
-			},
-			"search_s": 10171.300000000001,
-			"searched": "recheck",
+			"peak_mb": 5133.0,
+			"route": "kit",
+			"search_s": 12855.5,
+			"searched": "search",
 			"surfaces": 2,
-			"surfaces_ceiling": 1
+			"surfaces_ceiling": 1,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 25,
+				"holds": true,
+				"judge": "drawn",
+				"over": 0,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.5
+			}
 		},
 		"3": {
 			"atlas_bytes": 9437184,
@@ -1042,7 +1081,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d0f567b08c05cd71f43da72bcbb90702ac0f79a66c2a723e825b762916631f79",
+			"judged": "1f341d81691e81fef1fed7514795ba4ecf3670e1f04a97c317b1b736ff14555a",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -1054,19 +1093,29 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 2535.0,
+			"peak_mb": 5126.0,
 			"route": "impostor",
-			"search_s": 184.60000000000002,
+			"search_s": 243.4,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12
+			"tiles": 12,
+			"verdict": {
+				"code": "21abd2a992541eee",
+				"configurations": 25,
+				"holds": true,
+				"judge": "impostor",
+				"over": null,
+				"tolerance": 0.5,
+				"unit": "a pixel's coverage",
+				"worst": 0.4844
+			}
 		}
 	},
 	"source": {
 		"children": "9039f9b6350915c11200c85ffe0786a6871025c892110edd87b4eafeffae6109",
-		"deriver": "be8490ce6a1737161f808fe6a7e79f34e9550ed7303ce043b0a0e2e25a1a4420",
+		"deriver": "2c30f812b6de1d9e7b97448d6973c9885f2710dc6676d314915357d9c597f490",
 		"generator": "60aba6750a73985a7cc551523acfd10db9abd41d6b0a9593f0b8c2c41784a4d0"
 	}
 }

@@ -29,6 +29,12 @@
 			"seed": 314
 		},
 		{
+			"params": {
+				"share_eaten": 0.9
+			},
+			"seed": 314
+		},
+		{
 			"params": {},
 			"seed": 315
 		},
@@ -47,18 +53,19 @@
 			"structural",
 			"structural",
 			"structural",
+			"structural",
 			"seed",
 			"seed"
 		],
-		"old_key_sets": 7,
-		"sampled": 7,
-		"sets": 7
+		"old_key_sets": 8,
+		"sampled": 8,
+		"sets": 8
 	},
 	"made_by": {
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 18,
 				"trace": "food__berry-porridge#1.trace.jsonl"
 			}
 		}
@@ -73,7 +80,6 @@
 	"rungs": {
 		"1": {
 			"budget": 2035,
-			"budget_reason": "the cheapest derivation that holds the picture costs 7845, 3.86x rung 1's budget 2035: within the 4x a reason allows (the commission's tiers, decisions/D-derive-1)",
 			"candidates": [
 				{
 					"cost": 7845,
@@ -88,16 +94,16 @@
 					}
 				},
 				{
-					"cost": 23507.0,
+					"cost": 23507,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": null,
+					"px_over": 0,
 					"route": "merged",
 					"value": 1.0
 				}
 			],
-			"checked_at": 7,
+			"checked_at": 8,
 			"drawn": {
 				"excess": 0.4375,
 				"gap": 3.0380000000000003,
@@ -107,7 +113,7 @@
 			"error": 0.006174669649115607,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "af21d79c6218d7298d2abf631100202bd3741cb4c7b6dc05e9c51d216e18c82e",
+			"judged": "3494a4bdfd3f14bd10f3ac75b4d57441292b1ee0b66c8234223f692a9cb069ba",
 			"keep": {
 				"drupelet": 0.3429999999999999,
 				"oat_flake": 0.03125
@@ -115,26 +121,26 @@
 			"measured": {
 				"cost": 7845,
 				"coverage_rel": -0.00116,
-				"floor": 0.00471,
+				"floor": 0.004710000000000001,
 				"part_shift": {},
-				"picture": 0.00471
+				"picture": 0.004710000000000001
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED (its parts at their own rungs, joined) held at 23507, dearer than the 7845 taken"
 			],
-			"peak_mb": 279.0,
+			"peak_mb": 342.0,
 			"route": "kit",
-			"search_s": 4.2,
-			"searched": "replay",
+			"search_s": 273.6,
+			"searched": "search",
 			"surfaces": 10,
 			"surfaces_ceiling": 10,
 			"verdict": {
 				"code": "21abd2a992541eee",
-				"configurations": 7,
+				"configurations": 8,
 				"holds": true,
 				"judge": "drawn",
 				"over": null,
@@ -147,6 +153,6 @@
 	"source": {
 		"children": "fb61b1c4f98bd2009c8b93b89b3f2d7a418f4cb81cc74da4a1f97ceaa5f8843c",
 		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
-		"generator": "ef366bc1b424f41f0fd3466920c91b40c853bf3394c43477801a993a02bf860c"
+		"generator": "92168e6455660e45b7755d55077a80d18a50656ef8df7c5e3162d466bfd228af"
 	}
 }

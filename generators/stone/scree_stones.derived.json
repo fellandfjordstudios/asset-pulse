@@ -93,7 +93,7 @@
 	],
 	"effort": "full",
 	"id": "stone/scree-stones",
-	"judge": "65b6d8f91d90742d010f7fab0d88fa5e80f7d47c6037f0ad62f6f2d652d53f90",
+	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -121,11 +121,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": -1,
+				"candidates": 1,
 				"trace": "stone__scree-stones#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 57,
+				"candidates": 1,
 				"trace": "stone__scree-stones#2.trace.jsonl"
 			}
 		}
@@ -155,7 +155,7 @@
 					"value": 0.598341
 				}
 			],
-			"cap": 0.000462962962962963,
+			"cap": 0.00046296296296296,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -178,12 +178,12 @@
 					0.1895,
 					0.15130000000000002
 				],
-				"band": 1,
+				"band": 1.0,
 				"coverage": 0.7291000000000001,
 				"luminance_sd": 0.0882,
 				"texel_m": 0.002137
 			},
-			"judged": "a8cbb3d90da5750d9aceabd17104aa3843359b41ea4ffb1068195276762af2e5",
+			"judged": "7a6df9383a1e69e89f23aa017b747e52823ebd7083e453235265ae19aa971485",
 			"measured": {
 				"cost": 102412,
 				"coverage_rel": -0.00256,
@@ -201,13 +201,13 @@
 				"KIT: skipped by the prior -- judged 3 times for field subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form field --band 1)",
 				"REDUCE from rung 0 at {} seed 314: element 31's part 'fracture' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 15 more groups)"
 			],
-			"peak_mb": 1765.0,
+			"peak_mb": 895.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 2527
+				"reduce": 2527.0
 			},
-			"search_s": 2629.9,
-			"searched": "search",
+			"search_s": 102.7,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"verdict": {
@@ -215,7 +215,7 @@
 				"configurations": 16,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.4375
@@ -228,11 +228,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 38660,
+					"cost": 38660.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": -1.0,
-					"px_over": 1432,
+					"px_over": 1432.0,
 					"route": "kit",
 					"value": 0.7
 				},
@@ -246,16 +246,16 @@
 					"value": 0.921044
 				},
 				{
-					"cost": 124,
+					"cost": 124.0,
 					"holds": false,
 					"judge": "field",
 					"picture": -1.0,
-					"px_over": 3,
+					"px_over": 3.0,
 					"route": "substitute",
-					"value": 62
+					"value": 62.0
 				}
 			],
-			"cap": 0.001851851851851852,
+			"cap": 0.00185185185185185,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -275,15 +275,15 @@
 			"ground": {
 				"albedo_linear": [
 					0.2175,
-					0.18910000000000002,
+					0.1891,
 					0.1512
 				],
-				"band": 2,
+				"band": 2.0,
 				"coverage": 0.727,
 				"luminance_sd": 0.0883,
 				"texel_m": 0.008548
 			},
-			"judged": "6f0f731c8ef726b95e86ad55cf95bf343dae1548bfb7a6bfc49057e18051c4ef",
+			"judged": "77f17c6898dd1479731792c8176de40176c7054036e8f90507b594e73455bc0a",
 			"material_transfer": {
 				"checked_at": 16,
 				"checks": [
@@ -680,9 +680,9 @@
 				"coverage_rel": -0.01186,
 				"floor": 0.005410000000000001,
 				"part_shift": {
-					"fracture": -0.00064,
+					"fracture": -0.00045000000000000004,
 					"lichen": 0.00030000000000000003,
-					"rind": 0.0004
+					"rind": 0.00028000000000000003
 				},
 				"picture": 0.005410000000000001
 			},
@@ -697,13 +697,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 31's part 'fracture' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 15 more groups)",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.598 kept), carried from rung 1 held at 102412, dearer than the 94326 taken"
 			],
-			"peak_mb": 1522.0,
+			"peak_mb": 898.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 2527
+				"reduce": 2527.0
 			},
-			"search_s": 14424.0,
-			"searched": "search",
+			"search_s": 7032.700000000001,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -711,7 +711,7 @@
 				"configurations": 16,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.375
@@ -720,7 +720,7 @@
 	},
 	"source": {
 		"children": "a4223aec1decb21a16b04a588cef4c1663e8ca1264f265edbfc80301937752f1",
-		"deriver": "f7e5a4a74bedfa18c61f1c6b76fb9d6323d5d9d0eaa71bb985917eb7a009e812",
+		"deriver": "60a2e5d27a3217aa81e4e854d6468b24254e68fd67f4296f4cdc9ab09a3900e3",
 		"generator": "36bdf66bf2d99055cb71001d23a423b6f247100a63b0ed4d3a28a609bc0c0816"
 	}
 }
