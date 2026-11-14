@@ -156,12 +156,12 @@
 				"REDUCE from rung 0 at {} seed 314: part 'claw' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 318.0,
+			"peak_mb": 326.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 13.0
 			},
-			"search_s": 8.8,
+			"search_s": 9.0,
 			"searched": "replay",
 			"surfaces": 13,
 			"surfaces_ceiling": 13,
@@ -400,12 +400,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.289 kept), carried from rung 1 held at 14314, dearer than the 6482 taken"
 			],
-			"peak_mb": 335.0,
+			"peak_mb": 332.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 13
 			},
-			"search_s": 359.5,
+			"search_s": 304.40000000000003,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -476,9 +476,9 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 327.0,
+			"peak_mb": 328.0,
 			"route": "impostor",
-			"search_s": 6.7,
+			"search_s": 6.1000000000000005,
 			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,

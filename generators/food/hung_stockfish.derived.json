@@ -162,12 +162,12 @@
 				"REDUCE from rung 0 at {} seed 314: part 'belly' is 55 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 494.0,
+			"peak_mb": 492.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 4.0
 			},
-			"search_s": 176.4,
+			"search_s": 119.4,
 			"searched": "replay",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -442,12 +442,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"CARRIED from rung 1, REDUCE (every piece) to 0.082, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 3: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00520 m"
 			],
-			"peak_mb": 523.0,
+			"peak_mb": 525.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 4
 			},
-			"search_s": 708.6,
+			"search_s": 532.9,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -698,12 +698,12 @@
 				"REDUCE (every piece) to 0.082, carried from rung 1 held at 15909, dearer than the 5729 taken",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.435 kept), carried from rung 2 held at 7093, dearer than the 5729 taken"
 			],
-			"peak_mb": 536.0,
+			"peak_mb": 517.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2
 			},
-			"search_s": 403.90000000000003,
+			"search_s": 316.1,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
