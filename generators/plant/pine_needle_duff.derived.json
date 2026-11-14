@@ -81,7 +81,7 @@
 	],
 	"effort": "full",
 	"id": "plant/pine-needle-duff",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -160,7 +160,7 @@
 				"luminance_sd": 0.1127,
 				"texel_m": 0.001852
 			},
-			"judged": "600440c87a0cf3c9a443df02be0e25444c2526b7d042d26278cad4b93219dcbc",
+			"judged": "c783abf9d42983d9e46e16a294106f91685bd104115d0c3765e35124ebbc6685",
 			"keep": {
 				"debris": 0.11764899999999996
 			},
@@ -187,10 +187,10 @@
 				"REDUCE from rung 0: nothing to try; the error ladder: nothing to try",
 				"THIN: plant/pine-needle-duff does not declare `reads_density`"
 			],
-			"peak_mb": 572.0,
+			"peak_mb": 596.0,
 			"route": "kit",
-			"search_s": 14.5,
-			"searched": "replay",
+			"search_s": 121.9,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"tolerance": 0.001851851851851852,
@@ -207,7 +207,7 @@
 		}
 	},
 	"source": {
-		"deriver": "60a2e5d27a3217aa81e4e854d6468b24254e68fd67f4296f4cdc9ab09a3900e3",
+		"deriver": "f4e3249a8d126348165fd1c50d4cb130c3fc6562683707f330aaa6c878fff9ba",
 		"generator": "88d617b2a1d61415b913413e25fa0dea8cd3e62c763dd339ad61e70d3b0f9543"
 	}
 }

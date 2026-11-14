@@ -87,7 +87,7 @@
 	],
 	"effort": "full",
 	"id": "plant/pine-stem",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -163,7 +163,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "c725f11be7b0caf2f7df92fb09177f175f948224d99238f22512a9ebb169fdf6",
+			"judged": "22a14469f61b0721159888e66b78bca050ed09cc1edf2c3a1833cff391794504",
 			"keep": {},
 			"look_past": {
 				"beaten": true,
@@ -180,7 +180,7 @@
 			},
 			"measured": {
 				"cost": 228,
-				"coverage_rel": -0.00049,
+				"coverage_rel": -0.0004900000000000001,
 				"floor": 0.00547,
 				"part_shift": {},
 				"picture": 0.0041
@@ -190,10 +190,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to its error cap 0.125x the band's (0.179 kept) held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 247.0,
+			"peak_mb": 367.0,
 			"route": "kit",
-			"search_s": 0.4,
-			"searched": "replay",
+			"search_s": 195.60000000000002,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -238,7 +238,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "829f2af0320f1c03d7485d1067f8c463be09d8e447ce95bd694826f1a6f35ea8",
+			"judged": "c414127fd6989a1d3f4cd7c67d10e7e9d7339680779af80c9ab021092fb461f9",
 			"keep": {},
 			"look_past": {
 				"beaten": true,
@@ -255,7 +255,7 @@
 			},
 			"measured": {
 				"cost": 228,
-				"coverage_rel": -0.00207,
+				"coverage_rel": -0.0020700000000000002,
 				"floor": 0.00547,
 				"part_shift": {},
 				"picture": 0.0041
@@ -267,10 +267,10 @@
 				"REDUCE to its error cap 0.0625x the band's (0.179 kept) held at 228, the same cost as the route taken, found first",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 244.0,
+			"peak_mb": 329.0,
 			"route": "kit",
-			"search_s": 0.30000000000000004,
-			"searched": "replay",
+			"search_s": 44.0,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -286,7 +286,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "95c7e49fde0c685a2f753b5cea5d6e031753a304066740b4a5edd0a4cce5e83e"
 	}
 }

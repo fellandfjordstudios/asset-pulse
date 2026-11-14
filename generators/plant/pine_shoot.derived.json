@@ -123,7 +123,7 @@
 	],
 	"effort": "full",
 	"id": "plant/pine-shoot",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -205,7 +205,7 @@
 			"error": 0.003242357311563454,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f5c5811f0b569aeb8b51e1b7725db509f6823f9495829fb9174101484e4692a0",
+			"judged": "414c1794f4958b0e18bafb51f55bacc50ca6e8731d29501734d09bb3d2fa3859",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -233,10 +233,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0032 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 21 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00078 m; coverage changes -0.1911 against 0.0289 allowed (a one-pixel shrink all round); the error ladder: none holds at 0.0032",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 246.0,
+			"peak_mb": 312.0,
 			"route": "kit",
-			"search_s": 0.6000000000000001,
-			"searched": "replay",
+			"search_s": 181.60000000000002,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -281,7 +281,7 @@
 			"error": 0.012969429246253815,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f48149d66ec4e551383a965ed680420da985b8b8a223828ef0d487fc2d1013db",
+			"judged": "cc5fb5b4921be54524d43dc47c4e4dc79fb07138248d6b6e6eb28725b8264831",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -311,10 +311,10 @@
 				"KIT (its own build at 2 of the band's pixels) held at 646, the same cost as the route taken, found first",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 646, the same cost as the route taken, found first"
 			],
-			"peak_mb": 244.0,
+			"peak_mb": 306.0,
 			"route": "kit",
-			"search_s": 0.5,
-			"searched": "replay",
+			"search_s": 48.7,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -330,7 +330,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "68b179ce55b4db6fa7c1d243686a8bfc64d375db06d740cb11937f9408842d99"
 	}
 }

@@ -51,7 +51,7 @@
 	],
 	"effort": "full",
 	"id": "plant/rowan-leaf",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -72,7 +72,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 2,
 				"trace": "plant__rowan-leaf#1.trace.jsonl"
 			}
 		}
@@ -93,7 +93,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.07547000000000001,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "kit",
 					"value": {}
 				}
@@ -103,18 +103,18 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.012447999999999999
 			},
 			"error": 0.07322431772127683,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "30efbfb9028c5e4aab4767da6bc8aaf6f1864864a323efe6e4f671a380c99c9c",
+			"judged": "f15e0f38fd6d609feb23509a8958c15a0a91d0beac1c41ce7e126c34bf4d0cd5",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -129,7 +129,7 @@
 			},
 			"measured": {
 				"cost": 8,
-				"coverage_rel": 0.01494,
+				"coverage_rel": 0.014940000000000002,
 				"floor": 0.00561,
 				"part_shift": {},
 				"picture": 0.07547000000000001
@@ -140,10 +140,10 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 245.0,
+			"peak_mb": 268.0,
 			"route": "kit",
-			"search_s": 0.1,
-			"searched": "replay",
+			"search_s": 32.0,
+			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -151,7 +151,7 @@
 				"configurations": 9,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.25
@@ -159,7 +159,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "6145fffb3647b4683255d851f01967f30672237e2d8c16056aff33d6646f94c3"
 	}
 }

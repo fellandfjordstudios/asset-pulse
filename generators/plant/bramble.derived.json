@@ -105,7 +105,7 @@
 	],
 	"effort": "full",
 	"id": "plant/bramble",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -135,7 +135,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "plant__bramble#1.trace.jsonl"
 			}
 		}
@@ -168,7 +168,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0048400000000000006,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.745458
 				}
@@ -183,14 +183,14 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.002437
 			},
 			"error": 0.0018518518518518517,
 			"every_piece": true,
 			"fraction": 0.745458,
 			"from_rung": 0,
-			"judged": "9a4d63d7b09e13cd247e93e2415db8e81a0fe06f6fc5fa552967f27533d3790f",
+			"judged": "3c159eed3b773ba3c94562f5214ba134767c1f870e56597edd14472a26e525e2",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.745 kept)",
@@ -209,14 +209,14 @@
 			},
 			"measured": {
 				"cost": 10202,
-				"coverage_rel": -0.00066,
-				"floor": 0.00486,
+				"coverage_rel": -0.0006600000000000001,
+				"floor": 0.004860000000000001,
 				"part_shift": {
-					"cane": -0.00039,
+					"cane": -0.00039000000000000005,
 					"leaf": 0.00062,
-					"prickle": -0.0006
+					"prickle": -0.0006000000000000001
 				},
-				"picture": 0.00484
+				"picture": 0.0048400000000000006
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -226,14 +226,14 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'prickle' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 279.0,
+			"peak_mb": 897.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 8.0,
 				"reduce": 16.0
 			},
-			"search_s": 29.6,
-			"searched": "replay",
+			"search_s": 2482.0,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"verdict": {
@@ -249,7 +249,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "5961a687389dafbe16b4587fff46c28691bb009d48b134538320c6df530f219d"
 	}
 }

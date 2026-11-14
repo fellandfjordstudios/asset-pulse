@@ -25,7 +25,7 @@
 	],
 	"effort": "full",
 	"id": "built/paraffin-tin",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -41,7 +41,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__paraffin-tin#1.trace.jsonl"
 			}
 		}
@@ -74,7 +74,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0051600000000000005,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.48999999999999994
 				}
@@ -92,13 +92,13 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.001184
 			},
 			"error": 0.004,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "84d8f12489e49e76e2acef5e61e2e4f9f6dd0b9d4e2aaf2aa154cbf8f1b886b5",
+			"judged": "b8adb27c48bf59e56634285e4263f548e38557fa2e1f686c4d0a505146ad17e5",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -117,16 +117,16 @@
 			},
 			"measured": {
 				"cost": 344,
-				"coverage_rel": -0.00695,
+				"coverage_rel": -0.0069500000000000004,
 				"floor": 0.00495,
 				"part_shift": {
 					"paint": -0.0011,
-					"paraffin": 0.00122,
-					"stopper": -0.00014,
-					"tinplate": -0.00013,
+					"paraffin": 0.0012200000000000002,
+					"stopper": -0.00014000000000000001,
+					"tinplate": -0.00013000000000000002,
 					"washer": -0.00023
 				},
-				"picture": 0.00516
+				"picture": 0.0051600000000000005
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -134,13 +134,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 404, dearer than the 344 taken"
 			],
-			"peak_mb": 246.0,
+			"peak_mb": 288.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 0.2,
-			"searched": "replay",
+			"search_s": 18.5,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -156,7 +156,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "71dad717166b8daad5dbb7c9bc2745843385f82f88414fb9eea80855a88c5e90"
 	}
 }

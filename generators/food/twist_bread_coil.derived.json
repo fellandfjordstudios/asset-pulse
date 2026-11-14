@@ -63,7 +63,7 @@
 	],
 	"effort": "full",
 	"id": "food/twist-bread-coil",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -86,7 +86,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 8,
+				"candidates": 1,
 				"trace": "food__twist-bread-coil#1.trace.jsonl"
 			}
 		}
@@ -106,11 +106,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1778,
+					"cost": 1778.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00805,
-					"px_over": 7,
+					"px_over": 7.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -125,9 +125,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.0072037812573015406,
+				"cap": 0.00720378125730154,
 				"chain": "error",
-				"cost": 2208
+				"cost": 2208.0
 			},
 			"chains": {
 				"error": "lost"
@@ -143,11 +143,11 @@
 			"error": 0.0072037812573015406,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "0c2623a992105d53d9980d7937e8903d87936484a265498823eea47d237f8832",
+			"judged": "5f09701a0650a8f73ad4b5c7ff878d9bcda9697df1c72ad061a03ca17c828c55",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -175,13 +175,13 @@
 				"KIT: none holds at 0.0072 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 7 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.78), one pixel 0.00136 m",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 296.0,
+			"peak_mb": 294.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 2
+				"reduce": 2.0
 			},
-			"search_s": 160.5,
-			"searched": "search",
+			"search_s": 65.4,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"verdict": {
@@ -189,7 +189,7 @@
 				"configurations": 11,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.25
@@ -197,7 +197,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "bd08e24e5852a36831659046f81b8f7debcc2db39405e05d28dc5879f73544ef"
 	}
 }

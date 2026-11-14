@@ -7,7 +7,7 @@
 	],
 	"effort": "full",
 	"id": "built/skis-ski",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe"
@@ -20,11 +20,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__skis-ski#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__skis-ski#2.trace.jsonl"
 			}
 		}
@@ -58,7 +58,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.186816
 				}
@@ -78,14 +78,14 @@
 				"excess": 0.0625,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.00463
 			},
 			"error": 0.0018518518518518517,
 			"every_piece": true,
 			"fraction": 0.186816,
 			"from_rung": 0,
-			"judged": "5cf01ca3c77785925e41b44fdb69f34da611040c5750108833e621880e30257a",
+			"judged": "de7a2a55b0e013ad408db22fc34ec4442373ab0ae771c1f8a029c75a06673f1b",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.187 kept)",
@@ -107,13 +107,13 @@
 				"coverage_rel": 0.0,
 				"floor": 0.00398,
 				"part_shift": {
-					"base": 0.00045,
+					"base": 0.00045000000000000004,
 					"binding_iron": 6.000000000000001e-05,
 					"binding_leather": 4e-05,
 					"edge_wood": 9e-05,
-					"hickory": 0.00045,
+					"hickory": 0.00045000000000000004,
 					"ridge": 0.0,
-					"stitch": -0.00115
+					"stitch": -0.0011500000000000002
 				},
 				"picture": 0.00398
 			},
@@ -123,13 +123,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 3's part 'binding_iron' is 28 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 251.0,
+			"peak_mb": 282.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 0.5,
-			"searched": "replay",
+			"search_s": 6.1000000000000005,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 7,
 			"verdict": {
@@ -163,7 +163,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00472,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.11023
 				}
@@ -183,14 +183,14 @@
 				"excess": 0.125,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.01852
 			},
 			"error": 0.007407407407407407,
 			"every_piece": true,
 			"fraction": 0.11023,
 			"from_rung": 0,
-			"judged": "be1e995724a6ac6b0ea87b2bc0b36f1f0fd74049dd8ac4b8eaf3ce5c0045a00e",
+			"judged": "c8e5cb93a23a3c780d215eafa96631fce612d80eecee0666d854d30d4c3ac242",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.110 kept)",
@@ -208,30 +208,30 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 1.0,
+				"checked_at": 1,
 				"checks": [
 					{
 						"holds": true,
 						"mean_after": [
-							0.06234986707568168,
-							0.04520506784319877,
+							0.062349867075681686,
+							0.045205067843198776,
 							0.03271098807454109
 						],
 						"mean_before": [
-							0.06234986707568168,
-							0.04520506784319877,
+							0.062349867075681686,
+							0.045205067843198776,
 							0.03271098807454109
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00319552957080304,
+							0.0031955295708030462,
 							0.00288187013939023,
-							0.00211828853935003
+							0.002118288539350033
 						],
 						"variance_before": [
-							0.00319552957080304,
+							0.0031955295708030462,
 							0.00288187013939023,
-							0.00211828853935003
+							0.002118288539350033
 						]
 					}
 				],
@@ -240,7 +240,7 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 806,
-				"coverage_rel": -0.0028,
+				"coverage_rel": -0.0028000000000000004,
 				"floor": 0.00398,
 				"part_shift": {},
 				"picture": 0.00472
@@ -253,13 +253,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.187 kept), carried from rung 1 held at 1366, dearer than the 806 taken"
 			],
-			"peak_mb": 250.0,
+			"peak_mb": 282.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 9.0
 			},
-			"search_s": 0.5,
-			"searched": "replay",
+			"search_s": 18.6,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -275,7 +275,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "124abfbab26836b8d7cf0c0c3c2fae152584f575acc17b46bf6e95b1bd346965"
 	}
 }

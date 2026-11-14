@@ -123,7 +123,7 @@
 	],
 	"effort": "full",
 	"id": "built/window-boarding",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -156,11 +156,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__window-boarding#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__window-boarding#2.trace.jsonl"
 			}
 		}
@@ -194,7 +194,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00502,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.48999999999999994
 				}
@@ -207,14 +207,14 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.002484
 			},
 			"error": 0.0018518518518518517,
 			"every_piece": true,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "658016b3d2625ea7b817b60072b5c0bb0bf8c6f28bad2921f6671138bb697649",
+			"judged": "2f9316351efeca921b625581ddf51e8335ddb7bd4dcc751f77f73521fb021d9d",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.490",
@@ -233,11 +233,11 @@
 			},
 			"measured": {
 				"cost": 586,
-				"coverage_rel": 0.00015,
+				"coverage_rel": 0.00015000000000000001,
 				"floor": 0.00502,
 				"part_shift": {
 					"board": 0.0004,
-					"nail": -0.00041,
+					"nail": -0.00041000000000000005,
 					"rust": 0.0
 				},
 				"picture": 0.00502
@@ -249,13 +249,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'board' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 246.0,
+			"peak_mb": 924.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 0.9,
-			"searched": "replay",
+			"search_s": 232.9,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"verdict": {
@@ -289,7 +289,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.007970000000000001,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.774744
 				}
@@ -304,14 +304,14 @@
 				"excess": 0.1875,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.009937999999999999
 			},
 			"error": 0.007407407407407407,
 			"every_piece": true,
 			"fraction": 0.774744,
 			"from_rung": 1,
-			"judged": "b1d098a168208f53221d31e72a1cb58afca4c0e296e114a1f64983234653b5c7",
+			"judged": "3d5eacd7ef80a626e8760fcabe249ef76eea4a54e2bf857e3c7a9fdbe80c6e00",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
@@ -329,7 +329,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 21.0,
+				"checked_at": 21,
 				"checks": [
 					{
 						"holds": true,
@@ -360,35 +360,35 @@
 						"mean_after": [
 							0.26732635498046875,
 							0.23871710896492004,
-							0.19407352805137632
+							0.19407352805137634
 						],
 						"mean_before": [
 							0.26732635498046875,
 							0.23871710896492004,
-							0.19407352805137632
+							0.19407352805137634
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00012850761413574,
-							0.00020884349942207,
-							0.00017717480659484
+							0.0001285076141357422,
+							0.00020884349942207336,
+							0.00017717480659484863
 						],
 						"variance_before": [
-							0.00012850761413574,
-							0.00020884349942207,
-							0.00017717480659484
+							0.0001285076141357422,
+							0.00020884349942207336,
+							0.00017717480659484863
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
 							0.26815783977508545,
-							0.23995375633239743,
+							0.23995375633239746,
 							0.19523806869983673
 						],
 						"mean_before": [
 							0.26815783977508545,
-							0.23995375633239743,
+							0.23995375633239746,
 							0.19523806869983673
 						],
 						"spatial_rms": 0.0,
@@ -407,12 +407,12 @@
 						"holds": true,
 						"mean_after": [
 							0.26806166768074036,
-							0.2397781014442444,
+							0.23977810144424438,
 							0.19506488740444183
 						],
 						"mean_before": [
 							0.26806166768074036,
-							0.2397781014442444,
+							0.23977810144424438,
 							0.19506488740444183
 						],
 						"spatial_rms": 0.0,
@@ -465,12 +465,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							1.2598931789398192e-05,
+							1.2598931789398193e-05,
 							4.059821367263794e-05,
 							4.056096076965332e-05
 						],
 						"variance_before": [
-							1.2598931789398192e-05,
+							1.2598931789398193e-05,
 							4.059821367263794e-05,
 							4.056096076965332e-05
 						]
@@ -480,12 +480,12 @@
 						"mean_after": [
 							0.26808691024780273,
 							0.23979687690734863,
-							0.1950781047344208
+							0.19507810473442078
 						],
 						"mean_before": [
 							0.26808691024780273,
 							0.23979687690734863,
-							0.1950781047344208
+							0.19507810473442078
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -551,12 +551,12 @@
 						"holds": true,
 						"mean_after": [
 							0.2680288553237915,
-							0.23972734808921817,
+							0.23972734808921814,
 							0.19501642882823944
 						],
 						"mean_before": [
 							0.2680288553237915,
-							0.23972734808921817,
+							0.23972734808921814,
 							0.19501642882823944
 						],
 						"spatial_rms": 0.0,
@@ -575,12 +575,12 @@
 						"holds": true,
 						"mean_after": [
 							0.2680923640727997,
-							0.23982016742229464,
+							0.23982016742229462,
 							0.1951036900281906
 						],
 						"mean_before": [
 							0.2680923640727997,
-							0.23982016742229464,
+							0.23982016742229462,
 							0.1951036900281906
 						],
 						"spatial_rms": 0.0,
@@ -624,12 +624,12 @@
 						"mean_after": [
 							0.2680465281009674,
 							0.2397182434797287,
-							0.1949994266033173
+							0.19499942660331726
 						],
 						"mean_before": [
 							0.2680465281009674,
 							0.2397182434797287,
-							0.1949994266033173
+							0.19499942660331726
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -658,12 +658,12 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							9.045004844665527e-06,
-							2.9921531677246097e-05,
+							2.9921531677246094e-05,
 							3.0003488063812256e-05
 						],
 						"variance_before": [
 							9.045004844665527e-06,
-							2.9921531677246097e-05,
+							2.9921531677246094e-05,
 							3.0003488063812256e-05
 						]
 					},
@@ -672,21 +672,21 @@
 						"mean_after": [
 							0.2680826783180237,
 							0.2397996485233307,
-							0.1950832158327103
+							0.19508321583271027
 						],
 						"mean_before": [
 							0.2680826783180237,
 							0.2397996485233307,
-							0.1950832158327103
+							0.19508321583271027
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							9.842216968536375e-06,
+							9.842216968536377e-06,
 							3.703683614730835e-05,
 							3.765523433685303e-05
 						],
 						"variance_before": [
-							9.842216968536375e-06,
+							9.842216968536377e-06,
 							3.703683614730835e-05,
 							3.765523433685303e-05
 						]
@@ -696,22 +696,22 @@
 						"mean_after": [
 							0.268060564994812,
 							0.2397610992193222,
-							0.195045068860054
+							0.19504506886005402
 						],
 						"mean_before": [
 							0.268060564994812,
 							0.2397610992193222,
-							0.195045068860054
+							0.19504506886005402
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							1.2487173080444336e-05,
-							4.181265830993652e-05,
+							4.1812658309936523e-05,
 							4.2166560888290405e-05
 						],
 						"variance_before": [
 							1.2487173080444336e-05,
-							4.181265830993652e-05,
+							4.1812658309936523e-05,
 							4.2166560888290405e-05
 						]
 					},
@@ -792,12 +792,12 @@
 						"mean_after": [
 							0.26808255910873413,
 							0.23979075253009796,
-							0.19507277011871335
+							0.19507277011871338
 						],
 						"mean_before": [
 							0.26808255910873413,
 							0.23979075253009796,
-							0.19507277011871335
+							0.19507277011871338
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -815,13 +815,13 @@
 						"holds": true,
 						"mean_after": [
 							0.26808086037635803,
-							0.2397867441177368,
-							0.1950683146715164
+							0.23978674411773682,
+							0.19506831467151642
 						],
 						"mean_before": [
 							0.26808086037635803,
-							0.2397867441177368,
-							0.1950683146715164
+							0.23978674411773682,
+							0.19506831467151642
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -841,10 +841,10 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 454,
-				"coverage_rel": 0.00015,
+				"coverage_rel": 0.00015000000000000001,
 				"floor": 0.00502,
 				"part_shift": {},
-				"picture": 0.00797
+				"picture": 0.007970000000000001
 			},
 			"measured_of": 3,
 			"not_taken": [
@@ -856,13 +856,13 @@
 				"KIT (its own build at the rung's pixel) held at 574, dearer than the 454 taken",
 				"KIT (its own build at 2 of the band's pixels) held at 470, dearer than the 454 taken"
 			],
-			"peak_mb": 244.0,
+			"peak_mb": 930.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 2.3000000000000003,
-			"searched": "replay",
+			"search_s": 219.5,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -878,7 +878,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "3f377e06698864bbe5c4c03104586dbb33154156001b9c5f0df84209a74d9921"
 	}
 }

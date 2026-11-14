@@ -31,7 +31,7 @@
 	],
 	"effort": "full",
 	"id": "built/water-bottle",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -95,7 +95,7 @@
 			"error": 0.005894002846883078,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "9644d4986f832417cde7d16b53f13f3dad9015dbbd30858fd24e4fc10b09ad1a",
+			"judged": "1744a82079332a8f1473c791d5f2801f16d2e452648330463535a0fe6e38b91d",
 			"keep": {
 				"cap_rib": 0.48999999999999994
 			},
@@ -118,9 +118,9 @@
 			"measured": {
 				"cost": 2030,
 				"coverage_rel": -0.00674,
-				"floor": 0.00416,
+				"floor": 0.0041600000000000005,
 				"part_shift": {},
-				"picture": 0.00463
+				"picture": 0.0046300000000000004
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -129,10 +129,10 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping cap_rib 0.490)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 247.0,
+			"peak_mb": 259.0,
 			"route": "kit",
-			"search_s": 0.5,
-			"searched": "replay",
+			"search_s": 30.700000000000003,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -148,7 +148,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "246d74d396717c4b6311dbab32f1c111b9897a6c41c2f7fc44867002700bddbc"
 	}
 }

@@ -27,7 +27,7 @@
 	],
 	"effort": "full",
 	"id": "built/supply-depot-ballast",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -44,7 +44,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__supply-depot-ballast#1.trace.jsonl"
 			},
 			"2": {
@@ -87,7 +87,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004050000000000001,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.16806999999999994
 				}
@@ -105,13 +105,13 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.00132
 			},
 			"error": 0.005186722505257109,
 			"fraction": 0.16806999999999994,
 			"from_rung": 0,
-			"judged": "8526c149ff1f921e6a29440306fe4a7348a3b0abe2663dc4f23b5fd4aac4f1d1",
+			"judged": "8cde2f88cb952038739d6f21c38610abbc2d33221f8107380510766a2f50bdab",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -130,10 +130,10 @@
 			},
 			"measured": {
 				"cost": 444,
-				"coverage_rel": -0.00921,
+				"coverage_rel": -0.009210000000000001,
 				"floor": 0.00398,
 				"part_shift": {},
-				"picture": 0.00405
+				"picture": 0.004050000000000001
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -141,13 +141,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 1174, dearer than the 444 taken"
 			],
-			"peak_mb": 246.0,
+			"peak_mb": 272.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 1.0
 			},
-			"search_s": 0.4,
-			"searched": "replay",
+			"search_s": 20.8,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -205,7 +205,7 @@
 			"error": 0.020746890021028436,
 			"fraction": 0.3429999999999999,
 			"from_rung": 1,
-			"judged": "ecdae006413f757d74d59a93279afcf0031be6758677b708db10116bca347e00",
+			"judged": "e38266f6adb694a1409eb485867671049d016bf47d4a4e22c784920e712a9d12",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -237,12 +237,12 @@
 				"KIT (its own build at the rung's pixel) held at 536, dearer than the 152 taken",
 				"REDUCE to 0.168, carried from rung 1 held at 350, dearer than the 152 taken"
 			],
-			"peak_mb": 257.0,
+			"peak_mb": 272.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 1
 			},
-			"search_s": 42.800000000000004,
+			"search_s": 39.2,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -301,7 +301,7 @@
 			"error": 0.08298756008411375,
 			"fraction": 0.24009999999999992,
 			"from_rung": 2,
-			"judged": "877550980c57ce2a5ab8aaeacd0fdb6b67c71340a25fe76dfee5a7879c1ce58b",
+			"judged": "0371c02d8d67c5c12677aaf1da27ff5fdd8420e788550b708f4ae83aa49da4ce",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -330,12 +330,12 @@
 				"REDUCE to 0.168, carried from rung 1 held at 350, dearer than the 36 taken",
 				"REDUCE to 0.343, carried from rung 2 held at 152, dearer than the 36 taken"
 			],
-			"peak_mb": 257.0,
+			"peak_mb": 272.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 1
 			},
-			"search_s": 44.2,
+			"search_s": 44.900000000000006,
 			"searched": "search",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -352,7 +352,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "50ca0b4043fb32c3c11448d0184ffc1e64f13e12f97aab35e7ebac8a4104674e"
 	}
 }

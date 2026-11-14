@@ -34,7 +34,7 @@
 	],
 	"effort": "full",
 	"id": "built/marker-buoy",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -55,7 +55,7 @@
 				"trace": "built__marker-buoy#1.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__marker-buoy#3.trace.jsonl"
 			}
 		}
@@ -106,7 +106,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "32dc4b1f5bd646b8f58e9736230e7726ad1b40c174aac45e504ad7b5dc98bd20",
+			"judged": "4329be76974a0fc2512db9e4dc07efed2a55b04de73714105a5aa3f6d07a3051",
 			"measured": {
 				"cost": 31258,
 				"coverage_rel": 0.0,
@@ -124,10 +124,10 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"THIN: built/marker-buoy does not declare `reads_density`"
 			],
-			"peak_mb": 276.0,
+			"peak_mb": 283.0,
 			"route": "rung0",
-			"search_s": 6.300000000000001,
-			"searched": "replay",
+			"search_s": 39.2,
+			"searched": "recheck",
 			"surfaces": 9,
 			"surfaces_ceiling": 9,
 			"tolerance": 0.0018518518518518517,
@@ -143,7 +143,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 9437184.0,
+			"atlas_bytes": 9437184,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -173,20 +173,20 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 12.0
+					"value": 12
 				}
 			],
 			"checked_at": 5,
-			"draw_calls": 1.0,
+			"draw_calls": 1,
 			"drawn": {
-				"excess": 0.479,
+				"excess": 0.47900000000000004,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "3d145874ef3d84bc8c9f25f45c0ec7d5d055053920536a40faf1f82d2a2299a8",
+			"judged": "3714dde683b11497e6712bbf7969783af9141452eec2d532f29ba579c8afe2c9",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -198,14 +198,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 276.0,
+			"peak_mb": 285.0,
 			"route": "impostor",
-			"search_s": 3.6,
-			"searched": "replay",
+			"search_s": 38.1,
+			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12.0,
+			"tiles": 12,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 5,
@@ -219,7 +219,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "b4f0dace19abbd5ed3b569027f689960ce9093dfeb7ec46b6c74c99098c21f98"
 	}
 }

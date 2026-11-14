@@ -369,7 +369,7 @@
 	],
 	"effort": "full",
 	"id": "built/rockfall-shelter",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -443,7 +443,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__rockfall-shelter#1.trace.jsonl"
 			}
 		}
@@ -467,7 +467,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00493,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.608533
 				},
@@ -491,14 +491,14 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.011481
 			},
 			"error": 0.0018518518518518521,
 			"every_piece": true,
 			"fraction": 0.608533,
 			"from_rung": 0,
-			"judged": "0cd367885fc83a7686affadcb012fcb2f9d734b2c3e6bb360ef81bfc7f87bc85",
+			"judged": "b3812a16a3d742a2e0c826bd49abf1f60d42c696a21d6abd3f1064aee5c01892",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.609 kept)",
@@ -514,15 +514,15 @@
 			},
 			"measured": {
 				"cost": 3908,
-				"coverage_rel": -0.00456,
+				"coverage_rel": -0.004560000000000001,
 				"floor": 0.00493,
 				"part_shift": {
 					"litter": -0.00221,
-					"panel": 0.00153,
-					"panel_foot": 0.00065,
+					"panel": 0.0015300000000000001,
+					"panel_foot": 0.0006500000000000001,
 					"roof": 0.00304,
 					"screen": 0.00544,
-					"timber": -0.00801,
+					"timber": -0.008010000000000001,
 					"timber_foot": -0.00071
 				},
 				"picture": 0.00493
@@ -532,13 +532,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'roof' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {\"bays\":1} seed 314: the picture changes at the drawn size: 24 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00459 m"
 			],
-			"peak_mb": 305.0,
+			"peak_mb": 2086.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 18.6,
-			"searched": "replay",
+			"search_s": 1992.5,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"verdict": {
@@ -554,7 +554,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "5349d539507f9f93154559af6329db7e14da00de64a66f0c8f7cfe63dc5f0a65"
 	}
 }
