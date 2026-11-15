@@ -79,7 +79,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__oatcake-packet#1.trace.jsonl"
 			}
 		}
@@ -112,7 +112,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -130,7 +130,7 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.000185
 			},
 			"error": 0.0015,
@@ -172,13 +172,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 572, dearer than the 500 taken"
 			],
-			"peak_mb": 757.0,
+			"peak_mb": 247.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 258.8,
-			"searched": "recheck",
+			"search_s": 0.30000000000000004,
+			"searched": "replay",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"verdict": {
@@ -194,7 +194,7 @@
 		}
 	},
 	"source": {
-		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
+		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
 		"generator": "d0bc202eca12f4c39e8a6676d342098f4045de2aa7c5bd1b6c07603c5d854719"
 	}
 }

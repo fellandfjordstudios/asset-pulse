@@ -83,7 +83,7 @@
 				"trace": "plant__heather#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 2,
+				"candidates": 0,
 				"trace": "plant__heather#2.trace.jsonl"
 			}
 		}
@@ -135,7 +135,7 @@
 			"measured": {
 				"cost": 66454,
 				"coverage_rel": 0.12151,
-				"floor": 0.004370000000000001,
+				"floor": 0.00437,
 				"part_shift": {},
 				"picture": 0.05509000000000001
 			},
@@ -155,10 +155,10 @@
 				"REDUCE from rung 0 at {} seed 314: part 'litter' is 60 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 279 more groups)",
 				"BUDGET: the cheapest derivation that holds the picture costs 353426 (7.36x), over rung 1's budget 48007 x 1.5 = 72010 (shrub, 1.01 m)"
 			],
-			"peak_mb": 783.0,
+			"peak_mb": 776.0,
 			"route": "kit",
-			"search_s": 368.70000000000005,
-			"searched": "recheck",
+			"search_s": 33.5,
+			"searched": "replay",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"tolerance": 0.001851851851851852,
@@ -213,7 +213,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "074da3b219ed53e562876dc4fc6f99f3faaf5fd1886f4382ad1609c35785830d",
+			"judged": "5b89b3f220f2f4656cad6229d32300cf4348b9901c26bd027522f534054b22f6",
 			"keep": {
 				"flower": 0.03125,
 				"leaf": 0.03125,
@@ -509,9 +509,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel, keeping leaf 0.031, flower 0.343), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 163 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.62), one pixel 0.00751 m; part 'shoot' changes its share of the picture by +0.0989 against 0.0450 allowed (its colour's share of the subject); part 'floret' changes its share of the picture by -0.1155 against 0.0450 allowed (its colour's share of the subject)",
 				"THIN: plant/heather does not declare `reads_density`"
 			],
-			"peak_mb": 783.0,
+			"peak_mb": 776.0,
 			"route": "kit",
-			"search_s": 1907.1000000000001,
+			"search_s": 2087.4,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -529,7 +529,7 @@
 		}
 	},
 	"source": {
-		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
+		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
 		"generator": "d0e0325deff1cf29e01f8955b944981fcf2beeefdd35384bcd80491899772ac9"
 	}
 }

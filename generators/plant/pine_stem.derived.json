@@ -180,7 +180,7 @@
 			},
 			"measured": {
 				"cost": 228,
-				"coverage_rel": -0.0004900000000000001,
+				"coverage_rel": -0.00049,
 				"floor": 0.00547,
 				"part_shift": {},
 				"picture": 0.0041
@@ -190,10 +190,10 @@
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"REDUCE to its error cap 0.125x the band's (0.179 kept) held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 367.0,
+			"peak_mb": 247.0,
 			"route": "kit",
-			"search_s": 195.60000000000002,
-			"searched": "recheck",
+			"search_s": 0.4,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -255,7 +255,7 @@
 			},
 			"measured": {
 				"cost": 228,
-				"coverage_rel": -0.0020700000000000002,
+				"coverage_rel": -0.00207,
 				"floor": 0.00547,
 				"part_shift": {},
 				"picture": 0.0041
@@ -267,10 +267,10 @@
 				"REDUCE to its error cap 0.0625x the band's (0.179 kept) held at 228, the same cost as the route taken, found first",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 228, the same cost as the route taken, found first"
 			],
-			"peak_mb": 329.0,
+			"peak_mb": 246.0,
 			"route": "kit",
-			"search_s": 44.0,
-			"searched": "recheck",
+			"search_s": 0.30000000000000004,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -286,7 +286,7 @@
 		}
 	},
 	"source": {
-		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
+		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
 		"generator": "95c7e49fde0c685a2f753b5cea5d6e031753a304066740b4a5edd0a4cce5e83e"
 	}
 }

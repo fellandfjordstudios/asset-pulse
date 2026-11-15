@@ -396,7 +396,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "plant__pine#1.trace.jsonl"
 			}
 		}
@@ -437,7 +437,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004050000000000001,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.27452699999999997
 				}
@@ -457,7 +457,7 @@
 				"excess": 0.375,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.006359999999999999
 			},
 			"error": 0.0018518518518518517,
@@ -481,12 +481,12 @@
 			"measured": {
 				"cost": 3498,
 				"coverage_rel": -0.00238,
-				"floor": 0.0041400000000000005,
+				"floor": 0.00414,
 				"part_shift": {
-					"bark": -0.0024600000000000004,
-					"needle": 0.0024600000000000004
+					"bark": -0.00246,
+					"needle": 0.00246
 				},
-				"picture": 0.004050000000000001
+				"picture": 0.00405
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -500,14 +500,14 @@
 				"CROWN: (c) a crown with no clusters: 2 of 2 placed foliage elements carry no cluster -- a commission defect of plant/pine, not a rung to hand-build (decisions/D-derive-3)",
 				"REDUCE from rung 0 at {\"branches_per_whorl\":2,\"branchlets_per_limb\":1,\"crown_duty_cycle\":0.2,\"height_m\":3.0,\"tuft_over_crown\":0.05,\"twigs_per_branchlet\":1,\"whorls\":40} seed 314: element 0's part 'bark' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's"
 			],
-			"peak_mb": 1024.0,
+			"peak_mb": 317.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 2.0,
 				"reduce": 4.0
 			},
-			"search_s": 1865.1000000000001,
-			"searched": "recheck",
+			"search_s": 16.8,
+			"searched": "replay",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"verdict": {
@@ -524,7 +524,7 @@
 	},
 	"source": {
 		"children": "b687b0c7d062d5d63ae55842226cdba83467df6aa58552f29f2c847dd3c4f151",
-		"deriver": "77dfc09b11120620dc4cee992214e47b032f4937645dfea8b522ad8707087b61",
+		"deriver": "50d80b9d56e17d4e31cf04e7f7c3cc96d35e1981fa00008c043ee8af40e9cb7f",
 		"generator": "cd7bf0748cd09412cf21ce2bf7e8160f4d72e603e01345d8658edfee991c9d0f"
 	}
 }

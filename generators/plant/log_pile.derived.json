@@ -149,7 +149,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "plant__log-pile#1.trace.jsonl"
 			}
 		}
@@ -182,7 +182,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00459,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.053999
 				}
@@ -202,7 +202,7 @@
 				"excess": 0.0625,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.004772
 			},
 			"error": 0.001851851851851852,
@@ -224,12 +224,12 @@
 			},
 			"measured": {
 				"cost": 4696,
-				"coverage_rel": -0.00033000000000000005,
+				"coverage_rel": -0.00033,
 				"floor": 0.00459,
 				"part_shift": {
-					"bark": -0.00015000000000000001,
+					"bark": -0.00015,
 					"heartwood": 5e-05,
-					"sapwood": 0.00012000000000000002,
+					"sapwood": 0.00012,
 					"weathered_wood": 8e-05
 				},
 				"picture": 0.00459
@@ -238,13 +238,13 @@
 			"not_taken": [
 				"CHILD (its welded children at their own rungs {\"plant/bucked-log\":1}) held at 86964, dearer than the 4696 taken"
 			],
-			"peak_mb": 1006.0,
+			"peak_mb": 525.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 16.0
 			},
-			"search_s": 686.8000000000001,
-			"searched": "recheck",
+			"search_s": 63.7,
+			"searched": "replay",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -261,7 +261,7 @@
 	},
 	"source": {
 		"children": "a7af0f4756375caf5456d8c0457f2c98910998e44339f5c3f74e23bb8e906e07",
-		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
+		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
 		"generator": "12de98991158a8800e83e82c012a873605609ebfcb60999d5937689d25eeeb0c"
 	}
 }

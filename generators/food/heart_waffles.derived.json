@@ -37,7 +37,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "food__heart-waffles#1.trace.jsonl"
 			}
 		}
@@ -70,7 +70,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.005790000000000001,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.01384128720099999
 				}
@@ -88,7 +88,7 @@
 				"excess": 0.4375,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.0012959999999999998
 			},
 			"error": 0.006846254626791326,
@@ -101,11 +101,11 @@
 				"floor": 0.00444,
 				"part_shift": {
 					"cream": -0.00303,
-					"crumb": -0.0016400000000000002,
-					"jam": -0.0025800000000000003,
-					"waffle": 0.005070000000000001
+					"crumb": -0.00164,
+					"jam": -0.00258,
+					"waffle": 0.00507
 				},
-				"picture": 0.005790000000000001
+				"picture": 0.00579
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -113,13 +113,13 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 148376, dearer than the 10682 taken"
 			],
-			"peak_mb": 519.0,
+			"peak_mb": 482.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 8.0
 			},
-			"search_s": 309.20000000000005,
-			"searched": "recheck",
+			"search_s": 94.30000000000001,
+			"searched": "replay",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -135,7 +135,7 @@
 		}
 	},
 	"source": {
-		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
+		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
 		"generator": "d0afd3ed6885992d9bfbfafdb24b2d94f498c76554a028d22fd79738ed0425a5"
 	}
 }

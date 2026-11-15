@@ -65,11 +65,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "food__brunost-flatbread#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 13,
+				"candidates": 0,
 				"trace": "food__brunost-flatbread#2.trace.jsonl"
 			}
 		}
@@ -103,7 +103,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00406,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "merged",
 					"value": 0.24009999999999992
 				}
@@ -113,7 +113,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001297
 			},
 			"error": 0.004052126957232116,
@@ -139,13 +139,13 @@
 			},
 			"measured": {
 				"cost": 8162,
-				"coverage_rel": -0.007470000000000001,
+				"coverage_rel": -0.00747,
 				"floor": 0.00406,
 				"part_shift": {
-					"berry_skin_0": -0.0011200000000000001,
+					"berry_skin_0": -0.00112,
 					"berry_skin_1": -0.00141,
 					"berry_skin_2": -0.00102,
-					"board": 0.005690000000000001,
+					"board": 0.00569,
 					"calyx": 9e-05,
 					"end_grain": 0.00071,
 					"flatbread": -0.00512,
@@ -164,13 +164,13 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 323.0,
+			"peak_mb": 264.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 11.0
 			},
-			"search_s": 76.7,
-			"searched": "recheck",
+			"search_s": 4.1000000000000005,
+			"searched": "replay",
 			"surfaces": 11,
 			"surfaces_ceiling": 11,
 			"verdict": {
@@ -185,7 +185,7 @@
 			}
 		},
 		"2": {
-			"atlas_bytes": 37748736,
+			"atlas_bytes": 37748736.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -215,11 +215,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 24
+					"value": 24.0
 				}
 			],
 			"checked_at": 8,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
 				"excess": 0.3272,
 				"judge": "drawn",
@@ -240,14 +240,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 343.0,
+			"peak_mb": 263.0,
 			"route": "impostor",
-			"search_s": 75.7,
-			"searched": "recheck",
+			"search_s": 1.6,
+			"searched": "replay",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 24,
+			"tiles": 24.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 8,
@@ -262,7 +262,7 @@
 	},
 	"source": {
 		"children": "cb51b65ba592095c36c8501bc984d0e0bccea378f3cf5f302896c11c5fde48db",
-		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
+		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
 		"generator": "cca473c72347cc1ae929f3647c94f559e621a52e5331cf1e6db912d14a7efd00"
 	}
 }

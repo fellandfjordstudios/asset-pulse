@@ -175,7 +175,7 @@
 	],
 	"effort": "full",
 	"id": "built/boat-sail",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -278,7 +278,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "ad17612d0d301854a01c8fefd4dda3b8c0c61d7d9a8a356862bd6910b88f9245",
+			"judged": "c653f4c64cf182f28e08d98203e50c779818b3c11e9b729bb8a9777b428439ec",
 			"measured": {
 				"cost": 3946,
 				"coverage_rel": 0.0,
@@ -295,9 +295,9 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"set\":0} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.59), one pixel 0.00529 m; the error ladder: none holds at 0.0019",
 				"THIN: none holds at 0.0019 -- the finest tried (0.700) fails at {\"set\":0} seed 314: the picture changes at the drawn size: 2 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.52), one pixel 0.00529 m"
 			],
-			"peak_mb": 334.0,
+			"peak_mb": 335.0,
 			"route": "rung0",
-			"search_s": 74.0,
+			"search_s": 57.0,
 			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
@@ -356,7 +356,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "8c814530031aae98b57c9cb45a4e9ae86d1d6b70b507458c0a47dbe3058c1cde",
+			"judged": "66822ae1850ccc17d87c6010eeaaae980149e895e5f28ba7dc8dbd329a7db8c6",
 			"keep": {
 				"fitting": 0.03125
 			},
@@ -1108,10 +1108,10 @@
 				"KIT (its own build at the rung's pixel, keeping fitting 0.031) held at 2622, dearer than the 2464 taken",
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.636 kept) held at 2510, dearer than the 2464 taken"
 			],
-			"peak_mb": 340.0,
+			"peak_mb": 341.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 628.1,
+			"search_s": 584.1,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
@@ -1129,7 +1129,7 @@
 	},
 	"source": {
 		"children": "881c810958d9899ab8c25562fc118bacd82de12fbc0470615ed31dc2cfec417d",
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
 		"generator": "5fdf8fd4b295cb62ae1141a5fb3d04fde1be58558274380d6fcad9eb2dd55c6e"
 	}
 }

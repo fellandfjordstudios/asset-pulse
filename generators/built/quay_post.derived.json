@@ -249,23 +249,23 @@
 				"judge": "drawn",
 				"pixel_m": 0.001772
 			},
-			"error": 0.00185185185185185,
+			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
 			"judged": "dd1e134514c9e7211bc8c47fe710b56ee4bd1f828c1a733788aa845b9ebbf515",
 			"keep": {},
 			"measured": {
 				"cost": 100670,
-				"coverage_rel": -0.004710000000000001,
-				"floor": 0.0045000000000000005,
+				"coverage_rel": -0.00471,
+				"floor": 0.0045,
 				"part_shift": {},
-				"picture": 0.0045000000000000005
+				"picture": 0.0045
 			},
 			"measured_of": 1,
 			"miss": {
 				"cost_of_ceiling": 2.5735613671805098,
 				"judge": "drawn",
-				"picture_over": 2.43,
+				"picture_over": 2.4299999999999997,
 				"px_over": 13.0,
 				"route": "kit",
 				"tier": 3
@@ -280,8 +280,8 @@
 			],
 			"peak_mb": 786.0,
 			"route": "kit",
-			"search_s": 693.9000000000001,
-			"searched": "recheck",
+			"search_s": 81.4,
+			"searched": "replay",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"tolerance": 0.001851851851851852,
@@ -298,7 +298,7 @@
 		}
 	},
 	"source": {
-		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
+		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
 		"generator": "749c43955e23d216767b7ec2c53b10d5a4bd107417c404b350c4dd14ee3a39ab"
 	}
 }

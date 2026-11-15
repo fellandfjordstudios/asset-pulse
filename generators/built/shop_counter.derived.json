@@ -131,10 +131,10 @@
 			},
 			"measured": {
 				"cost": 3256,
-				"coverage_rel": -0.00033000000000000005,
-				"floor": 0.0041400000000000005,
+				"coverage_rel": -0.00033,
+				"floor": 0.00414,
 				"part_shift": {},
-				"picture": 0.0041400000000000005
+				"picture": 0.00414
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -142,10 +142,10 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 330.0,
+			"peak_mb": 254.0,
 			"route": "kit",
-			"search_s": 224.70000000000002,
-			"searched": "recheck",
+			"search_s": 4.2,
+			"searched": "replay",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -162,7 +162,7 @@
 	},
 	"source": {
 		"children": "e3826732e1d5920df59760b5a4b77ff98b34cb02d383eb344d14537ff5ef1138",
-		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
+		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
 		"generator": "d66147cec03ed46fa6d08eb31c2f67f62195062adbb26027b222fe0b559a0c38"
 	}
 }

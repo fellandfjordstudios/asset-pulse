@@ -93,7 +93,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "built__dried-meat#1.trace.jsonl"
 			}
 		}
@@ -126,7 +126,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004540000000000001,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.851695
 				}
@@ -141,7 +141,7 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.00069
 			},
 			"error": 0.003,
@@ -168,12 +168,12 @@
 			"measured": {
 				"cost": 402,
 				"coverage_rel": -4e-05,
-				"floor": 0.005220000000000001,
+				"floor": 0.00522,
 				"part_shift": {
 					"paper": 4e-05,
 					"strip": -4e-05
 				},
-				"picture": 0.004540000000000001
+				"picture": 0.00454
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -182,13 +182,13 @@
 				"REDUCE from rung 0 at {\"strip_count\":10} seed 314: element 0's part 'strip' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 485.0,
+			"peak_mb": 248.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 63.800000000000004,
-			"searched": "recheck",
+			"search_s": 0.30000000000000004,
+			"searched": "replay",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"verdict": {
@@ -204,7 +204,7 @@
 		}
 	},
 	"source": {
-		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
+		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
 		"generator": "1461fbba535b7c61d347d2d3feea41a8042174b78b3ce10d9ad6d61d0daea2d4"
 	}
 }

@@ -41,7 +41,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "animal__herring-gull#1.trace.jsonl"
 			},
 			"2": {
@@ -49,7 +49,7 @@
 				"trace": "animal__herring-gull#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 11,
+				"candidates": 0,
 				"trace": "animal__herring-gull#3.trace.jsonl"
 			}
 		}
@@ -84,7 +84,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.289242
 				}
@@ -104,7 +104,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001303
 			},
 			"error": 0.0023662055224713085,
@@ -139,13 +139,13 @@
 					"eye": 0.0,
 					"gonys": 0.0,
 					"legs": 0.00017,
-					"mantle": -0.00033000000000000005,
+					"mantle": -0.00033,
 					"orbital": 0.0,
 					"pupil": 0.0,
-					"quill_black": 0.00014000000000000001,
-					"quill_grey": 0.00039000000000000005,
+					"quill_black": 0.00014,
+					"quill_grey": 0.00039,
 					"quill_white": 0.00017,
-					"white": 0.0008600000000000001
+					"white": 0.00086
 				},
 				"picture": 0.00398
 			},
@@ -156,13 +156,13 @@
 				"REDUCE from rung 0 at {} seed 314: part 'claw' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 384.0,
+			"peak_mb": 327.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 13.0
 			},
-			"search_s": 100.10000000000001,
-			"searched": "recheck",
+			"search_s": 3.5,
+			"searched": "replay",
 			"surfaces": 13,
 			"surfaces_ceiling": 13,
 			"verdict": {
@@ -400,12 +400,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.0625x the band's (0.289 kept), carried from rung 1 held at 14314, dearer than the 6482 taken"
 			],
-			"peak_mb": 388.0,
+			"peak_mb": 331.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 13
 			},
-			"search_s": 203.60000000000002,
+			"search_s": 167.0,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -421,7 +421,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 2359296,
+			"atlas_bytes": 2359296.0,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -451,13 +451,13 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 12
+					"value": 12.0
 				}
 			],
 			"checked_at": 4,
-			"draw_calls": 1,
+			"draw_calls": 1.0,
 			"drawn": {
-				"excess": 0.42750000000000005,
+				"excess": 0.4275000000000001,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
@@ -476,13 +476,13 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 394.0,
+			"peak_mb": 331.0,
 			"route": "impostor",
-			"search_s": 49.6,
-			"searched": "recheck",
+			"search_s": 2.6,
+			"searched": "replay",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12,
+			"tiles": 12.0,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 4,
@@ -496,7 +496,7 @@
 		}
 	},
 	"source": {
-		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
+		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
 		"generator": "bc17c0a531fcd08235eabdeb6e48c084d8dcf99ea533100d05f6b766950c0ca1"
 	}
 }
