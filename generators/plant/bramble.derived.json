@@ -105,7 +105,7 @@
 	],
 	"effort": "full",
 	"id": "plant/bramble",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -135,7 +135,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 17,
 				"trace": "plant__bramble#1.trace.jsonl"
 			}
 		}
@@ -155,11 +155,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 3758.0,
+					"cost": 3758,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00941,
-					"px_over": 1.0,
+					"px_over": 1,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -168,12 +168,12 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0048400000000000006,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.745458
 				}
 			],
-			"cap": 0.00023148148148148,
+			"cap": 0.00023148148148148146,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -183,18 +183,18 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.002437
 			},
 			"error": 0.0018518518518518517,
 			"every_piece": true,
 			"fraction": 0.745458,
 			"from_rung": 0,
-			"judged": "3c159eed3b773ba3c94562f5214ba134767c1f870e56597edd14472a26e525e2",
+			"judged": "04b82582889b05f3cf4771cc74e82bea5f5be5cd8bb90694bc48cd7dd7369910",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.745 kept)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -209,31 +209,31 @@
 			},
 			"measured": {
 				"cost": 10202,
-				"coverage_rel": -0.00066,
-				"floor": 0.00486,
+				"coverage_rel": -0.0006600000000000001,
+				"floor": 0.004860000000000001,
 				"part_shift": {
-					"cane": -0.00039,
+					"cane": -0.00039000000000000005,
 					"leaf": 0.00062,
-					"prickle": -0.0006
+					"prickle": -0.0006000000000000001
 				},
-				"picture": 0.00484
+				"picture": 0.0048400000000000006
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.53), one pixel 0.00244 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.0824, cover 3.48: 117440 pixel(s) differ at the drawn size at {} seed 314 (worst 0.56)",
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'prickle' is 40 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 7 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 279.0,
+			"peak_mb": 934.0,
 			"route": "reduce",
 			"routes": {
-				"carry": 8.0,
-				"reduce": 16.0
+				"carry": 8,
+				"reduce": 16
 			},
-			"search_s": 26.1,
-			"searched": "replay",
+			"search_s": 5873.5,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"verdict": {
@@ -241,7 +241,7 @@
 				"configurations": 18,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -249,7 +249,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
-		"generator": "5961a687389dafbe16b4587fff46c28691bb009d48b134538320c6df530f219d"
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
+		"generator": "557d3e1ea0925ae72c3e5c0f4f037cac297bd017fc27fd4b35e90d687fb559bf"
 	}
 }

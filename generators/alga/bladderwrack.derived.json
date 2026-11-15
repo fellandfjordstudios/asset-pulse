@@ -87,7 +87,7 @@
 	],
 	"effort": "full",
 	"id": "alga/bladderwrack",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -114,11 +114,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "alga__bladderwrack#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "alga__bladderwrack#2.trace.jsonl"
 			}
 		}
@@ -143,7 +143,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -161,13 +161,13 @@
 				"excess": 0.375,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.0012749999999999999
 			},
 			"error": 0.0025375354722392903,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "d4c88085d5d13c9e418e1c5cf293fd695a77fe393c5c5fa0010307d2d30e248a",
+			"judged": "4168a1293864eada5142e4ff5cd2924b2c4761eefb26e50ce33e9742fee20993",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.700",
@@ -189,13 +189,13 @@
 				"picture": 0.00398
 			},
 			"measured_of": 1,
-			"peak_mb": 247.0,
+			"peak_mb": 499.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 32.0
 			},
-			"search_s": 0.7000000000000001,
-			"searched": "replay",
+			"search_s": 101.7,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -220,7 +220,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00444,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -238,13 +238,13 @@
 				"excess": 0.3125,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.0050999999999999995
 			},
 			"error": 0.010150141888957161,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "a5a8191abc45c1eb4e19bb5309af2269a973ea5660bfc40a74552b97439d596d",
+			"judged": "e235118d947ef3b83eb76b2261d4ee5f003a36bc50725fadd0815c79a62e145a",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.700",
@@ -266,13 +266,13 @@
 				"picture": 0.00444
 			},
 			"measured_of": 1,
-			"peak_mb": 246.0,
+			"peak_mb": 499.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 32.0
 			},
-			"search_s": 0.6000000000000001,
-			"searched": "replay",
+			"search_s": 29.6,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -288,7 +288,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "4760864bd328a064f9596d4366d8b9e0362dea0519c58f803f763f80d5c22e25"
 	}
 }

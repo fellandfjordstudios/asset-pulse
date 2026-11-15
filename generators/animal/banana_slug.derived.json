@@ -159,7 +159,7 @@
 	],
 	"effort": "full",
 	"id": "animal/banana-slug",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -198,7 +198,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "animal__banana-slug#1.trace.jsonl"
 			}
 		}
@@ -231,7 +231,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.184387
 				}
@@ -251,13 +251,13 @@
 				"excess": 0.3125,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.000781
 			},
 			"error": 0.004322268754380925,
 			"fraction": 0.184387,
 			"from_rung": 0,
-			"judged": "cec857c7a13452c9e5a504f1de0e63fe7c29636f43ccade39c350b31b921320e",
+			"judged": "6a23c598a6196d623f5fc6e1ccc7cd6761f626fcc2315026d6aef0fc348f0881",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -280,10 +280,10 @@
 				"floor": 0.00398,
 				"part_shift": {
 					"body": 0.00161,
-					"foot": 0.00166,
-					"mantle": -0.00281,
+					"foot": 0.0016600000000000002,
+					"mantle": -0.0028100000000000004,
 					"pore": -0.00059,
-					"tentacle": 0.00057
+					"tentacle": 0.0005700000000000001
 				},
 				"picture": 0.00398
 			},
@@ -293,13 +293,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 3806, dearer than the 1266 taken"
 			],
-			"peak_mb": 314.0,
+			"peak_mb": 439.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 8.0
 			},
-			"search_s": 11.5,
-			"searched": "replay",
+			"search_s": 275.6,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -315,7 +315,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "bf0b06df03c025f7cc09a5d3bc4391cfec387ffc001ccb8b9988e86dc7359178"
 	}
 }

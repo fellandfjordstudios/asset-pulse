@@ -159,7 +159,7 @@
 	],
 	"effort": "full",
 	"id": "built/quay-post",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -249,23 +249,23 @@
 				"judge": "drawn",
 				"pixel_m": 0.001772
 			},
-			"error": 0.001851851851851852,
+			"error": 0.00185185185185185,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "dd1e134514c9e7211bc8c47fe710b56ee4bd1f828c1a733788aa845b9ebbf515",
+			"judged": "6cc9957b6b068f9a3995052dbec4e2f9f46d4e82ce8d92a0b68bfbf25cd9582f",
 			"keep": {},
 			"measured": {
 				"cost": 100670,
-				"coverage_rel": -0.00471,
-				"floor": 0.0045,
+				"coverage_rel": -0.004710000000000001,
+				"floor": 0.0045000000000000005,
 				"part_shift": {},
-				"picture": 0.0045
+				"picture": 0.0045000000000000005
 			},
 			"measured_of": 1,
 			"miss": {
 				"cost_of_ceiling": 2.5735613671805098,
 				"judge": "drawn",
-				"picture_over": 2.4299999999999997,
+				"picture_over": 2.43,
 				"px_over": 13.0,
 				"route": "kit",
 				"tier": 3
@@ -278,10 +278,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {} seed 314: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.69), one pixel 0.00177 m; the error ladder: none holds at 0.0019",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 786.0,
+			"peak_mb": 781.0,
 			"route": "kit",
-			"search_s": 81.4,
-			"searched": "replay",
+			"search_s": 1062.0,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"tolerance": 0.001851851851851852,
@@ -298,7 +298,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "749c43955e23d216767b7ec2c53b10d5a4bd107417c404b350c4dd14ee3a39ab"
 	}
 }

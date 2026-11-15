@@ -195,7 +195,7 @@
 	],
 	"effort": "full",
 	"id": "animal/fence-lizard",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -292,7 +292,7 @@
 			"error": 0.004156027648443196,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "4322c5a65e7db7e8ba40cd31bee8905b66da603f0b6fc8a237a07882d9e6f59b",
+			"judged": "d70dabd37473cac37d69a853cdb7642ea2ca6e6edba8011fae57907d0ea1ca85",
 			"keep": {
 				"scale": 0.24009999999999992
 			},
@@ -320,7 +320,7 @@
 				"coverage_rel": 0.01796,
 				"floor": 0.00398,
 				"part_shift": {},
-				"picture": 0.00797
+				"picture": 0.007970000000000001
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -330,10 +330,10 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping scale 0.240, each kept piece covering 1.00x)) is 1 route(s), and the one looked at did not improve on it",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.856 kept) held at 10000, dearer than the 3704 taken"
 			],
-			"peak_mb": 343.0,
+			"peak_mb": 414.0,
 			"route": "kit",
-			"search_s": 15.600000000000001,
-			"searched": "replay",
+			"search_s": 270.6,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"verdict": {
@@ -349,7 +349,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "69fd4d39b86a1c0da4f4f1dd6d5ded7619d917b47fab64d2312cc7159551459b"
 	}
 }

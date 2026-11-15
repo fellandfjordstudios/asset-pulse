@@ -99,7 +99,7 @@
 	],
 	"effort": "full",
 	"id": "plant/pine-cone",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -173,20 +173,20 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "39411f4aed39b9be3617cb1024fe3c46b8d6aec111b500eb467238d3fbe4f43b",
+			"judged": "ce0c7d191d1fa37964a258158add14174da3cea261088f49291eed2eaff075d7",
 			"keep": {},
 			"measured": {
 				"cost": 39130,
 				"coverage_rel": -0.06459000000000001,
-				"floor": 0.00433,
+				"floor": 0.0043300000000000005,
 				"part_shift": {},
-				"picture": 0.21383
+				"picture": 0.21383000000000002
 			},
 			"measured_of": 2,
 			"miss": {
 				"cost_of_ceiling": 0.9169732617814543,
 				"judge": "drawn",
-				"picture_over": 115.4682,
+				"picture_over": 115.46820000000001,
 				"px_over": null,
 				"route": "kit",
 				"tier": 1
@@ -198,10 +198,10 @@
 				"REDUCE (every piece) from rung 0: none holds at 0.0019 -- the finest tried (0.700) fails at {\"cones\":150} seed 314: coverage changes -0.0192 against 0.0118 a derivation may change (its error read as a change of size); the error ladder: none holds at 0.0019",
 				"THIN: plant/pine-cone does not declare `reads_density`"
 			],
-			"peak_mb": 483.0,
+			"peak_mb": 486.0,
 			"route": "kit",
-			"search_s": 22.1,
-			"searched": "replay",
+			"search_s": 211.70000000000002,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"tolerance": 0.001851851851851852,
@@ -246,7 +246,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "80159ab7abcf865af87195424d16cca071eca5593442117310ce7e484e07c03a",
+			"judged": "b6b7e4e4b93964252b855a658022a599f608335bb49a63e8762fe3ad251d15fc",
 			"keep": {
 				"debris": 0.48999999999999994,
 				"scale": 0.48999999999999994
@@ -691,9 +691,9 @@
 				"CARRIED from rung 1, KIT (its own build at the rung's pixel), carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: coverage changes -0.0345 against 0.0230 a derivation may change (its error read as a change of size)",
 				"BUDGET: the cheapest derivation that holds the picture costs 66094 (6.20x), over rung 2's budget 10668 x 1.5 = 16002 (rock, 8.10 m)"
 			],
-			"peak_mb": 487.0,
+			"peak_mb": 525.0,
 			"route": "kit",
-			"search_s": 1053.5,
+			"search_s": 1649.2,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -711,7 +711,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "d081bc68ae3a21a34345b0b72a959dde39abffecc64d2e76579d9db6ac748d26"
 	}
 }

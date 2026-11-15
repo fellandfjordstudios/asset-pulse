@@ -255,7 +255,7 @@
 	],
 	"effort": "full",
 	"id": "plant/fallen-redwood-log",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -310,7 +310,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 9,
 				"trace": "plant__fallen-redwood-log#1.trace.jsonl"
 			}
 		}
@@ -334,16 +334,16 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00406,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.129243
 				}
 			],
-			"cap": 0.00092592592592592,
+			"cap": 0.0009259259259259259,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 75088.0,
+				"cost": 75088,
 				"fraction": 0.48999999999999994
 			},
 			"chains": {
@@ -354,18 +354,18 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.019517
 			},
 			"error": 0.0018518518518518517,
 			"every_piece": true,
 			"fraction": 0.129243,
 			"from_rung": 0,
-			"judged": "eb138306e12fadf2c06853701142b7b8cb1bbf070bb9766583fffb30da05de27",
+			"judged": "8eff911599e3307f091a6fbf1a92d119a980510701bff108110dc6b75c9b7600",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.129 kept)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -394,13 +394,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'bark' is 9 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 1180.0,
+			"peak_mb": 2404.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5.0
+				"reduce": 5
 			},
-			"search_s": 257.3,
-			"searched": "replay",
+			"search_s": 7098.5,
+			"searched": "search",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"verdict": {
@@ -408,7 +408,7 @@
 				"configurations": 43,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -416,7 +416,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
-		"generator": "bc667f5767c0477e02ba4583c55e5e751128d7a2cce406e3872e075497976df7"
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
+		"generator": "d8fa65811e089d5f4aa7ab14c1b14f878cf04a6c2694b5ca0e10d4360f515de7"
 	}
 }

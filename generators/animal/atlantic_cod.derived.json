@@ -31,7 +31,7 @@
 	],
 	"effort": "full",
 	"id": "animal/atlantic-cod",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -88,7 +88,7 @@
 			"error": 0.0018518518518518517,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "20624ef79ac619e323765c1c6ab9b3123a351ff2cbf76adc47da85531d8d5700",
+			"judged": "d2cca746d2b9a4b4d4019c70c4cb473d38a0444ee159212eaaf32942e5f3e269",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -119,10 +119,10 @@
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 272.0,
+			"peak_mb": 322.0,
 			"route": "kit",
-			"search_s": 17.6,
-			"searched": "replay",
+			"search_s": 204.4,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6,
 			"verdict": {
@@ -158,7 +158,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "1835655d5cb977937251645b1b30a23f7125fbd7c05ba4ee2f248722469e4499",
+			"judged": "672aebfcdbff8c9376ecfe2387eaee21af7c277972a5ae9bbc6a524661cfce27",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -177,7 +177,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 5.0,
+				"checked_at": 5,
 				"checks": [
 					{
 						"holds": true,
@@ -193,12 +193,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0478140115737915,
+							0.047814011573791504,
 							0.0559861958026886,
 							0.07053466886281967
 						],
 						"variance_before": [
-							0.0478140115737915,
+							0.047814011573791504,
 							0.0559861958026886,
 							0.07053466886281967
 						]
@@ -218,12 +218,12 @@
 						"spatial_rms": 0.0,
 						"variance_after": [
 							0.04619104415178299,
-							0.05449936538934707,
+							0.054499365389347076,
 							0.06959240883588791
 						],
 						"variance_before": [
 							0.04619104415178299,
-							0.05449936538934707,
+							0.054499365389347076,
 							0.06959240883588791
 						]
 					},
@@ -241,13 +241,13 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.05350306630134582,
-							0.06121158599853515,
+							0.053503066301345825,
+							0.061211585998535156,
 							0.07403168827295303
 						],
 						"variance_before": [
-							0.05350306630134582,
-							0.06121158599853515,
+							0.053503066301345825,
+							0.061211585998535156,
 							0.07403168827295303
 						]
 					},
@@ -265,12 +265,12 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.04620382189750671,
+							0.046203821897506714,
 							0.05373582988977432,
 							0.06721250712871552
 						],
 						"variance_before": [
-							0.04620382189750671,
+							0.046203821897506714,
 							0.05373582988977432,
 							0.06721250712871552
 						]
@@ -305,7 +305,7 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 2674,
-				"coverage_rel": -0.00499,
+				"coverage_rel": -0.0049900000000000005,
 				"floor": 0.00398,
 				"part_shift": {},
 				"picture": 0.00398
@@ -318,10 +318,10 @@
 				"KIT (its own build at 2 of the band's pixels) held at 3248, dearer than the 2674 taken",
 				"KIT (its own build at the rung's pixel), carried from rung 1 held at 9796, dearer than the 2674 taken"
 			],
-			"peak_mb": 272.0,
+			"peak_mb": 283.0,
 			"route": "kit",
-			"search_s": 8.6,
-			"searched": "replay",
+			"search_s": 312.6,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -337,7 +337,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "bd8e4c004398eba759b76b8d0c4f9cf77a18f494862f24f488edabeaa9f7ca2e"
 	}
 }

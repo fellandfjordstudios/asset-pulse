@@ -99,7 +99,7 @@
 	],
 	"effort": "full",
 	"id": "built/creel",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -128,7 +128,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 14,
 				"trace": "built__creel#1.trace.jsonl"
 			}
 		}
@@ -145,11 +145,11 @@
 			"budget": 39117,
 			"candidates": [
 				{
-					"cost": 23634.0,
+					"cost": 23634,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00459,
-					"px_over": 6.0,
+					"px_over": 6,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -158,7 +158,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "merged",
 					"value": 1.0
 				}
@@ -168,17 +168,17 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.001392
 			},
 			"error": 0.001851851851851852,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "4710a53bd9a5357e7fd4aae0aa537592558cd2ea55aa888e5b1c0e66fbe50a3b",
+			"judged": "b69a70429f090a81f58e38230131614e5bd202ca942ca8aebd5377da82b6eb06",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
-				"looked": 0.0,
+				"looked": 0,
 				"order": [
 					"kit",
 					"child",
@@ -194,7 +194,7 @@
 			"measured": {
 				"cost": 27366,
 				"coverage_rel": 0.0,
-				"floor": 0.0049,
+				"floor": 0.004900000000000001,
 				"part_shift": {
 					"barnacle": 0.0,
 					"body": 0.0,
@@ -209,16 +209,16 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 21 times for solid subjects at band 1 across 21 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT: none holds at 0.0019 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 6 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00139 m",
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.71: 9505 pixel(s) differ at the drawn size at {} seed 314 (worst 0.55)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
-				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
+				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 310.0,
+			"peak_mb": 1074.0,
 			"route": "merged",
-			"search_s": 16.3,
-			"searched": "replay",
+			"search_s": 1741.7,
+			"searched": "search",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
 			"verdict": {
@@ -226,7 +226,7 @@
 				"configurations": 17,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.0
@@ -234,8 +234,8 @@
 		}
 	},
 	"source": {
-		"children": "58f6b8a6d09a911af71ae5b69b216d5917409913db3eac58fb4cb18a0f8388ce",
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
-		"generator": "8664bb28b87955a8d608d6838c8ca48fd0f1d876a6cd6ecec2def62ba2b62177"
+		"children": "10e9b7fa2ba7730e7bd6d322b0f25daeec8e1c68dd104b1c1d39b783c1086885",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
+		"generator": "0f31250e5ee4afa0137564bcaea5bd8ef556bbe2925cbfedea7fd0bab582d72d"
 	}
 }

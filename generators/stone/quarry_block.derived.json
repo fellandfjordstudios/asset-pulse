@@ -147,7 +147,7 @@
 	],
 	"effort": "full",
 	"id": "stone/quarry-block",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -196,7 +196,7 @@
 	"replay": {},
 	"rungs": {},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
-		"generator": "57d93ccc0560fe339bcee1b773169c559b994faae89a7825cd40d6ca3869d091"
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
+		"generator": "2e15f97f0d943ea5d8aee4bfb2fcfb19fb2c8c8878f0da5f9f5aa1b6f652c6a0"
 	}
 }
