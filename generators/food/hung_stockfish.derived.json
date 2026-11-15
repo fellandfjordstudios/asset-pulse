@@ -39,7 +39,7 @@
 	],
 	"effort": "full",
 	"id": "food/hung-stockfish",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -58,7 +58,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "food__hung-stockfish#1.trace.jsonl"
 			},
 			"2": {
@@ -101,7 +101,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0039900000000000005,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.08235429999999996
 				}
@@ -119,14 +119,14 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.001294
 			},
 			"error": 0.001859093631809195,
 			"every_piece": true,
 			"fraction": 0.08235429999999996,
 			"from_rung": 0,
-			"judged": "883d9cb9b65bfd7789e7356d2b345f711ed0b34ec3027449bea758d9af0cc459",
+			"judged": "64fca597302c8eef4e6d9b79e457b33336930e05b91ebde3f85e602820eef5d1",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.082",
@@ -145,15 +145,15 @@
 			},
 			"measured": {
 				"cost": 16295,
-				"coverage_rel": -0.00149,
-				"floor": 0.00399,
+				"coverage_rel": -0.0014900000000000002,
+				"floor": 0.0039900000000000005,
 				"part_shift": {
 					"back": 0.00017,
 					"belly": 0.00034,
 					"fin": 2e-05,
 					"flesh": -0.00021
 				},
-				"picture": 0.00399
+				"picture": 0.0039900000000000005
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -162,13 +162,13 @@
 				"REDUCE from rung 0 at {} seed 314: part 'belly' is 55 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 492.0,
+			"peak_mb": 668.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 4.0
 			},
-			"search_s": 119.4,
-			"searched": "replay",
+			"search_s": 507.6,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -229,7 +229,7 @@
 			"every_piece": true,
 			"fraction": 0.435287,
 			"from_rung": 1,
-			"judged": "0001ce4105b521bbb18667aeaa1896e8909ba04a310169f9b29171010c282ad7",
+			"judged": "ac9a5f042a06551ca4d91d38290de8e8b97170486b9a735600f814100cb29c10",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 1.0x the band's (0.435 kept)",
@@ -442,12 +442,12 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"CARRIED from rung 1, REDUCE (every piece) to 0.082, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 3: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00520 m"
 			],
-			"peak_mb": 525.0,
+			"peak_mb": 681.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 4
 			},
-			"search_s": 532.9,
+			"search_s": 1665.4,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -507,7 +507,7 @@
 			"every_piece": true,
 			"fraction": 0.24009999999999992,
 			"from_rung": 2,
-			"judged": "5ffac20423b22ad21d6ce650987ab656f7f5f506a4da0095b02ce0f3d83f65c0",
+			"judged": "065a539efe99f6db135eb2211c64b08cb9a7ed857c2528c1dd8936a8310e3179",
 			"material_transfer": {
 				"checked_at": 7,
 				"checks": [
@@ -698,12 +698,12 @@
 				"REDUCE (every piece) to 0.082, carried from rung 1 held at 15909, dearer than the 5729 taken",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.435 kept), carried from rung 2 held at 7093, dearer than the 5729 taken"
 			],
-			"peak_mb": 517.0,
+			"peak_mb": 673.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2
 			},
-			"search_s": 316.1,
+			"search_s": 1265.0,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -720,7 +720,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "7f2283c14b8ea03a0be4ab7a38db47f1762ddba8eacce4486691565a8010376e"
 	}
 }

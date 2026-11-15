@@ -356,7 +356,7 @@
 	],
 	"effort": "full",
 	"id": "plant/pine",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -464,7 +464,7 @@
 			"every_piece": true,
 			"fraction": 0.27452699999999997,
 			"from_rung": 0,
-			"judged": "41cd6d8de62ad3376739601180696b59776732a7a61eaf52fa23b39ebc437430",
+			"judged": "6865a106bd4f515fe07047f17c4b3250286e346a40a50758cd64b165ce3b9e97",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.125x the band's (0.275 kept)",
@@ -506,7 +506,7 @@
 				"carry": 2.0,
 				"reduce": 4.0
 			},
-			"search_s": 2423.7000000000003,
+			"search_s": 1865.1000000000001,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -524,7 +524,7 @@
 	},
 	"source": {
 		"children": "b687b0c7d062d5d63ae55842226cdba83467df6aa58552f29f2c847dd3c4f151",
-		"deriver": "2c30f812b6de1d9e7b97448d6973c9885f2710dc6676d314915357d9c597f490",
+		"deriver": "77dfc09b11120620dc4cee992214e47b032f4937645dfea8b522ad8707087b61",
 		"generator": "cd7bf0748cd09412cf21ce2bf7e8160f4d72e603e01345d8658edfee991c9d0f"
 	}
 }

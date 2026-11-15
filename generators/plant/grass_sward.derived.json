@@ -87,7 +87,7 @@
 	],
 	"effort": "full",
 	"id": "plant/grass-sward",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -171,7 +171,7 @@
 			"error": -1.0,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "316c8cfca43fcc40168fe1f4fd76b5c5d5706d63055a2e5af35615297b30f3ce",
+			"judged": "59ba03ba3c60cd2870bb244b6a663713cfe610ca41c42ad29ea5fd15c16f2329",
 			"measured": {
 				"cost": 12150,
 				"coverage_rel": 0.0,
@@ -190,7 +190,7 @@
 			],
 			"peak_mb": 411.0,
 			"route": "rung0",
-			"search_s": 193.70000000000002,
+			"search_s": 156.10000000000002,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -239,7 +239,7 @@
 			"error": 0.009153039715159605,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d7bb4078e1b9d52c4836b11a8cdfdaeacf3d16efc18be90dcc0ac0753a627c54",
+			"judged": "aa7c39bb9b117aef4797e752be6b35c700356fe1078549c85e888066b3acbe50",
 			"keep": {},
 			"measured": {
 				"cost": 6774,
@@ -255,9 +255,9 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"KIT (its own build at 2 of the band's pixels) held at 6774, the same cost as the route taken, found first"
 			],
-			"peak_mb": 431.0,
+			"peak_mb": 426.0,
 			"route": "kit",
-			"search_s": 386.3,
+			"search_s": 313.5,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -316,7 +316,7 @@
 			"error": 0.03661215886063842,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "5608131a2013f46dca0a0a24a2a0d641e62c09457e5c1099f27facbea4c4488b",
+			"judged": "693e5bb92deee0978f5ddd2e637aa93c1d9f76cdeecaad2f259501ed1aa9bb99",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -330,7 +330,7 @@
 			],
 			"peak_mb": 425.0,
 			"route": "impostor",
-			"search_s": 131.70000000000002,
+			"search_s": 104.80000000000001,
 			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
@@ -350,7 +350,7 @@
 	},
 	"source": {
 		"children": "b24116f0934e4d2e1d28e6013c38dfcde8ab27d77bfe479088d9c4d7c3432757",
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "e2cf8453c7d9bd5e46c52a9567dfe83a93da45637a87ed5b13230c48586c53d9"
 	}
 }

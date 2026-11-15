@@ -75,7 +75,7 @@
 	],
 	"effort": "full",
 	"id": "stone/pressure-ridge",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -167,7 +167,7 @@
 			"error": 0.001851851851851852,
 			"fraction": 0.11764899999999996,
 			"from_rung": 0,
-			"judged": "21ca3024142d18ef8990ce45b5cedbb2c44a5049d52b9e1294852bb51f2ec631",
+			"judged": "8045368160fd7e0b6e6c25991a2d8d46c36e562d613accfdf06058e8906fd215",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.118",
@@ -198,12 +198,12 @@
 				"KIT keep below 1: none holds from 1/2 to 0.0312; the nearest, keep 0.3430, cover 1.07: 16528 pixel(s) differ at the drawn size at {} seed 314 (worst 0.58)",
 				"CHILD: span 'stone/sea-ice-block r0 db5ef61c' is 76 triangles and its child rebuilt is 828: not a placed copy"
 			],
-			"peak_mb": 700.0,
+			"peak_mb": 699.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 510.0
 			},
-			"search_s": 619.1,
+			"search_s": 503.40000000000003,
 			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
@@ -249,7 +249,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "52527782629042eca107a809011e950a84aa4168d2a247497087cc0d6155eef4",
+			"judged": "ea8cfc05998b1f513d0f2bff1bdca75489af29b519b11ff6a6709f138264f37c",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -597,10 +597,10 @@
 				"KIT (its own build at the rung's pixel) held at 6056, dearer than the 3604 taken",
 				"REDUCE to 0.118, carried from rung 1 held at 13986, dearer than the 3604 taken"
 			],
-			"peak_mb": 700.0,
+			"peak_mb": 699.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 577.0,
+			"search_s": 587.9,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -646,7 +646,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "5105e714d72862de31c581696d711a4c29d947d65da6e4dfed3b5ecaddfaca44",
+			"judged": "28326dae82d91a19dd1cc9ca8b0a91c8928faea0e5e802ae53256b45b9320b9e",
 			"keep": {},
 			"look_past": {
 				"beaten": false,
@@ -996,9 +996,9 @@
 				"REDUCE to 0.118, carried from rung 1 held at 13986, dearer than the 3604 taken",
 				"KIT (its own build at 2 of the band's pixels), carried from rung 2 held at 3604, the same cost as the route taken, found first"
 			],
-			"peak_mb": 700.0,
+			"peak_mb": 699.0,
 			"route": "kit",
-			"search_s": 521.4,
+			"search_s": 540.9,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -1016,7 +1016,7 @@
 	},
 	"source": {
 		"children": "a79e32b334d43dac50aec562b1654f528bb5f4966089aeebb1c944dec0423ff4",
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "f43eba0c040fc54ff1f532bc1ed133ab8540c8fb1816d19380357d8d8bb44baa"
 	}
 }

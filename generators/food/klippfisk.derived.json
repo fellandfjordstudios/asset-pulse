@@ -33,7 +33,7 @@
 	],
 	"effort": "full",
 	"id": "food/klippfisk",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -51,7 +51,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 17,
+				"candidates": 1,
 				"trace": "food__klippfisk#1.trace.jsonl"
 			},
 			"2": {
@@ -76,11 +76,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 21532,
+					"cost": 21532.0,
 					"holds": false,
 					"judge": "drawn",
-					"picture": 0.004070000000000001,
-					"px_over": 4,
+					"picture": 0.00407,
+					"px_over": 4.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -94,7 +94,7 @@
 					"value": 0.281368
 				}
 			],
-			"cap": 0.0006483403131571386,
+			"cap": 0.00064834031315713,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -111,11 +111,11 @@
 			"every_piece": true,
 			"fraction": 0.281368,
 			"from_rung": 0,
-			"judged": "6214b8cf0b068f00650d8facccb12da77bc65789e840fc53c2bcb45ea9c3054f",
+			"judged": "b485b4b4ba4d9cdc502aec0b7359b668b1b783e61945e3ab7b2ead07076293e6",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.281 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -148,13 +148,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'flesh' is 46 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 401.0,
+			"peak_mb": 399.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 173
+				"reduce": 173.0
 			},
-			"search_s": 400.20000000000005,
-			"searched": "search",
+			"search_s": 145.3,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -162,7 +162,7 @@
 				"configurations": 6,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.25
@@ -194,12 +194,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 24
+					"value": 32
 				}
 			],
 			"checked_at": 6,
@@ -212,7 +212,7 @@
 			"error": 0.010373445010514218,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "ad86278de8079445e044cb3e457d8dc6060c355cbc1d3aa411ef9949920d85bb",
+			"judged": "8dae1d40d6a331b25ca32a338d860ea6b78c6905a38dca9b84d2f0d884a69268",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -224,10 +224,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 403.0,
+			"peak_mb": 401.0,
 			"route": "impostor",
-			"search_s": 169.70000000000002,
-			"searched": "search",
+			"search_s": 145.8,
+			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -245,7 +245,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "43c3414b9ee5b35195f54a6f881df12dee9fc565f6f3514fc9968072651ea186"
 	}
 }

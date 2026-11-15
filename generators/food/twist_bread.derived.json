@@ -63,7 +63,7 @@
 	],
 	"effort": "full",
 	"id": "food/twist-bread",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -86,11 +86,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 9,
+				"candidates": 1,
 				"trace": "food__twist-bread#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 28,
+				"candidates": 1,
 				"trace": "food__twist-bread#2.trace.jsonl"
 			},
 			"3": {
@@ -116,11 +116,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 1572,
+					"cost": 1572.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 4,
+					"px_over": 4.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -135,9 +135,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.0004629629629629629,
+				"cap": 0.00046296296296296,
 				"chain": "error",
-				"cost": 2568
+				"cost": 2568.0
 			},
 			"chains": {
 				"error": "lost"
@@ -153,11 +153,11 @@
 			"error": 0.0018518518518518517,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "3aba819a4fc99a7c6c353f597db3c6e59189be59ad90f221e776f9d5ae77445b",
+			"judged": "2c020e74013ce48af5f9bb873a4d55b48f0d4b8f46c3642b34147cfbcc180fdc",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.490",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -190,13 +190,13 @@
 				"CHILD: span 'food/twist-bread-coil r0 f448dd6d' is 2680 triangles and its child rebuilt is 3260: not a placed copy",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 522.0,
+			"peak_mb": 507.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5
+				"reduce": 5.0
 			},
-			"search_s": 327.1,
-			"searched": "search",
+			"search_s": 65.7,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -204,7 +204,7 @@
 				"configurations": 11,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -217,20 +217,20 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 27,
+					"px_over": 27.0,
 					"route": "impostor",
-					"value": 12
+					"value": 12.0
 				},
 				{
-					"cost": 788,
+					"cost": 788.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -244,7 +244,7 @@
 					"value": 0.978702
 				}
 			],
-			"cap": 0.0018518518518518517,
+			"cap": 0.00185185185185185,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -260,11 +260,11 @@
 			"error": 0.007407407407407407,
 			"fraction": 0.978702,
 			"from_rung": 1,
-			"judged": "c1f805ce8a25ed28585c27fc6eb08dae36852ce2d45e85c902f9d181fd90eb7c",
+			"judged": "836db8c2b9f70388a99551cfb9f49b6c60922c2d59ad4d21a31f44b8dfdfc274",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.25x the band's (0.979 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -552,13 +552,7 @@
 				"cost": 1930,
 				"coverage_rel": 0.02035,
 				"floor": 0.00398,
-				"part_shift": {
-					"browned_crust": -0.00617,
-					"charred_tip": -0.00047000000000000004,
-					"green_bark": -0.0008100000000000001,
-					"pale_dough": -0.006390000000000001,
-					"peeled_wood": 0.013770000000000001
-				},
+				"part_shift": {},
 				"picture": 0.00398
 			},
 			"measured_of": 1,
@@ -587,13 +581,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"CARRIED from rung 1, REDUCE to 0.490, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 314: the picture changes at the drawn size: 1 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.64), one pixel 0.00593 m"
 			],
-			"peak_mb": 522.0,
+			"peak_mb": 507.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 5
+				"reduce": 5.0
 			},
-			"search_s": 480.3,
-			"searched": "search",
+			"search_s": 410.8,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -601,7 +595,7 @@
 				"configurations": 11,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.25
@@ -633,12 +627,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 5,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 12
 				}
 			],
 			"checked_at": 11,
@@ -651,7 +645,7 @@
 			"error": 0.029629629629629627,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "7adad2e7c61cd2dd9523e92a7a0cbcb6d0e9bfe79c9816a1c77379a05126521f",
+			"judged": "b98771ecc570041ce0d13d1873a632049467d7bd71467ffd8526e839fcfc9f37",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -663,10 +657,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 522.0,
+			"peak_mb": 507.0,
 			"route": "impostor",
-			"search_s": 3.8000000000000003,
-			"searched": "search",
+			"search_s": 3.4000000000000004,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -685,7 +679,7 @@
 	},
 	"source": {
 		"children": "3331becb741b1ddf2311817b0f7ccf4c3ec3d71913cd8e9ef2fcc11d7596cb83",
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "51c60b3547a49af3493f25282e8a3237c22d5acee652fc9a165d168a544f0cbb"
 	}
 }

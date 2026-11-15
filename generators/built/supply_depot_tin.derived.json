@@ -25,7 +25,7 @@
 	],
 	"effort": "full",
 	"id": "built/supply-depot-tin",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -41,7 +41,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__supply-depot-tin#1.trace.jsonl"
 			},
 			"2": {
@@ -84,7 +84,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0051600000000000005,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.48999999999999994
 				}
@@ -102,13 +102,13 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.0013059999999999999
 			},
 			"error": 0.004410478463863529,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "3601bb0664779a8bd41f792288a05deecc89f4bd8666a26d279e9280b46cefa8",
+			"judged": "89698314b54d82423c0917fa8c4d9d2606400450645f1f5ef99109412c4f0f13",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -127,16 +127,16 @@
 			},
 			"measured": {
 				"cost": 344,
-				"coverage_rel": -0.00695,
+				"coverage_rel": -0.0069500000000000004,
 				"floor": 0.00495,
 				"part_shift": {
 					"paint": -0.0011,
-					"paraffin": 0.00122,
-					"stopper": -0.00014,
-					"tinplate": -0.00013,
+					"paraffin": 0.0012200000000000002,
+					"stopper": -0.00014000000000000001,
+					"tinplate": -0.00013000000000000002,
 					"washer": -0.00023
 				},
-				"picture": 0.00516
+				"picture": 0.0051600000000000005
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -144,13 +144,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 404, dearer than the 344 taken"
 			],
-			"peak_mb": 248.0,
+			"peak_mb": 281.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 0.2,
-			"searched": "replay",
+			"search_s": 13.200000000000001,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -208,7 +208,7 @@
 			"error": 0.017641913855454116,
 			"fraction": 0.16806999999999994,
 			"from_rung": 1,
-			"judged": "4fb172f425ddb4af39f5acf1772e2db8c9a257370bc4a0dbb8619210db104f8c",
+			"judged": "3b3a2f6a3f00cddd6e546f4575e3de700c9a8593d83f3e5cf4fdf8bd4db96c79",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 2 of the band's pixels)",
@@ -349,12 +349,12 @@
 				"KIT (its own build at 2 of the band's pixels) held at 316, dearer than the 96 taken",
 				"REDUCE to 0.490, carried from rung 1 held at 236, dearer than the 96 taken"
 			],
-			"peak_mb": 255.0,
+			"peak_mb": 281.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7
 			},
-			"search_s": 37.9,
+			"search_s": 36.6,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -413,7 +413,7 @@
 			"error": 0.07056765542181646,
 			"fraction": 0.3429999999999999,
 			"from_rung": 2,
-			"judged": "359d61b0bb52a723c7744054ad889fa9d174251a1b6d89d4caa9c3047b7b9f95",
+			"judged": "0d9b73179adc222f66cb1481bb3634219deb44423eb4cb444606ca1b71373dc4",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at 4 of the band's pixels)",
@@ -544,12 +544,12 @@
 				"KIT (its own build at 4 of the band's pixels) held at 312, dearer than the 74 taken",
 				"REDUCE to 0.490, carried from rung 1 held at 236, dearer than the 74 taken"
 			],
-			"peak_mb": 255.0,
+			"peak_mb": 281.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 6
 			},
-			"search_s": 25.5,
+			"search_s": 26.0,
 			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 1,
@@ -567,7 +567,7 @@
 	},
 	"source": {
 		"children": "ff23d772d94a773e7819d8c7c6f3e00a9231a7f5641294d8aee97ce51e8f3a1b",
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "c68c4c3232908541d2f4484fb2f50e65f15ae2eea2a17ffcb0145346aa16ba8d"
 	}
 }

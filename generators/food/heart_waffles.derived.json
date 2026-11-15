@@ -21,7 +21,7 @@
 	],
 	"effort": "full",
 	"id": "food/heart-waffles",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -37,7 +37,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 11,
+				"candidates": 1,
 				"trace": "food__heart-waffles#1.trace.jsonl"
 			}
 		}
@@ -57,11 +57,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 148376,
+					"cost": 148376.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00444,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "kit",
 					"value": {}
 				},
@@ -76,9 +76,9 @@
 				}
 			],
 			"chain_beaten": {
-				"cap": 0.003423127313395663,
+				"cap": 0.00342312731339566,
 				"chain": "error",
-				"cost": 13288
+				"cost": 13288.0
 			},
 			"chains": {
 				"error": "lost"
@@ -94,7 +94,7 @@
 			"error": 0.006846254626791326,
 			"fraction": 0.01384128720099999,
 			"from_rung": 0,
-			"judged": "346e944507620fff020f7ec3713bfc8dd458e6e5119a14af97f5b2ab2eb81fa2",
+			"judged": "169bc2c6c2319543db3bbd00f794463758243973978c93330c0d60a32b3f2770",
 			"measured": {
 				"cost": 10682,
 				"coverage_rel": -0.01727,
@@ -113,13 +113,13 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 148376, dearer than the 10682 taken"
 			],
-			"peak_mb": 521.0,
+			"peak_mb": 519.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 8
+				"reduce": 8.0
 			},
-			"search_s": 443.5,
-			"searched": "search",
+			"search_s": 309.20000000000005,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -127,7 +127,7 @@
 				"configurations": 4,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.4375
@@ -135,7 +135,7 @@
 		}
 	},
 	"source": {
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "d0afd3ed6885992d9bfbfafdb24b2d94f498c76554a028d22fd79738ed0425a5"
 	}
 }

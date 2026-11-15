@@ -45,7 +45,7 @@
 	],
 	"effort": "full",
 	"id": "food/berry-porridge",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -65,7 +65,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 18,
+				"candidates": 0,
 				"trace": "food__berry-porridge#1.trace.jsonl"
 			}
 		}
@@ -94,11 +94,11 @@
 					}
 				},
 				{
-					"cost": 23507,
+					"cost": 23507.0,
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "merged",
 					"value": 1.0
 				}
@@ -113,7 +113,7 @@
 			"error": 0.006174669649115607,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "3494a4bdfd3f14bd10f3ac75b4d57441292b1ee0b66c8234223f692a9cb069ba",
+			"judged": "468282cce7ed773d36151ef2579e2615777a0bbb2debc5e8b4a3c1747f8d951e",
 			"keep": {
 				"drupelet": 0.3429999999999999,
 				"oat_flake": 0.03125
@@ -132,10 +132,10 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED (its parts at their own rungs, joined) held at 23507, dearer than the 7845 taken"
 			],
-			"peak_mb": 342.0,
+			"peak_mb": 291.0,
 			"route": "kit",
-			"search_s": 273.6,
-			"searched": "search",
+			"search_s": 69.2,
+			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10,
 			"verdict": {
@@ -152,7 +152,7 @@
 	},
 	"source": {
 		"children": "fb61b1c4f98bd2009c8b93b89b3f2d7a418f4cb81cc74da4a1f97ceaa5f8843c",
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "92168e6455660e45b7755d55077a80d18a50656ef8df7c5e3162d466bfd228af"
 	}
 }

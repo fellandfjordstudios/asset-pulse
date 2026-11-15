@@ -27,7 +27,7 @@
 	],
 	"effort": "full",
 	"id": "food/char-on-a-stick",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -44,11 +44,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 20,
+				"candidates": 1,
 				"trace": "food__char-on-a-stick#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 48,
+				"candidates": 1,
 				"trace": "food__char-on-a-stick#2.trace.jsonl"
 			},
 			"3": {
@@ -74,11 +74,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 4732,
+					"cost": 4732.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": -1.0,
-					"px_over": 370,
+					"px_over": 370.0,
 					"route": "kit",
 					"value": 0.7
 				},
@@ -92,11 +92,11 @@
 					"value": 0.216365
 				}
 			],
-			"cap": 0.0009262004473673409,
+			"cap": 0.00092620044736734,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 5002,
+				"cost": 5002.0,
 				"fraction": 0.3429999999999999
 			},
 			"chains": {
@@ -114,11 +114,11 @@
 			"every_piece": true,
 			"fraction": 0.216365,
 			"from_rung": 0,
-			"judged": "e7a21bb32de9dcd3a2e4d6da4b9c81edbb77c6d9a0065965b7ccc24ae42f4a15",
+			"judged": "fc8b49e7532654e3854158e6804a72c5926196eb0eea6a529e58b1d4b1a261d4",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.216 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -158,13 +158,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'body' is 48 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 417.0,
+			"peak_mb": 402.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 12
+				"reduce": 12.0
 			},
-			"search_s": 369.6,
-			"searched": "search",
+			"search_s": 98.80000000000001,
+			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10,
 			"verdict": {
@@ -172,7 +172,7 @@
 				"configurations": 5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -185,20 +185,20 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 2,
+					"cost": 2.0,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 2,
+					"px_over": 2.0,
 					"route": "impostor",
-					"value": 32
+					"value": 32.0
 				},
 				{
-					"cost": 1901,
+					"cost": 1901.0,
 					"holds": false,
 					"judge": "drawn",
 					"picture": 0.05498,
-					"px_over": 1,
+					"px_over": 1.0,
 					"route": "kit",
 					"value": 1.0
 				},
@@ -212,7 +212,7 @@
 					"value": 0.758929
 				}
 			],
-			"cap": 0.0037048017894693638,
+			"cap": 0.00370480178946936,
 			"chain": "error",
 			"chains": {
 				"error": "kept"
@@ -229,11 +229,11 @@
 			"every_piece": true,
 			"fraction": 0.758929,
 			"from_rung": 1,
-			"judged": "89c5471bbcfb40e4a31f9f774277b4d77d8a4b9f8761b0de2b94236b028a6dab",
+			"judged": "074ca4134d15d1af03bbc39d46c9921c5595dbe7656fb95060b8f70fc3a737f9",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.759 kept)",
-				"looked": 0,
+				"looked": 0.0,
 				"order": [
 					"kit",
 					"child",
@@ -377,18 +377,7 @@
 				"cost": 2380,
 				"coverage_rel": -0.018740000000000003,
 				"floor": 0.00398,
-				"part_shift": {
-					"birch": -0.0033200000000000005,
-					"body": 0.00481,
-					"dark": 0.00338,
-					"dorsal_fin": 0.00032,
-					"eye": -0.00047000000000000004,
-					"fin": 0.00111,
-					"fin_edge": 0.00030000000000000003,
-					"head": -0.00352,
-					"scorch": 0.00017,
-					"tail": 0.00046
-				},
+				"part_shift": {},
 				"picture": 0.02356
 			},
 			"measured_of": 2,
@@ -421,13 +410,13 @@
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"REDUCE (every piece) to its error cap 0.125x the band's (0.216 kept), carried from rung 1 held at 3136, dearer than the 2380 taken"
 			],
-			"peak_mb": 443.0,
+			"peak_mb": 447.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 12
+				"reduce": 12.0
 			},
-			"search_s": 608.5,
-			"searched": "search",
+			"search_s": 392.6,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -435,7 +424,7 @@
 				"configurations": 5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.5
@@ -467,12 +456,12 @@
 			"candidates": [
 				{
 					"cost": 2,
-					"holds": false,
+					"holds": true,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 1,
+					"px_over": null,
 					"route": "impostor",
-					"value": 8
+					"value": 12
 				}
 			],
 			"checked_at": 5,
@@ -485,7 +474,7 @@
 			"error": 0.02963841431575491,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "56acb8e950b4ff58702f82567c58d1f3bba174ada6a6840954db218b261be015",
+			"judged": "dee1c45d498def97a2b12391b2ec1a3815c31d28e3196de66bf3b99687f660a4",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -497,10 +486,10 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 417.0,
+			"peak_mb": 398.0,
 			"route": "impostor",
-			"search_s": 66.2,
-			"searched": "search",
+			"search_s": 68.3,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"tiles": 12,
@@ -512,13 +501,13 @@
 				"over": null,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
-				"worst": 0.45680000000000004
+				"worst": 0.4568
 			}
 		}
 	},
 	"source": {
 		"children": "e84759d27aac5486384a9f1395e16b6338d9fc740dadcac020876305008e20cc",
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "2f06d61d136673877b2334f8e8901bb73751eeb3579b7bbcbd6759512a3b78c0"
 	}
 }

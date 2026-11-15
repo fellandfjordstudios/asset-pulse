@@ -69,7 +69,7 @@
 	],
 	"effort": "full",
 	"id": "built/stockfish-rack",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -93,7 +93,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__stockfish-rack#1.trace.jsonl"
 			},
 			"2": {
@@ -101,7 +101,7 @@
 				"trace": "built__stockfish-rack#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 13,
 				"trace": "built__stockfish-rack#3.trace.jsonl"
 			}
 		}
@@ -136,7 +136,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00478,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "merged",
 					"value": 0.48999999999999994
 				}
@@ -146,14 +146,14 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.011512999999999999
 			},
 			"error": 0.0018518518518518521,
 			"every_piece": true,
 			"fraction": 0.48999999999999994,
 			"from_rung": 0,
-			"judged": "917b274cbfbe1c74e1ce1bca5ef665cdf538fb15d3c815e622dc1f78c183d394",
+			"judged": "bdc60ace7ecfe20e7f24f63f9867e7ac215a11b7534361b19b82bcbe1c3346dc",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490)",
@@ -172,11 +172,11 @@
 			},
 			"measured": {
 				"cost": 13476,
-				"coverage_rel": 0.00878,
+				"coverage_rel": 0.008780000000000001,
 				"floor": 0.00478,
 				"part_shift": {
-					"end_grain": 0.00323,
-					"wood": -0.00323
+					"end_grain": 0.0032300000000000002,
+					"wood": -0.0032300000000000002
 				},
 				"picture": 0.00478
 			},
@@ -188,13 +188,13 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 305.0,
+			"peak_mb": 679.0,
 			"route": "merged",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 56.2,
-			"searched": "replay",
+			"search_s": 508.20000000000005,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"verdict": {
@@ -261,7 +261,7 @@
 			"error": 0.0056,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "63a6883d39b593e264127a4697f2d20af9831a97512a17005287d6bb88640f62",
+			"judged": "9a5fee1047b829ff079284fb2b63cf2f60a5dc8db1e7fb36576eb798379abf2e",
 			"keep": {
 				"knot": 0.11764899999999996,
 				"peg": 0.7
@@ -280,29 +280,29 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 12.0,
+				"checked_at": 12,
 				"checks": [
 					{
 						"holds": true,
 						"mean_after": [
 							0.26753613352775574,
 							0.18709254264831543,
-							0.1195271536707878
+							0.11952715367078781
 						],
 						"mean_before": [
 							0.26753613352775574,
 							0.18709254264831543,
-							0.1195271536707878
+							0.11952715367078781
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							2.0675361156463623e-05,
-							4.152581095695496e-05,
+							4.1525810956954956e-05,
 							4.649069160223007e-05
 						],
 						"variance_before": [
 							2.0675361156463623e-05,
-							4.152581095695496e-05,
+							4.1525810956954956e-05,
 							4.649069160223007e-05
 						]
 					},
@@ -310,12 +310,12 @@
 						"holds": true,
 						"mean_after": [
 							0.2676059901714325,
-							0.1871918737888336,
+							0.18719187378883362,
 							0.11963259428739548
 						],
 						"mean_before": [
 							0.2676059901714325,
-							0.1871918737888336,
+							0.18719187378883362,
 							0.11963259428739548
 						],
 						"spatial_rms": 0.0,
@@ -334,12 +334,12 @@
 						"holds": true,
 						"mean_after": [
 							0.2674311101436615,
-							0.18694326281547544,
+							0.18694326281547546,
 							0.11936867237091064
 						],
 						"mean_before": [
 							0.2674311101436615,
-							0.18694326281547544,
+							0.18694326281547546,
 							0.11936867237091064
 						],
 						"spatial_rms": 0.0,
@@ -382,24 +382,24 @@
 						"holds": true,
 						"mean_after": [
 							0.2675095498561859,
-							0.18705448508262632,
-							0.11948642134666444
+							0.18705448508262634,
+							0.11948642134666443
 						],
 						"mean_before": [
 							0.2675095498561859,
-							0.18705448508262632,
-							0.11948642134666444
+							0.18705448508262634,
+							0.11948642134666443
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
 							1.9587576389312744e-05,
 							3.951415419578552e-05,
-							4.442594945430755e-05
+							4.4425949454307556e-05
 						],
 						"variance_before": [
 							1.9587576389312744e-05,
 							3.951415419578552e-05,
-							4.442594945430755e-05
+							4.4425949454307556e-05
 						]
 					},
 					{
@@ -455,12 +455,12 @@
 						"mean_after": [
 							0.2676113247871399,
 							0.1871991902589798,
-							0.1196400299668312
+							0.11964002996683121
 						],
 						"mean_before": [
 							0.2676113247871399,
 							0.1871991902589798,
-							0.1196400299668312
+							0.11964002996683121
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
@@ -527,21 +527,21 @@
 						"mean_after": [
 							0.26754841208457947,
 							0.18711034953594208,
-							0.11954575777053832
+							0.11954575777053833
 						],
 						"mean_before": [
 							0.26754841208457947,
 							0.18711034953594208,
-							0.11954575777053832
+							0.11954575777053833
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							2.1070241928100583e-05,
+							2.1070241928100586e-05,
 							4.226714372634888e-05,
 							4.745367914438248e-05
 						],
 						"variance_before": [
-							2.1070241928100583e-05,
+							2.1070241928100586e-05,
 							4.226714372634888e-05,
 							4.745367914438248e-05
 						]
@@ -576,10 +576,10 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 2332,
-				"coverage_rel": -0.02166,
+				"coverage_rel": -0.021660000000000002,
 				"floor": 0.00478,
 				"part_shift": {},
-				"picture": 0.00797
+				"picture": 0.007970000000000001
 			},
 			"measured_of": 4,
 			"not_taken": [
@@ -609,10 +609,10 @@
 				"REDUCE (every piece) to 0.700 held at 9944, dearer than the 2332 taken",
 				"MERGED (its parts at their own rungs, joined, then REDUCED every piece to 0.490), carried from rung 1 held at 13476, dearer than the 2332 taken"
 			],
-			"peak_mb": 274.0,
+			"peak_mb": 689.0,
 			"route": "kit",
-			"search_s": 14.200000000000001,
-			"searched": "replay",
+			"search_s": 369.90000000000003,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -627,7 +627,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 37748736.0,
+			"atlas_bytes": 37748736,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -657,20 +657,20 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 24.0
+					"value": 24
 				}
 			],
 			"checked_at": 12,
-			"draw_calls": 1.0,
+			"draw_calls": 1,
 			"drawn": {
-				"excess": 0.4775,
+				"excess": 0.47750000000000004,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
 			"error": 0.012,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "48c664287f1207c48c0f71f739c7a611374b92629da8ad1fa6b4b5251e81315c",
+			"judged": "d6c5ad0fdde3ba5f8a6ad85bb1ac4bf1334696f8a6d9c393101fa2ce8afdac1e",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -682,14 +682,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 274.0,
+			"peak_mb": 768.0,
 			"route": "impostor",
-			"search_s": 11.3,
-			"searched": "replay",
+			"search_s": 446.20000000000005,
+			"searched": "recheck",
 			"source_pixel_scale": 32.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 24.0,
+			"tiles": 24,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 12,
@@ -704,7 +704,7 @@
 	},
 	"source": {
 		"children": "2129ea740a69356f7f8c63e19e1ff49b6174ad94273d78ba5bc0f35d65f1ce4b",
-		"deriver": "f51aca754212a54ac43317ba81ad82bf0334fa05741fc2b7924aeac168f857f3",
+		"deriver": "73306081e7a9bd71f8c000371d94495a87d27d7820e4666d4a289c8507df3d2d",
 		"generator": "e6975f2a0eab575cf32486dcc2b6a8abfd1090eb26501ad6165b78b797227684"
 	}
 }

@@ -99,7 +99,7 @@
 	],
 	"effort": "full",
 	"id": "stone/litter-stones",
-	"judge": "304afa225ebc85084b93d5551ef85e130714dc607bab81ccdb95fcbd74db60e1",
+	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -189,7 +189,7 @@
 				"luminance_sd": 0.0585,
 				"texel_m": 0.001883
 			},
-			"judged": "a974c312d7439638aa09af341f05876338b24396a0fd2639391baeba86143c42",
+			"judged": "e7b2675916a6d62510fe437d4860089485b854ad35ac0882e961a27fad4ba2c3",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to its error cap 0.125x the band's (0.294 kept)",
@@ -223,12 +223,12 @@
 				"SUBSTITUTE: skipped by the prior -- judged 3 times for field subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form field --band 1)",
 				"KIT: skipped by the prior -- judged 3 times for field subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form field --band 1)"
 			],
-			"peak_mb": 1487.0,
+			"peak_mb": 1493.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 610.0
 			},
-			"search_s": 743.5,
+			"search_s": 604.2,
 			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
@@ -276,7 +276,7 @@
 			"error": 0.007407407407407408,
 			"fraction": 0.29368299999999997,
 			"from_rung": 0,
-			"judged": "5f53d0b49786690b629e0b0876130f698bb3fe3ab3115cf271e5e0b2428c7a73",
+			"judged": "2affb6b2708cc6dad8056d0630896b2c88c0aede1faf28680eafbb05d7a2a771",
 			"material_transfer": {
 				"checked_at": 17,
 				"checks": [
@@ -706,12 +706,12 @@
 			"not_taken": [
 				"REDUCE to its error cap 0.0312x the band's (0.294 kept), carried from rung 1, re-checked at 48772: the finer rung's offer holds this band, where it was a miss"
 			],
-			"peak_mb": 1636.0,
+			"peak_mb": 1646.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 610.0
 			},
-			"search_s": 3560.2000000000003,
+			"search_s": 3132.9,
 			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
@@ -729,7 +729,7 @@
 	},
 	"source": {
 		"children": "a4223aec1decb21a16b04a588cef4c1663e8ca1264f265edbfc80301937752f1",
-		"deriver": "60a2e5d27a3217aa81e4e854d6468b24254e68fd67f4296f4cdc9ab09a3900e3",
+		"deriver": "f4e3249a8d126348165fd1c50d4cb130c3fc6562683707f330aaa6c878fff9ba",
 		"generator": "9928090ca5e34948bef56dcda0ca9faceadf9683c081e28e3b424df622687cc4"
 	}
 }
