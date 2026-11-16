@@ -1,0 +1,10 @@
+# THE CATALOGUE THIS PULSE READS, pinned by commit, beside library.lock.
+#
+# The library's generators are moving to the catalogue repository (the library's
+# fable-plans/the-games-are-repositories-and-the-core-is-tested-on-fixtures step
+# 3). Its repository is named by the library itself, in ops/catalogue-moved.json
+# at the library's pin; tools/sync-library.sh reads it there. The catalogue's own
+# files (its generators and the evidence it owns under test/) are laid over
+# library/ at the same paths, so the scorecard, the sheets and the catalog see
+# every subject wherever it lives. Bumped with the library (--bump).
+commit=33e9aeb9225d2ebb0f679edef94c1d113ced5aa3
