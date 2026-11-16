@@ -99,18 +99,24 @@ def tone(multiple):
     return "ok" if multiple <= 1.5 else ("warn" if multiple <= 4 else "bad")
 
 
+def outline_px(b):
+    """A band's outline error in pixels: the library's sheet writes outline_px
+    since its row 781 (it may be null, not judged); error_px before."""
+    return b.get("outline_px", b.get("error_px"))
+
+
 def band_table(bands):
-    rows = ["<tr><th>band</th><th>from m</th><th>today</th><th>cost</th><th>x ceiling</th><th>err px</th>"
-            "<th>derived</th><th>cost</th><th>x ceiling</th><th>err px</th><th>saved</th></tr>"]
+    rows = ["<tr><th>band</th><th>from m</th><th>today</th><th>cost</th><th>x ceiling</th><th>outline px</th>"
+            "<th>derived</th><th>cost</th><th>x ceiling</th><th>outline px</th><th>saved</th></tr>"]
     for b in bands:
         d = b.get("derived", {})
         m = b["cost"] / b["ceiling"] if b.get("ceiling") else None
         dm = d["cost"] / b["ceiling"] if d.get("cost") is not None and b.get("ceiling") else None
-        rows.append("<tr><td>%d</td><td>%.2f</td><td>r%d %s</td><td>%d</td><td class=%s>%s</td><td>%.2f</td>"
+        rows.append("<tr><td>%d</td><td>%.2f</td><td>r%d %s</td><td>%d</td><td class=%s>%s</td><td>%s</td>"
                     "<td>%s</td><td>%s</td><td class=%s>%s</td><td>%s</td><td>%s</td></tr>" % (
                         b["band"], b["from_m"], b["rung"], html.escape(b["how"]), b["cost"], tone(m), fmt(m, "%.2fx"),
-                        b["error_px"], html.escape(d.get("verdict", "")), fmt(d.get("cost")), tone(dm),
-                        fmt(dm, "%.2fx"), fmt(d.get("error_px"), "%.2f"), fmt(b.get("saved"))))
+                        fmt(outline_px(b), "%.2f"), html.escape(d.get("verdict", "")), fmt(d.get("cost")), tone(dm),
+                        fmt(dm, "%.2fx"), fmt(outline_px(d), "%.2f"), fmt(b.get("saved"))))
     return "<div class=wrap><table>%s</table></div>" % "".join(rows)
 
 

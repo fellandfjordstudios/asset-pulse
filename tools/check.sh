@@ -12,6 +12,7 @@ esac
 tools/sync-library.sh --verify
 python3 -m unittest discover -s tools -p 'test_setup.py'
 python3 -m unittest discover -s tools -p 'test_catalog.py'
+python3 -m unittest discover -s tools -p 'test_site.py'
 python3 tools/test_catalog_guard.py
 python3 tools/test_store_prune.py
 python3 tools/test_cook_hits.py

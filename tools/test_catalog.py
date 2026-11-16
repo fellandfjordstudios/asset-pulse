@@ -191,6 +191,18 @@ class CatalogTests(unittest.TestCase):
         self.assertIn('The downloadable build is not ready yet', arms)
         self.assertNotIn('the shape library was absent', arms)
 
+    def test_plates_are_read_from_their_records_when_the_manifest_is_gone(self):
+        # The library's row 756: each plate's record beside its hash, no manifest.
+        manifest = self.fixture.photos / 'manifest.json'
+        plate = json.loads(manifest.read_text())['plates'][self.fixture.digest]
+        (self.fixture.photos / 'records').mkdir()
+        (self.fixture.photos / 'records' / (self.fixture.digest + '.json')).write_text(json.dumps(plate))
+        manifest.unlink()
+        site = self.fixture.build()
+        text = next((site / 'attribution').glob('*.txt')).read_text()
+        self.assertIn('reference.jpg', text)
+        self.assertIn('CC-BY-4.0', text)
+
     def test_detail_levels_link_to_real_baked_objects(self):
         entry = self.fixture.entries[0]
         entry['rungs'].append({'rung': 1, 'gltf': entry['rungs'][0]['gltf'], 'triangles': 1})
