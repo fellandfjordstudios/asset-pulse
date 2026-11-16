@@ -65,6 +65,22 @@ fi
 mkdir -p "$STORE"
 rm -rf "$LIB/build/artifacts" "$COOKED" "$ROOT/out/bake-resume"
 
+# THE SHAPE LIBRARY FIRST (row 839): without it AgShapeLibrary finds no
+# plates/incoming/shape-library/3dobjs/base.obj and every subject built on the
+# sculpt kit's body cooks nothing. tools/shape-library.sh runs the library's own
+# bake (a public CC0 download, held to AgShapeLibrary.SOURCE's pack_sha256);
+# kept when already in place. Absent, the cook goes on and the catalog names it.
+# Its last line is kept beside the cook (out/cooked/shape-library.txt, cached
+# with it for a refresh) for tools/catalog.py's gap line.
+mkdir -p "$COOKED"
+if "$ROOT/tools/shape-library.sh" | tee "$COOKED/shape-library.log"; then
+  tail -n 1 "$COOKED/shape-library.log" > "$COOKED/shape-library.txt"
+else
+  { echo "absent: "; tail -n 1 "$COOKED/shape-library.log"; } | tr -d '\n' > "$COOKED/shape-library.txt"
+  echo "bake: NO SHAPE LIBRARY this run; the catalog names it on each subject built on the sculpt kit's body"
+fi
+rm -f "$COOKED/shape-library.log"
+
 echo "bake: impostor atlases (the library's tools/impostor.sh${IMPOSTOR_ARGS[*]:+ --cache})"
 read -r -a ONLY <<< "${PULSE_BAKE_ONLY:-}"
 ( cd "$LIB" && AG_BAKE_CACHE="$STORE" tools/impostor.sh ${IMPOSTOR_ARGS[@]+"${IMPOSTOR_ARGS[@]}"} ${ONLY[@]+"${ONLY[@]}"} | tail -3; exit "${PIPESTATUS[0]}" ) \

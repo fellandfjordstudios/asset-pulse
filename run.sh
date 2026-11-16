@@ -45,6 +45,10 @@ if [ "${1:-}" = "--bump" ]; then
 fi
 tools/sync-library.sh || fail_row "sync"
 tools/sync-library.sh --verify || fail_row "verify"
+# THE SHAPE LIBRARY (row 839): the sculpt kit's body reads MakeHuman's CC0 base and
+# targets, made by the library's own tools/shape-library.sh bake and held to its
+# pinned hash; without it the subjects built on that body render and bake nothing.
+tools/shape-library.sh || echo "run: no shape library; the subjects built on the sculpt kit's body will show that gap"
 # THE DERIVATION BACKLOG, PAID ONCE, before the sheets read it (tools/backlog.sh):
 # the library's own job, its records kept on derive-results. PULSE_BACKLOG=0
 # skips it (a quick manual look).

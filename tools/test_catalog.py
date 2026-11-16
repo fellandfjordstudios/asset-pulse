@@ -170,6 +170,27 @@ class CatalogTests(unittest.TestCase):
             self.assertNotIn('Download free 1080 build', detail)
             self.assertNotIn('data-model-src', detail)
 
+    def test_a_subject_on_the_sculpt_body_names_the_absent_shape_library(self):
+        # Row 839: without the shape library the subjects built on the sculpt
+        # kit's body bake nothing; the gap says why, not "not ready yet".
+        folder = self.fixture.lib / 'generators/specimen'; folder.mkdir(parents=True, exist_ok=True)
+        (folder / 'arms.card.json').write_text(json.dumps({'id': 'specimen/arms'}))
+        (folder / 'arms.gd').write_text('var lib := AgShapeLibrary.default_library()\n')
+        fern = self.fixture.lib / 'generators/plant/fern.card.json'
+        fern.write_text(json.dumps({'id': 'plant/fern'}))
+        status = self.fixture.bake.parent / 'shape-library.txt'
+        status.write_text('absent: shape-library: ABSENT: could not download')
+        site = self.fixture.build()
+        arms = (site / 'subject/specimen/arms/index.html').read_text()
+        self.assertIn('the shape library was absent from this bake', arms)
+        self.assertIn('needs the shape library', arms)
+        self.assertNotIn('not ready yet', arms)
+        self.assertIn('The downloadable build is not ready yet', (site / 'subject/plant/fern/index.html').read_text())
+        status.write_text('shape-library: HELD pack 1ac65d0b')
+        arms = (self.fixture.build() / 'subject/specimen/arms/index.html').read_text()
+        self.assertIn('The downloadable build is not ready yet', arms)
+        self.assertNotIn('the shape library was absent', arms)
+
     def test_detail_levels_link_to_real_baked_objects(self):
         entry = self.fixture.entries[0]
         entry['rungs'].append({'rung': 1, 'gltf': entry['rungs'][0]['gltf'], 'triangles': 1})

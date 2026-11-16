@@ -28,6 +28,14 @@ plan it executes is the library's
                                       deferred by name, and the next run bakes only those
     PULSE_DERIVE=none ./run.sh        drawn today only: no derived column
     PULSE_ONLY="built/vase" ./run.sh  render one subject, for a manual look
+    tools/shape-library.sh            the sculpt kit's body's shape library (MakeHuman's CC0 base
+                                      and targets) under library/plates/incoming/, made by the
+                                      library's own tools/shape-library.sh bake and held to
+                                      AgShapeLibrary.SOURCE's pack_sha256; run.sh, bake.sh and the
+                                      derive job call it (row 839); no credential
+    tools/test_shape_library.sh       its gate: the four subjects on that body cook with it, and
+                                      without it (PULSE_SHAPE_LIBRARY=0) none does and the catalog
+                                      names the shape library (two cooks; not in tools/check.sh)
 
 Output lands in `out/<date>/` (gitignored): `scorecard.txt`, `manifest.json`,
 one directory per subject (the library's sheet pages, `sheet-bands.json`, the

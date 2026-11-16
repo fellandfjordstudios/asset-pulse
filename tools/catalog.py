@@ -256,6 +256,34 @@ def committed(gid):
     return load(Path(str(base) + ".ladder.json")), load(Path(str(base) + ".card.json"))
 
 
+# THE SCULPT KIT'S BODY NEEDS THE SHAPE LIBRARY (row 839): a generator whose
+# source reads it builds nothing without MakeHuman's base and targets under the
+# library's plates/incoming/shape-library/ (tools/shape-library.sh provides it).
+SHAPE_BODY_WORDS = ("AgShapeLibrary", "AgShapeBody", "shape_library")
+SHAPE_LIBRARY_GAP = ("No build: the shape library was absent from this bake (MakeHuman's CC0 base "
+                     "and targets, which the sculpt kit's body is built from; tools/shape-library.sh)")
+
+
+def shape_library_absent(bake_dir):
+    """Why the shape library was absent from this bake, or "" when it was held:
+    the bake's own record beside the cook (tools/bake.sh writes
+    out/cooked/shape-library.txt), else whether library/ holds its base."""
+    status = Path(bake_dir).parent / "shape-library.txt"
+    if status.exists():
+        text = status.read_text().strip()
+        return text if text.startswith("absent") else ""
+    if not (LIB / "plates" / "incoming" / "shape-library" / "3dobjs" / "base.obj").exists():
+        return "absent: library/ has no plates/incoming/shape-library/3dobjs/base.obj"
+    return ""
+
+
+def built_on_shape_body(gid):
+    """Whether a generator's own source reads the shape library."""
+    group, name = gid.split("/", 1)
+    src = LIB / "generators" / group / (name.replace("-", "_") + ".gd")
+    return src.exists() and any(w in src.read_text() for w in SHAPE_BODY_WORDS)
+
+
 def facts_of(L, C):
     rows = [("class", L.get("class")), ("Default extent", "%.2f m" % L["extent_m"] if L.get("extent_m") else None),
             ("rungs", L.get("mesh_rungs")), ("ladder ends", L.get("ladder_end")),
@@ -405,6 +433,9 @@ def main(argv):
         return "subject/%s/%s" % (gid, (variant + "/") if variant else "")
 
     entries, gaps_all = [], []
+    no_shape_library = shape_library_absent(bake_dir)
+    if no_shape_library:
+        print("catalog: the shape library was %s" % no_shape_library)
     for asset in (ROOT / "tools" / "catalog-assets").iterdir():
         if asset.suffix in (".css", ".js"):
             shutil.copyfile(asset, site / asset.name)
@@ -416,7 +447,8 @@ def main(argv):
         rungs = sorted(e.get("rungs", []), key=lambda r: int(r.get("rung", 0)))
         files, gaps, no_atlas = [], [], []   # files: (member, bytes, what it is), as the zip carries them
         if not rungs:
-            gaps.append("The downloadable build is not ready yet")
+            gaps.append(SHAPE_LIBRARY_GAP if no_shape_library and built_on_shape_body(gid)
+                        else "The downloadable build is not ready yet")
         for r in rungs:
             g = r.get("gltf") or r.get("file")
             if not g or not (bake_dir / g).exists():

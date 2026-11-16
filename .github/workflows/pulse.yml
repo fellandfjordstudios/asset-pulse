@@ -411,6 +411,10 @@ jobs:
         run: |
           git config user.name "Fell & Fjord"
           git config user.email "fellandfjord@gmail.com"
+          # The shape library first (row 839): the subjects built on the sculpt
+          # kit's body build nothing at rung 0 without it, and the deriver
+          # refuses them before any search.
+          tools/shape-library.sh || echo "::warning::no shape library; the subjects built on the sculpt kit's body are not derived"
           tools/backlog.sh
       - name: save the checkpoints
         if: always() && steps.pins.outcome == 'success'
