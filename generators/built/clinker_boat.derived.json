@@ -133,7 +133,7 @@
 	],
 	"effort": "full",
 	"id": "built/clinker-boat",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -167,11 +167,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 10,
 				"trace": "built__clinker-boat#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 45,
 				"trace": "built__clinker-boat#2.trace.jsonl"
 			}
 		}
@@ -211,7 +211,7 @@
 			"error": 0.0018518518518518517,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "e7e111fce51e118358542175a795c1306b9eb50978c93c4fbe5cfa8298f7be61",
+			"judged": "044888c2a0de17e4e9b17edb809652cef482a3bdb8058a55f6c06d223d1d135f",
 			"keep": {
 				"frame": 0.03125,
 				"rivet": 0.08235429999999996
@@ -219,7 +219,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at the rung's pixel, keeping rivet 0.082, frame 0.031)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -227,6 +227,9 @@
 					"merged",
 					"thin",
 					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
@@ -238,14 +241,15 @@
 			},
 			"measured_of": 1,
 			"not_taken": [
-				"IMPOSTOR: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"IMPOSTOR: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.082, frame 0.031)) is 1 route(s), and the one looked at did not improve on it"
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping rivet 0.082, frame 0.031)) is 1 route(s), and the one looked at did not improve on it"
 			],
-			"peak_mb": 371.0,
+			"peak_mb": 1344.0,
 			"route": "kit",
-			"search_s": 444.6,
-			"searched": "recheck",
+			"search_s": 1493.1000000000001,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 9,
 			"verdict": {
@@ -263,13 +267,13 @@
 			"budget": 9779,
 			"candidates": [
 				{
-					"cost": 2.0,
+					"cost": 2,
 					"holds": false,
 					"judge": "impostor",
 					"picture": -1.0,
-					"px_over": 3.0,
+					"px_over": 3,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				},
 				{
 					"cost": 1573,
@@ -282,6 +286,15 @@
 						"frame": 0.03125,
 						"rivet": 0.03125
 					}
+				},
+				{
+					"cost": 3214,
+					"holds": true,
+					"judge": "drawn",
+					"picture": 0.00398,
+					"px_over": 0,
+					"route": "reduce",
+					"value": 0.599627
 				}
 			],
 			"checked_at": 22,
@@ -294,7 +307,7 @@
 			"error": 0.007407407407407407,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "d497a4e8cce7e031a52652528a1aeb549c5912e5af37903e45e5f54cde9ebfdc",
+			"judged": "5c7f943e3ec46b0e16e62f9dedff01888b0800cfcd2a5bc6b34d2cbcbcfdc6c8",
 			"keep": {
 				"frame": 0.03125,
 				"rivet": 0.03125
@@ -302,7 +315,7 @@
 			"look_past": {
 				"beaten": false,
 				"first": "KIT (its own build at 2 of the band's pixels, keeping frame 0.031, rivet 0.031)",
-				"looked": 1.0,
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
@@ -310,6 +323,9 @@
 					"impostor",
 					"merged",
 					"thin"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"material_transfer": {
@@ -858,15 +874,15 @@
 			"not_taken": [
 				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0 at 8x its pixel: 848 pixel(s) differ at {} seed 314 (worst 0.72)",
 				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0 at 8x its pixel: 559 pixel(s) differ at {} seed 314 (worst 0.81)",
-				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0 at 8x its pixel: 458 pixel(s) differ at {} seed 314 (worst 0.70)",
+				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0 at 8x its pixel: 457 pixel(s) differ at {} seed 314 (worst 0.70)",
 				"IMPOSTOR at 16x16 frames (atlas 9.4 MB) from rung 0 at 8x its pixel: 60 pixel(s) differ at {} seed 314 (worst 0.85)",
 				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0 at 4x its pixel: 864 pixel(s) differ at {} seed 314 (worst 0.69)",
 				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0 at 4x its pixel: 572 pixel(s) differ at {} seed 314 (worst 0.81)",
-				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0 at 4x its pixel: 465 pixel(s) differ at {} seed 314 (worst 0.70)",
+				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0 at 4x its pixel: 464 pixel(s) differ at {} seed 314 (worst 0.70)",
 				"IMPOSTOR at 16x16 frames (atlas 9.4 MB) from rung 0 at 4x its pixel: 58 pixel(s) differ at {} seed 314 (worst 0.84)",
 				"IMPOSTOR at 6x6 frames (atlas 1.3 MB) from rung 0: 858 pixel(s) differ at {} seed 314 (worst 0.69)",
 				"IMPOSTOR at 8x8 frames (atlas 2.4 MB) from rung 0: 567 pixel(s) differ at {} seed 314 (worst 0.81)",
-				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0: 476 pixel(s) differ at {} seed 314 (worst 0.70)",
+				"IMPOSTOR at 12x12 frames (atlas 5.3 MB) from rung 0: 475 pixel(s) differ at {} seed 314 (worst 0.70)",
 				"IMPOSTOR at 16x16 frames (atlas 9.4 MB) from rung 0: 58 pixel(s) differ at {} seed 314 (worst 0.82)",
 				"IMPOSTOR at 24x24 frames (atlas 21.2 MB) from rung 0 at 8x its pixel: 18 pixel(s) differ at {} seed 314 (worst 0.52)",
 				"IMPOSTOR at 24x24 frames (atlas 21.2 MB) from rung 0 at 4x its pixel: 16 pixel(s) differ at {} seed 314 (worst 0.52)",
@@ -874,16 +890,18 @@
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0 at 8x its pixel: 3 pixel(s) differ at {} seed 314 (worst 0.52)",
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0 at 4x its pixel: 3 pixel(s) differ at {} seed 314 (worst 0.52)",
 				"IMPOSTOR at 32x32 frames (atlas 37.7 MB) from rung 0: 3 pixel(s) differ at {} seed 314 (worst 0.52)",
+				"REDUCE from rung 1, the derived band above at {} seed 314: element 1's part 'planking' is 22 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
-				"MERGED, THIN: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping frame 0.031, rivet 0.031)) is 1 route(s), and the one looked at did not improve on it",
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 2 across 3 record(s), never held (tools/derive-prior.py --form solid --band 2)",
+				"MERGED: not searched -- the look past the first that held (KIT (its own build at 2 of the band's pixels, keeping frame 0.031, rivet 0.031)) is 1 route(s), and the one looked at did not improve on it",
 				"KIT (its own build at the rung's pixel, keeping frame 0.031, rivet 0.031) held at 3109, dearer than the 1573 taken",
-				"KIT (its own build at the rung's pixel, keeping rivet 0.082, frame 0.031), carried from rung 1 held at 5360, dearer than the 1573 taken"
+				"REDUCE (every piece) to its error cap 0.125x the band's (0.600 kept) held at 3214, dearer than the 1573 taken"
 			],
-			"peak_mb": 379.0,
+			"peak_mb": 910.0,
 			"pixel_scale": 2.0,
 			"route": "kit",
-			"search_s": 3647.1000000000004,
-			"searched": "recheck",
+			"search_s": 3646.5,
+			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -900,7 +918,7 @@
 	},
 	"source": {
 		"children": "36f4930940b3c8c6a1d171f354f6d01accbbee71bdd2d4565f6ad1b9b431bfa7",
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
-		"generator": "caac353d1fa1ffb8c1a489d748153d11694d2954418bbd2d378dde05cc3d7740"
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
+		"generator": "f167c921eed2205c477f85d78ee5b72f92eec813b4af99ad89d8d6d03e76e4ab"
 	}
 }

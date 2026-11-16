@@ -57,7 +57,7 @@
 	],
 	"effort": "full",
 	"id": "built/oatcake-packet",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -79,7 +79,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__oatcake-packet#1.trace.jsonl"
 			}
 		}
@@ -112,7 +112,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.7
 				}
@@ -130,14 +130,14 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.000185
 			},
 			"error": 0.0015,
 			"every_piece": true,
 			"fraction": 0.7,
 			"from_rung": 0,
-			"judged": "d5086c75d8ac130c21db5936452ec6ab7d2e2a3335e6154533a71cafac7688dc",
+			"judged": "8120ca38d518b2662a09057ff3841960bf3e7c7190e88b374c4db7faa244a512",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel)",
@@ -172,13 +172,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel) held at 572, dearer than the 500 taken"
 			],
-			"peak_mb": 247.0,
+			"peak_mb": 763.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 3.0
 			},
-			"search_s": 0.30000000000000004,
-			"searched": "replay",
+			"search_s": 169.20000000000002,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"verdict": {
@@ -194,7 +194,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "d0bc202eca12f4c39e8a6676d342098f4045de2aa7c5bd1b6c07603c5d854719"
 	}
 }

@@ -69,7 +69,7 @@
 	],
 	"effort": "full",
 	"id": "built/dried-meat",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -93,7 +93,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__dried-meat#1.trace.jsonl"
 			}
 		}
@@ -126,7 +126,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004540000000000001,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.851695
 				}
@@ -141,14 +141,14 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.00069
 			},
 			"error": 0.003,
 			"every_piece": true,
 			"fraction": 0.851695,
 			"from_rung": 0,
-			"judged": "0d94716a000f721e8a6ee37d563478a5b0ff7fd6ae864c309ea13ab19aa44ec0",
+			"judged": "217c19de09b67e1228aa929f6409e95dc117acec5206e200e773f0ceb7c48724",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.852 kept)",
@@ -168,12 +168,12 @@
 			"measured": {
 				"cost": 402,
 				"coverage_rel": -4e-05,
-				"floor": 0.00522,
+				"floor": 0.005220000000000001,
 				"part_shift": {
 					"paper": 4e-05,
 					"strip": -4e-05
 				},
-				"picture": 0.00454
+				"picture": 0.004540000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -182,13 +182,13 @@
 				"REDUCE from rung 0 at {\"strip_count\":10} seed 314: element 0's part 'strip' is 10 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 248.0,
+			"peak_mb": 491.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2.0
 			},
-			"search_s": 0.30000000000000004,
-			"searched": "replay",
+			"search_s": 41.300000000000004,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 2,
 			"verdict": {
@@ -204,7 +204,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "1461fbba535b7c61d347d2d3feea41a8042174b78b3ce10d9ad6d61d0daea2d4"
 	}
 }

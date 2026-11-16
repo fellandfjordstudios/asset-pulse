@@ -195,7 +195,7 @@
 	],
 	"effort": "full",
 	"id": "plant/dock-rosette",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -240,7 +240,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "plant__dock-rosette#1.trace.jsonl"
 			}
 		}
@@ -264,7 +264,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0125,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.662755
 				}
@@ -284,14 +284,14 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.000966
 			},
 			"error": 0.001851851851851852,
 			"every_piece": true,
 			"fraction": 0.662755,
 			"from_rung": 0,
-			"judged": "c2845d0536e8100ee5d70a3465cf21759f09f56bcebc3a9521e39eec92f92dc7",
+			"judged": "62ce80e6c0465a324a389802d9b135b2eac8d754d268560bbe9ef63197637c94",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.663 kept)",
@@ -310,12 +310,12 @@
 			},
 			"measured": {
 				"cost": 10588,
-				"coverage_rel": -0.00314,
+				"coverage_rel": -0.0031400000000000004,
 				"floor": 0.0053,
 				"part_shift": {
 					"leaf": 0.00282,
 					"midrib": -0.00167,
-					"stalk": -0.00224
+					"stalk": -0.0022400000000000002
 				},
 				"picture": 0.0125
 			},
@@ -325,14 +325,14 @@
 				"REDUCE from rung 0 at {} seed 314: element 16's part 'stalk' is 11 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 5 more groups)",
 				"THIN: skipped by the prior -- judged 7 times for solid subjects at band 1 across 7 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 310.0,
+			"peak_mb": 1466.0,
 			"route": "reduce",
 			"routes": {
 				"carry": 16.0,
 				"reduce": 22.0
 			},
-			"search_s": 9.600000000000001,
-			"searched": "replay",
+			"search_s": 795.5,
+			"searched": "recheck",
 			"surfaces": 3,
 			"surfaces_ceiling": 3,
 			"verdict": {
@@ -348,7 +348,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "104b6371287c6fa1c6cae6701dc1e21a040ceeb5311f44fa6458bf4fb255128d"
 	}
 }

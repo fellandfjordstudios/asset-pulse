@@ -15,7 +15,7 @@
 	],
 	"effort": "full",
 	"id": "built/coffee-grinder",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -30,11 +30,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__coffee-grinder#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 18,
 				"trace": "built__coffee-grinder#2.trace.jsonl"
 			}
 		}
@@ -68,7 +68,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00412,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.8198019999999999
 				}
@@ -83,14 +83,14 @@
 				"excess": 0.4375,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.001297
 			},
 			"error": 0.0024936165890659177,
 			"every_piece": true,
 			"fraction": 0.8198019999999999,
 			"from_rung": 0,
-			"judged": "d266d8ec9a66889762346da90cd6448235d6727421a300881e40996ca6b7911e",
+			"judged": "7f63d1398fea4e768ebe39ae4d29a364d51b53e9f549734be0ee42c21b88687f",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.5x the band's (0.820 kept)",
@@ -109,16 +109,16 @@
 			},
 			"measured": {
 				"cost": 9108,
-				"coverage_rel": -0.00012,
+				"coverage_rel": -0.00012000000000000002,
 				"floor": 0.00412,
 				"part_shift": {
 					"brass": 0.00042,
 					"drawer_front": 0.00025,
-					"gold": -0.00341,
-					"iron": 0.00073,
+					"gold": -0.0034100000000000003,
+					"iron": 0.0007300000000000001,
 					"paint": 0.00152,
 					"wood": 0.00042,
-					"worn_edge": 0.00014
+					"worn_edge": 0.00014000000000000001
 				},
 				"picture": 0.00412
 			},
@@ -129,13 +129,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'paint' is 14 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 6 times for solid subjects at band 1 across 6 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 252.0,
+			"peak_mb": 320.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 7.0
 			},
-			"search_s": 1.3,
-			"searched": "replay",
+			"search_s": 51.2,
+			"searched": "recheck",
 			"surfaces": 7,
 			"surfaces_ceiling": 7,
 			"verdict": {
@@ -150,7 +150,7 @@
 			}
 		},
 		"2": {
-			"atlas_bytes": 67108864.0,
+			"atlas_bytes": 67108864,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -180,20 +180,20 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				}
 			],
 			"checked_at": 3,
-			"draw_calls": 1.0,
+			"draw_calls": 1,
 			"drawn": {
-				"excess": 0.4522000000000001,
+				"excess": 0.45220000000000005,
 				"judge": "drawn",
 				"why": "an impostor is judged at the drawn size, its frames blended"
 			},
 			"error": 0.009974466356263671,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "f3a4d273181107a200fcb3f9a8b5a8b524615ba6e6ad846f11e20d10aff05a08",
+			"judged": "1d03938079f7e39b41ceaef68749a163f23533d1d45ff3a9d21aef33a0104ecc",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -205,13 +205,13 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 253.0,
+			"peak_mb": 320.0,
 			"route": "impostor",
-			"search_s": 0.8,
-			"searched": "replay",
+			"search_s": 80.9,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 32.0,
+			"tiles": 32,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 3,
@@ -225,7 +225,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "a9bab44a4c2a0625cf2740720795ed6808826641b41f4564eb416f75a31916f8"
 	}
 }

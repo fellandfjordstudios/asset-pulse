@@ -13,7 +13,7 @@
 	],
 	"effort": "full",
 	"id": "built/mess-kit",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -27,7 +27,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__mess-kit#1.trace.jsonl"
 			},
 			"2": {
@@ -62,7 +62,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "merged",
 					"value": 1.0
 				}
@@ -72,13 +72,13 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.0012929999999999999
 			},
 			"error": 0.0037476318679603394,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "4bc6cff6ad2952b27ce849ce3c92d6fdeb37e2653367bd96b6640c63e070a699",
+			"judged": "8091c587a9e338b16df46167fbdd0b8c0956d298e09a84c82128faae5ccb233c",
 			"look_past": {
 				"beaten": false,
 				"first": "MERGED (its parts at their own rungs, joined)",
@@ -117,10 +117,10 @@
 				"REDUCE from rung 0: rung 0 places its parts, and a composite is not simplified as their merge (fleet/composite-derivation.md)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 249.0,
+			"peak_mb": 277.0,
 			"route": "merged",
-			"search_s": 0.30000000000000004,
-			"searched": "replay",
+			"search_s": 11.3,
+			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
 			"verdict": {
@@ -185,7 +185,7 @@
 			"every_piece": true,
 			"fraction": 0.922353,
 			"from_rung": 1,
-			"judged": "9e5dd6b91070a1541d71db45fde0c586933c4c5fcc7604753f698f1a6ec3a491",
+			"judged": "12b87bd146ceef07ffd4a42928f985b22a60e0085e32e690e5e3d223c0248c05",
 			"material_transfer": {
 				"checked_at": 2,
 				"checks": [
@@ -267,12 +267,12 @@
 				"MERGED (its parts at their own rungs, joined) held at 2550, dearer than the 2352 taken",
 				"MERGED (its parts at their own rungs, joined), carried from rung 1 held at 2550, dearer than the 2352 taken"
 			],
-			"peak_mb": 253.0,
+			"peak_mb": 277.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 8
 			},
-			"search_s": 53.400000000000006,
+			"search_s": 39.400000000000006,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -290,7 +290,7 @@
 	},
 	"source": {
 		"children": "e1e75fee5272afeb8dfd242829efb7a5b96bac908d0305e097f446093248cdc5",
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "1433980d5f920b0f4bf302874dd9693ee4fdb5e9a48bd35161cb7c5ec208f02c"
 	}
 }

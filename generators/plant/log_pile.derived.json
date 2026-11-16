@@ -117,7 +117,7 @@
 	],
 	"effort": "full",
 	"id": "plant/log-pile",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -149,7 +149,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 11,
 				"trace": "plant__log-pile#1.trace.jsonl"
 			}
 		}
@@ -169,11 +169,11 @@
 			"cancel_opposed": true,
 			"candidates": [
 				{
-					"cost": 86964.0,
+					"cost": 4950,
 					"holds": true,
 					"judge": "drawn",
-					"picture": 0.00453,
-					"px_over": null,
+					"picture": 0.00459,
+					"px_over": 0,
 					"route": "child",
 					"value": 1.0
 				},
@@ -182,16 +182,16 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00459,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.053999
 				}
 			],
-			"cap": 0.00092592592592592,
+			"cap": 0.000925925925925926,
 			"chain": "error",
 			"chain_beaten": {
 				"chain": "fraction",
-				"cost": 30126.0,
+				"cost": 30126,
 				"fraction": 0.3429999999999999
 			},
 			"chains": {
@@ -202,49 +202,54 @@
 				"excess": 0.0625,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.004772
 			},
 			"error": 0.001851851851851852,
 			"fraction": 0.053999,
 			"from_rung": 0,
-			"judged": "0e8e399c2326e0255b63d00753571c41f9614ec0103e4bb6c3ad8690e9f5929c",
+			"judged": "ba471ea5076b94a13c7038dfde34472070314c20e7382a2243e8f4a23982549d",
 			"look_past": {
-				"beaten": false,
-				"first": "REDUCE to its error cap 0.5x the band's (0.054 kept)",
-				"looked": 0.0,
+				"beaten": true,
+				"first": "CHILD (its welded children at their own rungs {\"plant/bucked-log\":1})",
+				"looked": 1,
 				"order": [
 					"kit",
 					"child",
 					"reduce",
-					"impostor",
+					"merged",
 					"thin",
-					"merged"
+					"impostor"
+				],
+				"skipped_by_prior": [
+					"THIN"
 				]
 			},
 			"measured": {
 				"cost": 4696,
-				"coverage_rel": -0.00033,
+				"coverage_rel": -0.00033000000000000005,
 				"floor": 0.00459,
 				"part_shift": {
-					"bark": -0.00015,
+					"bark": -0.00015000000000000001,
 					"heartwood": 5e-05,
-					"sapwood": 0.00012,
+					"sapwood": 0.00012000000000000002,
 					"weathered_wood": 8e-05
 				},
 				"picture": 0.00459
 			},
 			"measured_of": 2,
 			"not_taken": [
-				"CHILD (its welded children at their own rungs {\"plant/bucked-log\":1}) held at 86964, dearer than the 4696 taken"
+				"THIN: skipped by the prior -- judged 3 times for solid subjects at band 1 across 3 record(s), never held (tools/derive-prior.py --form solid --band 1)",
+				"MERGED: not searched -- the look past the first that held (CHILD (its welded children at their own rungs {\"plant/bucked-log\":1})) is 1 route(s)",
+				"CHILD (its welded children at their own rungs {\"plant/bucked-log\":1}) held at 4950, dearer than the 4696 taken"
 			],
-			"peak_mb": 525.0,
+			"peak_mb": 1053.0,
 			"route": "reduce",
 			"routes": {
-				"reduce": 16.0
+				"reduce": 16
 			},
-			"search_s": 63.7,
-			"searched": "replay",
+			"search_s": 1871.5,
+			"searched": "search",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -252,7 +257,7 @@
 				"configurations": 20,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"tolerance": 0.5,
 				"unit": "a pixel's coverage",
 				"worst": 0.0625
@@ -260,8 +265,8 @@
 		}
 	},
 	"source": {
-		"children": "a7af0f4756375caf5456d8c0457f2c98910998e44339f5c3f74e23bb8e906e07",
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
-		"generator": "12de98991158a8800e83e82c012a873605609ebfcb60999d5937689d25eeeb0c"
+		"children": "0cf04b9bfe27b5c0d62ee90e0e00c765b8767b4c111110d2c76da2ef55051532",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
+		"generator": "b6c52fb5159fb40f77b9a4f6bd3726974e2473f02f107d6e67f6263cc8f707f7"
 	}
 }

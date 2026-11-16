@@ -27,7 +27,7 @@
 	],
 	"effort": "full",
 	"id": "built/peat-spade",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -44,15 +44,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__peat-spade#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__peat-spade#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 7,
 				"trace": "built__peat-spade#3.trace.jsonl"
 			}
 		}
@@ -89,7 +89,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.6047399999999999
 				}
@@ -104,14 +104,14 @@
 				"excess": 0.125,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.002225
 			},
 			"error": 0.001851851851851852,
 			"every_piece": true,
 			"fraction": 0.6047399999999999,
 			"from_rung": 0,
-			"judged": "16172a225b046654bf5f7385a88e1fdacd003c162cda01c32e72597c9708f8f9",
+			"judged": "e057a7a9b975a94e4e53c551e90e7d855141680bb5569b0cc66eb564809ff66a",
 			"look_past": {
 				"beaten": true,
 				"first": "KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x)",
@@ -150,13 +150,13 @@
 				"MERGED: not searched -- the look past the first that held (KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x)) is 1 route(s)",
 				"KIT (its own build at the rung's pixel, keeping debris 0.490, each kept piece covering 1.00x) held at 17844, dearer than the 11432 taken"
 			],
-			"peak_mb": 277.0,
+			"peak_mb": 414.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 4.0,
-			"searched": "replay",
+			"search_s": 49.2,
+			"searched": "recheck",
 			"surfaces": 5,
 			"surfaces_ceiling": 5,
 			"verdict": {
@@ -201,7 +201,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00398,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.202414
 				}
@@ -221,14 +221,14 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.008898999999999999
 			},
 			"error": 0.007407407407407408,
 			"every_piece": true,
 			"fraction": 0.202414,
 			"from_rung": 1,
-			"judged": "f250d40311f6c1055da9c255599f121934d0947d6df9b6bb63e5155a975060d3",
+			"judged": "4ef953534dea250fa6a81023baabcfc04c8256bf92549e3fc2f7b42f0a4a9485",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.202 kept)",
@@ -246,7 +246,7 @@
 				]
 			},
 			"material_transfer": {
-				"checked_at": 5.0,
+				"checked_at": 5,
 				"checks": [
 					{
 						"holds": true,
@@ -262,62 +262,62 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00241588521748781,
-							0.00200072303414344,
-							0.00182333169505
+							0.002415885217487812,
+							0.002000723034143448,
+							0.0018233316950500011
 						],
 						"variance_before": [
-							0.00241588521748781,
-							0.00200072303414344,
-							0.00182333169505
+							0.002415885217487812,
+							0.002000723034143448,
+							0.0018233316950500011
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.11656588315963744,
+							0.11656588315963745,
 							0.09200656414031982,
 							0.06818690896034241
 						],
 						"mean_before": [
-							0.11656588315963744,
+							0.11656588315963745,
 							0.09200656414031982,
 							0.06818690896034241
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00255193375051021,
-							0.00222218316048383,
-							0.00205138931050896
+							0.0025519337505102158,
+							0.002222183160483837,
+							0.0020513893105089664
 						],
 						"variance_before": [
-							0.00255193375051021,
-							0.00222218316048383,
-							0.00205138931050896
+							0.0025519337505102158,
+							0.002222183160483837,
+							0.0020513893105089664
 						]
 					},
 					{
 						"holds": true,
 						"mean_after": [
-							0.11510564386844636,
+							0.11510564386844635,
 							0.09074504673480988,
 							0.06714234501123428
 						],
 						"mean_before": [
-							0.11510564386844636,
+							0.11510564386844635,
 							0.09074504673480988,
 							0.06714234501123428
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.0024862540885806,
-							0.002130595035851,
-							0.0019640065729618
+							0.0024862540885806084,
+							0.0021305950358510017,
+							0.0019640065729618073
 						],
 						"variance_before": [
-							0.0024862540885806,
-							0.002130595035851,
-							0.0019640065729618
+							0.0024862540885806084,
+							0.0021305950358510017,
+							0.0019640065729618073
 						]
 					},
 					{
@@ -334,14 +334,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00241619348526,
-							0.00200090650469064,
-							0.00182341644540429
+							0.0024161934852600098,
+							0.002000906504690647,
+							0.0018234164454042912
 						],
 						"variance_before": [
-							0.00241619348526,
-							0.00200090650469064,
-							0.00182341644540429
+							0.0024161934852600098,
+							0.002000906504690647,
+							0.0018234164454042912
 						]
 					},
 					{
@@ -358,14 +358,14 @@
 						],
 						"spatial_rms": 0.0,
 						"variance_after": [
-							0.00241757463663816,
-							0.0020016860216856,
-							0.00182363810017704
+							0.0024175746366381645,
+							0.0020016860216856003,
+							0.0018236381001770496
 						],
 						"variance_before": [
-							0.00241757463663816,
-							0.0020016860216856,
-							0.00182363810017704
+							0.0024175746366381645,
+							0.0020016860216856003,
+							0.0018236381001770496
 						]
 					}
 				],
@@ -374,7 +374,7 @@
 			"materials": "merged",
 			"measured": {
 				"cost": 2314,
-				"coverage_rel": -0.02182,
+				"coverage_rel": -0.021820000000000003,
 				"floor": 0.00398,
 				"part_shift": {},
 				"picture": 0.00398
@@ -406,13 +406,13 @@
 				"KIT (its own build at 2 of the band's pixels, keeping debris 0.040) held at 17287, dearer than the 2314 taken",
 				"REDUCE (every piece) to its error cap 0.0313x the band's (0.605 kept), carried from rung 1 held at 11432, dearer than the 2314 taken"
 			],
-			"peak_mb": 273.0,
+			"peak_mb": 414.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 32.5,
-			"searched": "replay",
+			"search_s": 203.70000000000002,
+			"searched": "recheck",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -427,7 +427,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 9437184.0,
+			"atlas_bytes": 9437184,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -457,11 +457,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 12.0
+					"value": 12
 				}
 			],
 			"checked_at": 5,
-			"draw_calls": 1.0,
+			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.4637,
 				"judge": "drawn",
@@ -470,7 +470,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "aebd88b39c1b87c64763e9430d01a9147b8f95e0bb6ee5b7dd37c68e2c74d550",
+			"judged": "9c48e403427df50b9328aa452192cc967377238bba8169b6897c0a8f97881176",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -482,14 +482,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 273.0,
+			"peak_mb": 414.0,
 			"route": "impostor",
-			"search_s": 3.0,
-			"searched": "replay",
+			"search_s": 26.0,
+			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 12.0,
+			"tiles": 12,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 5,
@@ -503,7 +503,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "0c7a7ae31435f6aac8af71cb3024741b967e75e71e2906db1c57c4fc429992f6"
 	}
 }

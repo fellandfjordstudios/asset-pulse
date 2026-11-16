@@ -81,7 +81,7 @@
 	],
 	"effort": "full",
 	"id": "built/sledge",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -107,7 +107,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__sledge#1.trace.jsonl"
 			},
 			"2": {
@@ -148,7 +148,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0040100000000000005,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.564317
 				}
@@ -163,14 +163,14 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.0067859999999999995
 			},
 			"error": 0.001851851851851852,
 			"every_piece": true,
 			"fraction": 0.564317,
 			"from_rung": 0,
-			"judged": "c28d66ebad9506fe3c7d6987a8be1530635748f91e18b17089999832e46374a7",
+			"judged": "bb783daeea6c1fc8934101ed080b045ae240313b1adc1358c91f937ce9693d69",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.564 kept)",
@@ -189,19 +189,19 @@
 			},
 			"measured": {
 				"cost": 25278,
-				"coverage_rel": -0.00165,
-				"floor": 0.00401,
+				"coverage_rel": -0.0016500000000000002,
+				"floor": 0.0040100000000000005,
 				"part_shift": {
-					"ash": 0.00724,
+					"ash": 0.007240000000000001,
 					"ash_across": 0.00136,
 					"ash_upright": 0.00109,
-					"canvas": 0.00441,
-					"end_grain": 0.00014,
+					"canvas": 0.004410000000000001,
+					"end_grain": 0.00014000000000000001,
 					"iron": 5e-05,
 					"rope": 0.00141,
 					"runner_shoe": -0.01574
 				},
-				"picture": 0.00401
+				"picture": 0.0040100000000000005
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -211,13 +211,13 @@
 				"REDUCE from rung 0 at {} seed 314: part 'ash' is 14 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 3 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 347.0,
+			"peak_mb": 689.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 73.0
 			},
-			"search_s": 18.900000000000002,
-			"searched": "replay",
+			"search_s": 252.0,
+			"searched": "recheck",
 			"surfaces": 8,
 			"surfaces_ceiling": 8,
 			"verdict": {
@@ -233,7 +233,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "0f7d23243a97de39718582d7ae46552f8b493ea00de1c597f1b763af15f36209"
 	}
 }

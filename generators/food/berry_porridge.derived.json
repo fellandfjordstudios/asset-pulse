@@ -45,7 +45,7 @@
 	],
 	"effort": "full",
 	"id": "food/berry-porridge",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -113,7 +113,7 @@
 			"error": 0.006174669649115607,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "468282cce7ed773d36151ef2579e2615777a0bbb2debc5e8b4a3c1747f8d951e",
+			"judged": "5af65c19670000d89d1c230a10744ff0be169485cc55b9b78ee2a5b6eed5b129",
 			"keep": {
 				"drupelet": 0.3429999999999999,
 				"oat_flake": 0.03125
@@ -121,9 +121,9 @@
 			"measured": {
 				"cost": 7845,
 				"coverage_rel": -0.00116,
-				"floor": 0.00471,
+				"floor": 0.004710000000000001,
 				"part_shift": {},
-				"picture": 0.00471
+				"picture": 0.004710000000000001
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -132,10 +132,10 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"MERGED (its parts at their own rungs, joined) held at 23507, dearer than the 7845 taken"
 			],
-			"peak_mb": 276.0,
+			"peak_mb": 295.0,
 			"route": "kit",
-			"search_s": 4.0,
-			"searched": "replay",
+			"search_s": 63.300000000000004,
+			"searched": "recheck",
 			"surfaces": 10,
 			"surfaces_ceiling": 10,
 			"verdict": {
@@ -152,7 +152,7 @@
 	},
 	"source": {
 		"children": "fb61b1c4f98bd2009c8b93b89b3f2d7a418f4cb81cc74da4a1f97ceaa5f8843c",
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "92168e6455660e45b7755d55077a80d18a50656ef8df7c5e3162d466bfd228af"
 	}
 }

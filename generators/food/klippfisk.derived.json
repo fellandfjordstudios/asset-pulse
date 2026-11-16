@@ -33,7 +33,7 @@
 	],
 	"effort": "full",
 	"id": "food/klippfisk",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -51,11 +51,11 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "food__klippfisk#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 16,
 				"trace": "food__klippfisk#2.trace.jsonl"
 			}
 		}
@@ -89,7 +89,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.004070000000000001,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.281368
 				}
@@ -104,14 +104,14 @@
 				"excess": 0.25,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.001297
 			},
 			"error": 0.0025933612526285546,
 			"every_piece": true,
 			"fraction": 0.281368,
 			"from_rung": 0,
-			"judged": "b485b4b4ba4d9cdc502aec0b7359b668b1b783e61945e3ab7b2ead07076293e6",
+			"judged": "d8a18e7ebbd544537eecbef0ce9f855ed758472f9427276f65596323e156aa26",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to its error cap 0.25x the band's (0.281 kept)",
@@ -131,14 +131,14 @@
 			"measured": {
 				"cost": 15002,
 				"coverage_rel": -0.00022,
-				"floor": 0.00435,
+				"floor": 0.004350000000000001,
 				"part_shift": {
 					"flesh": 0.00427,
-					"salt": -0.00065,
-					"skin": -0.00407,
-					"tail": 0.00028
+					"salt": -0.0006500000000000001,
+					"skin": -0.004070000000000001,
+					"tail": 0.00028000000000000003
 				},
-				"picture": 0.00407
+				"picture": 0.004070000000000001
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -148,13 +148,13 @@
 				"REDUCE from rung 0 at {} seed 314: element 0's part 'flesh' is 46 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 1 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 310.0,
+			"peak_mb": 402.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 173.0
 			},
-			"search_s": 22.200000000000003,
-			"searched": "replay",
+			"search_s": 125.7,
+			"searched": "recheck",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -169,7 +169,7 @@
 			}
 		},
 		"2": {
-			"atlas_bytes": 67108864.0,
+			"atlas_bytes": 67108864,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -199,11 +199,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 32.0
+					"value": 32
 				}
 			],
 			"checked_at": 6,
-			"draw_calls": 1.0,
+			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.4309,
 				"judge": "drawn",
@@ -212,7 +212,7 @@
 			"error": 0.010373445010514218,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "8dae1d40d6a331b25ca32a338d860ea6b78c6905a38dca9b84d2f0d884a69268",
+			"judged": "a329657d3fb6f8c583c643aa506b96e098ff575a3405d074417df105a706ec24",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -224,14 +224,14 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 2, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 307.0,
+			"peak_mb": 404.0,
 			"route": "impostor",
-			"search_s": 6.1000000000000005,
-			"searched": "replay",
+			"search_s": 132.70000000000002,
+			"searched": "recheck",
 			"source_pixel_scale": 8.0,
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 32.0,
+			"tiles": 32,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 6,
@@ -245,7 +245,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "43c3414b9ee5b35195f54a6f881df12dee9fc565f6f3514fc9968072651ea186"
 	}
 }

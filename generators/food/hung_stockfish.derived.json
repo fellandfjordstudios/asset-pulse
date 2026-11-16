@@ -58,7 +58,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 1,
+				"candidates": 0,
 				"trace": "food__hung-stockfish#1.trace.jsonl"
 			},
 			"2": {
@@ -101,7 +101,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0039900000000000005,
-					"px_over": 0,
+					"px_over": 0.0,
 					"route": "reduce",
 					"value": 0.08235429999999996
 				}
@@ -119,7 +119,7 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0,
+				"over": 0.0,
 				"pixel_m": 0.001294
 			},
 			"error": 0.001859093631809195,
@@ -145,15 +145,15 @@
 			},
 			"measured": {
 				"cost": 16295,
-				"coverage_rel": -0.0014900000000000002,
-				"floor": 0.0039900000000000005,
+				"coverage_rel": -0.00149,
+				"floor": 0.00399,
 				"part_shift": {
 					"back": 0.00017,
 					"belly": 0.00034,
 					"fin": 2e-05,
 					"flesh": -0.00021
 				},
-				"picture": 0.0039900000000000005
+				"picture": 0.00399
 			},
 			"measured_of": 1,
 			"not_taken": [
@@ -162,13 +162,13 @@
 				"REDUCE from rung 0 at {} seed 314: part 'belly' is 55 separate pieces: an aggregate, THIN's to derive (`plans/027` step 3), not REDUCE's (and 2 more groups)",
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)"
 			],
-			"peak_mb": 668.0,
+			"peak_mb": 496.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 4.0
 			},
-			"search_s": 880.6,
-			"searched": "recheck",
+			"search_s": 97.7,
+			"searched": "replay",
 			"surfaces": 4,
 			"surfaces_ceiling": 4,
 			"verdict": {
@@ -433,12 +433,12 @@
 				"THIN: skipped by the prior -- judged 5 times for solid subjects at band 2 across 5 record(s), never held (tools/derive-prior.py --form solid --band 2)",
 				"CARRIED from rung 1, REDUCE (every piece) to 0.082, carried from rung 1: none holds at 0.0074 -- the finest tried (1.000) fails at {} seed 3: the picture changes at the drawn size: 5 pixel(s) differ by more than 0.50 of a pixel's coverage (worst 0.56), one pixel 0.00520 m"
 			],
-			"peak_mb": 673.0,
+			"peak_mb": 496.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 4
 			},
-			"search_s": 2316.6,
+			"search_s": 40.0,
 			"searched": "pending",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,
@@ -689,12 +689,12 @@
 				"REDUCE (every piece) to 0.082, carried from rung 1 held at 15909, dearer than the 5729 taken",
 				"REDUCE (every piece) to its error cap 0.25x the band's (0.435 kept), carried from rung 2 held at 7093, dearer than the 5729 taken"
 			],
-			"peak_mb": 672.0,
+			"peak_mb": 528.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 2
 			},
-			"search_s": 2197.2000000000003,
+			"search_s": 367.3,
 			"searched": "search",
 			"surfaces": 2,
 			"surfaces_ceiling": 1,

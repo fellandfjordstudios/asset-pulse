@@ -19,7 +19,7 @@
 	],
 	"effort": "full",
 	"id": "built/primus-stove",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -34,7 +34,7 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__primus-stove#1.trace.jsonl"
 			}
 		}
@@ -67,7 +67,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.0046300000000000004,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.16806999999999994
 				}
@@ -85,14 +85,14 @@
 				"excess": 0.5,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.001315
 			},
 			"error": 0.005894002846883078,
 			"every_piece": true,
 			"fraction": 0.16806999999999994,
 			"from_rung": 0,
-			"judged": "155c6c09107a26e71ed2167e1d4624f6ed8f23c4c2af47bd2e81a7978bcef968",
+			"judged": "483fa866246ebee4105bc796edebf43247d96280cfefa2d6850ca3d39ff6d313",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE (every piece) to 0.168",
@@ -112,16 +112,16 @@
 			"measured": {
 				"cost": 3526,
 				"coverage_rel": -0.01353,
-				"floor": 0.00463,
+				"floor": 0.0046300000000000004,
 				"part_shift": {
-					"brass": -0.00383,
-					"burner": -0.00085,
-					"knob": -0.00087,
+					"brass": -0.0038300000000000005,
+					"burner": -0.0008500000000000001,
+					"knob": -0.0008700000000000001,
 					"stamp": 4e-05,
-					"steel": -0.00399,
+					"steel": -0.0039900000000000005,
 					"tank": 0.00727
 				},
-				"picture": 0.00463
+				"picture": 0.0046300000000000004
 			},
 			"measured_of": 2,
 			"not_taken": [
@@ -130,13 +130,13 @@
 				"THIN: skipped by the prior -- judged 4 times for solid subjects at band 1 across 4 record(s), never held (tools/derive-prior.py --form solid --band 1)",
 				"KIT (its own build at the rung's pixel) held at 6914, dearer than the 3526 taken"
 			],
-			"peak_mb": 261.0,
+			"peak_mb": 275.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 18.0
 			},
-			"search_s": 1.8,
-			"searched": "replay",
+			"search_s": 22.0,
+			"searched": "recheck",
 			"surfaces": 6,
 			"surfaces_ceiling": 6,
 			"verdict": {
@@ -152,7 +152,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "f8d33f47c37afd82b47ae9937afff8b4331847cc1d383722c7570fd2672d683c"
 	}
 }

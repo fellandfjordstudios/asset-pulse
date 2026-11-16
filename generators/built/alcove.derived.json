@@ -55,7 +55,7 @@
 	],
 	"effort": "full",
 	"id": "built/alcove",
-	"judge": "12e4a03e78011e7a49c21163eb5af52d10e5182b55ed512cbb9967640ed61a22",
+	"judge": "c2ffee0fd14b1c95a4010b15b2bdd20f91720a0841ccd0842dfd6fafcf0fc6e1",
 	"keyed_on": {
 		"moves": [
 			"probe",
@@ -76,15 +76,15 @@
 		"tool": "tools/derive.sh",
 		"traces": {
 			"1": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__alcove#1.trace.jsonl"
 			},
 			"2": {
-				"candidates": 0,
+				"candidates": 1,
 				"trace": "built__alcove#2.trace.jsonl"
 			},
 			"3": {
-				"candidates": 0,
+				"candidates": 4,
 				"trace": "built__alcove#3.trace.jsonl"
 			}
 		}
@@ -110,7 +110,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00459,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.11764899999999996
 				}
@@ -128,13 +128,13 @@
 				"excess": 0.0625,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.002222
 			},
 			"error": 0.001851851851851852,
 			"fraction": 0.11764899999999996,
 			"from_rung": 0,
-			"judged": "48511e5a8d566f6cb9724d16428ffad39e8b796dd191a3dbebf2f04e4933205c",
+			"judged": "717eff1f596d2f5a63917ef0ec7f9243b9b4aec0ae4a5218aed07af43fb7e33e",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.118",
@@ -156,13 +156,13 @@
 				"picture": 0.00459
 			},
 			"measured_of": 1,
-			"peak_mb": 247.0,
+			"peak_mb": 571.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 0.4,
-			"searched": "replay",
+			"search_s": 66.60000000000001,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -187,7 +187,7 @@
 					"holds": true,
 					"judge": "drawn",
 					"picture": 0.00459,
-					"px_over": 0.0,
+					"px_over": 0,
 					"route": "reduce",
 					"value": 0.11764899999999996
 				}
@@ -205,13 +205,13 @@
 				"excess": 0.0,
 				"holds": true,
 				"judge": "drawn",
-				"over": 0.0,
+				"over": 0,
 				"pixel_m": 0.008889
 			},
 			"error": 0.007407407407407408,
 			"fraction": 0.11764899999999996,
 			"from_rung": 0,
-			"judged": "9d45ab15055038dbc880a388f4fefb9a854fa652b7f03ffcd13b42d0840b6364",
+			"judged": "320ab953a889802ff57eddd0ee6a034ecad3cdf0b2d89d2ff7dc9c482a6c4809",
 			"look_past": {
 				"beaten": false,
 				"first": "REDUCE to 0.118",
@@ -233,13 +233,13 @@
 				"picture": 0.00459
 			},
 			"measured_of": 1,
-			"peak_mb": 246.0,
+			"peak_mb": 571.0,
 			"route": "reduce",
 			"routes": {
 				"reduce": 5.0
 			},
-			"search_s": 0.30000000000000004,
-			"searched": "replay",
+			"search_s": 15.4,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
 			"verdict": {
@@ -254,7 +254,7 @@
 			}
 		},
 		"3": {
-			"atlas_bytes": 2359296.0,
+			"atlas_bytes": 2359296,
 			"atlas_profiles": {
 				"native-desktop": {
 					"budget_mb": 2048.0,
@@ -284,11 +284,11 @@
 					"picture": -1.0,
 					"px_over": null,
 					"route": "impostor",
-					"value": 16.0
+					"value": 16
 				}
 			],
 			"checked_at": 9,
-			"draw_calls": 1.0,
+			"draw_calls": 1,
 			"drawn": {
 				"excess": 0.29710000000000003,
 				"judge": "drawn",
@@ -297,7 +297,7 @@
 			"error": 0.02962962962962963,
 			"fraction": 1.0,
 			"from_rung": 0,
-			"judged": "24218cdbb0c3af90572f364c4eddba71bd4156e742e21fb9951185b081e098d6",
+			"judged": "90623d439586bef850886599b1e26f26f877b2cf5c6d78dae3129fb4c31cc2dc",
 			"measured": {
 				"cost": 2,
 				"coverage_rel": 0.0,
@@ -309,13 +309,13 @@
 			"not_taken": [
 				"every mesh route: an impostor holds at band 3, and nothing draws cheaper than its one quad"
 			],
-			"peak_mb": 246.0,
+			"peak_mb": 571.0,
 			"route": "impostor",
-			"search_s": 0.2,
-			"searched": "replay",
+			"search_s": 11.4,
+			"searched": "recheck",
 			"surfaces": 1,
 			"surfaces_ceiling": 1,
-			"tiles": 16.0,
+			"tiles": 16,
 			"verdict": {
 				"code": "21abd2a992541eee",
 				"configurations": 9,
@@ -329,7 +329,7 @@
 		}
 	},
 	"source": {
-		"deriver": "76e971b5b44d0473b02f2c03a327fc927c9d199eeb8d14abab96cbc7f1370449",
+		"deriver": "4025d324acb45c9d0ed373a3aaa8e5c0d642094849eaa2c5f3abfc7ac8934f35",
 		"generator": "52005c89e185db1498668b10d93361d728f2a1260b69755325b9ce32f47ff571"
 	}
 }
